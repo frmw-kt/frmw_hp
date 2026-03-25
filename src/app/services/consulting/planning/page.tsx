@@ -56,29 +56,27 @@ const faqs = [
 export default function PlanningPage() {
   return (
     <>
-      <section className="relative bg-slate-950 text-white overflow-hidden py-32 md:py-44">
-        <div className="absolute inset-0 bg-dot-grid opacity-30" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-blue-600/10 blur-[100px] -translate-y-1/3 translate-x-1/4" />
+      <section className="relative bg-[#0a0a0a] text-white overflow-hidden py-32 md:py-44">
         <div className="relative max-w-7xl mx-auto px-6">
-          <Link href="/services/consulting" className="inline-flex items-center gap-2 text-slate-500 text-sm hover:text-slate-300 transition-colors mb-10">
+          <Link href="/services/consulting" className="inline-flex items-center gap-2 text-white/30 text-sm hover:text-white transition-colors mb-10">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
             コンサルティングへ戻る
           </Link>
-          <p className="text-blue-400 text-xs font-semibold tracking-[0.2em] uppercase mb-5">Action Planning</p>
-          <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6 max-w-3xl">
+          <p className="text-white/40 text-xs tracking-[0.3em] uppercase mb-5">Action Planning</p>
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6 max-w-3xl">
             戦略を、<br />
-            <span className="gradient-text">動かせる施策へ。</span>
+            <span>動かせる施策へ。</span>
           </h1>
-          <p className="text-slate-400 text-lg leading-relaxed max-w-xl mb-14">
+          <p className="text-white/40 text-lg leading-relaxed max-w-xl mb-14">
             優れた戦略も、実行されなければ意味がありません。チャネル選定・予算配分・優先順位を最適化し、ROIを最大化する施策ポートフォリオを設計します。
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-10 border-t border-white/8">
             {stats.map((s) => (
               <div key={s.label}>
                 <p className="text-xl md:text-2xl font-black gradient-text mb-1">{s.value}</p>
-                <p className="text-slate-500 text-sm">{s.label}</p>
+                <p className="text-white/50 text-sm">{s.label}</p>
               </div>
             ))}
           </div>
@@ -88,15 +86,15 @@ export default function PlanningPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-blue-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">What We Do</p>
+            <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">What We Do</p>
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mb-4">施策立案の全体像</h2>
             <p className="text-slate-500 max-w-xl mx-auto text-sm leading-relaxed">戦略を実行可能な具体的アクションに分解し、最大のROIを生む計画を設計します。</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {whats.map((w, i) => (
-              <div key={i} className="group p-8 bg-slate-50 border border-slate-100 rounded-3xl hover:bg-white hover:border-blue-100 hover:shadow-xl hover:shadow-blue-50 transition-all duration-300">
-                <h3 className="text-base font-bold text-slate-900 mb-3 flex items-center gap-3">
-                  <span className="w-7 h-7 rounded-lg bg-blue-600 text-white text-xs font-bold flex items-center justify-center shrink-0">{String(i + 1).padStart(2, "0")}</span>
+              <div key={i} className="group p-8 bg-[#fafafa] border border-[#e5e5e5] rounded-2xl hover:bg-white hover:border-[#0a0a0a] transition-all duration-300">
+                <h3 className="text-base font-semibold text-[#0a0a0a] mb-3 flex items-center gap-3">
+                  <span className="w-7 h-7 rounded-lg bg-[#0a0a0a] text-white text-xs font-bold flex items-center justify-center shrink-0">{String(i + 1).padStart(2, "0")}</span>
                   {w.title}
                 </h3>
                 <p className="text-slate-500 text-sm leading-relaxed pl-10">{w.desc}</p>
@@ -106,18 +104,18 @@ export default function PlanningPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-14">
-            <p className="text-blue-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">Our Strengths</p>
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">選ばれる3つの理由</h2>
+            <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Our Strengths</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">選ばれる3つの理由</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {strengths.map((s) => (
-              <div key={s.number} className="group bg-white border border-slate-200 p-8 rounded-3xl hover:border-blue-200 hover:shadow-xl hover:shadow-blue-50 transition-all duration-300">
-                <p className="text-5xl font-black text-slate-100 mb-4 leading-none group-hover:text-blue-50 transition-colors">{s.number}</p>
-                <h3 className="text-base font-bold text-slate-900 mb-3">{s.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{s.desc}</p>
+              <div key={s.number} className="group bg-[#fafafa] border border-[#e5e5e5] p-8 rounded-2xl hover:border-[#0a0a0a] hover:bg-white transition-all duration-300">
+                <p className="text-5xl font-bold text-[#e5e5e5] mb-4 leading-none">{s.number}</p>
+                <h3 className="text-base font-semibold text-[#0a0a0a] mb-3">{s.title}</h3>
+                <p className="text-sm text-[#737373] leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -127,19 +125,19 @@ export default function PlanningPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-14">
-            <p className="text-blue-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">Process</p>
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">進め方</h2>
+            <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Process</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">進め方</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4">
             {steps.map((s, i) => (
               <div key={i} className="relative group">
-                <div className="bg-slate-50 border border-slate-100 p-6 rounded-3xl h-full hover:border-blue-100 hover:bg-white hover:shadow-lg hover:shadow-blue-50 transition-all duration-300 text-center">
-                  <p className="text-4xl font-black text-slate-100 mb-3 leading-none group-hover:text-blue-50 transition-colors">{s.step}</p>
-                  <h3 className="text-sm font-bold text-slate-900 mb-1.5">{s.title}</h3>
+                <div className="bg-[#fafafa] border border-[#e5e5e5] p-6 rounded-2xl h-full hover:border-[#0a0a0a] hover:bg-white transition-all duration-300 text-center">
+                  <p className="text-4xl font-bold text-[#e5e5e5] mb-3 leading-none">{s.step}</p>
+                  <h3 className="text-sm font-semibold text-[#0a0a0a] mb-1.5">{s.title}</h3>
                   <p className="text-slate-500 text-xs leading-relaxed">{s.desc}</p>
                 </div>
                 {i < steps.length - 1 && (
-                  <div className="hidden md:flex absolute top-1/2 -right-2 transform -translate-y-1/2 text-slate-300 z-10 bg-white">
+                  <div className="hidden md:flex absolute top-1/2 -right-2 transform -translate-y-1/2 text-[#d4d4d4] z-10 bg-white">
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
                     </svg>
@@ -151,17 +149,17 @@ export default function PlanningPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-[#fafafa]">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-blue-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">FAQ</p>
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">よくあるご質問</h2>
+            <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">FAQ</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">よくあるご質問</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((f, i) => (
-              <div key={i} className="bg-white border border-slate-200 rounded-2xl p-6">
-                <p className="font-bold text-slate-900 mb-3 flex items-start gap-3">
-                  <span className="text-blue-600 font-black shrink-0">Q.</span>{f.q}
+              <div key={i} className="bg-white border border-[#e5e5e5] rounded-2xl p-6 hover:border-[#0a0a0a] transition-colors">
+                <p className="font-semibold text-[#0a0a0a] mb-3 flex items-start gap-3">
+                  <span className="text-[#0a0a0a] font-bold shrink-0">Q.</span>{f.q}
                 </p>
                 <p className="text-slate-500 text-sm leading-relaxed pl-6">{f.a}</p>
               </div>
@@ -170,12 +168,12 @@ export default function PlanningPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-slate-100">
+      <section className="py-24 bg-[#fafafa] border-t border-[#e5e5e5]">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <p className="text-blue-600 text-xs font-semibold tracking-[0.2em] uppercase mb-5">Contact</p>
-          <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-5 tracking-tight">施策立案のご相談はお気軽に</h2>
-          <p className="text-slate-500 mb-10 leading-relaxed">現在の施策状況や課題をお聞かせください。初回相談は無料です。</p>
-          <Link href="/contact" className="inline-flex items-center gap-3 bg-blue-600 text-white px-10 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">
+          <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Contact</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] mb-5 tracking-tight">施策立案のご相談はお気軽に</h2>
+          <p className="text-[#737373] mb-10 leading-relaxed">現在の施策状況や課題をお聞かせください。初回相談は無料です。</p>
+          <Link href="/contact" className="inline-flex items-center gap-2 text-sm text-white bg-[#0a0a0a] px-8 py-4 rounded-full hover:bg-[#1a1a1a] transition-colors duration-200">
             無料相談を申し込む
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

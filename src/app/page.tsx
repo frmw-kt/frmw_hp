@@ -1,64 +1,45 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import HeroBackground from "@/components/HeroBackground";
+import AnimateIn from "@/components/AnimateIn";
 
 export const metadata: Metadata = {
   title: "Framework | マーケティング支援",
   description: "コンサルティング・運用代行・制作・スクールの4つのサービスでマーケティングを支援します。",
 };
 
+const stats = [
+  { value: "+400%", label: "平均売上高" },
+  { value: "-80%",  label: "平均CPA" },
+  { value: "100%",  label: "継続率" },
+  { value: "+50%",  label: "平均ROI" },
+];
+
 const services = [
   {
-    title: "マーケティング\nコンサルティング",
+    number: "01",
+    title: "マーケティングコンサルティング",
     description: "調査分析から戦略立案・施策設計・改善提案まで。データに基づく一気通貫のコンサルティングで、売上・リードを最大化します。",
     href: "/services/consulting",
-    tag: "Consulting",
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-      </svg>
-    ),
   },
   {
+    number: "02",
     title: "運用代行",
-    description: "SNS・広告・メールなどのマーケティング施策の運用をプロに任せる。専門チームが継続的に成果を追い求めます。",
+    description: "広告・SNS・SEO・アフィリエイト・CRMの運用を丸ごと代行。専門チームが継続的に成果を追い求めます。",
     href: "/services/operations",
-    tag: "Operations",
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
-    ),
   },
   {
+    number: "03",
     title: "制作",
     description: "LP・サイト・バナー・動画など、成果につながるクリエイティブを制作。ブランドを強化するビジュアルを届けます。",
     href: "/services/production",
-    tag: "Production",
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-      </svg>
-    ),
   },
   {
+    number: "04",
     title: "スクール",
     description: "現役プロが教える実践的なマーケティングスクール。個人の学習から企業研修まで幅広く対応します。",
     href: "/services/school",
-    tag: "School",
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-      </svg>
-    ),
   },
-];
-
-const stats = [
-  { value: "+400%", label: "平均売上高" },
-  { value: "-80%", label: "平均CPA" },
-  { value: "100%", label: "継続率" },
-  { value: "+50%", label: "平均ROI" },
 ];
 
 const reasons = [
@@ -66,166 +47,251 @@ const reasons = [
     number: "01",
     title: "戦略から実行まで一貫支援",
     description: "単なる施策提案にとどまらず、戦略立案から実行・改善まで一気通貫でサポート。社内リソース不足を補いながら成果を出します。",
+    wide: true,
   },
   {
     number: "02",
     title: "データドリブンなアプローチ",
-    description: "感覚ではなく、データと分析に基づいた意思決定で確実に成果につながる施策を実行。ROIを常に可視化します。",
+    description: "感覚ではなくデータと分析に基づいた意思決定で、確実に成果につながる施策を実行。ROIを常に可視化します。",
+    wide: false,
   },
   {
     number: "03",
     title: "サービスのワンストップ対応",
     description: "コンサル・運用・制作・教育を社内で完結。複数の外部委託先を管理するコスト・手間を解消します。",
+    wide: false,
+    full: true,
   },
 ];
+
+const process = [
+  { step: "01", title: "ヒアリング",   desc: "貴社の現状・課題・目標を丁寧にお聞きします。" },
+  { step: "02", title: "提案",         desc: "課題に最適なサービスと施策プランをご提案します。" },
+  { step: "03", title: "実行",         desc: "専門チームが迅速かつ丁寧に施策を実行します。" },
+  { step: "04", title: "改善",         desc: "データを基に継続的に検証・改善サイクルを回します。" },
+];
+
+const marqueeItems = ["Consulting", "Operations", "Production", "School", "Strategy", "Analytics", "Creative", "Growth"];
 
 export default function HomePage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative bg-slate-950 text-white overflow-hidden min-h-screen flex items-center">
-        {/* Animated canvas background */}
+      <section className="relative bg-[#0a0a0a] text-white overflow-hidden min-h-screen flex items-center">
         <HeroBackground />
-        {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_60%_40%,_rgba(37,99,235,0.12),_transparent)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_50%_at_10%_80%,_rgba(6,182,212,0.07),_transparent)]" />
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-950 to-transparent" />
-
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0a]/70" />
         <div className="relative max-w-7xl mx-auto px-6 py-32 w-full">
-          <div className="inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/10 rounded-full px-4 py-1.5 mb-10">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-            <span className="text-blue-300 text-xs font-medium tracking-wider uppercase">Marketing Support Company</span>
+          <div className="hero-line">
+            <span className="inline-flex items-center gap-2.5 border border-white/12 rounded-full px-4 py-1.5 text-[11px] text-white/40 uppercase tracking-[0.25em]">
+              <span className="w-1.5 h-1.5 rounded-full bg-white/30 inline-block" />
+              Marketing Support
+            </span>
           </div>
-
-          <h1 className="text-5xl md:text-7xl font-black leading-[1.05] tracking-tight mb-8 max-w-4xl">
-            マーケティングで、<br />
-            ビジネスを<br />
-            <span className="gradient-text">加速させる。</span>
+          <h1 className="mt-8 mb-0">
+            <div className="hero-line text-[clamp(2.8rem,8vw,6.5rem)] font-bold leading-[1.03] tracking-tight text-white">
+              マーケティングで、
+            </div>
+            <div className="hero-line text-[clamp(2.8rem,8vw,6.5rem)] font-bold leading-[1.03] tracking-tight text-white/20">
+              ビジネスを
+            </div>
+            <div className="hero-line text-[clamp(2.8rem,8vw,6.5rem)] font-bold leading-[1.03] tracking-tight text-white">
+              加速させる。
+            </div>
           </h1>
-
-          <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-lg mb-14">
-            コンサルティングから運用代行・制作・スクールまで。<br />
-            貴社の課題に合わせた最適なマーケティング支援を提供します。
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-4 rounded-full text-base font-semibold hover:from-blue-500 hover:to-cyan-500 transition-all shadow-xl shadow-blue-900/40"
-            >
+          <div className="hero-line mt-10">
+            <p className="text-white/40 text-base max-w-xs leading-relaxed">
+              コンサルティングから運用代行・制作・スクールまで。
+              貴社の課題に合わせた最適なマーケティング支援を提供します。
+            </p>
+          </div>
+          <div className="hero-line mt-8 flex flex-col sm:flex-row gap-4">
+            <Link href="/contact"
+              className="inline-flex items-center gap-2 text-sm text-black bg-white px-7 py-3.5 rounded-full hover:bg-white/90 transition-all duration-300">
               無料相談を申し込む
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
-            <Link
-              href="#services"
-              className="inline-flex items-center justify-center gap-2 border border-white/15 text-slate-300 px-8 py-4 rounded-full text-base font-semibold hover:border-white/30 hover:text-white hover:bg-white/5 transition-all"
-            >
+            <Link href="#services"
+              className="inline-flex items-center gap-2 text-sm text-white/40 hover:text-white transition-colors duration-200 px-2 py-3.5 underline-draw">
               サービスを見る
             </Link>
           </div>
+        </div>
+        {/* Scroll indicator */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-0 animate-[fadeIn_1s_1.2s_forwards]">
+          <div className="scroll-mouse" />
+          <span className="text-[10px] text-white/20 uppercase tracking-widest">Scroll</span>
+        </div>
+      </section>
 
-          {/* Stats */}
-          <div className="mt-20 pt-10 border-t border-white/8 grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((s) => (
-              <div key={s.label}>
-                <p className="text-3xl md:text-4xl font-black gradient-text mb-1">{s.value}</p>
-                <p className="text-slate-500 text-sm">{s.label}</p>
-              </div>
+      {/* ── Marquee ── */}
+      <div className="bg-[#0a0a0a] border-y border-white/8 overflow-hidden py-4 select-none">
+        <div className="marquee-track">
+          {[...marqueeItems, ...marqueeItems].map((item, i) => (
+            <span key={i} className="px-8 text-sm text-white/20 uppercase tracking-[0.2em] whitespace-nowrap">
+              {item} <span className="text-white/10 mx-4">·</span>
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Stats ── */}
+      <section className="bg-[#111] border-b border-white/8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-white/8">
+            {stats.map((s, i) => (
+              <AnimateIn key={s.label} delay={(i + 1) as 1|2|3|4} className="py-14 px-8 text-center">
+                <p className="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-3">
+                  {s.value}
+                </p>
+                <p className="text-xs text-white/25 uppercase tracking-[0.2em]">{s.label}</p>
+              </AnimateIn>
             ))}
           </div>
         </div>
       </section>
 
       {/* ── Services ── */}
-      <section id="services" className="py-32 bg-white relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+      <section id="services" className="bg-[#fafafa] py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
+          <AnimateIn className="flex items-end justify-between mb-12 pb-6 border-b border-[#e5e5e5]">
             <div>
-              <p className="text-blue-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">Services</p>
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900">4つのサービス</h2>
+              <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
+                Services
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
+                4つのサービス
+              </h2>
             </div>
-            <p className="text-slate-400 max-w-sm text-sm leading-relaxed">
-              マーケティング支援に必要なすべてを、ワンストップで提供します。
+            <p className="hidden md:block text-sm text-[#737373] max-w-xs text-right leading-relaxed">
+              マーケティング支援に必要なすべてを、<br />ワンストップで提供します。
             </p>
-          </div>
+          </AnimateIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {services.map((service) => (
-              <Link
-                key={service.href}
-                href={service.href}
-                className="group relative p-8 bg-white border border-slate-200 rounded-3xl hover:border-blue-200 hover:shadow-xl hover:shadow-blue-50 transition-all duration-300 overflow-hidden"
-              >
-                <div className="absolute top-0 right-0 w-40 h-40 bg-blue-50 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="relative">
-                  <div className="flex items-start justify-between mb-6">
-                    <div className="w-12 h-12 bg-blue-50 border border-blue-100 rounded-2xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all duration-300">
-                      {service.icon}
+          <div className="divide-y divide-[#e5e5e5]">
+            {services.map((s, i) => (
+              <AnimateIn key={s.href} delay={(Math.min(i + 1, 5)) as 1|2|3|4|5}>
+                <Link href={s.href} className="service-row group block py-8 cursor-pointer">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-8">
+                      <span className="text-xs font-mono text-[#c0c0c0] w-6 shrink-0">{s.number}</span>
+                      <h3 className="text-xl md:text-2xl font-semibold text-[#0a0a0a] group-hover:translate-x-1.5 transition-transform duration-300">
+                        {s.title}
+                      </h3>
                     </div>
-                    <span className="text-xs font-medium text-slate-400 border border-slate-200 rounded-full px-3 py-1">
-                      {service.tag}
-                    </span>
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 whitespace-pre-line leading-snug">{service.title}</h3>
-                  <p className="text-slate-500 text-sm leading-relaxed mb-6">{service.description}</p>
-                  <div className="flex items-center gap-2 text-blue-600 text-sm font-medium">
-                    <span>詳しく見る</span>
-                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    <svg className="w-5 h-5 text-[#0a0a0a] shrink-0 opacity-20 group-hover:opacity-80 group-hover:translate-x-1 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </div>
-                </div>
-              </Link>
+                  <div className="service-desc-wrap pl-14">
+                    <div className="service-desc-inner">
+                      <p className="text-sm text-[#737373] leading-relaxed pt-3 pb-1 max-w-xl">{s.description}</p>
+                    </div>
+                  </div>
+                </Link>
+              </AnimateIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Process ── */}
+      <section className="bg-[#0a0a0a] text-white py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimateIn className="flex items-end justify-between mb-16 pb-6 border-b border-white/8">
+            <div>
+              <span className="inline-flex items-center border border-white/10 rounded-full px-3 py-1 text-[11px] text-white/30 uppercase tracking-[0.2em] mb-4">
+                Process
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                支援の流れ
+              </h2>
+            </div>
+            <p className="hidden md:block text-sm text-white/30 max-w-xs text-right leading-relaxed">
+              ヒアリングから改善まで、<br />一貫してサポートします。
+            </p>
+          </AnimateIn>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/8">
+            {process.map((p, i) => (
+              <AnimateIn key={p.step} delay={(i + 1) as 1|2|3|4} className="bg-[#0a0a0a] p-8 md:p-10 group hover:bg-white/4 transition-colors duration-300">
+                <p className="text-xs font-mono text-white/20 mb-8">{p.step}</p>
+                <h3 className="text-lg font-semibold text-white mb-3">{p.title}</h3>
+                <p className="text-sm text-white/35 leading-relaxed">{p.desc}</p>
+              </AnimateIn>
             ))}
           </div>
         </div>
       </section>
 
       {/* ── Why Us ── */}
-      <section className="py-32 bg-white relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+      <section className="bg-[#fafafa] py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-20">
-            <p className="text-blue-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">Why Us</p>
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900">選ばれる理由</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {reasons.map((reason) => (
-              <div key={reason.number} className="relative group">
-                <div className="p-8 bg-slate-50 rounded-3xl border border-slate-100 hover:border-blue-100 hover:bg-white hover:shadow-xl hover:shadow-blue-50/80 transition-all duration-300 h-full">
-                  <p className="text-6xl font-black text-slate-100 mb-4 leading-none group-hover:text-blue-50 transition-colors">{reason.number}</p>
-                  <h3 className="text-lg font-bold text-slate-900 mb-3">{reason.title}</h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">{reason.description}</p>
+          <AnimateIn className="flex items-end justify-between mb-12 pb-6 border-b border-[#e5e5e5]">
+            <div>
+              <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
+                Why Us
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
+                選ばれる理由
+              </h2>
+            </div>
+          </AnimateIn>
+
+          {/* Bento grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* Card 01 — wide */}
+            <AnimateIn delay={1} className="md:col-span-2 border border-[#e5e5e5] rounded-2xl p-10 hover:border-[#0a0a0a]/25 hover:shadow-sm transition-all duration-300">
+              <p className="text-xs font-mono text-[#c0c0c0] mb-8">01</p>
+              <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">{reasons[0].title}</h3>
+              <p className="text-sm text-[#737373] leading-relaxed max-w-md">{reasons[0].description}</p>
+            </AnimateIn>
+
+            {/* Card 02 */}
+            <AnimateIn delay={2} className="border border-[#e5e5e5] rounded-2xl p-10 hover:border-[#0a0a0a]/25 hover:shadow-sm transition-all duration-300">
+              <p className="text-xs font-mono text-[#c0c0c0] mb-8">02</p>
+              <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">{reasons[1].title}</h3>
+              <p className="text-sm text-[#737373] leading-relaxed">{reasons[1].description}</p>
+            </AnimateIn>
+
+            {/* Card 03 — full width, horizontal */}
+            <AnimateIn delay={3} className="md:col-span-3 border border-[#e5e5e5] rounded-2xl p-10 hover:border-[#0a0a0a]/25 hover:shadow-sm transition-all duration-300">
+              <div className="md:flex md:items-center md:gap-16">
+                <div className="shrink-0">
+                  <p className="text-xs font-mono text-[#c0c0c0] mb-6">03</p>
+                  <h3 className="text-xl font-semibold text-[#0a0a0a]">{reasons[2].title}</h3>
+                </div>
+                <div className="mt-4 md:mt-0 md:border-l md:border-[#e5e5e5] md:pl-16">
+                  <p className="text-sm text-[#737373] leading-relaxed max-w-xl">{reasons[2].description}</p>
                 </div>
               </div>
-            ))}
+            </AnimateIn>
           </div>
         </div>
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-32 relative overflow-hidden bg-slate-100">
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <p className="text-blue-600 text-xs font-semibold tracking-[0.2em] uppercase mb-6">Contact</p>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight tracking-tight mb-6">
-            まずは、<br className="md:hidden" />
-            お気軽にご相談ください。
-          </h2>
-          <p className="text-slate-500 text-lg mb-12 max-w-xl mx-auto leading-relaxed">
-            貴社の現状と課題をお聞きし、最適なサービスをご提案します。初回相談は無料です。
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-3 bg-blue-600 text-white px-10 py-4 rounded-full text-base font-semibold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"
-          >
-            無料相談を申し込む
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
+      <section className="bg-[#0a0a0a] bg-dot-grid py-36 border-t border-white/8">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <AnimateIn>
+            <span className="inline-flex items-center border border-white/10 rounded-full px-4 py-1.5 text-[11px] text-white/30 uppercase tracking-[0.25em] mb-8">
+              Contact
+            </span>
+            <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight tracking-tight mb-8">
+              まずは、<br />
+              <span className="text-white/30">お気軽にご相談ください。</span>
+            </h2>
+            <p className="text-white/35 text-base mb-12 max-w-md mx-auto leading-relaxed">
+              貴社の現状と課題をお聞きし、最適なサービスをご提案します。初回相談は無料です。
+            </p>
+            <Link href="/contact"
+              className="inline-flex items-center gap-2 text-sm text-black bg-white px-8 py-4 rounded-full hover:bg-white/90 transition-colors duration-200">
+              無料相談を申し込む
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </AnimateIn>
         </div>
       </section>
     </>

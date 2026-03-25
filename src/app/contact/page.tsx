@@ -55,7 +55,7 @@ export default function ContactPage() {
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1.5">
+                <label className="block text-sm font-medium text-[#0a0a0a] mb-1.5">
                   会社名
                 </label>
                 <input
@@ -63,12 +63,12 @@ export default function ContactPage() {
                   value={form.company}
                   onChange={(e) => setForm({ ...form, company: e.target.value })}
                   placeholder="株式会社〇〇"
-                  className="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-[#e5e5e5] rounded-xl px-4 py-3 text-sm text-[#0a0a0a] placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#0a0a0a] focus:border-[#0a0a0a] bg-white transition-colors"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1.5">
-                  お名前 <span className="text-red-500">*</span>
+                <label className="block text-sm font-medium text-[#0a0a0a] mb-1.5">
+                  お名前 <span className="text-[#0a0a0a]">*</span>
                 </label>
                 <input
                   type="text"
@@ -76,12 +76,12 @@ export default function ContactPage() {
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   placeholder="山田 太郎"
-                  className="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-[#e5e5e5] rounded-xl px-4 py-3 text-sm text-[#0a0a0a] placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#0a0a0a] focus:border-[#0a0a0a] bg-white transition-colors"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1.5">
-                  メールアドレス <span className="text-red-500">*</span>
+                <label className="block text-sm font-medium text-[#0a0a0a] mb-1.5">
+                  メールアドレス <span className="text-[#0a0a0a]">*</span>
                 </label>
                 <input
                   type="email"
@@ -89,17 +89,17 @@ export default function ContactPage() {
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   placeholder="example@company.com"
-                  className="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full border border-[#e5e5e5] rounded-xl px-4 py-3 text-sm text-[#0a0a0a] placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#0a0a0a] focus:border-[#0a0a0a] bg-white transition-colors"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1.5">
+                <label className="block text-sm font-medium text-[#0a0a0a] mb-1.5">
                   ご興味のあるサービス
                 </label>
                 <select
                   value={form.service}
                   onChange={(e) => setForm({ ...form, service: e.target.value })}
-                  className="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+                  className="w-full border border-[#e5e5e5] rounded-xl px-4 py-3 text-sm text-[#0a0a0a] focus:outline-none focus:ring-1 focus:ring-[#0a0a0a] focus:border-[#0a0a0a] bg-white transition-colors"
                 >
                   <option value="">選択してください</option>
                   <option value="consulting">マーケティングコンサルティング</option>
@@ -110,8 +110,8 @@ export default function ContactPage() {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1.5">
-                  お問い合わせ内容 <span className="text-red-500">*</span>
+                <label className="block text-sm font-medium text-[#0a0a0a] mb-1.5">
+                  お問い合わせ内容 <span className="text-[#0a0a0a]">*</span>
                 </label>
                 <textarea
                   required
@@ -119,16 +119,16 @@ export default function ContactPage() {
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   placeholder="ご相談内容・ご質問をご記入ください"
-                  className="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                  className="w-full border border-[#e5e5e5] rounded-xl px-4 py-3 text-sm text-[#0a0a0a] placeholder-[#a3a3a3] focus:outline-none focus:ring-1 focus:ring-[#0a0a0a] focus:border-[#0a0a0a] bg-white transition-colors resize-none"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors text-base"
+                className="w-full bg-[#0a0a0a] text-white py-4 rounded-xl font-semibold hover:bg-[#1a1a1a] transition-colors text-base"
               >
                 送信する
               </button>
-              <p className="text-xs text-slate-400 text-center">
+              <p className="text-xs text-[#a3a3a3] text-center">
                 送信いただいた情報は、お問い合わせへの返答にのみ使用します。
               </p>
             </form>

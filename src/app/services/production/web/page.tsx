@@ -67,23 +67,21 @@ export default function WebPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-slate-950 text-white overflow-hidden py-32 md:py-44">
-        <div className="absolute inset-0 bg-dot-grid opacity-30" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-blue-600/10 blur-[100px] -translate-y-1/3 translate-x-1/4" />
+      <section className="relative bg-[#0a0a0a] text-white overflow-hidden py-32 md:py-44">
         <div className="relative max-w-7xl mx-auto px-6">
-          <Link href="/services/production" className="inline-flex items-center gap-2 text-slate-500 text-sm hover:text-slate-300 transition-colors mb-10">
+          <Link href="/services/production" className="inline-flex items-center gap-2 text-white/30 text-sm hover:text-white transition-colors mb-10">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
             制作サービスへ戻る
           </Link>
-          <p className="text-blue-400 text-xs font-semibold tracking-[0.2em] uppercase mb-5">Web Production</p>
-          <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6 max-w-3xl">
+          <p className="text-white/40 text-xs tracking-[0.3em] uppercase mb-5">Web Production</p>
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6 max-w-3xl">
             見た目だけでなく、<br />
-            <span className="gradient-text">成果につながる</span><br />
+            <span>成果につながる</span><br />
             Webサイトを。
           </h1>
-          <p className="text-slate-400 text-lg leading-relaxed max-w-xl mb-14">
+          <p className="text-white/40 text-lg leading-relaxed max-w-xl mb-14">
             デザインの美しさはもちろん、SEO・UX・コンバージョンを三位一体で設計。公開後の運用・改善まで一気通貫でサポートします。
           </p>
           {/* Stats */}
@@ -91,7 +89,7 @@ export default function WebPage() {
             {stats.map((s) => (
               <div key={s.label}>
                 <p className="text-xl md:text-2xl font-black gradient-text mb-1">{s.value}</p>
-                <p className="text-slate-500 text-sm">{s.label}</p>
+                <p className="text-white/50 text-sm">{s.label}</p>
               </div>
             ))}
           </div>
@@ -102,7 +100,7 @@ export default function WebPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-blue-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">Problems</p>
+            <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Problems</p>
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mb-4">
               こんな課題、抱えていませんか？
             </h2>
@@ -112,36 +110,36 @@ export default function WebPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {problems.map((p, i) => (
-              <div key={i} className="flex gap-4 p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                <span className="shrink-0 inline-block bg-blue-100 text-blue-700 text-xs font-bold px-2.5 py-1 rounded-full h-fit">{p.label}</span>
-                <p className="text-slate-700 text-sm leading-relaxed">{p.text}</p>
+              <div key={i} className="flex gap-4 p-6 bg-[#fafafa] rounded-2xl border border-[#e5e5e5] hover:border-[#0a0a0a] transition-colors">
+                <span className="shrink-0 inline-block bg-[#0a0a0a] text-white text-xs font-bold px-2.5 py-1 rounded-full h-fit">{p.label}</span>
+                <p className="text-[#525252] text-sm leading-relaxed">{p.text}</p>
               </div>
             ))}
           </div>
-          <div className="mt-10 p-8 bg-blue-50 border border-blue-100 rounded-3xl text-center">
-            <p className="text-slate-800 text-lg font-bold mb-2">
-              解決のカギは、<span className="text-blue-600">「目的→設計→制作→改善」</span>の一貫したプロセスにあります。
+          <div className="mt-10 p-8 bg-[#0a0a0a] rounded-2xl text-center">
+            <p className="text-white text-lg font-bold mb-2">
+              解決のカギは、<span className="text-white font-bold">「目的→設計→制作→改善」</span>の一貫したプロセスにあります。
             </p>
-            <p className="text-slate-500 text-sm">制作前の要件定義と情報設計を丁寧に行うことで、公開後に成果を出し続けるサイトが生まれます。</p>
+            <p className="text-white/50 text-sm">制作前の要件定義と情報設計を丁寧に行うことで、公開後に成果を出し続けるサイトが生まれます。</p>
           </div>
         </div>
       </section>
 
       {/* Features */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-14">
-            <p className="text-blue-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">Features</p>
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
+            <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Features</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
               成果を生み出す<br />6つの取り組み
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
             {features.map((f) => (
               <div key={f.number} className="group bg-white border border-slate-200 p-7 rounded-3xl hover:border-blue-200 hover:shadow-xl hover:shadow-blue-50 transition-all duration-300">
-                <p className="text-5xl font-black text-slate-100 mb-4 leading-none group-hover:text-blue-50 transition-colors">{f.number}</p>
-                <h3 className="text-base font-bold text-slate-900 mb-3">{f.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{f.description}</p>
+                <p className="text-5xl font-bold text-[#e5e5e5] mb-4 leading-none">{f.number}</p>
+                <h3 className="text-base font-semibold text-[#0a0a0a] mb-3">{f.title}</h3>
+                <p className="text-sm text-[#737373] leading-relaxed">{f.description}</p>
               </div>
             ))}
           </div>
@@ -152,19 +150,19 @@ export default function WebPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-14">
-            <p className="text-blue-600 text-xs font-semibold tracking-[0.2em] uppercase mb-4">Process</p>
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">制作の流れ</h2>
+            <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Process</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">制作の流れ</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4">
             {steps.map((s, i) => (
               <div key={i} className="relative group">
-                <div className="bg-slate-50 border border-slate-100 p-6 rounded-3xl h-full hover:border-blue-100 hover:bg-white hover:shadow-lg hover:shadow-blue-50 transition-all duration-300 text-center">
-                  <p className="text-4xl font-black text-slate-100 mb-3 leading-none group-hover:text-blue-50 transition-colors">{s.step}</p>
-                  <h3 className="text-sm font-bold text-slate-900 mb-1.5">{s.title}</h3>
+                <div className="bg-[#fafafa] border border-[#e5e5e5] p-6 rounded-2xl h-full hover:border-[#0a0a0a] hover:bg-white transition-all duration-300 text-center">
+                  <p className="text-4xl font-bold text-[#e5e5e5] mb-3 leading-none">{s.step}</p>
+                  <h3 className="text-sm font-semibold text-[#0a0a0a] mb-1.5">{s.title}</h3>
                   <p className="text-slate-500 text-xs leading-relaxed">{s.desc}</p>
                 </div>
                 {i < steps.length - 1 && (
-                  <div className="hidden md:flex absolute top-1/2 -right-2 transform -translate-y-1/2 text-slate-300 z-10 bg-white">
+                  <div className="hidden md:flex absolute top-1/2 -right-2 transform -translate-y-1/2 text-[#d4d4d4] z-10 bg-white">
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
                     </svg>
@@ -177,18 +175,18 @@ export default function WebPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-slate-100 relative overflow-hidden">
+      <section className="py-24 bg-[#fafafa] border-t border-[#e5e5e5]">
         <div className="relative max-w-3xl mx-auto px-6 text-center">
-          <p className="text-blue-600 text-xs font-semibold tracking-[0.2em] uppercase mb-5">Contact</p>
-          <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-5 tracking-tight">
+          <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Contact</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] mb-5 tracking-tight">
             Webサイト制作のご相談はお気軽に
           </h2>
-          <p className="text-slate-500 mb-10 leading-relaxed">
+          <p className="text-[#737373] mb-10 leading-relaxed">
             目的・規模・ご予算などをお聞かせください。<br />最適なプランをご提案します。初回相談は無料です。
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-blue-600 text-white px-10 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"
+            className="inline-flex items-center gap-2 text-sm text-white bg-[#0a0a0a] px-8 py-4 rounded-full hover:bg-[#1a1a1a] transition-colors duration-200"
           >
             無料相談を申し込む
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

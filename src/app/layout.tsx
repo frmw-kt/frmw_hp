@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const geist = Geist({
-  variable: "--font-geist-sans",
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${geist.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-[var(--font-geist-sans)]">
+      <body className="min-h-full flex flex-col" style={{ fontFamily: "var(--font-sans)" }}>
         <Header />
         <main className="flex-1 pt-16">{children}</main>
         <Footer />
