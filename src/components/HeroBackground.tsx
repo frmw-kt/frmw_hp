@@ -2,10 +2,6 @@
 
 import { useEffect, useRef } from "react";
 
-interface Particle {
-  x: number; y: number; vx: number; vy: number; radius: number; opacity: number;
-}
-
 export default function HeroBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -16,61 +12,63 @@ export default function HeroBackground() {
     if (!ctx) return;
 
     let animationId: number;
-    let particles: Particle[] = [];
-    const COUNT = 60;
-    const MAX_DIST = 140;
+    let t = 0;
+    const LINE_COUNT = 55;
 
     const resize = () => {
       canvas.width = canvas.offsetWidth;
       canvas.height = canvas.offsetHeight;
     };
 
-    const init = () => {
-      particles = Array.from({ length: COUNT }, () => ({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.35,
-        vy: (Math.random() - 0.5) * 0.35,
-        radius: Math.random() * 1.2 + 0.4,
-        opacity: Math.random() * 0.4 + 0.15,
-      }));
-    };
-
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      for (const p of particles) {
-        p.x += p.vx;
-        p.y += p.vy;
-        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
-        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+      const W = canvas.width;
+      const H = canvas.height;
+
+      for (let i = 0; i < LINE_COUNT; i++) {
+        const progress = i / LINE_COUNT;
+        const baseY = progress * H;
+        const phase = progress * Math.PI * 5;
+
+        // 中央付近ほど明るく・振幅大
+        const centerFactor = 1 - Math.abs(progress - 0.5) * 2;
+        const opacity =
+          (0.08 + centerFactor * 0.22) *
+          (0.65 + Math.sin(t * 0.5 + phase * 1.2) * 0.35);
+        const amp = H * (0.022 + centerFactor * 0.065);
+
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255,255,255,${p.opacity})`;
-        ctx.fill();
-      }
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const d = Math.sqrt(dx * dx + dy * dy);
-          if (d < MAX_DIST) {
-            const alpha = (1 - d / MAX_DIST) * 0.12;
-            ctx.beginPath();
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(255,255,255,${alpha})`;
-            ctx.lineWidth = 0.6;
-            ctx.stroke();
-          }
+
+        for (let x = 0; x <= W; x += 3) {
+          const xn = x / W;
+          const y =
+            baseY +
+            Math.sin(xn * 5   + t * 1.0  + phase)        * amp +
+            Math.sin(xn * 2.2 - t * 0.55 + phase * 0.6)  * amp * 0.55 +
+            Math.sin(xn * 11  + t * 1.8  + phase * 1.3)  * amp * 0.22;
+
+          if (x === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
         }
+
+        ctx.strokeStyle = `rgba(255,255,255,${Math.max(0, opacity)})`;
+        ctx.lineWidth = 0.65;
+        ctx.stroke();
       }
+
+      t += 0.011;
       animationId = requestAnimationFrame(draw);
     };
 
-    const ro = new ResizeObserver(() => { resize(); init(); });
+    const ro = new ResizeObserver(() => resize());
     ro.observe(canvas);
-    resize(); init(); draw();
-    return () => { cancelAnimationFrame(animationId); ro.disconnect(); };
+    resize();
+    draw();
+
+    return () => {
+      cancelAnimationFrame(animationId);
+      ro.disconnect();
+    };
   }, []);
 
   return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />;

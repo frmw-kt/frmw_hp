@@ -88,13 +88,13 @@ export default function HomePage() {
             </span>
           </div>
           <h1 className="mt-8 mb-0">
-            <div className="hero-line text-[clamp(2.8rem,8vw,6.5rem)] font-bold leading-[1.03] tracking-tight text-white">
+            <div className="hero-line text-[clamp(2.5rem,7.2vw,5.8rem)] font-bold leading-[1.03] tracking-tight text-white">
               マーケティングで、
             </div>
-            <div className="hero-line text-[clamp(2.8rem,8vw,6.5rem)] font-bold leading-[1.03] tracking-tight text-white/20">
+            <div className="hero-line text-[clamp(2.5rem,7.2vw,5.8rem)] font-bold leading-[1.03] tracking-tight bg-gradient-to-r from-white/60 via-white/25 to-white/5 bg-clip-text text-transparent">
               ビジネスを
             </div>
-            <div className="hero-line text-[clamp(2.8rem,8vw,6.5rem)] font-bold leading-[1.03] tracking-tight text-white">
+            <div className="hero-line text-[clamp(2.5rem,7.2vw,5.8rem)] font-bold leading-[1.03] tracking-tight text-white">
               加速させる。
             </div>
           </h1>
