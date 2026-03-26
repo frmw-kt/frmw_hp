@@ -5,6 +5,8 @@
   --bg: #fafafa;
   --muted: #737373;
   --border: #e5e5e5;
+  --gold: #C9A84C;
+  --gold-dark: #A8892E;
 }
 
 * { box-sizing: border-box; }

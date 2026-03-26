@@ -16,7 +16,7 @@ const features = [
   {
     number: "02",
     title: "マーケティング戦略立案",
-    description: "STP分析・4P設計・KPI設定など体系的なフレームワークを用いて、調査結果に基づいた実行可能なマーケティング戦略を策定します。",
+    description: "STP分析・4P設計・KPI設定など体系的なフレームワークを用いて、調査結果に基づいた実行可能なマーケティング戦略の策定、WHO WHAT HOWを明確にします。",
     href: "/services/consulting/strategy",
   },
   {
@@ -87,7 +87,7 @@ export default function ConsultingPage() {
                 <p className="text-4xl font-bold text-[#e5e5e5] mb-4 leading-none">{f.number}</p>
                 <h3 className="text-base font-semibold text-[#0a0a0a] mb-3">{f.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-5">{f.description}</p>
-                <div className="flex items-center gap-2 text-blue-600 text-sm font-medium">
+                <div className="flex items-center gap-2 text-sm font-medium" style={{ color: "#C9A84C" }}>
                   <span>詳しく見る</span>
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

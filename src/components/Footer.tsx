@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-white/8">
           <div>
             <div className="mb-5">
-              <span className="text-white text-base font-bold tracking-tight">Framework</span>
+              <span className="text-base font-bold tracking-tight" style={{ color: "#C9A84C" }}>Framework</span>
             </div>
             <p className="text-white/40 text-sm leading-relaxed">
               マーケティングの力で、<br />クライアントの成長を支援します。

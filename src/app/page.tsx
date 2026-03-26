@@ -47,20 +47,16 @@ const reasons = [
     number: "01",
     title: "戦略から実行まで一貫支援",
     description: "単なる施策提案にとどまらず、戦略立案から実行・改善まで一気通貫でサポート。社内リソース不足を補いながら成果を出します。",
-    wide: true,
   },
   {
     number: "02",
     title: "データドリブンなアプローチ",
     description: "感覚ではなくデータと分析に基づいた意思決定で、確実に成果につながる施策を実行。ROIを常に可視化します。",
-    wide: false,
   },
   {
     number: "03",
     title: "サービスのワンストップ対応",
     description: "コンサル・運用・制作・教育を社内で完結。複数の外部委託先を管理するコスト・手間を解消します。",
-    wide: false,
-    full: true,
   },
 ];
 
@@ -73,6 +69,9 @@ const process = [
 
 const marqueeItems = ["Consulting", "Operations", "Production", "School", "Strategy", "Analytics", "Creative", "Growth"];
 
+const GOLD = "#C9A84C";
+const GOLD_DARK = "#A8892E";
+
 export default function HomePage() {
   return (
     <>
@@ -82,19 +81,20 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0a]/70" />
         <div className="relative max-w-7xl mx-auto px-6 py-32 w-full">
           <div className="hero-line">
-            <span className="inline-flex items-center gap-2.5 border border-white/12 rounded-full px-4 py-1.5 text-[11px] text-white/40 uppercase tracking-[0.25em]">
-              <span className="w-1.5 h-1.5 rounded-full bg-white/30 inline-block" />
+            <span className="inline-flex items-center gap-2.5 rounded-full px-4 py-1.5 text-[11px] uppercase tracking-[0.25em]"
+              style={{ border: "1px solid rgba(201,168,76,0.2)", color: `${GOLD}` }}>
+              <span className="w-1.5 h-1.5 rounded-full inline-block" style={{ background: "linear-gradient(135deg, #E2C16A 0%, #C9A84C 45%, #A8892E 100%)" }} />
               Marketing Support
             </span>
           </div>
           <h1 className="mt-8 mb-0">
-            <div className="hero-line text-[clamp(2.5rem,7.2vw,5.8rem)] font-bold leading-[1.03] tracking-tight text-white">
+            <div className="hero-line text-[clamp(2rem,7.2vw,5.8rem)] font-bold leading-[1.13] tracking-tight text-white">
               マーケティングで、
             </div>
-            <div className="hero-line text-[clamp(2.5rem,7.2vw,5.8rem)] font-bold leading-[1.03] tracking-tight bg-gradient-to-r from-white/60 via-white/25 to-white/5 bg-clip-text text-transparent">
+            <div className="hero-line text-[clamp(2rem,7.2vw,5.8rem)] font-bold leading-[1.13] tracking-tight bg-gradient-to-r from-white/60 via-white/25 to-white/5 bg-clip-text text-transparent">
               ビジネスを
             </div>
-            <div className="hero-line text-[clamp(2.5rem,7.2vw,5.8rem)] font-bold leading-[1.03] tracking-tight text-white">
+            <div className="hero-line text-[clamp(2rem,7.2vw,5.8rem)] font-bold leading-[1.13] tracking-tight text-white">
               加速させる。
             </div>
           </h1>
@@ -106,7 +106,8 @@ export default function HomePage() {
           </div>
           <div className="hero-line mt-8 flex flex-col sm:flex-row gap-4">
             <Link href="/contact"
-              className="inline-flex items-center gap-2 text-sm text-black bg-white px-7 py-3.5 rounded-full hover:bg-white/90 transition-all duration-300">
+              className="inline-flex items-center gap-2 text-sm font-semibold text-black px-7 py-3.5 rounded-full transition-all duration-300"
+              style={{ background: "linear-gradient(135deg, #E2C16A 0%, #C9A84C 45%, #A8892E 100%)" }}>
               無料相談を申し込む
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -142,7 +143,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-white/8">
             {stats.map((s, i) => (
               <AnimateIn key={s.label} delay={(i + 1) as 1|2|3|4} className="py-14 px-8 text-center">
-                <p className="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-3">
+                <p className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-3" style={{ color: GOLD }}>
                   {s.value}
                 </p>
                 <p className="text-xs text-white/25 uppercase tracking-[0.2em]">{s.label}</p>
@@ -175,7 +176,7 @@ export default function HomePage() {
                 <Link href={s.href} className="service-row group block py-8 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-8">
-                      <span className="text-xs font-mono text-[#c0c0c0] w-6 shrink-0">{s.number}</span>
+                      <span className="text-xs font-mono w-6 shrink-0" style={{ color: GOLD_DARK }}>{s.number}</span>
                       <h3 className="text-xl md:text-2xl font-semibold text-[#0a0a0a] group-hover:translate-x-1.5 transition-transform duration-300">
                         {s.title}
                       </h3>
@@ -214,8 +215,8 @@ export default function HomePage() {
           </AnimateIn>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/8">
             {process.map((p, i) => (
-              <AnimateIn key={p.step} delay={(i + 1) as 1|2|3|4} className="bg-[#0a0a0a] p-8 md:p-10 group hover:bg-white/4 transition-colors duration-300">
-                <p className="text-xs font-mono text-white/20 mb-8">{p.step}</p>
+              <AnimateIn key={p.step} delay={(i + 1) as 1|2|3|4} className="bg-[#0a0a0a] p-8 md:p-10 hover:bg-white/4 transition-colors duration-300">
+                <p className="text-xs font-mono mb-8" style={{ color: GOLD }}>{p.step}</p>
                 <h3 className="text-lg font-semibold text-white mb-3">{p.title}</h3>
                 <p className="text-sm text-white/35 leading-relaxed">{p.desc}</p>
               </AnimateIn>
@@ -238,18 +239,17 @@ export default function HomePage() {
             </div>
           </AnimateIn>
 
-          {/* Bento grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Card 01 — wide */}
             <AnimateIn delay={1} className="md:col-span-2 border border-[#e5e5e5] rounded-2xl p-10 hover:border-[#0a0a0a]/25 hover:shadow-sm transition-all duration-300">
-              <p className="text-xs font-mono text-[#c0c0c0] mb-8">01</p>
+              <p className="text-xs font-mono mb-8" style={{ color: GOLD_DARK }}>{reasons[0].number}</p>
               <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">{reasons[0].title}</h3>
               <p className="text-sm text-[#737373] leading-relaxed max-w-md">{reasons[0].description}</p>
             </AnimateIn>
 
             {/* Card 02 */}
             <AnimateIn delay={2} className="border border-[#e5e5e5] rounded-2xl p-10 hover:border-[#0a0a0a]/25 hover:shadow-sm transition-all duration-300">
-              <p className="text-xs font-mono text-[#c0c0c0] mb-8">02</p>
+              <p className="text-xs font-mono mb-8" style={{ color: GOLD_DARK }}>{reasons[1].number}</p>
               <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">{reasons[1].title}</h3>
               <p className="text-sm text-[#737373] leading-relaxed">{reasons[1].description}</p>
             </AnimateIn>
@@ -258,7 +258,7 @@ export default function HomePage() {
             <AnimateIn delay={3} className="md:col-span-3 border border-[#e5e5e5] rounded-2xl p-10 hover:border-[#0a0a0a]/25 hover:shadow-sm transition-all duration-300">
               <div className="md:flex md:items-center md:gap-16">
                 <div className="shrink-0">
-                  <p className="text-xs font-mono text-[#c0c0c0] mb-6">03</p>
+                  <p className="text-xs font-mono mb-6" style={{ color: GOLD_DARK }}>{reasons[2].number}</p>
                   <h3 className="text-xl font-semibold text-[#0a0a0a]">{reasons[2].title}</h3>
                 </div>
                 <div className="mt-4 md:mt-0 md:border-l md:border-[#e5e5e5] md:pl-16">
@@ -274,7 +274,8 @@ export default function HomePage() {
       <section className="bg-[#0a0a0a] bg-dot-grid py-36 border-t border-white/8">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimateIn>
-            <span className="inline-flex items-center border border-white/10 rounded-full px-4 py-1.5 text-[11px] text-white/30 uppercase tracking-[0.25em] mb-8">
+            <span className="inline-flex items-center rounded-full px-4 py-1.5 text-[11px] uppercase tracking-[0.25em] mb-8"
+              style={{ border: "1px solid rgba(201,168,76,0.2)", color: GOLD }}>
               Contact
             </span>
             <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight tracking-tight mb-8">
@@ -285,7 +286,8 @@ export default function HomePage() {
               貴社の現状と課題をお聞きし、最適なサービスをご提案します。初回相談は無料です。
             </p>
             <Link href="/contact"
-              className="inline-flex items-center gap-2 text-sm text-black bg-white px-8 py-4 rounded-full hover:bg-white/90 transition-colors duration-200">
+              className="inline-flex items-center gap-2 text-sm font-semibold text-black px-8 py-4 rounded-full transition-all duration-200 hover:opacity-90"
+              style={{ background: "linear-gradient(135deg, #E2C16A 0%, #C9A84C 45%, #A8892E 100%)" }}>
               無料相談を申し込む
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

@@ -76,7 +76,7 @@ export default function ProductionPage() {
                   <h3 className="text-base font-semibold text-[#0a0a0a] mb-3">{f.title}</h3>
                   <p className="text-sm text-[#737373] leading-relaxed">{f.description}</p>
                   {f.href && (
-                    <div className="mt-5 flex items-center gap-2 text-blue-600 text-sm font-medium">
+                    <div className="mt-5 flex items-center gap-2 text-sm font-medium" style={{ color: "#C9A84C" }}>
                       <span>詳しく見る</span>
                       <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

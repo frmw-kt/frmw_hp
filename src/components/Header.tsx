@@ -19,7 +19,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
         <Link href="/" className="flex items-center">
-          <span className="text-white text-base font-bold tracking-tight">Framework</span>
+          <span className="text-base font-bold tracking-tight" style={{ color: "#C9A84C" }}>Framework</span>
         </Link>
 
         {/* Desktop */}
