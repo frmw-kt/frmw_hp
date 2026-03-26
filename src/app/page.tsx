@@ -143,8 +143,15 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-white/8">
             {stats.map((s, i) => (
               <AnimateIn key={s.label} delay={(i + 1) as 1|2|3|4} className="py-14 px-8 text-center">
-                <p className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-3" style={{ color: GOLD }}>
-                  {s.value}
+                <p className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight mb-3" style={{ color: GOLD }}>
+                  {(() => {
+                    const hasSign = s.value.startsWith('+') || s.value.startsWith('-');
+                    const sign = hasSign ? s.value[0] : '';
+                    const rest = hasSign ? s.value.slice(1) : s.value;
+                    const num = rest.replace('%', '');
+                    const hasPct = rest.includes('%');
+                    return <>{sign && <span className="text-[0.6em]">{sign}</span>}{num}{hasPct && <span className="text-[0.6em]">%</span>}</>;
+                  })()}
                 </p>
                 <p className="text-xs text-white/25 uppercase tracking-[0.2em]">{s.label}</p>
               </AnimateIn>

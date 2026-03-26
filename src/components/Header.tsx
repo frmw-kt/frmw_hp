@@ -25,7 +25,7 @@ export default function Header() {
         {/* Desktop */}
         <nav className="hidden md:flex items-center gap-8">
           <Link href="/" className="text-sm text-white/50 hover:text-white transition-colors duration-200 underline-draw">
-            トップ
+            Top
           </Link>
           <div
             className="relative"
@@ -33,7 +33,7 @@ export default function Header() {
             onMouseLeave={() => setServicesOpen(false)}
           >
             <button className="text-sm text-white/50 hover:text-white transition-colors duration-200 flex items-center gap-1.5">
-              サービス
+              Services
               <svg className={`w-3 h-3 transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
@@ -71,7 +71,7 @@ export default function Header() {
 
       {menuOpen && (
         <div className="md:hidden bg-[#0a0a0a] border-t border-white/8 px-6 py-5 space-y-0.5">
-          <Link href="/" className="block py-3 text-sm text-white/50 hover:text-white" onClick={() => setMenuOpen(false)}>トップ</Link>
+          <Link href="/" className="block py-3 text-sm text-white/50 hover:text-white" onClick={() => setMenuOpen(false)}>Top</Link>
           <p className="pt-4 pb-2 text-xs text-white/20 uppercase tracking-widest">Services</p>
           {services.map((s) => (
             <Link key={s.href} href={s.href} className="block py-3 text-sm text-white/50 hover:text-white pl-2" onClick={() => setMenuOpen(false)}>
