@@ -278,8 +278,8 @@ export default function HomePage() {
               Contact
             </span>
             <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight tracking-tight mb-8">
-              まずは、<br />
-              <span className="text-white/30">お気軽にご相談ください。</span>
+              まずは<br />
+              <span className="text-white/30">お気軽にご相談ください</span>
             </h2>
             <p className="text-white/35 text-base mb-12 max-w-md mx-auto leading-relaxed">
               貴社の現状と課題をお聞きし、最適なサービスをご提案します。初回相談は無料です。
