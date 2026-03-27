@@ -39,15 +39,17 @@ export default function ContactPage() {
     <>
       <section className="bg-[#0a0a0a] text-white py-24 md:py-36">
         <div className="max-w-7xl mx-auto px-6">
-          <Link href="/" className="inline-flex items-center text-white/40 text-sm hover:text-white transition-colors mb-8">
-            <svg className="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            トップへ戻る
-          </Link>
-          <span className="inline-flex items-center border border-white/10 rounded-full px-3 py-1 text-[11px] text-white/30 uppercase tracking-[0.2em] mb-6">
-            Contact
-          </span>
+          <div className="flex flex-col items-start gap-6 mb-8">
+            <Link href="/" className="inline-flex items-center text-white/40 text-sm hover:text-white transition-colors">
+              <svg className="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              トップへ戻る
+            </Link>
+            <span className="inline-flex items-center border border-white/10 rounded-full px-3 py-1 text-[11px] text-white/30 uppercase tracking-[0.2em]">
+              Contact
+            </span>
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">お問い合わせ</h1>
           <p className="text-white/40 text-base max-w-md leading-relaxed">
             サービスに関するご質問・ご相談はこちらからお気軽にどうぞ。通常2営業日以内にご返答します。

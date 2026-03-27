@@ -52,6 +52,9 @@ export default function Header() {
               </div>
             </div>
           </div>
+          <Link href="/about" className="text-sm text-white/50 hover:text-white transition-colors duration-200 underline-draw">
+            About
+          </Link>
           <Link href="/contact"
             className="text-sm text-white border border-white/20 px-5 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-200">
             お問い合わせ
@@ -72,6 +75,7 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden bg-[#0a0a0a] border-t border-white/8 px-6 py-5 space-y-0.5">
           <Link href="/" className="block py-3 text-sm text-white/50 hover:text-white" onClick={() => setMenuOpen(false)}>Top</Link>
+          <Link href="/about" className="block py-3 text-sm text-white/50 hover:text-white" onClick={() => setMenuOpen(false)}>About</Link>
           <p className="pt-4 pb-2 text-xs text-white/20 uppercase tracking-widest">Services</p>
           {services.map((s) => (
             <Link key={s.href} href={s.href} className="block py-3 text-sm text-white/50 hover:text-white pl-2" onClick={() => setMenuOpen(false)}>
