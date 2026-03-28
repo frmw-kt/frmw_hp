@@ -123,6 +123,43 @@ body {
 }
 .underline-draw:hover::after { transform: scaleX(1); }
 
+/* ── Article body ── */
+.article-body {
+  color: var(--fg);
+  line-height: 1.9;
+  font-size: 1rem;
+}
+.article-body h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--gold);
+  color: var(--fg);
+}
+.article-body h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 2rem 0 0.75rem;
+  color: var(--fg);
+}
+.article-body p {
+  margin: 0 0 1.25rem;
+  color: #404040;
+}
+.article-body ul,
+.article-body ol {
+  margin: 0 0 1.25rem 1.5rem;
+  color: #404040;
+}
+.article-body li {
+  margin-bottom: 0.4rem;
+}
+.article-body strong {
+  font-weight: 600;
+  color: var(--fg);
+}
+
 /* ── Dot grid ── */
 .bg-dot-grid {
   background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
