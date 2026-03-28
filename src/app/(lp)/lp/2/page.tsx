@@ -83,28 +83,6 @@ const risks = [
   },
 ];
 
-const coverages = [
-  {
-    agency: "広告代理店A",
-    handles: "リスティング・ディスプレイ広告",
-    framework: "コンサルティング＋運用代行",
-  },
-  {
-    agency: "SNS運用会社B",
-    handles: "Instagram・X・TikTok運用",
-    framework: "運用代行",
-  },
-  {
-    agency: "SEO会社C",
-    handles: "SEO対策・コンテンツ制作",
-    framework: "コンサルティング＋運用代行",
-  },
-  {
-    agency: "Web制作会社D",
-    handles: "LP・Webサイト制作",
-    framework: "制作",
-  },
-];
 
 const services = [
   {
@@ -292,69 +270,6 @@ export default function Lp2Page() {
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 比較表 ── */}
-      <section className="bg-[#fafafa] border-y border-[#e5e5e5] px-6 py-24">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#C9A84C" }}>Comparison</p>
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
-            複数社 vs Framework、どちらが合理的？
-          </h2>
-          <p className="text-[#737373] text-sm text-center mb-12">
-            複数代理店に分散していた業務を、Frameworkが1社でカバーします。
-          </p>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr>
-                  <th className="text-left text-xs text-[#737373] font-medium py-3 px-4 bg-[#f0f0f0] rounded-tl-xl border border-[#e5e5e5]">
-                    従来の依頼先
-                  </th>
-                  <th className="text-left text-xs text-[#737373] font-medium py-3 px-4 bg-[#f0f0f0] border-y border-[#e5e5e5]">
-                    担当業務
-                  </th>
-                  <th className="text-left text-xs font-bold py-3 px-4 rounded-tr-xl border border-[#e5e5e5] text-white"
-                    style={{ background: GOLD }}>
-                    Frameworkの対応
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {coverages.map((c, i) => (
-                  <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#fafafa]"}>
-                    <td className="py-4 px-4 border border-[#e5e5e5] text-[#0a0a0a] font-medium text-xs">
-                      {c.agency}
-                    </td>
-                    <td className="py-4 px-4 border border-[#e5e5e5] text-[#737373] text-xs">
-                      {c.handles}
-                    </td>
-                    <td className="py-4 px-4 border border-[#e5e5e5] text-xs font-medium" style={{ color: "#C9A84C" }}>
-                      ✓ {c.framework}
-                    </td>
-                  </tr>
-                ))}
-                <tr className="bg-white">
-                  <td colSpan={2} className="py-4 px-4 border border-[#e5e5e5] text-[#0a0a0a] font-bold text-xs">
-                    合計：4社との契約・管理・調整コスト
-                  </td>
-                  <td className="py-4 px-4 border border-[#e5e5e5] text-xs font-bold" style={{ color: "#C9A84C" }}>
-                    → Framework 1社に集約
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div className="mt-10 text-center">
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 text-sm font-medium text-white px-8 py-4 rounded-full transition-opacity hover:opacity-80"
-              style={{ background: GOLD }}
-            >
-              無料で相談してみる
             </a>
           </div>
         </div>
