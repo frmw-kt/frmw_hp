@@ -29,7 +29,7 @@ const risks = [
       </svg>
     ),
     title: "競争原理が働かず、コストが最適化されない",
-    desc: "「他の代理店に変えるかもしれない」という緊張感がなければ、代理店は現状維持で満足してしまいます。広告費の無駄を指摘されることも減り、あなたの予算が非効率なまま消費され続けます。契約を継続してもらうことが代理店の目標になりがちな構造的な問題があります。",
+    desc: "情報の非対称性から広告費の無駄を指摘することは難しく、予算が非効率なまま消費されていたり、市場感よりも高い顧客獲得単価になっていても気づくのが困難。契約を継続してもらうことが代理店の目標になりがちな構造的な問題があります。",
     symptoms: [
       "広告費の内訳について深く説明されたことがない",
       "費用対効果の改善提案がほとんどない",
@@ -173,8 +173,8 @@ export default function Lp2Page() {
           しませんか？
         </h1>
         <p className="text-white/50 text-base leading-relaxed max-w-xl mx-auto mb-4">
-          1社に任せきりでは、視野が狭まり、競争原理も働きません。<br />
-          戦略・広告・SNS・SEO・制作——すべてを一気通貫で担える<br className="hidden sm:block" />
+          既存の代理店を活用しながら、<br />
+          複数社体制による圧倒的成長を実現しませんか？<br className="hidden sm:block" />
           <span className="text-white/80 font-medium">セカンドオピニオンにFrameworkを。</span>
         </p>
         <a
@@ -295,7 +295,7 @@ export default function Lp2Page() {
               {/* 既存代理店 */}
               <div className="flex-1 bg-white border border-[#e5e5e5] rounded-xl p-5 text-center">
                 <p className="text-xs text-[#737373] mb-2">既存の代理店</p>
-                <p className="text-3xl font-bold text-[#0a0a0a] mb-1">75<span className="text-lg">%</span></p>
+                <p className="text-3xl font-bold text-[#0a0a0a] mb-1">80<span className="text-lg">%</span></p>
                 <p className="text-xs text-[#737373]">現状維持・継続運用</p>
               </div>
               {/* 矢印 */}
@@ -306,12 +306,12 @@ export default function Lp2Page() {
               {/* Framework */}
               <div className="flex-1 border rounded-xl p-5 text-center text-white" style={{ background: GOLD }}>
                 <p className="text-xs text-white/80 mb-2">Framework</p>
-                <p className="text-3xl font-bold mb-1">25<span className="text-lg">%</span></p>
+                <p className="text-3xl font-bold mb-1">20<span className="text-lg">%</span></p>
                 <p className="text-xs text-white/80">まずここから試す</p>
               </div>
             </div>
             <p className="text-xs text-[#737373] text-center">
-              ※配分はご予算・施策内容に応じて柔軟に設計します。10〜20%からでもスタート可能です。
+              ※配分はご予算・施策内容に応じて柔軟に設計します。10〜15%からでもスタート可能です。
             </p>
           </div>
 
@@ -442,7 +442,7 @@ export default function Lp2Page() {
           <h2 className="text-2xl md:text-3xl font-bold text-center text-white mb-3">まずは無料相談</h2>
           <p className="text-white/40 text-sm text-center mb-10 leading-relaxed">
             現在の代理店構成・課題・ご予算などをお聞かせください。<br />
-            最適な体制を1営業日以内にご提案します。
+            最適な体制を3営業日以内にご提案します。
           </p>
 
           {status === "sent" ? (
@@ -456,7 +456,7 @@ export default function Lp2Page() {
                 </svg>
               </div>
               <p className="font-bold text-lg text-white mb-2">送信が完了しました</p>
-              <p className="text-white/40 text-sm">1営業日以内にご連絡いたします。</p>
+              <p className="text-white/40 text-sm">3営業日以内にご連絡いたします。</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
