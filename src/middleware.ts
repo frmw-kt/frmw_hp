@@ -8,6 +8,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // /proposal/demo はスキップ（ポートフォリオ公開用）
+  if (pathname === "/proposal/demo") {
+    return NextResponse.next();
+  }
+
   // /proposal/[slug] を保護
   if (pathname.match(/^\/proposal\/[^/]+/)) {
     const token = request.cookies.get("proposal_token")?.value;
