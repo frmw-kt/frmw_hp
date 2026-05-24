@@ -5,7 +5,7 @@ import NeuralNetworkAvatar from "@/components/NeuralNetworkAvatar";
 
 export const metadata: Metadata = {
   title: "About | Framework",
-  description: "Framework代表・寺本一真のプロフィール。中小企業・個人事業主・フリーランス向けマーケティング支援を個人事業主として行っています。",
+  description: "Framework代表・寺本一真のプロフィール。マーケティング支援とプロダクト開発を行っています。",
 };
 
 const GOLD = "#C9A84C";
@@ -39,9 +39,8 @@ const companyInfo = [
   { label: "開業",     value: "2026年3月" },
   { label: "代表",     value: "寺本 一真" },
   { label: "所在地",   value: "愛知県名古屋市" },
-  { label: "事業形態", value: "個人事業主" },
   { label: "事業内容", value: "マーケティングコンサルティング・運用代行・制作・オンラインスクール" },
-  { label: "対応規模", value: "年商数千万〜数億円規模の中小企業・個人事業主・フリーランス" },
+  { label: "対応規模", value: "スタートアップから成長企業まで" },
 ];
 
 export default function AboutPage() {
@@ -62,8 +61,8 @@ export default function AboutPage() {
             <span className="text-white/30">マーケティングで実現する。</span>
           </h1>
           <p className="text-white/40 text-lg leading-relaxed max-w-xl">
-            個人事業主として、中小企業・フリーランス・個人事業主のマーケティング課題に向き合います。
-            大手代理店では断られる規模感でも、成果にこだわった支援を提供します。
+            マーケティング支援とプロダクト開発を通じて、
+            クライアントのビジネス成長を成果で証明します。
           </p>
         </div>
       </section>
@@ -85,13 +84,13 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <AnimateIn delay={1}>
               <p className="text-[clamp(1.6rem,3.5vw,2.8rem)] font-bold text-[#0a0a0a] leading-snug tracking-tight">
-                「売れる仕組み」を<br />小さな事業にこそ。
+                「売れる仕組み」を<br />すべての事業に。
               </p>
             </AnimateIn>
             <AnimateIn delay={2}>
               <p className="text-[#737373] text-base leading-[2] max-w-md">
-                年商数千万〜数億円規模の中小企業・個人事業主・フリーランスが、大手と戦えるマーケティング力を持てるように——それが Framework の使命です。
-                コンサルティング・運用・制作・教育という4つの軸で、売上を伸ばすために必要なすべてをワンストップで支援します。
+                どんな規模の事業でも、正しいマーケティングと優れたプロダクトがあれば成長できる——それが Framework の使命です。
+                コンサルティング・運用・制作・教育・アプリ開発という軸で、ビジネスの成長に必要なすべてをワンストップで支援します。
               </p>
             </AnimateIn>
           </div>
@@ -127,8 +126,8 @@ export default function AboutPage() {
                   どれほど優れた製品やサービスも、正しく届けられなければ存在しないも同然です。
                 </p>
                 <p>
-                  Framework は個人事業として2026年3月に開業しました。大手代理店での経験を経て、むしろ支援が手薄になりがちな中小・個人規模のビジネスにこそ、本質的なマーケティング支援が必要だという確信から立ち上げました。
-                  月間8,000万円規模の広告運用経験と、データドリブンなアプローチを月5万円〜の手の届く価格で提供します。
+                  Framework は2026年3月に立ち上げました。大手代理店での広告運用・マーケティング支援の経験を活かし、成果にこだわったパートナーシップを提供することを目的に創業しました。
+                  月間8,000万円規模の広告運用経験と、データドリブンなアプローチでクライアントの成長を支援します。
                 </p>
                 <p>
                   「マーケティングで困ったら Framework」——そう言っていただけるパートナーであり続けることが誇りです。

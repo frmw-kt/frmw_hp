@@ -1,18 +1,39 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
-const services = [
-  { name: "マーケティングコンサルティング", href: "/services/consulting" },
-  { name: "運用代行", href: "/services/operations" },
-  { name: "制作", href: "/services/production" },
-  { name: "スクール", href: "/services/school" },
+const serviceCategories = [
+  {
+    label: "マーケティング",
+    items: [
+      { name: "マーケティングコンサルティング", href: "/services/consulting" },
+      { name: "運用代行", href: "/services/operations" },
+      { name: "制作", href: "/services/production" },
+      { name: "スクール", href: "/services/school" },
+      { name: "広告運用管理（adops）", href: "/services/adops" },
+    ],
+  },
+  {
+    label: "プロダクト",
+    items: [
+      { name: "アプリ開発", href: "/services/app-development" },
+    ],
+  },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleServicesEnter = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    setServicesOpen(true);
+  };
+  const handleServicesLeave = () => {
+    closeTimer.current = setTimeout(() => setServicesOpen(false), 150);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a] border-b border-white/8">
@@ -29,8 +50,8 @@ export default function Header() {
           </Link>
           <div
             className="relative"
-            onMouseEnter={() => setServicesOpen(true)}
-            onMouseLeave={() => setServicesOpen(false)}
+            onMouseEnter={handleServicesEnter}
+            onMouseLeave={handleServicesLeave}
           >
             <button className="text-sm text-white/50 hover:text-white transition-colors duration-200 flex items-center gap-1.5">
               Services
@@ -38,16 +59,22 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-72 transition-all duration-200 origin-top ${servicesOpen ? "opacity-100 scale-y-100 pointer-events-auto" : "opacity-0 scale-y-95 pointer-events-none"}`}>
-              <div className="bg-[#0a0a0a] border border-white/10 rounded-xl py-1.5 shadow-2xl">
-                {services.map((s) => (
-                  <Link key={s.href} href={s.href}
-                    className="flex items-center justify-between px-5 py-3 text-sm text-white/50 hover:text-white hover:bg-white/5 transition-colors duration-150">
-                    {s.name}
-                    <svg className="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
+            <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-80 transition-all duration-200 origin-top ${servicesOpen ? "opacity-100 scale-y-100 pointer-events-auto" : "opacity-0 scale-y-95 pointer-events-none"}`}>
+              <div className="bg-[#0a0a0a] border border-white/10 rounded-xl py-2 shadow-2xl">
+                {serviceCategories.map((cat, ci) => (
+                  <div key={cat.label}>
+                    {ci > 0 && <div className="my-1.5 border-t border-white/8" />}
+                    <p className="px-5 pt-2 pb-1 text-[10px] text-white/20 uppercase tracking-[0.2em]">{cat.label}</p>
+                    {cat.items.map((s) => (
+                      <Link key={s.href} href={s.href}
+                        className="flex items-center justify-between px-5 py-2.5 text-sm text-white/50 hover:text-white hover:bg-white/5 transition-colors duration-150">
+                        {s.name}
+                        <svg className="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    ))}
+                  </div>
                 ))}
               </div>
             </div>
@@ -84,11 +111,15 @@ export default function Header() {
           <Link href="/cases" className="block py-3 text-sm text-white/50 hover:text-white" onClick={() => setMenuOpen(false)}>Cases</Link>
           <Link href="/blog" className="block py-3 text-sm text-white/50 hover:text-white" onClick={() => setMenuOpen(false)}>Column</Link>
           <Link href="/about" className="block py-3 text-sm text-white/50 hover:text-white" onClick={() => setMenuOpen(false)}>About</Link>
-          <p className="pt-4 pb-2 text-xs text-white/20 uppercase tracking-widest">Services</p>
-          {services.map((s) => (
-            <Link key={s.href} href={s.href} className="block py-3 text-sm text-white/50 hover:text-white pl-2" onClick={() => setMenuOpen(false)}>
-              {s.name}
-            </Link>
+          {serviceCategories.map((cat, ci) => (
+            <div key={cat.label}>
+              <p className={`${ci === 0 ? "pt-4" : "pt-2"} pb-1 text-xs text-white/20 uppercase tracking-widest`}>{cat.label}</p>
+              {cat.items.map((s) => (
+                <Link key={s.href} href={s.href} className="block py-2.5 text-sm text-white/50 hover:text-white pl-2" onClick={() => setMenuOpen(false)}>
+                  {s.name}
+                </Link>
+              ))}
+            </div>
           ))}
           <div className="pt-4">
             <Link href="/contact" className="block text-center text-sm text-white border border-white/20 px-5 py-3 rounded-full" onClick={() => setMenuOpen(false)}>

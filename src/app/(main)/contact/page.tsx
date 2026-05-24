@@ -124,6 +124,8 @@ export default function ContactPage() {
                   <option value="operations">運用代行</option>
                   <option value="production">制作</option>
                   <option value="school">スクール</option>
+                  <option value="adops">広告運用管理（adops）</option>
+                  <option value="app-development">アプリ開発</option>
                   <option value="other">その他・未定</option>
                 </select>
               </div>

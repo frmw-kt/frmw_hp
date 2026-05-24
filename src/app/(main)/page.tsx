@@ -5,40 +5,64 @@ import AnimateIn from "@/components/AnimateIn";
 
 export const metadata: Metadata = {
   title: "Framework | マーケティング支援",
-  description: "年商数千万〜数億円規模の中小企業・個人事業主・フリーランス向けマーケティング支援。コンサルティング・運用代行・制作・スクールで成果を出します。",
+  description: "マーケティングの戦略設計から実行まで、コンサルティング・運用代行・制作・スクール・アプリ開発をワンストップで提供します。",
 };
 
 const stats = [
-  { value: "8,000万円", label: "運用経験・月間広告費" },
-  { value: "-68%",      label: "平均CPA改善" },
-  { value: "100%",      label: "継続率" },
-  { value: "+255%",     label: "平均CV数改善" },
+  { value: "8,000", unit: "万円", label: "運用経験・月間広告費" },
+  { value: "-68",     unit: "%",  label: "平均CPA改善" },
+  { value: "100",     unit: "%",  label: "継続率" },
+  { value: "+255",    unit: "%",  label: "平均CV数改善" },
 ];
 
-const services = [
+const serviceCategories = [
   {
-    number: "01",
-    title: "マーケティングコンサルティング",
-    description: "調査分析から戦略立案・施策設計・改善提案まで。データに基づく一気通貫のコンサルティングで、売上・リードを最大化します。",
-    href: "/services/consulting",
+    category: "Marketing",
+    label: "マーケティング事業",
+    items: [
+      {
+        number: "01",
+        title: "マーケティングコンサルティング",
+        description: "調査分析から戦略立案・施策設計・改善提案まで。データに基づく一気通貫のコンサルティングで、売上・リードを最大化します。",
+        href: "/services/consulting",
+      },
+      {
+        number: "02",
+        title: "運用代行",
+        description: "広告・SNS・SEO・アフィリエイト・CRMの運用を丸ごと代行。専任担当者が継続的に成果を追い求めます。",
+        href: "/services/operations",
+      },
+      {
+        number: "03",
+        title: "制作",
+        description: "LP・サイト・バナー・動画など、成果につながるクリエイティブを制作。ブランドを強化するビジュアルを届けます。",
+        href: "/services/production",
+      },
+      {
+        number: "04",
+        title: "スクール",
+        description: "現役プロが教える実践的なマーケティングスクール。個人の学習から企業研修まで幅広く対応します。",
+        href: "/services/school",
+      },
+      {
+        number: "05",
+        title: "広告運用管理（adops）",
+        description: "Meta・Google広告のデータをリアルタイムで可視化・自動化。レポート集計の工数をゼロにし、改善サイクルを加速するSaaSツール。",
+        href: "/services/adops",
+      },
+    ],
   },
   {
-    number: "02",
-    title: "運用代行",
-    description: "広告・SNS・SEO・アフィリエイト・CRMの運用を丸ごと代行。専門チームが継続的に成果を追い求めます。",
-    href: "/services/operations",
-  },
-  {
-    number: "03",
-    title: "制作",
-    description: "LP・サイト・バナー・動画など、成果につながるクリエイティブを制作。ブランドを強化するビジュアルを届けます。",
-    href: "/services/production",
-  },
-  {
-    number: "04",
-    title: "スクール",
-    description: "現役プロが教える実践的なマーケティングスクール。個人の学習から企業研修まで幅広く対応します。",
-    href: "/services/school",
+    category: "Product",
+    label: "プロダクト事業",
+    items: [
+      {
+        number: "01",
+        title: "アプリ開発",
+        description: "業務効率化・SaaS・データ活用など、ビジネス課題を解決するWebアプリをスモールスタートで開発します。MVPから本格プロダクトまで対応。",
+        href: "/services/app-development",
+      },
+    ],
   },
 ];
 
@@ -67,7 +91,7 @@ const process = [
   { step: "04", title: "改善",         desc: "データを基に継続的に検証・改善サイクルを回します。" },
 ];
 
-const marqueeItems = ["Consulting", "Operations", "Production", "School", "Strategy", "Analytics", "Creative", "Growth"];
+const marqueeItems = ["Consulting", "Operations", "Production", "School", "adops", "App Development", "Strategy", "Analytics", "Creative", "Growth"];
 
 const GOLD = "#C9A84C";
 const GOLD_DARK = "#A8892E";
@@ -100,8 +124,8 @@ export default function HomePage() {
           </h1>
           <div className="hero-line mt-10">
             <p className="text-white/40 text-base max-w-xs leading-relaxed">
-              年商数千万〜数億円規模の中小企業・個人事業主・フリーランス向け。
-              マーケティングの戦略設計から実行まで、一気通貫で支援します。
+              マーケティングの戦略設計から実行まで、
+              一気通貫で支援します。
             </p>
           </div>
           <div className="hero-line mt-8 flex flex-col sm:flex-row gap-4">
@@ -141,132 +165,170 @@ export default function HomePage() {
       <section className="bg-[#111] border-b border-white/8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-white/8">
-            {stats.map((s, i) => (
-              <AnimateIn key={s.label} delay={(i + 1) as 1|2|3|4} className="py-14 px-8 text-center">
-                <p className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-3" style={{ color: GOLD }}>
-                  {(() => {
-                    const hasSign = s.value.startsWith('+') || s.value.startsWith('-');
-                    const sign = hasSign ? s.value[0] : '';
-                    const rest = hasSign ? s.value.slice(1) : s.value;
-                    const num = rest.replace('%', '');
-                    const hasPct = rest.includes('%');
-                    return <>{sign && <span className="text-[0.65em]">{sign}</span>}{num}{hasPct && <span className="text-[0.55em]">%</span>}</>;
-                  })()}
-                </p>
-                <p className="text-xs text-white/25 uppercase tracking-[0.2em]">{s.label}</p>
-              </AnimateIn>
-            ))}
+            {stats.map((s, i) => {
+              const hasSign = s.value.startsWith('+') || s.value.startsWith('-');
+              const sign = hasSign ? s.value[0] : '';
+              const num = hasSign ? s.value.slice(1) : s.value;
+              return (
+                <AnimateIn key={s.label} delay={(i + 1) as 1|2|3|4} className="py-14 px-8 text-center">
+                  <p className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-3 whitespace-nowrap" style={{ color: GOLD }}>
+                    {sign && <span className="text-[0.65em]">{sign}</span>}
+                    {num}
+                    {s.unit && <span className="text-[0.55em]">{s.unit}</span>}
+                  </p>
+                  <p className="text-xs text-white/25 uppercase tracking-[0.2em]">{s.label}</p>
+                </AnimateIn>
+              );
+            })}
           </div>
-        </div>
-      </section>
-
-      {/* ── Pain Points ── */}
-      <section className="bg-[#fafafa] py-24 border-t border-[#e5e5e5]">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimateIn className="mb-12 pb-6 border-b border-[#e5e5e5]">
-            <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
-              For You
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
-              こんな課題を抱えていませんか？
-            </h2>
-          </AnimateIn>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              { icon: "📉", text: "広告を出しているのにCPAが下がらない・費用対効果が悪い" },
-              { icon: "🔍", text: "何から手をつければいいか分からず、マーケティング施策が場当たり的になっている" },
-              { icon: "👥", text: "マーケティングに割けるリソースがなく、本業以外が後回しになり続けている" },
-              { icon: "📊", text: "数字は集めているが分析・改善のPDCAが回せていない" },
-              { icon: "💡", text: "売上を伸ばしたいが、何をすれば効果があるのか判断できない" },
-              { icon: "🚀", text: "一人・少人数でも仕組みで売上が増える状態を作りたい" },
-            ].map((item, i) => (
-              <AnimateIn key={i} delay={(Math.min(i % 4 + 1, 4)) as 1|2|3|4}
-                className="flex items-start gap-4 p-6 bg-white border border-[#e5e5e5] rounded-2xl hover:border-[#0a0a0a]/20 transition-all duration-300">
-                <span className="text-2xl shrink-0 mt-0.5">{item.icon}</span>
-                <p className="text-sm text-[#0a0a0a] leading-relaxed font-medium">{item.text}</p>
-              </AnimateIn>
-            ))}
-          </div>
-          <AnimateIn className="mt-8 text-center">
-            <p className="text-sm text-[#737373] mb-5">これらの課題、Frameworkが解決します。月5万円〜、初回相談は無料です。</p>
-            <Link href="/contact"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-black px-7 py-3.5 rounded-full transition-all duration-300"
-              style={{ background: "linear-gradient(135deg, #E2C16A 0%, #C9A84C 45%, #A8892E 100%)" }}>
-              無料相談を申し込む
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-          </AnimateIn>
         </div>
       </section>
 
       {/* ── Services ── */}
-      <section id="services" className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimateIn className="flex items-end justify-between mb-12 pb-6 border-b border-[#e5e5e5]">
-            <div>
-              <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
-                Services
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
-                4つのサービス
-              </h2>
-            </div>
-            <p className="hidden md:block text-sm text-[#737373] max-w-xs text-right leading-relaxed">
-              中小企業・個人事業主・フリーランスに必要な<br />マーケティング支援をワンストップで。
-            </p>
-          </AnimateIn>
+      <section id="services">
+        {/* Section intro */}
+        <div className="bg-white pt-24 pb-12 border-b border-[#e5e5e5]">
+          <div className="max-w-7xl mx-auto px-6">
+            <AnimateIn className="flex items-end justify-between">
+              <div>
+                <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
+                  Services
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
+                  2つの事業領域
+                </h2>
+              </div>
+              <p className="hidden md:block text-sm text-[#737373] max-w-xs text-right leading-relaxed">
+                マーケティング支援に必要なすべてを、<br />ワンストップで提供します。
+              </p>
+            </AnimateIn>
+          </div>
+        </div>
 
-          <div className="divide-y divide-[#e5e5e5]">
-            {services.map((s, i) => (
-              <AnimateIn key={s.href} delay={(Math.min(i + 1, 5)) as 1|2|3|4|5}>
-                <Link href={s.href} className="service-row group block py-8 cursor-pointer">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-8">
-                      <span className="text-xs font-mono w-6 shrink-0" style={{ color: GOLD_DARK }}>{s.number}</span>
-                      <h3 className="text-xl md:text-2xl font-semibold text-[#0a0a0a] group-hover:translate-x-1.5 transition-transform duration-300">
-                        {s.title}
-                      </h3>
+        {/* Block 01 — Marketing (light) */}
+        <div className="relative bg-white py-16 overflow-hidden" style={{
+          backgroundImage: [
+            "radial-gradient(ellipse 55% 45% at 100% 0%, rgba(201,168,76,0.08) 0%, transparent 60%)",
+            "radial-gradient(ellipse 40% 35% at 0% 100%, rgba(201,168,76,0.05) 0%, transparent 55%)",
+            "linear-gradient(rgba(0,0,0,0.028) 1px, transparent 1px)",
+            "linear-gradient(90deg, rgba(0,0,0,0.028) 1px, transparent 1px)",
+          ].join(", "),
+          backgroundSize: "auto, auto, 52px 52px, 52px 52px",
+        }}>
+          <div className="max-w-7xl mx-auto px-6">
+            <AnimateIn className="flex items-start gap-6 md:gap-10 mb-10">
+              <span className="text-[5rem] md:text-[7rem] font-black leading-none select-none" style={{ color: "#f0f0f0" }}>01</span>
+              <div className="pt-3">
+                <p className="text-[10px] font-mono uppercase tracking-[0.25em] mb-2" style={{ color: GOLD }}>Marketing</p>
+                <h3 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-2">マーケティング事業</h3>
+                <p className="text-sm text-[#737373]">戦略設計から運用・制作・教育まで、売上を伸ばす仕組みをワンストップで構築します。</p>
+              </div>
+            </AnimateIn>
+            <div className="divide-y divide-[#e5e5e5] border-t border-[#e5e5e5]">
+              {serviceCategories[0].items.map((s, i) => (
+                <AnimateIn key={s.href} delay={(Math.min(i + 1, 5)) as 1|2|3|4|5}>
+                  <Link href={s.href} className="service-row group block py-7 cursor-pointer">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-8">
+                        <span className="text-xs font-mono w-6 shrink-0" style={{ color: GOLD_DARK }}>{s.number}</span>
+                        <h4 className="text-xl md:text-2xl font-semibold text-[#0a0a0a] group-hover:translate-x-1.5 transition-transform duration-300">
+                          {s.title}
+                        </h4>
+                      </div>
+                      <svg className="w-5 h-5 text-[#0a0a0a] shrink-0 opacity-20 group-hover:opacity-80 group-hover:translate-x-1 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
                     </div>
-                    <svg className="w-5 h-5 text-[#0a0a0a] shrink-0 opacity-20 group-hover:opacity-80 group-hover:translate-x-1 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </div>
-                  <div className="service-desc-wrap pl-14">
-                    <div className="service-desc-inner">
-                      <p className="text-sm text-[#737373] leading-relaxed pt-3 pb-1 max-w-xl">{s.description}</p>
+                    <div className="service-desc-wrap pl-14">
+                      <div className="service-desc-inner">
+                        <p className="text-sm text-[#737373] leading-relaxed pt-3 pb-1 max-w-xl">{s.description}</p>
+                      </div>
                     </div>
+                  </Link>
+                </AnimateIn>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Block 02 — Product (dark) */}
+        <div className="relative bg-[#0a0a0a] py-16 overflow-hidden" style={{
+          backgroundImage: [
+            "radial-gradient(ellipse 75% 55% at 50% -5%, rgba(201,168,76,0.13) 0%, transparent 65%)",
+            "linear-gradient(rgba(255,255,255,0.032) 1px, transparent 1px)",
+            "linear-gradient(90deg, rgba(255,255,255,0.032) 1px, transparent 1px)",
+          ].join(", "),
+          backgroundSize: "auto, 52px 52px, 52px 52px",
+        }}>
+          <div className="max-w-7xl mx-auto px-6">
+            <AnimateIn className="flex items-start gap-6 md:gap-10 mb-10">
+              <span className="text-[5rem] md:text-[7rem] font-black leading-none select-none text-white/5">02</span>
+              <div className="pt-3">
+                <p className="text-[10px] font-mono uppercase tracking-[0.25em] mb-2" style={{ color: GOLD }}>Product</p>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">プロダクト事業</h3>
+                <p className="text-sm text-white/40">ビジネス課題を解決するWebアプリをスモールスタートで開発します。</p>
+              </div>
+            </AnimateIn>
+
+            {/* Featured card */}
+            <AnimateIn delay={1}>
+              <Link href="/services/app-development"
+                className="group block border border-white/10 rounded-2xl p-10 md:p-14 hover:border-white/25 transition-all duration-300">
+                <div className="flex items-start justify-between gap-8 mb-8">
+                  <div>
+                    <span className="text-xs font-mono" style={{ color: GOLD }}>01</span>
+                    <h4 className="text-2xl md:text-4xl font-bold text-white mt-3 mb-4 group-hover:translate-x-1 transition-transform duration-300">
+                      アプリ開発
+                    </h4>
+                    <p className="text-base text-white/50 leading-relaxed max-w-xl">
+                      業務効率化・SaaS・データ活用など、ビジネス課題を解決するWebアプリをスモールスタートで開発。MVPから本格プロダクトまで対応します。
+                    </p>
                   </div>
-                </Link>
-              </AnimateIn>
-            ))}
+                  <svg className="w-6 h-6 text-white shrink-0 opacity-20 group-hover:opacity-80 group-hover:translate-x-1 transition-all duration-300 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
+                <div className="border-t border-white/8 pt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {[
+                    { label: "Webアプリ・SaaS", desc: "Next.js / React" },
+                    { label: "業務効率化システム", desc: "API連携・自動化" },
+                    { label: "データ活用・ML", desc: "Python / 機械学習" },
+                    { label: "スモールスタート", desc: "MVP → スケール" },
+                  ].map((item) => (
+                    <div key={item.label} className="border border-white/8 rounded-xl p-4">
+                      <p className="text-sm font-medium text-white/70 mb-1">{item.label}</p>
+                      <p className="text-xs text-white/30">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </Link>
+            </AnimateIn>
           </div>
         </div>
       </section>
 
       {/* ── Process ── */}
-      <section className="bg-[#0a0a0a] text-white py-24">
+      <section className="bg-white py-24 border-t border-[#e5e5e5]">
         <div className="max-w-7xl mx-auto px-6">
-          <AnimateIn className="flex items-end justify-between mb-16 pb-6 border-b border-white/8">
+          <AnimateIn className="flex items-end justify-between mb-16 pb-6 border-b border-[#e5e5e5]">
             <div>
-              <span className="inline-flex items-center border border-white/10 rounded-full px-3 py-1 text-[11px] text-white/30 uppercase tracking-[0.2em] mb-4">
+              <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
                 Process
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
                 支援の流れ
               </h2>
             </div>
-            <p className="hidden md:block text-sm text-white/30 max-w-xs text-right leading-relaxed">
+            <p className="hidden md:block text-sm text-[#737373] max-w-xs text-right leading-relaxed">
               ヒアリングから改善まで、<br />一貫してサポートします。
             </p>
           </AnimateIn>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[#e5e5e5]">
             {process.map((p, i) => (
-              <AnimateIn key={p.step} delay={(i + 1) as 1|2|3|4} className="bg-[#0a0a0a] p-8 md:p-10 hover:bg-white/4 transition-colors duration-300">
-                <p className="text-xs font-mono mb-8" style={{ color: GOLD }}>{p.step}</p>
-                <h3 className="text-lg font-semibold text-white mb-3">{p.title}</h3>
-                <p className="text-sm text-white/35 leading-relaxed">{p.desc}</p>
+              <AnimateIn key={p.step} delay={(i + 1) as 1|2|3|4} className="bg-white p-8 md:p-10 hover:bg-[#fafafa] transition-colors duration-300">
+                <p className="text-xs font-mono mb-8" style={{ color: GOLD_DARK }}>{p.step}</p>
+                <h3 className="text-lg font-semibold text-[#0a0a0a] mb-3">{p.title}</h3>
+                <p className="text-sm text-[#737373] leading-relaxed">{p.desc}</p>
               </AnimateIn>
             ))}
           </div>
