@@ -26,9 +26,31 @@ export function middleware(request: NextRequest) {
     }
   }
 
+  // /clients/[slug]/login はスキップ
+  if (pathname.match(/^\/clients\/[^/]+\/login$/)) {
+    return NextResponse.next();
+  }
+
+  // /clients/[slug] を保護
+  if (pathname.match(/^\/clients\/[^/]+/)) {
+    const slug = pathname.split("/")[2];
+    const authCookie = request.cookies.get("client_auth")?.value;
+    let authed = false;
+    try {
+      const parsed = JSON.parse(authCookie || "{}");
+      authed = !!parsed[slug];
+    } catch { /* ignore */ }
+
+    if (!authed) {
+      const loginUrl = new URL(`/clients/${slug}/login`, request.url);
+      loginUrl.searchParams.set("from", pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+  }
+
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/proposal/:path*"],
+  matcher: ["/proposal/:path*", "/clients/:path*"],
 };

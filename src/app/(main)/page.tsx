@@ -5,14 +5,14 @@ import AnimateIn from "@/components/AnimateIn";
 
 export const metadata: Metadata = {
   title: "Framework | マーケティング支援",
-  description: "コンサルティング・運用代行・制作・スクールの4つのサービスでマーケティングを支援します。",
+  description: "年商数千万〜数億円規模の中小企業・個人事業主・フリーランス向けマーケティング支援。コンサルティング・運用代行・制作・スクールで成果を出します。",
 };
 
 const stats = [
-  { value: "+400%", label: "平均売上高" },
-  { value: "-80%",  label: "平均CPA" },
-  { value: "100%",  label: "継続率" },
-  { value: "+50%",  label: "平均ROI" },
+  { value: "8,000万円", label: "運用経験・月間広告費" },
+  { value: "-68%",      label: "平均CPA改善" },
+  { value: "100%",      label: "継続率" },
+  { value: "+255%",     label: "平均CV数改善" },
 ];
 
 const services = [
@@ -100,8 +100,8 @@ export default function HomePage() {
           </h1>
           <div className="hero-line mt-10">
             <p className="text-white/40 text-base max-w-xs leading-relaxed">
-              コンサルティングから運用代行・制作・スクールまで。
-              貴社の課題に合わせた最適なマーケティング支援を提供します。
+              年商数千万〜数億円規模の中小企業・個人事業主・フリーランス向け。
+              マーケティングの戦略設計から実行まで、一気通貫で支援します。
             </p>
           </div>
           <div className="hero-line mt-8 flex flex-col sm:flex-row gap-4">
@@ -143,14 +143,14 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-white/8">
             {stats.map((s, i) => (
               <AnimateIn key={s.label} delay={(i + 1) as 1|2|3|4} className="py-14 px-8 text-center">
-                <p className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight mb-3" style={{ color: GOLD }}>
+                <p className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-3" style={{ color: GOLD }}>
                   {(() => {
                     const hasSign = s.value.startsWith('+') || s.value.startsWith('-');
                     const sign = hasSign ? s.value[0] : '';
                     const rest = hasSign ? s.value.slice(1) : s.value;
                     const num = rest.replace('%', '');
                     const hasPct = rest.includes('%');
-                    return <>{sign && <span className="text-[0.6em]">{sign}</span>}{num}{hasPct && <span className="text-[0.6em]">%</span>}</>;
+                    return <>{sign && <span className="text-[0.65em]">{sign}</span>}{num}{hasPct && <span className="text-[0.55em]">%</span>}</>;
                   })()}
                 </p>
                 <p className="text-xs text-white/25 uppercase tracking-[0.2em]">{s.label}</p>
@@ -160,8 +160,49 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Pain Points ── */}
+      <section className="bg-[#fafafa] py-24 border-t border-[#e5e5e5]">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimateIn className="mb-12 pb-6 border-b border-[#e5e5e5]">
+            <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
+              For You
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
+              こんな課題を抱えていませんか？
+            </h2>
+          </AnimateIn>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { icon: "📉", text: "広告を出しているのにCPAが下がらない・費用対効果が悪い" },
+              { icon: "🔍", text: "何から手をつければいいか分からず、マーケティング施策が場当たり的になっている" },
+              { icon: "👥", text: "マーケティングに割けるリソースがなく、本業以外が後回しになり続けている" },
+              { icon: "📊", text: "数字は集めているが分析・改善のPDCAが回せていない" },
+              { icon: "💡", text: "売上を伸ばしたいが、何をすれば効果があるのか判断できない" },
+              { icon: "🚀", text: "一人・少人数でも仕組みで売上が増える状態を作りたい" },
+            ].map((item, i) => (
+              <AnimateIn key={i} delay={(Math.min(i % 4 + 1, 4)) as 1|2|3|4}
+                className="flex items-start gap-4 p-6 bg-white border border-[#e5e5e5] rounded-2xl hover:border-[#0a0a0a]/20 transition-all duration-300">
+                <span className="text-2xl shrink-0 mt-0.5">{item.icon}</span>
+                <p className="text-sm text-[#0a0a0a] leading-relaxed font-medium">{item.text}</p>
+              </AnimateIn>
+            ))}
+          </div>
+          <AnimateIn className="mt-8 text-center">
+            <p className="text-sm text-[#737373] mb-5">これらの課題、Frameworkが解決します。月5万円〜、初回相談は無料です。</p>
+            <Link href="/contact"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-black px-7 py-3.5 rounded-full transition-all duration-300"
+              style={{ background: "linear-gradient(135deg, #E2C16A 0%, #C9A84C 45%, #A8892E 100%)" }}>
+              無料相談を申し込む
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </AnimateIn>
+        </div>
+      </section>
+
       {/* ── Services ── */}
-      <section id="services" className="bg-[#fafafa] py-24">
+      <section id="services" className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateIn className="flex items-end justify-between mb-12 pb-6 border-b border-[#e5e5e5]">
             <div>
@@ -173,7 +214,7 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="hidden md:block text-sm text-[#737373] max-w-xs text-right leading-relaxed">
-              マーケティング支援に必要なすべてを、<br />ワンストップで提供します。
+              中小企業・個人事業主・フリーランスに必要な<br />マーケティング支援をワンストップで。
             </p>
           </AnimateIn>
 
@@ -233,7 +274,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Why Us ── */}
-      <section className="bg-[#fafafa] py-24">
+      <section className="bg-[#fafafa] py-24 border-t border-[#e5e5e5]">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateIn className="flex items-end justify-between mb-12 pb-6 border-b border-[#e5e5e5]">
             <div>
@@ -290,7 +331,7 @@ export default function HomePage() {
               <span className="text-white/30">お気軽にご相談ください</span>
             </h2>
             <p className="text-white/35 text-base mb-12 max-w-md mx-auto leading-relaxed">
-              貴社の現状と課題をお聞きし、最適なサービスをご提案します。初回相談は無料です。
+              現状と課題をお聞きし、最適なプランをご提案します。月5万円〜対応可能。初回相談は無料です。
             </p>
             <Link href="/contact"
               className="inline-flex items-center gap-2 text-sm font-semibold text-black px-8 py-4 rounded-full transition-all duration-200 hover:opacity-90"

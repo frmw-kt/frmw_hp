@@ -46,11 +46,36 @@ const steps = [
   { step: "04", title: "実行支援", desc: "施策実行から改善まで伴走します" },
 ];
 
+const painPoints = [
+  "広告費をかけているのに問い合わせ・売上に繋がらない",
+  "「なんとなく」でマーケティング施策を実施しており、根拠がない",
+  "ターゲットや強みが整理されておらず、誰に何を届けているか不明確",
+  "競合と差別化できていない・価格競争に巻き込まれている",
+  "施策を実行しても効果検証ができず、改善が進まない",
+  "マーケティングと営業が連携できておらず、リードが無駄になっている",
+];
+
+const deliverables = [
+  { title: "市場・競合調査レポート", desc: "業界トレンド・競合ポジショニング・顧客インサイトを整理したレポート" },
+  { title: "マーケティング戦略書", desc: "STP分析・4P設計・KPI体系・施策ロードマップを含む戦略ドキュメント" },
+  { title: "施策実行プラン", desc: "チャネル別の具体的な施策・予算・スケジュールを明記したプランニングシート" },
+  { title: "月次効果検証レポート", desc: "KPI達成状況・改善施策・次月アクションを含む定期レポート" },
+];
+
+const faqs = [
+  { q: "料金はどのくらいですか？", a: "月額5万円〜対応しています。事業規模・支援内容によって異なりますので、まずはお気軽にご相談ください。" },
+  { q: "コンサルティングだけの依頼は可能ですか？", a: "可能です。戦略立案のみ、特定フェーズのみのスポット対応にも対応しています。" },
+  { q: "どのくらいの頻度で打ち合わせがありますか？", a: "基本は月2回（戦略確認・効果検証）ですが、プロジェクト状況に応じて柔軟に対応します。" },
+  { q: "マーケティング担当者がいなくても依頼できますか？", a: "はい。担当者不在の状態から支援を開始するケースが最も多いです。社内体制の整備もあわせてご提案します。" },
+  { q: "契約期間はどのくらいですか？", a: "最短3ヶ月からのご契約です。成果を出すために一定期間の継続が必要なため、基本は6ヶ月〜1年を推奨しています。" },
+];
+
 export default function ConsultingPage() {
   return (
     <>
       {/* Hero */}
       <section className="relative bg-[#0a0a0a] text-white overflow-hidden py-32 md:py-44">
+
         <div className="relative max-w-7xl mx-auto px-6">
           <Link href="/" className="inline-flex items-center gap-2 text-white/30 text-sm hover:text-white transition-colors mb-10">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -64,8 +89,28 @@ export default function ConsultingPage() {
             <span>コンサルティング</span>
           </h1>
           <p className="text-white/40 text-lg leading-relaxed max-w-xl">
-            戦略設計から実行支援まで一気通貫。データに基づく分析で、貴社マーケティングの課題を解決し、持続的な成長を実現します。
+            戦略設計から実行支援まで一気通貫。データに基づく分析で、あなたのビジネスのマーケティング課題を解決し、持続的な成長を実現します。
           </p>
+        </div>
+      </section>
+
+      {/* Pain Points */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-12">
+            <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Challenges</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">こんなお悩みありませんか？</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {painPoints.map((text, i) => (
+              <div key={i} className="flex items-start gap-3 p-6 bg-[#fafafa] border border-[#e5e5e5] rounded-2xl">
+                <span className="w-5 h-5 rounded-full border-2 border-[#C9A84C] flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#C9A84C]" />
+                </span>
+                <p className="text-sm text-[#0a0a0a] leading-relaxed">{text}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -121,6 +166,45 @@ export default function ConsultingPage() {
                     </svg>
                   </div>
                 )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Deliverables */}
+      <section className="py-24 bg-[#fafafa]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-12">
+            <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Deliverables</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">提供する成果物</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {deliverables.map((d, i) => (
+              <div key={i} className="p-8 bg-white border border-[#e5e5e5] rounded-2xl">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-xs font-mono text-[#A8892E]">0{i + 1}</span>
+                  <h3 className="text-base font-semibold text-[#0a0a0a]">{d.title}</h3>
+                </div>
+                <p className="text-sm text-[#737373] leading-relaxed pl-7">{d.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="mb-12">
+            <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">FAQ</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">よくある質問</h2>
+          </div>
+          <div className="divide-y divide-[#e5e5e5]">
+            {faqs.map((faq, i) => (
+              <div key={i} className="py-7">
+                <p className="text-base font-semibold text-[#0a0a0a] mb-3">Q. {faq.q}</p>
+                <p className="text-sm text-[#737373] leading-relaxed pl-4 border-l-2 border-[#C9A84C]">A. {faq.a}</p>
               </div>
             ))}
           </div>

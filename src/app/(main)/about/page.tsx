@@ -4,8 +4,8 @@ import AnimateIn from "@/components/AnimateIn";
 import NeuralNetworkAvatar from "@/components/NeuralNetworkAvatar";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "Frameworkのプロフィール・ミッション・バリューをご紹介します。",
+  title: "About | Framework",
+  description: "Framework代表・寺本一真のプロフィール。中小企業・個人事業主・フリーランス向けマーケティング支援を個人事業主として行っています。",
 };
 
 const GOLD = "#C9A84C";
@@ -20,7 +20,7 @@ const values = [
   {
     number: "02",
     title: "Data Driven",
-    description: "勘や経験だけに頼らず、データを根拠に意思決定します。再現性のある成功を積み重ねることが私たちの強みです。",
+    description: "勘や経験だけに頼らず、データを根拠に意思決定します。再現性のある成功を積み重ねることが強みです。",
   },
   {
     number: "03",
@@ -30,16 +30,18 @@ const values = [
   {
     number: "04",
     title: "Relentless Growth",
-    description: "マーケティングの潮流は常に変化します。私たちは学び続け、最新の知見とテクノロジーを現場に届けます。",
+    description: "マーケティングの潮流は常に変化します。最新の知見とテクノロジーを常に現場に取り入れ続けます。",
   },
 ];
 
 const companyInfo = [
-  { label: "ブランド",     value: "Framework" },
+  { label: "屋号",     value: "Framework（frmw）" },
   { label: "開業",     value: "2026年3月" },
   { label: "代表",     value: "寺本 一真" },
-  { label: "所在地",   value: "愛知県名古屋市天白区原1-2402" },
-  { label: "事業内容", value: "マーケティングコンサルティング・運用代行・制作・スクール" },
+  { label: "所在地",   value: "愛知県名古屋市" },
+  { label: "事業形態", value: "個人事業主" },
+  { label: "事業内容", value: "マーケティングコンサルティング・運用代行・制作・オンラインスクール" },
+  { label: "対応規模", value: "年商数千万〜数億円規模の中小企業・個人事業主・フリーランス" },
 ];
 
 export default function AboutPage() {
@@ -56,12 +58,12 @@ export default function AboutPage() {
           </Link>
           <p className="text-white/40 text-xs tracking-[0.3em] uppercase mb-5">About Us</p>
           <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6 max-w-2xl">
-            マーケティングで、<br />
-            <span className="text-white/30">世界を変える。</span>
+            小さくても強い事業を、<br />
+            <span className="text-white/30">マーケティングで実現する。</span>
           </h1>
           <p className="text-white/40 text-lg leading-relaxed max-w-xl">
-            私たちは「成果にこだわるマーケティングパートナー」として、
-            クライアントのビジネス成長を数字で証明し続けます。
+            個人事業主として、中小企業・フリーランス・個人事業主のマーケティング課題に向き合います。
+            大手代理店では断られる規模感でも、成果にこだわった支援を提供します。
           </p>
         </div>
       </section>
@@ -83,13 +85,13 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <AnimateIn delay={1}>
               <p className="text-[clamp(1.6rem,3.5vw,2.8rem)] font-bold text-[#0a0a0a] leading-snug tracking-tight">
-                「売れる仕組み」を<br />すべての企業に。
+                「売れる仕組み」を<br />小さな事業にこそ。
               </p>
             </AnimateIn>
             <AnimateIn delay={2}>
               <p className="text-[#737373] text-base leading-[2] max-w-md">
-                中小企業から大手企業まで、規模を問わず再現性のある成長を実現できるマーケティングの仕組みを提供すること——それが Framework の使命です。
-                コンサルティング・運用・制作・教育という4つの軸で、ビジネスの成長に必要なすべてをワンストップで支援します。
+                年商数千万〜数億円規模の中小企業・個人事業主・フリーランスが、大手と戦えるマーケティング力を持てるように——それが Framework の使命です。
+                コンサルティング・運用・制作・教育という4つの軸で、売上を伸ばすために必要なすべてをワンストップで支援します。
               </p>
             </AnimateIn>
           </div>
@@ -121,15 +123,15 @@ export default function AboutPage() {
             <AnimateIn delay={2} className="flex flex-col justify-center">
               <blockquote className="text-white/70 text-base leading-[2.2] space-y-6">
                 <p>
-                  マーケティングは「売る技術」ではなく、「価値を届ける技術」だと私たちは考えています。
+                  マーケティングは「売る技術」ではなく、「価値を届ける技術」だと考えています。
                   どれほど優れた製品やサービスも、正しく届けられなければ存在しないも同然です。
                 </p>
                 <p>
-                  Framework は、その「届ける力」を科学として体系化し、再現性のある成長を多くの企業にもたらすことを目指して創業しました。
-                  私たちのチームは全員、現場で数字を動かしてきた実践者です。理論だけでなく、実行の最前線で成果を出し続けているからこそ、クライアントに自信を持って伴走できます。
+                  Framework は個人事業として2026年3月に開業しました。大手代理店での経験を経て、むしろ支援が手薄になりがちな中小・個人規模のビジネスにこそ、本質的なマーケティング支援が必要だという確信から立ち上げました。
+                  月間8,000万円規模の広告運用経験と、データドリブンなアプローチを月5万円〜の手の届く価格で提供します。
                 </p>
                 <p>
-                  「マーケティングで困ったら Framework」——そう言っていただけるパートナーであり続けることが、私たちの誇りです。
+                  「マーケティングで困ったら Framework」——そう言っていただけるパートナーであり続けることが誇りです。
                 </p>
               </blockquote>
             </AnimateIn>
@@ -200,7 +202,7 @@ export default function AboutPage() {
               <span className="text-white/30">お気軽にご相談ください</span>
             </h2>
             <p className="text-white/35 text-base mb-12 max-w-md mx-auto leading-relaxed">
-              貴社の現状と課題をお聞きし、最適なサービスをご提案します。初回相談は無料です。
+              現状と課題をお聞きし、最適なプランをご提案します。月5万円〜対応可能。初回相談は無料です。
             </p>
             <Link href="/contact"
               className="inline-flex items-center gap-2 text-sm font-semibold text-black px-8 py-4 rounded-full transition-all duration-200 hover:opacity-90"
