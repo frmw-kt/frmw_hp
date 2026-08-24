@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ServicePageAnimations from "@/components/ServicePageAnimations";
 
 export const metadata: Metadata = {
   title: "広告運用管理（adops）| Framework",
@@ -58,9 +59,10 @@ const faqs = [
 export default function AdopsPage() {
   return (
     <>
+      <ServicePageAnimations />
       {/* Hero */}
-      <section className="relative bg-[#0a0a0a] text-white overflow-hidden py-32 md:py-44">
-        <div className="relative max-w-7xl mx-auto px-6">
+      <section className="service-hero relative bg-[#0a0a0a] text-white overflow-hidden py-32 md:py-44">
+        <div className="service-hero-content relative max-w-7xl mx-auto px-6">
           <Link href="/" className="inline-flex items-center gap-2 text-white/30 text-sm hover:text-white transition-colors mb-10">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -80,7 +82,7 @@ export default function AdopsPage() {
       {/* Pain Points */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
+          <div className="gsap-reveal mb-12">
             <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
               For You
             </span>
@@ -88,9 +90,9 @@ export default function AdopsPage() {
               こんな課題を抱えていませんか？
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="gsap-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {painPoints.map((text, i) => (
-              <div key={i} className="flex items-start gap-3 p-5 border border-[#e5e5e5] rounded-xl">
+              <div key={i} className="gsap-card flex items-start gap-3 p-5 border border-[#e5e5e5] rounded-xl">
                 <span className="w-1.5 h-1.5 rounded-full mt-2 shrink-0" style={{ background: GOLD }} />
                 <p className="text-sm text-[#0a0a0a] leading-relaxed">{text}</p>
               </div>
@@ -102,7 +104,7 @@ export default function AdopsPage() {
       {/* Features */}
       <section className="py-24 bg-[#fafafa] border-t border-[#e5e5e5]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-end justify-between mb-12 pb-6 border-b border-[#e5e5e5]">
+          <div className="gsap-reveal flex items-end justify-between mb-12 pb-6 border-b border-[#e5e5e5]">
             <div>
               <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
                 Features
@@ -112,9 +114,9 @@ export default function AdopsPage() {
               </h2>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="gsap-cards grid grid-cols-1 md:grid-cols-2 gap-4">
             {features.map((f) => (
-              <div key={f.number} className="border border-[#e5e5e5] rounded-2xl p-10 hover:border-[#0a0a0a]/25 hover:shadow-sm transition-all duration-300">
+              <div key={f.number} className="gsap-card border border-[#e5e5e5] rounded-2xl p-10 hover:border-[#0a0a0a]/25 hover:shadow-sm transition-all duration-300">
                 <p className="text-xs font-mono mb-6" style={{ color: GOLD_DARK }}>{f.number}</p>
                 <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">{f.title}</h3>
                 <p className="text-sm text-[#737373] leading-relaxed">{f.description}</p>
@@ -127,7 +129,7 @@ export default function AdopsPage() {
       {/* Process */}
       <section className="bg-[#0a0a0a] text-white py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-end justify-between mb-16 pb-6 border-b border-white/8">
+          <div className="gsap-reveal flex items-end justify-between mb-16 pb-6 border-b border-white/8">
             <div>
               <span className="inline-flex items-center border border-white/10 rounded-full px-3 py-1 text-[11px] text-white/30 uppercase tracking-[0.2em] mb-4">
                 Process
@@ -135,9 +137,9 @@ export default function AdopsPage() {
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">導入の流れ</h2>
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/8">
+          <div className="gsap-process grid grid-cols-2 md:grid-cols-4 gap-px bg-white/8">
             {steps.map((p, i) => (
-              <div key={p.step} className="bg-[#0a0a0a] p-8 md:p-10">
+              <div key={p.step} className="gsap-step bg-[#0a0a0a] p-8 md:p-10">
                 <p className="text-xs font-mono mb-8" style={{ color: GOLD }}>{p.step}</p>
                 <h3 className="text-lg font-semibold text-white mb-3">{p.title}</h3>
                 <p className="text-sm text-white/35 leading-relaxed">{p.desc}</p>

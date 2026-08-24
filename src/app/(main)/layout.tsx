@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const geist = Geist({
   variable: "--font-sans",
@@ -25,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`${geist.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col" style={{ fontFamily: "var(--font-sans)" }}>
-        <Header />
-        <main className="flex-1 pt-16">{children}</main>
-        <Footer />
+        <SmoothScroll>
+          <Header />
+          <main className="flex-1 pt-16">{children}</main>
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );

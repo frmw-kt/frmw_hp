@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import ServicePageAnimations from "@/components/ServicePageAnimations";
 
 export const metadata: Metadata = {
-  title: "アプリ開発 | Framework",
-  description: "Webアプリ・業務システム・SaaSプロダクトの開発。マーケティング視点でビジネス課題を解決するプロダクト開発を提供します。",
+  title: "AI活用支援",
+  description: "AI営業メール生成・チャットボット・コンテンツ自動化など、ビジネスの各工程にAIを実装。反復作業を自動化し、人的コストを削減しながら成果を最大化します。",
 };
 
 const GOLD = "#C9A84C";
@@ -13,71 +13,72 @@ const GOLD_DARK = "#A8892E";
 const features = [
   {
     number: "01",
-    title: "Webアプリ・SaaS開発",
-    description: "Next.js・React・Node.jsを中心としたモダンなWebアプリケーション開発。業務効率化ツール・顧客向けSaaSプロダクトなど、スピーディーに開発します。",
+    title: "AI営業メール自動生成",
+    description: "企業情報・担当者情報をもとに、LLMがパーソナライズされた営業メールを自動生成。手動で1通ずつ書いていた作業を数秒に短縮し、件数を数十倍に拡大できます。",
   },
   {
     number: "02",
-    title: "業務効率化システム",
-    description: "営業支援・広告管理・データ集計など、既存業務のボトルネックを解消するシステムを開発。手作業・スプレッドシート管理からの脱却を支援します。",
+    title: "AIチャットボット構築",
+    description: "自社の製品・サービス情報をナレッジベース化し、問い合わせ対応・リード獲得を自動化するカスタムAIチャットボットを構築します。RAG（検索拡張生成）で高精度な回答を実現します。",
   },
   {
     number: "03",
-    title: "データ活用・自動化",
-    description: "スクレイピング・API連携・機械学習モデルの組み込みなど、データを活用した自動化プロダクトの開発が得意です。繰り返し業務をシステムで置き換えます。",
+    title: "AIコンテンツ制作支援",
+    description: "ブログ記事・SNS投稿・広告コピー・メルマガなど、マーケティングコンテンツをAIで高速生成。ブランドの文体・トーンを学習させることで、高品質なコンテンツを大量に制作できます。",
   },
   {
     number: "04",
-    title: "スモールスタート開発",
-    description: "大規模投資なしに検証できるMVP（最小構成プロダクト）の開発に特化。小さく始めて、成果を見ながら機能を拡張するアジャイルな進め方で対応します。",
-  },
-];
-
-const works = [
-  {
-    title: "広告運用管理ツール（adops）",
-    desc: "Meta・Google広告のデータをリアルタイムで可視化・自動化するSaaSプロダクト。自社開発・運用中。",
-    tags: ["Next.js", "SQLite", "Meta API", "Google Ads API"],
-  },
-  {
-    title: "営業支援システム（autosales）",
-    desc: "リード管理・AI営業メール生成・一括送信・キャンペーン管理を統合した営業自動化システム。",
-    tags: ["Next.js", "Groq API", "Gmail API", "SQLite"],
-  },
-  {
-    title: "競馬予測アプリ",
-    desc: "オッズデータと過去成績をもとに期待値ベースで馬券を最適化するWebアプリ。機械学習モデルを内蔵。",
-    tags: ["Next.js", "Python", "ML", "スクレイピング"],
+    title: "AIデータ分析・予測",
+    description: "広告データ・売上データ・顧客データをAIが自動分析し、インサイト抽出・改善提案・売上予測レポートを生成します。スプレッドシート集計から脱却し、データドリブンな意思決定を実現します。",
   },
 ];
 
 const painPoints = [
-  "業務がスプレッドシートや手作業に依存しており、スケールできない",
-  "欲しいシステムがあるが、大手SIerに頼むと費用が高すぎる",
-  "ノーコードツールでは限界があり、カスタム開発が必要",
-  "アイデアはあるが、技術的な部分を任せられる人が見つからない",
-  "既存ツールでは対応できない業務フローを自動化したい",
-  "MVP（試作品）を素早く作って市場検証したい",
+  "営業メール作成に時間がかかり、アプローチ件数を増やせない",
+  "問い合わせ対応・FAQ回答に人手とコストがかかっている",
+  "コンテンツ制作が追いつかず、SNS・ブログの更新が止まっている",
+  "データはあるが集計・分析に時間がかかり、活用できていない",
+  "AIを導入したいが何から始めればいいか分からない",
+  "社内にAI・エンジニアリングの知識がなく、独自ツールを作れない",
+];
+
+const works = [
+  {
+    title: "AI営業支援システム（autosales）",
+    desc: "リード管理・AI営業メール生成・一括送信・キャンペーン管理を統合した営業自動化システム。Groq APIでリアルタイム生成。",
+    tags: ["Groq API", "LLM", "Next.js", "Gmail API"],
+  },
+  {
+    title: "競馬予測AIアプリ",
+    desc: "過去のレースデータ・オッズデータを機械学習モデルで分析し、期待値ベースの馬券最適化を実現するWebアプリ。",
+    tags: ["Python", "機械学習", "スクレイピング", "Next.js"],
+  },
+  {
+    title: "広告データ自動分析（adops）",
+    desc: "Meta・Google広告のデータを自動取得・可視化し、異常検知・改善提案をダッシュボードで提供するSaaSツール。",
+    tags: ["データ分析", "自動化", "Next.js", "SQLite"],
+  },
 ];
 
 const steps = [
-  { step: "01", title: "要件ヒアリング", desc: "解決したい課題・必要な機能・予算・納期を確認" },
-  { step: "02", title: "設計・見積もり", desc: "技術スタック・開発スコープ・スケジュールを提示" },
-  { step: "03", title: "開発・レビュー", desc: "アジャイルに開発・定期的に進捗確認" },
-  { step: "04", title: "リリース・保守", desc: "本番リリース後の運用・改善サポートも対応" },
+  { step: "01", title: "課題ヒアリング", desc: "現状の業務フロー・課題・目標を確認。AIで解決すべき工程を特定します" },
+  { step: "02", title: "AI設計・提案", desc: "最適なAIモデル・ツール・システム構成を設計。費用・期間を提示します" },
+  { step: "03", title: "開発・実装", desc: "AIツール・システムを開発・テスト。実業務に合わせてカスタマイズします" },
+  { step: "04", title: "運用・改善", desc: "本番稼働後の精度モニタリング・改善・機能追加を継続サポートします" },
 ];
 
 const faqs = [
-  { q: "料金・期間の目安は？", a: "小規模なWebアプリで50〜150万円・1〜2ヶ月が目安です。規模・要件によって大きく異なりますので、まずはご相談ください。" },
-  { q: "どんな技術スタックで開発しますか？", a: "フロントエンドはNext.js・React、バックエンドはNode.js・Python、DBはSQLite・PostgreSQL・Supabaseを主に使用します。" },
-  { q: "リリース後の保守・改善も対応してもらえますか？", a: "はい。月次保守契約での対応も可能です。機能追加・バグ対応・パフォーマンス改善まで継続してサポートします。" },
-  { q: "アイデア段階でも相談できますか？", a: "もちろんです。「こういうものを作りたい」という段階からヒアリングし、実現方法と必要な工数をご提案します。" },
+  { q: "どんな業務にAIを活用できますか？", a: "営業・マーケティング・カスタマーサポート・データ分析・コンテンツ制作など、繰り返し発生する作業を中心に幅広く活用できます。まずはヒアリングでボトルネックを特定します。" },
+  { q: "開発費用の目安を教えてください。", a: "小規模なAIツール（メール生成・チャットボット等）で30〜100万円・2〜4週間が目安です。要件・精度・連携システムによって異なりますのでご相談ください。" },
+  { q: "既存のシステムやツールと連携できますか？", a: "はい。CRM・スプレッドシート・Slack・Gmail・各種SaaSとのAPI連携に対応しています。既存ワークフローを大きく変えずにAIを組み込めます。" },
+  { q: "社内にエンジニアがいなくても導入できますか？", a: "問題ありません。設計から開発・運用まで一貫して対応します。導入後の操作レクチャー・マニュアル整備もサポートします。" },
 ];
 
-export default function AppDevelopmentPage() {
+export default function AIPage() {
   return (
     <>
       <ServicePageAnimations />
+
       {/* Hero */}
       <section className="service-hero relative bg-[#0a0a0a] text-white overflow-hidden py-32 md:py-44">
         <div className="service-hero-content relative max-w-7xl mx-auto px-6">
@@ -87,12 +88,12 @@ export default function AppDevelopmentPage() {
             </svg>
             トップへ戻る
           </Link>
-          <p className="text-white/40 text-xs tracking-[0.3em] uppercase mb-5">App Development</p>
+          <p className="text-white/40 text-xs tracking-[0.3em] uppercase mb-5">AI Solutions</p>
           <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6 max-w-2xl">
-            アプリ開発
+            AI活用支援
           </h1>
           <p className="text-white/40 text-lg leading-relaxed max-w-xl">
-            業務効率化・SaaS・データ活用など、ビジネス課題を解決するWebアプリをスモールスタートで開発します。
+            AI営業メール生成・チャットボット・コンテンツ自動化など、ビジネスの各工程にAIを実装。反復作業を自動化し、人的コストを削減しながら成果を最大化します。
           </p>
         </div>
       </section>
@@ -128,7 +129,7 @@ export default function AppDevelopmentPage() {
                 What We Do
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
-                対応できること
+                AI活用の主なメニュー
               </h2>
             </div>
           </div>
@@ -151,7 +152,7 @@ export default function AppDevelopmentPage() {
             <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
               Works
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">自社開発実績</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">自社開発・AI実績</h2>
           </div>
           <div className="gsap-cards grid grid-cols-1 md:grid-cols-3 gap-4">
             {works.map((w) => (
@@ -177,7 +178,7 @@ export default function AppDevelopmentPage() {
               <span className="inline-flex items-center border border-white/10 rounded-full px-3 py-1 text-[11px] text-white/30 uppercase tracking-[0.2em] mb-4">
                 Process
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">開発の流れ</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">導入の流れ</h2>
             </div>
           </div>
           <div className="gsap-process grid grid-cols-2 md:grid-cols-4 gap-px bg-white/8">
@@ -224,7 +225,7 @@ export default function AppDevelopmentPage() {
             <span className="text-white/30">お気軽にご相談ください</span>
           </h2>
           <p className="text-white/35 text-base mb-12 max-w-md mx-auto leading-relaxed">
-            アイデア段階でも構いません。作りたいものをお聞かせください。初回相談は無料です。
+            どの業務にAIを活用できるか、一緒に考えます。初回相談は無料です。
           </p>
           <Link href="/contact"
             className="inline-flex items-center gap-2 text-sm font-semibold text-black px-8 py-4 rounded-full transition-all duration-200 hover:opacity-90"

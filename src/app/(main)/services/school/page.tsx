@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ServicePageAnimations from "@/components/ServicePageAnimations";
 
 export const metadata: Metadata = {
   title: "スクール",
@@ -68,8 +69,10 @@ const faqs = [
 export default function SchoolPage() {
   return (
     <>
-      <section className="relative bg-[#0a0a0a] text-white overflow-hidden py-32 md:py-44">
-        <div className="relative max-w-7xl mx-auto px-6">
+      <ServicePageAnimations />
+
+      <section className="service-hero relative bg-[#0a0a0a] text-white overflow-hidden py-32 md:py-44">
+        <div className="service-hero-content relative max-w-7xl mx-auto px-6">
           <Link href="/" className="inline-flex items-center gap-2 text-white/30 text-sm hover:text-white transition-colors mb-10">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -89,13 +92,13 @@ export default function SchoolPage() {
       {/* Learning Outcomes */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
+          <div className="gsap-reveal mb-12">
             <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Outcomes</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">受講後にできるようになること</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="gsap-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {learningOutcomes.map((text, i) => (
-              <div key={i} className="flex items-start gap-3 p-6 bg-[#fafafa] border border-[#e5e5e5] rounded-2xl">
+              <div key={i} className="gsap-card flex items-start gap-3 p-6 bg-[#fafafa] border border-[#e5e5e5] rounded-2xl">
                 <svg className="w-5 h-5 shrink-0 mt-0.5" style={{ color: "#C9A84C" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
@@ -109,15 +112,15 @@ export default function SchoolPage() {
       {/* Courses */}
       <section className="py-24 bg-[#fafafa] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-16">
+          <div className="gsap-reveal mb-16">
             <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Curriculum</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">コース一覧</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="gsap-cards grid grid-cols-1 md:grid-cols-2 gap-5">
             {features.map((f) => (
               <div
                 key={f.number}
-                className="group relative p-8 bg-white border border-[#e5e5e5] rounded-2xl hover:border-[#0a0a0a] transition-all duration-300 overflow-hidden"
+                className="gsap-card group relative p-8 bg-white border border-[#e5e5e5] rounded-2xl hover:border-[#0a0a0a] transition-all duration-300 overflow-hidden"
               >
                 <p className="text-4xl font-bold text-[#e5e5e5] mb-4 leading-none">{f.number}</p>
                 <h3 className="text-base font-semibold text-[#0a0a0a] mb-2">{f.title}</h3>
@@ -143,13 +146,13 @@ export default function SchoolPage() {
       {/* Points */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-16">
+          <div className="gsap-reveal mb-16">
             <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Why Our School</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">スクールの特徴</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="gsap-cards grid grid-cols-1 md:grid-cols-2 gap-5">
             {points.map((p) => (
-              <div key={p.number} className="group bg-[#fafafa] border border-[#e5e5e5] p-8 rounded-2xl hover:border-[#0a0a0a]/20 hover:bg-white hover:shadow-sm transition-all duration-300">
+              <div key={p.number} className="gsap-card group bg-[#fafafa] border border-[#e5e5e5] p-8 rounded-2xl hover:border-[#0a0a0a]/20 hover:bg-white hover:shadow-sm transition-all duration-300">
                 <p className="text-xs font-mono text-[#A8892E] mb-4">{p.number}</p>
                 <h3 className="text-base font-semibold text-[#0a0a0a] mb-3">{p.title}</h3>
                 <p className="text-sm text-[#737373] leading-relaxed">{p.desc}</p>
@@ -162,13 +165,13 @@ export default function SchoolPage() {
       {/* FAQ */}
       <section className="py-24 bg-[#fafafa]">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="mb-12">
+          <div className="gsap-reveal mb-12">
             <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">FAQ</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">よくある質問</h2>
           </div>
           <div className="divide-y divide-[#e5e5e5]">
             {faqs.map((faq, i) => (
-              <div key={i} className="py-7">
+              <div key={i} className="gsap-reveal py-7">
                 <p className="text-base font-semibold text-[#0a0a0a] mb-3">Q. {faq.q}</p>
                 <p className="text-sm text-[#737373] leading-relaxed pl-4 border-l-2 border-[#C9A84C]">A. {faq.a}</p>
               </div>
@@ -177,19 +180,22 @@ export default function SchoolPage() {
         </div>
       </section>
 
-      <section className="py-28 relative overflow-hidden bg-slate-100">
+      <section className="py-28 relative overflow-hidden bg-[#0a0a0a]">
         <div className="relative max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] mb-5 tracking-tight">まずは受講相談から</h2>
-          <p className="text-[#737373] mb-10 leading-relaxed">目標・レベル・受講形式などをお聞きし、最適なコースをご案内します。初回相談は無料です。</p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 text-sm text-white bg-[#0a0a0a] px-8 py-4 rounded-full hover:bg-[#1a1a1a] transition-colors duration-200"
-          >
-            受講相談を申し込む
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
+          <div className="gsap-reveal">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-5 tracking-tight">まずは受講相談から</h2>
+            <p className="text-white/40 mb-10 leading-relaxed">目標・レベル・受講形式などをお聞きし、最適なコースをご案内します。初回相談は無料です。</p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-black px-8 py-4 rounded-full transition-all duration-200 hover:opacity-90"
+              style={{ background: "linear-gradient(135deg, #E2C16A 0%, #C9A84C 45%, #A8892E 100%)" }}
+            >
+              受講相談を申し込む
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
     </>

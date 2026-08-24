@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ServicePageAnimations from "@/components/ServicePageAnimations";
 
 export const metadata: Metadata = {
   title: "制作",
@@ -65,8 +66,9 @@ const faqs = [
 export default function ProductionPage() {
   return (
     <>
-      <section className="relative bg-[#0a0a0a] text-white overflow-hidden py-32 md:py-44">
-        <div className="relative max-w-7xl mx-auto px-6">
+      <ServicePageAnimations />
+      <section className="service-hero relative bg-[#0a0a0a] text-white overflow-hidden py-32 md:py-44">
+        <div className="service-hero-content relative max-w-7xl mx-auto px-6">
           <Link href="/" className="inline-flex items-center gap-2 text-white/30 text-sm hover:text-white transition-colors mb-10">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -86,13 +88,13 @@ export default function ProductionPage() {
       {/* Pain Points */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
+          <div className="gsap-reveal mb-12">
             <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Challenges</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">こんなお悩みありませんか？</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="gsap-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {painPoints.map((text, i) => (
-              <div key={i} className="flex items-start gap-3 p-6 bg-[#fafafa] border border-[#e5e5e5] rounded-2xl">
+              <div key={i} className="gsap-card flex items-start gap-3 p-6 bg-[#fafafa] border border-[#e5e5e5] rounded-2xl">
                 <span className="w-5 h-5 rounded-full border-2 border-[#C9A84C] flex items-center justify-center shrink-0 mt-0.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C9A84C]" />
                 </span>
@@ -106,11 +108,11 @@ export default function ProductionPage() {
       {/* Features */}
       <section className="py-24 bg-[#fafafa] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-16">
+          <div className="gsap-reveal mb-16">
             <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Features</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">制作メニュー</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="gsap-cards grid grid-cols-1 md:grid-cols-2 gap-5">
             {features.map((f) => {
               const inner = (
                 <>
@@ -131,14 +133,14 @@ export default function ProductionPage() {
                 <Link
                   key={f.number}
                   href={f.href}
-                  className="group relative p-8 bg-white border border-[#e5e5e5] rounded-2xl hover:border-[#0a0a0a] transition-all duration-300 overflow-hidden"
+                  className="gsap-card group relative p-8 bg-white border border-[#e5e5e5] rounded-2xl hover:border-[#0a0a0a] transition-all duration-300 overflow-hidden"
                 >
                   {inner}
                 </Link>
               ) : (
                 <div
                   key={f.number}
-                  className="group relative p-8 bg-white border border-[#e5e5e5] rounded-2xl hover:border-[#0a0a0a] transition-all duration-300 overflow-hidden"
+                  className="gsap-card group relative p-8 bg-white border border-[#e5e5e5] rounded-2xl hover:border-[#0a0a0a] transition-all duration-300 overflow-hidden"
                 >
                   {inner}
                 </div>
@@ -151,13 +153,13 @@ export default function ProductionPage() {
       {/* Points */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
+          <div className="gsap-reveal mb-12">
             <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Why Us</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">Frameworkの制作が選ばれる理由</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="gsap-cards grid grid-cols-1 md:grid-cols-3 gap-5">
             {productionPoints.map((p, i) => (
-              <div key={i} className="p-8 bg-[#fafafa] border border-[#e5e5e5] rounded-2xl">
+              <div key={i} className="gsap-card p-8 bg-[#fafafa] border border-[#e5e5e5] rounded-2xl">
                 <p className="text-xs font-mono text-[#A8892E] mb-4">0{i + 1}</p>
                 <h3 className="text-base font-semibold text-[#0a0a0a] mb-3">{p.title}</h3>
                 <p className="text-sm text-[#737373] leading-relaxed">{p.desc}</p>
@@ -170,13 +172,13 @@ export default function ProductionPage() {
       {/* Process */}
       <section className="py-24 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-16">
+          <div className="gsap-reveal mb-16">
             <p className="text-xs text-[#737373] uppercase tracking-[0.25em] mb-4">Process</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">制作の流れ</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+          <div className="gsap-process grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
             {steps.map((s, i) => (
-              <div key={i} className="relative group">
+              <div key={i} className="gsap-step relative group">
                 <div className="bg-white border border-[#e5e5e5] p-7 rounded-2xl h-full hover:border-[#0a0a0a] transition-all duration-300">
                   <p className="text-5xl font-bold text-[#e5e5e5] mb-4 leading-none">{s.step}</p>
                   <h3 className="text-base font-semibold text-[#0a0a0a] mb-2">{s.title}</h3>
@@ -213,19 +215,22 @@ export default function ProductionPage() {
         </div>
       </section>
 
-      <section className="py-28 relative overflow-hidden bg-slate-100">
+      <section className="py-28 relative overflow-hidden bg-[#0a0a0a]">
         <div className="relative max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] mb-5 tracking-tight">制作のご相談はお気軽に</h2>
-          <p className="text-[#737373] mb-10 leading-relaxed">制作物の種類・目的・予算感をお聞かせいただければ、最適なプランをご提案します。初回相談は無料です。</p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 text-sm text-white bg-[#0a0a0a] px-8 py-4 rounded-full hover:bg-[#1a1a1a] transition-colors duration-200"
-          >
-            無料相談を申し込む
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
+          <div className="gsap-reveal">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-5 tracking-tight">制作のご相談はお気軽に</h2>
+            <p className="text-white/40 mb-10 leading-relaxed">制作物の種類・目的・予算感をお聞かせいただければ、最適なプランをご提案します。初回相談は無料です。</p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-black px-8 py-4 rounded-full transition-all duration-200 hover:opacity-90"
+              style={{ background: "linear-gradient(135deg, #E2C16A 0%, #C9A84C 45%, #A8892E 100%)" }}
+            >
+              無料相談を申し込む
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
     </>

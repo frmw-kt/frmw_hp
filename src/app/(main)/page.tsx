@@ -2,6 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import HeroBackground from "@/components/HeroBackground";
 import AnimateIn from "@/components/AnimateIn";
+import ServiceCarousel from "@/components/ServiceCarousel";
+import ScrollScene from "@/components/ScrollScene";
+import HomeAnimations from "@/components/HomeAnimations";
 
 export const metadata: Metadata = {
   title: "Framework | マーケティング支援",
@@ -62,8 +65,19 @@ const serviceCategories = [
         description: "業務効率化・SaaS・データ活用など、ビジネス課題を解決するWebアプリをスモールスタートで開発します。MVPから本格プロダクトまで対応。",
         href: "/services/app-development",
       },
+      {
+        number: "02",
+        title: "AI活用支援",
+        description: "AI営業メール生成・チャットボット・コンテンツ自動化など、ビジネスの各工程にAIを実装。反復作業を自動化し、人的コストを削減しながら成果を最大化します。",
+        href: "/services/ai",
+      },
     ],
   },
+];
+
+const carouselServices = [
+  ...serviceCategories[0].items.map((s) => ({ ...s, category: "Marketing" })),
+  ...serviceCategories[1].items.map((s) => ({ ...s, category: "Product" })),
 ];
 
 const reasons = [
@@ -99,11 +113,13 @@ const GOLD_DARK = "#A8892E";
 export default function HomePage() {
   return (
     <>
+      <HomeAnimations />
+
       {/* ── Hero ── */}
-      <section className="relative bg-[#0a0a0a] text-white overflow-hidden min-h-screen flex items-center">
+      <section id="hero-section" className="relative bg-[#0a0a0a] text-white overflow-hidden min-h-screen flex items-center">
         <HeroBackground />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0a]/70" />
-        <div className="relative max-w-7xl mx-auto px-6 py-32 w-full">
+        <div id="hero-inner" className="relative max-w-7xl mx-auto px-6 py-32 w-full">
           <div className="hero-line">
             <span className="inline-flex items-center gap-2.5 rounded-full px-4 py-1.5 text-[11px] uppercase tracking-[0.25em]"
               style={{ border: "1px solid rgba(201,168,76,0.2)", color: `${GOLD}` }}>
@@ -161,6 +177,9 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* ── Service Carousel (horizontal scroll) ── */}
+      <ServiceCarousel services={carouselServices} />
+
       {/* ── Stats ── */}
       <section className="bg-[#111] border-b border-white/8">
         <div className="max-w-7xl mx-auto">
@@ -189,7 +208,7 @@ export default function HomePage() {
         {/* Section intro */}
         <div className="bg-white pt-24 pb-12 border-b border-[#e5e5e5]">
           <div className="max-w-7xl mx-auto px-6">
-            <AnimateIn className="flex items-end justify-between">
+            <div className="gsap-reveal flex items-end justify-between">
               <div>
                 <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
                   Services
@@ -201,7 +220,7 @@ export default function HomePage() {
               <p className="hidden md:block text-sm text-[#737373] max-w-xs text-right leading-relaxed">
                 マーケティング支援に必要なすべてを、<br />ワンストップで提供します。
               </p>
-            </AnimateIn>
+            </div>
           </div>
         </div>
 
@@ -216,14 +235,14 @@ export default function HomePage() {
           backgroundSize: "auto, auto, 52px 52px, 52px 52px",
         }}>
           <div className="max-w-7xl mx-auto px-6">
-            <AnimateIn className="flex items-start gap-6 md:gap-10 mb-10">
+            <div className="gsap-reveal flex items-start gap-6 md:gap-10 mb-10">
               <span className="text-[5rem] md:text-[7rem] font-black leading-none select-none" style={{ color: "#f0f0f0" }}>01</span>
               <div className="pt-3">
                 <p className="text-[10px] font-mono uppercase tracking-[0.25em] mb-2" style={{ color: GOLD }}>Marketing</p>
                 <h3 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-2">マーケティング事業</h3>
                 <p className="text-sm text-[#737373]">戦略設計から運用・制作・教育まで、売上を伸ばす仕組みをワンストップで構築します。</p>
               </div>
-            </AnimateIn>
+            </div>
             <div className="divide-y divide-[#e5e5e5] border-t border-[#e5e5e5]">
               {serviceCategories[0].items.map((s, i) => (
                 <AnimateIn key={s.href} delay={(Math.min(i + 1, 5)) as 1|2|3|4|5}>
@@ -261,48 +280,85 @@ export default function HomePage() {
           backgroundSize: "auto, 52px 52px, 52px 52px",
         }}>
           <div className="max-w-7xl mx-auto px-6">
-            <AnimateIn className="flex items-start gap-6 md:gap-10 mb-10">
+            <div className="gsap-reveal flex items-start gap-6 md:gap-10 mb-10">
               <span className="text-[5rem] md:text-[7rem] font-black leading-none select-none text-white/5">02</span>
               <div className="pt-3">
                 <p className="text-[10px] font-mono uppercase tracking-[0.25em] mb-2" style={{ color: GOLD }}>Product</p>
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">プロダクト事業</h3>
-                <p className="text-sm text-white/40">ビジネス課題を解決するWebアプリをスモールスタートで開発します。</p>
+                <p className="text-sm text-white/40">WebアプリとAIツールをスモールスタートで開発・実装します。</p>
               </div>
-            </AnimateIn>
+            </div>
 
-            {/* Featured card */}
-            <AnimateIn delay={1}>
-              <Link href="/services/app-development"
-                className="group block border border-white/10 rounded-2xl p-10 md:p-14 hover:border-white/25 transition-all duration-300">
-                <div className="flex items-start justify-between gap-8 mb-8">
-                  <div>
-                    <span className="text-xs font-mono" style={{ color: GOLD }}>01</span>
-                    <h4 className="text-2xl md:text-4xl font-bold text-white mt-3 mb-4 group-hover:translate-x-1 transition-transform duration-300">
-                      アプリ開発
-                    </h4>
-                    <p className="text-base text-white/50 leading-relaxed max-w-xl">
-                      業務効率化・SaaS・データ活用など、ビジネス課題を解決するWebアプリをスモールスタートで開発。MVPから本格プロダクトまで対応します。
-                    </p>
-                  </div>
-                  <svg className="w-6 h-6 text-white shrink-0 opacity-20 group-hover:opacity-80 group-hover:translate-x-1 transition-all duration-300 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-                <div className="border-t border-white/8 pt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {[
-                    { label: "Webアプリ・SaaS", desc: "Next.js / React" },
-                    { label: "業務効率化システム", desc: "API連携・自動化" },
-                    { label: "データ活用・ML", desc: "Python / 機械学習" },
-                    { label: "スモールスタート", desc: "MVP → スケール" },
-                  ].map((item) => (
-                    <div key={item.label} className="border border-white/8 rounded-xl p-4">
-                      <p className="text-sm font-medium text-white/70 mb-1">{item.label}</p>
-                      <p className="text-xs text-white/30">{item.desc}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {/* アプリ開発 */}
+              <AnimateIn delay={1}>
+                <Link href="/services/app-development"
+                  className="group block border border-white/10 rounded-2xl p-8 md:p-10 hover:border-white/25 transition-all duration-300 h-full">
+                  <div className="flex items-start justify-between gap-4 mb-6">
+                    <div>
+                      <span className="text-xs font-mono" style={{ color: GOLD }}>01</span>
+                      <h4 className="text-xl md:text-2xl font-bold text-white mt-2 mb-3 group-hover:translate-x-1 transition-transform duration-300">
+                        アプリ開発
+                      </h4>
+                      <p className="text-sm text-white/50 leading-relaxed">
+                        業務効率化・SaaS・データ活用など、ビジネス課題を解決するWebアプリをスモールスタートで開発。MVPから本格プロダクトまで対応します。
+                      </p>
                     </div>
-                  ))}
-                </div>
-              </Link>
-            </AnimateIn>
+                    <svg className="w-5 h-5 text-white shrink-0 opacity-20 group-hover:opacity-80 group-hover:translate-x-1 transition-all duration-300 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </div>
+                  <div className="border-t border-white/8 pt-6 grid grid-cols-2 gap-3">
+                    {[
+                      { label: "Webアプリ・SaaS", desc: "Next.js / React" },
+                      { label: "業務効率化システム", desc: "API連携・自動化" },
+                      { label: "データ活用・ML", desc: "Python / 機械学習" },
+                      { label: "スモールスタート", desc: "MVP → スケール" },
+                    ].map((item) => (
+                      <div key={item.label} className="border border-white/8 rounded-xl p-3">
+                        <p className="text-xs font-medium text-white/70 mb-1">{item.label}</p>
+                        <p className="text-[11px] text-white/30">{item.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+                </Link>
+              </AnimateIn>
+
+              {/* AI活用支援 */}
+              <AnimateIn delay={2}>
+                <Link href="/services/ai"
+                  className="group block border border-white/10 rounded-2xl p-8 md:p-10 hover:border-white/25 transition-all duration-300 h-full"
+                  style={{ background: "linear-gradient(135deg, rgba(201,168,76,0.04) 0%, transparent 60%)" }}>
+                  <div className="flex items-start justify-between gap-4 mb-6">
+                    <div>
+                      <span className="text-xs font-mono" style={{ color: GOLD }}>02</span>
+                      <h4 className="text-xl md:text-2xl font-bold text-white mt-2 mb-3 group-hover:translate-x-1 transition-transform duration-300">
+                        AI活用支援
+                      </h4>
+                      <p className="text-sm text-white/50 leading-relaxed">
+                        AI営業メール生成・チャットボット・コンテンツ自動化など、ビジネスの各工程にAIを実装。反復作業を自動化し、人的コストを削減しながら成果を最大化します。
+                      </p>
+                    </div>
+                    <svg className="w-5 h-5 text-white shrink-0 opacity-20 group-hover:opacity-80 group-hover:translate-x-1 transition-all duration-300 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </div>
+                  <div className="border-t border-white/8 pt-6 grid grid-cols-2 gap-3">
+                    {[
+                      { label: "AI営業メール生成", desc: "Groq / LLM" },
+                      { label: "チャットボット構築", desc: "RAG / 自然言語処理" },
+                      { label: "コンテンツ自動生成", desc: "マーケティングAI" },
+                      { label: "データ分析・予測", desc: "機械学習 / 可視化" },
+                    ].map((item) => (
+                      <div key={item.label} className="border border-white/8 rounded-xl p-3">
+                        <p className="text-xs font-medium text-white/70 mb-1">{item.label}</p>
+                        <p className="text-[11px] text-white/30">{item.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+                </Link>
+              </AnimateIn>
+            </div>
           </div>
         </div>
       </section>
@@ -310,7 +366,7 @@ export default function HomePage() {
       {/* ── Process ── */}
       <section className="bg-white py-24 border-t border-[#e5e5e5]">
         <div className="max-w-7xl mx-auto px-6">
-          <AnimateIn className="flex items-end justify-between mb-16 pb-6 border-b border-[#e5e5e5]">
+          <div className="gsap-reveal flex items-end justify-between mb-16 pb-6 border-b border-[#e5e5e5]">
             <div>
               <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
                 Process
@@ -322,7 +378,7 @@ export default function HomePage() {
             <p className="hidden md:block text-sm text-[#737373] max-w-xs text-right leading-relaxed">
               ヒアリングから改善まで、<br />一貫してサポートします。
             </p>
-          </AnimateIn>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[#e5e5e5]">
             {process.map((p, i) => (
               <AnimateIn key={p.step} delay={(i + 1) as 1|2|3|4} className="bg-white p-8 md:p-10 hover:bg-[#fafafa] transition-colors duration-300">
@@ -335,44 +391,49 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Why Us ── */}
-      <section className="bg-[#fafafa] py-24 border-t border-[#e5e5e5]">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimateIn className="flex items-end justify-between mb-12 pb-6 border-b border-[#e5e5e5]">
+      {/* ── Why Us — dark with 3D particle scene ── */}
+      <section className="relative bg-[#0a0a0a] py-24 border-t border-white/8 overflow-hidden">
+        <ScrollScene />
+        <div className="relative max-w-7xl mx-auto px-6 z-10">
+          <div className="gsap-reveal flex items-end justify-between mb-12 pb-6 border-b border-white/8">
             <div>
-              <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
+              <span className="inline-flex items-center rounded-full px-3 py-1 text-[11px] text-white/30 uppercase tracking-[0.2em] mb-4"
+                style={{ border: "1px solid rgba(255,255,255,0.1)" }}>
                 Why Us
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
                 選ばれる理由
               </h2>
             </div>
-          </AnimateIn>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Card 01 — wide */}
-            <AnimateIn delay={1} className="md:col-span-2 border border-[#e5e5e5] rounded-2xl p-10 hover:border-[#0a0a0a]/25 hover:shadow-sm transition-all duration-300">
+            <AnimateIn delay={1} className="md:col-span-2 border border-white/8 rounded-2xl p-10 hover:border-white/20 hover:bg-white/2 transition-all duration-300"
+              style={{ backdropFilter: "blur(8px)" }}>
               <p className="text-xs font-mono mb-8" style={{ color: GOLD_DARK }}>{reasons[0].number}</p>
-              <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">{reasons[0].title}</h3>
-              <p className="text-sm text-[#737373] leading-relaxed max-w-md">{reasons[0].description}</p>
+              <h3 className="text-xl font-semibold text-white mb-4">{reasons[0].title}</h3>
+              <p className="text-sm text-white/40 leading-relaxed max-w-md">{reasons[0].description}</p>
             </AnimateIn>
 
             {/* Card 02 */}
-            <AnimateIn delay={2} className="border border-[#e5e5e5] rounded-2xl p-10 hover:border-[#0a0a0a]/25 hover:shadow-sm transition-all duration-300">
+            <AnimateIn delay={2} className="border border-white/8 rounded-2xl p-10 hover:border-white/20 hover:bg-white/2 transition-all duration-300"
+              style={{ backdropFilter: "blur(8px)" }}>
               <p className="text-xs font-mono mb-8" style={{ color: GOLD_DARK }}>{reasons[1].number}</p>
-              <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">{reasons[1].title}</h3>
-              <p className="text-sm text-[#737373] leading-relaxed">{reasons[1].description}</p>
+              <h3 className="text-xl font-semibold text-white mb-4">{reasons[1].title}</h3>
+              <p className="text-sm text-white/40 leading-relaxed">{reasons[1].description}</p>
             </AnimateIn>
 
             {/* Card 03 — full width, horizontal */}
-            <AnimateIn delay={3} className="md:col-span-3 border border-[#e5e5e5] rounded-2xl p-10 hover:border-[#0a0a0a]/25 hover:shadow-sm transition-all duration-300">
+            <AnimateIn delay={3} className="md:col-span-3 border border-white/8 rounded-2xl p-10 hover:border-white/20 hover:bg-white/2 transition-all duration-300"
+              style={{ backdropFilter: "blur(8px)" }}>
               <div className="md:flex md:items-center md:gap-16">
                 <div className="shrink-0">
                   <p className="text-xs font-mono mb-6" style={{ color: GOLD_DARK }}>{reasons[2].number}</p>
-                  <h3 className="text-xl font-semibold text-[#0a0a0a]">{reasons[2].title}</h3>
+                  <h3 className="text-xl font-semibold text-white">{reasons[2].title}</h3>
                 </div>
-                <div className="mt-4 md:mt-0 md:border-l md:border-[#e5e5e5] md:pl-16">
-                  <p className="text-sm text-[#737373] leading-relaxed max-w-xl">{reasons[2].description}</p>
+                <div className="mt-4 md:mt-0 md:border-l md:border-white/8 md:pl-16">
+                  <p className="text-sm text-white/40 leading-relaxed max-w-xl">{reasons[2].description}</p>
                 </div>
               </div>
             </AnimateIn>
@@ -383,7 +444,7 @@ export default function HomePage() {
       {/* ── CTA ── */}
       <section className="bg-[#0a0a0a] bg-dot-grid py-36 border-t border-white/8">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <AnimateIn>
+          <div className="gsap-reveal">
             <span className="inline-flex items-center rounded-full px-4 py-1.5 text-[11px] uppercase tracking-[0.25em] mb-8"
               style={{ border: "1px solid rgba(201,168,76,0.2)", color: GOLD }}>
               Contact
@@ -403,7 +464,7 @@ export default function HomePage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
-          </AnimateIn>
+          </div>
         </div>
       </section>
     </>
