@@ -10,7 +10,6 @@ const serviceCategories = [
       { name: "マーケティングコンサルティング", href: "/services/consulting" },
       { name: "運用代行", href: "/services/operations" },
       { name: "制作", href: "/services/production" },
-      { name: "スクール", href: "/services/school" },
       { name: "広告運用管理（adops）", href: "/services/adops" },
     ],
   },

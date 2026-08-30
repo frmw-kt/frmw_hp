@@ -9,7 +9,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
   title: "Framework | マーケティング支援",
-  description: "マーケティングの戦略設計から実行まで、コンサルティング・運用代行・制作・スクール・アプリ開発をワンストップで提供します。",
+  description: "マーケティングの戦略設計から実行まで、コンサルティング・運用代行・制作・アプリ開発をワンストップで提供します。",
 };
 
 const stats = [
@@ -44,12 +44,6 @@ const serviceCategories = [
       },
       {
         number: "04",
-        title: "スクール",
-        description: "現役プロが教える実践的なマーケティングスクール。個人の学習から企業研修まで幅広く対応します。",
-        href: "/services/school",
-      },
-      {
-        number: "05",
         title: "広告運用管理（adops）",
         description: "Meta・Google広告のデータをリアルタイムで可視化・自動化。レポート集計の工数をゼロにし、改善サイクルを加速するSaaSツール。",
         href: "/services/adops",
@@ -106,7 +100,7 @@ const process = [
   { step: "04", title: "改善",         desc: "データを基に継続的に検証・改善サイクルを回します。" },
 ];
 
-const marqueeItems = ["Consulting", "Operations", "Production", "School", "adops", "App Development", "Strategy", "Analytics", "Creative", "Growth"];
+const marqueeItems = ["Consulting", "Operations", "Production", "adops", "App Development", "Strategy", "Analytics", "Creative", "Growth"];
 
 const GOLD = "#C9A84C";
 const GOLD_DARK = "#A8892E";

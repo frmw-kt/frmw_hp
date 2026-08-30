@@ -5,7 +5,6 @@ const SERVICE_LABELS: Record<string, string> = {
   consulting: "マーケティングコンサルティング",
   operations: "運用代行",
   production: "制作",
-  school: "スクール",
   other: "その他・未定",
 };
 

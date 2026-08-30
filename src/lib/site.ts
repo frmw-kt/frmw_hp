@@ -5,7 +5,7 @@ export const SITE_NAME = "Framework";
 
 export const DEFAULT_TITLE = "Framework | マーケティング支援";
 export const DEFAULT_DESCRIPTION =
-  "マーケティングの戦略設計から実行まで、コンサルティング・運用代行・制作・スクール・アプリ開発をワンストップで提供します。";
+  "マーケティングの戦略設計から実行まで、コンサルティング・運用代行・制作・アプリ開発をワンストップで提供します。";
 
 export const COMPANY = {
   legalName: "Framework（frmw）",

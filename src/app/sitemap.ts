@@ -20,7 +20,6 @@ const staticRoutes = [
   "/services/production",
   "/services/production/lp",
   "/services/production/web",
-  "/services/school",
   "/services/adops",
   "/services/app-development",
   "/services/ai",

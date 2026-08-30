@@ -54,11 +54,6 @@ const services = [
     title: "制作",
     description: "成果につながるLP・Webサイト・クリエイティブを制作。ブランド力と集客力を同時に高めます。",
   },
-  {
-    number: "04",
-    title: "マーケティングスクール",
-    description: "現役プロによる実践的な研修・スクール。社内マーケティング人材を育成します。",
-  },
 ];
 
 const stats = [
@@ -130,7 +125,7 @@ export default function LpPage() {
           丸ごと解決します。
         </h1>
         <p className="text-white/50 text-base leading-relaxed max-w-xl mx-auto mb-10">
-          コンサルティング・運用代行・制作・スクールの4つのサービスで、
+          コンサルティング・運用代行・制作の3つのサービスで、
           中小企業のマーケティング課題を一気通貫でサポートします。
         </p>
         <a
@@ -203,7 +198,7 @@ export default function LpPage() {
       <section className="bg-[#fafafa] border-y border-[#e5e5e5] px-6 py-24">
         <div className="max-w-5xl mx-auto">
           <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#C9A84C" }}>Services</p>
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">4つのサービスで完全サポート</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">3つのサービスで完全サポート</h2>
           <div className="grid sm:grid-cols-2 gap-5">
             {services.map((s) => (
               <div key={s.number} className="bg-white border border-[#e5e5e5] rounded-2xl p-8 hover:shadow-md transition-shadow duration-200">

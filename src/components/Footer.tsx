@@ -4,7 +4,6 @@ const services = [
   { name: "マーケティングコンサルティング", href: "/services/consulting" },
   { name: "運用代行", href: "/services/operations" },
   { name: "制作", href: "/services/production" },
-  { name: "スクール", href: "/services/school" },
 ];
 
 const company = [
