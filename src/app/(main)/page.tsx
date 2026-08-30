@@ -5,6 +5,7 @@ import AnimateIn from "@/components/AnimateIn";
 import ServiceCarousel from "@/components/ServiceCarousel";
 import ScrollScene from "@/components/ScrollScene";
 import HomeAnimations from "@/components/HomeAnimations";
+import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
   title: "Framework | マーケティング支援",
@@ -12,10 +13,10 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  { value: "8,000", unit: "万円", label: "運用経験・月間広告費" },
-  { value: "-68",     unit: "%",  label: "平均CPA改善" },
-  { value: "100",     unit: "%",  label: "継続率" },
-  { value: "+255",    unit: "%",  label: "平均CV数改善" },
+  { value: "8,000", unit: "万円", label: "運用経験・月間広告費", dir: "SCALE" },
+  { value: "68",     unit: "%",  label: "平均CPA改善",         dir: "▼ 改善" },
+  { value: "100",    unit: "%",  label: "継続率",               dir: "◆ 維持" },
+  { value: "255",    unit: "%",  label: "平均CV数改善",         dir: "▲ 向上" },
 ];
 
 const serviceCategories = [
@@ -181,24 +182,30 @@ export default function HomePage() {
       <ServiceCarousel services={carouselServices} />
 
       {/* ── Stats ── */}
-      <section className="bg-[#111] border-b border-white/8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-white/8">
-            {stats.map((s, i) => {
-              const hasSign = s.value.startsWith('+') || s.value.startsWith('-');
-              const sign = hasSign ? s.value[0] : '';
-              const num = hasSign ? s.value.slice(1) : s.value;
-              return (
-                <AnimateIn key={s.label} delay={(i + 1) as 1|2|3|4} className="py-14 px-8 text-center">
-                  <p className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-3 whitespace-nowrap" style={{ color: GOLD }}>
-                    {sign && <span className="text-[0.65em]">{sign}</span>}
-                    {num}
-                    {s.unit && <span className="text-[0.55em]">{s.unit}</span>}
+      <section className="bg-[#0a0a0a] py-16 md:py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="rounded-[18px] border border-white/8 overflow-hidden">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/8 border border-white/8">
+              {stats.map((s, i) => (
+                <AnimateIn
+                  key={s.label}
+                  delay={(i + 1) as 1|2|3|4}
+                  className="stat-tag-cell bg-[#111] text-center pt-[30px] px-5 pb-[26px]"
+                >
+                  <p className="text-[11px] mb-3" style={{ color: GOLD }}>{s.dir}</p>
+                  <p
+                    className="text-white whitespace-nowrap"
+                    style={{ fontSize: "clamp(1.6rem, 2.6vw, 2rem)", fontWeight: 600, letterSpacing: "-0.01em" }}
+                  >
+                    {s.value}
+                    {s.unit && <span className="text-[0.5em]" style={{ color: GOLD_DARK }}>{s.unit}</span>}
                   </p>
-                  <p className="text-xs text-white/25 uppercase tracking-[0.2em]">{s.label}</p>
+                  <p className="text-[11px] mt-[10px]" style={{ color: "rgba(255,255,255,0.22)", letterSpacing: "0.04em" }}>
+                    {s.label}
+                  </p>
                 </AnimateIn>
-              );
-            })}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -206,7 +213,7 @@ export default function HomePage() {
       {/* ── Services ── */}
       <section id="services">
         {/* Section intro */}
-        <div className="bg-white pt-24 pb-12 border-b border-[#e5e5e5]">
+        <div className="bg-white pt-14 pb-8 border-b border-[#e5e5e5]">
           <div className="max-w-7xl mx-auto px-6">
             <div className="gsap-reveal flex items-end justify-between">
               <div>
@@ -225,7 +232,7 @@ export default function HomePage() {
         </div>
 
         {/* Block 01 — Marketing (light) */}
-        <div className="relative bg-white py-16 overflow-hidden" style={{
+        <div className="relative bg-white py-10 overflow-hidden" style={{
           backgroundImage: [
             "radial-gradient(ellipse 55% 45% at 100% 0%, rgba(201,168,76,0.08) 0%, transparent 60%)",
             "radial-gradient(ellipse 40% 35% at 0% 100%, rgba(201,168,76,0.05) 0%, transparent 55%)",
@@ -271,7 +278,7 @@ export default function HomePage() {
         </div>
 
         {/* Block 02 — Product (dark) */}
-        <div className="relative bg-[#0a0a0a] py-16 overflow-hidden" style={{
+        <div className="relative bg-[#0a0a0a] py-10 overflow-hidden" style={{
           backgroundImage: [
             "radial-gradient(ellipse 75% 55% at 50% -5%, rgba(201,168,76,0.13) 0%, transparent 65%)",
             "linear-gradient(rgba(255,255,255,0.032) 1px, transparent 1px)",
@@ -438,6 +445,30 @@ export default function HomePage() {
               </div>
             </AnimateIn>
           </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="bg-[#fafafa] py-24 border-t border-[#e5e5e5]">
+        <div className="max-w-3xl mx-auto px-6">
+          <AnimateIn className="flex items-end justify-between mb-12 pb-6 border-b border-[#e5e5e5]">
+            <div>
+              <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
+                FAQ
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
+                よくあるご質問
+              </h2>
+            </div>
+          </AnimateIn>
+          <AnimateIn delay={1}>
+            <FaqAccordion limit={4} />
+          </AnimateIn>
+          <AnimateIn delay={2} className="mt-8 text-center">
+            <Link href="/faq" className="text-sm font-semibold text-[#0a0a0a] hover:opacity-70 transition-opacity duration-200">
+              よくある質問をすべて見る →
+            </Link>
+          </AnimateIn>
         </div>
       </section>
 

@@ -1,6 +1,3 @@
-"use client";
-
-import { useEffect, useRef } from "react";
 import Link from "next/link";
 
 interface ServiceItem {
@@ -12,67 +9,22 @@ interface ServiceItem {
 }
 
 export default function ServiceCarousel({ services }: { services: ServiceItem[] }) {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const trackRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    const track = trackRef.current;
-    if (!section || !track) return;
-
-    let ctx: { revert: () => void } | null = null;
-
-    (async () => {
-      const { default: gsap } = await import("gsap");
-      const { ScrollTrigger } = await import("gsap/ScrollTrigger");
-      gsap.registerPlugin(ScrollTrigger);
-
-      ctx = gsap.context(() => {
-        const getScrollAmount = () => -(track.scrollWidth - window.innerWidth);
-
-        gsap.to(track, {
-          x: getScrollAmount,
-          ease: "none",
-          scrollTrigger: {
-            trigger: section,
-            start: "top top",
-            end: () => `+=${Math.abs(getScrollAmount())}`,
-            scrub: 1.2,
-            pin: true,
-            anticipatePin: 1,
-            invalidateOnRefresh: true,
-          },
-        });
-      }, section);
-    })();
-
-    return () => {
-      ctx?.revert();
-    };
-  }, []);
+  const loop = [...services, ...services];
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative bg-[#0a0a0a] overflow-hidden"
-      style={{ height: "100vh" }}
-    >
-      {/* Labels */}
-      <div className="absolute top-10 left-0 w-full flex justify-between items-center px-16 z-20 pointer-events-none select-none">
+    <section className="relative bg-[#0a0a0a] py-14 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 mb-8">
         <span className="text-[10px] uppercase tracking-[0.35em] text-white/20">Services</span>
-        <span className="text-[10px] uppercase tracking-[0.2em] text-white/15">scroll →</span>
       </div>
 
-      {/* Track */}
-      <div className="absolute inset-0 flex items-center overflow-hidden">
+      <div className="overflow-hidden">
         <div
-          ref={trackRef}
-          className="flex gap-4 will-change-transform"
-          style={{ paddingLeft: "12vw", paddingRight: "12vw", width: "max-content" }}
+          className="marquee-track-pausable flex gap-4 will-change-transform"
+          style={{ animationDuration: `${services.length * 6}s` }}
         >
-          {services.map((service) => (
+          {loop.map((service, i) => (
             <Link
-              key={service.href}
+              key={`${service.href}-${i}`}
               href={service.href}
               className="group relative flex flex-col justify-end rounded-2xl overflow-hidden shrink-0 transition-all duration-500 hover:border-white/20"
               style={{

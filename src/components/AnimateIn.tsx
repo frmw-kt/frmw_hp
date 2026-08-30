@@ -7,9 +7,10 @@ interface Props {
   className?: string;
   delay?: 0 | 1 | 2 | 3 | 4 | 5;
   tag?: keyof React.JSX.IntrinsicElements;
+  style?: React.CSSProperties;
 }
 
-export default function AnimateIn({ children, className = "", delay = 0, tag: Tag = "div" }: Props) {
+export default function AnimateIn({ children, className = "", delay = 0, tag: Tag = "div", style }: Props) {
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -32,7 +33,7 @@ export default function AnimateIn({ children, className = "", delay = 0, tag: Ta
 
   return (
     // @ts-expect-error dynamic tag
-    <Tag ref={ref} className={`reveal ${delayClass} ${className}`}>
+    <Tag ref={ref} className={`reveal ${delayClass} ${className}`} style={style}>
       {children}
     </Tag>
   );

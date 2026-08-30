@@ -10,7 +10,7 @@ export default function ScrollScene() {
     if (!container) return;
 
     let animId: number;
-    let renderer: { dispose: () => void; render: (s: unknown, c: unknown) => void } | null = null;
+    let renderer: { dispose: () => void } | null = null;
 
     (async () => {
       const THREE = await import("three");
@@ -34,7 +34,7 @@ export default function ScrollScene() {
       webglRenderer.setSize(W, H);
       webglRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
       webglRenderer.setClearColor(0x000000, 0);
-      renderer = webglRenderer as typeof renderer;
+      renderer = webglRenderer;
 
       // Particle geometry — two concentric shells
       const COUNT = 900;
@@ -109,13 +109,13 @@ export default function ScrollScene() {
       const onResize = () => {
         const w = container.clientWidth;
         const h = container.clientHeight;
-        (camera as THREE.PerspectiveCamera).aspect = w / h;
-        (camera as THREE.PerspectiveCamera).updateProjectionMatrix();
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
         webglRenderer.setSize(w, h);
       };
       window.addEventListener("resize", onResize);
 
-      (webglRenderer as THREE.WebGLRenderer & { _onResize?: () => void })._onResize = onResize;
+      (webglRenderer as typeof webglRenderer & { _onResize?: () => void })._onResize = onResize;
     })();
 
     return () => {

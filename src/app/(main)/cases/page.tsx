@@ -3,147 +3,15 @@
 import { useState } from "react";
 import Link from "next/link";
 import AnimateIn from "@/components/AnimateIn";
+import { cases } from "@/lib/cases";
 
 const GOLD = "#C9A84C";
-const GOLD_DARK = "#A8892E";
 
 const overallStats = [
   { value: "8,000万円", unit: "/月", label: "運用広告費" },
   { value: "50+",       unit: "",    label: "支援実績" },
   { value: "100%",      unit: "",    label: "継続率" },
   { value: "-68%",      unit: "",    label: "平均CPA改善" },
-];
-
-type Case = {
-  id: string;
-  industry: string;
-  tag: string;
-  company: string;
-  challenge: string;
-  approach: string[];
-  services: string[];
-  budget: string;
-  period: string;
-  results: { label: string; before: string; after: string; delta: string; positive: boolean }[];
-  highlight: { value: string; label: string };
-};
-
-const cases: Case[] = [
-  {
-    id: "real-estate",
-    industry: "不動産",
-    tag: "不動産",
-    company: "売買仲介会社（従業員30名規模）",
-    challenge:
-      "Meta広告を自社運用していたが問い合わせCPAが1.5万円を超え、質の低いリードが多く営業工数を圧迫。広告費300万円/月を投下しているにもかかわらず成約件数が伸び悩んでいた。",
-    approach: [
-      "既存顧客データをもとに類似オーディエンスを再構築",
-      "クリエイティブを20パターン同時テストし、勝ちパターンを特定",
-      "LP導線を成約率最重視で全面リニューアル",
-      "追客メールシナリオを設計し商談化率を底上げ",
-    ],
-    services: ["Meta広告運用代行", "LP制作", "CRM設計"],
-    budget: "300万円/月",
-    period: "支援開始から3ヶ月",
-    results: [
-      { label: "問い合わせCPA", before: "15,200円", after: "4,800円", delta: "-68%", positive: true },
-      { label: "月間成約件数",  before: "8件",        after: "27件",    delta: "+238%", positive: true },
-      { label: "商談化率",      before: "12%",        after: "31%",     delta: "+19pt", positive: true },
-    ],
-    highlight: { value: "-68%", label: "CPA改善" },
-  },
-  {
-    id: "online-school",
-    industry: "スクール",
-    tag: "オンラインスクール",
-    company: "プログラミング・マーケティングスクール（受講生500名規模）",
-    challenge:
-      "競合スクールの増加により受講生獲得コスト（CPO）が急騰。広告費500万円/月を使っても月間新規受講生が伸び悩み、LTVも低下傾向。ファネル全体の再設計が急務だった。",
-    approach: [
-      "無料体験会の申込から受講契約までの全導線を可視化・改善",
-      "Meta/Google/TikTokの媒体ミックスを最適化",
-      "無料体験参加者向けのフォローアップLINE配信シナリオを構築",
-      "既存受講生のアップセル・継続率改善施策を並行実施",
-    ],
-    services: ["マーケティングコンサルティング", "広告運用代行（Meta/Google）", "CRM・LINE設計"],
-    budget: "500万円/月",
-    period: "支援開始から6ヶ月",
-    results: [
-      { label: "月間新規受講生",    before: "22名",  after: "78名",   delta: "+255%", positive: true },
-      { label: "受講生獲得CPO",     before: "23万円", after: "9.4万円", delta: "-59%",  positive: true },
-      { label: "受講生継続率（3ヶ月）", before: "51%", after: "79%",  delta: "+28pt", positive: true },
-    ],
-    highlight: { value: "3.5倍", label: "受講生数" },
-  },
-  {
-    id: "remodeling",
-    industry: "リフォーム",
-    tag: "リフォーム・外壁塗装",
-    company: "外壁塗装・屋根リフォーム会社（地域密着、従業員15名）",
-    challenge:
-      "集客をポスティングと紹介に100%依存。デジタル広告の知見がなく、どこから始めればよいか分からない状態。季節変動が大きく、閑散期の売上が読めないことも課題だった。",
-    approach: [
-      "Meta広告をゼロから設計・運用（初月は少額テストから開始）",
-      "「外壁の劣化診断」を訴求する無料オファー型LPを制作",
-      "地域・住宅所有者属性に絞ったターゲティングを精緻化",
-      "問い合わせから見積もり、契約までの営業フローも整備",
-    ],
-    services: ["Meta広告運用代行", "LP制作", "マーケティングコンサルティング"],
-    budget: "80万円/月",
-    period: "支援開始から4ヶ月",
-    results: [
-      { label: "月間問い合わせ数", before: "3件（紹介のみ）", after: "48件", delta: "+1,500%", positive: true },
-      { label: "月商",            before: "基準月比",        after: "+310%", delta: "+310%",  positive: true },
-      { label: "広告ROI",         before: "—",              after: "620%",  delta: "新規達成", positive: true },
-    ],
-    highlight: { value: "620%", label: "広告ROI" },
-  },
-  {
-    id: "tax-accountant",
-    industry: "士業",
-    tag: "士業",
-    company: "税理士法人（スタッフ8名、相続税専門）",
-    challenge:
-      "顧問先からの紹介が売上の95%を占め、新規開拓に課題。デジタルへの投資経験がなく「何をすれば良いかわからない」状態。年間の新規顧問契約件数を3倍にする目標を設定。",
-    approach: [
-      "相続税申告・生前対策をテーマにしたSEO記事を月4本制作",
-      "Googleビジネスプロフィールを最適化し地域検索での表示を強化",
-      "「相続税シミュレーター」の無料ツールをLP内に実装しリード獲得",
-      "メルマガシナリオで潜在客を育成し相談予約につなげる設計",
-    ],
-    services: ["SEO・コンテンツマーケティング", "LP制作", "マーケティングコンサルティング"],
-    budget: "50万円/月",
-    period: "支援開始から8ヶ月",
-    results: [
-      { label: "自然検索流入",      before: "月120PV",  after: "月4,800PV", delta: "+3,900%", positive: true },
-      { label: "デジタル経由の相談", before: "0件/月",   after: "22件/月",   delta: "新規達成", positive: true },
-      { label: "年間新規顧問契約",  before: "12件",      after: "41件",      delta: "+242%",   positive: true },
-    ],
-    highlight: { value: "+242%", label: "新規顧問契約" },
-  },
-  {
-    id: "d2c",
-    industry: "EC・通販",
-    tag: "EC・D2C",
-    company: "サプリメント・健康食品D2Cブランド（自社EC）",
-    challenge:
-      "広告費1,200万円/月を投下しているが、新規獲得コストの上昇とLTVの低下が同時進行。ROAS180%と収益性が悪化し、このままでは赤字転落が目前の状態だった。",
-    approach: [
-      "広告アカウント全体を監査し、採算割れのキャンペーンを停止・予算を集中",
-      "Meta/Google/アフィリエイトの媒体別ROASを可視化し配分を最適化",
-      "定期購入移行率を上げるためのLINE・メール自動配信を設計",
-      "同梱物・解約阻止フロー・アップセルシナリオを一から再構築",
-    ],
-    services: ["広告運用代行（Meta/Google）", "アフィリエイト管理", "CRM・LTV改善"],
-    budget: "1,200万円/月",
-    period: "支援開始から5ヶ月",
-    results: [
-      { label: "ROAS",            before: "180%",  after: "510%",  delta: "+330pt",  positive: true },
-      { label: "定期継続率（3ヶ月）", before: "38%", after: "67%",  delta: "+29pt",   positive: true },
-      { label: "月次営業利益",     before: "赤字",  after: "黒字転換", delta: "黒字転換", positive: true },
-    ],
-    highlight: { value: "510%", label: "ROAS達成" },
-  },
 ];
 
 const industries = ["すべて", "不動産", "スクール", "リフォーム・外壁塗装", "士業", "EC・D2C"];
@@ -236,9 +104,11 @@ export default function CasesPage() {
           {/* Case cards */}
           <div className="space-y-6">
             {filtered.map((c, i) => (
-              <AnimateIn key={c.id} delay={((i % 3) + 1) as 1 | 2 | 3}>
-                <div className="border border-[#e5e5e5] rounded-2xl overflow-hidden hover:border-[#0a0a0a]/20 hover:shadow-md transition-all duration-300">
-
+              <AnimateIn key={c.slug} delay={((i % 3) + 1) as 1 | 2 | 3}>
+                <Link
+                  href={`/cases/${c.slug}`}
+                  className="group block border border-[#e5e5e5] rounded-2xl overflow-hidden hover:border-[#0a0a0a]/20 hover:shadow-md transition-all duration-300"
+                >
                   {/* Card header */}
                   <div className="bg-[#0a0a0a] px-8 pt-8 pb-7">
                     <div className="flex items-start justify-between gap-4 flex-wrap">
@@ -261,74 +131,24 @@ export default function CasesPage() {
 
                   {/* Card body */}
                   <div className="p-8">
-                    <div className="grid md:grid-cols-2 gap-8 mb-8">
-                      {/* Challenge */}
-                      <div>
-                        <p className="text-[11px] text-[#737373] uppercase tracking-[0.15em] mb-3 font-medium">課題</p>
-                        <p className="text-sm text-[#0a0a0a] leading-relaxed">{c.challenge}</p>
-                      </div>
+                    <p className="text-[11px] text-[#737373] uppercase tracking-[0.15em] mb-3 font-medium">課題</p>
+                    <p className="text-sm text-[#0a0a0a] leading-relaxed max-w-2xl">{c.challenge}</p>
 
-                      {/* Approach */}
-                      <div>
-                        <p className="text-[11px] text-[#737373] uppercase tracking-[0.15em] mb-3 font-medium">施策</p>
-                        <ul className="space-y-2">
-                          {c.approach.map((a, j) => (
-                            <li key={j} className="flex items-start gap-2.5 text-sm text-[#0a0a0a]">
-                              <span className="shrink-0 w-4 h-4 rounded-full flex items-center justify-center mt-0.5" style={{ background: `linear-gradient(135deg, #E2C16A, #A8892E)` }}>
-                                <svg className="w-2.5 h-2.5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                              </span>
-                              {a}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-
-                    {/* Results */}
-                    <div className="border-t border-[#e5e5e5] pt-8">
-                      <p className="text-[11px] text-[#737373] uppercase tracking-[0.15em] mb-5 font-medium">成果（{c.period}）</p>
-                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                        {c.results.map((r) => (
-                          <div key={r.label} className="bg-[#fafafa] border border-[#e5e5e5] rounded-xl p-5">
-                            <p className="text-xs text-[#737373] mb-3">{r.label}</p>
-                            <div className="flex items-end gap-3">
-                              <div>
-                                <p className="text-xs text-[#737373]/60 mb-0.5">Before</p>
-                                <p className="text-sm text-[#0a0a0a] font-medium">{r.before}</p>
-                              </div>
-                              <svg className="w-4 h-4 text-[#737373]/30 mb-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                              </svg>
-                              <div>
-                                <p className="text-xs text-[#737373]/60 mb-0.5">After</p>
-                                <p className="text-sm text-[#0a0a0a] font-medium">{r.after}</p>
-                              </div>
-                            </div>
-                            <p
-                              className="text-base font-bold mt-3"
-                              style={{ color: GOLD_DARK }}
-                            >
-                              {r.delta}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Services used */}
-                    <div className="mt-5 flex flex-wrap gap-1.5 items-center">
-                      <span className="text-[11px] text-[#737373] mr-1">使用サービス:</span>
+                    <div className="mt-6 flex flex-wrap gap-1.5 items-center">
                       {c.services.map((s) => (
                         <span key={s} className="text-[11px] px-2.5 py-1 rounded-full border border-[#e5e5e5] text-[#737373]">
                           {s}
                         </span>
                       ))}
-                      <span className="text-[11px] text-[#737373] ml-auto">広告費: {c.budget}</span>
+                      <span className="ml-auto inline-flex items-center gap-1.5 text-sm font-semibold text-[#0a0a0a]">
+                        詳しく見る
+                        <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </span>
                     </div>
                   </div>
-                </div>
+                </Link>
               </AnimateIn>
             ))}
           </div>

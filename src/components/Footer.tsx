@@ -7,11 +7,18 @@ const services = [
   { name: "スクール", href: "/services/school" },
 ];
 
+const company = [
+  { name: "支援事例", href: "/cases" },
+  { name: "コラム", href: "/blog" },
+  { name: "よくあるご質問", href: "/faq" },
+  { name: "About", href: "/about" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#0a0a0a] text-white border-t border-white/8">
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-white/8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 pb-12 border-b border-white/8">
           <div>
             <div className="mb-5">
               <span className="text-base font-bold tracking-tight" style={{ color: "#C9A84C" }}>Framework</span>
@@ -28,6 +35,19 @@ export default function Footer() {
                 <li key={s.href}>
                   <Link href={s.href} className="text-sm text-white/40 hover:text-white transition-colors duration-200 underline-draw">
                     {s.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-xs text-white/20 uppercase tracking-widest mb-5">Company</p>
+            <ul className="space-y-3">
+              {company.map((c) => (
+                <li key={c.href}>
+                  <Link href={c.href} className="text-sm text-white/40 hover:text-white transition-colors duration-200 underline-draw">
+                    {c.name}
                   </Link>
                 </li>
               ))}

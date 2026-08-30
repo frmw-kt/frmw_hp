@@ -85,6 +85,9 @@ export default function Header() {
           <Link href="/blog" className="text-sm text-white/50 hover:text-white transition-colors duration-200 underline-draw">
             Column
           </Link>
+          <Link href="/faq" className="text-sm text-white/50 hover:text-white transition-colors duration-200 underline-draw">
+            FAQ
+          </Link>
           <Link href="/about" className="text-sm text-white/50 hover:text-white transition-colors duration-200 underline-draw">
             About
           </Link>
@@ -110,6 +113,7 @@ export default function Header() {
           <Link href="/" className="block py-3 text-sm text-white/50 hover:text-white" onClick={() => setMenuOpen(false)}>Top</Link>
           <Link href="/cases" className="block py-3 text-sm text-white/50 hover:text-white" onClick={() => setMenuOpen(false)}>Cases</Link>
           <Link href="/blog" className="block py-3 text-sm text-white/50 hover:text-white" onClick={() => setMenuOpen(false)}>Column</Link>
+          <Link href="/faq" className="block py-3 text-sm text-white/50 hover:text-white" onClick={() => setMenuOpen(false)}>FAQ</Link>
           <Link href="/about" className="block py-3 text-sm text-white/50 hover:text-white" onClick={() => setMenuOpen(false)}>About</Link>
           {serviceCategories.map((cat, ci) => (
             <div key={cat.label}>

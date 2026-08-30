@@ -89,6 +89,17 @@ body {
   animation: marquee 28s linear infinite;
 }
 
+/* Same loop, but pauses on hover so a card can be read before it scrolls by. */
+.marquee-track-pausable {
+  width: max-content;
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.marquee-track-pausable:hover {
+  animation-play-state: paused;
+}
+
 /* ── Service row hover ── */
 .service-desc-wrap {
   display: grid;
@@ -164,6 +175,31 @@ body {
 .bg-dot-grid {
   background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
   background-size: 28px 28px;
+}
+
+/* ── Stat cell corner marks (viewfinder-style "measured value" accent) ── */
+.stat-tag-cell {
+  position: relative;
+}
+.stat-tag-cell::before,
+.stat-tag-cell::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  opacity: 0.7;
+}
+.stat-tag-cell::before {
+  top: 10px;
+  left: 10px;
+  border-top: 1.5px solid var(--gold-dark);
+  border-left: 1.5px solid var(--gold-dark);
+}
+.stat-tag-cell::after {
+  bottom: 10px;
+  right: 10px;
+  border-bottom: 1.5px solid var(--gold-dark);
+  border-right: 1.5px solid var(--gold-dark);
 }
 
 /* ── Lenis smooth scroll ── */
