@@ -7,7 +7,7 @@ import { faqs, getFaqCategories } from "@/lib/faq";
 export const metadata: Metadata = {
   title: "よくあるご質問",
   description:
-    "サービス内容・料金・契約の流れ・adopsについて、Frameworkによくいただくご質問にお答えします。",
+    "サービス内容・料金・契約の流れについて、Frameworkによくいただくご質問にお答えします。",
 };
 
 const GOLD = "#C9A84C";

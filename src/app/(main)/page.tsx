@@ -42,12 +42,6 @@ const serviceCategories = [
         description: "LP・サイト・バナー・動画など、成果につながるクリエイティブを制作。ブランドを強化するビジュアルを届けます。",
         href: "/services/production",
       },
-      {
-        number: "04",
-        title: "広告運用管理（adops）",
-        description: "Meta・Google広告のデータをリアルタイムで可視化・自動化。レポート集計の工数をゼロにし、改善サイクルを加速するSaaSツール。",
-        href: "/services/adops",
-      },
     ],
   },
   {
@@ -100,7 +94,7 @@ const process = [
   { step: "04", title: "改善",         desc: "データを基に継続的に検証・改善サイクルを回します。" },
 ];
 
-const marqueeItems = ["Consulting", "Operations", "Production", "adops", "App Development", "Strategy", "Analytics", "Creative", "Growth"];
+const marqueeItems = ["Consulting", "Operations", "Production", "App Development", "Strategy", "Analytics", "Creative", "Growth"];
 
 const GOLD = "#C9A84C";
 const GOLD_DARK = "#A8892E";
