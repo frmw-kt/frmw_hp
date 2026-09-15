@@ -52,8 +52,8 @@ export default function Image() {
             letterSpacing: -1,
           }}
         >
-          <span>マーケティングで、</span>
-          <span>ビジネスを加速させる。</span>
+          <span>事業の課題を、</span>
+          <span>動く施策に変える。</span>
         </div>
         <div
           style={{

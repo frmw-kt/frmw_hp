@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "../globals.css";
+import "./marketing.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SmoothScroll from "@/components/SmoothScroll";
-import { SITE_URL, SITE_NAME, DEFAULT_TITLE, DEFAULT_DESCRIPTION } from "@/lib/site";
+import {
+  SITE_URL,
+  SITE_NAME,
+  DEFAULT_TITLE,
+  DEFAULT_DESCRIPTION,
+} from "@/lib/site";
 
 const geist = Geist({
   variable: "--font-sans",
@@ -53,16 +58,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${geist.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col" style={{ fontFamily: "var(--font-sans)" }}>
+      <body className="marketing-site min-h-full flex flex-col">
+        <a href="#main-content" className="m-skip">
+          本文へスキップ
+        </a>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
         />
-        <SmoothScroll>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </SmoothScroll>
+        <Header />
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

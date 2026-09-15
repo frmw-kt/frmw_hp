@@ -1,124 +1,123 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import AnimateIn from "@/components/AnimateIn";
-import { getArticle, getAllArticles } from "@/lib/articles";
-
+import { getAllArticles, getArticle } from "@/lib/articles";
+import {
+  Breadcrumb,
+  Section,
+  ContactCTA,
+  JsonLd,
+  pageMeta,
+} from "@/components/Marketing";
+import { SITE_URL } from "@/lib/site";
 export function generateStaticParams() {
   return getAllArticles().map((a) => ({ slug: a.slug }));
 }
-
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
-  const article = getArticle(slug);
-  if (!article) return {};
-  return {
-    title: `${article.title} | Framework`,
-    description: article.description,
-  };
+  const a = getArticle(slug);
+  return a ? pageMeta(a.title, a.description, "/blog/" + slug) : {};
 }
-
-function formatDate(dateStr: string) {
-  const d = new Date(dateStr);
-  return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`;
-}
-
-export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
-  const article = getArticle(slug);
-  if (!article) notFound();
-
+  const a = getArticle(slug);
+  if (!a) notFound();
+  const service = slug.includes("landing")
+    ? ["LP制作", "/services/production/lp"]
+    : slug.includes("content")
+      ? ["施策立案", "/services/consulting/planning"]
+      : ["運用代行", "/services/operations"];
+  const headings = [...a.content.matchAll(/<h2>(.*?)<\/h2>/g)].map((m) => m[1]);
+  let i = 0;
+  const body = a.content.replace(
+    /<h2>/g,
+    () => '<h2 id="section-' + ++i + '">',
+  );
   return (
-    <main>
-      {/* Hero */}
-      <section className="bg-[#0a0a0a] pt-40 pb-20 px-6">
-        <div className="max-w-3xl mx-auto">
-          <AnimateIn>
-            <Link
-              href="/blog"
-              className="inline-flex items-center gap-1.5 text-xs text-white/40 hover:text-white/70 transition-colors duration-200 mb-8"
-            >
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              コラム一覧に戻る
-            </Link>
-          </AnimateIn>
-          <AnimateIn delay={1}>
-            <div className="flex items-center gap-3 mb-5">
-              <span
-                className="text-xs font-medium px-3 py-1 rounded-full border"
-                style={{ color: "#C9A84C", borderColor: "#C9A84C44", background: "#C9A84C11" }}
-              >
-                {article.category}
-              </span>
-              <span className="text-xs text-white/30">{formatDate(article.date)}</span>
-              <span className="text-xs text-white/30">{article.readTime}で読める</span>
-            </div>
-          </AnimateIn>
-          <AnimateIn delay={2}>
-            <h1
-              className="font-bold text-white leading-tight"
-              style={{ fontSize: "clamp(1.6rem, 4vw, 2.6rem)" }}
-            >
-              {article.title}
-            </h1>
-          </AnimateIn>
-          <AnimateIn delay={3}>
-            <p className="mt-5 text-white/50 text-sm leading-relaxed">
-              {article.description}
-            </p>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="h-1" style={{ background: "linear-gradient(90deg, #E2C16A 0%, #C9A84C 50%, #A8892E 100%)" }} />
-
-      {/* Content */}
-      <section className="bg-[#fafafa] py-20 px-6">
-        <div className="max-w-3xl mx-auto">
-          <div
-            className="article-body"
-            dangerouslySetInnerHTML={{ __html: article.content }}
-          />
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-[#0a0a0a] py-24 px-6">
-        <div className="max-w-2xl mx-auto text-center">
-          <AnimateIn>
-            <h2 className="text-white font-bold text-2xl mb-4">
-              マーケティングについて相談する
-            </h2>
-          </AnimateIn>
-          <AnimateIn delay={1}>
-            <p className="text-white/50 text-sm mb-8 leading-relaxed">
-              この記事の内容についてのご質問や、自社への適用についてのご相談はお気軽にどうぞ。
-            </p>
-          </AnimateIn>
-          <AnimateIn delay={2}>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 text-sm font-medium text-[#0a0a0a] px-8 py-4 rounded-full transition-opacity duration-200 hover:opacity-80"
-                style={{ background: "linear-gradient(135deg, #E2C16A 0%, #C9A84C 45%, #A8892E 100%)" }}
-              >
-                無料相談はこちら
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+    <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: a.title,
+          description: a.description,
+          datePublished: a.date,
+          dateModified: a.updatedAt ?? a.date,
+          author: {
+            "@type": "Organization",
+            name: "Framework",
+            url: SITE_URL + "/about",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Framework",
+            url: SITE_URL,
+          },
+          mainEntityOfPage: SITE_URL + "/blog/" + slug,
+        }}
+      />
+      <article>
+        <header className="m-service-hero">
+          <div className="m-container m-article-width">
+            <Breadcrumb
+              name="記事"
+              path={"/blog/" + slug}
+              parent={{ name: "コラム", path: "/blog" }}
+            />
+            <p className="m-eyebrow">{a.category}</p>
+            <h1 style={{ fontSize: "clamp(26px,3vw,40px)" }}>{a.title}</h1>
+            <p className="m-lead">{a.description}</p>
+            <p className="m-small" style={{ marginTop: 20 }}>
+              公開：<time dateTime={a.date}>{a.date}</time> / 更新：
+              <time dateTime={a.updatedAt ?? a.date}>
+                {a.updatedAt ?? a.date}
+              </time>
+              <br />
+              編集：
+              <Link href="/about" className="m-text-link">
+                Framework
               </Link>
-              <Link
-                href="/blog"
-                className="text-sm text-white/50 hover:text-white transition-colors duration-200"
-              >
-                他のコラムを読む
-              </Link>
-            </div>
-          </AnimateIn>
+            </p>
+          </div>
+        </header>
+        <div className="m-section">
+          <div className="m-container m-article-width">
+            <nav className="m-article-toc" aria-label="記事の目次">
+              <h2>この記事の内容</h2>
+              <ol>
+                {headings.map((h, k) => (
+                  <li key={h}>
+                    <a href={"#section-" + (k + 1)}>{h}</a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+            <div
+              className="article-body"
+              dangerouslySetInnerHTML={{ __html: body }}
+            />
+          </div>
         </div>
-      </section>
-    </main>
+      </article>
+      <Section
+        eyebrow="RELATED SUPPORT"
+        title="実行について相談したい方へ。"
+        tone="m-tint"
+      >
+        <div className="m-related">
+          <Link href={service[1]}>{service[0]}の支援内容 →</Link>
+          <Link href="/cases">支援事例を見る →</Link>
+          <Link href="/blog">ほかのコラムを見る →</Link>
+        </div>
+      </Section>
+      <ContactCTA />
+    </>
   );
 }

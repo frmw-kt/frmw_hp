@@ -11,7 +11,8 @@ export default function HeroBackground() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    let animationId: number;
+    let animationId = 0;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     let t = 0;
     const LINE_COUNT = 55;
 
@@ -57,10 +58,16 @@ export default function HeroBackground() {
       }
 
       t += 0.011;
-      animationId = requestAnimationFrame(draw);
+      if (!reducedMotion.matches) animationId = requestAnimationFrame(draw);
     };
 
-    const ro = new ResizeObserver(() => resize());
+    const redraw = () => {
+      cancelAnimationFrame(animationId);
+      resize();
+      draw();
+    };
+    const ro = new ResizeObserver(redraw);
+    reducedMotion.addEventListener("change", redraw);
     ro.observe(canvas);
     resize();
     draw();
@@ -68,8 +75,9 @@ export default function HeroBackground() {
     return () => {
       cancelAnimationFrame(animationId);
       ro.disconnect();
+      reducedMotion.removeEventListener("change", redraw);
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />;
+  return <canvas ref={canvasRef} aria-hidden="true" className="absolute inset-0 w-full h-full" />;
 }

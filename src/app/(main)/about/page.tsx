@@ -1,219 +1,115 @@
-import Link from "next/link";
-import type { Metadata } from "next";
-import AnimateIn from "@/components/AnimateIn";
-import NeuralNetworkAvatar from "@/components/NeuralNetworkAvatar";
-
-export const metadata: Metadata = {
-  title: "About | Framework",
-  description: "Framework代表・寺本一真のプロフィール。マーケティング支援とプロダクト開発を行っています。",
-};
-
-const GOLD = "#C9A84C";
-const GOLD_DARK = "#A8892E";
-
-const values = [
-  {
-    number: "01",
-    title: "Results First",
-    description: "見栄えのある提案より、数字で語れる成果を追求します。すべての施策はROIから逆算して設計します。",
-  },
-  {
-    number: "02",
-    title: "Data Driven",
-    description: "勘や経験だけに頼らず、データを根拠に意思決定します。再現性のある成功を積み重ねることが強みです。",
-  },
-  {
-    number: "03",
-    title: "Full Ownership",
-    description: "「提案して終わり」はしません。戦略から実行・改善まで責任をもって伴走し、クライアントと共に成果を出します。",
-  },
-  {
-    number: "04",
-    title: "Relentless Growth",
-    description: "マーケティングの潮流は常に変化します。最新の知見とテクノロジーを常に現場に取り入れ続けます。",
-  },
-];
-
-const companyInfo = [
-  { label: "屋号",     value: "Framework（frmw）" },
-  { label: "開業",     value: "2026年3月" },
-  { label: "代表",     value: "寺本 一真" },
-  { label: "所在地",   value: "愛知県名古屋市" },
-  { label: "事業内容", value: "マーケティングコンサルティング・運用代行・制作" },
-  { label: "対応規模", value: "スタートアップから成長企業まで" },
-];
-
-export default function AboutPage() {
+import {
+  Breadcrumb,
+  Section,
+  SystemDiagram,
+  ContactCTA,
+  pageMeta,
+} from "@/components/Marketing";
+import { COMPANY } from "@/lib/site";
+export const metadata = pageMeta(
+  "Frameworkについて｜代表・支援方針",
+  "愛知県名古屋市を拠点に、寺本一真が代表を務めるFramework。戦略、運用、制作をつなぎ、実行まで進めるマーケティング支援を提供します。",
+  "/about",
+);
+export default function Page() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative bg-[#0a0a0a] text-white overflow-hidden py-32 md:py-44">
-        <div className="relative max-w-7xl mx-auto px-6">
-          <Link href="/" className="inline-flex items-center gap-2 text-white/30 text-sm hover:text-white transition-colors mb-10">
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            トップへ戻る
-          </Link>
-          <p className="text-white/40 text-xs tracking-[0.3em] uppercase mb-5">About Us</p>
-          <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6 max-w-2xl">
-            小さくても強い事業を、<br />
-            <span className="text-white/30">マーケティングで実現する。</span>
+      <section className="m-service-hero">
+        <div className="m-container">
+          <Breadcrumb name="Frameworkについて" path="/about" />
+          <p className="m-eyebrow">ABOUT FRAMEWORK</p>
+          <h1>
+            小さくても強い事業を、
+            <br />
+            マーケティングで。
           </h1>
-          <p className="text-white/40 text-lg leading-relaxed max-w-xl">
-            マーケティング支援とプロダクト開発を通じて、
-            クライアントのビジネス成長を成果で証明します。
+          <p className="m-lead">
+            専任人材や実行リソースが足りない企業に、戦略と実務をつなぐパートナーを。
+            <br />
+            必要な領域から、事業の前進を支えます。
           </p>
         </div>
       </section>
-
-      {/* Mission */}
-      <section className="bg-[#fafafa] py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimateIn className="flex items-end justify-between mb-16 pb-6 border-b border-[#e5e5e5]">
-            <div>
-              <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
-                Mission
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
-                私たちのミッション
-              </h2>
-            </div>
-          </AnimateIn>
-
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <AnimateIn delay={1}>
-              <p className="text-[clamp(1.6rem,3.5vw,2.8rem)] font-bold text-[#0a0a0a] leading-snug tracking-tight">
-                「売れる仕組み」を<br />すべての事業に。
-              </p>
-            </AnimateIn>
-            <AnimateIn delay={2}>
-              <p className="text-[#737373] text-base leading-[2] max-w-md">
-                どんな規模の事業でも、正しいマーケティングと優れたプロダクトがあれば成長できる——それが Framework の使命です。
-                コンサルティング・運用・制作・教育・アプリ開発という軸で、ビジネスの成長に必要なすべてをワンストップで支援します。
-              </p>
-            </AnimateIn>
-          </div>
-        </div>
-      </section>
-
-      {/* CEO Message */}
-      <section className="bg-[#0a0a0a] text-white py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimateIn className="mb-16 pb-6 border-b border-white/8">
-            <span className="inline-flex items-center border border-white/10 rounded-full px-3 py-1 text-[11px] text-white/30 uppercase tracking-[0.2em] mb-4">
-              Message
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">代表メッセージ</h2>
-          </AnimateIn>
-
-          <div className="grid md:grid-cols-[1fr_2fr] gap-16 items-start">
-            <AnimateIn delay={1}>
-              <div className="relative border border-white/8 rounded-2xl aspect-[3/4] overflow-hidden">
-                <NeuralNetworkAvatar />
-                <div className="absolute inset-0 flex items-end p-8">
-                  <div>
-                    <p className="text-xs text-white/30 uppercase tracking-[0.2em] mb-2">Founder</p>
-                    <p className="text-xl font-bold text-white">Teramoto Kazuma</p>
-                  </div>
-                </div>
-              </div>
-            </AnimateIn>
-            <AnimateIn delay={2} className="flex flex-col justify-center">
-              <blockquote className="text-white/70 text-base leading-[2.2] space-y-6">
-                <p>
-                  マーケティングは「売る技術」ではなく、「価値を届ける技術」だと考えています。
-                  どれほど優れた製品やサービスも、正しく届けられなければ存在しないも同然です。
-                </p>
-                <p>
-                  Framework は2026年3月に立ち上げました。大手代理店での広告運用・マーケティング支援の経験を活かし、成果にこだわったパートナーシップを提供することを目的に創業しました。
-                  月間8,000万円規模の広告運用経験と、データドリブンなアプローチでクライアントの成長を支援します。
-                </p>
-                <p>
-                  「マーケティングで困ったら Framework」——そう言っていただけるパートナーであり続けることが誇りです。
-                </p>
-              </blockquote>
-            </AnimateIn>
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="bg-[#fafafa] py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimateIn className="flex items-end justify-between mb-12 pb-6 border-b border-[#e5e5e5]">
-            <div>
-              <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
-                Values
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">
-                私たちの価値観
-              </h2>
-            </div>
-          </AnimateIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {values.map((v, i) => (
-              <AnimateIn key={v.number} delay={(Math.min(i + 1, 4)) as 1|2|3|4}
-                className="border border-[#e5e5e5] rounded-2xl p-10 hover:border-[#0a0a0a]/25 hover:shadow-sm transition-all duration-300">
-                <p className="text-xs font-mono mb-6" style={{ color: GOLD_DARK }}>{v.number}</p>
-                <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">{v.title}</h3>
-                <p className="text-sm text-[#737373] leading-relaxed">{v.description}</p>
-              </AnimateIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Company Info */}
-      <section className="bg-white py-24 border-t border-[#e5e5e5]">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimateIn className="mb-16 pb-6 border-b border-[#e5e5e5]">
-            <span className="inline-flex items-center border border-[#e5e5e5] rounded-full px-3 py-1 text-[11px] text-[#737373] uppercase tracking-[0.2em] mb-4">
-              Profile
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0a0a0a] tracking-tight">プロフィール</h2>
-          </AnimateIn>
-
-          <AnimateIn delay={1} className="max-w-3xl">
-            <dl className="divide-y divide-[#e5e5e5]">
-              {companyInfo.map((item) => (
-                <div key={item.label} className="grid grid-cols-[10rem_1fr] py-6 gap-8">
-                  <dt className="text-sm text-[#737373]">{item.label}</dt>
-                  <dd className="text-sm text-[#0a0a0a] font-medium">{item.value}</dd>
-                </div>
-              ))}
-            </dl>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-[#0a0a0a] bg-dot-grid py-36 border-t border-white/8">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <AnimateIn>
-            <span className="inline-flex items-center rounded-full px-4 py-1.5 text-[11px] uppercase tracking-[0.25em] mb-8"
-              style={{ border: "1px solid rgba(201,168,76,0.2)", color: GOLD }}>
-              Contact
-            </span>
-            <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight tracking-tight mb-8">
-              まずは<br />
-              <span className="text-white/30">お気軽にご相談ください</span>
-            </h2>
-            <p className="text-white/35 text-base mb-12 max-w-md mx-auto leading-relaxed">
-              現状と課題をお聞きし、最適なプランをご提案します。月5万円〜対応可能。初回相談は無料です。
+      <Section
+        eyebrow="01 / OUR WORK"
+        title="提案を、実行できる状態にする。"
+        text="年商数千万円〜数億円規模の事業者を中心に、調査・戦略、広告運用、Web制作を支援。業務の課題にはアプリ開発やAI活用も組み合わせます。"
+      >
+        <SystemDiagram />
+      </Section>
+      <Section
+        eyebrow="02 / REPRESENTATIVE"
+        title="代表について。"
+        tone="m-tint"
+      >
+        <div className="m-split">
+          <div>
+            <p className="m-eyebrow">FOUNDER / MARKETING & PRODUCT</p>
+            <h3 className="m-subheading">{COMPANY.representative}</h3>
+            <p className="m-lead">
+              広告運用・マーケティング支援の経験をもとに、2026年3月にFrameworkを開業。月間8,000万円規模の広告運用経験を活かし、事業ごとの課題に向き合います。
             </p>
-            <Link href="/contact"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-black px-8 py-4 rounded-full transition-all duration-200 hover:opacity-90"
-              style={{ background: "linear-gradient(135deg, #E2C16A 0%, #C9A84C 45%, #A8892E 100%)" }}>
-              無料相談を申し込む
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-          </AnimateIn>
+          </div>
+          <div>
+            <h3 className="m-subheading">価値を、必要な人へ届ける。</h3>
+            <p className="m-lead">
+              優れた商品やサービスも、伝え方や届け方が整理されていなければ選ばれにくくなります。だからこそ、広告、サイト、問い合わせ後の対応を別々にせず、同じ目標につなげて考えます。
+            </p>
+            <p className="m-lead">
+              Frameworkは代表を主体とする個人事業です。担当する業務、連携が必要な範囲、窓口と役割分担を提案時に明確にします。
+            </p>
+          </div>
         </div>
-      </section>
+      </Section>
+      <Section
+        eyebrow="03 / WORKING PRINCIPLES"
+        title="支援で大切にする、3つのこと。"
+      >
+        <div className="m-grid-3">
+          {[
+            [
+              "目標と指標をそろえる",
+              "流入だけでなく、商談や成約を含む事業の流れから評価する指標を決めます。",
+            ],
+            [
+              "事実と仮説を分ける",
+              "確認できた数値と、まだ検証していない見立てを分け、判断の根拠を共有します。",
+            ],
+            [
+              "次の行動を残す",
+              "結果の報告に加え、改善の優先順位、担当、進め方を整理します。",
+            ],
+          ].map(([t, d], i) => (
+            <article className="m-task-card" key={t}>
+              <span className="m-num">0{i + 1}</span>
+              <h3>{t}</h3>
+              <p>{d}</p>
+            </article>
+          ))}
+        </div>
+      </Section>
+      <Section eyebrow="04 / PROFILE" title="事業概要。" tone="m-tint">
+        <dl className="m-company">
+          {[
+            ["屋号", COMPANY.legalName],
+            ["事業形態", "個人事業"],
+            ["代表", COMPANY.representative],
+            ["開業", "2026年3月"],
+            ["拠点", "愛知県名古屋市"],
+            [
+              "事業内容",
+              "マーケティングコンサルティング・運用代行・制作・アプリ開発・AI活用支援",
+            ],
+            ["対応方法", "全国オンライン対応。対面は個別に相談"],
+          ].map(([t, d]) => (
+            <div key={t}>
+              <dt>{t}</dt>
+              <dd>{d}</dd>
+            </div>
+          ))}
+        </dl>
+      </Section>
+      <ContactCTA />
     </>
   );
 }

@@ -40,9 +40,27 @@ export const cases: CaseStudy[] = [
     budget: "300万円/月",
     period: "支援開始から3ヶ月",
     results: [
-      { label: "問い合わせCPA", before: "15,200円", after: "4,800円", delta: "-68%", positive: true },
-      { label: "月間成約件数", before: "8件", after: "27件", delta: "+238%", positive: true },
-      { label: "商談化率", before: "12%", after: "31%", delta: "+19pt", positive: true },
+      {
+        label: "問い合わせCPA",
+        before: "15,200円",
+        after: "4,800円",
+        delta: "-68%",
+        positive: true,
+      },
+      {
+        label: "月間成約件数",
+        before: "8件",
+        after: "27件",
+        delta: "+238%",
+        positive: true,
+      },
+      {
+        label: "商談化率",
+        before: "12%",
+        after: "31%",
+        delta: "+19pt",
+        positive: true,
+      },
     ],
     highlight: { value: "-68%", label: "CPA改善" },
   },
@@ -59,13 +77,35 @@ export const cases: CaseStudy[] = [
       "無料体験参加者向けのフォローアップLINE配信シナリオを構築",
       "既存受講生のアップセル・継続率改善施策を並行実施",
     ],
-    services: ["マーケティングコンサルティング", "広告運用代行（Meta/Google）", "CRM・LINE設計"],
+    services: [
+      "マーケティングコンサルティング",
+      "広告運用代行（Meta/Google）",
+      "CRM・LINE設計",
+    ],
     budget: "500万円/月",
     period: "支援開始から6ヶ月",
     results: [
-      { label: "月間新規受講生", before: "22名", after: "78名", delta: "+255%", positive: true },
-      { label: "受講生獲得CPO", before: "23万円", after: "9.4万円", delta: "-59%", positive: true },
-      { label: "受講生継続率（3ヶ月）", before: "51%", after: "79%", delta: "+28pt", positive: true },
+      {
+        label: "月間新規受講生",
+        before: "22名",
+        after: "78名",
+        delta: "+255%",
+        positive: true,
+      },
+      {
+        label: "受講生獲得CPO",
+        before: "23万円",
+        after: "9.4万円",
+        delta: "-59%",
+        positive: true,
+      },
+      {
+        label: "受講生継続率（3ヶ月）",
+        before: "51%",
+        after: "79%",
+        delta: "+28pt",
+        positive: true,
+      },
     ],
     highlight: { value: "3.5倍", label: "受講生数" },
   },
@@ -86,9 +126,27 @@ export const cases: CaseStudy[] = [
     budget: "80万円/月",
     period: "支援開始から4ヶ月",
     results: [
-      { label: "月間問い合わせ数", before: "3件（紹介のみ）", after: "48件", delta: "+1,500%", positive: true },
-      { label: "月商", before: "基準月比", after: "+310%", delta: "+310%", positive: true },
-      { label: "広告ROI", before: "—", after: "620%", delta: "新規達成", positive: true },
+      {
+        label: "月間問い合わせ数",
+        before: "3件（紹介のみ）",
+        after: "48件",
+        delta: "+1,500%",
+        positive: true,
+      },
+      {
+        label: "月商",
+        before: "基準月比",
+        after: "+310%",
+        delta: "+310%",
+        positive: true,
+      },
+      {
+        label: "広告ROI",
+        before: "—",
+        after: "620%",
+        delta: "新規達成",
+        positive: true,
+      },
     ],
     highlight: { value: "620%", label: "広告ROI" },
   },
@@ -105,13 +163,35 @@ export const cases: CaseStudy[] = [
       "「相続税シミュレーター」の無料ツールをLP内に実装しリード獲得",
       "メルマガシナリオで潜在客を育成し相談予約につなげる設計",
     ],
-    services: ["SEO・コンテンツマーケティング", "LP制作", "マーケティングコンサルティング"],
+    services: [
+      "SEO・コンテンツマーケティング",
+      "LP制作",
+      "マーケティングコンサルティング",
+    ],
     budget: "50万円/月",
     period: "支援開始から8ヶ月",
     results: [
-      { label: "自然検索流入", before: "月120PV", after: "月4,800PV", delta: "+3,900%", positive: true },
-      { label: "デジタル経由の相談", before: "0件/月", after: "22件/月", delta: "新規達成", positive: true },
-      { label: "年間新規顧問契約", before: "12件", after: "41件", delta: "+242%", positive: true },
+      {
+        label: "自然検索流入",
+        before: "月120PV",
+        after: "月4,800PV",
+        delta: "+3,900%",
+        positive: true,
+      },
+      {
+        label: "デジタル経由の相談",
+        before: "0件/月",
+        after: "22件/月",
+        delta: "新規達成",
+        positive: true,
+      },
+      {
+        label: "年間新規顧問契約",
+        before: "12件",
+        after: "41件",
+        delta: "+242%",
+        positive: true,
+      },
     ],
     highlight: { value: "+242%", label: "新規顧問契約" },
   },
@@ -128,13 +208,35 @@ export const cases: CaseStudy[] = [
       "定期購入移行率を上げるためのLINE・メール自動配信を設計",
       "同梱物・解約阻止フロー・アップセルシナリオを一から再構築",
     ],
-    services: ["広告運用代行（Meta/Google）", "アフィリエイト管理", "CRM・LTV改善"],
+    services: [
+      "広告運用代行（Meta/Google）",
+      "アフィリエイト管理",
+      "CRM・LTV改善",
+    ],
     budget: "1,200万円/月",
     period: "支援開始から5ヶ月",
     results: [
-      { label: "ROAS", before: "180%", after: "510%", delta: "+330pt", positive: true },
-      { label: "定期継続率（3ヶ月）", before: "38%", after: "67%", delta: "+29pt", positive: true },
-      { label: "月次営業利益", before: "赤字", after: "黒字転換", delta: "黒字転換", positive: true },
+      {
+        label: "ROAS",
+        before: "180%",
+        after: "510%",
+        delta: "+330pt",
+        positive: true,
+      },
+      {
+        label: "定期継続率（3ヶ月）",
+        before: "38%",
+        after: "67%",
+        delta: "+29pt",
+        positive: true,
+      },
+      {
+        label: "月次営業利益",
+        before: "赤字",
+        after: "黒字転換",
+        delta: "黒字転換",
+        positive: true,
+      },
     ],
     highlight: { value: "510%", label: "ROAS達成" },
   },
@@ -155,9 +257,27 @@ export const cases: CaseStudy[] = [
     budget: "非公開",
     period: "制作〜運用継続中",
     results: [
-      { label: "住宅ローンシミュレーター", before: "なし", after: "3種類（借入可能額・返済額・借り換え）", delta: "新規実装", positive: true },
-      { label: "サイト構成", before: "会社紹介のみ", after: "事例・記事・FAQを備えた情報メディア", delta: "新規実装", positive: true },
-      { label: "リード導線", before: "問い合わせフォームのみ", after: "シミュレーター経由の相談導線を追加", delta: "新規実装", positive: true },
+      {
+        label: "住宅ローンシミュレーター",
+        before: "なし",
+        after: "3種類（借入可能額・返済額・借り換え）",
+        delta: "新規実装",
+        positive: true,
+      },
+      {
+        label: "サイト構成",
+        before: "会社紹介のみ",
+        after: "事例・記事・FAQを備えた情報メディア",
+        delta: "新規実装",
+        positive: true,
+      },
+      {
+        label: "リード導線",
+        before: "問い合わせフォームのみ",
+        after: "シミュレーター経由の相談導線を追加",
+        delta: "新規実装",
+        positive: true,
+      },
     ],
     highlight: { value: "3種", label: "住宅ローンシミュレーターを実装" },
     url: "https://nikoestate.jp/",
@@ -167,6 +287,37 @@ export const cases: CaseStudy[] = [
 export function getCase(slug: string): CaseStudy | undefined {
   return cases.find((c) => c.slug === slug);
 }
+
+/** Short editorial summaries of the approved cases above; no additional claims. */
+export const caseSummaries: Record<
+  string,
+  { challenge: string; approach: string }
+> = {
+  "real-estate": {
+    challenge: "CPAが1.5万円超。問い合わせの質も低く、営業工数を圧迫。",
+    approach: "顧客データ・広告訴求・LP・追客の4領域を再設計。",
+  },
+  "online-school": {
+    challenge: "受講生の獲得コストが上昇し、新規獲得と継続率に課題。",
+    approach: "体験会から契約までの導線と、広告・LINE配信を見直し。",
+  },
+  remodeling: {
+    challenge: "ポスティングと紹介に依存し、安定した集客が難しい。",
+    approach: "地域向け広告・診断型LP・問い合わせ後の営業フローを整備。",
+  },
+  "tax-accountant": {
+    challenge: "紹介に偏った集客から、デジタル経由の新規開拓へ。",
+    approach: "SEO記事・地域検索・シミュレーター・メール配信を設計。",
+  },
+  d2c: {
+    challenge: "獲得コスト上昇とLTV低下が重なり、収益性が悪化。",
+    approach: "媒体別の広告配分と、定期購入・継続の仕組みを見直し。",
+  },
+  nikoestate: {
+    challenge: "会社紹介中心のサイトでは、住宅ローンへの不安を解消しにくい。",
+    approach: "3種のシミュレーターと、事例・記事・FAQを備えたサイトを制作。",
+  },
+};
 
 export function getAllCases(): CaseStudy[] {
   return cases;

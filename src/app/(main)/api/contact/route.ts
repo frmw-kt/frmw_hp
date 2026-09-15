@@ -5,6 +5,8 @@ const SERVICE_LABELS: Record<string, string> = {
   consulting: "マーケティングコンサルティング",
   operations: "運用代行",
   production: "制作",
+  "app-development": "アプリ開発",
+  ai: "AI活用支援",
   other: "その他・未定",
 };
 
