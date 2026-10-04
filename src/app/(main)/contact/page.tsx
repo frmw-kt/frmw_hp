@@ -25,7 +25,7 @@ export default async function Page({
         <div className="m-container">
           <Breadcrumb name="無料相談・お問い合わせ" path="/contact" />
           <p className="m-eyebrow">CONTACT</p>
-          <h1>次の一歩を、一緒に整理する。</h1>
+          <h1>次の一歩を、一緒に整理する</h1>
           <p className="m-lead">
             まだ支援内容が決まっていなくても構いません。
             <br />

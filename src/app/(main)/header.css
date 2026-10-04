@@ -1,0 +1,202 @@
+/* サイトヘッダー（極小ヘッダー＋全画面メニュー）。(main) レイアウト専用。 */
+.hx-overlay {
+  --hx-fg: #ededed;
+  --hx-muted: #a8abb1;
+  --hx-line: #ffffff1f;
+  --hx-gold: #d3b77e;
+  --hx-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  color: var(--hx-fg);
+  font-size: 13px;
+}
+.hx-overlay a {
+  color: inherit;
+  text-decoration: none;
+}
+.hx-logo {
+  font-size: 22px;
+  font-weight: 750;
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+}
+.hx-logo span {
+  color: var(--hx-gold);
+}
+.hx-overlay-inner {
+  position: relative;
+  z-index: 2;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.hx-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 80px;
+  background: linear-gradient(#0b0c0e, #0b0c0e00);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.hx-overlay[data-scrolled="true"]::before {
+  opacity: 1;
+}
+.hx-overlay-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hx-overlay-cta {
+  padding: 11px 20px;
+  border: 1px solid #ffffff40;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background 0.2s, opacity 0.3s;
+}
+.hx-overlay-cta:hover {
+  background: #ffffff14;
+}
+.hx-overlay[data-open="true"] .hx-overlay-cta {
+  opacity: 0;
+  pointer-events: none;
+}
+.hx-overlay-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 44px;
+  padding: 0 6px 0 18px;
+  border-radius: 999px;
+  border: 0;
+  background: var(--hx-fg);
+  color: #111;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.hx-overlay-icon {
+  display: grid;
+  place-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #111;
+}
+.hx-overlay-icon i {
+  display: block;
+  width: 14px;
+  height: 1.5px;
+  background: var(--hx-fg);
+  transition: transform 0.4s var(--hx-ease);
+}
+.hx-overlay[data-open="true"] .hx-overlay-icon i:first-child {
+  transform: translateY(3.25px) rotate(45deg);
+}
+.hx-overlay[data-open="true"] .hx-overlay-icon i:last-child {
+  transform: translateY(-3.25px) rotate(-45deg);
+}
+.hx-overlay-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  background: #0e0f12;
+  clip-path: circle(0% at calc(100% - 64px) 40px);
+  transition: clip-path 0.8s var(--hx-ease);
+}
+.hx-overlay[data-open="true"] .hx-overlay-panel {
+  clip-path: circle(150% at calc(100% - 64px) 40px);
+}
+.hx-overlay-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 64px;
+  align-items: end;
+  margin: 0 auto;
+}
+.hx-overlay-grid ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hx-overlay-grid li {
+  overflow: hidden;
+  border-bottom: 1px solid var(--hx-line);
+}
+.hx-overlay-grid li a {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 14px 0;
+  font-size: clamp(30px, 4.6vw, 60px);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+  transform: translateY(105%);
+  transition: transform 0.7s var(--hx-ease), color 0.25s;
+  transition-delay: 0s;
+}
+.hx-overlay[data-open="true"] .hx-overlay-grid li a {
+  transform: none;
+  transition-delay: calc(0.25s + var(--i) * 0.06s), 0s;
+}
+.hx-overlay-grid li a small {
+  font-size: 13px;
+  letter-spacing: 0;
+  color: var(--hx-gold);
+  font-variant-numeric: tabular-nums;
+}
+.hx-overlay-grid li a:hover,
+.hx-overlay-grid li a[aria-current="page"] {
+  color: var(--hx-gold);
+}
+.hx-overlay-grid aside {
+  color: var(--hx-muted);
+  line-height: 1.8;
+  opacity: 0;
+  transition: opacity 0.6s 0.5s;
+}
+.hx-overlay[data-open="true"] .hx-overlay-grid aside {
+  opacity: 1;
+}
+.hx-overlay-eyebrow {
+  color: var(--hx-gold);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.hx-overlay-big-cta {
+  display: block;
+  margin: 24px 0;
+  padding: 22px 28px;
+  border-radius: 999px;
+  background: var(--hx-fg);
+  color: #111 !important;
+  font-size: 18px;
+  font-weight: 650;
+}
+.hx-overlay-meta {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 900px) {
+  .hx-overlay-cta { display: none; }
+  .hx-overlay-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+@media (max-width: 700px) {
+  .hx-overlay-grid aside > p:not(.hx-overlay-eyebrow, .hx-overlay-meta) { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hx-overlay,
+  .hx-overlay * {
+    transition-duration: 0s !important;
+    animation: none !important;
+  }
+}

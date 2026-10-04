@@ -21,7 +21,7 @@ export default function Page() {
           <h1>
             小さくても強い事業を、
             <br />
-            マーケティングで。
+            マーケティングで
           </h1>
           <p className="m-lead">
             専任人材や実行リソースが足りない企業に、戦略と実務をつなぐパートナーを。
@@ -32,14 +32,14 @@ export default function Page() {
       </section>
       <Section
         eyebrow="01 / OUR WORK"
-        title="提案を、実行できる状態にする。"
+        title="提案を、実行できる状態にする"
         text="年商数千万円〜数億円規模の事業者を中心に、調査・戦略、広告運用、Web制作を支援。業務の課題にはアプリ開発やAI活用も組み合わせます。"
       >
         <SystemDiagram />
       </Section>
       <Section
         eyebrow="02 / REPRESENTATIVE"
-        title="代表について。"
+        title="代表について"
         tone="m-tint"
       >
         <div className="m-split">
@@ -51,7 +51,7 @@ export default function Page() {
             </p>
           </div>
           <div>
-            <h3 className="m-subheading">価値を、必要な人へ届ける。</h3>
+            <h3 className="m-subheading">価値を、必要な人へ届ける</h3>
             <p className="m-lead">
               優れた商品やサービスも、伝え方や届け方が整理されていなければ選ばれにくくなります。だからこそ、広告、サイト、問い合わせ後の対応を別々にせず、同じ目標につなげて考えます。
             </p>
@@ -63,7 +63,7 @@ export default function Page() {
       </Section>
       <Section
         eyebrow="03 / WORKING PRINCIPLES"
-        title="支援で大切にする、3つのこと。"
+        title="支援で大切にする、3つのこと"
       >
         <div className="m-grid-3">
           {[
@@ -88,7 +88,7 @@ export default function Page() {
           ))}
         </div>
       </Section>
-      <Section eyebrow="04 / PROFILE" title="事業概要。" tone="m-tint">
+      <Section eyebrow="04 / PROFILE" title="事業概要" tone="m-tint">
         <dl className="m-company">
           {[
             ["屋号", COMPANY.legalName],

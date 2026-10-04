@@ -1,7 +1,11 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { cases, caseSummaries } from "@/lib/cases";
+import {
+  publicCases as cases,
+  caseSummaries,
+  type CaseStudy,
+} from "@/lib/cases";
 import { services, processSteps } from "@/lib/services";
 import { SITE_URL } from "@/lib/site";
 
@@ -128,7 +132,7 @@ export function ContactCTA() {
           <h2>
             まだ整理できていない課題も、
             <br />
-            そのままお聞かせください。
+            そのままお聞かせください
           </h2>
           <p>
             現状・目標・予算感を伺い、必要な支援の範囲を一緒に整理します。
@@ -234,17 +238,17 @@ export function Deliverables() {
       {[
         [
           "STRATEGY NOTE",
-          "戦略を、判断できる形に。",
+          "戦略を、判断できる形に",
           "ターゲット・提供価値・優先課題を整理。社内で共通の判断軸を持てる戦略書へ。",
         ],
         [
           "ACTION ROADMAP",
-          "計画を、動ける形に。",
+          "計画を、動ける形に",
           "施策ごとの担当・期限・指標を一覧化。今やることと後でやることを明確に。",
         ],
         [
           "REVIEW & NEXT",
-          "数字を、次の一手に。",
+          "数字を、次の一手に",
           "実施したこと、結果、考察、次の改善案をセットに。報告を意思決定につなげます。",
         ],
       ].map(([en, title, desc], i) => (
@@ -338,7 +342,7 @@ export function Pricing() {
         <h3>
           必要な支援を整理して、
           <br />
-          費用を組み立てます。
+          費用を組み立てます
         </h3>
         <p>
           戦略のみ、運用のみ、制作を含めた支援など、事業の状況に合わせて見積もります。
@@ -397,8 +401,33 @@ export function FaqList({
     </div>
   );
 }
+/** 事例の見出し: 「何の数値か」のラベル＋値＋支援範囲チップ。カードと事例詳細で共用。 */
+export function CaseHighlight({
+  highlight: h,
+}: {
+  highlight: CaseStudy["highlight"];
+}) {
+  return (
+    <div className="m-case-result">
+      {h.metric && <span className="m-case-metric">{h.metric}</span>}
+      <strong>{h.value}</strong>
+      {h.points ? (
+        <ul
+          className={h.flow ? "m-case-points is-flow" : "m-case-points"}
+          aria-label={h.flow ? "支援の流れ" : "主な成果物"}
+        >
+          {h.points.map((p) => (
+            <li key={p}>{p}</li>
+          ))}
+        </ul>
+      ) : (
+        h.label && <span>{h.label}</span>
+      )}
+    </div>
+  );
+}
 export function CaseCards({
-  slugs = ["real-estate", "online-school", "nikoestate"],
+  slugs = cases.slice(0, 3).map((c) => c.slug),
 }: {
   slugs?: string[];
 }) {
@@ -415,10 +444,7 @@ export function CaseCards({
             </div>
             <Link href={`/cases/${c.slug}`}>
               <h3>{c.company}</h3>
-              <div className="m-case-result">
-                <strong>{c.highlight.value}</strong>
-                <span>{c.highlight.label}</span>
-              </div>
+              <CaseHighlight highlight={c.highlight} />
             </Link>
             <dl>
               <dt>課題</dt>
@@ -427,11 +453,15 @@ export function CaseCards({
               <dd>{caseSummaries[c.slug]?.approach ?? c.approach[0]}</dd>
             </dl>
             <p className="m-small">
-              {c.period} /{" "}
-              {c.budget === "非公開" ? "予算非公開" : `広告費 ${c.budget}`}
+              {c.period === "非公開" ? "期間非公開" : c.period} /{" "}
+              {c.budget === "非公開"
+                ? "予算非公開"
+                : c.url
+                  ? c.budget
+                  : `広告費 ${c.budget}`}
             </p>
             <Link className="m-text-link" href={`/cases/${c.slug}`}>
-              施策と成果を見る →
+              {c.results.length > 0 ? "施策と成果を見る →" : "詳しく見る →"}
             </Link>
           </article>
         ))}
@@ -458,12 +488,14 @@ export function ServiceCards() {
               <span>進め方・期間</span>
               <span>{s.timeframe}</span>
             </div>
-            <div className="m-service-detail">
-              <span>関連事例</span>
-              <Link className="m-text-link" href={"/cases/" + s.cases[0]}>
-                {cases.find((c) => c.slug === s.cases[0])?.tag}の支援事例 →
-              </Link>
-            </div>
+            {cases.some((c) => c.slug === s.cases[0]) && (
+              <div className="m-service-detail">
+                <span>関連事例</span>
+                <Link className="m-text-link" href={"/cases/" + s.cases[0]}>
+                  {cases.find((c) => c.slug === s.cases[0])?.tag}の支援事例 →
+                </Link>
+              </div>
+            )}
           </div>
           <Link
             className="m-round-link"

@@ -1,0 +1,1081 @@
+/* Scoped to the public marketing layout; LP/client/proposal layouts stay unchanged. */
+.marketing-site {
+  color-scheme: dark;
+  color: #ededed;
+  background: #0b0c0e;
+  --m-line: #ffffff20;
+  --m-paper: #111316;
+  --fg: #ededed;
+  --bg: #0b0c0e;
+  --muted: #a8abb1;
+  --border: #ffffff20;
+}
+.marketing-site :focus-visible {
+  outline-color: #e8c988;
+}
+.marketing-site .m-container {
+  width: min(1240px, calc(100% - 96px));
+}
+.marketing-site main {
+  background-image: linear-gradient(
+    90deg,
+    transparent calc(100% - 1px),
+    #ffffff04 1px
+  );
+  background-size: calc(min(1240px, 100vw - 96px) / 6) 100%;
+  background-position: center;
+}
+.marketing-site :is(.m-section, .m-tint, .m-stats, .m-footer) {
+  background: transparent;
+}
+.marketing-site :is(.m-section, .m-stats, .m-footer, .m-cta) {
+  border-top: 1px solid var(--m-line);
+}
+.marketing-site .m-section {
+  padding-block: 112px;
+}
+.marketing-site .m-section-head {
+  max-width: 960px;
+  margin-bottom: 56px;
+}
+.marketing-site :is(.m-section h2, .m-cta h2) {
+  font-size: clamp(30px, 4vw, 54px);
+  font-weight: 550;
+  letter-spacing: -0.055em;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+.marketing-site
+  :is(
+    .m-eyebrow,
+    .m-num,
+    .m-case-result strong,
+    .m-result-card strong,
+    .m-faq summary > span,
+    .m-cycle > div > span,
+    .m-document-preview span,
+    .m-workflow-preview b,
+    .m-workflow-preview li > span,
+    .m-delivery-preview figcaption
+  ) {
+  color: #d3b77e;
+}
+.marketing-site
+  :is(
+    .m-lead,
+    .m-small,
+    .m-stat-grid p,
+    .m-challenges p,
+    .m-service-list p:not(.m-eyebrow),
+    .m-service-detail > span:first-child,
+    .m-reason p,
+    .m-funnel-row p,
+    .m-case-top,
+    .m-case-card dd,
+    .m-artifacts article > p,
+    .m-process p,
+    .m-pricing p:not(.m-eyebrow),
+    .m-price-factors span,
+    .m-faq details > p,
+    .m-breadcrumb,
+    .m-glance dt,
+    .m-task-card p,
+    .m-output span,
+    .m-checklist,
+    .m-cycle p,
+    .m-company dt,
+    .m-footer p,
+    .m-footer small,
+    .m-wireframe span,
+    .m-roadmap-head,
+    .m-sample-label,
+    .m-paper-note
+  ) {
+  color: #aeb1b7;
+}
+.marketing-site
+  :is(
+    .m-system,
+    .m-funnel,
+    .m-case-card,
+    .m-pricing,
+    .m-delivery-preview,
+    .m-task-card,
+    .m-artifact,
+    .m-related a,
+    .m-cycle > div,
+    .m-result-card,
+    .m-case-filters button,
+    .m-contact-form input,
+    .m-contact-form select,
+    .m-contact-form textarea,
+    .m-wireframe > div,
+    .m-article-toc,
+    .m-system-grid li
+  ) {
+  background: #111316;
+  color: #ededed;
+  border-color: #ffffff26;
+  border-radius: 2px;
+  box-shadow: none;
+}
+.marketing-site
+  :is(
+    .m-glance div,
+    .m-output,
+    .m-jump,
+    .m-company,
+    .m-company > div,
+    .m-reason,
+    .m-faq,
+    .m-faq details,
+    .m-price-factors li,
+    .m-case-card dl,
+    .m-stat-grid > div,
+    .m-paper-top,
+    .m-roadmap,
+    .m-delivery-preview figcaption,
+    .m-document-preview > div:not(:first-child),
+    .m-process,
+    .m-footer small,
+    .m-product-strip,
+    .m-wireframe-grid b
+  ) {
+  border-color: #ffffff20;
+}
+.marketing-site .m-header {
+  background: #0b0c0ef2;
+  color: #ededed;
+  border-color: #ffffff20;
+  backdrop-filter: blur(16px);
+}
+.marketing-site .m-header-inner {
+  height: 76px;
+}
+.marketing-site .m-logo {
+  font-size: 24px;
+}
+.marketing-site .m-logo span {
+  color: #ededed;
+}
+.marketing-site .m-desktop-nav {
+  color: #c5c6ca;
+  font-size: 12px;
+}
+.marketing-site .m-desktop-nav > a:not(.m-button):hover {
+  color: #fff;
+}
+.marketing-site .m-button {
+  border-radius: 2px;
+  background: #eee;
+  border-color: #eee;
+  color: #111;
+  box-shadow: none;
+  min-height: 50px;
+  font-size: 13px;
+}
+.marketing-site .m-button:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #111;
+  box-shadow: none;
+}
+.marketing-site .m-button-secondary,
+.marketing-site .m-desktop-nav .m-button {
+  background: transparent;
+  border-color: #ffffff40;
+  color: #eee;
+}
+.marketing-site .m-button-secondary:hover,
+.marketing-site .m-desktop-nav .m-button:hover {
+  background: #ffffff10;
+  color: #fff;
+}
+.marketing-site .m-hero {
+  padding: 160px 0 0;
+  background: transparent;
+  overflow: hidden;
+}
+.marketing-site .m-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(
+    132deg,
+    transparent 5%,
+    #b8944e20 14%,
+    transparent 25%,
+    #47699223 43%,
+    transparent 54%,
+    #c7a35b16 68%,
+    transparent 79%
+  );
+}
+.marketing-site .m-hero::after {
+  background: linear-gradient(0deg, #0b0c0e, transparent 50%);
+}
+.marketing-site .m-hero > canvas {
+  opacity: 0.18;
+}
+.marketing-site .m-hero-grid {
+  grid-template-columns: 1fr 1.08fr;
+  gap: 52px;
+  align-items: center;
+}
+.marketing-site .m-hero h1 {
+  font-size: clamp(44px, 5.1vw, 74px);
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
+.marketing-site .m-hero h1 em {
+  color: #ededed;
+}
+.marketing-site .m-hero-intro {
+  color: #b8bbc1;
+  font-size: 15px;
+  line-height: 2;
+}
+.marketing-site .m-hero-foot {
+  margin-top: 96px;
+  font-size: 11px;
+  color: #a8abb1;
+}
+.marketing-site .m-stats {
+  padding-block: 40px;
+}
+.marketing-site .m-stat-grid strong {
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 450;
+  letter-spacing: -0.055em;
+}
+.marketing-site .m-challenges {
+  gap: 0;
+  border-left: 1px solid var(--m-line);
+}
+.marketing-site .m-challenges > a {
+  border: 1px solid var(--m-line);
+  border-left: 0;
+  border-radius: 0;
+  background: #0c0d0fb3;
+  padding: 32px 24px;
+}
+.marketing-site .m-challenges > a:hover {
+  background: #191c21;
+  transform: none;
+  box-shadow: none;
+}
+.marketing-site .m-service-list {
+  gap: 0;
+}
+.marketing-site .m-service-list article {
+  padding: 44px 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--m-line);
+  border-radius: 0;
+  grid-template-columns: 70px 1fr 52px;
+}
+.marketing-site .m-service-list article > .m-num {
+  background: transparent;
+  font-size: 16px;
+}
+.marketing-site .m-service-list h3 {
+  font-size: clamp(24px, 3vw, 36px);
+  letter-spacing: -0.045em;
+}
+.marketing-site .m-round-link {
+  border-radius: 2px;
+  background: transparent;
+  border-color: #ffffff40;
+}
+.marketing-site .m-product-strip {
+  margin-top: 24px;
+}
+.marketing-site .m-case-card {
+  padding: 32px;
+  background: linear-gradient(145deg, #171a20, #0d0e11);
+}
+.marketing-site .m-case-result strong {
+  font-size: 56px;
+  color: #ededed;
+}
+.marketing-site .m-case-card:hover {
+  border-color: #ffffff50;
+  transform: none;
+}
+.marketing-site .m-task-grid {
+  gap: 0;
+}
+.marketing-site .m-task-card {
+  padding: 36px;
+  background: #0d0f12;
+}
+.marketing-site .m-task-card h3 {
+  font-size: 24px;
+}
+.marketing-site .m-service-hero {
+  padding: 132px 0 80px;
+  background: radial-gradient(ellipse at 90% 20%, #31435933, transparent 60%);
+  border-bottom: 1px solid var(--m-line);
+}
+.marketing-site .m-service-hero h1 {
+  font-size: clamp(34px, 4.5vw, 62px);
+  font-weight: 550;
+  letter-spacing: -0.055em;
+  line-height: 1.4;
+}
+.marketing-site .m-service-hero .m-glance {
+  background: linear-gradient(145deg, #1b2028, #0e1014);
+  border: 1px solid #ffffff30;
+  padding: 26px 32px;
+  box-shadow: 0 30px 80px #0005;
+}
+.marketing-site .m-glance {
+  border-color: #b3a17b;
+}
+.marketing-site .m-jump {
+  padding-block: 24px;
+  gap: 32px;
+  color: #bfc1c5;
+}
+.marketing-site .m-jump a {
+  text-decoration: none;
+}
+.marketing-site .m-jump a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.marketing-site .m-cta {
+  padding-block: 112px;
+  background: radial-gradient(ellipse at 0% 100%, #343d493b, transparent 65%);
+}
+.marketing-site .m-cta .m-split {
+  grid-template-columns: 1.5fr 1fr;
+}
+.marketing-site .m-cta p:not(.m-eyebrow) {
+  color: #b4b7bd;
+}
+.marketing-site .m-paper-cells > span,
+.marketing-site .m-paper-line,
+.marketing-site .m-result-bar {
+  background: #2b3039;
+}
+.marketing-site .m-wireframe i {
+  background: #d3b77e;
+  color: #111;
+}
+.marketing-site .m-workflow-preview strong {
+  background: #191d24;
+  border-color: var(--m-line);
+}
+.marketing-site .m-funnel-step {
+  background: #252d39;
+}
+.marketing-site .m-funnel-step-1 {
+  background: #303a49;
+}
+.marketing-site .m-funnel-step-2 {
+  background: #404a59;
+}
+.marketing-site .m-funnel-step-3 {
+  background: #635535;
+}
+.marketing-site .m-contact-form label > span {
+  background: #2b3039;
+  color: #eee;
+}
+.marketing-site .m-contact-form :is(input, select, textarea):focus {
+  background: #1c2027;
+}
+.marketing-site .m-case-filters button[aria-pressed="true"] {
+  background: #eee;
+  color: #111;
+}
+.marketing-site .m-form-error {
+  color: #ffabab;
+}
+.marketing-site .article-body {
+  color: #c4c6ca;
+}
+.marketing-site .article-body h2 {
+  color: #eee;
+}
+.marketing-site .article-body a {
+  color: #dec28b;
+}
+.marketing-site .m-skip {
+  background: #eee;
+  color: #111;
+}
+.marketing-site .m-mobile-menu nav {
+  background: #101215;
+  border-bottom: 1px solid var(--m-line);
+}
+.marketing-site .m-mobile-menu nav a {
+  border-color: var(--m-line);
+}
+.s-visual {
+  position: relative;
+  min-width: 0;
+  padding: 20px 0 100px;
+  perspective: 1200px;
+}
+.s-console {
+  border: 1px solid #ffffff35;
+  background: #101318;
+  box-shadow: 0 40px 90px #0008;
+  transform: rotateY(-7deg) rotateX(3deg);
+}
+.s-console-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 16px;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  color: #b6bbc3;
+  border-bottom: 1px solid #ffffff20;
+}
+.s-console-body {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  min-height: 340px;
+}
+.s-console aside {
+  padding: 22px 14px;
+  border-right: 1px solid #ffffff16;
+  font-size: 9px;
+  color: #a4abb6;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.s-console aside b {
+  font-size: 8px;
+  font-weight: 400;
+  color: #949da9;
+}
+.s-console aside i {
+  margin-top: auto;
+  font-size: 45px;
+  font-style: normal;
+  color: #e4e7ed;
+}
+.s-console-content {
+  position: relative;
+  overflow: hidden;
+  padding: 28px;
+  background: radial-gradient(ellipse at 100% 85%, #33445c55, transparent 60%);
+}
+.s-kicker {
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: #b7bec8;
+}
+.s-console-content h2 {
+  font-size: clamp(22px, 2.4vw, 32px);
+  line-height: 1.5;
+  font-weight: 500;
+  margin-top: 18px;
+  letter-spacing: -0.04em;
+}
+.s-orbit {
+  height: 150px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.s-orbit i {
+  position: absolute;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #aebddc60;
+  border-radius: 50%;
+  transform: rotate(-32deg);
+}
+.s-orbit i:nth-child(2) {
+  transform: rotate(32deg);
+  border-color: #d3b77e65;
+}
+.s-orbit i:nth-child(3) {
+  transform: rotate(90deg);
+}
+.s-orbit b {
+  font-size: 34px;
+  font-weight: 500;
+}
+.s-console-tags {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-top: 1px solid #ffffff20;
+  padding-top: 14px;
+  font-size: 9px;
+  color: #b9bec6;
+}
+.s-review {
+  position: relative;
+  margin: -44px 70px 0 -24px;
+  padding: 22px;
+  border: 1px solid #ffffff35;
+  background: linear-gradient(125deg, #1c222c, #0e1116);
+  box-shadow: 0 20px 65px #0008;
+}
+.s-review strong {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.s-review > div:not(.s-signal) {
+  display: flex;
+  gap: 12px;
+  font-size: 10px;
+  color: #b8bec7;
+}
+.s-signal {
+  display: flex;
+  align-items: end;
+  gap: 7px;
+  height: 45px;
+  margin-top: 20px;
+  overflow: hidden;
+  opacity: 0.6;
+}
+.s-signal i {
+  flex: 1;
+  max-height: 100%;
+  background: linear-gradient(#b3c8e1, #39485c);
+  transform: scaleY(0.35);
+  transform-origin: bottom;
+}
+.s-visual figcaption {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  font-size: 9px;
+  color: #a8abb1;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .s-console {
+    animation: studio-arrive 0.8s ease-out both;
+  }
+  .s-review {
+    animation: studio-arrive 1s ease-out both;
+  }
+  @keyframes studio-arrive {
+    from {
+      opacity: 0;
+      translate: 0 20px;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .marketing-site .m-container {
+    width: calc(100% - 56px);
+  }
+  .marketing-site .m-desktop-nav {
+    gap: 14px;
+  }
+  .marketing-site .m-hero-grid {
+    gap: 32px;
+  }
+  .s-console-body {
+    grid-template-columns: 70px 1fr;
+  }
+  .s-console-content {
+    padding: 20px;
+  }
+  .s-review {
+    margin-left: 0;
+    margin-right: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .marketing-site .m-desktop-nav {
+    display: none;
+  }
+  .marketing-site .m-mobile-menu {
+    display: block;
+  }
+  .marketing-site .m-mobile-menu summary {
+    cursor: pointer;
+    padding: 12px;
+    list-style: none;
+  }
+  .marketing-site .m-mobile-menu nav {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .marketing-site .m-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .s-visual {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .marketing-site .m-hero h1 {
+    font-size: clamp(42px, 8vw, 64px);
+  }
+  .s-hero-break {
+    display: none;
+  }
+  .marketing-site .m-hero-foot {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 700px) {
+  .marketing-site .m-container {
+    width: calc(100% - 40px);
+  }
+  .marketing-site .m-section {
+    padding-block: 72px;
+  }
+  .marketing-site .m-section-head {
+    margin-bottom: 36px;
+  }
+  .marketing-site .m-hero {
+    padding-top: 124px;
+  }
+  .marketing-site .m-hero h1 {
+    font-size: clamp(36px, 8.6vw, 56px);
+  }
+  .marketing-site .m-hero-intro {
+    font-size: 14px;
+  }
+  .marketing-site .m-hero .m-actions {
+    gap: 10px;
+  }
+  .marketing-site .m-button {
+    padding: 12px 16px;
+    gap: 16px;
+  }
+  .marketing-site .m-section h2 {
+    font-size: 30px;
+  }
+  .marketing-site .m-service-list article {
+    grid-template-columns: 28px 1fr;
+    gap: 16px;
+    padding-block: 30px;
+  }
+  .marketing-site .m-service-list article > .m-num {
+    width: auto;
+  }
+  .marketing-site .m-task-card {
+    padding: 26px 22px;
+  }
+  .marketing-site .m-service-hero {
+    padding: 110px 0 56px;
+  }
+  .marketing-site .m-service-hero .m-glance {
+    padding: 20px;
+  }
+  .marketing-site .m-cta .m-split {
+    grid-template-columns: 1fr;
+  }
+  .marketing-site .m-cta {
+    padding-block: 72px;
+  }
+  .s-console {
+    transform: none;
+  }
+  .s-console-body {
+    grid-template-columns: 65px 1fr;
+    min-height: 300px;
+  }
+  .s-console aside {
+    padding: 18px 10px;
+    font-size: 8px;
+  }
+  .s-console-content {
+    padding: 22px 16px;
+  }
+  .s-review {
+    margin: -20px 15px 0 10px;
+  }
+  .s-visual {
+    padding-bottom: 65px;
+  }
+  .s-visual figcaption {
+    bottom: 16px;
+    font-size: 8px;
+  }
+  .s-console-bar {
+    font-size: 7px;
+    padding: 12px;
+  }
+  .s-console-tags {
+    font-size: 8px;
+  }
+}
+
+/* ── Corner radii: ブロックの大きさに応じて段階的に丸める ── */
+.marketing-site {
+  --m-radius-lg: 20px; /* セクション級の大きなパネル */
+  --m-radius: 14px; /* カード */
+  --m-radius-sm: 10px; /* 入力欄・小カード */
+  --m-radius-xs: 6px; /* 図中の小要素 */
+}
+.marketing-site
+  :is(
+    .m-system,
+    .m-funnel,
+    .m-pricing,
+    .m-delivery-preview,
+    .m-case-card,
+    .m-service-hero .m-glance,
+    .s-console
+  ) {
+  border-radius: var(--m-radius-lg);
+}
+.marketing-site
+  :is(
+    .m-task-card,
+    .m-artifact,
+    .m-cycle > div,
+    .m-result-card,
+    .m-wireframe > div,
+    .m-article-toc,
+    .m-system-grid li,
+    .m-challenges > a,
+    .s-review
+  ) {
+  border-radius: var(--m-radius);
+}
+.marketing-site :is(.m-contact-form input, .m-contact-form select, .m-contact-form textarea) {
+  border-radius: var(--m-radius-sm);
+}
+.marketing-site
+  :is(.m-wireframe-grid b, .m-workflow-preview strong, .m-funnel-step, .m-paper-cells > span, .m-wireframe i) {
+  border-radius: var(--m-radius-xs);
+}
+/* ボタン・チップ類はヘッダーに合わせてピル型 */
+.marketing-site
+  :is(.m-button, .m-case-filters button, .m-related a, .m-skip, .m-contact-form label > span, .m-result-bar, .m-result-bar > span) {
+  border-radius: 999px;
+}
+.marketing-site .m-round-link {
+  border-radius: 50%;
+}
+.s-console {
+  overflow: hidden;
+}
+/* 罫線を共有していたタイル状のグリッドは、角丸が活きるよう間隔を空けた独立カードにする */
+.marketing-site .m-challenges {
+  gap: 12px;
+  border-left: 0;
+}
+.marketing-site .m-challenges > a {
+  border-left: 1px solid var(--m-line);
+}
+.marketing-site .m-task-grid {
+  gap: 12px;
+}
+
+/* ── Light sections: 通常の .m-section を白系にし、ヒーロー・実績・.m-tint・CTA・フッターの黒と交互にする ── */
+.marketing-site .m-section:not(.m-tint) {
+  color-scheme: light;
+  --m-line: #e2e0d8;
+  --m-paper: #ffffff;
+  --fg: #14161a;
+  --bg: #f6f5f1;
+  --muted: #5d6168;
+  --border: #e2e0d8;
+  background: #f6f5f1;
+  color: #14161a;
+  border-top-color: #e2e0d8;
+}
+.marketing-site .m-section:not(.m-tint) :focus-visible {
+  outline-color: #8c6b28;
+}
+.marketing-site .m-section:not(.m-tint)
+  :is(
+    .m-eyebrow,
+    .m-num,
+    .m-case-result strong,
+    .m-result-card strong,
+    .m-faq summary > span,
+    .m-cycle > div > span,
+    .m-document-preview span,
+    .m-workflow-preview b,
+    .m-workflow-preview li > span,
+    .m-delivery-preview figcaption
+  ) {
+  color: #8c6b28;
+}
+.marketing-site .m-section:not(.m-tint)
+  :is(
+    .m-lead,
+    .m-small,
+    .m-challenges p,
+    .m-service-list p:not(.m-eyebrow),
+    .m-service-detail > span:first-child,
+    .m-reason p,
+    .m-funnel-row p,
+    .m-case-top,
+    .m-case-card dd,
+    .m-artifacts article > p,
+    .m-process p,
+    .m-pricing p:not(.m-eyebrow),
+    .m-price-factors span,
+    .m-faq details > p,
+    .m-glance dt,
+    .m-task-card p,
+    .m-output span,
+    .m-checklist,
+    .m-cycle p,
+    .m-company dt,
+    .m-wireframe span,
+    .m-roadmap-head,
+    .m-sample-label,
+    .m-paper-note
+  ) {
+  color: #5d6168;
+}
+.marketing-site .m-section:not(.m-tint)
+  :is(
+    .m-system,
+    .m-funnel,
+    .m-case-card,
+    .m-pricing,
+    .m-delivery-preview,
+    .m-task-card,
+    .m-artifact,
+    .m-related a,
+    .m-cycle > div,
+    .m-result-card,
+    .m-case-filters button,
+    .m-contact-form input,
+    .m-contact-form select,
+    .m-contact-form textarea,
+    .m-wireframe > div,
+    .m-article-toc,
+    .m-system-grid li,
+    .m-challenges > a
+  ) {
+  background: #ffffff;
+  color: #14161a;
+  border-color: #e2e0d8;
+  box-shadow: 0 1px 2px #14161a08, 0 8px 24px -12px #14161a14;
+}
+.marketing-site .m-section:not(.m-tint)
+  :is(.m-case-card:hover, .m-challenges > a:hover, .m-task-card:hover, .m-related a:hover) {
+  border-color: #c9c3b0;
+  background: #ffffff;
+}
+.marketing-site .m-section:not(.m-tint) .m-case-result strong {
+  color: #14161a;
+}
+.marketing-site .m-section:not(.m-tint) :is(.m-paper-cells > span, .m-paper-line, .m-result-bar) {
+  background: #e8e6de;
+}
+.marketing-site .m-section:not(.m-tint) .m-workflow-preview strong {
+  background: #f6f5f1;
+}
+.marketing-site .m-section:not(.m-tint) .m-contact-form label > span {
+  background: #efe9d9;
+  color: #6b521d;
+}
+.marketing-site .m-section:not(.m-tint) .m-contact-form :is(input, select, textarea):focus {
+  background: #ffffff;
+  border-color: #8c6b28;
+}
+.marketing-site .m-section:not(.m-tint) .m-case-filters button[aria-pressed="true"] {
+  background: #14161a;
+  border-color: #14161a;
+  color: #fff;
+}
+.marketing-site .m-section:not(.m-tint) .m-form-error {
+  color: #b42318;
+}
+.marketing-site .m-section:not(.m-tint) .m-button {
+  background: #14161a;
+  border-color: #14161a;
+  color: #fff;
+}
+.marketing-site .m-section:not(.m-tint) .m-button:hover {
+  background: #2a2d33;
+  border-color: #2a2d33;
+  color: #fff;
+}
+.marketing-site .m-section:not(.m-tint) .m-button-secondary {
+  background: transparent;
+  border-color: #14161a40;
+  color: #14161a;
+}
+.marketing-site .m-section:not(.m-tint) .m-button-secondary:hover {
+  background: #14161a0a;
+  color: #14161a;
+}
+.marketing-site .m-section:not(.m-tint) .m-round-link {
+  border-color: #14161a30;
+  color: #14161a;
+}
+.marketing-site .m-section:not(.m-tint) .article-body {
+  color: #33363c;
+}
+.marketing-site .m-section:not(.m-tint) .article-body h2 {
+  color: #14161a;
+}
+.marketing-site .m-section:not(.m-tint) :is(.article-body a, .m-text-link) {
+  color: #8c6b28;
+}
+
+/* ── 事例詳細: 公開サイトのFVをブラウザ枠で見せる ── */
+.marketing-site .m-site-preview {
+  margin: 56px 0 0;
+}
+.marketing-site .m-site-preview > a {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #ffffff26;
+  border-top: 0;
+  border-radius: 0 0 var(--m-radius-lg) var(--m-radius-lg);
+  box-shadow: 0 40px 100px -30px #000c;
+}
+.marketing-site .m-site-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.marketing-site .m-site-preview > a:hover img {
+  transform: scale(1.015);
+}
+.marketing-site .m-site-preview-bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+  height: 44px;
+  padding: 0 16px;
+  background: #1a1d22;
+  border: 1px solid #ffffff26;
+  border-bottom-color: #ffffff14;
+  border-radius: var(--m-radius-lg) var(--m-radius-lg) 0 0;
+}
+.marketing-site .m-site-preview-bar::after {
+  content: "";
+  width: 46px;
+}
+.marketing-site .m-site-preview-dots {
+  display: flex;
+  gap: 7px;
+}
+.marketing-site .m-site-preview-dots i {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #ffffff26;
+}
+.marketing-site .m-site-preview-url {
+  justify-self: center;
+  width: min(360px, 100%);
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: #0b0c0e;
+  color: #a8abb1;
+  font-size: 12px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.marketing-site .m-site-preview figcaption {
+  margin-top: 14px;
+  color: #a8abb1;
+  font-size: 12px;
+}
+@media (max-width: 700px) {
+  .marketing-site .m-site-preview {
+    margin-top: 36px;
+  }
+  .marketing-site .m-site-preview-bar {
+    height: 34px;
+    padding: 0 12px;
+  }
+  .marketing-site .m-site-preview-dots i {
+    width: 8px;
+    height: 8px;
+  }
+  .marketing-site .m-site-preview-bar::after {
+    width: 30px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marketing-site .m-site-preview > a:hover img {
+    transform: none;
+  }
+}
+
+/* 事例ハイライト: 数値（3,000万円〜）と文章（ブランドサイトを新規制作）を同じサイズで見せる。
+   カード幅に連動させ、文章が12文字前後でもカード内で1行に収まる大きさにしている */
+.marketing-site .m-case-card {
+  container-type: inline-size;
+}
+.marketing-site .m-case-result strong {
+  font-size: clamp(18px, 8cqi, 27px);
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+}
+.marketing-site .m-service-hero .m-case-result strong {
+  font-size: clamp(28px, 3.2vw, 44px);
+}
+
+/* 事例ハイライト: 数値ラベルと支援範囲チップ */
+.marketing-site .m-case-result .m-case-metric {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.marketing-site .m-case-points {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.marketing-site .m-case-points li {
+  padding: 4px 12px;
+  border: 1px solid var(--m-line);
+  border-radius: 999px;
+  background: #ffffff0a;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.marketing-site .m-case-points.is-flow {
+  gap: 6px 26px;
+}
+.marketing-site .m-case-points.is-flow li {
+  position: relative;
+}
+.marketing-site .m-case-points.is-flow li + li::before {
+  content: "→";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+}
+.marketing-site .m-section:not(.m-tint) .m-case-points li {
+  background: #f6f5f1;
+}

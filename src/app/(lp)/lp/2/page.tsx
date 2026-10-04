@@ -280,7 +280,7 @@ export default function Lp2Page() {
         <div className="max-w-5xl mx-auto">
           <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#C9A84C" }}>Low Risk Start</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
-            既存の代理店はそのまま。<br />予算の一部から始められます。
+            既存の代理店はそのまま<br />予算の一部から始められます
           </h2>
           <p className="text-[#737373] text-sm text-center mb-14 max-w-xl mx-auto leading-relaxed">
             「今の代理店を切るのは怖い」——その不安は正しい判断です。<br />

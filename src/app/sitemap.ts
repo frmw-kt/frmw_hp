@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { getAllArticles } from "@/lib/articles";
-import { getAllCases } from "@/lib/cases";
+import { getAllCases, hasPublicCases } from "@/lib/cases";
 
 const staticRoutes = [
   "",
@@ -27,7 +27,9 @@ const staticRoutes = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
-  const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((path) => ({
+  const staticEntries: MetadataRoute.Sitemap = staticRoutes
+    .filter((path) => hasPublicCases || path !== "/cases")
+    .map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,
     changeFrequency: path === "" ? "weekly" : "monthly",

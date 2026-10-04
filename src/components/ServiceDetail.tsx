@@ -14,6 +14,7 @@ import {
 import DeliverableDiagram from "@/components/DeliverableDiagram";
 import { getService, type Service } from "@/lib/services";
 import { faqs } from "@/lib/faq";
+import { isPublicCase } from "@/lib/cases";
 import { SITE_URL } from "@/lib/site";
 export default function ServiceDetail({
   slug,
@@ -87,7 +88,7 @@ export default function ServiceDetail({
       <Section
         id="scope"
         eyebrow="01 / SCOPE"
-        title="課題を整理し、実行することを明確に。"
+        title="課題を整理し、実行することを明確に"
         text={s.issue}
       >
         <div className="m-task-grid">
@@ -116,7 +117,7 @@ export default function ServiceDetail({
       <Section
         id="outputs"
         eyebrow="02 / DELIVERABLES"
-        title="成果物は、次の判断と実行のために。"
+        title="成果物は、次の判断と実行のために"
         text={
           "主な成果物：" +
           s.deliverable +
@@ -129,7 +130,7 @@ export default function ServiceDetail({
       <Section
         id="workflow"
         eyebrow="03 / WORKFLOW"
-        title="開始時から、通常の運用まで。"
+        title="開始時から、通常の運用まで"
         text={s.cadence}
       >
         <ol className="m-process">
@@ -148,7 +149,7 @@ export default function ServiceDetail({
       <Section
         id="preparation"
         eyebrow="04 / COLLABORATION"
-        title="役割と範囲を、事前にそろえる。"
+        title="役割と範囲を、事前にそろえる"
         tone="m-tint"
       >
         <div className="m-split">
@@ -173,9 +174,9 @@ export default function ServiceDetail({
           </div>
         </div>
       </Section>
-      {s.cases.length > 0 && (
-        <Section eyebrow="05 / RELATED CASES" title="関連する支援事例。">
-          <CaseCards slugs={s.cases} />
+      {s.cases.some(isPublicCase) && (
+        <Section eyebrow="05 / RELATED CASES" title="関連する支援事例">
+          <CaseCards slugs={s.cases.filter(isPublicCase)} />
           <p className="m-small" style={{ marginTop: 20 }}>
             掲載事例は取り組みの一例です。サービスの全範囲を実施したことや同等の成果を保証するものではありません。
           </p>
@@ -184,12 +185,12 @@ export default function ServiceDetail({
       <Section
         id="pricing"
         eyebrow="06 / PRICING"
-        title="内容に合わせて、個別にお見積もり。"
+        title="内容に合わせて、個別にお見積もり"
         tone="m-tint"
       >
         <Pricing />
       </Section>
-      <Section eyebrow="07 / FAQ" title="ご依頼前のよくある質問。">
+      <Section eyebrow="07 / FAQ" title="ご依頼前のよくある質問">
         <FaqList
           items={faqs.filter(
             (f) =>

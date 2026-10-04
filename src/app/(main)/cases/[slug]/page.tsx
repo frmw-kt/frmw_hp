@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCase, getAllCases } from "@/lib/cases";
@@ -6,6 +7,7 @@ import {
   Section,
   ContactCTA,
   CaseCards,
+  CaseHighlight,
   pageMeta,
 } from "@/components/Marketing";
 import { ResultComparison } from "@/components/ResultComparison";
@@ -41,6 +43,10 @@ export default async function Page({
   const { slug } = await params;
   const c = getCase(slug);
   if (!c) notFound();
+  const others = getAllCases()
+    .filter((x) => x.slug !== slug)
+    .slice(0, 3)
+    .map((x) => x.slug);
   return (
     <>
       <section className="m-service-hero">
@@ -52,10 +58,7 @@ export default async function Page({
           />
           <p className="m-eyebrow">{c.tag} / CASE STUDY</p>
           <h1 style={{ fontSize: "clamp(27px,3.4vw,44px)" }}>{c.company}</h1>
-          <div className="m-case-result">
-            <strong>{c.highlight.value}</strong>
-            <span>{c.highlight.label}</span>
-          </div>
+          <CaseHighlight highlight={c.highlight} />
           <div className="m-case-overview">
             <span>業種：{c.industry}</span>
             <span>
@@ -63,6 +66,11 @@ export default async function Page({
             </span>
             <span>期間：{c.period}</span>
           </div>
+          {!c.url && c.results.length === 0 && (
+            <p className="m-small">
+              顧客情報を保護するため、社名等を匿名化しています。
+            </p>
+          )}
           {c.url && (
             <a
               className="m-text-link"
@@ -73,11 +81,38 @@ export default async function Page({
               公開サイトを見る（別タブ）↗
             </a>
           )}
+          {c.url && c.screenshot && (
+            <figure className="m-site-preview">
+              <div className="m-site-preview-bar" aria-hidden="true">
+                <span className="m-site-preview-dots">
+                  <i />
+                  <i />
+                  <i />
+                </span>
+                <span className="m-site-preview-url">
+                  {new URL(c.url).host}
+                </span>
+              </div>
+              <a href={c.url} target="_blank" rel="noopener noreferrer">
+                <Image
+                  src={c.screenshot.src}
+                  width={c.screenshot.width}
+                  height={c.screenshot.height}
+                  alt={`${c.company}の公開サイトのファーストビュー`}
+                  sizes="(max-width: 1240px) 100vw, 1240px"
+                  priority
+                />
+              </a>
+              <figcaption>
+                制作した公開サイトのファーストビュー（PC表示）
+              </figcaption>
+            </figure>
+          )}
         </div>
       </section>
       <Section
         eyebrow="01 / CHALLENGE"
-        title="支援前の課題。"
+        title="支援前の課題"
         text={c.challenge}
       >
         <div className="m-related">
@@ -88,7 +123,7 @@ export default async function Page({
           ))}
         </div>
       </Section>
-      <Section eyebrow="02 / APPROACH" title="実施した施策。" tone="m-tint">
+      <Section eyebrow="02 / APPROACH" title="実施した施策" tone="m-tint">
         <ol className="m-process">
           {c.approach.map((a, i) => (
             <li key={a}>
@@ -98,39 +133,42 @@ export default async function Page({
           ))}
         </ol>
       </Section>
-      <Section
-        eyebrow="03 / BEFORE & AFTER"
-        title={c.url ? "実装による変化。" : "支援前後の変化。"}
-        text={c.period + "。掲載値を同じ指標ごとに比較しています。"}
-      >
-        <ResultComparison results={c.results} />
-        <p className="m-small" style={{ marginTop: 24 }}>
-          数値は掲載許諾済みの事例データです。増減率は丸めた表示を含み、ptは割合の差を示します。評価期間・対象・施策は事例により異なり、成果を保証するものではありません。
-          {!c.url && "顧客情報を保護するため、社名等を匿名化しています。"}
-        </p>
-        {slug === "tax-accountant" && (
-          <p className="m-small">
-            支援期間と年間契約件数の集計期間は異なる指標です。年間件数を8ヶ月分の成果として読み替えないでください。
+      {c.results.length > 0 && (
+        <Section
+          eyebrow="03 / BEFORE & AFTER"
+          title={c.url ? "実装による変化" : "支援前後の変化"}
+          text={
+            c.period === "非公開"
+              ? "支援前を基準とした倍率で表示しています。"
+              : c.period + "。掲載値を同じ指標ごとに比較しています。"
+          }
+        >
+          <ResultComparison results={c.results} />
+          <p className="m-small" style={{ marginTop: 24 }}>
+            数値は掲載許諾済みの事例データです。増減率は丸めた表示を含み、ptは割合の差を示します。評価期間・対象・施策は事例により異なり、成果を保証するものではありません。
+            {!c.url && "顧客情報を保護するため、社名等を匿名化しています。"}
           </p>
-        )}
-        {slug === "remodeling" && (
-          <p className="m-small">
-            支援前の問い合わせは紹介のみ。広告導入後と流入条件が異なります。月商は基準月比、ROIは掲載値として表示し、比較可能な基準値のない指標は棒グラフにしていません。
-          </p>
-        )}
-      </Section>
-      <Section
-        eyebrow="04 / MORE CASES"
-        title="ほかの取り組みも見る。"
-        tone="m-tint"
-      >
-        <CaseCards
-          slugs={getAllCases()
-            .filter((x) => x.slug !== slug)
-            .slice(0, 3)
-            .map((x) => x.slug)}
-        />
-      </Section>
+          {slug === "tax-accountant" && (
+            <p className="m-small">
+              支援期間と年間契約件数の集計期間は異なる指標です。年間件数を8ヶ月分の成果として読み替えないでください。
+            </p>
+          )}
+          {slug === "remodeling" && (
+            <p className="m-small">
+              支援前の問い合わせは紹介のみ。広告導入後と流入条件が異なります。月商は基準月比、ROIは掲載値として表示し、比較可能な基準値のない指標は棒グラフにしていません。
+            </p>
+          )}
+        </Section>
+      )}
+      {others.length > 0 && (
+        <Section
+          eyebrow={`${c.results.length > 0 ? "04" : "03"} / MORE CASES`}
+          title="ほかの取り組みも見る"
+          tone={c.results.length > 0 ? "m-tint" : ""}
+        >
+          <CaseCards slugs={others} />
+        </Section>
+      )}
       <ContactCTA />
     </>
   );

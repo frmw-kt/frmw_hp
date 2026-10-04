@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { hasPublicCases } from "@/lib/cases";
 import { getAllArticles, getArticle } from "@/lib/articles";
 import {
   Breadcrumb,
@@ -108,12 +109,12 @@ export default async function Page({
       </article>
       <Section
         eyebrow="RELATED SUPPORT"
-        title="実行について相談したい方へ。"
+        title="実行について相談したい方へ"
         tone="m-tint"
       >
         <div className="m-related">
           <Link href={service[1]}>{service[0]}の支援内容 →</Link>
-          <Link href="/cases">支援事例を見る →</Link>
+          {hasPublicCases && <Link href="/cases">支援事例を見る →</Link>}
           <Link href="/blog">ほかのコラムを見る →</Link>
         </div>
       </Section>

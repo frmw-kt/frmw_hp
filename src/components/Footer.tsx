@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { services } from "@/lib/services";
+import { hasPublicCases } from "@/lib/cases";
 export default function Footer() {
   return (
     <footer className="m-footer">
@@ -31,7 +32,9 @@ export default function Footer() {
               ["コラム", "/blog"],
               ["よくある質問", "/faq"],
               ["無料相談・お問い合わせ", "/contact"],
-            ].map(([n, h]) => (
+            ]
+              .filter(([, h]) => hasPublicCases || h !== "/cases")
+              .map(([n, h]) => (
               <Link key={h} href={h}>
                 {n}
               </Link>

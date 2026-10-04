@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "../globals.css";
 import "./marketing.css";
+import "./studio.css";
+import "./header.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {

@@ -22,7 +22,7 @@ export const services: Service[] = [
     slug: "consulting",
     name: "マーケティングコンサルティング",
     en: "STRATEGY",
-    headline: "次に打つ施策を、\n根拠から決める。",
+    headline: "次に打つ施策を、\n根拠から決める",
     intro:
       "売上目標と現状の差を整理し、顧客・競合・データから優先課題を特定。担当者が動ける施策と計画に落とし込みます。",
     audience: "施策の優先順位が決まらない経営者・マーケティング担当者",
@@ -99,7 +99,7 @@ export const services: Service[] = [
     slug: "operations",
     name: "運用代行",
     en: "OPERATIONS",
-    headline: "広告の数字を、\n次の改善につなげる。",
+    headline: "広告の数字を、\n次の改善につなげる",
     intro:
       "広告の設計・入稿・予算調整から、クリエイティブとLPの改善提案まで。配信結果を読み解き、実行と検証を継続します。",
     audience: "広告の費用対効果や、運用を続ける人材不足に悩む事業者",
@@ -158,13 +158,13 @@ export const services: Service[] = [
       "広告費と代行費は分けて見積もります。制作費・ツール費の扱いも契約前に確認します。",
       "媒体審査の通過やCPA・売上の改善幅は保証しません。",
     ],
-    cases: ["real-estate", "d2c", "remodeling"],
+    cases: ["real-estate-ads", "real-estate", "d2c", "remodeling"],
   },
   {
     slug: "production",
     name: "制作",
     en: "CREATIVE",
-    headline: "伝わる理由から、\n相談したくなる導線へ。",
+    headline: "伝わる理由から、\n相談したくなる導線へ",
     intro:
       "LP・Webサイト・広告クリエイティブを、顧客の疑問に答える順序で設計。構成、コピー、デザイン、実装までつなげます。",
     audience:
@@ -225,7 +225,7 @@ export const services: Service[] = [
       "撮影、追加ページ、保守、公開後の改善は、含まれる範囲を個別に決定します。",
       "公開だけで検索順位や問い合わせ件数を保証するものではありません。",
     ],
-    cases: ["nikoestate", "remodeling"],
+    cases: ["nikoestate", "frmw", "real-estate-ads", "remodeling"],
     links: [
       { name: "LP制作", href: "/services/production/lp" },
       { name: "Webサイト制作", href: "/services/production/web" },
@@ -235,7 +235,7 @@ export const services: Service[] = [
     slug: "app-development",
     name: "アプリ開発",
     en: "PRODUCT",
-    headline: "業務に合わせて、\n小さく作って育てる。",
+    headline: "業務に合わせて、\n小さく作って育てる",
     intro:
       "営業管理、広告レポート、データ連携など、既存ツールで埋まらない作業をWebアプリに。必要な機能から実装し、使いながら改善します。",
     audience: "手作業の集計や二重入力を減らしたい事業者",
@@ -288,7 +288,7 @@ export const services: Service[] = [
     slug: "ai",
     name: "AI活用支援",
     en: "AI SOLUTIONS",
-    headline: "繰り返す作業に、\nAIを組み込む。",
+    headline: "繰り返す作業に、\nAIを組み込む",
     intro:
       "営業文面、コンテンツ、問い合わせ対応、データ整理。実際の業務に合わせてAIの入力・出力・人の確認を設計します。",
     audience: "AIを試したものの、日々の業務で使い続けられていない事業者",

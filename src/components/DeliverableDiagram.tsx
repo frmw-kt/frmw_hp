@@ -84,10 +84,10 @@ export default function DeliverableDiagram({
       <div>
         <h3 className="m-subheading">
           {production
-            ? "構成から、訪問者の疑問に答える。"
+            ? "構成から、訪問者の疑問に答える"
             : product
-              ? "入力から、人の確認と出力まで。"
-              : "何が分かり、次に何をするかを残す。"}
+              ? "入力から、人の確認と出力まで"
+              : "何が分かり、次に何をするかを残す"}
         </h3>
         <p className="m-lead">
           {production

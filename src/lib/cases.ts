@@ -17,9 +17,21 @@ export interface CaseStudy {
   budget: string;
   period: string;
   results: CaseResult[];
-  highlight: { value: string; label: string };
+  /**
+   * カード見出し。metric は value が「何の数値か」を示すラベル（例: 月間広告費）。
+   * points は支援範囲・成果物のチップ。flow が true なら矢印でつなぎ、工程の流れとして見せる。
+   */
+  highlight: {
+    metric?: string;
+    value: string;
+    label?: string;
+    points?: string[];
+    flow?: boolean;
+  };
   /** Public production case — link out to the live site (anonymized cases omit this). */
   url?: string;
+  /** 公開サイトのファーストビューのスクリーンショット（public/ 配下） */
+  screenshot?: { src: string; width: number; height: number };
 }
 
 export const cases: CaseStudy[] = [
@@ -240,52 +252,225 @@ export const cases: CaseStudy[] = [
     ],
     highlight: { value: "510%", label: "ROAS達成" },
   },
+  // TODO(仮): 課題・施策の文面は推測で書いた仮のもの。実際の内容を確認して差し替える。
+  // 確定している事実は「不動産事業」「広告運用」「LP制作」「月間予算6倍・CPA 1/3・リード数18倍」のみ。
+  {
+    slug: "real-estate-ads",
+    industry: "不動産",
+    tag: "不動産",
+    company: "不動産会社",
+    challenge:
+      "広告からの問い合わせ獲得単価が高止まりしており、広告予算を増やしても獲得数が比例して伸びない状態だった。効率を保ったまま、配信規模を拡大できる運用体制が求められていた。",
+    approach: [
+      "広告アカウントの構成とコンバージョン計測を見直し、リード獲得までの成果を正しく追える状態に整備",
+      "広告の訴求と一貫したLPを制作し、問い合わせまでの導線を設計",
+      "訴求軸ごとにクリエイティブを検証し、獲得効率の高い訴求とターゲットを特定",
+      "CPAが下がった配信から段階的に予算を拡大し、効率を保ったまま月間予算を6倍まで引き上げ",
+    ],
+    services: ["広告運用", "LP制作"],
+    budget: "非公開",
+    period: "非公開",
+    results: [
+      {
+        label: "月間広告予算",
+        before: "基準（支援前）",
+        after: "6倍",
+        delta: "6倍",
+        positive: true,
+      },
+      {
+        label: "CPA（リード獲得単価）",
+        before: "基準（支援前）",
+        after: "1/3",
+        delta: "1/3に低減",
+        positive: true,
+      },
+      {
+        label: "リード数",
+        before: "基準（支援前）",
+        after: "18倍",
+        delta: "18倍",
+        positive: true,
+      },
+    ],
+    highlight: {
+      metric: "リード数",
+      value: "18倍",
+      points: ["月間予算 6倍", "CPA 1/3"],
+    },
+  },
+  {
+    slug: "real-estate-investment",
+    industry: "不動産投資",
+    tag: "不動産投資",
+    company: "業界最大手の不動産投資会社",
+    challenge:
+      "業界最大手の不動産投資会社として大規模な広告予算を投下しており、月間4,000万円以上の広告を、戦略の検討から日々の運用まで一貫して担い、成果を確認しながら動かし続ける体制が求められていた。",
+    approach: [
+      "マーケティングコンサルティングとして、広告施策の方針検討から支援",
+      "方針に沿って、月間4,000万円以上の広告運用を実行まで担当",
+      "大規模予算の配信と予算配分を継続的に管理し、成果を確認しながら改善",
+    ],
+    services: ["マーケティングコンサルティング", "広告運用"],
+    budget: "4,000万円/月〜",
+    period: "非公開",
+    results: [],
+    highlight: {
+      metric: "月間広告費",
+      value: "4,000万円〜",
+      points: ["コンサルティング", "広告運用"],
+      flow: true,
+    },
+  },
+  {
+    slug: "video-streaming",
+    industry: "エンタメ・動画配信",
+    tag: "動画配信",
+    company: "業界最大手の動画配信サービス",
+    challenge:
+      "業界最大手の動画配信サービスとして大規模な広告予算を投下しており、月間3,000万円以上の広告を、戦略の検討から日々の運用まで一貫して担い、成果を確認しながら動かし続ける体制が求められていた。",
+    approach: [
+      "マーケティングコンサルティングとして、広告施策の方針検討から支援",
+      "方針に沿って、月間3,000万円以上の広告運用を実行まで担当",
+      "大規模予算の配信と予算配分を継続的に管理し、成果を確認しながら改善",
+    ],
+    services: ["マーケティングコンサルティング", "広告運用"],
+    budget: "3,000万円/月〜",
+    period: "非公開",
+    results: [],
+    highlight: {
+      metric: "月間広告費",
+      value: "3,000万円〜",
+      points: ["コンサルティング", "広告運用"],
+      flow: true,
+    },
+  },
   {
     slug: "nikoestate",
     industry: "不動産（注文住宅）",
     tag: "不動産",
     company: "NIKO ESTATE（株式会社LBC）",
     challenge:
-      "低年収・借入あり・頭金なしといった条件でも注文住宅を建てられることを伝えたいが、一般的な工務店サイトの構成では条件面の不安が解消できず離脱されやすい状態。会社紹介のみのサイトでは、住宅ローン審査への不安を抱える層をリードに転換できていなかった。",
+      "「低年収・借入あり・頭金なしでも注文住宅を建てられる」という独自の強みを伝えるWebサイトを、ゼロから立ち上げる必要があった。住宅ローン審査に不安を抱える層は会社紹介だけでは相談に踏み切りにくく、不安を解消する情報と、自分の条件で試せる仕組みを備えたサイトが求められていた。",
     approach: [
-      "借入可能額・住宅ローン返済額・借り換えの3種類のシミュレーターを実装し、その場で概算を試せる導線を追加",
-      "施工事例ギャラリー・SEO記事・よくある質問を備えた情報メディア構成にフルリニューアル",
-      "審査への不安を具体的な数字で解消する比較コンテンツ・診断コンテンツを設計",
-      "GSAPによるスクロール演出と、フォント・配色を含むブランドの再設計",
+      "ターゲットと訴求の整理から、サイト構成・デザイン・コーディング・公開まで、Webサイト全体をゼロから一貫して制作（公開ページ28）",
+      "サービス・施工事例・よくある質問・会社概要・お問い合わせに加え、審査・借入・頭金をテーマにした記事コンテンツ（3カテゴリ・11記事）を制作",
+      "借入可能額・返済額・借り換えの3種のシミュレーターと住宅ローン審査診断を組み込み、条件を試してから相談できる導線を設計",
+      "全ページに構造化データとOGP画像を整備し、記事を追加しやすい構成で公開。公開後も運用・改善を継続",
     ],
-    services: ["Webサイト制作", "コンテンツ設計・SEO", "UI/UXデザイン"],
+    services: ["Webサイト制作", "UI/UXデザイン", "コンテンツ設計・SEO"],
     budget: "非公開",
-    period: "制作〜運用継続中",
+    period: "2026年8月〜（制作・公開後も運用継続中）",
     results: [
       {
-        label: "住宅ローンシミュレーター",
-        before: "なし",
-        after: "3種類（借入可能額・返済額・借り換え）",
-        delta: "新規実装",
+        label: "Webサイト",
+        before: "新規立ち上げ",
+        after: "全28ページを公開",
+        delta: "ゼロから制作",
         positive: true,
       },
       {
-        label: "サイト構成",
-        before: "会社紹介のみ",
-        after: "事例・記事・FAQを備えた情報メディア",
-        delta: "新規実装",
+        label: "コンテンツ",
+        before: "新規立ち上げ",
+        after: "記事・施工事例・FAQ",
+        delta: "3カテゴリ・11記事",
         positive: true,
       },
       {
-        label: "リード導線",
-        before: "問い合わせフォームのみ",
-        after: "シミュレーター経由の相談導線を追加",
-        delta: "新規実装",
+        label: "相談導線",
+        before: "新規立ち上げ",
+        after: "シミュレーター3種＋審査診断",
+        delta: "条件を試して相談",
         positive: true,
       },
     ],
-    highlight: { value: "3種", label: "住宅ローンシミュレーターを実装" },
+    highlight: {
+      metric: "制作",
+      value: "ブランドサイトを新規制作",
+      points: ["サイト制作", "シミュレーター3種", "記事11本"],
+    },
     url: "https://nikoestate.jp/",
+    screenshot: {
+      src: "/images/cases/nikoestate-fv.webp",
+      width: 2000,
+      height: 1250,
+    },
+  },
+  {
+    slug: "frmw",
+    industry: "マーケティング支援（自社サイト）",
+    tag: "自社サイト",
+    company: "Framework（frmw.jp）",
+    challenge:
+      "戦略・広告運用・Web制作を一体で支援するという事業の全体像を、初めて訪れた経営者にも短時間で理解してもらう必要があった。サービスの範囲が広い分、何を頼めるのか・どう進むのかが伝わらないと、問い合わせにつながりにくい状態だった。",
+    approach: [
+      "事業とサービスの整理から、サイト構成・コピー・デザイン・実装・公開まで、自社サイトをゼロから一貫して制作（公開ページ25）",
+      "12のサービスページに加え、支援事例・コラム・よくある質問（13問）を制作し、依頼内容と進め方を具体的に伝える構成に",
+      "Canvasによるヒーローの演出、全画面メニュー、黒と白のセクションを交互に配したレイアウトで、情報量が多くても読み進めやすいデザインに",
+      "全ページに構造化データ・OGP画像・サイトマップを整備し、問い合わせフォームにはメール通知を実装。公開後も改善を継続",
+    ],
+    services: ["Webサイト制作", "UI/UXデザイン", "コンテンツ設計・SEO"],
+    budget: "自社案件",
+    period: "2026年3月〜（制作・公開後も改善継続中）",
+    results: [
+      {
+        label: "Webサイト",
+        before: "新規立ち上げ",
+        after: "全25ページを公開",
+        delta: "ゼロから制作",
+        positive: true,
+      },
+      {
+        label: "コンテンツ",
+        before: "新規立ち上げ",
+        after: "サービス・事例・コラム・FAQ",
+        delta: "12サービスを掲載",
+        positive: true,
+      },
+      {
+        label: "問い合わせ導線",
+        before: "新規立ち上げ",
+        after: "全ページから無料相談へ",
+        delta: "フォーム＋通知",
+        positive: true,
+      },
+    ],
+    highlight: {
+      metric: "制作",
+      value: "自社サイトを新規制作",
+      points: ["サイト制作", "サービス12ページ", "FAQ13問"],
+    },
+    url: "https://frmw.jp/",
+    screenshot: {
+      src: "/images/cases/frmw-fv.webp",
+      width: 2000,
+      height: 1250,
+    },
   },
 ];
 
+/**
+ * サイトに掲載する事例の slug。ここに無い事例はデータを残したまま非公開になる
+ * （一覧・詳細ページは404、ナビ・トップ・サービス詳細・FAQ・サイトマップからも除外）。
+ * 2026-10-04: 事例整理のため一旦すべて非公開にし、制作実績（NIKO ESTATE・自社サイト）と
+ * 不動産投資・動画配信のコンサルティング〜広告運用（いずれも匿名）のみ公開。
+ */
+const publishedSlugs: string[] = [
+  "real-estate-ads",
+  "real-estate-investment",
+  "video-streaming",
+  "nikoestate",
+  "frmw",
+];
+
+export const publicCases: CaseStudy[] = cases.filter((c) =>
+  publishedSlugs.includes(c.slug),
+);
+export const hasPublicCases = publicCases.length > 0;
+export const isPublicCase = (slug: string) => publishedSlugs.includes(slug);
+
 export function getCase(slug: string): CaseStudy | undefined {
-  return cases.find((c) => c.slug === slug);
+  return publicCases.find((c) => c.slug === slug);
 }
 
 /** Short editorial summaries of the approved cases above; no additional claims. */
@@ -313,12 +498,29 @@ export const caseSummaries: Record<
     challenge: "獲得コスト上昇とLTV低下が重なり、収益性が悪化。",
     approach: "媒体別の広告配分と、定期購入・継続の仕組みを見直し。",
   },
+  // TODO(仮): 実際の課題・施策に合わせて差し替える
+  "real-estate-ads": {
+    challenge: "獲得単価が高く、予算を増やしても成果が比例して伸びない状態。",
+    approach: "LP制作と広告運用を一体で見直し、効率を保ったまま予算を6倍に拡大。",
+  },
+  "real-estate-investment": {
+    challenge: "業界最大手として、大規模な広告予算を安定して運用する体制が必要。",
+    approach: "コンサルティングから、月間4,000万円以上の広告運用まで一貫して担当。",
+  },
+  "video-streaming": {
+    challenge: "業界最大手として、大規模な広告予算を安定して運用する体制が必要。",
+    approach: "コンサルティングから、月間3,000万円以上の広告運用まで一貫して担当。",
+  },
+  frmw: {
+    challenge: "広い支援範囲を、初めての経営者にも短時間で伝える必要があった。",
+    approach: "構成・コピー・デザイン・実装まで、自社サイトをゼロから制作。",
+  },
   nikoestate: {
-    challenge: "会社紹介中心のサイトでは、住宅ローンへの不安を解消しにくい。",
-    approach: "3種のシミュレーターと、事例・記事・FAQを備えたサイトを制作。",
+    challenge: "独自の強みを伝え、ローン審査に不安を持つ層の相談につなげるサイトが必要。",
+    approach: "企画・デザイン・実装・記事まで、Webサイト全体をゼロから制作。",
   },
 };
 
 export function getAllCases(): CaseStudy[] {
-  return cases;
+  return publicCases;
 }

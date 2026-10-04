@@ -1,9 +1,10 @@
+import { hasPublicCases, publicCases } from "./cases";
 export interface FaqItem {
   category: string;
   question: string;
   answer: string;
 }
-export const faqs: FaqItem[] = [
+const allFaqs: FaqItem[] = [
   {
     category: "サービスについて",
     question: "どのような企業に向いていますか？",
@@ -73,10 +74,20 @@ export const faqs: FaqItem[] = [
   {
     category: "サービスについて",
     question: "どの業種の事例を確認できますか？",
-    answer:
-      "不動産、オンラインスクール、リフォーム、士業、EC・D2Cの事例を掲載しています。支援事例ページで、課題・実施施策・期間・成果をご確認いただけます。",
+    // 公開中の事例の業種から組み立てる
+    answer: `${[
+      ...new Set(
+        publicCases
+          .filter((c) => c.tag !== "自社サイト")
+          .map((c) => c.industry),
+      ),
+    ].join("、")}の事例を掲載しています。支援事例ページで、課題・実施施策・期間・成果をご確認いただけます。`,
   },
 ];
+// 事例の掲載を前提にした質問は、公開中の事例が無い間は出さない
+export const faqs = allFaqs.filter(
+  (f) => hasPublicCases || f.question !== "どの業種の事例を確認できますか？",
+);
 export function getAllFaqs() {
   return faqs;
 }

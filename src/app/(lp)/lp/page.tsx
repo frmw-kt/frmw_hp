@@ -122,7 +122,7 @@ export default function LpPage() {
             戦略から実行まで
           </span>
           <br />
-          丸ごと解決します。
+          丸ごと解決します
         </h1>
         <p className="text-white/50 text-base leading-relaxed max-w-xl mx-auto mb-10">
           コンサルティング・運用代行・制作の3つのサービスで、

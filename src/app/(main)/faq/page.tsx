@@ -18,7 +18,7 @@ export default function Page() {
         <div className="m-container">
           <Breadcrumb name="よくある質問" path="/faq" />
           <p className="m-eyebrow">FAQ</p>
-          <h1>相談前の疑問を、ここで。</h1>
+          <h1>相談前の疑問を、ここで</h1>
           <p className="m-lead">
             費用や進め方、社内で必要な準備などをまとめました。
           </p>

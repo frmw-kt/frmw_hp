@@ -21,14 +21,14 @@ export default function Page() {
           <h1>
             次の判断に役立つ、
             <br />
-            マーケティングの基本。
+            マーケティングの基本
           </h1>
           <p className="m-lead">
             施策を考えるとき、支援会社を選ぶとき。押さえておきたい視点をまとめました。
           </p>
         </div>
       </section>
-      <Section eyebrow="ARTICLES" title="コラム一覧。">
+      <Section eyebrow="ARTICLES" title="コラム一覧">
         <div className="m-grid-3">
           {getAllArticles().map((a) => (
             <article className="m-task-card" key={a.slug}>
