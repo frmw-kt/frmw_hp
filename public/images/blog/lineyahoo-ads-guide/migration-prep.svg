@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 720" width="800" height="720" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="720" fill="#ffffff"/>
+  <text x="32" y="52" font-size="28" font-weight="700" fill="#191c19">移行ツールを使う前の準備の順番</text>
+
+  <rect x="40" y="80" width="720" height="84" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <circle cx="82" cy="122" r="22" fill="#806222"/>
+  <text x="82" y="131" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="120" y="116" font-size="24" font-weight="700" fill="#191c19">移行作業をする人のビジネスIDを統合</text>
+  <text x="120" y="148" font-size="22" fill="#41483c">自分でIDを指定するなら10月13日（予定）まで</text>
+  <polygon points="390,168 410,168 400,182" fill="#c9a84c"/>
+
+  <rect x="40" y="186" width="720" height="84" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <circle cx="82" cy="228" r="22" fill="#806222"/>
+  <text x="82" y="237" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="120" y="222" font-size="24" font-weight="700" fill="#191c19">ビジネスマネージャーの組織を作る</text>
+  <text x="120" y="254" font-size="22" fill="#41483c">ビジネス情報を入力し、メール認証を済ませる</text>
+  <polygon points="390,274 410,274 400,288" fill="#c9a84c"/>
+
+  <rect x="40" y="292" width="720" height="84" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <circle cx="82" cy="334" r="22" fill="#806222"/>
+  <text x="82" y="343" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="120" y="328" font-size="24" font-weight="700" fill="#191c19">LINE広告と、接続中のLINE公式アカウントを組織に接続</text>
+  <text x="120" y="360" font-size="22" fill="#41483c">移行先の既存アカウントがあれば、それも同じ組織に</text>
+  <polygon points="390,380 410,380 400,394" fill="#c9a84c"/>
+
+  <rect x="40" y="398" width="720" height="84" rx="10" fill="#c9a84c" fill-opacity="0.18" stroke="#c9a84c" stroke-width="2"/>
+  <circle cx="82" cy="440" r="22" fill="#806222"/>
+  <text x="82" y="449" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+  <text x="120" y="434" font-size="24" font-weight="700" fill="#191c19">組織の認証審査を受け、「認証済み」にする</text>
+  <text x="120" y="466" font-size="22" fill="#41483c">書類か、公式サイトのビジネス情報で審査</text>
+  <polygon points="390,486 410,486 400,500" fill="#c9a84c"/>
+
+  <rect x="40" y="504" width="720" height="84" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <circle cx="82" cy="546" r="22" fill="#806222"/>
+  <text x="82" y="555" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+  <text x="120" y="540" font-size="24" font-weight="700" fill="#191c19">移行ツールを実行する</text>
+  <text x="120" y="572" font-size="22" fill="#41483c">日本向け・運用型・「承認」のアカウントが対象</text>
+  <polygon points="390,592 410,592 400,606" fill="#c9a84c"/>
+
+  <rect x="40" y="610" width="720" height="84" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <circle cx="82" cy="652" r="22" fill="#806222"/>
+  <text x="82" y="661" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+  <text x="120" y="646" font-size="24" font-weight="700" fill="#191c19">計測タグとコンバージョンを設定し、配信をオン</text>
+  <text x="120" y="678" font-size="22" fill="#41483c">移したキャンペーンは配信オフの状態で作られる</text>
+</svg>

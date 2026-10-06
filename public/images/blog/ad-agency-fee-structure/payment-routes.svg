@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="460" fill="#ffffff"/>
+  <defs>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <text x="30" y="36" font-size="24" font-weight="bold" fill="#191c19">A 自社が媒体へ直接支払う</text>
+  <rect x="30" y="64" width="150" height="64" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="105" y="104" font-size="24" text-anchor="middle" fill="#191c19">自社</text>
+  <rect x="560" y="52" width="210" height="56" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="665" y="88" font-size="24" text-anchor="middle" fill="#191c19">媒体</text>
+  <rect x="560" y="140" width="210" height="56" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="665" y="176" font-size="24" text-anchor="middle" fill="#191c19">代行会社</text>
+  <line x1="180" y1="86" x2="554" y2="80" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+  <text x="370" y="68" font-size="22" text-anchor="middle" fill="#41483c">広告費</text>
+  <line x1="180" y1="108" x2="554" y2="166" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+  <text x="370" y="172" font-size="22" text-anchor="middle" fill="#41483c">運用手数料など</text>
+  <text x="30" y="228" font-size="22" fill="#41483c">広告費の明細書・領収書は、媒体から自社が受け取る</text>
+  <line x1="30" y1="250" x2="770" y2="250" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="30" y="288" font-size="24" font-weight="bold" fill="#191c19">B 代理店がまとめて支払う</text>
+  <rect x="30" y="306" width="150" height="64" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="105" y="346" font-size="24" text-anchor="middle" fill="#191c19">自社</text>
+  <rect x="300" y="306" width="200" height="64" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="346" font-size="24" text-anchor="middle" fill="#191c19">代行会社</text>
+  <rect x="610" y="306" width="160" height="64" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="690" y="346" font-size="24" text-anchor="middle" fill="#191c19">媒体</text>
+  <line x1="180" y1="338" x2="294" y2="338" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+  <line x1="500" y1="338" x2="604" y2="338" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+  <text x="240" y="402" font-size="22" text-anchor="middle" fill="#41483c">広告費＋手数料</text>
+  <text x="555" y="402" font-size="22" text-anchor="middle" fill="#41483c">広告費</text>
+  <text x="30" y="444" font-size="22" fill="#41483c">自社が受け取る請求書は、代行会社が発行する</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580" width="800" height="580" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="580" fill="#f7f7f4"/>
+  <text x="32" y="50" font-size="30" font-weight="700" fill="#191c19">Google広告を始める5つの手順</text>
+  <g>
+    <rect x="32" y="72" width="736" height="88" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <circle cx="74" cy="116" r="24" fill="#c9a84c"/>
+    <text x="74" y="125" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="114" y="109" font-size="26" font-weight="700" fill="#191c19">アカウントとお支払い情報を登録</text>
+    <text x="114" y="143" font-size="22" fill="#41483c">ビジネス情報 → 目標と予算 → お支払い情報</text>
+  </g>
+  <g>
+    <rect x="32" y="172" width="736" height="88" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <circle cx="74" cy="216" r="24" fill="#c9a84c"/>
+    <text x="74" y="225" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="114" y="209" font-size="26" font-weight="700" fill="#191c19">コンバージョン測定を設定（配信前）</text>
+    <text x="114" y="243" font-size="22" fill="#41483c">Google タグ、またはアナリティクスのキーイベント</text>
+  </g>
+  <g>
+    <rect x="32" y="272" width="736" height="88" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <circle cx="74" cy="316" r="24" fill="#c9a84c"/>
+    <text x="74" y="325" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="114" y="309" font-size="26" font-weight="700" fill="#191c19">キャンペーンの種類を選ぶ</text>
+    <text x="114" y="343" font-size="22" fill="#41483c">検索・P-MAX・ディスプレイ・動画など</text>
+  </g>
+  <g>
+    <rect x="32" y="372" width="736" height="88" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <circle cx="74" cy="416" r="24" fill="#c9a84c"/>
+    <text x="74" y="425" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+    <text x="114" y="409" font-size="26" font-weight="700" fill="#191c19">地域・予算・広告を設定</text>
+    <text x="114" y="443" font-size="22" fill="#41483c">地域は「所在地」か「所在地やインタレスト」か</text>
+  </g>
+  <g>
+    <rect x="32" y="472" width="736" height="88" rx="10" fill="#ffffff" stroke="#806222" stroke-width="2"/>
+    <circle cx="74" cy="516" r="24" fill="#806222"/>
+    <text x="74" y="525" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+    <text x="114" y="509" font-size="26" font-weight="700" fill="#191c19">審査を経て配信、ステータスを確認</text>
+    <text x="114" y="543" font-size="22" fill="#41483c">審査はほとんど1営業日以内（Google 広告ヘルプ）</text>
+  </g>
+</svg>

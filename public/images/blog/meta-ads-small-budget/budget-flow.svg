@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 680" width="720" height="680" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>月の予算から最適化イベントを選ぶ流れ</title>
+  <desc>月の予算を4.3で割って週の予算にし、50件で割って週50件に届く単価を出す。その単価で問い合わせや購入が取れるならそのまま最適化し、取れないなら手前の段階で最適化する。月10万円は計算例（仮定）。</desc>
+  <rect x="0" y="0" width="720" height="680" fill="#ffffff"/>
+
+  <rect x="30" y="20" width="660" height="88" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="60" y="75" font-size="30" font-weight="700" fill="#191c19">① 月の予算</text>
+  <text x="660" y="75" font-size="30" font-weight="700" fill="#806222" text-anchor="end">10万円（例）</text>
+
+  <line x1="110" y1="112" x2="110" y2="152" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="99,150 121,150 110,166" fill="#c9a84c"/>
+  <text x="140" y="146" font-size="24" fill="#41483c">÷ 4.3（1か月 ≒ 4.3週）</text>
+
+  <rect x="30" y="170" width="660" height="88" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="60" y="225" font-size="30" font-weight="700" fill="#191c19">② 週の予算</text>
+  <text x="660" y="225" font-size="30" font-weight="700" fill="#806222" text-anchor="end">約2.3万円</text>
+
+  <line x1="110" y1="262" x2="110" y2="302" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="99,300 121,300 110,316" fill="#c9a84c"/>
+  <text x="140" y="296" font-size="24" fill="#41483c">÷ 50件（学習が進む目安）</text>
+
+  <rect x="30" y="320" width="660" height="88" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="60" y="375" font-size="30" font-weight="700" fill="#191c19">③ 週50件に届く単価</text>
+  <text x="660" y="375" font-size="30" font-weight="700" fill="#806222" text-anchor="end">約465円以下</text>
+
+  <line x1="110" y1="412" x2="110" y2="474" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="99,472 121,472 110,488" fill="#c9a84c"/>
+  <line x1="610" y1="412" x2="610" y2="474" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="599,472 621,472 610,488" fill="#c9a84c"/>
+  <text x="360" y="456" font-size="24" fill="#41483c" text-anchor="middle">この単価で問い合わせ・購入が取れる？</text>
+
+  <rect x="30" y="492" width="320" height="128" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="190" y="536" font-size="26" font-weight="700" fill="#806222" text-anchor="middle">取れる</text>
+  <text x="190" y="570" font-size="26" fill="#191c19" text-anchor="middle">問い合わせ・購入で</text>
+  <text x="190" y="602" font-size="26" fill="#191c19" text-anchor="middle">そのまま最適化</text>
+
+  <rect x="370" y="492" width="320" height="128" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="530" y="536" font-size="26" font-weight="700" fill="#806222" text-anchor="middle">取れない</text>
+  <text x="530" y="570" font-size="26" fill="#191c19" text-anchor="middle">手前の段階で最適化</text>
+  <text x="530" y="602" font-size="22" fill="#41483c" text-anchor="middle">（LP閲覧・カート追加など）</text>
+
+  <text x="30" y="660" font-size="22" fill="#41483c">※10万円は計算例（仮定）。1か月＝4.3週で換算</text>
+</svg>

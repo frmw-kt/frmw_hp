@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 724" width="800" height="724" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="724" fill="#f7f7f4"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <g stroke="#e3e2dc" stroke-width="2" fill="#ffffff">
+    <rect x="20" y="24" width="360" height="196" rx="12"/>
+    <rect x="420" y="24" width="360" height="196" rx="12"/>
+    <rect x="20" y="264" width="360" height="196" rx="12"/>
+    <rect x="420" y="264" width="360" height="196" rx="12"/>
+    <rect x="20" y="504" width="360" height="196" rx="12"/>
+    <rect x="420" y="504" width="360" height="196" rx="12"/>
+  </g>
+  <g fill="none" stroke="#806222" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="383" y1="122" x2="415" y2="122"/>
+    <path d="M600,222 L600,242 L200,242 L200,259"/>
+    <line x1="383" y1="362" x2="415" y2="362"/>
+    <path d="M600,462 L600,482 L200,482 L200,499"/>
+    <line x1="383" y1="602" x2="415" y2="602"/>
+  </g>
+  <g fill="#c9a84c">
+    <circle cx="58" cy="66" r="22"/>
+    <circle cx="458" cy="66" r="22"/>
+    <circle cx="58" cy="306" r="22"/>
+    <circle cx="458" cy="306" r="22"/>
+    <circle cx="58" cy="546" r="22"/>
+    <circle cx="458" cy="546" r="22"/>
+  </g>
+  <g fill="#191c19" font-size="24" font-weight="700" text-anchor="middle">
+    <text x="58" y="75">1</text>
+    <text x="458" y="75">2</text>
+    <text x="58" y="315">3</text>
+    <text x="458" y="315">4</text>
+    <text x="58" y="555">5</text>
+    <text x="458" y="555">6</text>
+  </g>
+  <g fill="#191c19" font-size="28" font-weight="700">
+    <text x="92" y="76">アカウントを用意</text>
+    <text x="492" y="76">支払い方法を登録</text>
+    <text x="92" y="316">計測を準備</text>
+    <text x="492" y="316">広告を作成</text>
+    <text x="92" y="556">公開・審査</text>
+    <text x="492" y="556">配信後に確認</text>
+  </g>
+  <g fill="#41483c" font-size="26">
+    <text x="44" y="128">Facebookページ</text>
+    <text x="44" y="164">Instagram（プロ）</text>
+    <text x="44" y="200">ビジネスポートフォリオ</text>
+    <text x="444" y="128">カード・PayPalなど</text>
+    <text x="444" y="164">最初の選択で</text>
+    <text x="444" y="200">支払い設定が決まる</text>
+    <text x="44" y="368">Metaピクセル</text>
+    <text x="44" y="404">コンバージョンAPI</text>
+    <text x="44" y="440">テストイベントで確認</text>
+    <text x="444" y="368">キャンペーン（目的）</text>
+    <text x="444" y="404">広告セット（対象・予算）</text>
+    <text x="444" y="440">広告（クリエイティブ）</text>
+    <text x="44" y="608">広告規定に照らし審査</text>
+    <text x="44" y="644">多くは24時間以内</text>
+    <text x="44" y="680">却下なら修正か再審査</text>
+    <text x="444" y="608">［配信］列のステータス</text>
+    <text x="444" y="644">結果と実際の件数</text>
+    <text x="444" y="680">学習中は大きく触らない</text>
+  </g>
+</svg>

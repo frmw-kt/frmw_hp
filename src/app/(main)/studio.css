@@ -1079,3 +1079,31 @@
 .marketing-site .m-section:not(.m-tint) .m-case-points li {
   background: #f6f5f1;
 }
+
+/* 記事ページの見出し: セクション見出し用の大きなサイズ（.m-section h2）が本文・目次・出典にまで効かないようにする */
+.marketing-site .m-section .article-body h2 {
+  font-size: clamp(21px, 2.2vw, 25px);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+.marketing-site .m-section .article-body h3 {
+  font-size: 18px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  line-height: 1.6;
+}
+.marketing-site .m-section .m-article-toc h2 {
+  font-size: 16px;
+  font-weight: 650;
+  letter-spacing: 0;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.marketing-site .m-section .article-sources h2 {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.6;
+}

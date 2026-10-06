@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="450" fill="#f7f7f4"/>
+  <rect x="30" y="20" width="740" height="66" rx="8" fill="#191c19"/>
+  <text x="400" y="63" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">問い合わせ数 ＝ 訪問数 × 問い合わせ率</text>
+  <rect x="190" y="106" width="420" height="58" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="400" y="144" font-size="24" fill="#191c19" text-anchor="middle">手順1　計測が正しいか確かめる</text>
+  <line x1="400" y1="164" x2="400" y2="186" stroke="#806222" stroke-width="3"/>
+  <line x1="207" y1="186" x2="593" y2="186" stroke="#806222" stroke-width="3"/>
+  <line x1="207" y1="186" x2="207" y2="204" stroke="#806222" stroke-width="3"/>
+  <line x1="593" y1="186" x2="593" y2="204" stroke="#806222" stroke-width="3"/>
+  <polygon points="199,202 215,202 207,214" fill="#806222"/>
+  <polygon points="585,202 601,202 593,214" fill="#806222"/>
+  <rect x="30" y="216" width="355" height="214" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="207" y="256" font-size="24" fill="#806222" text-anchor="middle" font-weight="bold">訪問数が少ない</text>
+  <text x="207" y="298" font-size="24" fill="#191c19" text-anchor="middle">→ 流入を増やす</text>
+  <line x1="60" y1="318" x2="354" y2="318" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="207" y="356" font-size="22" fill="#41483c" text-anchor="middle">検索・地図検索</text>
+  <text x="207" y="392" font-size="22" fill="#41483c" text-anchor="middle">広告・SNS</text>
+  <rect x="415" y="216" width="355" height="214" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="593" y="256" font-size="24" fill="#806222" text-anchor="middle" font-weight="bold">訪問はあるのに少ない</text>
+  <text x="593" y="298" font-size="24" fill="#191c19" text-anchor="middle">→ 問い合わせ率を上げる</text>
+  <line x1="445" y1="318" x2="740" y2="318" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="593" y="356" font-size="22" fill="#41483c" text-anchor="middle">手順2 離脱ページ・3 導線</text>
+  <text x="593" y="392" font-size="22" fill="#41483c" text-anchor="middle">4 フォーム・5 信頼の材料</text>
+</svg>

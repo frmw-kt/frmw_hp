@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="700" rx="16" fill="#f7f7f4"/>
+
+  <!-- 手順1〜3 限界CPA -->
+  <text x="30" y="50" font-size="24" font-weight="700" fill="#191c19">手順1〜3　限界CPA（粗利がすべて広告費に消える額）</text>
+  <rect x="30" y="64" width="210" height="92" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="135" y="102" font-size="24" text-anchor="middle" fill="#41483c">成約1件の粗利</text>
+  <text x="135" y="140" font-size="28" font-weight="700" text-anchor="middle" fill="#191c19">30万円</text>
+  <text x="262" y="122" font-size="32" font-weight="700" text-anchor="middle" fill="#41483c">×</text>
+  <rect x="285" y="64" width="210" height="92" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="390" y="102" font-size="24" text-anchor="middle" fill="#41483c">成約までの割合</text>
+  <text x="390" y="140" font-size="28" font-weight="700" text-anchor="middle" fill="#191c19">10%</text>
+  <text x="517" y="122" font-size="32" font-weight="700" text-anchor="middle" fill="#41483c">＝</text>
+  <rect x="540" y="64" width="230" height="92" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="655" y="102" font-size="24" text-anchor="middle" fill="#41483c">限界CPA</text>
+  <text x="655" y="140" font-size="28" font-weight="700" text-anchor="middle" fill="#806222">3万円</text>
+
+  <!-- 手順4 許容CPA -->
+  <text x="30" y="206" font-size="24" font-weight="700" fill="#191c19">手順4　許容CPA（実際に使ってよい上限）</text>
+  <rect x="30" y="220" width="210" height="92" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="135" y="258" font-size="24" text-anchor="middle" fill="#41483c">限界CPA</text>
+  <text x="135" y="296" font-size="28" font-weight="700" text-anchor="middle" fill="#191c19">3万円</text>
+  <text x="262" y="278" font-size="32" font-weight="700" text-anchor="middle" fill="#41483c">−</text>
+  <rect x="285" y="220" width="210" height="92" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="390" y="258" font-size="24" text-anchor="middle" fill="#41483c">1件で残す利益</text>
+  <text x="390" y="296" font-size="28" font-weight="700" text-anchor="middle" fill="#191c19">1.5万円</text>
+  <text x="517" y="278" font-size="32" font-weight="700" text-anchor="middle" fill="#41483c">＝</text>
+  <rect x="540" y="220" width="230" height="92" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="655" y="258" font-size="24" text-anchor="middle" fill="#41483c">許容CPA</text>
+  <text x="655" y="296" font-size="28" font-weight="700" text-anchor="middle" fill="#806222">1.5万円</text>
+
+  <!-- 手順5 必要な問い合わせ件数 -->
+  <text x="30" y="362" font-size="24" font-weight="700" fill="#191c19">手順5　必要な問い合わせ件数</text>
+  <rect x="30" y="376" width="210" height="92" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="135" y="414" font-size="24" text-anchor="middle" fill="#41483c">目標の成約件数</text>
+  <text x="135" y="452" font-size="28" font-weight="700" text-anchor="middle" fill="#191c19">月2件</text>
+  <text x="262" y="434" font-size="32" font-weight="700" text-anchor="middle" fill="#41483c">÷</text>
+  <rect x="285" y="376" width="210" height="92" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="390" y="414" font-size="24" text-anchor="middle" fill="#41483c">成約までの割合</text>
+  <text x="390" y="452" font-size="28" font-weight="700" text-anchor="middle" fill="#191c19">10%</text>
+  <text x="517" y="434" font-size="32" font-weight="700" text-anchor="middle" fill="#41483c">＝</text>
+  <rect x="540" y="376" width="230" height="92" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="655" y="414" font-size="24" text-anchor="middle" fill="#41483c">必要な問い合わせ</text>
+  <text x="655" y="452" font-size="28" font-weight="700" text-anchor="middle" fill="#806222">月20件</text>
+
+  <!-- 手順5 月の広告予算の上限 -->
+  <text x="30" y="518" font-size="24" font-weight="700" fill="#191c19">手順5　月の広告予算の上限</text>
+  <rect x="30" y="532" width="210" height="92" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="135" y="570" font-size="24" text-anchor="middle" fill="#41483c">許容CPA</text>
+  <text x="135" y="608" font-size="28" font-weight="700" text-anchor="middle" fill="#191c19">1.5万円</text>
+  <text x="262" y="590" font-size="32" font-weight="700" text-anchor="middle" fill="#41483c">×</text>
+  <rect x="285" y="532" width="210" height="92" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="390" y="570" font-size="24" text-anchor="middle" fill="#41483c">必要な問い合わせ</text>
+  <text x="390" y="608" font-size="28" font-weight="700" text-anchor="middle" fill="#191c19">月20件</text>
+  <text x="517" y="590" font-size="32" font-weight="700" text-anchor="middle" fill="#41483c">＝</text>
+  <rect x="540" y="532" width="230" height="92" rx="10" fill="#191c19"/>
+  <text x="655" y="570" font-size="24" text-anchor="middle" fill="#ffffff">月の広告予算</text>
+  <text x="655" y="608" font-size="28" font-weight="700" text-anchor="middle" fill="#c9a84c">30万円</text>
+
+  <!-- 注記 -->
+  <text x="30" y="658" font-size="22" fill="#41483c">成約までの割合＝商談化率40%×成約率25%</text>
+  <text x="30" y="688" font-size="22" fill="#41483c">1件で残す利益＝成約1件で残す15万円×10%（数値はすべて仮定）</text>
+</svg>

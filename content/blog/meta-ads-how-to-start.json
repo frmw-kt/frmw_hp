@@ -1,0 +1,224 @@
+{
+  "slug": "meta-ads-how-to-start",
+  "title": "Meta広告の始め方：出稿前の準備から配信開始までの6ステップ",
+  "description": "Meta広告（Facebook広告・インスタ広告）は、Facebookページとビジネスポートフォリオの用意、支払い方法の登録、Metaピクセルでの計測、広告マネージャでの作成、審査、配信後の確認の6手順で始められます。少額から自社で始める事業者向けに、各手順で決めることを公式ヘルプをもとに業態別の例つきで整理します。",
+  "date": "2026-10-06",
+  "category": "広告運用",
+  "readTime": "18分",
+  "keywords": {
+    "primary": "Meta広告 始め方",
+    "variants": [
+      "Facebook広告",
+      "インスタ広告",
+      "Instagram広告",
+      "広告マネージャ",
+      "出し方"
+    ]
+  },
+  "content": "<p>Meta広告（Facebook広告・Instagram広告）は、次の6つの手順で始められます。①Facebookページ（Instagramにも出すならInstagramプロアカウント）と広告アカウントを用意する、②支払い方法を登録する、③Metaピクセルなどで問い合わせや購入を計測できるようにする、④広告マネージャでキャンペーン・広告セット・広告を作って公開する、⑤審査を待つ、⑥配信後にステータスと結果を確認する、の順です。</p><p>審査はほとんどの場合24時間以内に終わりますが、さらに時間がかかることもあります（<a href=\"#source-meta-review\">Meta：審査中の広告について</a>）。この記事では、少額から自社で始める事業者向けに、各手順で決めることと迷いやすい点を、Metaの公式ヘルプで確認できた範囲で整理します。画面の名称は2026年10月6日時点のヘルプの記載に基づくもので、今後変わることがあります。</p><h2>Meta広告を始める6つの手順と、用意するもの</h2><figure><img src=\"/images/blog/meta-ads-how-to-start/start-steps.svg\" alt=\"Meta広告を始める6つの手順（アカウントの用意、支払い方法の登録、計測の準備、広告の作成、公開と審査、配信後の確認）を順に示した図\" width=\"800\" height=\"724\"><figcaption>図1 Meta広告を始める6つの手順。各手順の詳細は本文で説明します</figcaption></figure><p>始める前に、次のものをそろえておくと途中で止まらずに進められます。</p><table><thead><tr><th>用意するもの</th><th>使う手順</th><th>補足</th></tr></thead><tbody><tr><td>Facebookのアカウント（個人のプロフィール）</td><td>手順1</td><td>ビジネスポートフォリオや広告マネージャを使うために必要です</td></tr><tr><td>ビジネスのFacebookページ</td><td>手順1・4</td><td>広告の名義になります。広告マネージャで広告を掲載する前に必要です</td></tr><tr><td>Instagramプロアカウント</td><td>手順1・4</td><td>Instagramの名義でも広告を出す場合に、ビジネスポートフォリオへ追加します</td></tr><tr><td>ビジネス用のメールアドレス</td><td>手順1</td><td>ビジネスポートフォリオの作成時に入力し、確認のメールが届きます</td></tr><tr><td>支払い方法（クレジットカードなど）</td><td>手順2</td><td>最初の広告を公開する前に登録が必要です</td></tr><tr><td>自社サイトを編集できる人・手段</td><td>手順3</td><td>Metaピクセルの設置に使います（連携できるサービスなら編集が不要な場合もあります）</td></tr><tr><td>広告の画像・動画、文章、リンク先のページ</td><td>手順4</td><td>リンク先は、問い合わせ・予約・購入ができるページにします</td></tr></tbody></table><h2>手順1：Facebookページ・Instagram・ビジネスポートフォリオを用意する</h2><p>広告マネージャで広告を掲載するには、ビジネスのFacebookページを持っているか、他の人のページで管理者・編集者・広告管理者の権限を持っている必要があります（<a href=\"#source-meta-ad-account\">Meta：広告アカウントを作成する方法</a>）。広告にはページのビジネス名とプロフィール写真が表示されます（<a href=\"#source-meta-create-ad\">Meta：How do I create an ad in Meta Ads Manager?</a>）。</p><p>広告アカウントは、Facebookに登録すると1つ付与されます。社内の複数人や外部の担当者と作業する可能性があるなら、<strong>ビジネスポートフォリオ</strong>も作っておくと管理しやすくなります。ビジネスポートフォリオは、Facebookページ・Instagramアカウント・広告アカウントなどの「ビジネスアセット」と、それにアクセスする人の権限をまとめて管理する仕組みです（<a href=\"#source-meta-portfolio-about\">Meta：ビジネスポートフォリオについて</a>）。Metaのヘルプの一部には、旧来の「ビジネスマネージャ」という表記も残っています（<a href=\"#source-meta-pixel\">Meta：Metaピクセルについて</a>）。</p><p>ビジネスポートフォリオは次の手順で作成します（<a href=\"#source-meta-portfolio-create\">Meta：ビジネスポートフォリオを作成する</a>）。</p><ol><li>business.facebook.com にFacebookのアカウントでログインする</li><li>左上の［ホーム］の下にあるドロップダウンメニューから［ビジネスポートフォリオを作成］をクリックする</li><li>ビジネスポートフォリオの名前（ビジネスの公式名称に合わせる）、氏名、ビジネスのメールアドレスを入力して作成する</li><li>届いたメールで、ビジネスのメールアドレスを確認する</li></ol><p>作成後に、Facebookページ・Instagramアカウント・広告アカウント・Metaピクセルなどを追加します。Instagramアカウントは、ビジネスポートフォリオの［設定］から［アカウント］→［Instagramアカウント］→［追加］と進んで追加でき、Instagramのプロアカウントが必要です。追加すると、新しいキャンペーンではInstagramが自動的に配置先に含まれ、そのアカウントを広告に使えるようになります（<a href=\"#source-meta-instagram\">Meta：ビジネスポートフォリオにInstagramアカウントを追加する</a>）。</p><p>ビジネスアセットは1つのビジネスポートフォリオにしか所属できません。一方で、広告会社などのパートナーを追加して、必要なアセットへのアクセスを付与できます（<a href=\"#source-meta-portfolio-create\">Meta：ビジネスポートフォリオを作成する</a>、<a href=\"#source-meta-partner\">Meta：ビジネスポートフォリオにパートナーを追加する</a>）。</p><p>そのためFrameworkでは、将来運用を外部に任せる可能性があっても、ビジネスポートフォリオと広告アカウントは自社で作り、外部の担当者にはパートナーとしてアクセスを付与する形をおすすめしています。依頼先を変えるときも、アカウントや計測の設定を自社に残しやすいためです。</p><p>依頼先を選ぶときの確認点は<a href=\"/blog/meta-google-ad-agency-how-to-choose\">広告運用代行の選び方</a>で解説しています。外部に任せたときに広告費を誰が媒体に支払い、請求書がどこから届くか、アカウントの名義をどう決めるかは、<a href=\"/blog/ad-agency-fee-structure\">広告運用代行の費用（支払い経路と請求書・アカウント名義）</a>で整理しています。</p><p>なお、新しく作ったビジネスポートフォリオや広告アカウントでは、不正利用を防ぐため、一部の広告機能をすぐに使えない場合があります。使える機能と必要な対応は［ビジネスサポートホーム］で確認できます。また、支払いが確認されるまで、作れる広告アカウントは1つに制限されます（<a href=\"#source-meta-ad-account\">Meta：広告アカウントを作成する方法</a>）。</p><h2>手順2：支払い方法を登録し、使いすぎを防ぐ上限を決める</h2><p>広告を公開するには、広告アカウントに支払い方法を追加する必要があります。［請求と支払い］を開き、広告アカウントが1つだけなら左側のメニューの［支払い設定］で［支払い方法を追加］をクリックし、画面の手順に沿って登録します（<a href=\"#source-meta-payment-add\">Meta：広告アカウントに支払い方法を追加する</a>）。</p><p>日本向けには、クレジットカード（American Express・JCB・Mastercard・Visa。クレジット機能付きデビットカードを含む）、PayPal、地域限定の手動決済方法が案内されています。手動決済方法は、広告アカウントの国が日本・通貨が日本円で、最初に広告アカウントを設定するときに手動決済を選んだ場合にだけ追加できます（<a href=\"#source-meta-payment-jp\">Meta：日本で利用できる支払い方法</a>）。</p><p>注意したいのは、<strong>最初の広告を作るときに選んだ支払い方法で、支払い設定が決まる</strong>点です。クレジットカードやPayPalを選ぶと、使った広告費が請求される「自動決済」に、手動決済方法を選ぶと、入金した残高から使う「利用可能残高」の設定になり、どちらかに固定される場合もあります（<a href=\"#source-meta-payment-methods\">Meta：Meta広告で利用できる支払い方法</a>）。カード払いか前払いかを、先に社内で決めてから登録しましょう。</p><p>自動決済では、広告費が「支払い単位額」に達した時点か、毎月の請求日に請求されます。支払い単位額は最初は少額に設定され、その後自動的に引き上げられることがあり、1か月に複数回請求されることもあります（<a href=\"#source-meta-threshold\">Meta：Meta広告の支払い単位額について</a>、<a href=\"#source-meta-pay\">Meta：Meta広告の支払い方法</a>）。</p><p>また、広告セットなどに設定する「1日の予算」は1日あたりの平均の金額で、超えてはならない上限ではありません。一方、すべてのキャンペーンを通じた上限額である「広告アカウントの上限予算」を超えて広告が掲載されることはありません（<a href=\"#source-meta-limits\">Meta：予算、上限予算、支払い単位額の違い</a>）。使いすぎが心配な場合は、広告アカウントの上限予算を設定しておくと安心です。</p><p>月にいくら使うか、その予算で何を最適化の対象にするかは、<a href=\"/blog/meta-ads-small-budget\">少額予算での予算の決め方（学習期間から逆算する方法）</a>で詳しく解説しています。</p><h2>手順3：MetaピクセルとコンバージョンAPIで成果を計測できるようにする</h2><p>Metaピクセルは、自社サイトに設置するコードです。サイトで利用者が行ったアクション（イベント）が記録され、広告の効果測定や、成果につながりやすい人への配信の最適化、オーディエンスの作成に使われます（<a href=\"#source-meta-pixel\">Meta：Metaピクセルについて</a>）。計測がないまま配信すると、サイトでの問い合わせや購入が広告からどれだけ生まれたかを、広告マネージャで確かめにくくなります。設置の前に、どの行動を成果とし、商談・成約をどこで記録するかを決めておくと迷いません（<a href=\"/blog/conversion-tracking-design\">何を成果として測るかの決め方</a>）。</p><p>コンバージョンAPIは、サーバーやサイトの構築サービス、CRM（顧客管理システム）などからMetaにデータを直接送る仕組みです。Metaはピクセルとあわせて使うことを勧めており、設定方法は複数あって、多くの連携は開発者なしで設定できるとしています（<a href=\"#source-meta-capi\">Meta：コンバージョンAPIについて</a>、<a href=\"#source-meta-pixel-setup\">Meta：Metaピクセルの設定とインストール</a>）。</p><p>設定は、ピクセルの作成とイベントの設定の2段階です（<a href=\"#source-meta-pixel-setup\">Meta：Metaピクセルの設定とインストール</a>、<a href=\"#source-meta-test-events\">Meta：イベントのテストツール</a>）。</p><ol><li>イベントマネージャを開き、［データをリンク］→［ウェブ］→［接続］と進み、ピクセルの名前を入力して［ピクセルを作成］をクリックする</li><li>サイトのURLを入力し、利用しているサイト構築サービスなどとのパートナー連携が使えるか確認する（使える場合は画面の指示に沿って設定する）</li><li>連携が使えない場合は、［ガイドをチェック］（Metaの推奨）か［自分でやる］を選び、［コンバージョンAPIとMetaピクセル］または［Metaピクセルのみ］を選んで設定する</li><li>問い合わせの完了など、成果にあたるイベントを設定する</li><li>イベントマネージャの［テストイベント］でサイトを開いて実際に操作し、イベントが記録されるか確認する（データの表示までに30分以上かかる場合があります）</li></ol><p>何を成果として記録するかは業態で変わります。Metaがあらかじめ定義している標準イベントのうち、中小事業者に関係の深いものは次のとおりです（<a href=\"#source-meta-standard-events\">Meta：Metaピクセル標準イベントの仕様</a>）。</p><table><thead><tr><th>業態の例</th><th>成果にあたる行動</th><th>対応する標準イベント</th></tr></thead><tbody><tr><td>問い合わせ型（工務店・リフォーム・士業・BtoBサービスなど）</td><td>フォームの送信／電話・メール・チャットでの連絡</td><td>リード／問い合わせ</td></tr><tr><td>予約・来店型（美容室・整体院・クリニック・飲食店など）</td><td>来店の予約</td><td>スケジュール</td></tr><tr><td>EC型（ネットショップ）</td><td>購入の完了（手前の段階はカートへの追加・チェックアウトの開始）</td><td>購入（カートに追加・チェックアウト開始）</td></tr></tbody></table><p>ピクセルを使うときは、健康・金銭・子どもに関するデータなど、Metaが禁止している情報がイベント名・URL・パラメーターに含まれていないか、定期的に確認することが求められています。クリニックや士業のように、相談内容が機微な情報になりやすい業種は特に注意してください（<a href=\"#source-meta-pixel\">Meta：Metaピクセルについて</a>）。</p><h2>手順4：広告マネージャでキャンペーン・広告セット・広告を作る</h2><p>広告マネージャでは、広告を「キャンペーン」「広告セット」「広告」の3つのレベルで作ります。1つのキャンペーンに1つ以上の広告セットが、1つの広告セットに1つ以上の広告が入る階層構造です（<a href=\"#source-meta-levels\">Meta：Meta広告マネージャでの広告のレベル</a>）。初めて使う場合は［アカウント概要］ページで広告アカウントの設定を進められ、［作成］をクリックすると広告の作成を始められます（<a href=\"#source-meta-ads-manager\">Meta：Meta広告マネージャについて</a>）。</p><table><thead><tr><th>レベル</th><th>決めること</th></tr></thead><tbody><tr><td>キャンペーン</td><td>広告の目的、購入タイプ（多くの広告主はオークション）、予算をキャンペーン単位と広告セット単位のどちらで設定するか、特別な広告カテゴリに当たるか</td></tr><tr><td>広告セット</td><td>オーディエンス（広告を表示する対象）、配置（表示する場所）、予算（1日の予算または通算予算）、スケジュール</td></tr><tr><td>広告</td><td>名義（FacebookページとInstagramアカウント）、広告フォーマット、クリエイティブ（画像・動画・テキスト・見出し・リンク）</td></tr></tbody></table><p>表の内容は、<a href=\"#source-meta-levels\">Meta：Meta広告マネージャでの広告のレベル</a>と<a href=\"#source-meta-create-campaign\">Meta：How do I create a campaign in Meta Ads Manager?</a>（英語）に基づきます。表示される項目は、アカウントの種類や目的によって異なる場合があります。</p><h3>キャンペーン：目的を選ぶ</h3><p>キャンペーンの目的は、認知・トラフィック・エンゲージメント・リード・アプリの宣伝・売上の6種類です。選んだ目的によって、あとで選べる最適化の対象が変わります（<a href=\"#source-meta-objective\">Meta：広告の目的を選択する</a>、<a href=\"#source-meta-create-campaign\">Meta：How do I create a campaign in Meta Ads Manager?</a>）。</p><table><thead><tr><th>目的</th><th>Metaの説明（要約）</th><th>使う場面の例</th></tr></thead><tbody><tr><td>認知</td><td>広告を覚えてくれる可能性が高い人に、できるだけ多く届ける</td><td>開業・移転・名称変更を知らせる</td></tr><tr><td>トラフィック</td><td>ウェブサイトなど、指定した場所への訪問を増やす</td><td>サービス紹介ページを読んでもらう</td></tr><tr><td>エンゲージメント</td><td>メッセージの送信や、広告・ページへの反応をしてくれる人を見つける</td><td>Messengerなどで相談を受け付ける</td></tr><tr><td>リード</td><td>メッセージ・電話・登録を通じて、見込み客を獲得する</td><td>問い合わせ・資料請求・見積もり依頼</td></tr><tr><td>アプリの宣伝</td><td>アプリのインストールや、アプリ内での行動を増やす</td><td>自社アプリがある場合</td></tr><tr><td>売上</td><td>商品やサービスを購入する可能性が高い人を見つける（カートへの追加などに最適化することもできる）</td><td>ネットショップでの購入</td></tr></tbody></table><p>迷ったら、手順3で決めた成果に最も近い目的を選びます。ただし成果の件数が少ないと、少ない予算では配信の学習が進みにくくなります。この場合の目的と最適化の対象の選び方は、手順2でも紹介した<a href=\"/blog/meta-ads-small-budget\">少額予算での最適化イベントの選び方</a>で解説しています。</p><p>住宅・雇用・金融商品およびサービス、社会問題・選挙・政治に関する広告は、キャンペーンの作成時に［特別な広告カテゴリ］を指定する必要があります。指定するとオーディエンスの選択肢が制限される場合があり、制限の内容は配信先の国によって異なります（<a href=\"#source-meta-special\">Meta：特別な広告カテゴリの選び方</a>）。住宅の販売・賃貸などを扱う場合は、作成前に確認してください。</p><h3>広告セット：誰に・どこで・いくらで・いつ配信するかを決める</h3><p>広告セットでは、オーディエンス（利用者層、興味・関心、行動、カスタムオーディエンス）、配置（Facebookフィード、Instagramストーリーズ、Messengerなど）、予算（1日の予算または通算予算）、スケジュール（開始日・終了日・時間帯）を決めます。同じ広告セットに入る広告は、これらの設定が共通になります（<a href=\"#source-meta-levels\">Meta：Meta広告マネージャでの広告のレベル</a>）。</p><p>目的によっては、成果が発生する場所（コンバージョンの場所。ウェブサイト、アプリ、Messengerなど）も選びます（<a href=\"#source-meta-objective\">Meta：広告の目的を選択する</a>）。少額で始める場合は、広告セットを細かく分けすぎないことも大切です。分け方と情報収集期間（いわゆる学習期間）の関係も、手順2で紹介した予算の記事で解説しています。</p><h3>広告：名義・フォーマット・クリエイティブを設定する</h3><p>広告では、まず名義として、広告に表示するFacebookページとInstagramアカウントを選びます。次に、新しく広告を作るか、投稿済みのコンテンツを使うかを選び、新しく作る場合はフォーマット（シングル画像または動画、カルーセル、コレクション）を選びます。コレクションには商品カタログが必要です（<a href=\"#source-meta-create-ad\">Meta：How do I create an ad in Meta Ads Manager?</a>）。</p><p>クリエイティブには、画像・動画、本文のテキスト、見出し、説明、リンク先のURLを設定し、プレビューでFacebookフィードやInstagramストーリーズなど配置ごとの見え方を確認してから進みます（<a href=\"#source-meta-create-ad\">Meta：How do I create an ad in Meta Ads Manager?</a>）。</p><h2>手順5：公開して審査を待つ</h2><p>内容を確認して公開すると、広告は審査に入ります。審査では、画像・動画・テキスト、ターゲット設定、リンク先のページなどがMeta広告規定に照らして確認されます。ほとんどの広告は24時間以内に審査が完了しますが、さらに時間がかかることもあります（<a href=\"#source-meta-review\">Meta：審査中の広告について</a>）。</p><p>開始日を指定して公開した場合も、審査は公開後に行われ、配信は指定した開始日から始まります（<a href=\"#source-meta-review\">Meta：審査中の広告について</a>）。希望の開始日がある場合は、余裕をもって公開しておくと安心です。公開後にターゲット設定・クリエイティブ・最適化などを変更すると再び審査が行われますが、入札価格・予算・掲載期間の変更では新たな審査は行われません（同じ出典）。</p><p>広告が却下された場合は、違反した規定を説明する通知が届きます。画像・テキスト・リンク先などを修正して再度公開するか、判断が誤っていると考える場合は審査のやり直しをリクエストできます。リクエストは［Metaビジネスサポートホーム］から行います（<a href=\"#source-meta-publish\">Meta：How do I publish an ad in Meta Ads Manager?</a>、<a href=\"#source-meta-review\">Meta：審査中の広告について</a>）。</p><h2>手順6：配信が始まったら見るステータスと数字</h2><p>配信の状況は、広告マネージャの［配信］列で確認します。キャンペーン・広告セット・広告でステータスが異なることがあるため、配信されないときはすべてのレベルを確認します（<a href=\"#source-meta-status\">Meta：配信ステータスを表示する</a>）。主なステータスは次のとおりです。</p><table><thead><tr><th>ステータス</th><th>意味</th></tr></thead><tbody><tr><td>審査中</td><td>Meta広告規定に準拠しているか審査している</td></tr><tr><td>処理中</td><td>変更を反映している。通常は数分、変更の内容によっては最大8時間</td></tr><tr><td>準備中</td><td>審査に合格し、表示（インプレッション）が始まる段階</td></tr><tr><td>情報収集中</td><td>配信システムが最適な配信方法を探っている期間。パフォーマンスが安定せず、CPA（成果1件あたりの費用）が悪化しやすい</td></tr><tr><td>情報収集が不十分</td><td>十分な結果が得られず、情報収集期間が完了していない</td></tr><tr><td>アクティブ</td><td>通常どおり掲載されている</td></tr><tr><td>却下済み</td><td>Meta広告規定に準拠していないため掲載できない</td></tr></tbody></table><p>数字は、［キャンペーン］・［広告セット］・［広告］のいずれかを開き、見たい行で［チャートを見る］をクリックすると、クリックした人数・リーチした人数・費用の推移や、年齢・性別、配置ごとの結果を確認できます。データの反映には短い遅れがあります（<a href=\"#source-meta-results\">Meta：広告の結果を表示して分析する</a>）。</p><p>配信直後の情報収集中は数字がぶれやすく（<a href=\"#source-meta-status\">Meta：配信ステータスを表示する</a>）、ターゲット設定・クリエイティブ・最適化イベントの変更などの大幅な編集をすると、広告セットは再び情報収集期間に入ります（<a href=\"#source-meta-edits\">Meta：大幅な編集と情報収集期間</a>）。判断する日をあらかじめ決め、そのときに広告マネージャの結果と、自社で記録している実際の問い合わせ・予約・注文の件数を照らし合わせましょう。</p><p>情報収集期間と編集の控え方は<a href=\"/blog/meta-ads-small-budget\">少額予算での予算の決め方（学習期間から逆算する方法）</a>、配信後に成果1件あたりの費用を下げる手順は<a href=\"/blog/cpa-improvement-guide\">CPA（顧客獲得単価）を改善する方法</a>で解説しています。</p><h2>業態別：最初の設定の当てはめ例</h2><p>ここまでの手順を業態ごとに当てはめた例です。Metaが業種別に定めた設定ではなく、Frameworkが考える出発点の一例です。目的ごとに選べる最適化の対象は、広告マネージャの画面で確認してください。</p><table><thead><tr><th>業態</th><th>成果として測るもの</th><th>目的の候補</th><th>リンク先</th><th>最初に気をつけること</th></tr></thead><tbody><tr><td>問い合わせ型（工務店・リフォーム・士業・BtoBサービス）</td><td>フォーム送信（リード）、電話・メールでの連絡（問い合わせ）</td><td>リード</td><td>問い合わせフォームのあるサービス紹介ページ・LP</td><td>問い合わせの完了だけを成果にすると件数が少なく、学習が進みにくい</td></tr><tr><td>予約・来店型（美容室・整体院・クリニック・飲食店）</td><td>来店の予約（スケジュール）</td><td>リード。メッセージで予約を受けるならエンゲージメント</td><td>予約ページ、Messengerなど</td><td>店舗の場所を広告とリンク先に明記する。クリニックはピクセルで送る情報に注意</td></tr><tr><td>EC型（ネットショップ）</td><td>購入（手前の段階としてカートへの追加）</td><td>売上</td><td>商品ページ</td><td>購入の件数が少ないうちは、手前の段階の件数もあわせて見る</td></tr></tbody></table><p>1件あたりの費用などの目安は、業種・地域・時期・クリエイティブによって大きく変わるため、ここでは示していません。商品やサービスを検索している人に広告を出したい場合は、<a href=\"/blog/google-ads-how-to-start\">Google広告の始め方</a>で検索キャンペーンから始める手順を解説しています。Meta広告とGoogle広告のどちらから始めるかを決めかねている場合は、<a href=\"/blog/meta-vs-google-ads\">Meta広告とGoogle広告の違い（どちらから始めるかの判断表）</a>で、顧客が検索するかで選ぶ考え方を整理しています。</p><h2>投稿の「宣伝」との違い</h2><p>FacebookページやInstagramの投稿にある「宣伝」（投稿の宣伝。いわゆるブースト）も、広告の出し方の1つです。公開済みの投稿から作れる簡単な方法ですが、広告マネージャほどカスタマイズやターゲット設定の選択肢がありません。広告マネージャでは「リード」「売上」などの目的を選べるため、問い合わせや購入を増やしたい場合は、この記事の手順で始めるのが基本です（<a href=\"#source-meta-boost\">Meta：投稿の宣伝とMeta広告との違い</a>）。</p><p>なお、iPhone・iPadのアプリから宣伝したり残高を追加したりすると、Appleのサービス料（支払い額の30%）がかかる場合があると案内されています（<a href=\"#source-meta-boost\">Meta：投稿の宣伝とMeta広告との違い</a>、<a href=\"#source-meta-boost-page\">Meta：Facebookページから投稿を宣伝する</a>）。この記事の手順は、パソコンのブラウザで広告マネージャを使う前提で書いています。</p><h2>まとめ</h2><p>Meta広告は、アカウントの用意、支払い方法の登録、計測の準備、広告マネージャでの作成、審査、配信後の確認という6つの手順で始められます。少額で始める場合ほど、最初に「何を成果として測るか」を決め、計測を整えてから配信すると、あとで判断に迷いません。配信後の改善は<a href=\"/blog/cpa-improvement-guide\">CPA（顧客獲得単価）を改善する方法</a>を、運用を外部に任せることも含めて検討する場合は<a href=\"/services/operations\">Frameworkの広告運用代行の支援内容</a>もご覧ください。</p>",
+  "sources": [
+    {
+      "id": "meta-review",
+      "title": "審査中の広告について",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/204798856225114",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-ad-account",
+      "title": "Meta広告マネージャで広告アカウントを作成する方法",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/407323696966570",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-create-ad",
+      "title": "How do I create an ad in Meta Ads Manager?（英語）",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/1006187918591258",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-portfolio-about",
+      "title": "ビジネスポートフォリオについて",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/486932075688253",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-pixel",
+      "title": "Metaピクセルについて",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/742478679120153",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-portfolio-create",
+      "title": "Meta Business Suiteでビジネスポートフォリオを作成する",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/1710077379203657",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-instagram",
+      "title": "ビジネスポートフォリオにInstagramアカウントを追加する",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/620548115562686",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-partner",
+      "title": "ビジネスポートフォリオにパートナーを追加する",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/708679622611131",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-payment-add",
+      "title": "Meta広告アカウントに支払い方法を追加する",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/132073386867900",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-payment-jp",
+      "title": "日本（ご利用いただける支払い方法）",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/502324833442790",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-payment-methods",
+      "title": "Meta広告で利用できる支払い方法",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/212763688755026",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-threshold",
+      "title": "Meta広告の支払い単位額について",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/776240779095515",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-pay",
+      "title": "Meta広告の支払い方法",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/1814143615511573",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-limits",
+      "title": "予算、上限予算、プリペイド残高の上限と支払い単位額の違いについて",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/998181913623584",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-capi",
+      "title": "コンバージョンAPIについて",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/2041148702652965",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-pixel-setup",
+      "title": "Metaピクセルの設定とインストール",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/952192354843755",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-test-events",
+      "title": "イベントのテストツール: Metaのアプリイベントとウェブブラウザーイベントを確認する",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/2040882565969969",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-standard-events",
+      "title": "Metaピクセル標準イベントの仕様",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/402791146561655",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-levels",
+      "title": "Meta広告マネージャでの広告のレベルとは",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/621956575422138",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-ads-manager",
+      "title": "Meta広告マネージャについて",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/200000840044554",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-create-campaign",
+      "title": "How do I create a campaign in Meta Ads Manager?（英語）",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/1658289035439772",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-objective",
+      "title": "Meta広告マネージャで適切な広告の目的を選択するには",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/1438417719786914",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-special",
+      "title": "特別な広告カテゴリの選び方",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/298000447747885",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-publish",
+      "title": "How do I publish an ad in Meta Ads Manager?（英語）",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/988356550342487",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-status",
+      "title": "Meta広告マネージャで、キャンペーン、広告セット、広告の配信ステータスを表示する",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/650774041651557",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-edits",
+      "title": "大幅な編集と情報収集期間",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/316478108955072",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-results",
+      "title": "Meta広告マネージャで広告の結果を表示して分析する",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/318580098318734",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-boost",
+      "title": "投稿の宣伝とMeta広告との違い",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/317083072148603",
+      "accessedAt": "2026-10-06"
+    },
+    {
+      "id": "meta-boost-page",
+      "title": "Facebookページから投稿を宣伝する",
+      "publisher": "Metaビジネスヘルプセンター",
+      "url": "https://www.facebook.com/business/help/347839548598012",
+      "accessedAt": "2026-10-06"
+    }
+  ]
+}

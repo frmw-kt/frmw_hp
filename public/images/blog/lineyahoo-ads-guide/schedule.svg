@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="640" fill="#ffffff"/>
+  <text x="32" y="52" font-size="28" font-weight="700" fill="#191c19">LINE広告の終了と移行の日程（2026年10月6日時点）</text>
+  <line x1="56" y1="100" x2="56" y2="566" stroke="#e3e2dc" stroke-width="4"/>
+
+  <rect x="24" y="84" width="752" height="76" rx="10" fill="#f7f7f4"/>
+  <circle cx="56" cy="122" r="9" fill="#41483c"/>
+  <text x="84" y="118" font-size="24" font-weight="700" fill="#191c19">2026年4月1日</text>
+  <text x="290" y="118" font-size="24" font-weight="700" fill="#191c19">LINEヤフー広告の提供開始</text>
+  <text x="290" y="148" font-size="22" fill="#41483c">LINE広告からの移行ツールも提供開始</text>
+
+  <rect x="24" y="168" width="752" height="76" rx="10" fill="#f7f7f4"/>
+  <circle cx="56" cy="206" r="9" fill="#41483c"/>
+  <text x="84" y="202" font-size="24" font-weight="700" fill="#191c19">2026年6月30日</text>
+  <text x="290" y="202" font-size="24" font-weight="700" fill="#191c19">LINE広告の新規アカウント作成を終了</text>
+  <text x="290" y="232" font-size="22" fill="#41483c">以後はLINEヤフー広告で作成</text>
+
+  <rect x="24" y="252" width="752" height="76" rx="10" fill="#c9a84c" fill-opacity="0.18" stroke="#c9a84c" stroke-width="2"/>
+  <circle cx="56" cy="290" r="10" fill="#806222"/>
+  <text x="84" y="286" font-size="24" font-weight="700" fill="#191c19">2026年10月13日</text>
+  <text x="84" y="316" font-size="22" font-weight="700" fill="#806222">予定</text>
+  <text x="290" y="286" font-size="24" font-weight="700" fill="#191c19">ビジネスIDを自動で統合</text>
+  <text x="290" y="316" font-size="22" fill="#41483c">統合するIDの指定はこの日まで</text>
+
+  <rect x="24" y="336" width="752" height="76" rx="10" fill="#c9a84c" fill-opacity="0.18" stroke="#c9a84c" stroke-width="2"/>
+  <circle cx="56" cy="374" r="10" fill="#806222"/>
+  <text x="84" y="370" font-size="24" font-weight="700" fill="#191c19">2026年10月26日</text>
+  <text x="84" y="400" font-size="22" font-weight="700" fill="#806222">予定</text>
+  <text x="290" y="370" font-size="24" font-weight="700" fill="#191c19">LINE広告の配信・作成・編集を停止</text>
+  <text x="290" y="400" font-size="22" fill="#41483c">広告は「未配信」に。画面は読み取り専用</text>
+
+  <rect x="24" y="420" width="752" height="76" rx="10" fill="#f7f7f4"/>
+  <circle cx="56" cy="458" r="9" fill="#41483c"/>
+  <text x="84" y="454" font-size="24" font-weight="700" fill="#191c19">停止後の一定期間</text>
+  <text x="290" y="454" font-size="24" font-weight="700" fill="#191c19">レポート・明細・支払い履歴は確認できる</text>
+  <text x="290" y="484" font-size="22" fill="#41483c">閲覧の終了日は後日案内</text>
+
+  <rect x="24" y="504" width="752" height="76" rx="10" fill="#f7f7f4"/>
+  <circle cx="56" cy="542" r="9" fill="#41483c"/>
+  <text x="84" y="538" font-size="24" font-weight="700" fill="#191c19">2027年3月末頃</text>
+  <text x="84" y="568" font-size="22" font-weight="700" fill="#806222">予定</text>
+  <text x="290" y="538" font-size="24" font-weight="700" fill="#191c19">LINE広告の提供終了</text>
+  <text x="290" y="568" font-size="22" fill="#41483c">レポートも確認できなくなる</text>
+
+  <text x="32" y="620" font-size="22" fill="#41483c">※日程はLINEヤフーの公式発表による。変更の可能性あり</text>
+</svg>

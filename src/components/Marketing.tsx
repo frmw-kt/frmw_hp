@@ -9,16 +9,43 @@ import {
 import { services, processSteps } from "@/lib/services";
 import { SITE_URL } from "@/lib/site";
 
+/**
+ * ページごとのメタデータ。openGraph / twitter はレイアウトの値を丸ごと置き換えるため、
+ * type・siteName・locale・画像・カード種別もここで必ず指定する（指定しないと共有時に画像やタイトルが欠ける）。
+ */
 export function pageMeta(
   title: string,
   description: string,
   path: string,
+  opts: {
+    /** OGP画像のパス（既定はサイト共通の /opengraph-image） */
+    image?: string;
+    /** 記事ページ用 */
+    article?: { publishedTime: string; modifiedTime?: string; section?: string };
+  } = {},
 ): Metadata {
+  const image = opts.image ?? "/opengraph-image";
   return {
     title,
     description,
     alternates: { canonical: path },
-    openGraph: { title, description, url: path },
+    openGraph: {
+      title,
+      description,
+      url: path,
+      siteName: "Framework",
+      locale: "ja_JP",
+      images: [{ url: image, width: 1200, height: 630, alt: title }],
+      ...(opts.article
+        ? {
+            type: "article",
+            publishedTime: opts.article.publishedTime,
+            modifiedTime: opts.article.modifiedTime ?? opts.article.publishedTime,
+            section: opts.article.section,
+          }
+        : { type: "website" }),
+    },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
   };
 }
 export function JsonLd({ data }: { data: unknown }) {

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <rect x="20" y="28" width="370" height="58" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="205" y="66" font-size="22" fill="#41483c" text-anchor="middle">サイト上・電話で起きる：タグで測る</text>
+  <rect x="20" y="110" width="170" height="120" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="105" y="160" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">手前の行動</text>
+  <text x="105" y="200" font-size="22" fill="#41483c" text-anchor="middle">ページ表示</text>
+  <rect x="220" y="110" width="170" height="120" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="4"/>
+  <text x="305" y="160" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">問い合わせ</text>
+  <text x="305" y="200" font-size="22" fill="#41483c" text-anchor="middle">予約・購入</text>
+  <rect x="420" y="110" width="170" height="120" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="505" y="160" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">商談</text>
+  <text x="505" y="200" font-size="22" fill="#41483c" text-anchor="middle">見積・来店</text>
+  <rect x="620" y="110" width="170" height="120" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="705" y="160" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">成約</text>
+  <text x="705" y="200" font-size="22" fill="#41483c" text-anchor="middle">契約・会計</text>
+  <line x1="192" y1="170" x2="216" y2="170" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="392" y1="170" x2="416" y2="170" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="592" y1="170" x2="616" y2="170" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="420" y="252" width="370" height="58" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="605" y="290" font-size="22" fill="#41483c" text-anchor="middle">サイトの外：自社の顧客管理に記録</text>
+  <path d="M705 312 V372 H305 V240" fill="none" stroke="#806222" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <text x="400" y="418" font-size="22" fill="#806222" text-anchor="middle">成約の記録を広告に返す（オフライン コンバージョン）</text>
+</svg>

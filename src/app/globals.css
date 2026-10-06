@@ -170,6 +170,96 @@ body {
   font-weight: 600;
   color: var(--fg);
 }
+.article-body a {
+  color: var(--gold-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.article-body ol {
+  list-style: decimal;
+}
+.article-body ul {
+  list-style: disc;
+}
+.article-table-wrap {
+  overflow-x: auto;
+  margin: 0 0 1.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+.article-body table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  word-break: break-word;
+}
+.article-body th,
+.article-body td {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.article-body th {
+  background: #f7f7f4;
+  font-weight: 600;
+  min-width: 5.5em;
+}
+.article-body blockquote {
+  margin: 0 0 1.25rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--border);
+  background: #f7f7f4;
+  color: #404040;
+}
+.article-body figure {
+  margin: 2rem 0;
+}
+.article-body figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: #fff;
+}
+.article-body .article-figure-link {
+  display: block;
+  cursor: zoom-in;
+}
+.article-body figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}
+/* 出典（記事データの sources） */
+.article-sources {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.article-sources h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--fg);
+}
+.article-sources ol {
+  list-style: decimal;
+  margin-left: 1.25rem;
+}
+.article-sources li {
+  margin-bottom: 0.4rem;
+  scroll-margin-top: 105px;
+}
+.article-sources a {
+  color: var(--gold-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 /* ── Dot grid ── */
 .bg-dot-grid {
