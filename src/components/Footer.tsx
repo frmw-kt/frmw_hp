@@ -11,9 +11,9 @@ export default function Footer() {
               Framework<span>.</span>
             </Link>
             <p>
-              戦略と実行を、ひとつの流れに。
+              売上を伸ばす。日々の業務を軽くする。
               <br />
-              マーケティング支援・Web制作・アプリ開発
+              マーケティング支援・業務改善支援
               <br />
               愛知県名古屋市 / 全国オンライン対応
             </p>

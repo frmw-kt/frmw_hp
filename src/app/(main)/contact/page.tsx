@@ -4,7 +4,7 @@ import { subServices } from "@/lib/sub-services";
 import ContactForm from "@/components/ContactForm";
 export const metadata = pageMeta(
   "無料相談・お問い合わせ",
-  "現在の課題、目標、予算感から支援範囲を整理します。戦略・広告運用・Web制作・アプリ開発・AI活用のご相談はこちら。",
+  "現在の課題、目標、予算感から支援範囲を整理します。マーケティング・業務改善・アプリ開発・AI活用のご相談はこちら。",
   "/contact",
 );
 export default async function Page({
@@ -14,7 +14,8 @@ export default async function Page({
 }) {
   const { service } = await searchParams;
   const selected =
-    services.find((s) => s.name === service)?.slug ??
+    (service === "business-improvement" || service === "業務改善支援" ? "business-improvement" : undefined) ??
+    services.find((s) => s.name === service || s.slug === service)?.slug ??
     Object.entries(subServices)
       .find(([, s]) => s.name === service)?.[0]
       .split("/")[0] ??
@@ -44,7 +45,7 @@ export default async function Page({
               <li>予算感・開始時期・次の進め方</li>
             </ol>
             <p className="m-lead">
-              初回相談は無料です。所要時間や相談方法は、日程調整時にご案内します。
+              初回相談は無料です。業務改善のご相談は30分で対象業務を一つ整理します。相談方法は日程調整時にご案内します。
             </p>
             <p className="m-small" style={{ marginTop: 24 }}>
               資料が揃っていなくても相談できます。顧客の個人情報やパスワードなど、機密情報の入力はお控えください。

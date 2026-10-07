@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const SERVICE_LABELS: Record<string, string> = {
+  "business-improvement": "業務改善支援",
   consulting: "マーケティングコンサルティング",
   operations: "運用代行",
   production: "制作",

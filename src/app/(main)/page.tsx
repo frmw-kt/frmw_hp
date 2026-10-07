@@ -23,8 +23,8 @@ const no = (n: number) => String(shown(n)).padStart(2, "0");
 // 白黒の交互を保つため、偶数番のセクションを .m-tint にする
 const tone = (n: number) => (shown(n) % 2 === 0 ? "m-tint" : "");
 export const metadata = pageMeta(
-  "マーケティング支援｜戦略・広告運用・Web制作",
-  "マーケティングに手が回らない企業へ。Frameworkが戦略・広告運用・Web制作をつなぎ、集客から問い合わせ、その先の改善まで支援します。",
+  "マーケティング・業務改善支援",
+  "売上を伸ばす。日々の業務を軽くする。Frameworkがマーケティングと業務改善で事業の成長を支援。集計・レポート自動化は、導入前の効果試算から実装・測定まで。",
   "/",
 );
 export default function HomePage() {
@@ -64,7 +64,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="m-stats" aria-label="支援実績">
+      <section className="m-stats" aria-label="マーケティング支援実績">
         <div className="m-container">
           <div className="m-stat-grid">
             {[
@@ -83,7 +83,7 @@ export default function HomePage() {
             ))}
           </div>
           <p className="m-small">
-            CPA＝1件の成果獲得にかかった費用、CV＝問い合わせ等の成果。掲載数値はこれまでの実績であり、将来の成果を保証するものではありません。{hasPublicCases && "個別の条件は事例をご覧ください。"}
+            マーケティング支援の実績です。業務改善の削減実績ではありません。CPA＝1件の成果獲得にかかった費用、CV＝問い合わせ等の成果。掲載数値はこれまでの実績であり、将来の成果を保証するものではありません。{hasPublicCases && "個別の条件は事例をご覧ください。"}
           </p>
         </div>
       </section>
@@ -105,7 +105,7 @@ export default function HomePage() {
               "構成・コピー・デザインを再設計",
               "production",
             ],
-            ["手作業が減らない", "業務をアプリ・AIで効率化", "app-development"],
+            ["手作業が減らない", "集計・転記の時間と費用を見直す", "business-improvement"],
           ].map(([t, d, s], i) => (
             <Link key={s} href={"/services/" + s}>
               <span className="m-num">0{i + 1}</span>
@@ -119,24 +119,23 @@ export default function HomePage() {
       <Section
         id="services"
         eyebrow="02 / SERVICES"
-        title="戦略を描き、実行し、改善する"
-        text="施策を別々に考えず、同じ目標につなげる。3つの領域で事業の前進を支えます。"
+        title="売上と業務、二つの側面から支える"
+        text="集客・受注の改善と、日々の作業・支出の削減。目的に合わせた入口からご相談いただけます。"
         tone="m-tint"
       >
-        <ServiceCards />
-        <div className="m-product-strip">
-          <div>
-            <p className="m-eyebrow">PRODUCT & AUTOMATION</p>
-            <h3>事業を動かす仕組みも、つくる</h3>
-          </div>
-          <Link href="/services/app-development">アプリ開発 ↗</Link>
-          <Link href="/services/ai">AI活用支援 ↗</Link>
+        <div id="marketing-services" className="bi-marketing-services">
+          <h3 className="m-subheading">Marketing support</h3>
+          <ServiceCards />
+        </div>
+        <div id="business-services" className="bi-marketing-services">
+          <h3 className="m-subheading">Process Improvement</h3>
+          <ServiceCards slugs={["business-improvement", "app-development", "ai"]} />
         </div>
       </Section>
       <Section
         eyebrow="03 / OUR APPROACH"
         title="一つの数字だけで、判断しない"
-        text="広告のクリックから、比較・検討、問い合わせ、成約へ。事業の流れに沿って改善点を探します。"
+        text="マーケティングは商談・成約への貢献を、業務改善は削減時間と実際の支出を分けて評価します。"
       >
         <div className="m-split">
           <Funnel />
@@ -147,8 +146,8 @@ export default function HomePage() {
                 "売上目標と現状の差を整理。問い合わせ数だけでなく、商談や成約への貢献も確認します。",
               ],
               [
-                "広告と制作を、つなげる",
-                "広告の約束とサイトの内容をそろえ、流入後の比較・検討まで一緒に設計します。",
+                "時間と支出を、分けて測る",
+                "業務改善では確認・修正の時間も含めて比較。時間が減ったことと、現金支出が減ったことを区別します。",
               ],
               [
                 "次のアクションを、共有する",

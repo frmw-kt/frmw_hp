@@ -1107,3 +1107,42 @@
   letter-spacing: 0;
   line-height: 1.6;
 }
+
+/* サービス分類：縦向きの英語見出しを左の余白に配置。 */
+.bi-marketing-services {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+  scroll-margin-top: 100px;
+}
+.bi-marketing-services > .m-subheading {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  justify-self: start;
+  margin: 0;
+  padding-top: 44px;
+  font-size: clamp(30px, 3.5vw, 44px);
+  line-height: 1.1;
+  letter-spacing: .025em;
+}
+.bi-marketing-services + .bi-marketing-services { margin-top: 64px; }
+@media (max-width: 700px) {
+  .bi-marketing-services { grid-template-columns: 1fr; gap: 0; }
+  .bi-marketing-services > .m-subheading {
+    writing-mode: horizontal-tb;
+    white-space: normal;
+    padding-top: 0;
+    margin-bottom: 24px;
+    font-size: 23px;
+  }
+}
+.bi-demo { margin-top: 36px; }
+.bi-demo h3 { font-size: 24px; margin-bottom: 16px; }
+.bi-demo p { margin: 12px 0; line-height: 1.8; }
+.bi-demo label { display: block; margin: 24px 0 8px; }
+.bi-demo select { display: block; width: 100%; max-width: 420px; padding: 12px; border: 1px solid #777; background: white; color: #202320; margin-bottom: 20px; font: inherit; }
+
+.m-improvement-evidence { margin-top: 64px; text-align: left; }
+.m-improvement-evidence #effect { scroll-margin-top: 100px; }

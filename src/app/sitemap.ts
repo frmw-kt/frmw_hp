@@ -22,6 +22,7 @@ const staticRoutes = [
   "/services/production/web",
   "/services/app-development",
   "/services/ai",
+  "/services/business-improvement",
 ];
 
 // 更新日（lastModified）は実際に内容が変わった日だけを出す。ビルド日時を入れると全ページが毎回更新されたように見えるため、

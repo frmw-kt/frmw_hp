@@ -3,9 +3,9 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://frmw.jp";
 
 export const SITE_NAME = "Framework";
 
-export const DEFAULT_TITLE = "Framework | マーケティング支援";
+export const DEFAULT_TITLE = "Framework | マーケティング・業務改善支援";
 export const DEFAULT_DESCRIPTION =
-  "マーケティングに手が回らない企業へ。Frameworkが戦略・広告運用・Web制作をつなぎ、集客から問い合わせ、その先の改善まで支援します。";
+  "売上を伸ばす。日々の業務を軽くする。Frameworkがマーケティングと業務改善で事業の成長を支援。集計・レポート自動化は、導入前の効果試算から実装・測定まで。";
 
 export const COMPANY = {
   legalName: "Framework（frmw）",

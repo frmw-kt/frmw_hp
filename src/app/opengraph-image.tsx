@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { SITE_NAME } from "@/lib/site";
 
-export const alt = "Framework | マーケティング支援";
+export const alt = "Framework | マーケティング・業務改善支援";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -38,7 +38,7 @@ export default function Image() {
             }}
           />
           <span style={{ color: "#C9A84C", fontSize: 26, letterSpacing: 4 }}>
-            MARKETING SUPPORT
+            MARKETING & BUSINESS IMPROVEMENT
           </span>
         </div>
         <div
@@ -46,14 +46,14 @@ export default function Image() {
             display: "flex",
             flexDirection: "column",
             color: "#ffffff",
-            fontSize: 76,
+            fontSize: 66,
             fontWeight: 700,
             lineHeight: 1.2,
             letterSpacing: -1,
           }}
         >
-          <span>事業の課題を、</span>
-          <span>動く施策に変える。</span>
+          <span>売上を伸ばす。</span>
+          <span>日々の業務を軽くする。</span>
         </div>
         <div
           style={{

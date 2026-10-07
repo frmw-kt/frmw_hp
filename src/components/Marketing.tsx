@@ -176,8 +176,13 @@ export function ContactCTA() {
   );
 }
 
-export function SystemDiagram({ compact = false }: { compact?: boolean }) {
-  const steps = [
+export function SystemDiagram({ compact = false, business = false }: { compact?: boolean; business?: boolean }) {
+  const steps = business ? [
+    ["01", "業務診断", "作業と負担を把握する"],
+    ["02", "設計・試算", "範囲と効果を確かめる"],
+    ["03", "実装・導入", "小さく作り、運用する"],
+    ["04", "測定・改善", "時間・支出・品質を測る"],
+  ] : [
     ["01", "調査・戦略", "誰に、何を届けるか"],
     ["02", "施策設計", "優先順位と予算を決める"],
     ["03", "運用・制作", "広告と導線をつくる"],
@@ -205,7 +210,7 @@ export function SystemDiagram({ compact = false }: { compact?: boolean }) {
         <span aria-hidden="true">↶</span>
         <div>
           <strong>改善して、次の一手へ</strong>
-          <span>検証した結果を、戦略・予算・制作に戻す</span>
+          <span>{business ? "測定した結果を、業務・仕組み・運用に戻す" : "検証した結果を、戦略・予算・制作に戻す"}</span>
         </div>
         <span className="m-loop-line" aria-hidden="true" />
       </div>
@@ -372,11 +377,12 @@ export function Pricing() {
           費用を組み立てます
         </h3>
         <p>
-          戦略のみ、運用のみ、制作を含めた支援など、事業の状況に合わせて見積もります。
+          マーケティング支援や個別開発は、事業の状況に合わせて見積もります。業務改善の小規模導入は15万〜30万円（税別）が目安です。
         </p>
         <Link href="/contact" className="m-text-link">
           支援範囲と費用を相談する ↗
         </Link>
+        <p><Link href="/services/business-improvement#pricing" className="m-text-link">業務改善の料金・提供範囲を見る →</Link></p>
       </div>
       <div>
         <ol className="m-price-factors">
@@ -495,10 +501,10 @@ export function CaseCards({
     </div>
   );
 }
-export function ServiceCards() {
+export function ServiceCards({ slugs = ["consulting", "operations", "production"] }: { slugs?: string[] }) {
   return (
     <div className="m-service-list">
-      {services.slice(0, 3).map((s, i) => (
+      {services.filter((s) => slugs.includes(s.slug)).map((s, i) => (
         <article key={s.slug}>
           <span className="m-num">0{i + 1}</span>
           <div>

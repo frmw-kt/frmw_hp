@@ -11,6 +11,7 @@ import {
   ContactCTA,
   JsonLd,
 } from "@/components/Marketing";
+import { ImprovementEvidence, ImprovementPricing } from "@/components/BusinessImprovementDetails";
 import DeliverableDiagram from "@/components/DeliverableDiagram";
 import { getService, type Service } from "@/lib/services";
 import { faqs } from "@/lib/faq";
@@ -29,6 +30,8 @@ export default function ServiceDetail({
 }) {
   const s = service ?? getService(slug!);
   const url = path ?? "/services/" + s.slug;
+  const improvement = s.slug === "business-improvement";
+  const business = ["business-improvement", "app-development", "ai"].includes(s.slug);
   return (
     <>
       <JsonLd
@@ -48,7 +51,7 @@ export default function ServiceDetail({
       />
       <section className="m-service-hero">
         <div className="m-container">
-          <Breadcrumb name={s.name} path={url} parent={parent} />
+          <Breadcrumb name={s.name} path={url} parent={parent ?? (["ai", "app-development"].includes(s.slug) ? { name: "業務改善支援", path: "/services/business-improvement" } : undefined)} />
           <div className="m-split">
             <div>
               <p className="m-eyebrow">{s.en}</p>
@@ -57,7 +60,7 @@ export default function ServiceDetail({
               <p className="m-lead">{s.intro}</p>
               <div className="m-actions">
                 <Button href={"/contact?service=" + encodeURIComponent(s.name)}>
-                  この支援について相談する
+                  {improvement ? "無料・30分の相談を申し込む" : "この支援について相談する"}
                 </Button>
               </div>
             </div>
@@ -80,6 +83,7 @@ export default function ServiceDetail({
         <nav className="m-jump" aria-label="このページの内容">
           <a href="#scope">支援内容</a>
           <a href="#outputs">成果物</a>
+          {improvement && <a href="#effect">効果の試算例</a>}
           <a href="#workflow">進め方</a>
           <a href="#preparation">役割分担</a>
           <a href="#pricing">費用</a>
@@ -126,6 +130,7 @@ export default function ServiceDetail({
         tone="m-tint"
       >
         <DeliverableDiagram service={s} />
+        {improvement && <ImprovementEvidence />}
       </Section>
       <Section
         id="workflow"
@@ -143,7 +148,7 @@ export default function ServiceDetail({
           ))}
         </ol>
         <div className="m-section-bottom">
-          {s.slug === "operations" ? <Cycle /> : <SystemDiagram />}
+          {s.slug === "operations" ? <Cycle /> : <SystemDiagram business={business} />}
         </div>
       </Section>
       <Section
@@ -185,10 +190,15 @@ export default function ServiceDetail({
       <Section
         id="pricing"
         eyebrow="06 / PRICING"
-        title="内容に合わせて、個別にお見積もり"
+        title={improvement ? "対象業務と範囲に合わせた料金" : "内容に合わせて、個別にお見積もり"}
         tone="m-tint"
       >
-        <Pricing />
+        {improvement ? <ImprovementPricing /> : <Pricing />}
+        {business && !improvement && (
+          <div className="m-related">
+            <Link href="/services/business-improvement#pricing">業務改善の小規模導入・料金を見る →</Link>
+          </div>
+        )}
       </Section>
       <Section eyebrow="07 / FAQ" title="ご依頼前のよくある質問">
         <FaqList

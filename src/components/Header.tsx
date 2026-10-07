@@ -6,6 +6,7 @@ import { hasPublicCases } from "@/lib/cases";
 
 const links = [
   ["サービス", "/#services"],
+  ["業務改善支援", "/services/business-improvement"],
   ["支援事例", "/cases"],
   ["Frameworkについて", "/about"],
   ["コラム", "/blog"],
@@ -93,7 +94,7 @@ export default function Header() {
           </nav>
           <aside>
             <p className="hx-overlay-eyebrow">Contact</p>
-            <p>戦略・広告運用・Web制作の相談を受け付けています。</p>
+            <p>マーケティング・業務改善の相談を受け付けています。</p>
             <Link href="/contact" className="hx-overlay-big-cta" onClick={() => setOpen(false)}>
               無料相談をする ↗
             </Link>

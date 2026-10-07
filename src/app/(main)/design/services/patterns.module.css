@@ -1,0 +1,56 @@
+/* プレビューの操作欄。色・書体・リンク装飾は既存クラスを使用。 */
+.toolbar { padding-top: 140px; padding-bottom: 36px; }
+.toolbarTop { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; }
+.patternNav { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px; margin: 28px 0 20px; }
+.patternNav a { display: flex; gap: 10px; padding-bottom: 12px; }
+.patternNav a[aria-current="page"] { border-bottom: 1px solid currentColor; }
+.description { display: flex; justify-content: space-between; gap: 24px; }
+.previewNote { margin-top: 12px; }
+.endNote { padding-top: 28px; padding-bottom: 28px; }
+/* 各案の指定は配置・余白のみ。公開サイトの m-* を上書きする範囲を限定する。 */
+.pattern .groupHeading { margin-bottom: 24px; }
+.pattern .group + .group { margin-top: 64px; }
+/* 01: 元の縦並びの構造を維持し、行の余白を詰める。 */
+.pattern.compact :global(.m-service-list) > article { padding-block: 28px; }
+/* 02: 二つの事業を左右に並べる。各サービスは現在と同じ構成。 */
+.pattern.columns .groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; }
+.pattern.columns .group + .group { margin-top: 0; }
+.pattern.columns :global(.m-service-list) > article { grid-template-columns: minmax(0, 1fr) 52px; gap: 20px; }
+.pattern.columns :global(.m-service-list) > article > :global(.m-num) { grid-column: 1; grid-row: 1; }
+.pattern.columns :global(.m-service-list) > article > div { grid-column: 1 / -1; grid-row: 2; min-width: 0; }
+.pattern.columns :global(.m-round-link) { grid-column: 2; grid-row: 1; }
+.pattern.columns :global(.m-service-detail) { display: grid; grid-template-columns: 1fr; gap: 6px; }
+/* 03: 事業見出しを左の列に置き、サービス本文を右にまとめる。 */
+.pattern.sideHeading .group { display: grid; grid-template-columns: minmax(180px, .7fr) minmax(0, 2fr); gap: 56px; align-items: start; }
+.pattern.sideHeading .groupHeading { padding-top: 40px; }
+/* 04: 同じ罫線・番号・矢印のまま、一事業の三サービスを横並びにする。 */
+.pattern.threeColumns :global(.m-service-list) { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; align-items: stretch; }
+.pattern.threeColumns :global(.m-service-list) > article { grid-template-columns: minmax(0, 1fr) 52px; grid-template-rows: auto 1fr; gap: 20px; align-content: start; }
+.pattern.threeColumns :global(.m-service-list) > article > :global(.m-num) { grid-column: 1; grid-row: 1; }
+.pattern.threeColumns :global(.m-service-list) > article > div { grid-column: 1 / -1; grid-row: 2; min-width: 0; }
+.pattern.threeColumns :global(.m-round-link) { grid-column: 2; grid-row: 1; }
+.pattern.threeColumns :global(.m-service-detail) { display: grid; grid-template-columns: 1fr; gap: 6px; }
+/* 05: 各行の中でサービス名と説明・成果物を分離する。 */
+.pattern.informationColumns :global(.m-service-list) > article > div { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); column-gap: 48px; align-items: start; }
+.pattern.informationColumns :global(.m-service-list) :global(.m-eyebrow) { grid-column: 1; grid-row: 1; }
+.pattern.informationColumns :global(.m-service-list) h3 { grid-column: 1; grid-row: 2 / span 4; margin-top: 12px; }
+.pattern.informationColumns :global(.m-service-list) > article > div > p:not(:global(.m-eyebrow)) { grid-column: 2; grid-row: 1 / span 2; }
+.pattern.informationColumns :global(.m-service-detail) { grid-column: 2; }
+@media (max-width: 1000px) {
+  .patternNav { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .pattern.columns .groups { gap: 32px; }
+  .pattern.sideHeading .group { grid-template-columns: 1fr; gap: 0; }
+  .pattern.sideHeading .groupHeading { padding-top: 0; }
+  .pattern.threeColumns :global(.m-service-list) { grid-template-columns: 1fr; gap: 0; }
+  .pattern.threeColumns :global(.m-service-detail) { display: grid; grid-template-columns: 100px 1fr; }
+  .pattern.informationColumns :global(.m-service-list) > article > div { column-gap: 24px; }
+}
+@media (max-width: 700px) {
+  .toolbar { padding-top: 110px; }
+  .toolbarTop, .description { display: block; }
+  .toolbarTop > a { display: inline-block; margin-top: 16px; }
+  .patternNav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pattern.columns .groups { grid-template-columns: 1fr; gap: 48px; }
+  .pattern.informationColumns :global(.m-service-list) > article > div { display: block; }
+  .pattern.threeColumns :global(.m-service-detail) { display: grid; grid-template-columns: 1fr; }
+}

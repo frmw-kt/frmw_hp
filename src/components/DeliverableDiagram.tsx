@@ -9,7 +9,7 @@ export default function DeliverableDiagram({
 }) {
   if (s.slug === "consulting") return <Deliverables />;
   const production = ["production", "lp", "web"].includes(s.slug);
-  const product = ["app-development", "ai"].includes(s.slug);
+  const product = ["business-improvement", "app-development", "ai"].includes(s.slug);
   return (
     <div className="m-split m-delivery-diagram">
       <figure className="m-delivery-preview">
