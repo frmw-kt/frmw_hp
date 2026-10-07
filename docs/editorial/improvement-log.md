@@ -144,3 +144,19 @@
 - バッチ3の結果: 4本完了（lineyahoo-ads-guide・web-marketing-channels・meta-vs-google-ads・ad-budget-planning）。全11本 `check:articles` エラー0（警告は h2 の長さの5記事のみ。次の作業枠で遡及）
 - 次の作業枠の予定: h2 の長さの遡及（5記事）、conversion-tracking-design の「成約率」の分母の明記、バッチ4（topic-map の上位から3〜4本: #31 seo-basics-for-smb・#2 ad-agency-switching・#3 ad-operations-inhouse-or-outsource・#13 google-ads-cost-structure）
 - **保留（2026-10-06 18:10、社長の指示）**: バッチ4とh2の長さの遡及は、再開の指示があるまで行わない
+
+## v4 → v5（2026-10-06 18:35、社長の指摘「図解が1ページ1枚までになっている」から）
+- 原因: R（ガイドの品質チェック4が「SVGの図解を1〜2枚」、記事形式が「理解を大きく助ける箇所だけ」と枚数を絞っていた）＋A（統括の依頼文に「時間内に作れるなら1枚」と書いていた）
+- 対策:
+  - R: 品質チェック4を「図にしたほうが分かりやすい箇所（手順・流れ、比較、構造、時系列、計算、分岐、位置関係）はすべて図解する。枚数の上限なし。装飾目的・本文の言い換えだけの図は作らない」に変更。記事形式・評価基準7（v4）も同じ基準に
+  - R: 企画メモに「図解の候補」の表（箇所｜図の種類｜作成／作らない｜作らない理由）を追加。該当箇所をすべて挙げ、作らない場合は理由を書く
+  - C: `check:articles` が企画メモの「作成」の数と記事の figure の数を照合し、少なければ警告。作らない理由の空欄も警告。v5以降のメモに表がなければ警告
+  - A: seo-writer の自己点検を「図にしたほうが分かりやすい箇所はすべて図解」に。統括の依頼文から枚数の制限を外す
+- 遡及: 公開済み11記事（企画メモはv4）。各記事の図解の候補を洗い出し、必要な図を追加する作業が必要（次の作業枠で、同時2体まで）
+
+## 社長判断（2026-10-07）
+- cpa-improvement-guide の非公開事例の数値（平均68%・15,200円→4,800円）: 現状のまま表示する
+- meta-google-ad-agency-how-to-choose の「月間8,000万円の運用実績を持つFramework」: Frameworkの実績のまま
+- 著者情報: 当面は組織名義（編集：Framework）のまま
+- `public/images/blog/imgtest/`: 社長が削除済み
+- seo エージェントに検索順位の実データを見せる: ツールは追加せず、autosales の `npm run gsc:snapshot`（daily でも実行）が書き出す `autosales/data/gsc/latest.json` を Read させる方式で実装。Search Console のサービスアカウント設定（社長作業）が済むまでは「実測未確認」

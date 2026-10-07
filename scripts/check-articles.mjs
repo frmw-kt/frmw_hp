@@ -308,6 +308,19 @@ function main() {
           }
           if (missing.length) warnings.push(`企画メモの表記ゆれ（${missing.join("・")}）が記事にありません。入れるか、入れない理由をメモの表に書く（評価基準3）`);
         } else if (memoVer >= 4) warnings.push("企画メモに表記ゆれの表（| 呼び方 | 種類 | 反映先 | 入れない理由 |）がありません");
+        // 図解の候補の表: 「作成」とした数だけ記事に figure があるか（ガイドv5〜）
+        const fi = lines.findIndex((l) => /^\|\s*図解の候補/.test(l));
+        const figs = (data.content.match(/<figure>/gi) ?? []).length;
+        if (fi >= 0) {
+          let planned = 0;
+          for (const l of lines.slice(fi + 2)) {
+            if (!/^\|/.test(l)) break;
+            const cols = l.split("|").map((c) => c.trim());
+            if (/^作成/.test(cols[3] ?? "")) planned++;
+            else if (/作らない/.test(cols[3] ?? "") && !(cols[4] ?? "").replace(/[—-]/g, "").trim()) warnings.push(`企画メモの図解の候補「${cols[1]}」に作らない理由がありません`);
+          }
+          if (figs < planned) warnings.push(`企画メモで図解を${planned}枚「作成」としているのに、記事の図は${figs}枚です`);
+        } else if (memoVer >= 5) warnings.push("企画メモに図解の候補の表（| 図解の候補（箇所） | 図の種類 | 判断 | 作らない理由 |）がありません。図にしたほうが分かりやすい箇所をすべて挙げる");
         if (!/次回見直し予定日[：:][^\n]*\d{4}-\d{2}(-\d{2})?/.test(memo)) warnings.push("企画メモに次回見直し予定日（YYYY-MM-DD）がありません（評価基準10）");
       }
     }

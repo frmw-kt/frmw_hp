@@ -22,8 +22,8 @@
 ## 既存記事のリライト（社長の確認が必要なものを含む）
 | ID | 記事 | 内容 | 状態 |
 |---|---|---|---|
-| R2 | cpa-improvement-guide | **本番で非公開事例の数値（「平均68%改善」、15,200円→4,800円）を表示している**（cases.ts の real-estate は公開リスト外。事例1件で「平均」の根拠もない）。Step3・5の媒体仕様に出典がない | **社長の確認待ち（Tier 1）** |
-| R1 | meta-google-ad-agency-how-to-choose | Aの柱にする。出典なし。description・冒頭の「月間8,000万円の運用実績を持つFramework」は about ページの表現（代表の経験）と主語が違う | 社長の確認待ち |
+| R2 | cpa-improvement-guide | **本番で非公開事例の数値（「平均68%改善」、15,200円→4,800円）を表示している**（cases.ts の real-estate は公開リスト外。事例1件で「平均」の根拠もない）。Step3・5の媒体仕様に出典がない | 数値の表示は社長判断で現状維持（2026-10-07）。出典の追記は未着手 |
+| R1 | meta-google-ad-agency-how-to-choose | Aの柱にする。出典なし。description・冒頭の「月間8,000万円の運用実績を持つFramework」は about ページの表現（代表の経験）と主語が違う | 主語は社長判断で「Frameworkの実績」のまま（2026-10-07）。柱化・出典は未着手 |
 | R3 | sns-marketing-basics | Hの柱にする。出典なし・一般論中心 | 未着手 |
 | R4 | content-marketing-strategy | #31 と役割分担。出典なし | 未着手 |
 | R5 | landing-page-production-guide | #7・#22・#43・#28 へのリンク。出典なし | 未着手 |
