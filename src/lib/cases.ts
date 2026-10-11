@@ -468,6 +468,12 @@ export const publicCases: CaseStudy[] = cases.filter((c) =>
 );
 export const hasPublicCases = publicCases.length > 0;
 export const isPublicCase = (slug: string) => publishedSlugs.includes(slug);
+/**
+ * 公開はするが検索結果には出さない事例の slug（noindex を付け、サイトマップから外す）。
+ * 2026-10-11: 「ニコエステート」等の指名検索で frmw.jp が上位に出ないようにするため（社長判断）。
+ */
+const noindexSlugs: string[] = ["nikoestate"];
+export const isNoindexCase = (slug: string) => noindexSlugs.includes(slug);
 
 export function getCase(slug: string): CaseStudy | undefined {
   return publicCases.find((c) => c.slug === slug);

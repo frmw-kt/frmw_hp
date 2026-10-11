@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getCase, getAllCases } from "@/lib/cases";
+import { getCase, getAllCases, isNoindexCase } from "@/lib/cases";
 import {
   Breadcrumb,
   Section,
@@ -21,9 +21,11 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const c = getCase(slug);
-  return c
-    ? pageMeta(c.company + "の支援事例", c.challenge, "/cases/" + slug)
-    : {};
+  if (!c) return {};
+  const meta = pageMeta(c.company + "の支援事例", c.challenge, "/cases/" + slug);
+  return isNoindexCase(slug)
+    ? { ...meta, robots: { index: false, follow: true } }
+    : meta;
 }
 const serviceLink = (name: string) =>
   name.includes("コンサル")

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { getAllArticles } from "@/lib/articles";
-import { getAllCases, hasPublicCases } from "@/lib/cases";
+import { getAllCases, hasPublicCases, isNoindexCase } from "@/lib/cases";
 
 const staticRoutes = [
   "",
@@ -50,7 +50,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  const caseEntries: MetadataRoute.Sitemap = getAllCases().map((c) => ({
+  const caseEntries: MetadataRoute.Sitemap = getAllCases()
+    .filter((c) => !isNoindexCase(c.slug))
+    .map((c) => ({
     url: `${SITE_URL}/cases/${c.slug}`,
     changeFrequency: "monthly",
     priority: 0.6,
