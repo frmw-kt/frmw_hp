@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>最初は検索キャンペーン1つで始め、4つの条件がそろってからP-MAXを検討する流れ</title>
+  <desc>①検索キャンペーンを1つ作る（テキスト広告とキーワードで作れ、特別なファイルは不要）。②P-MAXを足す前に、コンバージョン アクションが「有効」、メインが商談・売上に近い行動、目標が販売促進・見込み顧客の獲得・来店数と店舗売上の向上のいずれか、質の高い広告素材を用意できる、の4条件を確かめる。③そろったらP-MAXを検討する。EC型はMerchant Centerの商品データも整える。</desc>
+  <rect width="800" height="600" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">最初のキャンペーンと、P-MAXを足す条件</text>
+
+  <rect x="32" y="72" width="736" height="96" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="112" font-size="26" font-weight="700" fill="#191c19">① 検索キャンペーンを1つ作る</text>
+  <text x="56" y="148" font-size="22" fill="#41483c">テキスト広告とキーワードで作れる（特別なファイル不要）</text>
+
+  <path d="M400 172 L400 200" stroke="#806222" stroke-width="4"/>
+  <path d="M388 196 L400 212 L412 196 Z" fill="#806222"/>
+
+  <rect x="32" y="216" width="736" height="236" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="56" y="256" font-size="26" font-weight="700" fill="#191c19">② P-MAXを足す前に確かめる4条件</text>
+  <text x="56" y="300" font-size="24" fill="#41483c">□ コンバージョン アクションが「有効」</text>
+  <text x="56" y="340" font-size="24" fill="#41483c">□ メインが商談・売上に近い行動</text>
+  <text x="56" y="380" font-size="24" fill="#41483c">□ 目標が販売促進・見込み顧客・来店</text>
+  <text x="56" y="420" font-size="24" fill="#41483c">□ 質の高い広告素材を用意できる</text>
+
+  <path d="M400 456 L400 484" stroke="#806222" stroke-width="4"/>
+  <path d="M388 480 L400 496 L412 480 Z" fill="#806222"/>
+
+  <rect x="32" y="500" width="736" height="88" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="56" y="538" font-size="26" font-weight="700" fill="#806222">③ 4条件がそろったらP-MAXを検討</text>
+  <text x="56" y="572" font-size="22" fill="#41483c">EC型は Merchant Center の商品データも整える</text>
+</svg>

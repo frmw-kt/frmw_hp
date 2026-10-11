@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" role="img" aria-label="最初の手段を選ぶ4つの質問の流れ。成果を数えられなければ先に計測を整える。顧客が検索していれば検索広告とSEO、していなければSNS広告やSNS運用など。商圏が地域に限られればGoogleビジネスプロフィールを先に整える。予算があれば広告、時間があればSEO・MEO・SNS運用、どちらも少なければMEOと受け皿のページの改善から始める">
+  <rect width="800" height="700" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="24" y="44" font-size="28" font-weight="700" fill="#191c19">最初の1〜2手段を選ぶ4つの質問</text>
+
+    <rect x="24" y="68" width="360" height="96" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="44" y="108" font-size="26" font-weight="700" fill="#191c19">① 成果を数えられるか</text>
+    <text x="44" y="146" font-size="22" fill="#41483c">（問い合わせ・予約・購入）</text>
+    <path d="M384 116 L400 116" stroke="#806222" stroke-width="4"/>
+    <path d="M396 106 L410 116 L396 126 Z" fill="#806222"/>
+    <rect x="412" y="84" width="364" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="428" y="124" font-size="22" fill="#41483c">いいえ：先に計測を整える</text>
+    <path d="M204 168 L204 190" stroke="#806222" stroke-width="4"/>
+    <path d="M194 186 L204 200 L214 186 Z" fill="#806222"/>
+    <text x="220" y="192" font-size="22" fill="#806222">はい</text>
+
+    <rect x="24" y="204" width="360" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="44" y="268" font-size="26" font-weight="700" fill="#191c19">② 顧客は検索しているか</text>
+    <path d="M384 259 L400 259" stroke="#806222" stroke-width="4"/>
+    <path d="M396 249 L410 259 L396 269 Z" fill="#806222"/>
+    <rect x="412" y="212" width="364" height="94" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="428" y="250" font-size="22" fill="#41483c">はい：検索広告・SEO</text>
+    <text x="428" y="286" font-size="22" fill="#41483c">いいえ：SNS広告・SNS運用など</text>
+    <path d="M204 318 L204 336" stroke="#806222" stroke-width="4"/>
+    <path d="M194 332 L204 346 L214 332 Z" fill="#806222"/>
+
+    <rect x="24" y="350" width="360" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="44" y="414" font-size="26" font-weight="700" fill="#191c19">③ 商圏が地域に限られるか</text>
+    <path d="M384 405 L400 405" stroke="#806222" stroke-width="4"/>
+    <path d="M396 395 L410 405 L396 415 Z" fill="#806222"/>
+    <rect x="412" y="358" width="364" height="94" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="428" y="396" font-size="22" fill="#41483c">はい：Googleビジネス</text>
+    <text x="428" y="432" font-size="22" fill="#41483c">プロフィールを先に整える</text>
+    <path d="M204 464 L204 482" stroke="#806222" stroke-width="4"/>
+    <path d="M194 478 L204 492 L214 478 Z" fill="#806222"/>
+
+    <rect x="24" y="496" width="360" height="140" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="44" y="574" font-size="26" font-weight="700" fill="#191c19">④ 月の予算と社内の時間</text>
+    <path d="M384 566 L400 566" stroke="#806222" stroke-width="4"/>
+    <path d="M396 556 L410 566 L396 576 Z" fill="#806222"/>
+    <rect x="412" y="496" width="364" height="140" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="428" y="536" font-size="22" fill="#41483c">予算あり：広告（外注も検討）</text>
+    <text x="428" y="576" font-size="22" fill="#41483c">時間あり：SEO・MEO・SNS運用</text>
+    <text x="428" y="616" font-size="22" fill="#41483c">どちらも少ない：MEOと受け皿</text>
+
+    <text x="24" y="680" font-size="22" fill="#41483c">答えに合う手段から1〜2つを選んで始める</text>
+  </g>
+</svg>

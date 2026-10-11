@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>拠点で接客するかどうかで、実店舗・ハイブリッド型・非店舗型が決まる</title>
+  <desc>①拠点の住所で顧客に接客するか。いいえなら非店舗型（住所を非表示にし、サービス提供地域だけを設定。最大20か所）。はいなら②出張・配達もするか。いいえなら実店舗（住所を表示、看板を常設、サービス提供地域は設定しない）、はいならハイブリッド型（住所を表示し、サービス提供地域も設定、看板を常設）。サービス提供地域は市区町村や郵便番号で最大20か所、全体を拠点から車で約2時間以内に収め、半径では指定できない。</desc>
+  <rect width="800" height="640" fill="#f7f7f4"/>
+  <text x="32" y="44" font-size="28" font-weight="700" fill="#191c19">自社はどの種類か：住所と提供地域の決め方</text>
+
+  <rect x="32" y="66" width="736" height="64" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="400" y="108" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">① 拠点の住所で顧客に接客するか</text>
+
+  <path d="M275 130 L275 164" stroke="#806222" stroke-width="4"/>
+  <path d="M263 160 L275 176 L287 160 Z" fill="#806222"/>
+  <text x="289" y="160" font-size="22" font-weight="700" fill="#806222">はい</text>
+
+  <path d="M649 130 L649 278" stroke="#806222" stroke-width="4"/>
+  <path d="M637 274 L649 290 L661 274 Z" fill="#806222"/>
+  <text x="663" y="214" font-size="22" font-weight="700" fill="#806222">いいえ</text>
+
+  <rect x="32" y="176" width="486" height="64" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="275" y="218" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">② 出張・配達もするか</text>
+
+  <path d="M150 240 L150 278" stroke="#806222" stroke-width="4"/>
+  <path d="M138 274 L150 290 L162 274 Z" fill="#806222"/>
+  <text x="164" y="270" font-size="22" font-weight="700" fill="#806222">いいえ</text>
+  <path d="M400 240 L400 278" stroke="#806222" stroke-width="4"/>
+  <path d="M388 274 L400 290 L412 274 Z" fill="#806222"/>
+  <text x="414" y="270" font-size="22" font-weight="700" fill="#806222">はい</text>
+
+  <rect x="32" y="292" width="237" height="196" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="150" y="334" font-size="26" font-weight="700" fill="#806222" text-anchor="middle">実店舗</text>
+  <text x="150" y="376" font-size="22" fill="#41483c" text-anchor="middle">住所を表示</text>
+  <text x="150" y="414" font-size="22" fill="#41483c" text-anchor="middle">看板を常設</text>
+  <text x="150" y="452" font-size="22" fill="#41483c" text-anchor="middle">地域は設定しない</text>
+
+  <rect x="281" y="292" width="237" height="196" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="400" y="334" font-size="26" font-weight="700" fill="#806222" text-anchor="middle">ハイブリッド型</text>
+  <text x="400" y="376" font-size="22" fill="#41483c" text-anchor="middle">住所を表示</text>
+  <text x="400" y="414" font-size="22" fill="#41483c" text-anchor="middle">＋提供地域</text>
+  <text x="400" y="452" font-size="22" fill="#41483c" text-anchor="middle">看板を常設</text>
+
+  <rect x="531" y="292" width="237" height="196" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="649" y="334" font-size="26" font-weight="700" fill="#806222" text-anchor="middle">非店舗型</text>
+  <text x="649" y="376" font-size="22" fill="#41483c" text-anchor="middle">住所を非表示</text>
+  <text x="649" y="414" font-size="22" fill="#41483c" text-anchor="middle">提供地域だけ</text>
+  <text x="649" y="452" font-size="22" fill="#41483c" text-anchor="middle">自宅が拠点でも</text>
+
+  <rect x="32" y="508" width="736" height="112" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="56" y="552" font-size="22" fill="#41483c">提供地域：市区町村・郵便番号で最大20か所</text>
+  <text x="56" y="592" font-size="22" fill="#41483c">全体を拠点から車で約2時間以内（半径は不可）</text>
+</svg>

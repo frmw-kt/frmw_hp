@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-label="月5万円・1件5,000円の仮定で、1つの媒体に集めると月10件（週約2.3件）、2つの媒体に2.5万円ずつ分けるとそれぞれ月5件（週約1.2件）になり、Meta広告の情報収集期間を抜ける目安の週約50件から遠ざかることを示す試算の図">
+  <rect width="800" height="480" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="24" y="46" font-size="28" font-weight="700" fill="#191c19">月5万円を1媒体に集めるか、2つに分けるか</text>
+    <text x="24" y="84" font-size="22" fill="#41483c">前提：月の広告予算5万円、1件あたりの費用5,000円（仮定）</text>
+
+    <rect x="24" y="108" width="364" height="210" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="206" y="152" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">1つの媒体に5万円</text>
+    <text x="206" y="226" font-size="40" font-weight="700" fill="#806222" text-anchor="middle">月10件</text>
+    <text x="206" y="282" font-size="22" fill="#41483c" text-anchor="middle">週約2.3件（月÷4.3週）</text>
+
+    <rect x="412" y="108" width="364" height="210" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="594" y="152" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">2つの媒体に2.5万円ずつ</text>
+    <text x="594" y="226" font-size="40" font-weight="700" fill="#806222" text-anchor="middle">各月5件</text>
+    <text x="594" y="282" font-size="22" fill="#41483c" text-anchor="middle">週約1.2件ずつ</text>
+
+    <rect x="24" y="342" width="752" height="114" rx="10" fill="#ffffff" stroke="#806222" stroke-width="2"/>
+    <text x="44" y="384" font-size="22" fill="#41483c">件数＝予算÷1件あたりの費用。分けると件数も分かれる</text>
+    <text x="44" y="428" font-size="22" fill="#41483c">Meta広告の情報収集期間を抜ける目安：広告セットごとに週約50件</text>
+  </g>
+</svg>

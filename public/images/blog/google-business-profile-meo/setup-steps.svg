@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" width="800" height="620" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>10の手順を、最初に整える7つと、続けて更新する3つに分けた図</title>
+  <desc>最初に1回整える：1 オーナー確認、2 ビジネス名、3 カテゴリ、4 住所・提供地域、5 営業時間、6 電話・サイト、7 説明・属性。写真の表示とパフォーマンスの確認にはオーナー確認が必要。続けて更新する：8 写真・動画を追加する、9 口コミを依頼し返信する、10 時期のある情報を投稿する。月に1度、成果と写真・営業時間を確認する。</desc>
+  <rect width="800" height="620" fill="#f7f7f4"/>
+  <text x="32" y="44" font-size="28" font-weight="700" fill="#191c19">10の手順：最初に整える7つと、続ける3つ</text>
+
+  <rect x="32" y="66" width="736" height="270" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="106" font-size="26" font-weight="700" fill="#806222">最初に1回整える</text>
+  <text x="56" y="150" font-size="24" fill="#191c19">1 オーナー確認</text>
+  <text x="56" y="190" font-size="24" fill="#191c19">2 ビジネス名</text>
+  <text x="56" y="230" font-size="24" fill="#191c19">3 カテゴリ</text>
+  <text x="56" y="270" font-size="24" fill="#191c19">4 住所・提供地域</text>
+  <text x="416" y="150" font-size="24" fill="#191c19">5 営業時間</text>
+  <text x="416" y="190" font-size="24" fill="#191c19">6 電話・サイト</text>
+  <text x="416" y="230" font-size="24" fill="#191c19">7 説明・属性</text>
+  <text x="56" y="314" font-size="22" fill="#41483c">※写真の表示・パフォーマンスにはオーナー確認が必要</text>
+
+  <path d="M400 340 L400 372" stroke="#806222" stroke-width="4"/>
+  <path d="M388 368 L400 384 L412 368 Z" fill="#806222"/>
+
+  <rect x="32" y="388" width="736" height="212" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="56" y="428" font-size="26" font-weight="700" fill="#806222">続けて更新する</text>
+  <text x="56" y="472" font-size="24" fill="#191c19">8 写真・動画を追加する</text>
+  <text x="56" y="512" font-size="24" fill="#191c19">9 口コミを依頼し、返信する</text>
+  <text x="56" y="552" font-size="24" fill="#191c19">10 時期のある情報を投稿する</text>
+  <text x="56" y="586" font-size="22" fill="#41483c">月に1度、成果と写真・営業時間を確認する</text>
+</svg>

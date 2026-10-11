@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>1件の問い合わせが、Google広告とMeta広告の管理画面に1件ずつ数えられる例</title>
+  <desc>1日目にGoogle広告の検索広告をクリックし、4日目にInstagramでMeta広告をクリックした人が5日目に問い合わせると、Google広告の管理画面にも、Meta広告の管理画面にも1件ずつ計上され、足すと2件になるが、自社の台帳では実際の1件。日付と設定は仮定の例。</desc>
+  <rect x="0" y="0" width="800" height="640" fill="#f7f7f4"/>
+
+  <text x="20" y="40" font-size="24" font-weight="700" fill="#191c19">1人の行動（日付と設定は仮定の例）</text>
+
+  <!-- 行動 -->
+  <rect x="20" y="60" width="230" height="120" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="135" y="96" font-size="22" fill="#806222" text-anchor="middle">1日目</text>
+  <text x="135" y="130" font-size="24" fill="#191c19" text-anchor="middle">Google広告の</text>
+  <text x="135" y="162" font-size="24" fill="#191c19" text-anchor="middle">検索広告をクリック</text>
+
+  <polygon points="256,110 274,120 256,130" fill="#41483c"/>
+
+  <rect x="285" y="60" width="230" height="120" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="96" font-size="22" fill="#806222" text-anchor="middle">4日目</text>
+  <text x="400" y="130" font-size="24" fill="#191c19" text-anchor="middle">InstagramでMeta</text>
+  <text x="400" y="162" font-size="24" fill="#191c19" text-anchor="middle">広告をクリック</text>
+
+  <polygon points="521,110 539,120 521,130" fill="#41483c"/>
+
+  <rect x="550" y="60" width="230" height="120" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="665" y="96" font-size="22" fill="#806222" text-anchor="middle">5日目</text>
+  <text x="665" y="130" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">問い合わせ</text>
+  <text x="665" y="162" font-size="24" fill="#191c19" text-anchor="middle">（実際は1件）</text>
+
+  <!-- 数える場所 -->
+  <line x1="665" y1="182" x2="135" y2="226" stroke="#41483c" stroke-width="2"/>
+  <line x1="665" y1="182" x2="400" y2="226" stroke="#41483c" stroke-width="2"/>
+  <line x1="665" y1="182" x2="665" y2="226" stroke="#41483c" stroke-width="2"/>
+
+  <rect x="20" y="230" width="230" height="140" rx="8" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="135" y="270" font-size="24" fill="#191c19" text-anchor="middle">Google広告の</text>
+  <text x="135" y="306" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">管理画面：1件</text>
+  <text x="135" y="346" font-size="22" fill="#41483c" text-anchor="middle">クリック後30日以内</text>
+
+  <rect x="285" y="230" width="230" height="140" rx="8" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="400" y="270" font-size="24" fill="#191c19" text-anchor="middle">Meta広告の</text>
+  <text x="400" y="306" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">管理画面：1件</text>
+  <text x="400" y="346" font-size="22" fill="#41483c" text-anchor="middle">クリック後7日以内</text>
+
+  <rect x="550" y="230" width="230" height="140" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="665" y="270" font-size="24" fill="#191c19" text-anchor="middle">自社の台帳</text>
+  <text x="665" y="306" font-size="26" font-weight="700" fill="#806222" text-anchor="middle">1件</text>
+  <text x="665" y="346" font-size="22" fill="#41483c" text-anchor="middle">問い合わせの実数</text>
+
+  <!-- 結論 -->
+  <rect x="20" y="400" width="760" height="130" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="400" y="448" font-size="28" font-weight="700" fill="#191c19" text-anchor="middle">管理画面を足すと2件、実際は1件</text>
+  <text x="400" y="496" font-size="24" fill="#41483c" text-anchor="middle">成果の定義・流入元・自社の実数をそろえて比べる</text>
+
+  <text x="20" y="572" font-size="22" fill="#41483c">※Google：クリック後の計測期間が初期設定の30日の場合</text>
+  <text x="20" y="608" font-size="22" fill="#41483c">※Meta：クリックスルー7日の設定を選んだ場合</text>
+</svg>

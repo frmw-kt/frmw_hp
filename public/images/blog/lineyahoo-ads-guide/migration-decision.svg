@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" width="800" height="620" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="800" height="620" fill="#ffffff"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">LINE広告の移行が必要か、どの方法で移すか</text>
+
+  <rect x="40" y="76" width="720" height="72" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="121" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">LINE広告を使っている？（代理店の管理分も含む）</text>
+
+  <line x1="260" y1="150" x2="260" y2="196" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="280" y="182" font-size="22" font-weight="700" fill="#806222">はい</text>
+  <line x1="630" y1="150" x2="630" y2="196" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="650" y="182" font-size="22" font-weight="700" fill="#41483c">いいえ</text>
+
+  <rect x="40" y="200" width="440" height="120" rx="10" fill="#c9a84c" fill-opacity="0.18" stroke="#c9a84c" stroke-width="2"/>
+  <text x="260" y="242" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">認証済みのビジネス</text>
+  <text x="260" y="274" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">マネージャーを用意できる？</text>
+  <text x="260" y="306" font-size="22" fill="#41483c" text-anchor="middle">（移行ツールを使う前提）</text>
+
+  <rect x="500" y="200" width="260" height="120" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="630" y="242" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">移行は不要</text>
+  <text x="630" y="276" font-size="22" fill="#41483c" text-anchor="middle">Yahoo!広告だけなら</text>
+  <text x="630" y="306" font-size="22" fill="#41483c" text-anchor="middle">原則として対応不要</text>
+
+  <line x1="180" y1="322" x2="180" y2="376" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="200" y="356" font-size="22" font-weight="700" fill="#806222">はい</text>
+  <line x1="360" y1="322" x2="560" y2="376" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="290" y="372" font-size="22" font-weight="700" fill="#41483c">いいえ</text>
+
+  <rect x="40" y="380" width="340" height="156" rx="10" fill="#f7f7f4" stroke="#806222" stroke-width="2"/>
+  <text x="210" y="420" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">移行ツールで移す</text>
+  <text x="210" y="456" font-size="22" fill="#41483c" text-anchor="middle">対象：日本向け・運用型・</text>
+  <text x="210" y="486" font-size="22" fill="#41483c" text-anchor="middle">審査「承認」のアカウント</text>
+  <text x="210" y="516" font-size="22" fill="#41483c" text-anchor="middle">移行後に設定を確認する</text>
+
+  <rect x="420" y="380" width="340" height="156" rx="10" fill="#f7f7f4" stroke="#806222" stroke-width="2"/>
+  <text x="590" y="420" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">手動で移す</text>
+  <text x="590" y="456" font-size="22" fill="#41483c" text-anchor="middle">新規アカウントを作るか</text>
+  <text x="590" y="486" font-size="22" fill="#41483c" text-anchor="middle">既存の広告アカウントに</text>
+  <text x="590" y="516" font-size="22" fill="#41483c" text-anchor="middle">キャンペーン以下を作る</text>
+
+  <text x="40" y="584" font-size="22" font-weight="700" fill="#806222">期限：LINE広告の配信停止 2026年10月26日（予定）まで</text>
+</svg>

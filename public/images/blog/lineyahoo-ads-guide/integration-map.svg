@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" width="800" height="620" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="800" height="620" fill="#ffffff"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">2026年4月1日の統合で変わったサービス</text>
+
+  <text x="174" y="98" font-size="22" font-weight="700" fill="#41483c" text-anchor="middle">統合前</text>
+  <text x="626" y="98" font-size="22" font-weight="700" fill="#41483c" text-anchor="middle">2026年4月1日以降</text>
+
+  <rect x="24" y="116" width="300" height="84" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="174" y="166" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">LINE広告</text>
+
+  <rect x="24" y="216" width="300" height="84" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="174" y="252" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">Yahoo!広告</text>
+  <text x="174" y="284" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">ディスプレイ広告</text>
+
+  <rect x="24" y="336" width="300" height="84" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="174" y="372" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">Yahoo!広告</text>
+  <text x="174" y="404" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">検索広告</text>
+
+  <rect x="476" y="146" width="300" height="124" rx="10" fill="#c9a84c" fill-opacity="0.18" stroke="#c9a84c" stroke-width="2"/>
+  <text x="626" y="200" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">LINEヤフー広告</text>
+  <text x="626" y="234" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">ディスプレイ広告</text>
+
+  <rect x="476" y="336" width="300" height="84" rx="10" fill="#c9a84c" fill-opacity="0.18" stroke="#c9a84c" stroke-width="2"/>
+  <text x="626" y="372" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">LINEヤフー広告</text>
+  <text x="626" y="404" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">検索広告</text>
+
+  <line x1="326" y1="158" x2="472" y2="188" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="400" y="146" font-size="22" font-weight="700" fill="#806222" text-anchor="middle">移行が必要</text>
+  <line x1="326" y1="258" x2="472" y2="232" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="400" y="292" font-size="22" font-weight="700" fill="#41483c" text-anchor="middle">自動で移る</text>
+  <line x1="326" y1="378" x2="472" y2="378" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="400" y="364" font-size="22" font-weight="700" fill="#41483c" text-anchor="middle">名称だけ変更</text>
+
+  <rect x="24" y="456" width="752" height="140" rx="10" fill="#f7f7f4" stroke="#41483c" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="48" y="498" font-size="24" font-weight="700" fill="#191c19">LINE公式アカウント</text>
+  <text x="48" y="534" font-size="22" fill="#41483c">統合の対象外で、LINE広告とは別のサービス</text>
+  <text x="48" y="568" font-size="22" fill="#41483c">広告アカウントと接続すると、友だち追加の広告などが使える</text>
+</svg>

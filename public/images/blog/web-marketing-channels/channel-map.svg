@@ -19,15 +19,15 @@
     <text x="206" y="356" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">SNS広告・動画広告など</text>
     <text x="206" y="396" font-size="24" fill="#41483c" text-anchor="middle">表示回数などで課金</text>
     <rect x="408" y="306" width="372" height="120" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
-    <text x="594" y="356" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">SNS運用（投稿）</text>
-    <text x="594" y="396" font-size="24" fill="#41483c" text-anchor="middle">おすすめで新しい人にも</text>
+    <text x="594" y="356" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">SNS運用（おすすめ表示）</text>
+    <text x="594" y="396" font-size="24" fill="#41483c" text-anchor="middle">フォローしていない人にも</text>
 
     <text x="24" y="464" font-size="24" font-weight="700" fill="#806222">つながった人に届ける（訪問者・フォロワー・友だち）</text>
     <rect x="20" y="476" width="372" height="120" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
     <text x="206" y="526" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">過去の訪問者への広告</text>
     <text x="206" y="566" font-size="24" fill="#41483c" text-anchor="middle">ディスプレイ広告など</text>
     <rect x="408" y="476" width="372" height="120" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
-    <text x="594" y="526" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">LINE公式アカウント</text>
-    <text x="594" y="566" font-size="24" fill="#41483c" text-anchor="middle">友だち・フォロワーに配信</text>
+    <text x="594" y="526" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">SNS運用・LINE公式アカウント</text>
+    <text x="594" y="566" font-size="24" fill="#41483c" text-anchor="middle">フォロワー・友だちに届く</text>
   </g>
 </svg>

@@ -1039,6 +1039,71 @@
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+/* 記事の結論・この記事でわかること（記事データの summary・takeaways） */
+.m-article-summary {
+  padding: 24px 28px;
+  margin-bottom: 24px;
+  background: #fff;
+  border: 1px solid #d6d8d0;
+  border-left: 3px solid #c9a84c;
+  border-radius: 7px;
+  color: #41483c;
+  font-size: 15px;
+  line-height: 1.9;
+}
+.m-article-summary-label {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 650;
+  color: #806222;
+}
+.m-article-summary p + .m-article-summary-label {
+  margin-top: 16px;
+}
+.m-article-summary ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+/* 記事に合わせた相談の案内（記事データの cta） */
+.m-article-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+  margin: 40px 0;
+  padding: 24px 28px;
+  background: #f4f3ef;
+  border: 1px solid #d6d8d0;
+  border-radius: 7px;
+}
+.m-article-cta p {
+  flex: 1 1 280px;
+  margin: 0;
+  font-weight: 650;
+  color: #191c19;
+  line-height: 1.8;
+}
+/* 記事の「よくある質問」（記事データの faq） */
+.m-article-faq {
+  margin-top: 2.5rem;
+}
+.m-article-faq dl > div {
+  padding: 16px 0;
+  border-bottom: 1px solid #e3e2dc;
+}
+.m-article-faq dt {
+  font-weight: 650;
+  color: #191c19;
+  margin-bottom: 6px;
+}
+.m-article-faq dt::before {
+  content: "Q. ";
+  color: #806222;
+}
+.m-article-faq dd {
+  margin: 0;
+}
 .marketing-site .article-body {
   color: #41483c;
   font-size: 16px;

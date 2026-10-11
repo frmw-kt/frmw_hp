@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>Google広告の配信開始後に確認する項目を時期の順に並べた図</title>
+  <desc>公開から1営業日は広告が「審査中」から「有効」になったか。2営業日を過ぎたらステータスを確認し、1週間を過ぎたらサポートに問い合わせ。最初の成果までは、コンバージョンの「未確認」は正常。自動入札を始めてから7〜14日は予算・目標を頻繁に変えない。毎日と月末は、費用が1日の平均予算の2倍・30.4倍の上限内か。</desc>
+  <rect width="800" height="560" fill="#ffffff"/>
+  <text x="32" y="46" font-size="28" font-weight="700" fill="#191c19">配信後に確認する順番</text>
+  <line x1="300" y1="96" x2="300" y2="500" stroke="#e3e2dc" stroke-width="4"/>
+
+  <text x="32" y="110" font-size="22" font-weight="700" fill="#806222">公開〜1営業日</text>
+  <circle cx="300" cy="102" r="12" fill="#c9a84c"/>
+  <text x="328" y="110" font-size="24" fill="#191c19">広告が「審査中」→「有効」か</text>
+
+  <text x="32" y="210" font-size="22" font-weight="700" fill="#806222">2営業日／1週間</text>
+  <circle cx="300" cy="202" r="12" fill="#c9a84c"/>
+  <text x="328" y="210" font-size="24" fill="#191c19">審査中なら確認／サポートへ</text>
+
+  <text x="32" y="310" font-size="22" font-weight="700" fill="#806222">最初の成果まで</text>
+  <circle cx="300" cy="302" r="12" fill="#c9a84c"/>
+  <text x="328" y="310" font-size="24" fill="#191c19">計測の「未確認」は正常</text>
+
+  <text x="32" y="410" font-size="22" font-weight="700" fill="#806222">自動入札から7〜14日</text>
+  <circle cx="300" cy="402" r="12" fill="#c9a84c"/>
+  <text x="328" y="410" font-size="24" fill="#191c19">予算・目標を頻繁に変えない</text>
+
+  <text x="32" y="510" font-size="22" font-weight="700" fill="#806222">毎日・月末</text>
+  <circle cx="300" cy="502" r="12" fill="#806222"/>
+  <text x="328" y="510" font-size="24" fill="#191c19">費用は1日2倍・月30.4倍まで</text>
+</svg>

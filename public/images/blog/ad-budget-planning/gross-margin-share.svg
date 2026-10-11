@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" width="800" height="470" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="470" rx="16" fill="#f7f7f4"/>
+  <text x="40" y="52" font-size="24" font-weight="700" fill="#191c19">売上100万円の10%（10万円）を広告費にすると</text>
+
+  <!-- 粗利率50% -->
+  <text x="40" y="110" font-size="24" font-weight="700" fill="#191c19">粗利率50%（粗利50万円）</text>
+  <rect x="40" y="126" width="720" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <rect x="40" y="126" width="144" height="64" rx="8" fill="#c9a84c"/>
+  <text x="112" y="167" font-size="24" text-anchor="middle" fill="#191c19">広告費</text>
+  <text x="472" y="167" font-size="24" text-anchor="middle" fill="#41483c">残る粗利40万円</text>
+  <text x="40" y="228" font-size="24" font-weight="700" fill="#806222">→ 広告費は粗利の5分の1</text>
+
+  <!-- 粗利率20% -->
+  <text x="40" y="292" font-size="24" font-weight="700" fill="#191c19">粗利率20%（粗利20万円）</text>
+  <rect x="40" y="308" width="720" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <rect x="40" y="308" width="360" height="64" rx="8" fill="#c9a84c"/>
+  <text x="220" y="349" font-size="24" text-anchor="middle" fill="#191c19">広告費10万円</text>
+  <text x="580" y="349" font-size="24" text-anchor="middle" fill="#41483c">残る粗利10万円</text>
+  <text x="40" y="410" font-size="24" font-weight="700" fill="#806222">→ 広告費は粗利の半分</text>
+
+  <text x="40" y="452" font-size="22" fill="#41483c">棒の長さはそれぞれの粗利（100%）。数値は計算例（仮定）</text>
+</svg>

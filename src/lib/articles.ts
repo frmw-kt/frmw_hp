@@ -7,6 +7,12 @@ export interface ArticleSource {
   accessedAt: string;
 }
 
+/** 記事末尾の「よくある質問」（FAQPage の構造化データにも使う） */
+export interface ArticleFaq {
+  question: string;
+  answer: string;
+}
+
 export interface Article {
   slug: string;
   title: string;
@@ -17,6 +23,15 @@ export interface Article {
   readTime: string;
   content: string;
   sources?: ArticleSource[];
+  /** 検証用の主検索語・表記ゆれ。Article の構造化データの keywords にも使う */
+  keywords?: { primary: string; variants: string[] };
+  /** 結論（タイトル下の囲み。2〜3文） */
+  summary?: string;
+  /** この記事でわかること（3〜5点） */
+  takeaways?: string[];
+  faq?: ArticleFaq[];
+  /** 記事に合わせた相談の案内（本文の中盤と末尾に表示） */
+  cta?: { lead: string };
 }
 
 export const articles: Article[] = [

@@ -4,6 +4,7 @@ import { hasPublicCases } from "@/lib/cases";
 import { getAllArticles, getArticle } from "@/lib/articles";
 import {
   Breadcrumb,
+  Button,
   Section,
   ContactCTA,
   JsonLd,
@@ -64,6 +65,18 @@ export default async function Page({
     // 表はスマホで横スクロールできるように囲む
     .replace(/<table>/g, '<div class="article-table-wrap"><table>')
     .replace(/<\/table>/g, "</table></div>");
+  // 記事に合わせた相談の案内を本文の中盤（後半最初の h2 の前）に挟む。h2 が4つ未満なら末尾だけ
+  const mid = a.cta && headings.length >= 4 ? Math.floor(headings.length / 2) + 1 : 0;
+  const cut = mid ? body.indexOf('<h2 id="section-' + mid + '">') : -1;
+  const [bodyFirst, bodyRest] = cut > 0 ? [body.slice(0, cut), body.slice(cut)] : [body, ""];
+  const ctaBox = a.cta && (
+    <aside className="m-article-cta" aria-label="相談のご案内">
+      <p>{a.cta.lead}</p>
+      <Button />
+    </aside>
+  );
+  const faq = a.faq ?? [];
+  const toc = faq.length ? [...headings, "よくある質問"] : headings;
   return (
     <>
       <JsonLd
@@ -88,8 +101,22 @@ export default async function Page({
             url: SITE_URL,
           },
           mainEntityOfPage: SITE_URL + "/blog/" + slug,
+          ...(a.keywords && { keywords: [a.keywords.primary, ...a.keywords.variants].join(", ") }),
         }}
       />
+      {faq.length > 0 && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faq.map((f) => ({
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            })),
+          }}
+        />
+      )}
       <article>
         <header className="m-service-hero">
           <div className="m-container m-article-width">
@@ -100,7 +127,8 @@ export default async function Page({
             />
             <p className="m-eyebrow">{a.category}</p>
             <h1 style={{ fontSize: "clamp(26px,3vw,40px)" }}>{a.title}</h1>
-            <p className="m-lead">{a.description}</p>
+            {/* 結論の囲み（summary）がある記事は、説明文（検索結果用）を重ねて表示しない */}
+            {!a.summary && <p className="m-lead">{a.description}</p>}
             <p className="m-small" style={{ marginTop: 20 }}>
               公開：<time dateTime={a.date}>{a.date}</time> / 更新：
               <time dateTime={a.updatedAt ?? a.date}>
@@ -116,20 +144,61 @@ export default async function Page({
         </header>
         <div className="m-section">
           <div className="m-container m-article-width">
+            {(a.summary || a.takeaways?.length) && (
+              <section className="m-article-summary" aria-label="記事の要点">
+                {a.summary && (
+                  <>
+                    <p className="m-article-summary-label">結論</p>
+                    <p>{a.summary}</p>
+                  </>
+                )}
+                {a.takeaways && a.takeaways.length > 0 && (
+                  <>
+                    <p className="m-article-summary-label">この記事でわかること</p>
+                    <ul>
+                      {a.takeaways.map((t) => (
+                        <li key={t}>{t}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+              </section>
+            )}
             <nav className="m-article-toc" aria-label="記事の目次">
               <h2>この記事の内容</h2>
               <ol>
-                {headings.map((h, k) => (
+                {toc.map((h, k) => (
                   <li key={h}>
-                    <a href={"#section-" + (k + 1)}>{h}</a>
+                    <a href={k < headings.length ? "#section-" + (k + 1) : "#faq"}>{h}</a>
                   </li>
                 ))}
               </ol>
             </nav>
             <div
               className="article-body"
-              dangerouslySetInnerHTML={{ __html: body }}
+              dangerouslySetInnerHTML={{ __html: bodyFirst }}
             />
+            {bodyRest && ctaBox}
+            {bodyRest && (
+              <div
+                className="article-body"
+                dangerouslySetInnerHTML={{ __html: bodyRest }}
+              />
+            )}
+            {faq.length > 0 && (
+              <section className="article-body m-article-faq" aria-labelledby="faq">
+                <h2 id="faq">よくある質問</h2>
+                <dl>
+                  {faq.map((f) => (
+                    <div key={f.question}>
+                      <dt>{f.question}</dt>
+                      <dd>{f.answer}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </section>
+            )}
+            {ctaBox}
             {a.sources && a.sources.length > 0 && (
               <section className="article-sources" aria-labelledby="sources-heading">
                 <h2 id="sources-heading">出典</h2>

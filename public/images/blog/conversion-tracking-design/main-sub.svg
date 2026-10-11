@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="500" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <rect x="200" y="20" width="400" height="60" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="59" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">コンバージョン アクション</text>
+  <line x1="320" y1="82" x2="205" y2="118" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="480" y1="82" x2="595" y2="118" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="20" y="124" width="370" height="300" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="4"/>
+  <text x="205" y="166" font-size="28" fill="#806222" text-anchor="middle" font-weight="bold">メイン</text>
+  <text x="44" y="212" font-size="22" fill="#41483c">［コンバージョン］列に表示</text>
+  <text x="44" y="256" font-size="24" fill="#191c19" font-weight="bold">入札に使う</text>
+  <text x="44" y="292" font-size="22" fill="#41483c">（標準の目標に含まれ、</text>
+  <text x="44" y="324" font-size="22" fill="#41483c">その目標で入札する場合）</text>
+  <text x="44" y="388" font-size="22" fill="#806222">例：問い合わせ・予約・購入</text>
+  <rect x="410" y="124" width="370" height="300" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="595" y="166" font-size="28" fill="#191c19" text-anchor="middle" font-weight="bold">サブ</text>
+  <text x="434" y="212" font-size="22" fill="#41483c">［すべてのコンバージョン］</text>
+  <text x="434" y="240" font-size="22" fill="#41483c">列に表示</text>
+  <text x="434" y="280" font-size="24" fill="#191c19" font-weight="bold">モニタリングのみ</text>
+  <text x="434" y="316" font-size="22" fill="#41483c">（カスタム目標に含めた</text>
+  <text x="434" y="348" font-size="22" fill="#41483c">場合は入札に使う）</text>
+  <text x="434" y="388" font-size="22" fill="#806222">例：料金ページの表示</text>
+  <text x="400" y="470" font-size="22" fill="#41483c" text-anchor="middle">「例」は、この記事での設計例</text>
+</svg>

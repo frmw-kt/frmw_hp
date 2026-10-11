@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="520" fill="#ffffff"/>
+  <text x="30" y="40" font-size="24" font-weight="bold" fill="#191c19">仮定：料率15%・最低手数料6万円の契約</text>
+  <text x="30" y="74" font-size="22" fill="#41483c">（計算を示すための仮定で、相場ではありません）</text>
+  <line x1="30" y1="380" x2="770" y2="380" stroke="#e3e2dc" stroke-width="2"/>
+  <rect x="70" y="260" width="110" height="120" fill="#c9a84c"/>
+  <text x="125" y="248" font-size="22" text-anchor="middle" fill="#191c19">手数料6万円</text>
+  <text x="125" y="414" font-size="22" text-anchor="middle" fill="#41483c">広告費10万円</text>
+  <text x="125" y="450" font-size="24" font-weight="bold" text-anchor="middle" fill="#806222">割合60%</text>
+  <rect x="255" y="260" width="110" height="120" fill="#c9a84c"/>
+  <text x="310" y="248" font-size="22" text-anchor="middle" fill="#191c19">手数料6万円</text>
+  <text x="310" y="414" font-size="22" text-anchor="middle" fill="#41483c">広告費20万円</text>
+  <text x="310" y="450" font-size="24" font-weight="bold" text-anchor="middle" fill="#806222">割合30%</text>
+  <rect x="440" y="260" width="110" height="120" fill="#e3e2dc"/>
+  <text x="495" y="248" font-size="22" text-anchor="middle" fill="#191c19">手数料6万円</text>
+  <text x="495" y="414" font-size="22" text-anchor="middle" fill="#41483c">広告費40万円</text>
+  <text x="495" y="450" font-size="24" text-anchor="middle" fill="#41483c">割合15%</text>
+  <rect x="625" y="140" width="110" height="240" fill="#e3e2dc"/>
+  <text x="680" y="128" font-size="22" text-anchor="middle" fill="#191c19">手数料12万円</text>
+  <text x="680" y="414" font-size="22" text-anchor="middle" fill="#41483c">広告費80万円</text>
+  <text x="680" y="450" font-size="24" text-anchor="middle" fill="#41483c">割合15%</text>
+  <text x="30" y="498" font-size="22" fill="#41483c">境目＝6万円÷15%＝40万円。これより少ない月は15%を超える</text>
+</svg>

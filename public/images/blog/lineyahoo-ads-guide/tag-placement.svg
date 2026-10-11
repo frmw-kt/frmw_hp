@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="500" fill="#ffffff"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">計測タグを置く場所（問い合わせ型の例）</text>
+
+  <rect x="24" y="80" width="752" height="56" rx="10" fill="#c9a84c" fill-opacity="0.18" stroke="#c9a84c" stroke-width="2"/>
+  <text x="400" y="117" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">グローバルスニペット：サイトの全ページに置く</text>
+
+  <rect x="24" y="152" width="176" height="150" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="112" y="200" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">トップ</text>
+  <text x="112" y="240" font-size="22" fill="#41483c" text-anchor="middle">ページビュー</text>
+  <polygon points="203,220 213,227 203,234" fill="#806222"/>
+
+  <rect x="216" y="152" width="176" height="150" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="304" y="200" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">サービス</text>
+  <text x="304" y="240" font-size="22" fill="#41483c" text-anchor="middle">ページビュー</text>
+  <polygon points="395,220 405,227 395,234" fill="#806222"/>
+
+  <rect x="408" y="152" width="176" height="150" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="496" y="200" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">フォーム</text>
+  <text x="496" y="240" font-size="22" fill="#41483c" text-anchor="middle">ページビュー</text>
+  <polygon points="587,220 597,227 587,234" fill="#806222"/>
+
+  <rect x="600" y="152" width="176" height="150" rx="10" fill="#f7f7f4" stroke="#806222" stroke-width="2"/>
+  <text x="688" y="200" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">送信完了</text>
+  <rect x="612" y="220" width="152" height="70" rx="8" fill="#806222"/>
+  <text x="688" y="249" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">イベント</text>
+  <text x="688" y="279" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">スニペット</text>
+
+  <rect x="24" y="324" width="752" height="72" rx="10" fill="#f7f7f4"/>
+  <text x="48" y="369" font-size="24" font-weight="700" fill="#191c19">送信完了ページの表示を、成果として数える</text>
+
+  <text x="32" y="440" font-size="22" fill="#41483c">※LINE広告で使っていたLINE Tagは、</text>
+  <text x="32" y="474" font-size="22" fill="#41483c">LINEヤフー広告 ディスプレイ広告では使えない</text>
+</svg>

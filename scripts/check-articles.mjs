@@ -195,11 +195,12 @@ export function checkArticle(a, file, ctx) {
   const promises = [...plain(html).matchAll(/(別の記事で(?:詳しく)?(?:解説|扱|紹介|説明)[^。]{0,6}予定|今後の記事で|次回の記事で|近日公開)/g)].map((m) => m[1]);
   if (promises.length) warnings.push(`まだない記事の予告があります（${[...new Set(promises)].join("・")}）。本文で予告せず、企画メモの「子記事ができたら本文にリンクを足す位置」に書く`);
   // 本文の「Google 広告」（空白あり）は「Google広告」に。出典名の「Google 広告ヘルプ」は除く
-  const gSpaced = (html.replace(/<[^>]+>/g, "").match(/Google 広告(?!ヘルプ)/g) ?? []).length;
+  // 「」で囲んだ資料名・ページ名（「Google 広告アカウントを作成する」）は公式表記のままなので除く
+  const gSpaced = (html.replace(/<[^>]+>/g, "").replace(/「[^」]*」/g, "").match(/Google 広告(?!ヘルプ)/g) ?? []).length;
   if (gSpaced) warnings.push(`本文の「Google 広告」（空白あり）が${gSpaced}か所あります。本文は「Google広告」に統一（出典名・画面名は公式表記のまま）`);
   // glossary の避ける表記
   // 空白を残したまま照合する（「Meta ピクセル」のような空白入りの避ける表記を、正しい「Metaピクセル」と区別するため）
-  const rawText = a.title + a.description + html.replace(/<[^>]+>/g, "");
+  const rawText = a.title + a.description + html.replace(/<[^>]+>/g, "") + (a.summary ?? "") + (Array.isArray(a.takeaways) ? a.takeaways.join("") : "") + (Array.isArray(a.faq) ? a.faq.map((f) => f?.question + f?.answer).join("") : "");
   const avoided = (ctx.avoidTerms ?? []).filter((x) => rawText.includes(x.term));
   if (avoided.length) warnings.push(`glossary で避ける表記があります（${avoided.map((x) => `「${x.term}」→ ${x.word}`).join("・")}）`);
   // 5. 断定・最上級表現（引用・否定の文脈もあるので警告のみ。該当箇所を目視で確認する）
@@ -213,11 +214,90 @@ export function checkArticle(a, file, ctx) {
       const tokens = kw.primary.split(/[\s　]+/).filter(Boolean);
       const missingTitle = tokens.filter((t) => !a.title.includes(t) && !a.description.includes(t));
       if (missingTitle.length) warnings.push(`主検索語の語（${missingTitle.join("・")}）がタイトル・description のどちらにもありません（評価基準8）`);
-      const text = a.title + a.description + plain(html);
+      const text = a.title + a.description + plain(html) + (a.summary ?? "") + (a.takeaways ?? []).join("") + (Array.isArray(a.faq) ? a.faq.map((f) => f?.question + f?.answer).join("") : "");
       // 空白区切りの検索語（例: 広告運用 手数料）は、語がすべて含まれていれば一致とみなす
       const missingVariants = kw.variants.filter((v) => !v.split(/[\s　]+/).filter(Boolean).every((t) => text.includes(t)));
       if (missingVariants.length) warnings.push(`表記ゆれ（${missingVariants.join("・")}）が本文・タイトル・description にありません。読者が使う呼び方なら自然に入れる（評価基準3）`);
     }
+  }
+
+  // ---- 結論・この記事でわかること・よくある質問・相談の案内（ガイドv6〜） ----
+  const len = (s) => [...String(s).replace(/\s+/g, "")].length;
+  if (a.summary !== undefined) {
+    if (typeof a.summary !== "string" || !a.summary.trim()) errors.push("summary は文字列にする");
+    else if (len(a.summary) < 40 || len(a.summary) > 200) warnings.push(`summary（結論）は40〜200字が目安（${len(a.summary)}字）。2〜3文で答えを書く`);
+    else if (/<[a-z]/i.test(a.summary)) errors.push("summary にタグは使えません（文字だけ）");
+  }
+  if (a.takeaways !== undefined) {
+    if (!Array.isArray(a.takeaways) || a.takeaways.some((t) => typeof t !== "string" || !t.trim())) errors.push("takeaways は文字列の配列にする");
+    else if (a.takeaways.length < 3 || a.takeaways.length > 5) warnings.push(`takeaways（この記事でわかること）は3〜5点が目安（${a.takeaways.length}点）`);
+  }
+  if (a.faq !== undefined) {
+    if (!Array.isArray(a.faq) || a.faq.some((f) => typeof f?.question !== "string" || typeof f?.answer !== "string")) errors.push("faq は { question, answer } の配列にする");
+    else {
+      if (a.faq.length < 3) warnings.push(`faq が${a.faq.length}問です。本文で答え切れない具体的な疑問が3問以上ないなら、faq を置かない（品質チェック6）`);
+      const bodyPlain = plain(html);
+      for (const f of a.faq) {
+        if (/<[a-z]/i.test(f.question + f.answer)) errors.push(`faq にタグは使えません（文字だけ）: ${f.question.slice(0, 20)}`);
+        const al = len(f.answer);
+        if (al < 40 || al > 300) warnings.push(`faq の回答は40〜300字が目安（${al}字）: ${f.question.slice(0, 20)}`);
+        // 本文の文をそのまま繰り返していないか（20字以上の文が本文にそのままある）
+        const dup = f.answer.split("。").map((x) => x.replace(/\s+/g, "")).filter((x) => x.length >= 20 && bodyPlain.includes(x));
+        if (dup.length) warnings.push(`faq の回答が本文の文と同じです（${dup[0].slice(0, 20)}…）。本文で答え切れない疑問に絞る（品質チェック6）`);
+      }
+      const dupQ = a.faq.map((f) => f.question).filter((q, i, all) => all.indexOf(q) !== i);
+      if (dupQ.length) errors.push(`同じ質問の faq があります: ${dupQ[0]}`);
+    }
+  }
+  if (a.cta !== undefined && (typeof a.cta?.lead !== "string" || !a.cta.lead.trim())) errors.push("cta は { lead: 相談の案内の一文 } にする");
+  // 12. 抜き出されても意味が通る節: h2 の直後の段落が指示語で始まる／h2 が話題名だけ
+  const firstSentences = sections.map((x, k) => ({ title: x.title, s: plain((html.split(/<h2>/i)[k + 1] ?? "").split(/<\/h2>/i)[1]?.match(/<p>([\s\S]*?)<\/p>/i)?.[1] ?? "").replace(/（[^）]*）/g, (m) => m.replace(/。/g, "．")).split("。")[0] }));
+  const deictic = firstSentences.filter((x) => /^(この|これ|こうした|こうして|このように|上記|以下|次の|前述|そのため|それ)/.test(x.s));
+  if (deictic.length) warnings.push(`h2 の直後の段落が指示語で始まっています（${deictic.map((x) => x.title.slice(0, 15)).join("・")}）。節だけ読んでも分かるように主語から書く（品質チェック12）`);
+  const noAnswer = firstSentences.filter((x) => /(次のように|以下のように|次のとおり|以下のとおり|次の(?:仕組み|手順|表|式|[0-9０-９一二三四五六七八九十]+つ)|(?:^|、)以下の|下の表|について(?:説明|解説|紹介|整理)し|を(?:説明|解説|紹介)します$)/.test(x.s));
+  if (noAnswer.length) warnings.push(`h2 の1文目が答えになっていません（${noAnswer.map((x) => x.title.slice(0, 15)).join("・")}）。「次のように説明しています」ではなく、その節の答えを1文目に書く（品質チェック12）`);
+  // 話題名だけの見出し（「まとめ」は対象外）
+  const topicOnly = h2s.filter((h) => /(について|とは|の関係|の注意|の注意点|の基本|の進め方|の概要|のポイント|の種類|の特徴)(?:（[^）]*）)?$/.test(h.trim()));
+  if (topicOnly.length) warnings.push(`話題名だけの h2 があります（${topicOnly.join("・")}）。答え（主張）か具体的な問いの形にする（品質チェック12）`);
+  const longH2 = h2s.filter((h) => [...h].length > 50);
+  if (longH2.length) warnings.push(`50字を超える h2 があります（${longH2.map((h) => h.slice(0, 15) + "…" + [...h].length + "字").join("・")}）。目次で読めるよう、答えの核だけを見出しにし、条件は1文目に回す`);
+  // summary（結論）と本文の文の重複（同じ文を3か所に繰り返さない）
+  if (typeof a.summary === "string") {
+    // 20字以上の同じ文字列が summary と冒頭段落・まとめ（最後の h2 の節）にあれば、言い直しになっている
+    // 括弧書き（媒体名の言い換えなど）は一致しても言い直しではないので外して比べる
+    const noParen = (t) => t.replace(/（[^）]*）/g, "");
+    const sum = noParen(a.summary.replace(/\s+/g, ""));
+    const common = (t0) => { const t = noParen(t0); for (let n = sum.length; n >= 20; n--) for (let i = 0; i + n <= sum.length; i++) if (t.includes(sum.slice(i, i + n))) return sum.slice(i, i + n); return ""; };
+    const lastSec = plain(html.split(/<h2>/i).at(-1) ?? "");
+    const hit = common(lead) || common(lastSec);
+    if (hit) warnings.push(`summary と冒頭段落かまとめに同じ文字列があります（「${hit.slice(0, 24)}」）。summary は答えと最大の条件、冒頭段落は根拠と前提、まとめは読者が次にやることで書き分ける（品質チェック13）`);
+  }
+  // 表・図の直前の文が案内だけ（「下の表は〜です」）: 表の結論を書く（品質チェック12）
+  const tableLeads = [...html.matchAll(/<p>([^<]*(?:<(?!\/p>)[^<]*)*)<\/p>\s*<(?:table|figure)>/gi)].map((m) => plain(m[1])).filter((t) => /^(下の|次の|以下の)(表|図)|(表|図)(は|に)?(次|以下)のとおり|を(表|図)にまとめ(ました|ます)。?$/.test(t));
+  if (tableLeads.length) warnings.push(`表・図の直前の文が案内だけです（${tableLeads.map((t) => t.slice(0, 15)).join("・")}）。表・図から言える結論を書く（品質チェック12）`);
+  // 図番号は出現順（図1、図2…）
+  const figNums = [...html.matchAll(/<figcaption>\s*図(\d+)/gi)].map((m) => Number(m[1]));
+  if (figNums.some((n, i) => n !== i + 1)) warnings.push(`図番号が出現順になっていません（${figNums.join("→")}）。本文中の「図N」の参照もあわせて直す`);
+  // 根拠のない言い切りの候補（レビュー用。出典リンクも計算もない段落で、実務感覚の一般化に多い言い回し）
+  const hunch = [...html.matchAll(/<p>([\s\S]*?)<\/p>/gi)].map((m) => m[1]).filter((p) => !/#source-|[×÷＝=]/.test(p)).flatMap((p) => plain(p).split("。").filter((x) => /(がちです|現実的です|しやすくなります|こともあるためです|おすすめです|が一般的です|が多いです|と言えます)$/.test(x)));
+  if (hunch.length) warnings.push(`根拠のない言い切りの候補が${hunch.length}文あります（${hunch.slice(0, 3).map((x) => x.slice(-25)).join("／")}）。出典・計算・定義につながらなければ削るか公式の記述に置き換える（品質チェック14）`);
+  // 8. 煽る語（中身と関係なく強く見せる表現）
+  const hypeTitle = (a.title + a.description).match(/完全ガイド|完全版|徹底解説|決定版|保存版|これだけで/g);
+  if (hypeTitle) warnings.push(`タイトル・description に煽る語があります（${[...new Set(hypeTitle)].join("・")}）。答えか読む価値を具体的に書く（評価基準8）`);
+  // 時点の但し書き: 「◯年◯月◯日時点の公式情報に基づく」の日付は、媒体仕様・料金・法令の出典をまとめて確認した日
+  // （どれかの出典の確認日と一致するはず）。位置は冒頭か最初の h2 の節まで。「2026年4月1日時点では〜」のような仕様の説明は対象外
+  const accessed = new Set((Array.isArray(sources) ? sources : []).map((s) => s?.accessedAt).filter(isDate));
+  const untilSecondH2 = plain(html.split(/<h2>/i).slice(0, 2).join(""));
+  for (const m of plain(html).matchAll(/(\d{4})年(\d{1,2})月(\d{1,2})日時点の[^。]{0,30}に基づ/g)) {
+    const d = `${m[1]}-${m[2].padStart(2, "0")}-${m[3].padStart(2, "0")}`;
+    if (accessed.size && !accessed.has(d)) warnings.push(`「${m[1]}年${m[2]}月${m[3]}日時点」がどの出典の確認日（accessedAt）とも一致しません。出典をまとめて確認した日にする`);
+    if (!untilSecondH2.includes(m[0])) warnings.push(`時点の但し書き（${m[1]}年${m[2]}月${m[3]}日時点）は冒頭か最初の h2 の節に置く`);
+  }
+  // summary・faq の「◯年◯月◯日時点」も出典の確認日と合わせる（見直しで更新し忘れやすい）
+  const extra = (a.summary ?? "") + (Array.isArray(a.faq) ? a.faq.map((f) => f?.answer ?? "").join("") : "");
+  for (const m of extra.matchAll(/(\d{4})年(\d{1,2})月(\d{1,2})日時点/g)) {
+    const d = `${m[1]}-${m[2].padStart(2, "0")}-${m[3].padStart(2, "0")}`;
+    if (accessed.size && !accessed.has(d)) warnings.push(`summary・faq の「${m[0]}」がどの出典の確認日とも一致しません。見直しのときに本文の但し書きと一緒に更新する`);
   }
 
   const chars = html.replace(/<[^>]+>/g, "").replace(/\s+/g, "").length;
@@ -321,6 +401,11 @@ function main() {
           }
           if (figs < planned) warnings.push(`企画メモで図解を${planned}枚「作成」としているのに、記事の図は${figs}枚です`);
         } else if (memoVer >= 5) warnings.push("企画メモに図解の候補の表（| 図解の候補（箇所） | 図の種類 | 判断 | 作らない理由 |）がありません。図にしたほうが分かりやすい箇所をすべて挙げる");
+        if (memoVer >= 6 && /\|\s*自社の見解/.test(memo)) warnings.push("企画メモの主張と根拠の判定に「自社の見解」が残っています（v6で廃止。判断基準／定義からの帰結／自社の公開情報 などに付け直す）");
+        if (memoVer >= 6 && (!data.summary || !data.takeaways?.length)) warnings.push("ガイドv6以降の記事に summary（結論）・takeaways（この記事でわかること）がありません");
+        // 自社で作った図の明示（品質チェック14）: figcaption の末尾に「（…Framework作成）」
+        const noCredit = memoVer >= 6 ? [...data.content.matchAll(/<figcaption>([\s\S]*?)<\/figcaption>/gi)].map((m) => m[1]).filter((c) => !/Framework作成）$/.test(c.trim())) : [];
+        if (noCredit.length) warnings.push(`figcaption の末尾に「（Framework作成）」がない図があります（${noCredit.map((c) => c.slice(0, 12)).join("・")}）`);
         if (!/次回見直し予定日[：:][^\n]*\d{4}-\d{2}(-\d{2})?/.test(memo)) warnings.push("企画メモに次回見直し予定日（YYYY-MM-DD）がありません（評価基準10）");
       }
     }

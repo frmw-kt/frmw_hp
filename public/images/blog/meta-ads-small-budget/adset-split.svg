@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" width="720" height="500" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>広告セットを集約した場合と5つに分けた場合の、週50件に届く単価の比較</title>
+  <desc>月10万円を1つの広告セットに集めると、週50件に届く単価は約465円以下。5つに均等に分けると1つあたり月2万円になり、週50件に届く単価は約93円以下になる。月10万円・均等に5分割・1か月＝4.3週は計算例（仮定）。</desc>
+  <rect x="0" y="0" width="720" height="500" fill="#ffffff"/>
+
+  <text x="190" y="54" font-size="28" font-weight="700" fill="#191c19" text-anchor="middle">1つに集約</text>
+  <text x="530" y="54" font-size="28" font-weight="700" fill="#191c19" text-anchor="middle">5つに分割</text>
+  <line x1="360" y1="24" x2="360" y2="400" stroke="#e3e2dc" stroke-width="2"/>
+
+  <rect x="50" y="80" width="280" height="90" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="3"/>
+  <text x="190" y="136" font-size="28" font-weight="700" fill="#191c19" text-anchor="middle">月10万円</text>
+
+  <rect x="388" y="80" width="50" height="90" rx="6" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <rect x="446" y="80" width="50" height="90" rx="6" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <rect x="504" y="80" width="50" height="90" rx="6" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <rect x="562" y="80" width="50" height="90" rx="6" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <rect x="620" y="80" width="50" height="90" rx="6" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="413" y="133" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">2万</text>
+  <text x="471" y="133" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">2万</text>
+  <text x="529" y="133" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">2万</text>
+  <text x="587" y="133" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">2万</text>
+  <text x="645" y="133" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">2万</text>
+
+  <text x="190" y="218" font-size="24" fill="#41483c" text-anchor="middle">÷ 4.3週 ÷ 50件</text>
+  <text x="529" y="218" font-size="24" fill="#41483c" text-anchor="middle">÷ 4.3週 ÷ 50件</text>
+
+  <rect x="50" y="244" width="280" height="130" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="190" y="290" font-size="24" fill="#191c19" text-anchor="middle">週50件に届く単価</text>
+  <text x="190" y="345" font-size="34" font-weight="700" fill="#806222" text-anchor="middle">約465円以下</text>
+
+  <rect x="388" y="244" width="282" height="130" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="529" y="290" font-size="24" fill="#191c19" text-anchor="middle">週50件に届く単価</text>
+  <text x="529" y="345" font-size="34" font-weight="700" fill="#806222" text-anchor="middle">約93円以下</text>
+
+  <text x="30" y="438" font-size="22" fill="#41483c">※月10万円を5つに均等に分けた場合の計算例（仮定）</text>
+  <text x="30" y="472" font-size="22" fill="#41483c">　1か月＝4.3週で換算。単価は円未満を四捨五入</text>
+</svg>

@@ -17,7 +17,7 @@
 
   <line x1="110" y1="262" x2="110" y2="302" stroke="#c9a84c" stroke-width="4"/>
   <polygon points="99,300 121,300 110,316" fill="#c9a84c"/>
-  <text x="140" y="296" font-size="24" fill="#41483c">÷ 50件（学習が進む目安）</text>
+  <text x="140" y="296" font-size="24" fill="#41483c">÷ 50件（情報収集期間を抜ける目安）</text>
 
   <rect x="30" y="320" width="660" height="88" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
   <text x="60" y="375" font-size="30" font-weight="700" fill="#191c19">③ 週50件に届く単価</text>
@@ -37,7 +37,7 @@
   <rect x="370" y="492" width="320" height="128" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
   <text x="530" y="536" font-size="26" font-weight="700" fill="#806222" text-anchor="middle">取れない</text>
   <text x="530" y="570" font-size="26" fill="#191c19" text-anchor="middle">手前の段階で最適化</text>
-  <text x="530" y="602" font-size="22" fill="#41483c" text-anchor="middle">（LP閲覧・カート追加など）</text>
+  <text x="530" y="602" font-size="22" fill="#41483c" text-anchor="middle">（コンテンツビューなど）</text>
 
   <text x="30" y="660" font-size="22" fill="#41483c">※10万円は計算例（仮定）。1か月＝4.3週で換算</text>
 </svg>

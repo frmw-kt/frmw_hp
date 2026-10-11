@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" width="800" height="620" role="img" aria-label="Google広告は審査がほとんど1営業日以内、Meta広告は審査がほとんど24時間以内のあと情報収集期間が通常1週間以内に約50件の結果で終わり、SEOは変更の反映に数時間から数か月かかって数週間待ってから確認し、MEOは情報の整備はすぐ始められるが口コミやリンクは徐々に増えることを並べた図">
+  <rect width="800" height="620" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">成果を確かめられるまでの時間（公式の記述）</text>
+
+    <text x="32" y="100" font-size="24" font-weight="700" fill="#806222">Google広告</text>
+    <rect x="32" y="114" width="356" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="48" y="155" font-size="22" fill="#41483c">審査：ほとんど1営業日以内</text>
+    <path d="M392 146 L408 146" stroke="#806222" stroke-width="4"/>
+    <path d="M404 136 L418 146 L404 156 Z" fill="#806222"/>
+    <rect x="420" y="114" width="348" height="64" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+    <text x="436" y="155" font-size="22" fill="#41483c">配信。止めれば訪問も止まる</text>
+
+    <text x="32" y="226" font-size="24" font-weight="700" fill="#806222">Meta広告</text>
+    <rect x="32" y="240" width="356" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="48" y="281" font-size="22" fill="#41483c">審査：ほとんど24時間以内</text>
+    <path d="M392 272 L408 272" stroke="#806222" stroke-width="4"/>
+    <path d="M404 262 L418 272 L404 282 Z" fill="#806222"/>
+    <rect x="420" y="240" width="348" height="64" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+    <text x="436" y="268" font-size="22" font-weight="700" fill="#191c19">情報収集期間</text>
+    <text x="436" y="294" font-size="22" fill="#41483c">通常1週間以内に約50件で終了</text>
+
+    <text x="32" y="352" font-size="24" font-weight="700" fill="#806222">SEO（自然検索）</text>
+    <rect x="32" y="366" width="356" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="48" y="407" font-size="22" fill="#41483c">変更の反映：数時間〜数か月</text>
+    <path d="M392 398 L408 398" stroke="#806222" stroke-width="4"/>
+    <path d="M404 388 L418 398 L404 408 Z" fill="#806222"/>
+    <rect x="420" y="366" width="348" height="64" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+    <text x="436" y="407" font-size="22" fill="#41483c">数週間待ってから効果を確認</text>
+
+    <text x="32" y="478" font-size="24" font-weight="700" fill="#806222">MEO（地図検索の対策）</text>
+    <rect x="32" y="492" width="356" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="48" y="533" font-size="22" fill="#41483c">情報の整備はすぐ始められる</text>
+    <path d="M392 524 L408 524" stroke="#806222" stroke-width="4"/>
+    <path d="M404 514 L418 524 L404 534 Z" fill="#806222"/>
+    <rect x="420" y="492" width="348" height="64" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+    <text x="436" y="533" font-size="22" fill="#41483c">口コミ・リンクは徐々に増える</text>
+
+    <text x="32" y="598" font-size="22" fill="#41483c">※箱の長さは時間の比率ではありません</text>
+  </g>
+</svg>

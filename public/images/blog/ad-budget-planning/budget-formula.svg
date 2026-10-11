@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
-  <rect width="800" height="700" rx="16" fill="#f7f7f4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 730" width="800" height="730" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="730" rx="16" fill="#f7f7f4"/>
 
   <!-- 手順1〜3 限界CPA -->
   <text x="30" y="50" font-size="24" font-weight="700" fill="#191c19">手順1〜3　限界CPA（粗利がすべて広告費に消える額）</text>
@@ -59,5 +59,6 @@
 
   <!-- 注記 -->
   <text x="30" y="658" font-size="22" fill="#41483c">成約までの割合＝商談化率40%×成約率25%</text>
-  <text x="30" y="688" font-size="22" fill="#41483c">1件で残す利益＝成約1件で残す15万円×10%（数値はすべて仮定）</text>
+  <text x="30" y="688" font-size="22" fill="#41483c">（商談化率は問い合わせ→商談、成約率は商談→成約の割合）</text>
+  <text x="30" y="718" font-size="22" fill="#41483c">1件で残す利益＝成約1件で残す15万円×10%（数値はすべて仮定）</text>
 </svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="480" fill="#f7f7f4"/>
+  <text x="400" y="48" font-size="26" fill="#191c19" text-anchor="middle" font-weight="bold">どの段階で減っているかで、直す手順を選ぶ</text>
+  <rect x="20" y="80" width="175" height="64" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="107" y="120" font-size="22" fill="#191c19" text-anchor="middle">入口のページ</text>
+  <rect x="215" y="80" width="175" height="64" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="302" y="120" font-size="22" fill="#191c19" text-anchor="middle">サービス・料金</text>
+  <rect x="410" y="80" width="175" height="64" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="497" y="120" font-size="22" fill="#191c19" text-anchor="middle">フォームを開く</text>
+  <rect x="605" y="80" width="175" height="64" rx="8" fill="#191c19"/>
+  <text x="692" y="120" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">送信完了</text>
+  <polygon points="197,104 212,112 197,120" fill="#806222"/>
+  <polygon points="392,104 407,112 392,120" fill="#806222"/>
+  <polygon points="587,104 602,112 587,120" fill="#806222"/>
+  <path d="M30 160 L30 172 L380 172 L380 160" fill="none" stroke="#806222" stroke-width="3"/>
+  <path d="M420 160 L420 172 L770 172 L770 160" fill="none" stroke="#806222" stroke-width="3"/>
+  <line x1="205" y1="172" x2="205" y2="190" stroke="#806222" stroke-width="3"/>
+  <line x1="595" y1="172" x2="595" y2="190" stroke="#806222" stroke-width="3"/>
+  <text x="205" y="220" font-size="22" fill="#806222" text-anchor="middle" font-weight="bold">入口から先へ進まない</text>
+  <text x="595" y="220" font-size="22" fill="#806222" text-anchor="middle" font-weight="bold">フォームを開いても送らない</text>
+  <rect x="30" y="238" width="350" height="104" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="205" y="280" font-size="24" fill="#191c19" text-anchor="middle">手順3　導線</text>
+  <text x="205" y="320" font-size="24" fill="#191c19" text-anchor="middle">手順5　信頼の材料</text>
+  <rect x="420" y="238" width="350" height="104" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="595" y="298" font-size="24" fill="#191c19" text-anchor="middle">手順4　フォーム</text>
+  <rect x="20" y="368" width="760" height="92" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="405" font-size="22" fill="#41483c" text-anchor="middle">入口ごとの数：GA4 ランディング ページ レポート</text>
+  <text x="400" y="440" font-size="22" fill="#41483c" text-anchor="middle">段階ごとの減り方：GA4 ファネルデータ探索</text>
+</svg>

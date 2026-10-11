@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="520" fill="#f7f7f4"/>
+  <g fill="none" stroke="#806222" stroke-width="3">
+    <path d="M400,110 L400,135 L205,135 L205,160"/>
+    <path d="M400,135 L595,135 L595,160"/>
+    <path d="M205,260 L205,290 L112,290 L112,320"/>
+    <path d="M205,290 L298,290 L298,320"/>
+    <path d="M595,260 L595,290 L502,290 L502,320"/>
+    <path d="M595,290 L688,290 L688,320"/>
+  </g>
+  <rect x="220" y="20" width="360" height="90" rx="12" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <g stroke="#e3e2dc" stroke-width="2" fill="#ffffff">
+    <rect x="30" y="160" width="350" height="100" rx="12"/>
+    <rect x="420" y="160" width="350" height="100" rx="12"/>
+    <rect x="30" y="320" width="165" height="80" rx="12"/>
+    <rect x="215" y="320" width="165" height="80" rx="12"/>
+    <rect x="420" y="320" width="165" height="80" rx="12"/>
+    <rect x="605" y="320" width="165" height="80" rx="12"/>
+  </g>
+  <g font-size="28" font-weight="700" fill="#191c19" text-anchor="middle">
+    <text x="400" y="58">キャンペーン</text>
+    <text x="205" y="200">広告セット</text>
+    <text x="595" y="200">広告セット</text>
+    <text x="112" y="370">広告</text>
+    <text x="298" y="370">広告</text>
+    <text x="502" y="370">広告</text>
+    <text x="688" y="370">広告</text>
+  </g>
+  <g font-size="24" fill="#41483c" text-anchor="middle">
+    <text x="400" y="94">目的・購入タイプ</text>
+    <text x="205" y="240">対象・配置・予算・期間</text>
+    <text x="595" y="240">対象・配置・予算・期間</text>
+  </g>
+  <g font-size="24" fill="#191c19" text-anchor="middle">
+    <text x="400" y="452">広告：名義・フォーマット・クリエイティブ</text>
+    <text x="400" y="492">上の段に、下の段が1つ以上入る</text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="500" fill="#ffffff"/>
+  <defs>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <rect x="30" y="20" width="360" height="80" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="210" y="56" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">代理店のMCCから</text>
+  <text x="210" y="88" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">新しく作成</text>
+  <rect x="410" y="20" width="360" height="80" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="590" y="56" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">自社で作成し、</text>
+  <text x="590" y="88" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">代理店のMCCとリンク</text>
+  <line x1="210" y1="100" x2="210" y2="144" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+  <line x1="590" y1="100" x2="590" y2="144" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+  <rect x="30" y="150" width="360" height="110" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="210" y="196" font-size="24" text-anchor="middle" fill="#806222" font-weight="bold">MCCが自動的に</text>
+  <text x="210" y="232" font-size="24" text-anchor="middle" fill="#806222" font-weight="bold">オーナーになる</text>
+  <rect x="410" y="150" width="360" height="110" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="590" y="196" font-size="24" text-anchor="middle" fill="#806222" font-weight="bold">初期設定ではオーナーなし</text>
+  <text x="590" y="232" font-size="22" text-anchor="middle" fill="#41483c">（自社が有効にしたときだけ）</text>
+  <line x1="30" y1="296" x2="770" y2="296" stroke="#e3e2dc" stroke-width="2"/>
+  <rect x="30" y="320" width="740" height="150" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="400" y="360" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">どちらの場合も</text>
+  <text x="400" y="400" font-size="24" text-anchor="middle" fill="#41483c">データは広告アカウントが所有し、</text>
+  <text x="400" y="440" font-size="24" text-anchor="middle" fill="#41483c">MCCとのリンクは広告アカウント側で解除できる</text>
+</svg>

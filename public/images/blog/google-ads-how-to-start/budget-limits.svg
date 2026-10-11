@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" width="800" height="470" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>月10万円（仮定）から1日の平均予算と費用の上限を出す計算</title>
+  <desc>月の予算10万円を30.4で割ると、1日の平均予算は約3,280円（10円未満を切り捨て）。ほとんどのキャンペーンでは、1日の費用の上限はその2倍の約6,560円、1か月の費用の上限は30.4倍の99,712円。月10万円は説明のための仮定。</desc>
+  <rect width="800" height="470" fill="#f7f7f4"/>
+  <text x="32" y="46" font-size="28" font-weight="700" fill="#191c19">月の予算から1日の平均予算と上限を出す</text>
+
+  <rect x="32" y="74" width="260" height="110" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="162" y="116" font-size="24" fill="#41483c" text-anchor="middle">月の予算（仮定）</text>
+  <text x="162" y="162" font-size="32" font-weight="700" fill="#191c19" text-anchor="middle">10万円</text>
+
+  <text x="400" y="122" font-size="28" font-weight="700" fill="#806222" text-anchor="middle">÷ 30.4</text>
+  <path d="M310 140 L478 140" stroke="#806222" stroke-width="4"/>
+  <path d="M474 128 L492 140 L474 152 Z" fill="#806222"/>
+
+  <rect x="508" y="74" width="260" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="638" y="116" font-size="24" fill="#41483c" text-anchor="middle">1日の平均予算</text>
+  <text x="638" y="162" font-size="32" font-weight="700" fill="#806222" text-anchor="middle">約3,280円</text>
+
+  <path d="M638 186 L638 214 L212 214 L212 242" stroke="#c9a84c" stroke-width="3" fill="none"/>
+  <path d="M638 214 L588 214 L588 242" stroke="#c9a84c" stroke-width="3" fill="none"/>
+
+  <rect x="32" y="246" width="360" height="120" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="212" y="290" font-size="22" fill="#41483c" text-anchor="middle">1日の費用の上限（×2）</text>
+  <text x="212" y="340" font-size="32" font-weight="700" fill="#191c19" text-anchor="middle">約6,560円</text>
+
+  <rect x="408" y="246" width="360" height="120" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="588" y="290" font-size="22" fill="#41483c" text-anchor="middle">1か月の費用の上限（×30.4）</text>
+  <text x="588" y="340" font-size="32" font-weight="700" fill="#191c19" text-anchor="middle">99,712円</text>
+
+  <text x="32" y="412" font-size="22" fill="#41483c">※月10万円は説明のための仮定。10円未満を切り捨て</text>
+  <text x="32" y="446" font-size="22" fill="#41483c">※上限の倍率は、ほとんどのキャンペーンの場合</text>
+</svg>

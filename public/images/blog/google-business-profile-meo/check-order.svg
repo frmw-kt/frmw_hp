@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 660" width="800" height="660" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>効果を確かめる順番：閲覧数、検索語句、通話・ルート・クリック、実際の件数</title>
+  <desc>月に1度、パフォーマンスで次の順に確かめる。1 閲覧数：見つけられているか（ユニークユーザー。同じ人は1日1回）。2 検索語句：カテゴリやサービスの語で探されているか（毎月月初に更新）。3 通話・ルート・ウェブサイトのクリック：行動につながったか。4 実際の予約・来店・問い合わせの件数と並べる（通話はボタンのクリック数）。順位は検索する場所で変わるため、1か所から調べた順位だけで判断しない。</desc>
+  <rect width="800" height="660" fill="#f7f7f4"/>
+  <text x="32" y="44" font-size="28" font-weight="700" fill="#191c19">効果を確かめる順番（月に1度）</text>
+
+  <rect x="32" y="66" width="736" height="100" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="106" font-size="26" font-weight="700" fill="#191c19">1 閲覧数：見つけられているか</text>
+  <text x="56" y="146" font-size="22" fill="#41483c">ユニークユーザー数（同じ人は1日1回）</text>
+
+  <rect x="32" y="182" width="736" height="100" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="222" font-size="26" font-weight="700" fill="#191c19">2 検索語句：何の語で探されたか</text>
+  <text x="56" y="262" font-size="22" fill="#41483c">カテゴリ・サービスの語があるか（月初に更新）</text>
+
+  <rect x="32" y="298" width="736" height="100" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="338" font-size="26" font-weight="700" fill="#191c19">3 通話・ルート・サイトのクリック</text>
+  <text x="56" y="378" font-size="22" fill="#41483c">見た人が行動につながったか</text>
+
+  <rect x="32" y="414" width="736" height="100" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="56" y="454" font-size="26" font-weight="700" fill="#806222">4 実際の予約・来店・問い合わせ</text>
+  <text x="56" y="494" font-size="22" fill="#41483c">3と並べる（通話はボタンのクリック数）</text>
+
+  <rect x="32" y="534" width="736" height="106" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="56" y="576" font-size="22" fill="#41483c">順位は検索する場所で変わる（距離が要素のため）</text>
+  <text x="56" y="614" font-size="22" fill="#41483c">1か所から調べた順位だけで判断しない</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" width="800" height="540" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="540" fill="#f7f7f4"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <rect x="20" y="20" width="500" height="410" rx="14" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="270" y="64" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">自社のビジネスポートフォリオ</text>
+  <g stroke="#e3e2dc" stroke-width="2" fill="#f7f7f4">
+    <rect x="50" y="92" width="440" height="68" rx="10"/>
+    <rect x="50" y="174" width="440" height="68" rx="10"/>
+    <rect x="50" y="256" width="440" height="68" rx="10"/>
+    <rect x="50" y="338" width="440" height="68" rx="10"/>
+  </g>
+  <g font-size="24" fill="#41483c">
+    <text x="74" y="135">Facebookページ</text>
+    <text x="74" y="217">Instagramアカウント</text>
+    <text x="74" y="299">広告アカウント</text>
+    <text x="74" y="381">Metaピクセル</text>
+  </g>
+  <rect x="580" y="150" width="200" height="130" rx="14" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <g font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">
+    <text x="680" y="207">広告会社など</text>
+    <text x="680" y="247">（パートナー）</text>
+  </g>
+  <line x1="523" y1="215" x2="575" y2="215" stroke="#806222" stroke-width="3" marker-end="url(#arrow)"/>
+  <g font-size="24" fill="#806222" font-weight="700" text-anchor="middle">
+    <text x="680" y="324">必要なアセットへ</text>
+    <text x="680" y="358">アクセスを付与</text>
+  </g>
+  <g font-size="24" fill="#191c19" text-anchor="middle">
+    <text x="400" y="478">アセットは1つのポートフォリオにだけ所属</text>
+    <text x="400" y="516">パートナーに渡すのはアクセスだけ</text>
+  </g>
+</svg>

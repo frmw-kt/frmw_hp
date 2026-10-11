@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>業者に任せるときに、契約前・運用中・解約時に確かめること</title>
+  <desc>自社は常にオーナー権限を持ち、業者は管理者として参加する。契約前：管理は有料でプロフィール自体は無料であることを書面で通知してもらい、サービスと費用を書いた契約書を受け取る。運用中：すべての変更を通知してもらい、パフォーマンスを共有してもらう。月に1度、成果と写真・営業時間を確認する。解約時：通知から7営業日以内に、管理を自社だけに戻してもらう。</desc>
+  <rect width="800" height="640" fill="#f7f7f4"/>
+  <text x="32" y="44" font-size="28" font-weight="700" fill="#191c19">業者に任せるときに確かめること</text>
+
+  <rect x="32" y="66" width="736" height="60" rx="10" fill="#806222"/>
+  <text x="400" y="105" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">自社は常にオーナー、業者は管理者</text>
+
+  <rect x="32" y="146" width="736" height="128" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="186" font-size="26" font-weight="700" fill="#806222">契約前</text>
+  <text x="56" y="224" font-size="22" fill="#41483c">管理は有料・プロフィールは無料と書面で通知</text>
+  <text x="56" y="258" font-size="22" fill="#41483c">サービスと費用を書いた契約書を受け取る</text>
+
+  <path d="M400 278 L400 300" stroke="#806222" stroke-width="4"/>
+  <path d="M388 296 L400 312 L412 296 Z" fill="#806222"/>
+
+  <rect x="32" y="314" width="736" height="162" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="354" font-size="26" font-weight="700" fill="#806222">運用中</text>
+  <text x="56" y="392" font-size="22" fill="#41483c">すべての変更を通知してもらう</text>
+  <text x="56" y="426" font-size="22" fill="#41483c">パフォーマンスを共有してもらう</text>
+  <text x="56" y="460" font-size="22" fill="#41483c">月に1度、成果と写真・営業時間を確認する</text>
+
+  <path d="M400 480 L400 502" stroke="#806222" stroke-width="4"/>
+  <path d="M388 498 L400 514 L412 498 Z" fill="#806222"/>
+
+  <rect x="32" y="516" width="736" height="104" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="556" font-size="26" font-weight="700" fill="#806222">解約時</text>
+  <text x="56" y="594" font-size="22" fill="#41483c">通知から7営業日以内に、管理を自社だけに戻す</text>
+</svg>

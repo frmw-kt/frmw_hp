@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="560" fill="#ffffff"/>
+  <rect x="20" y="20" width="760" height="64" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="61" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">媒体の件数と、同じ期間の自社の実数を並べる</text>
+  <rect x="20" y="104" width="760" height="190" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="4"/>
+  <text x="40" y="148" font-size="24" fill="#806222" font-weight="bold">実数を大きく</text>
+  <text x="40" y="180" font-size="24" fill="#806222" font-weight="bold">上回る</text>
+  <text x="40" y="216" font-size="22" fill="#191c19">→ 重複を疑う</text>
+  <text x="240" y="146" font-size="22" fill="#41483c">・同じ行動をメインに2つ置いている</text>
+  <text x="240" y="186" font-size="22" fill="#41483c">・問い合わせのカウントが「すべて」</text>
+  <text x="240" y="226" font-size="22" fill="#41483c">・ピクセルとコンバージョンAPIの重複除外</text>
+  <text x="240" y="266" font-size="22" fill="#41483c">・完了ページが送信しなくても表示される</text>
+  <rect x="20" y="310" width="760" height="110" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="40" y="354" font-size="24" fill="#191c19" font-weight="bold">少なすぎる</text>
+  <text x="40" y="390" font-size="22" fill="#191c19">→ 漏れを疑う</text>
+  <text x="240" y="354" font-size="22" fill="#41483c">・テスト送信で1件記録されるか</text>
+  <text x="240" y="394" font-size="22" fill="#41483c">・電話・LINE・外部予約の経路があるか</text>
+  <rect x="20" y="436" width="760" height="110" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="40" y="480" font-size="24" fill="#191c19" font-weight="bold">差が急に</text>
+  <text x="40" y="516" font-size="24" fill="#191c19" font-weight="bold">変わった</text>
+  <text x="240" y="480" font-size="22" fill="#41483c">・サイトの改修で完了ページが変わった</text>
+  <text x="240" y="520" font-size="22" fill="#41483c">・タグが外れた／媒体の仕様が変わった</text>
+</svg>

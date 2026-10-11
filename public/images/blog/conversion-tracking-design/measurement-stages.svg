@@ -6,7 +6,7 @@
     </marker>
   </defs>
   <rect x="20" y="28" width="370" height="58" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
-  <text x="205" y="66" font-size="22" fill="#41483c" text-anchor="middle">サイト上・電話で起きる：タグで測る</text>
+  <text x="205" y="66" font-size="22" fill="#41483c" text-anchor="middle">サイト上・電話：タグで測る</text>
   <rect x="20" y="110" width="170" height="120" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
   <text x="105" y="160" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">手前の行動</text>
   <text x="105" y="200" font-size="22" fill="#41483c" text-anchor="middle">ページ表示</text>

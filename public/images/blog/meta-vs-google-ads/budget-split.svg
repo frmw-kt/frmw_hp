@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>月10万円を1つの媒体に集中した場合と、2つの媒体に半分ずつ分けた場合の、Meta広告で週50件に届く単価の比較</title>
+  <desc>月10万円をMeta広告だけに使うと週50件に届く単価は約465円以下。Google広告とMeta広告に5万円ずつ分けると、Meta広告で週50件に届く単価は約233円以下になる。月10万円・半分ずつ・1か月＝4.3週は計算例（仮定）。</desc>
+  <rect x="0" y="0" width="720" height="520" fill="#ffffff"/>
+
+  <text x="180" y="50" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">1つの媒体に集中</text>
+  <text x="535" y="50" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">2つの媒体に半分ずつ</text>
+  <line x1="360" y1="22" x2="360" y2="400" stroke="#e3e2dc" stroke-width="2"/>
+
+  <!-- 左：Meta広告 月10万円 -->
+  <rect x="50" y="76" width="260" height="96" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="3"/>
+  <text x="180" y="116" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">Meta広告</text>
+  <text x="180" y="154" font-size="26" font-weight="700" fill="#806222" text-anchor="middle">月10万円</text>
+
+  <!-- 右：Google広告 5万円・Meta広告 5万円 -->
+  <rect x="380" y="76" width="150" height="96" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="3"/>
+  <text x="455" y="116" font-size="22" font-weight="700" fill="#41483c" text-anchor="middle">Google広告</text>
+  <text x="455" y="154" font-size="24" font-weight="700" fill="#41483c" text-anchor="middle">月5万円</text>
+  <rect x="545" y="76" width="150" height="96" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="3"/>
+  <text x="620" y="116" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">Meta広告</text>
+  <text x="620" y="154" font-size="24" font-weight="700" fill="#806222" text-anchor="middle">月5万円</text>
+
+  <!-- 矢印と計算 -->
+  <line x1="180" y1="176" x2="180" y2="262" stroke="#41483c" stroke-width="3"/>
+  <polygon points="170,258 190,258 180,276" fill="#41483c"/>
+  <rect x="95" y="204" width="170" height="36" fill="#ffffff"/>
+  <text x="180" y="230" font-size="22" fill="#41483c" text-anchor="middle">÷4.3週 ÷50件</text>
+  <line x1="620" y1="176" x2="620" y2="262" stroke="#41483c" stroke-width="3"/>
+  <polygon points="610,258 630,258 620,276" fill="#41483c"/>
+  <rect x="535" y="204" width="170" height="36" fill="#ffffff"/>
+  <text x="620" y="230" font-size="22" fill="#41483c" text-anchor="middle">÷4.3週 ÷50件</text>
+
+  <!-- 結果 -->
+  <rect x="40" y="282" width="280" height="110" rx="8" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="180" y="324" font-size="22" fill="#41483c" text-anchor="middle">週50件に届く単価</text>
+  <text x="180" y="368" font-size="30" font-weight="700" fill="#191c19" text-anchor="middle">約465円以下</text>
+  <rect x="400" y="282" width="300" height="110" rx="8" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="550" y="324" font-size="22" fill="#41483c" text-anchor="middle">Metaで週50件に届く単価</text>
+  <text x="550" y="368" font-size="30" font-weight="700" fill="#806222" text-anchor="middle">約233円以下</text>
+
+  <text x="30" y="444" font-size="22" fill="#41483c">※月10万円・半分ずつ・1か月＝4.3週は計算例（仮定）</text>
+  <text x="30" y="478" font-size="22" fill="#41483c">　週約50件はMetaの情報収集期間を抜ける目安</text>
+  <text x="30" y="508" font-size="22" fill="#41483c">　単価は円未満を四捨五入</text>
+</svg>

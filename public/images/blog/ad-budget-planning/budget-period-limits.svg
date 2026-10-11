@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="600" rx="16" fill="#f7f7f4"/>
+  <text x="40" y="46" font-size="24" font-weight="700" fill="#191c19">1日の予算は平均の額。上限は期間の合計で決まる</text>
+
+  <!-- Google広告 -->
+  <text x="40" y="96" font-size="24" font-weight="700" fill="#191c19">Google広告：1日の平均予算</text>
+  <g fill="#c9a84c">
+    <rect x="60" y="190" width="40" height="40"/>
+    <rect x="120" y="170" width="40" height="60"/>
+    <rect x="180" y="200" width="40" height="30"/>
+    <rect x="240" y="130" width="40" height="100" fill="#806222"/>
+    <rect x="300" y="180" width="40" height="50"/>
+    <rect x="360" y="185" width="40" height="45"/>
+    <rect x="420" y="165" width="40" height="65"/>
+    <rect x="480" y="195" width="40" height="35"/>
+    <rect x="540" y="175" width="40" height="55"/>
+    <rect x="600" y="210" width="40" height="20"/>
+  </g>
+  <line x1="50" y1="180" x2="660" y2="180" stroke="#191c19" stroke-width="2" stroke-dasharray="8 6"/>
+  <line x1="50" y1="230" x2="660" y2="230" stroke="#41483c" stroke-width="2"/>
+  <text x="670" y="188" font-size="22" fill="#191c19">平均</text>
+  <text x="260" y="120" font-size="22" font-weight="700" text-anchor="middle" fill="#806222">最大2倍</text>
+  <text x="40" y="268" font-size="24" fill="#191c19">1か月の合計は1日の平均予算の30.4倍まで</text>
+  <text x="40" y="298" font-size="22" fill="#41483c">（ある日の最大2倍・1か月30.4倍ともに、ほとんどのキャンペーン）</text>
+
+  <!-- Meta広告 -->
+  <text x="40" y="356" font-size="24" font-weight="700" fill="#191c19">Meta広告：1日の予算</text>
+  <g fill="#c9a84c">
+    <rect x="60" y="435" width="56" height="45"/>
+    <rect x="136" y="392" width="56" height="88" fill="#806222"/>
+    <rect x="212" y="445" width="56" height="35"/>
+    <rect x="288" y="430" width="56" height="50"/>
+    <rect x="364" y="420" width="56" height="60"/>
+    <rect x="440" y="450" width="56" height="30"/>
+    <rect x="516" y="438" width="56" height="42"/>
+  </g>
+  <line x1="50" y1="430" x2="590" y2="430" stroke="#191c19" stroke-width="2" stroke-dasharray="8 6"/>
+  <line x1="50" y1="480" x2="590" y2="480" stroke="#41483c" stroke-width="2"/>
+  <text x="600" y="438" font-size="22" fill="#191c19">平均</text>
+  <text x="164" y="382" font-size="22" font-weight="700" text-anchor="middle" fill="#806222">最大1.75倍</text>
+  <g font-size="22" fill="#41483c" text-anchor="middle">
+    <text x="88" y="506">日</text><text x="164" y="506">月</text><text x="240" y="506">火</text><text x="316" y="506">水</text><text x="392" y="506">木</text><text x="468" y="506">金</text><text x="544" y="506">土</text>
+  </g>
+  <text x="40" y="546" font-size="24" fill="#191c19">1週間（日〜土）の合計は1日の予算の7倍まで</text>
+  <text x="40" y="578" font-size="22" fill="#41483c">予算共有をオンにすると上限が上がる。棒の高さはイメージ</text>
+</svg>

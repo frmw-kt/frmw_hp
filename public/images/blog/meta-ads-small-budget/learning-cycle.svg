@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 660" width="720" height="660" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>情報収集期間（いわゆる学習期間）の始まりと終わり</title>
+  <desc>広告セットの作成や大幅な編集で情報収集期間が始まる。配信列には「情報収集中」と表示され、安定度が低く、通常はCPAが高くなる。最後の大幅な編集から1週間以内に約50件の結果を得ると終わり、届く見込みがないと「情報収集が不十分」と表示される（ペナルティではない）。大幅な編集をすると再び情報収集期間に入る。</desc>
+  <rect x="0" y="0" width="720" height="660" fill="#ffffff"/>
+
+  <rect x="180" y="20" width="400" height="72" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="380" y="66" font-size="28" font-weight="700" fill="#191c19" text-anchor="middle">作成・大幅な編集</text>
+
+  <line x1="380" y1="94" x2="380" y2="122" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="369,120 391,120 380,136" fill="#c9a84c"/>
+
+  <rect x="70" y="138" width="620" height="150" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="380" y="182" font-size="28" font-weight="700" fill="#806222" text-anchor="middle">情報収集期間（いわゆる学習期間）</text>
+  <text x="380" y="224" font-size="24" fill="#191c19" text-anchor="middle">［配信］列の表示：「情報収集中」</text>
+  <text x="380" y="264" font-size="24" fill="#41483c" text-anchor="middle">安定度が低く、通常はCPAが高くなる</text>
+
+  <line x1="220" y1="290" x2="220" y2="322" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="209,320 231,320 220,336" fill="#c9a84c"/>
+  <line x1="540" y1="290" x2="540" y2="322" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="529,320 551,320 540,336" fill="#c9a84c"/>
+
+  <rect x="70" y="338" width="300" height="172" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="220" y="376" font-size="22" fill="#41483c" text-anchor="middle">最後の大幅な編集から</text>
+  <text x="220" y="406" font-size="22" fill="#41483c" text-anchor="middle">1週間以内に約50件</text>
+  <text x="220" y="452" font-size="28" font-weight="700" fill="#806222" text-anchor="middle">期間が終わる</text>
+  <text x="220" y="490" font-size="24" fill="#191c19" text-anchor="middle">配信が安定する</text>
+
+  <rect x="390" y="338" width="300" height="172" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="540" y="376" font-size="22" fill="#41483c" text-anchor="middle">1週間で約50件に</text>
+  <text x="540" y="406" font-size="22" fill="#41483c" text-anchor="middle">届く見込みがない</text>
+  <text x="540" y="452" font-size="26" font-weight="700" fill="#806222" text-anchor="middle">「情報収集が不十分」</text>
+  <text x="540" y="490" font-size="24" fill="#191c19" text-anchor="middle">ペナルティではない</text>
+
+  <line x1="220" y1="512" x2="220" y2="540" stroke="#41483c" stroke-width="3"/>
+  <polygon points="210,538 230,538 220,552" fill="#41483c"/>
+  <line x1="540" y1="512" x2="540" y2="540" stroke="#41483c" stroke-width="3"/>
+  <polygon points="530,538 550,538 540,552" fill="#41483c"/>
+
+  <rect x="70" y="554" width="620" height="76" rx="10" fill="#ffffff" stroke="#41483c" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="380" y="601" font-size="24" fill="#191c19" text-anchor="middle">大幅な編集をすると、再び情報収集期間に入る</text>
+
+  <polyline points="70,592 34,592 34,213 56,213" fill="none" stroke="#41483c" stroke-width="3" stroke-dasharray="8 6"/>
+  <polygon points="54,202 54,224 70,213" fill="#41483c"/>
+</svg>
