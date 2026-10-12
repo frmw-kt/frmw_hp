@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="物件の条件で探す人にはポータルサイト、会社を探す人には自社サイトと検索広告、まだ探していない人にはSNS広告、店舗に来る人にはGoogleマップが届き、反響はすべて自社の台帳に集めることを示す図">
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="24" y="46" font-size="28" font-weight="700" fill="#191c19">顧客の探し方で、届く手段が分かれる</text>
+
+    <rect x="24" y="72" width="236" height="112" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="142" y="118" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">物件で探す人</text>
+    <text x="142" y="158" font-size="22" fill="#41483c" text-anchor="middle">購入・賃貸</text>
+
+    <rect x="282" y="72" width="236" height="112" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="400" y="118" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">会社を探す人</text>
+    <text x="400" y="158" font-size="22" fill="#41483c" text-anchor="middle">売却・注文住宅・投資</text>
+
+    <rect x="540" y="72" width="236" height="112" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="658" y="118" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">まだ探していない</text>
+    <text x="658" y="158" font-size="22" fill="#41483c" text-anchor="middle">興味・関心で届く</text>
+
+    <path d="M142 190 V222 M132 212 L142 224 L152 212" fill="none" stroke="#806222" stroke-width="3"/>
+    <path d="M400 190 V222 M390 212 L400 224 L410 212" fill="none" stroke="#806222" stroke-width="3"/>
+    <path d="M658 190 V222 M648 212 L658 224 L668 212" fill="none" stroke="#806222" stroke-width="3"/>
+
+    <rect x="24" y="232" width="236" height="112" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="142" y="282" font-size="24" font-weight="700" fill="#806222" text-anchor="middle">ポータルサイト</text>
+    <text x="142" y="320" font-size="22" fill="#41483c" text-anchor="middle">物件の検索条件</text>
+
+    <rect x="282" y="232" width="236" height="112" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="400" y="282" font-size="24" font-weight="700" fill="#806222" text-anchor="middle">自社サイト</text>
+    <text x="400" y="320" font-size="22" fill="#41483c" text-anchor="middle">＋検索広告</text>
+
+    <rect x="540" y="232" width="236" height="112" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="658" y="282" font-size="24" font-weight="700" fill="#806222" text-anchor="middle">SNS広告</text>
+    <text x="658" y="320" font-size="22" fill="#41483c" text-anchor="middle">Meta広告など</text>
+
+    <rect x="24" y="366" width="752" height="64" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="400" y="407" font-size="22" fill="#41483c" text-anchor="middle">店舗に来る人 → Googleマップ（関連性・距離・知名度）</text>
+
+    <path d="M400 436 V468 M390 458 L400 470 L410 458" fill="none" stroke="#806222" stroke-width="3"/>
+
+    <rect x="24" y="478" width="752" height="62" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+    <text x="400" y="518" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">反響は自社の台帳に1件1行で集め、流入元を記録</text>
+  </g>
+</svg>

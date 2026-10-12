@@ -29,7 +29,7 @@
 | オーディエンス制御 | オーディエンス制御 | — | 地域・最低年齢・除外するカスタムオーディエンス・言語。地域は「広告に反応する可能性が高い人へのリーチを増やす」を選ばない限り指定地域外に配信しない。ヘルプのページ名は「オーディエンス管理」 | Meta https://www.facebook.com/business/help/938372127764391 （2026-10-06） |
 | Advantage+ オーディエンス | Advantage+ オーディエンス（「+」の後に半角空白） | — | — | Meta https://www.facebook.com/business/help/273363992030035 （2026-10-06） |
 | データ セグメント | データ セグメント（旧称「リマーケティング」） | — | Google広告の用語（空白あり）。健康に関わる業種などで利用が制限される。同じページに「リマーケティング」→「広告主様のデータ」という記述もある（2026-10-11、meta-vs-google-ads の遡及で確認）。本文の書き方は変えない | Google 広告ヘルプ https://support.google.com/google-ads/answer/2497941?hl=ja （2026-10-06） |
-| 計測期間（Google）／アトリビューション設定（Meta） | 媒体ごとの用語で書く | — | 混同しない。Google はクリックスルーの既定30日・ビュースルー1日。Meta の初期値は公式で未確認 | Google https://support.google.com/google-ads/answer/3123169?hl=ja 、Meta https://www.facebook.com/business/help/460276478298895 （2026-10-06） |
+| 計測期間（Google）／アトリビューション設定（Meta） | 媒体ごとの用語で書く | — | 混同しない。Google はクリックスルーの既定30日・ビュースルー1日・エンゲージ ビュー3日（エンゲージ ビューは 2026-10-12 確認）。Meta の既定はクリックから7日間・表示から1日間・エンゲージメントから1日間（2026-10-12、英語版と照合） | Google https://support.google.com/google-ads/answer/3123169?hl=ja 、Meta https://www.facebook.com/business/help/460276478298895 （2026-10-06） |
 | クリック単価制 | クリック単価（CPC）制 | — | Google の検索広告の課金。「クリック課金」は公式の表記ではないので、使う場合は一般的な言い方として | Google 広告ヘルプ https://support.google.com/google-ads/answer/2459326?hl=ja （2026-10-06） |
 | 目標アクション単価 | 目標アクション単価（いわゆる目標CPA） | — | Google広告の入札戦略。2026年6月に名称変更（旧称「目標アクション単価を設定したコンバージョン数の最大化」） | Google 広告ヘルプ https://support.google.com/google-ads/answer/6268632?hl=ja （2026-10-06） |
 | 1日の平均予算（Google広告） | 1日の平均予算 | — | 「1か月の費用はほとんどのキャンペーンで1日の平均予算の30.4倍まで」と書き、「ほとんどのキャンペーン」を省かない | Google 広告ヘルプ https://support.google.com/google-ads/answer/10486637?hl=ja （2026-10-06） |
@@ -57,7 +57,7 @@
 | 結果の単価目標 | 「結果の単価目標」（入札戦略の名前） | — | 入札戦略の名前なので「」で書く。1日の予算は単価目標の5倍以上が推奨 | Meta https://www.facebook.com/business/help/203183363050448 （2026-10-10） |
 | 広告セットの予算共有 | 広告セットの予算共有 | — | オンにすると1日の消化は最大210%、週の上限も1日の予算の7倍より上がる（オフなら1日最大175%・週7倍）。「1日の予算（Meta広告）」の行とあわせて使う | Meta https://www.facebook.com/business/help/190490051321426 （2026-10-10） |
 | メイン／サブ（Google広告のコンバージョン アクション） | 「メイン」「サブ」 | — | 原則としてメインだけが自動入札に使われる（カスタム目標に含めればサブも使われる） | Google 広告ヘルプ https://support.google.com/google-ads/answer/11461796?hl=ja （2026-10-11） |
-| カウント方法（Google広告） | 「すべて」「1回」 | 「全件」「初回のみ」（第三者記事の表記） | 見込み顧客の獲得には「1回」、商品の販売には「すべて」が適しているとされる | Google 広告ヘルプ https://support.google.com/google-ads/answer/3438531?hl=ja （2026-10-11） |
+| カウント方法（Google広告） | 「すべて」「1回」 | 「初回のみ」（第三者記事の表記） | 見込み顧客の獲得には「1回」、商品の販売には「すべて」が適しているとされる。カウント方法を「全件」とも書かない（「全件」は一般語と衝突するため検証の対象外にし、ここで注意する） | Google 広告ヘルプ https://support.google.com/google-ads/answer/3438531?hl=ja （2026-10-11） |
 | キーイベント（GA4） | キーイベント（以前の GA4 の「コンバージョン」） | 名称変更の年を書く | 名称変更の日付は公式ページにないので年を書かない | Google アナリティクス ヘルプ https://support.google.com/analytics/answer/13965727?hl=ja （2026-10-11） |
 | GA4のチャネル名 | 「有料検索」「オーガニック検索」「有料ソーシャル」「オーガニック ソーシャル」「ディスプレイ」「有料動画」「クロスネットワーク」 | 空白の有無を変える | 公式の表記どおり。オーガニック検索には Google の AI による概要・AI モードからの流入を含む | Google アナリティクス ヘルプ https://support.google.com/analytics/answer/9756891?hl=ja （2026-10-11） |
 | Google広告専用転送電話番号 | Google広告専用転送電話番号（ウェブサイトの電話番号を置き換えて、広告から来た人の通話を計測する番号） | — | 日本は対象国の一覧に含まれる（一部の通話は発信者番号が Google の番号になる）。タグの手動追加は「JavaScript の扱いに慣れている人にのみ」勧められている | Google 広告ヘルプ https://support.google.com/google-ads/answer/6095883?hl=ja 、対象国 https://support.google.com/google-ads/answer/2454052?hl=ja （2026-10-11） |
@@ -69,6 +69,18 @@
 | 通常配信／スピード配信（Meta） | 「通常配信」「スピード配信」 | — | 配信の選択肢なので「」で書く。通算予算の消化の説明は「通常配信の場合」と条件を付ける | Meta https://www.facebook.com/business/help/716180208457684 ・ https://www.facebook.com/business/help/190490051321426 （2026-10-11） |
 | お支払い設定（Google広告・日本） | 「後払い」（旧「自動支払い」）と「毎月の請求書発行」 | — | 日本の表示では2つだけで前払いは出てこないので、日本向けに前払いを選択肢として書かない。登録時の確認のための少額の前払い（answer/6366720）は別物 | Google 広告ヘルプ https://support.google.com/google-ads/answer/2375432?hl=ja （2026-10-11） |
 | 大幅な編集の後の判断（Meta） | 大幅な編集をしたら、［前回の大きな変更］列の日付から1週間たってから［結果］列で確かめる | 「判断する日にまとめて編集する」 | Meta は情報収集期間が終わるまで広告セットを編集しないことを勧めている。単に編集のたびにとは書かず、大幅な編集のたびにと書く | Meta https://www.facebook.com/business/help/112167992830700 ・ https://www.facebook.com/business/help/316478108955072 （2026-10-11） |
+| 学習期間（Google広告） | 学習期間（スマート自動入札で標準7〜14日） | — | 長さはコンバージョン数・コンバージョン サイクル・入札戦略で変わる。日本語版（AI 翻訳）の「50回程度／3回程度」は英語版（通常1〜2サイクル）と食い違うため使わない | Google 広告ヘルプ https://support.google.com/google-ads/answer/1722022?hl=ja 、https://support.google.com/google-ads/answer/13020501?hl=ja （2026-10-12、英語版と照合） |
+| コンバージョン達成までの所要時間（Google広告） | 遅れて記録される成果（コンバージョン達成までの所要時間） | — | 直近の期間は成果が少なく単価が高く見える。レポートの期間が30日以上前に終わっていれば成果のデータがすべて表示される | Google 広告ヘルプ https://support.google.com/google-ads/answer/6239119?hl=ja （2026-10-12） |
+| 評価期間（スマート自動入札） | 完全なコンバージョン サイクル2回分以上 | — | より明確に見るなら1か月か50件以上。大きな変更の後は1〜2サイクル待つ | Google 広告ヘルプ https://support.google.com/google-ads/answer/6268633?hl=ja （2026-10-12） |
+| 反響（不動産） | 反響（見込み客からの問い合わせ・資料請求・査定依頼・来店予約など） | — | 不動産業界での言い方で、マーケティング用語のリードとほぼ同じ。公式の定義はない | —（業界の言い方。2026-10-12） |
+| 表示規約 | 「不動産の表示に関する公正競争規約」（表示規約） | — | 業界の自主規制。個別の表現の適否は書かない。条文の中身はPDFのみのため、HTMLページで確認できた範囲だけ書く | 首都圏不動産公正取引協議会 https://www.sfkoutori.or.jp/koukoku_before/ （2026-10-12） |
+| 特別な広告カテゴリ（Meta） | 「特別な広告カテゴリ」（住宅） | 「日本では関係ない」と断定する書き方 | オーディエンスの制限の対象は米国を拠点または配信対象とする広告主と、カナダ・欧州の特定の国を配信対象とする広告主。日本は挙がっていないとだけ書く | Meta https://www.facebook.com/business/help/298000447747885 （2026-10-12、英語版と照合） |
+| 機会へのアクセス カテゴリ（Google） | 「機会へのアクセス」カテゴリ（住宅・雇用・消費者金融） | — | 米国とカナダのみ（日本語版は翻訳のため英語版で照合） | Google https://support.google.com/adspolicy/answer/143465?hl=ja （2026-10-12） |
+| インスタントフォーム（Meta） | インスタントフォーム付きリード獲得広告 | — | 反響は広告マネージャ等からCSVでダウンロードする。自社サイトのタグでは数えられない | Meta https://www.facebook.com/business/help/397336587121938 （2026-10-12） |
+| データポータル（旧Looker Studio） | データポータル（2026年4月にLooker Studioから名称が戻ったGoogleの無料ツール） | 「Googleデータポータル」、旧称を現行名として書く書き方 | 英語名は Data Studio。URL は datastudio.google.com（旧URLから転送） | Google Cloud https://docs.cloud.google.com/data-studio/welcome?hl=ja （2026-10-12、英語版で名称を確認） |
+| 結果／結果の単価（Meta） | ［結果］列、結果の単価 | — | ヘルプのページ名は「成果」。結果の単価＝消化金額÷結果 | Meta https://www.facebook.com/business/help/611432918970668 ・ https://www.facebook.com/business/help/762109693832964 （2026-10-12） |
+| 読み取り専用／メール専用（Google広告のアクセス権） | 読み取り専用、メール専用 | — | 読み取り専用はキャンペーンの表示とレポートの実行ができ、編集はできない | Google 広告ヘルプ https://support.google.com/google-ads/answer/9978556?hl=ja （2026-10-12） |
+| ［コンバージョン］列／［すべてのコンバージョン］列（Google広告） | ［コンバージョン］列、［すべてのコンバージョン］列 | — | 前者はメインのコンバージョン アクションのみ、後者はサブを含む | Google 広告ヘルプ https://support.google.com/google-ads/answer/11461796?hl=ja （2026-10-12） |
 | 管理者（Google広告のアクセス権） | 管理者権限 | — | アクセスの許可・アクセス権の変更・MCC とのリンク解除は管理者だけ。代理店に任せるときは「自社のユーザーが管理者権限を持ったまま招待する」と書く | Google 広告ヘルプ https://support.google.com/google-ads/answer/9978556?hl=ja （2026-10-11） |
 
 ## 業態と「成果」「手前の段階」の基準

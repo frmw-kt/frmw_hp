@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="反響が増えないときは、1 台帳への漏れ、2 流入元ごとの閲覧・訪問の数、3 物件情報とページの中身、4 反響後の対応の記録、の順に確かめることを示す図">
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="24" y="46" font-size="28" font-weight="700" fill="#191c19">反響が増えないときに確かめる順番</text>
+
+    <rect x="24" y="72" width="752" height="100" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <circle cx="70" cy="122" r="26" fill="#806222"/>
+    <text x="70" y="131" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="116" y="112" font-size="26" font-weight="700" fill="#191c19">漏れ</text>
+    <text x="116" y="150" font-size="22" fill="#41483c">台帳の件数と、ポータル・Meta・電話の件数が合うか</text>
+
+    <rect x="24" y="190" width="752" height="100" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <circle cx="70" cy="240" r="26" fill="#806222"/>
+    <text x="70" y="249" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="116" y="230" font-size="26" font-weight="700" fill="#191c19">入口</text>
+    <text x="116" y="268" font-size="22" fill="#41483c">流入元ごとの閲覧・訪問の数は足りているか</text>
+
+    <rect x="24" y="308" width="752" height="100" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <circle cx="70" cy="358" r="26" fill="#806222"/>
+    <text x="70" y="367" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="116" y="348" font-size="26" font-weight="700" fill="#191c19">中身</text>
+    <text x="116" y="386" font-size="22" fill="#41483c">成約済み物件・表示事項・フォームを点検する</text>
+
+    <rect x="24" y="426" width="752" height="100" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <circle cx="70" cy="476" r="26" fill="#806222"/>
+    <text x="70" y="485" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+    <text x="116" y="466" font-size="26" font-weight="700" fill="#191c19">対応</text>
+    <text x="116" y="504" font-size="22" fill="#41483c">最初の連絡日時と商談の有無を流入元ごとに見る</text>
+  </g>
+</svg>

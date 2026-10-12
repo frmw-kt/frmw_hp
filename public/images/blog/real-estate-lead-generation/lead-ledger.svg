@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580" width="800" height="580" role="img" aria-label="ポータル、自社サイトのフォームと電話、Metaのインスタントフォーム、Googleマップ経由の電話という届く場所の違う反響を、流入元・反響の種類・最初の連絡日時の列を持つ自社の台帳に集め、商談と成約まで記録し、月1回流入元ごとに費用÷成約数を比べる流れの図">
+  <rect width="800" height="580" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="24" y="46" font-size="28" font-weight="700" fill="#191c19">届く場所の違う反響を、台帳に集める</text>
+
+    <rect x="24" y="76" width="300" height="70" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="174" y="120" font-size="22" fill="#191c19" text-anchor="middle">ポータルから届く反響</text>
+    <rect x="24" y="160" width="300" height="70" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="174" y="204" font-size="22" fill="#191c19" text-anchor="middle">自社サイトのフォーム・電話</text>
+    <rect x="24" y="244" width="300" height="70" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="174" y="288" font-size="22" fill="#191c19" text-anchor="middle">Metaのフォーム（CSV）</text>
+    <rect x="24" y="328" width="300" height="70" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="174" y="372" font-size="22" fill="#191c19" text-anchor="middle">Googleマップ経由の電話</text>
+
+    <path d="M330 111 L372 220 M330 195 L372 230 M330 279 L372 246 M330 363 L372 256" fill="none" stroke="#806222" stroke-width="2"/>
+
+    <rect x="378" y="150" width="210" height="176" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="483" y="192" font-size="26" font-weight="700" fill="#806222" text-anchor="middle">自社の台帳</text>
+    <text x="483" y="232" font-size="22" fill="#41483c" text-anchor="middle">流入元</text>
+    <text x="483" y="266" font-size="22" fill="#41483c" text-anchor="middle">反響の種類</text>
+    <text x="483" y="300" font-size="22" fill="#41483c" text-anchor="middle">最初の連絡日時</text>
+
+    <path d="M590 238 H612 M602 228 L614 238 L602 248" fill="none" stroke="#806222" stroke-width="3"/>
+
+    <rect x="618" y="150" width="158" height="96" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="697" y="188" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">商談</text>
+    <text x="697" y="224" font-size="22" fill="#41483c" text-anchor="middle">来店・内見</text>
+    <path d="M697 252 V280 M687 270 L697 282 L707 270" fill="none" stroke="#806222" stroke-width="3"/>
+    <rect x="618" y="288" width="158" height="70" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="697" y="332" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">成約</text>
+
+    <rect x="24" y="424" width="752" height="132" rx="10" fill="#ffffff" stroke="#806222" stroke-width="2"/>
+    <text x="400" y="466" font-size="22" fill="#41483c" text-anchor="middle">ポータル上やフォーム上の反響は、自社サイトのタグでは</text>
+    <text x="400" y="500" font-size="22" fill="#41483c" text-anchor="middle">数えられないので、台帳で数える</text>
+    <text x="400" y="538" font-size="24" font-weight="700" fill="#806222" text-anchor="middle">月1回、流入元ごとに 費用÷成約数 を比べる</text>
+  </g>
+</svg>

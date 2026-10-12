@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="顧客が物件の条件で探すならポータルサイトと自社の物件ページ、会社名・地域名・査定などで検索するなら自社サイトと検索広告、どちらでもなければSNS広告で知らせて自社サイトやフォームへつなぐ、店舗に来る反響があればGoogleビジネスプロフィールも整えるという判断の流れの図">
+  <rect width="800" height="600" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="24" y="46" font-size="28" font-weight="700" fill="#191c19">最初に整える手段を、2つの問いで選ぶ</text>
+
+    <rect x="24" y="76" width="420" height="92" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+    <text x="234" y="113" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">問1 顧客は物件の条件で</text>
+    <text x="234" y="148" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">探すか（購入・賃貸）</text>
+
+    <path d="M444 122 H492 M482 112 L494 122 L482 132" fill="none" stroke="#806222" stroke-width="3"/>
+    <text x="468" y="106" font-size="22" fill="#806222" text-anchor="middle">はい</text>
+    <rect x="500" y="76" width="276" height="92" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="638" y="113" font-size="22" font-weight="700" fill="#806222" text-anchor="middle">ポータルサイト</text>
+    <text x="638" y="148" font-size="22" fill="#41483c" text-anchor="middle">＋自社の物件ページ</text>
+
+    <path d="M234 174 V214 M224 204 L234 216 L244 204" fill="none" stroke="#806222" stroke-width="3"/>
+    <text x="270" y="202" font-size="22" fill="#806222">いいえ</text>
+
+    <rect x="24" y="224" width="420" height="104" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+    <text x="234" y="266" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">問2 会社名・地域名・「査定」</text>
+    <text x="234" y="304" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">などで検索するか</text>
+
+    <path d="M444 276 H492 M482 266 L494 276 L482 286" fill="none" stroke="#806222" stroke-width="3"/>
+    <text x="468" y="260" font-size="22" fill="#806222" text-anchor="middle">はい</text>
+    <rect x="500" y="224" width="276" height="104" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="638" y="266" font-size="22" font-weight="700" fill="#806222" text-anchor="middle">自社サイト</text>
+    <text x="638" y="304" font-size="22" fill="#41483c" text-anchor="middle">＋検索広告</text>
+
+    <path d="M234 334 V374 M224 364 L234 376 L244 364" fill="none" stroke="#806222" stroke-width="3"/>
+    <text x="270" y="362" font-size="22" fill="#806222">いいえ</text>
+
+    <rect x="24" y="384" width="752" height="88" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="400" y="422" font-size="22" font-weight="700" fill="#806222" text-anchor="middle">SNS広告で知らせ、自社サイトや</text>
+    <text x="400" y="454" font-size="22" font-weight="700" fill="#806222" text-anchor="middle">インスタントフォームで反響を受ける</text>
+
+    <rect x="24" y="494" width="752" height="86" rx="10" fill="#ffffff" stroke="#806222" stroke-width="2"/>
+    <text x="400" y="530" font-size="22" fill="#41483c" text-anchor="middle">店舗に来る反響があれば、どの場合も</text>
+    <text x="400" y="562" font-size="22" fill="#41483c" text-anchor="middle">Googleビジネスプロフィールを整える</text>
+  </g>
+</svg>

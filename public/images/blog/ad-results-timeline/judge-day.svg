@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>判断できる日の試算</title>
+  <desc>配信開始を0日目とする。学習期間14日（仮定）で14日目、コンバージョン サイクル10日（仮定）の2回分20日を評価して34日目、計測期間30日を待って64日目に評価期間の成果がそろう。</desc>
+  <rect width="800" height="440" fill="#ffffff"/>
+  <text x="24" y="40" font-size="24" font-weight="700" fill="#191c19">配信開始を0日目として数える（Google広告）</text>
+  <text x="24" y="74" font-size="22" fill="#806222">仮定：コンバージョン サイクル10日、学習期間14日</text>
+
+  <!-- 1日 = 11.25px、0日目 = x 40 -->
+  <rect x="40" y="180" width="157" height="64" fill="#c9a84c"/>
+  <rect x="197" y="180" width="225" height="64" fill="#806222"/>
+  <rect x="422" y="180" width="338" height="64" fill="#e3e2dc"/>
+
+  <text x="118" y="132" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">学習期間</text>
+  <text x="118" y="162" font-size="22" fill="#41483c" text-anchor="middle">14日</text>
+  <text x="310" y="132" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">評価期間</text>
+  <text x="310" y="162" font-size="22" fill="#41483c" text-anchor="middle">10日×2＝20日</text>
+  <text x="591" y="132" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">成果がそろうのを待つ</text>
+  <text x="591" y="162" font-size="22" fill="#41483c" text-anchor="middle">計測期間30日</text>
+
+  <line x1="40" y1="172" x2="40" y2="262" stroke="#191c19" stroke-width="3"/>
+  <line x1="197" y1="172" x2="197" y2="262" stroke="#191c19" stroke-width="3"/>
+  <line x1="422" y1="172" x2="422" y2="262" stroke="#191c19" stroke-width="3"/>
+  <line x1="760" y1="172" x2="760" y2="262" stroke="#191c19" stroke-width="3"/>
+
+  <text x="40" y="294" font-size="22" fill="#191c19" text-anchor="start">0日目</text>
+  <text x="197" y="294" font-size="22" fill="#191c19" text-anchor="middle">14日目</text>
+  <text x="422" y="294" font-size="22" fill="#191c19" text-anchor="middle">34日目</text>
+  <text x="760" y="294" font-size="22" font-weight="700" fill="#806222" text-anchor="end">64日目</text>
+
+  <rect x="24" y="330" width="752" height="94" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="44" y="368" font-size="22" fill="#191c19">34日目：評価期間が終わる（予測コンバージョンつきで確認）</text>
+  <text x="44" y="404" font-size="22" font-weight="700" fill="#806222">64日目：評価期間の成果がそろう</text>
+</svg>

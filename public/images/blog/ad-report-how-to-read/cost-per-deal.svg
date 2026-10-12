@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>CPAと成約1件あたりの広告費の比較（仮定の試算）</title>
+  <desc>広告費20万円のキャンペーンAは問い合わせ25件・商談5件・成約1件で、CPAは8,000円、商談1件あたり4万円、成約1件あたり20万円。キャンペーンBは問い合わせ16件・商談8件・成約2件で、CPAは12,500円、商談1件あたり25,000円、成約1件あたり10万円。数字はすべて仮定。</desc>
+  <rect width="800" height="480" fill="#ffffff"/>
+
+  <rect x="16" y="16" width="260" height="56" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="146" y="53" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">仮定：各20万円</text>
+  <rect x="290" y="16" width="240" height="56" rx="8" fill="#c9a84c"/>
+  <text x="410" y="53" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">キャンペーンA</text>
+  <rect x="544" y="16" width="240" height="56" rx="8" fill="#806222"/>
+  <text x="664" y="53" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">キャンペーンB</text>
+
+  <text x="32" y="118" font-size="24" fill="#41483c">問い合わせ</text>
+  <text x="410" y="118" font-size="24" fill="#191c19" text-anchor="middle">25件</text>
+  <text x="664" y="118" font-size="24" fill="#191c19" text-anchor="middle">16件</text>
+  <text x="32" y="172" font-size="24" fill="#41483c">商談</text>
+  <text x="410" y="172" font-size="24" fill="#191c19" text-anchor="middle">5件</text>
+  <text x="664" y="172" font-size="24" fill="#191c19" text-anchor="middle">8件</text>
+  <text x="32" y="226" font-size="24" fill="#41483c">成約</text>
+  <text x="410" y="226" font-size="24" fill="#191c19" text-anchor="middle">1件</text>
+  <text x="664" y="226" font-size="24" fill="#191c19" text-anchor="middle">2件</text>
+
+  <line x1="16" y1="250" x2="784" y2="250" stroke="#e3e2dc" stroke-width="3"/>
+
+  <text x="32" y="292" font-size="24" fill="#41483c">CPA</text>
+  <text x="410" y="292" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">8,000円</text>
+  <text x="664" y="292" font-size="24" fill="#191c19" text-anchor="middle">12,500円</text>
+  <text x="32" y="346" font-size="24" fill="#41483c">商談1件あたり</text>
+  <text x="410" y="346" font-size="24" fill="#191c19" text-anchor="middle">40,000円</text>
+  <text x="664" y="346" font-size="24" fill="#191c19" text-anchor="middle">25,000円</text>
+  <rect x="16" y="366" width="768" height="56" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="3"/>
+  <text x="32" y="403" font-size="24" font-weight="700" fill="#191c19">成約1件あたり</text>
+  <text x="410" y="403" font-size="24" fill="#191c19" text-anchor="middle">200,000円</text>
+  <text x="664" y="403" font-size="24" font-weight="700" fill="#806222" text-anchor="middle">100,000円</text>
+
+  <text x="400" y="460" font-size="22" fill="#41483c" text-anchor="middle">数字はすべて仮定。広告費÷それぞれの件数で計算</text>
+</svg>

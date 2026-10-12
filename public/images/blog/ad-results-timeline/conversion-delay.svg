@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>遅れて記録される成果と、成果がすべてそろう時期</title>
+  <desc>費用は日ごとにすべて記録されるが、成果はクリックの後に遅れて記録される。直近の期間ほど、まだ記録されていない成果が多く、成果が少なくコンバージョン単価が高く見える。期間の終わりから30日以上たった期間なら、計測期間30日の場合は成果がすべてそろう。棒の長さはイメージで、実際の数値ではない。</desc>
+  <rect width="800" height="480" fill="#ffffff"/>
+
+  <rect x="24" y="16" width="24" height="24" fill="#41483c"/>
+  <text x="56" y="37" font-size="22" fill="#191c19">費用（すぐにすべて記録）</text>
+  <rect x="380" y="16" width="24" height="24" fill="#c9a84c"/>
+  <text x="412" y="37" font-size="22" fill="#191c19">記録済みの成果</text>
+  <rect x="24" y="52" width="24" height="24" fill="#ffffff" stroke="#806222" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="56" y="73" font-size="22" fill="#191c19">これから記録される成果（イメージ）</text>
+
+  <line x1="40" y1="350" x2="770" y2="350" stroke="#41483c" stroke-width="2"/>
+
+  <rect x="70" y="150" width="40" height="200" fill="#41483c"/>
+  <rect x="115" y="190" width="40" height="160" fill="#c9a84c"/>
+  <rect x="210" y="150" width="40" height="200" fill="#41483c"/>
+  <rect x="255" y="190" width="40" height="160" fill="#c9a84c"/>
+
+  <rect x="430" y="150" width="40" height="200" fill="#41483c"/>
+  <rect x="475" y="250" width="40" height="100" fill="#c9a84c"/>
+  <rect x="475" y="190" width="40" height="60" fill="#ffffff" stroke="#806222" stroke-width="2" stroke-dasharray="5 4"/>
+  <rect x="580" y="150" width="40" height="200" fill="#41483c"/>
+  <rect x="625" y="310" width="40" height="40" fill="#c9a84c"/>
+  <rect x="625" y="190" width="40" height="120" fill="#ffffff" stroke="#806222" stroke-width="2" stroke-dasharray="5 4"/>
+
+  <text x="182" y="384" font-size="22" fill="#41483c" text-anchor="middle">古い期間</text>
+  <text x="547" y="384" font-size="22" fill="#41483c" text-anchor="middle">直近の期間</text>
+
+  <rect x="40" y="96" width="330" height="40" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="205" y="124" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">成果がそろっている</text>
+  <rect x="400" y="96" width="370" height="40" rx="8" fill="#f7f7f4" stroke="#806222" stroke-width="2"/>
+  <text x="585" y="124" font-size="22" font-weight="700" fill="#806222" text-anchor="middle">成果が少なく単価が高く見える</text>
+
+  <text x="40" y="430" font-size="22" fill="#191c19">期間の終わりから30日以上たった期間なら、成果がそろう</text>
+  <text x="40" y="462" font-size="22" fill="#41483c">（Google広告で計測期間30日の場合。棒の長さはイメージ）</text>
+</svg>

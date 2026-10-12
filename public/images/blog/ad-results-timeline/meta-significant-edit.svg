@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>Meta広告の編集と情報収集期間の分岐</title>
+  <desc>広告セットを編集したとき、大幅な編集なら再び情報収集期間に入り、前回の大きな変更の日付から1週間後に結果列で約50件に届いたかを確かめる。大幅な編集でなければ情報収集期間に入り直さないが、配信には一定の影響がある。大幅な編集はターゲット設定・クリエイティブ・最適化イベント・入札戦略の変更、新しい広告の追加、7日以上の停止。</desc>
+  <rect width="800" height="500" fill="#ffffff"/>
+
+  <rect x="250" y="16" width="300" height="56" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="53" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">広告セットを編集する</text>
+  <path d="M400 72 L400 92" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M390 88 L400 102 L410 88 Z" fill="#c9a84c"/>
+
+  <rect x="250" y="102" width="300" height="56" rx="28" fill="#806222"/>
+  <text x="400" y="139" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">大幅な編集か？</text>
+
+  <path d="M300 158 L200 196" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M500 158 L600 196" stroke="#e3e2dc" stroke-width="4"/>
+  <text x="212" y="182" font-size="22" font-weight="700" fill="#806222">はい</text>
+  <text x="560" y="182" font-size="22" font-weight="700" fill="#41483c">いいえ</text>
+
+  <rect x="16" y="200" width="400" height="190" rx="10" fill="#f7f7f4" stroke="#c9a84c" stroke-width="3"/>
+  <text x="36" y="240" font-size="24" font-weight="700" fill="#191c19">再び情報収集期間に入る</text>
+  <text x="36" y="282" font-size="22" fill="#41483c">［前回の大きな変更］の日付が</text>
+  <text x="36" y="312" font-size="22" fill="#41483c">新しくなる</text>
+  <text x="36" y="350" font-size="22" font-weight="700" fill="#806222">その日付から1週間後に</text>
+  <text x="36" y="378" font-size="22" font-weight="700" fill="#806222">［結果］列で約50件か確かめる</text>
+
+  <rect x="436" y="200" width="348" height="190" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="456" y="240" font-size="24" font-weight="700" fill="#191c19">情報収集期間に</text>
+  <text x="456" y="272" font-size="24" font-weight="700" fill="#191c19">入り直さない</text>
+  <text x="456" y="314" font-size="22" fill="#41483c">配信には一定の影響がある</text>
+
+  <text x="16" y="436" font-size="22" fill="#41483c">大幅な編集：ターゲット設定・クリエイティブ・最適化</text>
+  <text x="16" y="468" font-size="22" fill="#41483c">イベント・入札戦略の変更、新しい広告の追加、7日以上の停止</text>
+</svg>

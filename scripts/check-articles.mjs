@@ -44,6 +44,14 @@ function staticRoutes() {
   return routes;
 }
 
+/** src/lib/cases.ts の slug 配列（publishedSlugs・noindexSlugs）。動的ルート /cases/[slug] の存在確認に使う */
+function caseSlugs(name) {
+  const src = fs.readFileSync(path.join(ROOT, "src", "lib", "cases.ts"), "utf8");
+  const body = src.match(new RegExp(`const ${name}:\\s*string\\[\\]\\s*=\\s*\\[([\\s\\S]*?)\\]`))?.[1];
+  if (body === undefined) throw new Error(`src/lib/cases.ts に ${name} が見つかりません`);
+  return new Set([...body.matchAll(/"([^"]+)"/g)].map((m) => m[1]));
+}
+
 export function checkArticle(a, file, ctx) {
   const errors = [];
   const warnings = [];
@@ -142,7 +150,12 @@ export function checkArticle(a, file, ctx) {
     } else if (href.startsWith("/") && !href.startsWith("//")) {
       const p = href.split(/[?#]/)[0].replace(/\/$/, "") || "/";
       const blog = p.match(/^\/blog\/([^/]+)$/);
+      const caseSlug = p.match(/^\/cases\/([^/]+)$/)?.[1];
       if (blog) { if (!ctx.allSlugs.has(blog[1])) errors.push(`存在しない記事へのリンク: ${href}`); }
+      else if (caseSlug) {
+        if (!ctx.publishedCases.has(caseSlug)) errors.push(`公開されていない事例へのリンク: ${href}`);
+        else if (ctx.noindexCases.has(caseSlug)) warnings.push(`noindex の事例へのリンクです（検索結果に出さない事例なので記事からはリンクしない）: ${href}`);
+      }
       else if (!ctx.routes.has(p)) errors.push(`存在しないページへのリンク: ${href}`);
     } else if (!/^https:\/\/[^\s/]+\.[^\s]+/.test(href)) {
       errors.push(`外部リンクは https:// のみ: ${href}`);
@@ -194,9 +207,9 @@ export function checkArticle(a, file, ctx) {
   // まだない記事の予告（古い約束になる）: 「別の記事で解説する予定」「今後の記事で」など
   const promises = [...plain(html).matchAll(/(別の記事で(?:詳しく)?(?:解説|扱|紹介|説明)[^。]{0,6}予定|今後の記事で|次回の記事で|近日公開)/g)].map((m) => m[1]);
   if (promises.length) warnings.push(`まだない記事の予告があります（${[...new Set(promises)].join("・")}）。本文で予告せず、企画メモの「子記事ができたら本文にリンクを足す位置」に書く`);
-  // 本文の「Google 広告」（空白あり）は「Google広告」に。出典名の「Google 広告ヘルプ」は除く
+  // 本文の「Google 広告」（空白あり）は「Google広告」に。出典名の「Google 広告ヘルプ」「Google 広告ポリシー ヘルプ」は除く
   // 「」で囲んだ資料名・ページ名（「Google 広告アカウントを作成する」）は公式表記のままなので除く
-  const gSpaced = (html.replace(/<[^>]+>/g, "").replace(/「[^」]*」/g, "").match(/Google 広告(?!ヘルプ)/g) ?? []).length;
+  const gSpaced = (html.replace(/<[^>]+>/g, "").replace(/「[^」]*」/g, "").match(/Google 広告(?!ヘルプ|ポリシー)/g) ?? []).length;
   if (gSpaced) warnings.push(`本文の「Google 広告」（空白あり）が${gSpaced}か所あります。本文は「Google広告」に統一（出典名・画面名は公式表記のまま）`);
   // glossary の避ける表記
   // 空白を残したまま照合する（「Meta ピクセル」のような空白入りの避ける表記を、正しい「Metaピクセル」と区別するため）
@@ -317,7 +330,7 @@ function main() {
     try { articles.push({ file: path.join(DIR, f), data: JSON.parse(fs.readFileSync(path.join(DIR, f), "utf8")) }); }
     catch (e) { console.log(`✖ ${f}: JSONとして読めません（${e.message}）`); failed++; }
   }
-  const ctx = { inline, routes: staticRoutes(), allSlugs: new Set([...inline, ...articles.map((x) => x.data.slug)]), today: Date.now() };
+  const ctx = { inline, routes: staticRoutes(), publishedCases: caseSlugs("publishedSlugs"), noindexCases: caseSlugs("noindexSlugs"), allSlugs: new Set([...inline, ...articles.map((x) => x.data.slug)]), today: Date.now() };
   // 被リンク: どの記事からリンクされているか（初期記事の articles.ts も含めて数える）
   const inbound = new Map();
   const addLinks = (from, html) => {

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>広告運用の成果が出るまでの3段階と各段階が終わる条件</title>
+  <desc>準備は権限・計測・審査がそろったら終わり、公式の日数は審査だけ（Meta広告はほとんど24時間以内、Google広告はほとんど1営業日以内）。学習はMeta広告が最後の大幅な編集から1週間以内に約50件、Google広告が自動入札で標準7〜14日。判断はコンバージョン サイクル2回分以上の期間で評価し、成果がそろうのは期間の終わりから30日後（Google広告の計測期間の初期設定30日の場合）。</desc>
+  <rect width="800" height="520" fill="#ffffff"/>
+
+  <rect x="16" y="16" width="130" height="150" rx="10" fill="#806222"/>
+  <text x="81" y="84" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">1 準備</text>
+  <text x="81" y="118" font-size="22" fill="#ffffff" text-anchor="middle">条件で判断</text>
+  <rect x="160" y="16" width="624" height="150" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="180" y="52" font-size="24" font-weight="700" fill="#191c19">権限・計測・審査がそろったら終わる</text>
+  <text x="180" y="88" font-size="22" fill="#41483c">公式の日数があるのは審査だけ</text>
+  <text x="180" y="120" font-size="22" fill="#41483c">Meta広告：ほとんど24時間以内</text>
+  <text x="180" y="152" font-size="22" fill="#41483c">Google広告：ほとんど1営業日以内</text>
+
+  <path d="M81 170 L81 190" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M71 186 L81 200 L91 186 Z" fill="#c9a84c"/>
+
+  <rect x="16" y="200" width="130" height="130" rx="10" fill="#c9a84c"/>
+  <text x="81" y="258" font-size="28" font-weight="700" fill="#191c19" text-anchor="middle">2 学習</text>
+  <text x="81" y="292" font-size="22" fill="#191c19" text-anchor="middle">媒体ごと</text>
+  <rect x="160" y="200" width="624" height="130" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="180" y="236" font-size="24" font-weight="700" fill="#191c19">自動配信が配信方法を探る期間</text>
+  <text x="180" y="274" font-size="22" fill="#41483c">Meta広告：大幅な編集から1週間以内に約50件</text>
+  <text x="180" y="308" font-size="22" fill="#41483c">Google広告：自動入札で標準7〜14日</text>
+
+  <path d="M81 334 L81 354" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M71 350 L81 364 L91 350 Z" fill="#c9a84c"/>
+
+  <rect x="16" y="364" width="130" height="140" rx="10" fill="#191c19"/>
+  <text x="81" y="426" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">3 判断</text>
+  <text x="81" y="460" font-size="22" fill="#ffffff" text-anchor="middle">成果を待つ</text>
+  <rect x="160" y="364" width="624" height="140" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="180" y="400" font-size="24" font-weight="700" fill="#191c19">遅れて記録される成果を待って評価</text>
+  <text x="180" y="436" font-size="22" fill="#41483c">評価期間：コンバージョン サイクル2回分以上</text>
+  <text x="180" y="470" font-size="22" fill="#41483c">成果がそろう：期間の終わりから30日後</text>
+  <text x="180" y="496" font-size="22" fill="#806222">（Google広告・計測期間の初期設定30日の場合）</text>
+</svg>

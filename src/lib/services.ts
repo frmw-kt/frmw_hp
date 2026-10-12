@@ -16,6 +16,18 @@ export type Service = {
   boundaries: string[];
   cases: string[];
   links?: { name: string; href: string }[];
+  /** 業種向けの説明節（任意）。書くのは既存の services・faq・公開事例にある事実のみ */
+  industry?: {
+    /** ページ内ナビの表示名 */
+    label: string;
+    en: string;
+    title: string;
+    text: string;
+    points: string[];
+    links: { name: string; href: string }[];
+  };
+  /** このサービス固有のよくある質問。ページのFAQ（FAQPage構造化データ）の先頭に出す */
+  faqs?: { question: string; answer: string }[];
 };
 export const services: Service[] = [
   {
@@ -94,6 +106,51 @@ export const services: Service[] = [
         href: "/services/consulting/" + x,
       }),
     ),
+    // 不動産業向け。事例は公開中の不動産関連（real-estate-investment・real-estate-ads）へのリンクのみ。
+    // real-estate-ads は課題・施策の文面が仮のため、業種とサービス範囲以外は引用しない。
+    industry: {
+      label: "不動産会社の方へ",
+      en: "REAL ESTATE",
+      title: "不動産会社の方へ",
+      text: "不動産会社のマーケティングコンサルティングも、進め方は同じです。広告、サイト、営業を別々に見るのではなく、問い合わせから成約までの流れを整理し、次に変えることを決めます。",
+      points: [
+        "既存顧客、競合の訴求、流入経路を調べ、優先課題を特定します。",
+        "ターゲット、KPI、優先施策、役割分担を決め、担当とスケジュールまで計画に落とし込みます。",
+        "社内にマーケティングの専任者がいない場合も、戦略の検討から月次の効果検証まで、マーケティング責任者が担う判断を外部から支えます。",
+        "調査・戦略のみのスポット相談と、継続支援のどちらも相談できます。",
+      ],
+      links: [
+        {
+          name: "事例｜不動産投資会社のマーケティングコンサルティング・広告運用",
+          href: "/cases/real-estate-investment",
+        },
+        {
+          name: "事例｜不動産会社の広告運用・LP制作",
+          href: "/cases/real-estate-ads",
+        },
+        {
+          name: "コラム｜不動産の反響獲得をWebで増やす方法",
+          href: "/blog/real-estate-lead-generation",
+        },
+      ],
+    },
+    faqs: [
+      {
+        question: "マーケティングコンサルティングの期間と進め方は？",
+        answer:
+          "調査・戦略のみのスポット相談と、継続支援のどちらも相談できます。開始時に目標・既存データ・社内体制を整理して支援範囲を決め、初期にターゲット、KPI、優先施策、役割分担を合意します。通常月は施策の進捗と結果を確認して次のアクションを更新し、節目で事業や市場の変化を踏まえて投資先と目標を見直します。開始日や契約期間は、支援範囲に合わせて契約前に確認します。",
+      },
+      {
+        question: "不動産業の支援事例はありますか？",
+        answer:
+          "あります。業界最大手の不動産投資会社で、マーケティングコンサルティングとして広告施策の方針検討から入り、月間4,000万円以上の広告運用の実行までを担当した事例を掲載しています。ほかに、不動産会社の広告運用・LP制作の事例もあります。いずれも社名は非公開です。掲載事例は各社の条件下での実績です。",
+      },
+      {
+        question: "不動産会社でも、戦略の相談だけを依頼できますか？",
+        answer:
+          "はい。調査・戦略のみのスポット相談から依頼できます。広告運用や制作の実作業も含める場合は、契約に含める範囲を事前に明確にします。",
+      },
+    ],
   },
   {
     slug: "operations",

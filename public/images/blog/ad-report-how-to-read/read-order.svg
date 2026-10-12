@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>成約から表示回数へさかのぼるレポートの読み方</title>
+  <desc>成約・商談、成果の件数と自社の実数の差、コンバージョン率、クリック率、表示回数と費用の順にさかのぼる。前の期間から変わっていれば、それぞれ問い合わせの中身、計測の不具合、リンク先のページとフォーム、広告文・画像と検索語句、予算の消化と配信の状態を確かめる。</desc>
+  <rect width="800" height="560" fill="#ffffff"/>
+
+  <text x="166" y="34" font-size="22" font-weight="700" fill="#806222" text-anchor="middle">上から順に見る</text>
+  <text x="562" y="34" font-size="22" font-weight="700" fill="#806222" text-anchor="middle">変わっていたら確かめる</text>
+
+  <rect x="16" y="50" width="300" height="80" rx="10" fill="#806222"/>
+  <text x="166" y="99" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">1 成約・商談</text>
+  <path d="M320 90 L332 90" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M328 80 L340 90 L328 100 Z" fill="#c9a84c"/>
+  <rect x="344" y="50" width="440" height="80" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="364" y="99" font-size="24" fill="#191c19">問い合わせの中身（地域・業種）</text>
+
+  <path d="M166 132 L166 144" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M156 140 L166 152 L176 140 Z" fill="#c9a84c"/>
+
+  <rect x="16" y="154" width="300" height="80" rx="10" fill="#c9a84c"/>
+  <text x="166" y="190" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">2 成果の件数と</text>
+  <text x="166" y="220" font-size="22" font-weight="700" fill="#191c19" text-anchor="middle">自社の実数の差</text>
+  <path d="M320 194 L332 194" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M328 184 L340 194 L328 204 Z" fill="#c9a84c"/>
+  <rect x="344" y="154" width="440" height="80" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="364" y="203" font-size="24" fill="#191c19">計測の不具合</text>
+
+  <path d="M166 236 L166 248" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M156 244 L166 256 L176 244 Z" fill="#c9a84c"/>
+
+  <rect x="16" y="258" width="300" height="80" rx="10" fill="#c9a84c"/>
+  <text x="166" y="307" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">3 コンバージョン率</text>
+  <path d="M320 298 L332 298" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M328 288 L340 298 L328 308 Z" fill="#c9a84c"/>
+  <rect x="344" y="258" width="440" height="80" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="364" y="307" font-size="24" fill="#191c19">リンク先のページ・フォーム</text>
+
+  <path d="M166 340 L166 352" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M156 348 L166 360 L176 348 Z" fill="#c9a84c"/>
+
+  <rect x="16" y="362" width="300" height="80" rx="10" fill="#c9a84c"/>
+  <text x="166" y="411" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">4 クリック率</text>
+  <path d="M320 402 L332 402" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M328 392 L340 402 L328 412 Z" fill="#c9a84c"/>
+  <rect x="344" y="362" width="440" height="80" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="364" y="411" font-size="24" fill="#191c19">広告文・画像・検索語句</text>
+
+  <path d="M166 444 L166 456" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M156 452 L166 464 L176 452 Z" fill="#c9a84c"/>
+
+  <rect x="16" y="466" width="300" height="80" rx="10" fill="#c9a84c"/>
+  <text x="166" y="515" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">5 表示回数と費用</text>
+  <path d="M320 506 L332 506" stroke="#c9a84c" stroke-width="4"/>
+  <path d="M328 496 L340 506 L328 516 Z" fill="#c9a84c"/>
+  <rect x="344" y="466" width="440" height="80" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="364" y="515" font-size="24" fill="#191c19">予算の消化・配信の状態</text>
+</svg>

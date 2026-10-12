@@ -86,6 +86,7 @@ export default function ServiceDetail({
           {improvement && <a href="#effect">効果の試算例</a>}
           <a href="#workflow">進め方</a>
           <a href="#preparation">役割分担</a>
+          {s.industry && <a href="#industry">{s.industry.label}</a>}
           <a href="#pricing">費用</a>
         </nav>
       </div>
@@ -179,6 +180,27 @@ export default function ServiceDetail({
           </div>
         </div>
       </Section>
+      {s.industry && (
+        <Section
+          id="industry"
+          eyebrow={s.industry.en}
+          title={s.industry.title}
+          text={s.industry.text}
+        >
+          <ul className="m-checklist">
+            {s.industry.points.map((p) => (
+              <li key={p}>{p}</li>
+            ))}
+          </ul>
+          <div className="m-related">
+            {s.industry.links.map((l) => (
+              <Link key={l.href} href={l.href}>
+                {l.name} →
+              </Link>
+            ))}
+          </div>
+        </Section>
+      )}
       {s.cases.some(isPublicCase) && (
         <Section eyebrow="05 / RELATED CASES" title="関連する支援事例">
           <CaseCards slugs={s.cases.filter(isPublicCase)} />
@@ -202,11 +224,14 @@ export default function ServiceDetail({
       </Section>
       <Section eyebrow="07 / FAQ" title="ご依頼前のよくある質問">
         <FaqList
-          items={faqs.filter(
-            (f) =>
-              f.category === "料金・契約について" ||
-              f.question === "無料相談では何を話しますか？",
-          )}
+          items={[
+            ...(s.faqs ?? []),
+            ...faqs.filter(
+              (f) =>
+                f.category === "料金・契約について" ||
+                f.question === "無料相談では何を話しますか？",
+            ),
+          ]}
         />
       </Section>
       <ContactCTA />
