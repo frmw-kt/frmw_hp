@@ -1,0 +1,13 @@
+:global(.marketing-site) .choicesSection { padding-top: 32px; padding-bottom: 64px; }
+.choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 24px; }
+.card { display: flex; flex-direction: column; padding: 32px; border: 1px solid #d6d8d0; border-radius: 12px; background: #fafaf7; }
+.badge { color: #626549; font-size: 13px; font-weight: 650; margin-bottom: 14px; }
+:global(.marketing-site) .choicesSection .card h2 { font-size: clamp(22px, 2.3vw, 30px); }
+.summary { color: #585e54; font-size: 15px; margin-top: 16px; }
+.facts { padding-left: 20px; list-style: disc; margin: 20px 0; font-size: 14px; line-height: 1.9; }
+.flow { font-size: 12px; color: #585e54; border-top: 1px solid #d6d8d0; padding-top: 20px; margin-top: auto; margin-bottom: 20px; }
+.note { font-size: 12px; color: #62665f; line-height: 1.9; margin-top: 14px; }
+@media (max-width: 600px) { .card { padding: 24px; } :global(.marketing-site) .choicesSection { padding-top: 16px; padding-bottom: 40px; } }
+
+:global(.marketing-site) .hero { padding-top: 120px; padding-bottom: 40px; }
+:global(.marketing-site) .hero h1 { font-size: clamp(28px, 3.8vw, 44px); text-wrap: balance; }

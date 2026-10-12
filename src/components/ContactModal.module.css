@@ -1,0 +1,16 @@
+.dialog { margin: auto; width: min(680px, calc(100vw - 48px)); max-height: calc(100dvh - 48px); padding: 0; border: 1px solid #d6d8d0; border-radius: 16px; background: #fafaf7; color: #242a23; overflow-y: auto; overscroll-behavior: contain; box-shadow: 0 24px 80px #0004; }
+.dialog::backdrop { background: #101411a8; backdrop-filter: blur(4px); }
+.header { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 28px; background: #fafaf7; border-bottom: 1px solid #d6d8d0; }
+:global(.marketing-site) .dialog .header h2 { font-size: 24px; line-height: 1.4; margin: 0; }
+.close { flex-shrink: 0; min-height: 44px; padding: 8px 12px; border: 1px solid #aeb1a7; border-radius: 24px; color: #242a23; background: #fff; cursor: pointer; font-size: 13px; }
+.close span { font-size: 20px; margin-left: 6px; }
+.close:focus-visible { outline: 2px solid #806222; outline-offset: 3px; }
+.body { padding: 24px 28px 32px; }
+.description { font-size: 15px; line-height: 1.9; margin-bottom: 12px; }
+.hint { font-size: 12px; line-height: 1.9; color: #62665f; margin: 12px 0 24px; }
+@media (max-width: 600px) {
+  .dialog { width: 100%; max-width: 100%; height: 100dvh; max-height: 100dvh; border: 0; border-radius: 0; }
+  .header { padding: 16px 20px; }
+  :global(.marketing-site) .dialog .header h2 { font-size: 20px; }
+  .body { padding: 20px 20px max(24px, env(safe-area-inset-bottom)); }
+}
