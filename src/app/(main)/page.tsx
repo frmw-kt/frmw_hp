@@ -96,8 +96,8 @@ export default function HomePage() {
           {[
             ["施策を決められない", "優先順位・ターゲットを整理", "consulting"],
             [
-              "広告の成果が伸びない",
-              "配信と問い合わせ導線を改善",
+              "集客の成果が伸びない",
+              "広告・SNS・SEOの運用を改善",
               "operations",
             ],
             [

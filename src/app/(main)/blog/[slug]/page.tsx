@@ -14,9 +14,9 @@ import { SITE_URL } from "@/lib/site";
 /** 記事のカテゴリ → 関連する支援内容（記事末尾のリンク） */
 const CATEGORY_SERVICE: Record<string, [string, string]> = {
   広告運用: ["運用代行", "/services/operations"],
-  SNSマーケティング: ["施策立案", "/services/consulting/planning"],
+  SNSマーケティング: ["運用代行", "/services/operations"],
   "制作・クリエイティブ": ["LP制作", "/services/production/lp"],
-  コンテンツマーケティング: ["施策立案", "/services/consulting/planning"],
+  コンテンツマーケティング: ["運用代行", "/services/operations"],
   Web集客: ["改善提案", "/services/consulting/improvement"],
   マーケティング戦略: ["戦略立案", "/services/consulting/strategy"],
 };
