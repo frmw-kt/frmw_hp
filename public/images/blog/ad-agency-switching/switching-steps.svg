@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="600" fill="#ffffff"/>
+  <text x="265" y="44" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">手順</text>
+  <text x="575" y="30" font-size="22" text-anchor="middle" fill="#41483c">アクセスできる人</text>
+  <text x="535" y="62" font-size="22" font-weight="bold" text-anchor="middle" fill="#191c19">自社</text>
+  <text x="635" y="62" font-size="22" font-weight="bold" text-anchor="middle" fill="#806222">新代理店</text>
+  <text x="735" y="62" font-size="22" font-weight="bold" text-anchor="middle" fill="#41483c">旧代理店</text>
+  <line x1="30" y1="78" x2="770" y2="78" stroke="#e3e2dc" stroke-width="2"/>
+
+  <rect x="30" y="90" width="460" height="80" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="50" y="140" font-size="24" fill="#191c19"><tspan font-weight="bold" fill="#806222">1</tspan> 持ち主と自社の権限を確かめる</text>
+  <text x="535" y="140" font-size="24" text-anchor="middle" fill="#41483c">確認</text>
+  <text x="635" y="140" font-size="24" text-anchor="middle" fill="#41483c">—</text>
+  <text x="735" y="140" font-size="26" text-anchor="middle" fill="#41483c">●</text>
+
+  <rect x="30" y="185" width="460" height="80" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="50" y="235" font-size="24" fill="#191c19"><tspan font-weight="bold" fill="#806222">2</tspan> 自社の管理者権限を確保する</text>
+  <text x="535" y="235" font-size="26" text-anchor="middle" fill="#191c19">●</text>
+  <text x="635" y="235" font-size="24" text-anchor="middle" fill="#41483c">—</text>
+  <text x="735" y="235" font-size="26" text-anchor="middle" fill="#41483c">●</text>
+
+  <rect x="30" y="280" width="460" height="80" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="50" y="330" font-size="24" fill="#191c19"><tspan font-weight="bold" fill="#806222">3</tspan> 新しい代理店に権限を渡す</text>
+  <text x="535" y="330" font-size="26" text-anchor="middle" fill="#191c19">●</text>
+  <text x="635" y="330" font-size="26" text-anchor="middle" fill="#806222">●</text>
+  <text x="735" y="330" font-size="26" text-anchor="middle" fill="#41483c">●</text>
+
+  <rect x="30" y="375" width="460" height="80" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="50" y="408" font-size="24" fill="#191c19"><tspan font-weight="bold" fill="#806222">4</tspan> 計測・オーディエンス・素材・</text>
+  <text x="76" y="440" font-size="24" fill="#191c19">過去データを引き継ぐ</text>
+  <text x="535" y="425" font-size="26" text-anchor="middle" fill="#191c19">●</text>
+  <text x="635" y="425" font-size="26" text-anchor="middle" fill="#806222">●</text>
+  <text x="735" y="425" font-size="26" text-anchor="middle" fill="#41483c">●</text>
+
+  <rect x="30" y="470" width="460" height="80" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="50" y="520" font-size="24" fill="#191c19"><tspan font-weight="bold" fill="#806222">5</tspan> 旧代理店のアクセスを外す</text>
+  <text x="535" y="520" font-size="26" text-anchor="middle" fill="#191c19">●</text>
+  <text x="635" y="520" font-size="26" text-anchor="middle" fill="#806222">●</text>
+  <text x="735" y="520" font-size="24" font-weight="bold" text-anchor="middle" fill="#806222">解除</text>
+
+  <text x="400" y="585" font-size="22" text-anchor="middle" fill="#41483c">旧代理店のアクセスは、引き継ぎが終わってから最後に外す</text>
+</svg>
