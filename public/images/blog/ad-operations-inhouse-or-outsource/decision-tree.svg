@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="800" fill="#ffffff"/>
+  <defs>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="16" width="760" height="76" rx="8" fill="#191c19"/>
+  <text x="400" y="50" font-size="22" text-anchor="middle" fill="#e3e2dc">前提（どの選択肢でも）</text>
+  <text x="400" y="80" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">権限の管理と成果の共有の担当を決める</text>
+  <line x1="260" y1="92" x2="260" y2="120" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+
+  <rect x="20" y="126" width="480" height="96" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="260" y="164" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">Q1 1週間ほどの間隔で結果を見て</text>
+  <text x="260" y="200" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">次の変更を決める人が社内にいるか</text>
+  <line x1="500" y1="174" x2="574" y2="174" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+  <text x="506" y="160" font-size="22" font-weight="bold" fill="#806222">いない</text>
+  <rect x="580" y="126" width="200" height="96" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="680" y="166" font-size="24" font-weight="bold" text-anchor="middle" fill="#806222">運用を外注</text>
+  <text x="680" y="200" font-size="22" text-anchor="middle" fill="#41483c">判断も任せる</text>
+  <line x1="260" y1="222" x2="260" y2="276" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+  <text x="278" y="256" font-size="22" font-weight="bold" fill="#806222">いる</text>
+
+  <rect x="20" y="282" width="480" height="96" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="260" y="320" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">Q2 広告文・バナーなどの</text>
+  <text x="260" y="356" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">入稿と制作を社内で回せるか</text>
+  <line x1="500" y1="330" x2="574" y2="330" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+  <text x="506" y="316" font-size="22" font-weight="bold" fill="#806222">無理</text>
+  <rect x="580" y="282" width="200" height="96" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="680" y="322" font-size="24" font-weight="bold" text-anchor="middle" fill="#806222">制作だけ</text>
+  <text x="680" y="356" font-size="24" font-weight="bold" text-anchor="middle" fill="#806222">外注</text>
+  <line x1="260" y1="378" x2="260" y2="432" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+  <text x="278" y="412" font-size="22" font-weight="bold" fill="#806222">回せる</text>
+
+  <rect x="20" y="438" width="480" height="96" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="260" y="476" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">Q3 計測と初期設定を</text>
+  <text x="260" y="512" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">社内でできるか</text>
+  <line x1="500" y1="486" x2="574" y2="486" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+  <text x="506" y="472" font-size="22" font-weight="bold" fill="#806222">無理</text>
+  <rect x="580" y="438" width="200" height="96" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="680" y="478" font-size="24" font-weight="bold" text-anchor="middle" fill="#806222">初期設定</text>
+  <text x="680" y="512" font-size="24" font-weight="bold" text-anchor="middle" fill="#806222">だけ外注</text>
+  <line x1="260" y1="534" x2="260" y2="588" stroke="#806222" stroke-width="3" marker-end="url(#arw)"/>
+  <text x="278" y="568" font-size="22" font-weight="bold" fill="#806222">できる</text>
+  <line x1="680" y1="534" x2="680" y2="634" stroke="#806222" stroke-width="3" stroke-dasharray="8 6"/>
+  <line x1="680" y1="634" x2="506" y2="634" stroke="#806222" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arw)"/>
+  <text x="560" y="622" font-size="22" fill="#806222">設定後</text>
+
+  <rect x="20" y="594" width="480" height="80" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="260" y="644" font-size="26" font-weight="bold" text-anchor="middle" fill="#806222">自社運用（インハウス）</text>
+
+  <rect x="20" y="700" width="760" height="84" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="736" font-size="22" text-anchor="middle" fill="#41483c">費用は、外注で減る社内の時間×1時間あたりの人件費と</text>
+  <text x="400" y="768" font-size="22" text-anchor="middle" fill="#41483c">運用手数料を比べて確かめる（図3）</text>
+</svg>

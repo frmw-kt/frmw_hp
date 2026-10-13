@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="640" fill="#ffffff"/>
+  <text x="400" y="40" font-size="26" font-weight="bold" text-anchor="middle" fill="#191c19">運用手数料と社内の時間の比べ方（数値は仮定）</text>
+
+  <rect x="20" y="66" width="365" height="120" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="202" y="104" font-size="22" text-anchor="middle" fill="#41483c">自社で運用したときの</text>
+  <text x="202" y="134" font-size="22" text-anchor="middle" fill="#41483c">月の作業時間</text>
+  <text x="202" y="170" font-size="26" font-weight="bold" text-anchor="middle" fill="#191c19">24時間</text>
+
+  <text x="400" y="138" font-size="30" font-weight="bold" text-anchor="middle" fill="#806222">−</text>
+
+  <rect x="415" y="66" width="365" height="120" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="597" y="104" font-size="22" text-anchor="middle" fill="#41483c">外注しても社内に残る</text>
+  <text x="597" y="134" font-size="22" text-anchor="middle" fill="#41483c">月の時間（共有・承認）</text>
+  <text x="597" y="170" font-size="26" font-weight="bold" text-anchor="middle" fill="#191c19">6時間</text>
+
+  <rect x="20" y="210" width="760" height="76" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="400" y="258" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">外注で減る時間　18時間</text>
+
+  <text x="400" y="326" font-size="24" font-weight="bold" text-anchor="middle" fill="#806222">× 1時間あたりの人件費 3,000円</text>
+
+  <rect x="20" y="350" width="365" height="120" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="202" y="392" font-size="22" text-anchor="middle" fill="#41483c">外注で減る人件費</text>
+  <text x="202" y="440" font-size="28" font-weight="bold" text-anchor="middle" fill="#191c19">54,000円</text>
+
+  <text x="400" y="420" font-size="24" font-weight="bold" text-anchor="middle" fill="#806222">と</text>
+
+  <rect x="415" y="350" width="365" height="120" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="597" y="392" font-size="22" text-anchor="middle" fill="#41483c">月の運用手数料</text>
+  <text x="597" y="440" font-size="28" font-weight="bold" text-anchor="middle" fill="#191c19">60,000円</text>
+
+  <rect x="20" y="494" width="760" height="128" rx="8" fill="#191c19"/>
+  <text x="400" y="536" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">この仮定では、手数料が減る人件費を</text>
+  <text x="400" y="570" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">6,000円上回る</text>
+  <text x="400" y="604" font-size="22" text-anchor="middle" fill="#e3e2dc">差額と、図2の問いへの答えをあわせて決める</text>
+</svg>
