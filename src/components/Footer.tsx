@@ -32,6 +32,7 @@ export default function Footer() {
               ["コラム", "/blog"],
               ["よくある質問", "/faq"],
               ["無料相談・お問い合わせ", "/contact"],
+              ["プライバシーポリシー", "/privacy"],
             ]
               .filter(([, h]) => hasPublicCases || h !== "/cases")
               .map(([n, h]) => (
