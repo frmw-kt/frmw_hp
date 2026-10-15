@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>広告ランクと品質スコアの関係</title>
+  <desc>広告ランクは入札単価、広告とLPの品質、広告ランクの下限値、オークションの競争力、検索のコンテキスト、アセットの効果の6要素で検索ごとに算出され、掲載の可否・順位・実際のクリック単価を決める。品質スコアは3つの要素を過去90日の他社と比べた診断ツールで、オークションの入力には使われない。</desc>
+  <rect width="800" height="640" fill="#f7f7f4"/>
+  <text x="32" y="46" font-size="28" font-weight="700" fill="#191c19">広告ランクと品質スコアの関係</text>
+
+  <rect x="32" y="72" width="736" height="236" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="110" font-size="24" font-weight="700" fill="#806222">広告ランクの6つの要素（検索ごとに算出）</text>
+  <text x="56" y="160" font-size="24" fill="#191c19">・入札単価</text>
+  <text x="408" y="160" font-size="24" fill="#191c19">・広告とLPの品質</text>
+  <text x="56" y="210" font-size="24" fill="#191c19">・広告ランクの下限値</text>
+  <text x="408" y="210" font-size="24" fill="#191c19">・オークションの競争力</text>
+  <text x="56" y="260" font-size="24" fill="#191c19">・検索のコンテキスト</text>
+  <text x="408" y="260" font-size="24" fill="#191c19">・アセットなどの効果</text>
+
+  <path d="M400 310 L400 336" stroke="#806222" stroke-width="4"/>
+  <path d="M388 332 L400 350 L412 332 Z" fill="#806222"/>
+
+  <rect x="32" y="352" width="736" height="92" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="400" y="390" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">広告ランク</text>
+  <text x="400" y="426" font-size="22" fill="#41483c" text-anchor="middle">→ 掲載できるか・順位・実際のクリック単価</text>
+
+  <rect x="32" y="476" width="736" height="132" rx="10" fill="#ffffff" stroke="#41483c" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="56" y="514" font-size="24" font-weight="700" fill="#191c19">品質スコア（1〜10、キーワードごと）</text>
+  <text x="56" y="550" font-size="22" fill="#41483c">推定クリック率・広告の関連性・LPの利便性を</text>
+  <text x="56" y="584" font-size="22" fill="#41483c">他社と比べた診断ツール。オークションには使われない</text>
+</svg>

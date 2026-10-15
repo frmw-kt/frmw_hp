@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 720" width="800" height="720" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>Google広告の費用が決まり、請求されるまでの6段階</title>
+  <desc>予算の設定、検索ごとのオークション、クリックごとの実際のクリック単価、配信費用、無効なクリックなどを調整した請求額、後払いでの支払いの順に費用が決まる流れ。</desc>
+  <rect width="800" height="720" fill="#f7f7f4"/>
+  <text x="32" y="46" font-size="28" font-weight="700" fill="#191c19">Google広告の費用が決まり、請求されるまで</text>
+
+  <rect x="32" y="72" width="736" height="84" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="108" font-size="24" font-weight="700" fill="#191c19">① 予算：1日の平均予算をキャンペーンごとに設定</text>
+  <text x="56" y="140" font-size="22" fill="#41483c">上限は1日×2・1か月×30.4（ほとんどのキャンペーン）</text>
+  <path d="M400 158 L400 170" stroke="#806222" stroke-width="3"/>
+
+  <rect x="32" y="172" width="736" height="84" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="56" y="208" font-size="24" font-weight="700" fill="#191c19">② オークション：検索のたびに広告ランクを算出</text>
+  <text x="56" y="240" font-size="22" fill="#41483c">広告を掲載できるかと、掲載の順位が決まる</text>
+  <path d="M400 258 L400 270" stroke="#806222" stroke-width="3"/>
+
+  <rect x="32" y="272" width="736" height="84" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="56" y="308" font-size="24" font-weight="700" fill="#191c19">③ クリック：実際のクリック単価が発生する</text>
+  <text x="56" y="340" font-size="22" fill="#41483c">1つ下の広告ランクか下限値を上回る最低額（検索広告）</text>
+  <path d="M400 358 L400 370" stroke="#806222" stroke-width="3"/>
+
+  <rect x="32" y="372" width="736" height="84" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="56" y="408" font-size="24" font-weight="700" fill="#191c19">④ 配信費用：すべてのクリックの費用の合計</text>
+  <text x="56" y="440" font-size="22" fill="#41483c">まれに費用の上限を超えることがある</text>
+  <path d="M400 458 L400 470" stroke="#806222" stroke-width="3"/>
+
+  <rect x="32" y="472" width="736" height="84" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="56" y="508" font-size="24" font-weight="700" fill="#191c19">⑤ 請求額：無効なクリックなどを調整した額</text>
+  <text x="56" y="540" font-size="22" fill="#41483c">上限を超えた分は請求されず、Googleが負担する</text>
+  <path d="M400 558 L400 570" stroke="#806222" stroke-width="3"/>
+
+  <rect x="32" y="572" width="736" height="84" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="608" font-size="24" font-weight="700" fill="#191c19">⑥ 支払い：後払いは毎月1日か基準額に達した時</text>
+  <text x="56" y="640" font-size="22" fill="#41483c">住所が日本のアカウントは消費税10%がかかる</text>
+
+  <text x="32" y="696" font-size="22" fill="#41483c">※③は検索広告のクリック単価制の場合</text>
+</svg>

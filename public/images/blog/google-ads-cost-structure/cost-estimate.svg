@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>平均クリック単価とコンバージョン率から件数とCPAを見積もる計算（仮定の数値）</title>
+  <desc>月の費用10万円を平均クリック単価150円で割ると約666クリック、コンバージョン率2%を掛けると約13件、CPAは150円÷2%で7,500円。許容CPAを15,000円とすると、平均クリック単価の上限は15,000円×2%で300円。数値はすべて仮定。</desc>
+  <rect width="800" height="600" fill="#f7f7f4"/>
+  <text x="32" y="46" font-size="28" font-weight="700" fill="#191c19">単価と成約率から件数とCPAを見積もる</text>
+
+  <rect x="32" y="72" width="736" height="96" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="56" y="108" font-size="22" fill="#41483c">クリック数＝月の費用÷平均クリック単価</text>
+  <text x="56" y="148" font-size="26" font-weight="700" fill="#191c19">10万円 ÷ 150円 ＝ 約666クリック</text>
+
+  <rect x="32" y="184" width="736" height="96" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="56" y="220" font-size="22" fill="#41483c">件数＝クリック数×コンバージョン率（CVR）</text>
+  <text x="56" y="260" font-size="26" font-weight="700" fill="#191c19">666クリック × 2% ＝ 約13件</text>
+
+  <rect x="32" y="296" width="736" height="96" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="332" font-size="22" fill="#41483c">CPA＝平均クリック単価÷CVR</text>
+  <text x="56" y="372" font-size="26" font-weight="700" fill="#806222">150円 ÷ 2% ＝ 7,500円</text>
+
+  <rect x="32" y="408" width="736" height="96" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="444" font-size="22" fill="#41483c">逆算：平均クリック単価の上限＝許容CPA×CVR</text>
+  <text x="56" y="484" font-size="26" font-weight="700" fill="#806222">15,000円 × 2% ＝ 300円</text>
+
+  <text x="32" y="542" font-size="22" fill="#41483c">※数値はすべて説明のための仮定（相場ではない）</text>
+  <text x="32" y="576" font-size="22" fill="#41483c">※クリック数・件数は1未満を切り捨て</text>
+</svg>

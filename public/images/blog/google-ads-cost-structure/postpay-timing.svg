@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>後払いで請求が行われるタイミング</title>
+  <desc>後払いでは、月の途中で費用がお支払い基準額に達するとその時点で請求され、基準額が段階的に引き上げられる。基準額に達しなかった費用は翌月1日に請求される。</desc>
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <text x="32" y="46" font-size="28" font-weight="700" fill="#191c19">後払いで請求されるタイミング</text>
+
+  <path d="M72 96 L72 420" stroke="#c9a84c" stroke-width="4"/>
+
+  <circle cx="72" cy="104" r="14" fill="#c9a84c"/>
+  <text x="104" y="100" font-size="24" font-weight="700" fill="#191c19">広告が掲載され、費用が発生する</text>
+  <text x="104" y="134" font-size="22" fill="#41483c">登録したお支払い方法に後から請求される</text>
+
+  <circle cx="72" cy="196" r="14" fill="#806222"/>
+  <text x="104" y="192" font-size="24" font-weight="700" fill="#191c19">月の途中で費用が基準額に達する</text>
+  <text x="104" y="226" font-size="22" fill="#41483c">その時点で請求（急増時は少し超えることも）</text>
+
+  <circle cx="72" cy="288" r="14" fill="#806222"/>
+  <text x="104" y="284" font-size="24" font-weight="700" fill="#191c19">基準額が次の段階に引き上げられる</text>
+  <text x="104" y="318" font-size="22" fill="#41483c">段階的に上がるが、上限を超えない</text>
+
+  <circle cx="72" cy="388" r="14" fill="#c9a84c"/>
+  <text x="104" y="384" font-size="24" font-weight="700" fill="#191c19">翌月1日</text>
+  <text x="104" y="418" font-size="22" fill="#41483c">前回の請求以降の費用を請求する</text>
+
+  <rect x="32" y="452" width="736" height="84" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="56" y="486" font-size="22" fill="#41483c">基準額はアカウント・国・通貨で異なり、引き上げの</text>
+  <text x="56" y="518" font-size="22" fill="#41483c">通知はない。［料金］の［概要］の画面で確かめる</text>
+</svg>

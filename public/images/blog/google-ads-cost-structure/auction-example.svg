@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>広告ランクと掲載位置、支払う額の関係（Google 広告ヘルプの簡単な例）</title>
+  <desc>広告ランク80と50の広告主は上部の下限値40を超えて検索結果の上に、30と10は下部の下限値8を超えて検索結果の下に表示され、5は表示されない。各広告主は1つ下の広告ランクか下限値を上回る最低額を支払う。</desc>
+  <rect width="800" height="600" fill="#f7f7f4"/>
+  <text x="32" y="46" font-size="28" font-weight="700" fill="#191c19">広告ランクと支払う額（Googleの簡単な例）</text>
+
+  <rect x="32" y="72" width="736" height="48" fill="#191c19"/>
+  <text x="56" y="104" font-size="22" font-weight="700" fill="#ffffff">広告ランク</text>
+  <text x="200" y="104" font-size="22" font-weight="700" fill="#ffffff">掲載位置</text>
+  <text x="440" y="104" font-size="22" font-weight="700" fill="#ffffff">1クリックに支払う額</text>
+
+  <rect x="32" y="120" width="736" height="56" fill="#ffffff" stroke="#e3e2dc"/>
+  <text x="56" y="157" font-size="26" font-weight="700" fill="#806222">80</text>
+  <text x="200" y="157" font-size="22" fill="#191c19">検索結果の上・1番目</text>
+  <text x="440" y="157" font-size="22" fill="#191c19">50を上回る最低額</text>
+
+  <rect x="32" y="176" width="736" height="56" fill="#ffffff" stroke="#e3e2dc"/>
+  <text x="56" y="213" font-size="26" font-weight="700" fill="#806222">50</text>
+  <text x="200" y="213" font-size="22" fill="#191c19">検索結果の上・2番目</text>
+  <text x="440" y="213" font-size="22" fill="#191c19">下限値40を上回る最低額</text>
+
+  <path d="M32 252 L768 252" stroke="#c9a84c" stroke-width="3" stroke-dasharray="10 6"/>
+  <text x="56" y="284" font-size="22" font-weight="700" fill="#806222">検索結果の上に表示する下限値＝40</text>
+
+  <rect x="32" y="300" width="736" height="56" fill="#ffffff" stroke="#e3e2dc"/>
+  <text x="56" y="337" font-size="26" font-weight="700" fill="#806222">30</text>
+  <text x="200" y="337" font-size="22" fill="#191c19">検索結果の下・1番目</text>
+  <text x="440" y="337" font-size="22" fill="#191c19">10を上回る最低額</text>
+
+  <rect x="32" y="356" width="736" height="56" fill="#ffffff" stroke="#e3e2dc"/>
+  <text x="56" y="393" font-size="26" font-weight="700" fill="#806222">10</text>
+  <text x="200" y="393" font-size="22" fill="#191c19">検索結果の下・2番目</text>
+  <text x="440" y="393" font-size="22" fill="#191c19">下限値8を上回る最低額</text>
+
+  <path d="M32 432 L768 432" stroke="#c9a84c" stroke-width="3" stroke-dasharray="10 6"/>
+  <text x="56" y="464" font-size="22" font-weight="700" fill="#806222">検索結果の下に表示する下限値＝8</text>
+
+  <rect x="32" y="480" width="736" height="56" fill="#efeee9" stroke="#e3e2dc"/>
+  <text x="56" y="517" font-size="26" font-weight="700" fill="#41483c">5</text>
+  <text x="200" y="517" font-size="22" fill="#41483c">表示されない</text>
+  <text x="440" y="517" font-size="22" fill="#41483c">費用は発生しない</text>
+
+  <text x="32" y="576" font-size="22" fill="#41483c">※実際の算出は品質など他の要素も含む。数値は例</text>
+</svg>
