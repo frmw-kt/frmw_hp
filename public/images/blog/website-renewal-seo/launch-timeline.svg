@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="560" fill="#f7f7f4"/>
+  <line x1="60" y1="40" x2="60" y2="530" stroke="#c9a84c" stroke-width="4"/>
+  <circle cx="60" cy="62" r="12" fill="#806222"/>
+  <circle cx="60" cy="190" r="12" fill="#806222"/>
+  <circle cx="60" cy="318" r="12" fill="#806222"/>
+  <circle cx="60" cy="446" r="12" fill="#806222"/>
+  <rect x="90" y="24" width="690" height="112" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="110" y="62" font-size="26" fill="#806222" font-weight="bold">公開前</text>
+  <text x="110" y="98" font-size="22" fill="#191c19">URL対応表・テスト環境で確認・Search Consoleの</text>
+  <text x="110" y="126" font-size="22" fill="#191c19">所有権（新旧とも）・新しいサイトマップを用意</text>
+  <rect x="90" y="152" width="690" height="112" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="110" y="190" font-size="26" fill="#806222" font-weight="bold">公開日</text>
+  <text x="110" y="226" font-size="22" fill="#191c19">301を有効化・noindexとrobots.txtのブロックを外す</text>
+  <text x="110" y="254" font-size="22" fill="#191c19">・サイトマップ送信・URL検査ツールで転送を確認</text>
+  <rect x="90" y="280" width="690" height="112" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="110" y="318" font-size="26" fill="#806222" font-weight="bold">公開後〜数週間</text>
+  <text x="110" y="354" font-size="22" fill="#191c19">サイトマップ・ページのインデックス登録・</text>
+  <text x="110" y="382" font-size="22" fill="#191c19">検索パフォーマンスで新旧の入れ替わりを見る</text>
+  <rect x="90" y="408" width="690" height="112" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="110" y="446" font-size="26" fill="#806222" font-weight="bold">1年以上</text>
+  <text x="110" y="482" font-size="22" fill="#191c19">リダイレクトを残す（できるだけ長く）・</text>
+  <text x="110" y="510" font-size="22" fill="#191c19">外部リンクやSNS・広告のリンク先を新URLへ</text>
+</svg>
