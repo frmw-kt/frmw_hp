@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="560" fill="#f7f7f4"/>
+  <rect x="20" y="20" width="246" height="520" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <rect x="20" y="20" width="246" height="92" rx="8" fill="#806222"/>
+  <text x="143" y="60" font-size="26" fill="#ffffff" font-weight="bold" text-anchor="middle">初期費用</text>
+  <text x="143" y="94" font-size="22" fill="#ffffff" text-anchor="middle">（公開まで）</text>
+  <text x="40" y="156" font-size="24" fill="#191c19">進行管理</text>
+  <text x="40" y="202" font-size="24" fill="#191c19">要件整理・設計</text>
+  <text x="40" y="248" font-size="24" fill="#191c19">原稿・撮影</text>
+  <text x="40" y="294" font-size="24" fill="#191c19">デザイン</text>
+  <text x="40" y="340" font-size="24" fill="#191c19">実装・CMS</text>
+  <text x="40" y="386" font-size="24" fill="#191c19">フォーム・計測</text>
+  <text x="40" y="432" font-size="24" fill="#191c19">旧サイトの移行</text>
+  <text x="40" y="478" font-size="24" fill="#191c19">公開作業</text>
+
+  <rect x="277" y="20" width="246" height="520" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <rect x="277" y="20" width="246" height="92" rx="8" fill="#806222"/>
+  <text x="400" y="60" font-size="26" fill="#ffffff" font-weight="bold" text-anchor="middle">継続費用</text>
+  <text x="400" y="94" font-size="22" fill="#ffffff" text-anchor="middle">（公開後）</text>
+  <text x="297" y="156" font-size="24" fill="#191c19">サーバー</text>
+  <text x="297" y="202" font-size="24" fill="#191c19">ドメインの更新</text>
+  <text x="297" y="248" font-size="24" fill="#191c19">保守</text>
+  <text x="297" y="294" font-size="24" fill="#191c19">更新の代行</text>
+  <text x="297" y="340" font-size="24" fill="#191c19">ツールの利用料</text>
+
+  <rect x="534" y="20" width="246" height="520" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <rect x="534" y="20" width="246" height="92" rx="8" fill="#41483c"/>
+  <text x="657" y="60" font-size="26" fill="#ffffff" font-weight="bold" text-anchor="middle">扱いを確かめる</text>
+  <text x="657" y="94" font-size="22" fill="#ffffff" text-anchor="middle">（条件・別途）</text>
+  <text x="554" y="156" font-size="24" fill="#191c19">修正の回数</text>
+  <text x="554" y="202" font-size="24" fill="#191c19">追加ページの単価</text>
+  <text x="554" y="248" font-size="24" fill="#191c19">素材の利用料</text>
+  <text x="554" y="294" font-size="24" fill="#191c19">税込・税別</text>
+  <text x="554" y="340" font-size="24" fill="#191c19">支払いの時期</text>
+  <text x="554" y="386" font-size="24" fill="#191c19">権利と名義</text>
+</svg>

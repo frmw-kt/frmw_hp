@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="700" fill="#f7f7f4"/>
+  <text x="40" y="44" font-size="24" fill="#41483c" font-weight="bold">段階</text>
+  <text x="330" y="44" font-size="24" fill="#41483c" font-weight="bold">依頼者がやること</text>
+  <g>
+    <rect x="30" y="64" width="270" height="92" rx="8" fill="#806222"/>
+    <text x="50" y="120" font-size="26" fill="#ffffff" font-weight="bold">1 要件の整理</text>
+    <rect x="310" y="64" width="460" height="92" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="330" y="102" font-size="24" fill="#191c19">目的・ページ・素材の分担・</text>
+    <text x="330" y="136" font-size="24" fill="#191c19">予算と公開日を書面で伝える</text>
+  </g>
+  <g>
+    <rect x="30" y="168" width="270" height="92" rx="8" fill="#806222"/>
+    <text x="50" y="224" font-size="26" fill="#ffffff" font-weight="bold">2 見積もり・契約</text>
+    <rect x="310" y="168" width="460" height="92" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="330" y="206" font-size="24" fill="#191c19">作業項目・修正回数・保守・</text>
+    <text x="330" y="240" font-size="24" fill="#191c19">権利と名義を書面で確かめる</text>
+  </g>
+  <g>
+    <rect x="30" y="272" width="270" height="92" rx="8" fill="#806222"/>
+    <text x="50" y="328" font-size="26" fill="#ffffff" font-weight="bold">3 設計</text>
+    <rect x="310" y="272" width="460" height="92" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="330" y="310" font-size="24" fill="#191c19">サイトマップ・ページの骨組み</text>
+    <text x="330" y="344" font-size="24" fill="#191c19">と原稿を確認して承認する</text>
+  </g>
+  <g>
+    <rect x="30" y="376" width="270" height="92" rx="8" fill="#806222"/>
+    <text x="50" y="432" font-size="26" fill="#ffffff" font-weight="bold">4 デザイン</text>
+    <rect x="310" y="376" width="460" height="92" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="330" y="414" font-size="24" fill="#191c19">契約で決めた修正回数の中で</text>
+    <text x="330" y="448" font-size="24" fill="#191c19">直してほしい点をまとめて伝える</text>
+  </g>
+  <g>
+    <rect x="30" y="480" width="270" height="92" rx="8" fill="#806222"/>
+    <text x="50" y="536" font-size="26" fill="#ffffff" font-weight="bold">5 実装・確認</text>
+    <rect x="310" y="480" width="460" height="92" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="330" y="518" font-size="24" fill="#191c19">スマホ表示・フォームの送信・</text>
+    <text x="330" y="552" font-size="24" fill="#191c19">計測を公開前に自分で試す</text>
+  </g>
+  <g>
+    <rect x="30" y="584" width="270" height="92" rx="8" fill="#806222"/>
+    <text x="50" y="640" font-size="26" fill="#ffffff" font-weight="bold">6 公開・引き継ぎ</text>
+    <rect x="310" y="584" width="460" height="92" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="330" y="622" font-size="24" fill="#191c19">更新方法の資料・管理用の</text>
+    <text x="330" y="656" font-size="24" fill="#191c19">ID・保守の窓口を受け取る</text>
+  </g>
+</svg>
