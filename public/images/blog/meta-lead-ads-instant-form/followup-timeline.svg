@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="500" fill="#f7f7f4"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <line x1="40" y1="120" x2="770" y2="120" stroke="#806222" stroke-width="4" marker-end="url(#arrow)"/>
+  <g fill="#c9a84c">
+    <circle cx="80" cy="120" r="12"/>
+    <circle cx="300" cy="120" r="12"/>
+    <circle cx="520" cy="120" r="12"/>
+  </g>
+  <circle cx="710" cy="120" r="12" fill="#806222"/>
+  <g font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">
+    <text x="80" y="84">送信</text>
+    <text x="300" y="84">直後</text>
+    <text x="520" y="84">定期的に</text>
+    <text x="710" y="84">90日</text>
+  </g>
+  <g stroke="#e3e2dc" stroke-width="2" fill="#ffffff">
+    <rect x="20" y="160" width="180" height="200" rx="12"/>
+    <rect x="215" y="160" width="180" height="200" rx="12"/>
+    <rect x="410" y="160" width="180" height="200" rx="12"/>
+  </g>
+  <rect x="605" y="160" width="180" height="200" rx="12" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <g font-size="22" fill="#41483c" text-anchor="middle">
+    <text x="110" y="204">利用者が</text>
+    <text x="110" y="236">フォームを</text>
+    <text x="110" y="268">送信する</text>
+    <text x="305" y="204">CRM・</text>
+    <text x="305" y="236">リードセンター</text>
+    <text x="305" y="268">で受け取り</text>
+    <text x="305" y="300">連絡する</text>
+    <text x="500" y="204">手動なら</text>
+    <text x="500" y="236">CSVを</text>
+    <text x="500" y="268">ダウンロード</text>
+    <text x="500" y="300">し台帳へ移す</text>
+    <text x="695" y="204">期限切れ</text>
+    <text x="695" y="236">90日を過ぎた</text>
+    <text x="695" y="268">リードは</text>
+    <text x="695" y="300">取り出せない</text>
+  </g>
+  <text x="400" y="420" font-size="24" fill="#191c19" text-anchor="middle">営業時間に配信すると、送信の直後に連絡しやすい</text>
+  <text x="400" y="460" font-size="22" fill="#41483c" text-anchor="middle">［結果］列の件数には、期限切れのリードも含まれる</text>
+</svg>

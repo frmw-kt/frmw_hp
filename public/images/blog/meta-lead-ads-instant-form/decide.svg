@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 720" width="800" height="720" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="720" fill="#f7f7f4"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#806222" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="230" y1="122" x2="230" y2="236"/>
+    <line x1="420" y1="72" x2="506" y2="72"/>
+    <line x1="230" y1="336" x2="230" y2="450"/>
+    <line x1="420" y1="286" x2="506" y2="286"/>
+    <path d="M150,550 L150,610"/>
+    <path d="M420,500 L550,500 L550,610"/>
+  </g>
+  <g stroke="#c9a84c" stroke-width="3" fill="#ffffff">
+    <rect x="20" y="22" width="400" height="100" rx="12"/>
+    <rect x="20" y="236" width="400" height="100" rx="12"/>
+    <rect x="20" y="450" width="400" height="100" rx="12"/>
+  </g>
+  <g stroke="#806222" stroke-width="3" fill="#ffffff">
+    <rect x="510" y="22" width="270" height="100" rx="12"/>
+    <rect x="510" y="236" width="270" height="100" rx="12"/>
+    <rect x="20" y="614" width="260" height="90" rx="12"/>
+    <rect x="320" y="614" width="460" height="90" rx="12"/>
+  </g>
+  <g font-size="22" font-weight="700" fill="#806222">
+    <text x="436" y="60">はい</text>
+    <text x="242" y="186">いいえ</text>
+    <text x="436" y="274">いいえ</text>
+    <text x="242" y="400">はい</text>
+    <text x="162" y="592">ない</text>
+    <text x="436" y="488">ある</text>
+  </g>
+  <g font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">
+    <text x="220" y="62">①商談の前に、ページで</text>
+    <text x="220" y="100">説明する必要があるか</text>
+    <text x="220" y="276">②届いたリードに</text>
+    <text x="220" y="314">すぐ連絡できるか</text>
+    <text x="220" y="490">③LPとMetaピクセルを</text>
+    <text x="220" y="528">用意済みか</text>
+    <text x="645" y="64">LPに誘導する</text>
+    <text x="645" y="278">先に受け取り方と</text>
+    <text x="645" y="314">配信時間を決める</text>
+    <text x="150" y="652">インスタント</text>
+    <text x="150" y="688">フォームで始める</text>
+    <text x="550" y="652">両方を出し、商談1件</text>
+    <text x="550" y="688">あたりの費用で比べる</text>
+  </g>
+  <g font-size="22" fill="#41483c" text-anchor="middle">
+    <text x="645" y="100">事例・料金・比較など</text>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="640" fill="#f7f7f4"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#806222" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="150" y1="114" x2="150" y2="132"/>
+    <line x1="150" y1="226" x2="150" y2="244"/>
+    <line x1="150" y1="338" x2="150" y2="356"/>
+    <line x1="150" y1="450" x2="150" y2="468"/>
+  </g>
+  <g stroke="#e3e2dc" stroke-width="2" fill="#ffffff">
+    <rect x="20" y="20" width="760" height="92" rx="12"/>
+    <rect x="20" y="136" width="760" height="88" rx="12"/>
+    <rect x="20" y="472" width="760" height="88" rx="12"/>
+  </g>
+  <g stroke="#c9a84c" stroke-width="3" fill="#ffffff">
+    <rect x="20" y="248" width="760" height="88" rx="12"/>
+    <rect x="20" y="360" width="760" height="88" rx="12"/>
+  </g>
+  <g font-size="26" font-weight="700" fill="#191c19">
+    <text x="44" y="76">フォームタイプ</text>
+    <text x="44" y="190">イントロ（任意）</text>
+    <text x="44" y="302">質問</text>
+    <text x="44" y="414">プライバシーポリシー</text>
+    <text x="44" y="526">終了（完了画面）</text>
+  </g>
+  <g font-size="22" fill="#41483c">
+    <text x="330" y="60">「大量用」（初期設定）</text>
+    <text x="330" y="94">「高い意向」「リッチクリエイティブ」</text>
+    <text x="330" y="174">商品・サービスの説明と</text>
+    <text x="330" y="206">送信後に受け取れるもの</text>
+    <text x="330" y="286">1つ以上が必要</text>
+    <text x="330" y="318">禁止されている質問がある</text>
+    <text x="330" y="398">配信に必要</text>
+    <text x="330" y="430">既存のURLを使える</text>
+    <text x="330" y="510">テキスト・クーポンコード</text>
+    <text x="330" y="542">ボタン（サイトへの誘導など）</text>
+  </g>
+  <text x="400" y="610" font-size="22" fill="#41483c" text-anchor="middle">カスタム質問などの追加機能は広告マネージャで作る場合だけ</text>
+</svg>

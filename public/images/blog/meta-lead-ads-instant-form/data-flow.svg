@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <g font-size="28" font-weight="700" fill="#806222">
+    <text x="24" y="48">インスタントフォーム（Meta内で完結）</text>
+    <text x="24" y="318">LP（自社サイトのページ）</text>
+  </g>
+  <g stroke="#e3e2dc" stroke-width="2" fill="#ffffff">
+    <rect x="20" y="70" width="230" height="110" rx="12"/>
+    <rect x="285" y="70" width="230" height="110" rx="12"/>
+    <rect x="20" y="340" width="230" height="110" rx="12"/>
+    <rect x="285" y="340" width="230" height="110" rx="12"/>
+  </g>
+  <g stroke="#c9a84c" stroke-width="3" fill="#ffffff">
+    <rect x="550" y="70" width="230" height="110" rx="12"/>
+    <rect x="550" y="340" width="230" height="110" rx="12"/>
+  </g>
+  <g fill="none" stroke="#806222" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="252" y1="125" x2="282" y2="125"/>
+    <line x1="517" y1="125" x2="547" y2="125"/>
+    <line x1="252" y1="395" x2="282" y2="395"/>
+    <line x1="517" y1="395" x2="547" y2="395"/>
+  </g>
+  <g font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">
+    <text x="135" y="118">広告をタップ</text>
+    <text x="400" y="118">フォームに入力</text>
+    <text x="665" y="118">Metaに届く</text>
+    <text x="135" y="388">広告をタップ</text>
+    <text x="400" y="388">LPのフォーム</text>
+    <text x="665" y="388">自社に届く</text>
+  </g>
+  <g font-size="22" fill="#41483c" text-anchor="middle">
+    <text x="135" y="154">サイトへ移動しない</text>
+    <text x="400" y="154">連絡先は自動入力</text>
+    <text x="665" y="154">90日間取り出せる</text>
+    <text x="135" y="424">LPが開く</text>
+    <text x="400" y="424">項目は自社で設計</text>
+    <text x="665" y="424">メール・管理画面</text>
+  </g>
+  <g font-size="24" fill="#191c19">
+    <text x="24" y="226">件数は広告マネージャの［結果］列で数える</text>
+    <text x="24" y="262">自社サイトのタグでは数えられない</text>
+    <text x="24" y="496">Meta広告の成果にするには</text>
+    <text x="24" y="532">Metaピクセルの設置が必要</text>
+  </g>
+</svg>
