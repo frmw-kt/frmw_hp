@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="620" fill="#ffffff"/>
+  <text x="400" y="50" font-size="28" font-weight="bold" fill="#191c19" text-anchor="middle">依頼前に用意するものと、そろえる時期</text>
+  <g>
+    <rect x="30" y="90" width="170" height="150" rx="8" fill="#191c19"/>
+    <text x="115" y="175" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">相談前</text>
+    <rect x="220" y="90" width="550" height="150" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="245" y="135" font-size="24" fill="#41483c">・増やしたい成果（問い合わせ・予約・購入）</text>
+    <text x="245" y="175" font-size="24" fill="#41483c">・成果1件にかけられる上限と月の予算</text>
+    <text x="245" y="215" font-size="24" fill="#41483c">・これまでの実績、任せる範囲と窓口</text>
+  </g>
+  <polygon points="100,246 130,246 115,256" fill="#c9a84c"/>
+  <g>
+    <rect x="30" y="260" width="170" height="150" rx="8" fill="#191c19"/>
+    <text x="115" y="345" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">契約前</text>
+    <rect x="220" y="260" width="550" height="150" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="245" y="305" font-size="24" fill="#41483c">・自社名義の広告アカウント</text>
+    <text x="245" y="345" font-size="24" fill="#41483c">・自社の管理者（2人以上）</text>
+    <text x="245" y="385" font-size="24" fill="#41483c">・渡す権限の範囲、素材の権利の扱い</text>
+  </g>
+  <polygon points="100,416 130,416 115,426" fill="#c9a84c"/>
+  <g>
+    <rect x="30" y="430" width="170" height="150" rx="8" fill="#806222"/>
+    <text x="115" y="515" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">運用開始前</text>
+    <rect x="220" y="430" width="550" height="150" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="245" y="475" font-size="24" fill="#41483c">・代理店への権限の付与</text>
+    <text x="245" y="515" font-size="24" fill="#41483c">・成果の計測の一覧と動作の確認</text>
+    <text x="245" y="555" font-size="24" fill="#41483c">・完成したLP、表現の根拠と承認</text>
+  </g>
+</svg>

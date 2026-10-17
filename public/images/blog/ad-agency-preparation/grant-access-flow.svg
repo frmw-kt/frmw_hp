@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="560" fill="#ffffff"/>
+  <text x="20" y="50" font-size="26" font-weight="bold" fill="#191c19">Google広告：代理店から始める</text>
+  <g>
+    <rect x="20" y="70" width="230" height="150" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="135" y="120" font-size="24" fill="#41483c" text-anchor="middle">①自社の</text>
+    <text x="135" y="155" font-size="24" fill="#41483c" text-anchor="middle">お客様IDを</text>
+    <text x="135" y="190" font-size="24" fill="#41483c" text-anchor="middle">代理店に伝える</text>
+    <rect x="285" y="70" width="230" height="150" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="400" y="120" font-size="24" fill="#41483c" text-anchor="middle">②代理店が</text>
+    <text x="400" y="155" font-size="24" fill="#41483c" text-anchor="middle">MCCからリンク</text>
+    <text x="400" y="190" font-size="24" fill="#41483c" text-anchor="middle">リクエストを送る</text>
+    <rect x="550" y="70" width="230" height="150" rx="8" fill="#191c19"/>
+    <text x="665" y="120" font-size="24" fill="#ffffff" text-anchor="middle">③自社の</text>
+    <text x="665" y="155" font-size="24" fill="#ffffff" text-anchor="middle">管理者が</text>
+    <text x="665" y="190" font-size="24" fill="#ffffff" text-anchor="middle">承認する</text>
+  </g>
+  <polygon points="255,135 255,155 275,145" fill="#c9a84c"/>
+  <polygon points="520,135 520,155 540,145" fill="#c9a84c"/>
+  <text x="20" y="290" font-size="26" font-weight="bold" fill="#191c19">Meta広告：自社から始める</text>
+  <g>
+    <rect x="20" y="310" width="230" height="150" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="135" y="360" font-size="24" fill="#41483c" text-anchor="middle">①代理店から</text>
+    <text x="135" y="395" font-size="24" fill="#41483c" text-anchor="middle">ポートフォリオ</text>
+    <text x="135" y="430" font-size="24" fill="#41483c" text-anchor="middle">IDを受け取る</text>
+    <rect x="285" y="310" width="230" height="150" rx="8" fill="#191c19"/>
+    <text x="400" y="360" font-size="24" fill="#ffffff" text-anchor="middle">②全権限を持つ</text>
+    <text x="400" y="395" font-size="24" fill="#ffffff" text-anchor="middle">自社の人が</text>
+    <text x="400" y="430" font-size="24" fill="#ffffff" text-anchor="middle">パートナーに追加</text>
+    <rect x="550" y="310" width="230" height="150" rx="8" fill="#191c19"/>
+    <text x="665" y="360" font-size="24" fill="#ffffff" text-anchor="middle">③アセットと</text>
+    <text x="665" y="395" font-size="24" fill="#ffffff" text-anchor="middle">権限のレベルを</text>
+    <text x="665" y="430" font-size="24" fill="#ffffff" text-anchor="middle">選んで割り当てる</text>
+  </g>
+  <polygon points="255,375 255,395 275,385" fill="#c9a84c"/>
+  <polygon points="520,375 520,395 540,385" fill="#c9a84c"/>
+  <text x="20" y="510" font-size="22" fill="#41483c">黒の箱は自社が管理画面で操作する段階。Metaは二段階認証が必要で、</text>
+  <text x="20" y="542" font-size="22" fill="#41483c">全権限を持つ別の人の承認が必要な場合もある</text>
+</svg>
