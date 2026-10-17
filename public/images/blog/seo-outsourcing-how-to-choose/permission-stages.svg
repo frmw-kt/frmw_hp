@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="600" fill="#f7f7f4"/>
+  <text x="40" y="44" font-size="24" fill="#41483c" font-weight="bold">段階</text>
+  <text x="250" y="44" font-size="24" fill="#41483c" font-weight="bold">Search Console と サイトの権限</text>
+  <g>
+    <rect x="30" y="64" width="200" height="160" rx="8" fill="#806222"/>
+    <text x="50" y="136" font-size="26" fill="#ffffff" font-weight="bold">監査・</text>
+    <text x="50" y="172" font-size="26" fill="#ffffff" font-weight="bold">見積もり</text>
+    <rect x="240" y="64" width="530" height="160" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="260" y="104" font-size="24" fill="#191c19">読み取り権限だけを付与する</text>
+    <text x="260" y="140" font-size="24" fill="#191c19">（書き込み権限は付与しない）</text>
+    <text x="260" y="176" font-size="24" fill="#191c19">所有者は自社の担当者のまま。</text>
+    <text x="260" y="212" font-size="24" fill="#191c19">サーバーの権限はまだ渡さない</text>
+  </g>
+  <path d="M130 226 L130 246" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="120,244 140,244 130,256" fill="#c9a84c"/>
+  <g>
+    <rect x="30" y="256" width="200" height="160" rx="8" fill="#806222"/>
+    <text x="50" y="328" font-size="26" fill="#ffffff" font-weight="bold">作業の</text>
+    <text x="50" y="364" font-size="26" fill="#ffffff" font-weight="bold">開始後</text>
+    <rect x="240" y="256" width="530" height="160" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="260" y="296" font-size="24" fill="#191c19">作業に必要な権限だけを追加。</text>
+    <text x="260" y="332" font-size="24" fill="#191c19">サーバーに入れるなら、加えた</text>
+    <text x="260" y="368" font-size="24" fill="#191c19">すべての変更を説明してもらう</text>
+  </g>
+  <path d="M130 418 L130 438" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="120,436 140,436 130,448" fill="#c9a84c"/>
+  <g>
+    <rect x="30" y="448" width="200" height="136" rx="8" fill="#806222"/>
+    <text x="50" y="508" font-size="26" fill="#ffffff" font-weight="bold">契約の</text>
+    <text x="50" y="544" font-size="26" fill="#ffffff" font-weight="bold">終了時</text>
+    <rect x="240" y="448" width="530" height="136" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="260" y="488" font-size="24" fill="#191c19">業者のユーザーを削除する。</text>
+    <text x="260" y="524" font-size="24" fill="#191c19">業者の確認済み所有者は、</text>
+    <text x="260" y="560" font-size="24" fill="#191c19">サイトの確認トークンを外す</text>
+  </g>
+</svg>

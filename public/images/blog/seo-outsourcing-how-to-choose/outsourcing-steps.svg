@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="640" fill="#f7f7f4"/>
+  <g>
+    <rect x="30" y="24" width="90" height="96" rx="8" fill="#806222"/>
+    <text x="75" y="84" font-size="34" fill="#ffffff" font-weight="bold" text-anchor="middle">1</text>
+    <rect x="130" y="24" width="640" height="96" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="152" y="64" font-size="26" fill="#191c19" font-weight="bold">任せる作業を決める</text>
+    <text x="152" y="100" font-size="24" fill="#41483c">調査・技術・記事・研修などから選ぶ</text>
+  </g>
+  <path d="M75 122 L75 140" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="65,138 85,138 75,150" fill="#c9a84c"/>
+  <g>
+    <rect x="30" y="150" width="90" height="96" rx="8" fill="#806222"/>
+    <text x="75" y="210" font-size="34" fill="#ffffff" font-weight="bold" text-anchor="middle">2</text>
+    <rect x="130" y="150" width="640" height="96" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="152" y="190" font-size="26" fill="#191c19" font-weight="bold">候補と面談する</text>
+    <text x="152" y="226" font-size="24" fill="#41483c">Googleが挙げる8つの質問を同じように聞く</text>
+  </g>
+  <path d="M75 248 L75 266" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="65,264 85,264 75,276" fill="#c9a84c"/>
+  <g>
+    <rect x="30" y="276" width="90" height="96" rx="8" fill="#806222"/>
+    <text x="75" y="336" font-size="34" fill="#ffffff" font-weight="bold" text-anchor="middle">3</text>
+    <rect x="130" y="276" width="640" height="96" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="152" y="316" font-size="26" fill="#191c19" font-weight="bold">提案を公式資料と照らす</text>
+    <text x="152" y="352" font-size="24" fill="#41483c">順位の保証・リンクの売買は避ける</text>
+  </g>
+  <path d="M75 374 L75 392" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="65,390 85,390 75,402" fill="#c9a84c"/>
+  <g>
+    <rect x="30" y="402" width="90" height="96" rx="8" fill="#806222"/>
+    <text x="75" y="462" font-size="34" fill="#ffffff" font-weight="bold" text-anchor="middle">4</text>
+    <rect x="130" y="402" width="640" height="96" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="152" y="442" font-size="26" fill="#191c19" font-weight="bold">権限を段階的に渡す</text>
+    <text x="152" y="478" font-size="24" fill="#41483c">監査の段階は読み取りだけ。所有者は自社</text>
+  </g>
+  <path d="M75 500 L75 518" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="65,516 85,516 75,528" fill="#c9a84c"/>
+  <g>
+    <rect x="30" y="528" width="90" height="96" rx="8" fill="#806222"/>
+    <text x="75" y="588" font-size="34" fill="#ffffff" font-weight="bold" text-anchor="middle">5</text>
+    <rect x="130" y="528" width="640" height="96" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="152" y="568" font-size="26" fill="#191c19" font-weight="bold">Search Consoleで測る</text>
+    <text x="152" y="604" font-size="24" fill="#41483c">変更の記録と、クリック数などを並べて見る</text>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="700" fill="#f7f7f4"/>
+  <rect x="30" y="20" width="440" height="60" rx="8" fill="#191c19"/>
+  <text x="250" y="59" font-size="26" fill="#ffffff" font-weight="bold" text-anchor="middle">業者から提案を受けた</text>
+  <path d="M250 82 L250 100" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="240,98 260,98 250,110" fill="#c9a84c"/>
+  <rect x="30" y="110" width="440" height="100" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="50" y="150" font-size="24" fill="#191c19">Q1 順位や「1ページ目」を</text>
+  <text x="50" y="186" font-size="24" fill="#191c19">保証している？</text>
+  <path d="M472 160 L540 160" stroke="#806222" stroke-width="4"/>
+  <text x="482" y="148" font-size="22" fill="#806222" font-weight="bold">はい</text>
+  <rect x="540" y="110" width="230" height="100" rx="8" fill="#806222"/>
+  <text x="560" y="152" font-size="24" fill="#ffffff" font-weight="bold">他の業者を</text>
+  <text x="560" y="188" font-size="24" fill="#ffffff" font-weight="bold">探す</text>
+  <path d="M250 212 L250 236" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="240,234 260,234 250,246" fill="#c9a84c"/>
+  <text x="262" y="232" font-size="22" fill="#41483c">いいえ</text>
+  <rect x="30" y="246" width="440" height="136" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="50" y="286" font-size="24" fill="#191c19">Q2 リンクの売買・自動作成、</text>
+  <text x="50" y="322" font-size="24" fill="#191c19">価値のない大量のページ作成</text>
+  <text x="50" y="358" font-size="24" fill="#191c19">を含む？</text>
+  <path d="M472 314 L540 314" stroke="#806222" stroke-width="4"/>
+  <text x="482" y="302" font-size="22" fill="#806222" font-weight="bold">はい</text>
+  <rect x="540" y="246" width="230" height="136" rx="8" fill="#806222"/>
+  <text x="560" y="290" font-size="24" fill="#ffffff" font-weight="bold">スパムポリシー</text>
+  <text x="560" y="326" font-size="24" fill="#ffffff" font-weight="bold">違反のおそれ。</text>
+  <text x="560" y="362" font-size="24" fill="#ffffff" font-weight="bold">採用しない</text>
+  <path d="M250 384 L250 408" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="240,406 260,406 250,418" fill="#c9a84c"/>
+  <text x="262" y="404" font-size="22" fill="#41483c">いいえ</text>
+  <rect x="30" y="418" width="440" height="100" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="50" y="458" font-size="24" fill="#191c19">Q3 根拠にGoogleの公式</text>
+  <text x="50" y="494" font-size="24" fill="#191c19">ドキュメントを示せる？</text>
+  <path d="M472 468 L540 468" stroke="#806222" stroke-width="4"/>
+  <text x="482" y="456" font-size="22" fill="#806222" font-weight="bold">いいえ</text>
+  <rect x="540" y="418" width="230" height="100" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="560" y="460" font-size="24" fill="#806222" font-weight="bold">説明を求め、</text>
+  <text x="560" y="496" font-size="24" fill="#806222" font-weight="bold">自社で判断</text>
+  <path d="M250 520 L250 544" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="240,542 260,542 250,554" fill="#c9a84c"/>
+  <text x="262" y="540" font-size="22" fill="#41483c">はい</text>
+  <rect x="30" y="554" width="740" height="120" rx="8" fill="#191c19"/>
+  <text x="50" y="600" font-size="26" fill="#ffffff" font-weight="bold">作業の範囲・変更の報告・成果の測り方を</text>
+  <text x="50" y="640" font-size="26" fill="#ffffff" font-weight="bold">決めてから契約する</text>
+</svg>
