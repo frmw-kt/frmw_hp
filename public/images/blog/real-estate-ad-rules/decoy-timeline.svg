@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img" aria-label="物件の掲載から契約までの時系列。契約済みや入居済みになった後も掲載が残っている期間は、取引の対象となり得ない物件の表示としておとり広告に当たることを示す図">
+  <rect width="800" height="440" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="24" y="46" font-size="28" font-weight="700" fill="#191c19">成約後も掲載が残るとおとり広告になる</text>
+
+    <line x1="40" y1="170" x2="760" y2="170" stroke="#41483c" stroke-width="3"/>
+    <circle cx="80" cy="170" r="12" fill="#191c19"/>
+    <circle cx="300" cy="170" r="12" fill="#191c19"/>
+    <circle cx="460" cy="170" r="12" fill="#806222"/>
+    <text x="80" y="126" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">掲載</text>
+    <text x="300" y="126" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">申込</text>
+    <text x="460" y="112" font-size="24" font-weight="700" fill="#806222" text-anchor="middle">契約済み・</text>
+    <text x="460" y="142" font-size="24" font-weight="700" fill="#806222" text-anchor="middle">入居済み</text>
+
+    <rect x="460" y="190" width="316" height="56" fill="#c9a84c" opacity="0.35"/>
+    <text x="476" y="226" font-size="22" font-weight="700" fill="#191c19">掲載が残る＝おとり広告</text>
+
+    <rect x="24" y="276" width="752" height="140" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="48" y="314" font-size="22" fill="#41483c">消費者庁の告示：売約済みの物件の表示は、</text>
+    <text x="48" y="346" font-size="22" fill="#41483c">取引の対象となり得ない不動産の表示（おとり広告）</text>
+    <text x="48" y="384" font-size="22" fill="#41483c">首都圏の措置例：契約後16日間〜1年4か月以上の掲載</text>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="不動産広告に関わる3つのルール。宅建業法は宅建業者の広告、景品表示法はすべての事業者の表示、表示規約は規約に参加する事業者の居住用不動産の広告が対象であることを示す図">
+  <rect width="800" height="520" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="24" y="46" font-size="28" font-weight="700" fill="#191c19">不動産広告で確かめる3つのルール</text>
+
+    <rect x="24" y="72" width="752" height="128" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="48" y="112" font-size="26" font-weight="700" fill="#191c19">宅建業法（法律）</text>
+    <text x="48" y="148" font-size="22" fill="#41483c">対象：宅地建物取引業者の広告</text>
+    <text x="48" y="180" font-size="22" fill="#41483c">誇大広告の禁止・広告開始時期・取引態様の明示</text>
+
+    <rect x="24" y="216" width="752" height="128" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="48" y="256" font-size="26" font-weight="700" fill="#191c19">景品表示法（法律・告示）</text>
+    <text x="48" y="292" font-size="22" fill="#41483c">対象：事業者の表示（消費者庁が措置）</text>
+    <text x="48" y="324" font-size="22" fill="#41483c">優良誤認・有利誤認、不動産のおとり広告の告示</text>
+
+    <rect x="24" y="360" width="752" height="136" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="48" y="400" font-size="26" font-weight="700" fill="#806222">表示規約（業界の自主規制）</text>
+    <text x="48" y="436" font-size="22" fill="#41483c">対象：参加事業者の居住用不動産の広告</text>
+    <text x="48" y="468" font-size="22" fill="#41483c">必要な表示事項・表示の基準・特定用語（協議会が措置）</text>
+  </g>
+</svg>

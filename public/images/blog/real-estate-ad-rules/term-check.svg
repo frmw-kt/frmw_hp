@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="特定用語を使う前の判断。表示内容を裏付ける合理的な根拠の資料を今持っていなければ使わない。持っていて、最上級や著しく安い印象の用語なら根拠となる事実を併せて表示する。それ以外の用語は根拠資料を持ったうえで使うことを示す図">
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="24" y="46" font-size="28" font-weight="700" fill="#191c19">「完全」「日本一」などの用語を使う前に</text>
+
+    <rect x="24" y="70" width="752" height="96" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="48" y="108" font-size="24" font-weight="700" fill="#191c19">問1 表示内容を裏付ける合理的な根拠の</text>
+    <text x="48" y="144" font-size="24" font-weight="700" fill="#191c19">資料を、今持っているか</text>
+
+    <line x1="200" y1="166" x2="200" y2="206" stroke="#806222" stroke-width="3"/>
+    <text x="214" y="196" font-size="22" fill="#806222">持っていない</text>
+    <rect x="24" y="206" width="352" height="72" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="48" y="252" font-size="24" font-weight="700" fill="#191c19">その用語は使わない</text>
+
+    <line x1="600" y1="166" x2="600" y2="206" stroke="#806222" stroke-width="3"/>
+    <text x="614" y="196" font-size="22" fill="#806222">持っている</text>
+    <rect x="424" y="206" width="352" height="130" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="444" y="244" font-size="24" font-weight="700" fill="#191c19">問2 最上級（最高・極）や</text>
+    <text x="444" y="280" font-size="24" font-weight="700" fill="#191c19">安さ（格安・激安）の</text>
+    <text x="444" y="316" font-size="24" font-weight="700" fill="#191c19">用語か</text>
+
+    <line x1="520" y1="336" x2="520" y2="384" stroke="#806222" stroke-width="3"/>
+    <text x="440" y="368" font-size="22" fill="#806222">はい</text>
+    <line x1="700" y1="336" x2="700" y2="384" stroke="#806222" stroke-width="3"/>
+    <text x="714" y="368" font-size="22" fill="#806222">いいえ</text>
+
+    <rect x="24" y="384" width="490" height="150" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="48" y="424" font-size="24" font-weight="700" fill="#191c19">根拠となる事実を併せて</text>
+    <text x="48" y="460" font-size="24" font-weight="700" fill="#191c19">表示する場合だけ使える</text>
+    <text x="48" y="500" font-size="22" fill="#41483c">例：○○社の最高級キッチンを設置</text>
+
+    <rect x="530" y="384" width="246" height="150" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="550" y="424" font-size="24" font-weight="700" fill="#191c19">根拠資料を</text>
+    <text x="550" y="460" font-size="24" font-weight="700" fill="#191c19">持って使う</text>
+    <text x="550" y="500" font-size="22" fill="#41483c">選別基準は</text>
+    <text x="550" y="526" font-size="22" fill="#41483c">示すと伝わる</text>
+  </g>
+</svg>

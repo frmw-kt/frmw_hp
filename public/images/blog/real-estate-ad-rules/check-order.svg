@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 660" width="800" height="660" role="img" aria-label="不動産の広告とLPを公開する前に確かめる順番。1 広告してよい時期か、2 広告主と取引態様、3 必要な表示事項と不利な事項、4 用語と比較、5 写真・CG・価格、6 公開後の取り下げと更新日を示す図">
+  <rect width="800" height="660" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="24" y="46" font-size="28" font-weight="700" fill="#191c19">広告・LPを公開する前に確かめる順番</text>
+
+    <rect x="24" y="68" width="752" height="88" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <circle cx="68" cy="112" r="24" fill="#806222"/>
+    <text x="68" y="121" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="108" y="104" font-size="24" font-weight="700" fill="#191c19">時期</text>
+    <text x="108" y="138" font-size="22" fill="#41483c">開発許可・建築確認の後か（予告広告も同じ）</text>
+
+    <rect x="24" y="166" width="752" height="88" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <circle cx="68" cy="210" r="24" fill="#806222"/>
+    <text x="68" y="219" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="108" y="202" font-size="24" font-weight="700" fill="#191c19">広告主・取引態様</text>
+    <text x="108" y="236" font-size="22" fill="#41483c">売主・貸主・代理・媒介の別を書いたか</text>
+
+    <rect x="24" y="264" width="752" height="88" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <circle cx="68" cy="308" r="24" fill="#806222"/>
+    <text x="68" y="317" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="108" y="300" font-size="24" font-weight="700" fill="#191c19">必要な表示事項・不利な事項</text>
+    <text x="108" y="334" font-size="22" fill="#41483c">別表の項目と、再建築不可などを書いたか</text>
+
+    <rect x="24" y="362" width="752" height="88" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <circle cx="68" cy="406" r="24" fill="#806222"/>
+    <text x="68" y="415" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+    <text x="108" y="398" font-size="24" font-weight="700" fill="#191c19">用語・比較</text>
+    <text x="108" y="432" font-size="22" fill="#41483c">特定用語・新築・LDKの意味に合っているか</text>
+
+    <rect x="24" y="460" width="752" height="88" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <circle cx="68" cy="504" r="24" fill="#806222"/>
+    <text x="68" y="513" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+    <text x="108" y="496" font-size="24" font-weight="700" fill="#191c19">写真・CG・価格</text>
+    <text x="108" y="530" font-size="22" fill="#41483c">取引する物件の写真か、価格欄は本来の額か</text>
+
+    <rect x="24" y="558" width="752" height="88" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <circle cx="68" cy="602" r="24" fill="#806222"/>
+    <text x="68" y="611" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+    <text x="108" y="594" font-size="24" font-weight="700" fill="#191c19">公開後</text>
+    <text x="108" y="628" font-size="22" fill="#41483c">成約したら取り下げ、登録日・更新日を書いたか</text>
+  </g>
+</svg>
