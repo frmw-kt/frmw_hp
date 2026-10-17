@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 680" width="800" height="680" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="680" fill="#f7f7f4"/>
+  <line x1="90" y1="70" x2="90" y2="610" stroke="#c9a84c" stroke-width="6"/>
+  <g font-size="24" fill="#191c19">
+    <circle cx="90" cy="80" r="16" fill="#806222"/>
+    <text x="130" y="72" font-size="26" font-weight="bold">契約前</text>
+    <text x="130" y="110">任せる作業・渡すタスク・指標・表示の</text>
+    <text x="130" y="144">ルール・終了時の扱いを書面で決める</text>
+
+    <circle cx="90" cy="230" r="16" fill="#806222"/>
+    <text x="130" y="222" font-size="26" font-weight="bold">開始時</text>
+    <text x="130" y="260">Instagramを自社のポートフォリオに追加し、</text>
+    <text x="130" y="294">代行会社にタスクを選んでアクセス許可</text>
+
+    <circle cx="90" cy="380" r="16" fill="#806222"/>
+    <text x="130" y="372" font-size="26" font-weight="bold">毎月</text>
+    <text x="130" y="410">投稿を承認し、レポートで数字を残す</text>
+    <text x="130" y="444">（インサイトで選べる期間は過去90日以内）</text>
+
+    <circle cx="90" cy="530" r="16" fill="#806222"/>
+    <text x="130" y="522" font-size="26" font-weight="bold">終了時</text>
+    <text x="130" y="560">画像・動画の元データを受け取り、</text>
+    <text x="130" y="594">パートナーをポートフォリオから削除する</text>
+  </g>
+  <text x="400" y="656" font-size="22" fill="#41483c" text-anchor="middle">Instagramの権限は、最初から最後まで自社が持つ</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="640" fill="#f7f7f4"/>
+  <text x="205" y="48" font-size="26" font-weight="bold" fill="#191c19" text-anchor="middle">任せられる7つの作業</text>
+  <text x="600" y="48" font-size="26" font-weight="bold" fill="#806222" text-anchor="middle">外注しても社内に残す</text>
+  <g font-size="24" fill="#191c19">
+    <rect x="20" y="74" width="370" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="40" y="115">1 方針の設計</text>
+    <rect x="20" y="148" width="370" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="40" y="189">2 投稿の企画・制作</text>
+    <rect x="20" y="222" width="370" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="40" y="263">3 投稿と予約</text>
+    <rect x="20" y="296" width="370" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="40" y="337">4 コメントとDMの対応</text>
+    <rect x="20" y="370" width="370" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="40" y="411">5 分析とレポート</text>
+    <rect x="20" y="444" width="370" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="40" y="485">6 広告の運用</text>
+    <rect x="20" y="518" width="370" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="40" y="559">7 インフルエンサーへの依頼</text>
+  </g>
+  <g font-size="24" fill="#191c19">
+    <rect x="410" y="74" width="370" height="110" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="430" y="120">商品・予約の情報と</text>
+    <text x="430" y="156">素材を渡す</text>
+    <rect x="410" y="200" width="370" height="110" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="430" y="246">投稿を公開前に</text>
+    <text x="430" y="282">承認する</text>
+    <rect x="410" y="326" width="370" height="110" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="430" y="372">問い合わせ・予約・購入</text>
+    <text x="430" y="408">の結果を共有する</text>
+    <rect x="410" y="452" width="370" height="130" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="430" y="498">アカウントの権限を</text>
+    <text x="430" y="534">管理する（フルアクセス</text>
+    <text x="430" y="570">許可は自社が持つ）</text>
+  </g>
+  <text x="400" y="622" font-size="22" fill="#41483c" text-anchor="middle">どの作業を任せるかは、左から選ぶ（全部でなくてよい）</text>
+</svg>
