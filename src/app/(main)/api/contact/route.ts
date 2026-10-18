@@ -49,13 +49,14 @@ export async function POST(req: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
-    await resend.emails.send({
-      from: "Framework <onboarding@resend.dev>",
+    const { error } = await resend.emails.send({
+      from: "Framework <noreply@frmw.jp>",
       to: "teramoto@frmw.jp",
       replyTo: email,
       subject: `【お問い合わせ】${name}様（${serviceLabel}）`,
       html,
     });
+    if (error) throw error;
 
     return NextResponse.json({ ok: true });
   } catch (err) {
