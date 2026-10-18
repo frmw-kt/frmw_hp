@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="640" fill="#f7f7f4"/>
+  <!-- Q1 -->
+  <rect x="30" y="24" width="440" height="116" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="3"/>
+  <text x="50" y="66" font-size="24" font-weight="bold" fill="#191c19">Q1 低評価の削除と引き換えに</text>
+  <text x="50" y="102" font-size="24" font-weight="bold" fill="#191c19">金銭などを要求されている？</text>
+  <path d="M472 82 L516 82" stroke="#806222" stroke-width="3"/>
+  <path d="M510 72 L524 82 L510 92 Z" fill="#806222"/>
+  <text x="474" y="70" font-size="22" fill="#806222">はい</text>
+  <rect x="526" y="24" width="250" height="116" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="544" y="62" font-size="24" font-weight="bold" fill="#191c19">恐喝として報告</text>
+  <text x="544" y="94" font-size="22" fill="#41483c">支払わない・</text>
+  <text x="544" y="124" font-size="22" fill="#41483c">証拠を集める</text>
+
+  <path d="M250 142 L250 190" stroke="#806222" stroke-width="3"/>
+  <path d="M240 184 L250 198 L260 184 Z" fill="#806222"/>
+  <text x="264" y="176" font-size="22" fill="#806222">いいえ</text>
+
+  <!-- Q2 -->
+  <rect x="30" y="200" width="440" height="140" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="3"/>
+  <text x="50" y="242" font-size="24" font-weight="bold" fill="#191c19">Q2 Googleのポリシーに</text>
+  <text x="50" y="278" font-size="24" font-weight="bold" fill="#191c19">違反する投稿？</text>
+  <text x="50" y="316" font-size="22" fill="#41483c">例：スパム、利益相反、個人情報</text>
+  <path d="M472 270 L516 270" stroke="#806222" stroke-width="3"/>
+  <path d="M510 260 L524 270 L510 280 Z" fill="#806222"/>
+  <text x="474" y="258" font-size="22" fill="#806222">はい</text>
+  <rect x="526" y="200" width="250" height="140" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="544" y="240" font-size="24" font-weight="bold" fill="#191c19">［報告］する</text>
+  <text x="544" y="274" font-size="22" fill="#41483c">不満なだけの</text>
+  <text x="544" y="304" font-size="22" fill="#41483c">口コミは</text>
+  <text x="544" y="332" font-size="22" fill="#41483c">報告しない</text>
+
+  <path d="M250 342 L250 390" stroke="#806222" stroke-width="3"/>
+  <path d="M240 384 L250 398 L260 384 Z" fill="#806222"/>
+  <text x="264" y="376" font-size="22" fill="#806222">いいえ</text>
+
+  <!-- step 3 -->
+  <rect x="30" y="400" width="746" height="92" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="3"/>
+  <text x="50" y="440" font-size="24" font-weight="bold" fill="#191c19">投稿者と訪問・取引の記録を確かめる</text>
+  <text x="50" y="474" font-size="22" fill="#41483c">何が起きたか、自社に非があるかを返信の前に確かめる</text>
+
+  <path d="M250 494 L250 522" stroke="#806222" stroke-width="3"/>
+  <path d="M240 516 L250 530 L260 516 Z" fill="#806222"/>
+
+  <!-- step 4 -->
+  <rect x="30" y="532" width="746" height="92" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="50" y="572" font-size="24" font-weight="bold" fill="#191c19">返信する（図3の順に短く）</text>
+  <text x="50" y="606" font-size="22" fill="#41483c">返信は投稿者だけでなく、これから選ぶ人も読む</text>
+</svg>

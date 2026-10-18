@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="580" fill="#f7f7f4"/>
+  <g>
+    <rect x="40" y="20" width="720" height="84" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="64" y="56" font-size="26" font-weight="bold" fill="#191c19">1 返信を書く</text>
+    <text x="64" y="90" font-size="22" fill="#41483c">オーナー確認済みのプロフィールの［クチコミを読む］から</text>
+
+    <path d="M400 106 L400 130" stroke="#806222" stroke-width="3"/>
+    <path d="M390 124 L400 136 L410 124 Z" fill="#806222"/>
+
+    <rect x="40" y="134" width="720" height="84" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="3"/>
+    <text x="64" y="170" font-size="26" font-weight="bold" fill="#191c19">2 Googleが返信を審査する</text>
+    <text x="64" y="204" font-size="22" fill="#41483c">通常10分以内、最長で30日ほど。不承認なら編集を求められる</text>
+
+    <path d="M400 220 L400 244" stroke="#806222" stroke-width="3"/>
+    <path d="M390 238 L400 250 L410 238 Z" fill="#806222"/>
+
+    <rect x="40" y="248" width="720" height="84" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="3"/>
+    <text x="64" y="284" font-size="26" font-weight="bold" fill="#191c19">3 口コミの下に公開される</text>
+    <text x="64" y="318" font-size="22" fill="#41483c">ビジネスからの返信として表示され、個人名は出ない</text>
+
+    <path d="M400 334 L400 358" stroke="#806222" stroke-width="3"/>
+    <path d="M390 352 L400 364 L410 352 Z" fill="#806222"/>
+
+    <rect x="40" y="362" width="720" height="84" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="3"/>
+    <text x="64" y="398" font-size="26" font-weight="bold" fill="#191c19">4 投稿者に通知が届く</text>
+    <text x="64" y="432" font-size="22" fill="#41483c">返信は投稿者だけでなく、プロフィールを見る全員が読める</text>
+
+    <path d="M400 448 L400 472" stroke="#806222" stroke-width="3"/>
+    <path d="M390 466 L400 478 L410 466 Z" fill="#806222"/>
+
+    <rect x="40" y="476" width="720" height="84" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="64" y="512" font-size="26" font-weight="bold" fill="#191c19">5 投稿者は口コミを変更できる</text>
+    <text x="64" y="546" font-size="22" fill="#41483c">変更すると、口コミの日付が最新の変更日に変わる</text>
+  </g>
+</svg>
