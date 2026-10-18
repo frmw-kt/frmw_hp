@@ -51,7 +51,7 @@ export async function POST(req: NextRequest) {
   try {
     await resend.emails.send({
       from: "Framework <onboarding@resend.dev>",
-      to: "frmw.main@gmail.com",
+      to: "teramoto@frmw.jp",
       replyTo: email,
       subject: `【お問い合わせ】${name}様（${serviceLabel}）`,
       html,

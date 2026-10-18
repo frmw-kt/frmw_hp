@@ -54,6 +54,7 @@ export default async function Page({
               <ul className={styles.facts}><li>面談日時を決めずに相談できます</li><li>支援内容が未定でも大丈夫です</li></ul>
               <p className={styles.flow}>フォームに入力 → 送信 → メールでお返事</p>
               <ContactModal initialService={selected} />
+              <p className={styles.note}>メールでのご連絡：<a href="mailto:teramoto@frmw.jp">teramoto@frmw.jp</a></p>
               <p className={styles.note}>入力フォームがポップアップで開きます。<br />送信だけで面談が予約されることはありません。</p>
             </article>
           </div>
