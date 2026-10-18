@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="480" fill="#f7f7f4"/>
+  <text x="400" y="48" font-size="26" fill="#191c19" text-anchor="middle" font-weight="bold">送信数が増えても、商談数で比べる（数値は仮定）</text>
+  <rect x="20" y="76" width="360" height="56" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="200" y="113" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">変更前</text>
+  <rect x="420" y="76" width="360" height="56" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="600" y="113" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">項目を減らした後</text>
+  <rect x="20" y="148" width="360" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="200" y="189" font-size="22" fill="#191c19" text-anchor="middle">入力開始 200人</text>
+  <rect x="420" y="148" width="360" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="600" y="189" font-size="22" fill="#191c19" text-anchor="middle">入力開始 200人</text>
+  <text x="200" y="240" font-size="22" fill="#806222" text-anchor="middle">×フォーム完了率 30%</text>
+  <text x="600" y="240" font-size="22" fill="#806222" text-anchor="middle">×フォーム完了率 40%</text>
+  <rect x="20" y="254" width="360" height="64" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="200" y="295" font-size="22" fill="#191c19" text-anchor="middle">送信 60件</text>
+  <rect x="420" y="254" width="360" height="64" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="600" y="295" font-size="22" fill="#191c19" text-anchor="middle" font-weight="bold">送信 80件（＋20件）</text>
+  <text x="200" y="346" font-size="22" fill="#806222" text-anchor="middle">×商談化率 50%</text>
+  <text x="600" y="346" font-size="22" fill="#806222" text-anchor="middle">×商談化率 35%</text>
+  <rect x="20" y="360" width="360" height="64" rx="8" fill="#191c19"/>
+  <text x="200" y="401" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">商談 30件</text>
+  <rect x="420" y="360" width="360" height="64" rx="8" fill="#191c19"/>
+  <text x="600" y="401" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">商談 28件（−2件）</text>
+  <text x="400" y="458" font-size="22" fill="#41483c" text-anchor="middle">商談数＝入力開始×フォーム完了率×商談化率</text>
+</svg>

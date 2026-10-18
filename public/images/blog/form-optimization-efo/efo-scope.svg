@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="460" fill="#f7f7f4"/>
+  <text x="400" y="48" font-size="26" fill="#191c19" text-anchor="middle" font-weight="bold">EFOで直すのは「入力開始→送信」の間</text>
+  <rect x="20" y="80" width="175" height="84" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="107" y="115" font-size="22" fill="#191c19" text-anchor="middle">フォームの</text>
+  <text x="107" y="145" font-size="22" fill="#191c19" text-anchor="middle">ページを開く</text>
+  <rect x="215" y="80" width="175" height="84" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="302" y="115" font-size="22" fill="#191c19" text-anchor="middle">入力を始める</text>
+  <text x="302" y="145" font-size="22" fill="#806222" text-anchor="middle">form_start</text>
+  <rect x="410" y="80" width="175" height="84" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="497" y="115" font-size="22" fill="#191c19" text-anchor="middle">送信する</text>
+  <text x="497" y="145" font-size="22" fill="#806222" text-anchor="middle">form_submit</text>
+  <rect x="605" y="80" width="175" height="84" rx="8" fill="#191c19"/>
+  <text x="692" y="115" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">受信・返信</text>
+  <text x="692" y="145" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">商談</text>
+  <polygon points="197,114 212,122 197,130" fill="#806222"/>
+  <polygon points="392,114 407,122 392,130" fill="#806222"/>
+  <polygon points="587,114 602,122 587,130" fill="#806222"/>
+  <line x1="205" y1="134" x2="205" y2="200" stroke="#806222" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="400" y1="134" x2="400" y2="200" stroke="#806222" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="595" y1="134" x2="595" y2="200" stroke="#806222" stroke-width="2" stroke-dasharray="4 4"/>
+  <rect x="115" y="200" width="180" height="120" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="205" y="250" font-size="22" fill="#41483c" text-anchor="middle">導線・ページ</text>
+  <text x="205" y="282" font-size="22" fill="#41483c" text-anchor="middle">の内容</text>
+  <rect x="310" y="200" width="180" height="120" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="4"/>
+  <text x="400" y="237" font-size="22" fill="#806222" text-anchor="middle" font-weight="bold">EFOで直す</text>
+  <text x="400" y="270" font-size="22" fill="#191c19" text-anchor="middle">項目・入力欄</text>
+  <text x="400" y="303" font-size="22" fill="#191c19" text-anchor="middle">エラー・ボタン</text>
+  <rect x="505" y="200" width="180" height="120" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="595" y="250" font-size="22" fill="#41483c" text-anchor="middle">計測と</text>
+  <text x="595" y="282" font-size="22" fill="#41483c" text-anchor="middle">受信の確認</text>
+  <rect x="20" y="345" width="760" height="95" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="381" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">フォーム完了率（この記事の定義）</text>
+  <text x="400" y="419" font-size="24" fill="#191c19" text-anchor="middle">＝送信した人数÷入力を始めた人数</text>
+</svg>

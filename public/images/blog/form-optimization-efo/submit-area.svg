@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="480" fill="#f7f7f4"/>
+  <text x="400" y="48" font-size="26" fill="#191c19" text-anchor="middle" font-weight="bold">送信ボタンの手前に、利用目的が目に入るように置く</text>
+  <rect x="20" y="76" width="460" height="384" rx="12" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="44" y="114" font-size="22" fill="#191c19" font-weight="bold">お問い合わせ内容（任意）</text>
+  <rect x="44" y="128" width="412" height="80" rx="6" fill="#ffffff" stroke="#41483c" stroke-width="2"/>
+  <rect x="44" y="230" width="412" height="104" rx="6" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="60" y="266" font-size="22" fill="#191c19">入力いただいた情報は、</text>
+  <text x="60" y="296" font-size="22" fill="#191c19">返信と見積もりに使います。</text>
+  <text x="60" y="324" font-size="22" fill="#806222" text-decoration="underline">プライバシーポリシー</text>
+  <rect x="44" y="356" width="412" height="64" rx="8" fill="#191c19"/>
+  <text x="250" y="396" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">無料で見積もりを依頼する</text>
+  <line x1="456" y1="282" x2="510" y2="200" stroke="#806222" stroke-width="2"/>
+  <line x1="456" y1="388" x2="510" y2="310" stroke="#806222" stroke-width="2"/>
+  <line x1="456" y1="410" x2="510" y2="420" stroke="#806222" stroke-width="2"/>
+  <rect x="510" y="160" width="270" height="80" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="645" y="194" font-size="22" fill="#191c19" text-anchor="middle">① 押す前に目に入る</text>
+  <text x="645" y="224" font-size="22" fill="#191c19" text-anchor="middle">位置に利用目的</text>
+  <rect x="510" y="270" width="270" height="80" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="645" y="304" font-size="22" fill="#191c19" text-anchor="middle">② 押した後に起きる</text>
+  <text x="645" y="334" font-size="22" fill="#191c19" text-anchor="middle">ことを文言にする</text>
+  <rect x="510" y="380" width="270" height="80" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="645" y="414" font-size="22" fill="#191c19" text-anchor="middle">③ 押した後は</text>
+  <text x="645" y="444" font-size="22" fill="#191c19" text-anchor="middle">二重送信を防ぐ</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="500" fill="#f7f7f4"/>
+  <text x="400" y="48" font-size="26" fill="#191c19" text-anchor="middle" font-weight="bold">数字の組み合わせで、先に直す場所を決める</text>
+  <text x="200" y="86" font-size="22" fill="#806222" text-anchor="middle" font-weight="bold">見えている数字</text>
+  <text x="600" y="86" font-size="22" fill="#806222" text-anchor="middle" font-weight="bold">先に直す場所</text>
+  <rect x="20" y="100" width="360" height="70" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="200" y="143" font-size="22" fill="#191c19" text-anchor="middle">入力を始める人が少ない</text>
+  <rect x="420" y="100" width="360" height="70" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="600" y="143" font-size="22" fill="#191c19" text-anchor="middle">フォームまでの導線・ページ</text>
+  <rect x="20" y="186" width="360" height="70" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="4"/>
+  <text x="200" y="229" font-size="22" fill="#191c19" text-anchor="middle" font-weight="bold">始めた人の送信が少ない</text>
+  <rect x="420" y="186" width="360" height="70" rx="8" fill="#191c19"/>
+  <text x="600" y="229" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">項目・入力欄・エラー（EFO）</text>
+  <rect x="20" y="272" width="360" height="70" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="200" y="315" font-size="22" fill="#191c19" text-anchor="middle">送信数と届いた件数が合わない</text>
+  <rect x="420" y="272" width="360" height="70" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="600" y="315" font-size="22" fill="#191c19" text-anchor="middle">計測と受信の設定</text>
+  <rect x="20" y="358" width="360" height="70" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="200" y="401" font-size="22" fill="#191c19" text-anchor="middle">送信は多いが商談にならない</text>
+  <rect x="420" y="358" width="360" height="70" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="600" y="401" font-size="22" fill="#191c19" text-anchor="middle">振り分けに使う項目の見直し</text>
+  <polygon points="386,127 412,135 386,143" fill="#806222"/>
+  <polygon points="386,213 412,221 386,229" fill="#806222"/>
+  <polygon points="386,299 412,307 386,315" fill="#806222"/>
+  <polygon points="386,385 412,393 386,401" fill="#806222"/>
+  <text x="400" y="472" font-size="22" fill="#41483c" text-anchor="middle">入力開始・送信の人数：GA4 拡張計測機能「フォームの操作」</text>
+</svg>

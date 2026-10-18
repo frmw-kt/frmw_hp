@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="440" fill="#f7f7f4"/>
+  <text x="400" y="48" font-size="26" fill="#191c19" text-anchor="middle" font-weight="bold">エラーは、入力した直後にその欄の隣で知らせる</text>
+  <rect x="20" y="80" width="230" height="140" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="135" y="118" font-size="22" fill="#806222" text-anchor="middle" font-weight="bold">① 入力の直後</text>
+  <text x="135" y="160" font-size="22" fill="#191c19" text-anchor="middle">入力して</text>
+  <text x="135" y="192" font-size="22" fill="#191c19" text-anchor="middle">欄を離れる</text>
+  <rect x="285" y="80" width="230" height="140" rx="8" fill="#191c19"/>
+  <text x="400" y="118" font-size="22" fill="#c9a84c" text-anchor="middle" font-weight="bold">② その場で</text>
+  <text x="400" y="160" font-size="22" fill="#ffffff" text-anchor="middle">欄の隣に直し方</text>
+  <text x="400" y="192" font-size="22" fill="#ffffff" text-anchor="middle">を文字で出す</text>
+  <rect x="550" y="80" width="230" height="140" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="665" y="118" font-size="22" fill="#806222" text-anchor="middle" font-weight="bold">③ 送信したとき</text>
+  <text x="665" y="160" font-size="22" fill="#191c19" text-anchor="middle">最初の誤りの</text>
+  <text x="665" y="192" font-size="22" fill="#191c19" text-anchor="middle">欄へ移動する</text>
+  <polygon points="255,142 280,150 255,158" fill="#806222"/>
+  <polygon points="520,142 545,150 520,158" fill="#806222"/>
+  <rect x="20" y="245" width="230" height="100" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="135" y="285" font-size="22" fill="#41483c" text-anchor="middle">例：メール欄に</text>
+  <text x="135" y="317" font-size="22" fill="#41483c" text-anchor="middle">「@」がない</text>
+  <rect x="285" y="245" width="230" height="100" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="285" font-size="22" fill="#41483c" text-anchor="middle">「@を含めて</text>
+  <text x="400" y="317" font-size="22" fill="#41483c" text-anchor="middle">入力してください」</text>
+  <rect x="550" y="245" width="230" height="100" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="665" y="285" font-size="22" fill="#41483c" text-anchor="middle">サーバーで見つけた</text>
+  <text x="665" y="317" font-size="22" fill="#41483c" text-anchor="middle">誤りも欄ごとに表示</text>
+  <rect x="20" y="370" width="760" height="50" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="2"/>
+  <text x="400" y="404" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">色だけでなく、文字で伝える</text>
+</svg>
