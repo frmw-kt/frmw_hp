@@ -12,7 +12,8 @@ const args = process.argv.slice(2);
 const dirArg = args[args.indexOf("--dir") + 1];
 const DIR = args.includes("--dir") && dirArg ? path.resolve(dirArg) : path.join(ROOT, "content", "blog");
 
-export const CATEGORIES = ["広告運用", "SNSマーケティング", "制作・クリエイティブ", "コンテンツマーケティング", "Web集客", "マーケティング戦略"];
+// カテゴリの定義は src/lib/blog-categories.json（サイトのカテゴリページと同じファイル）
+export const CATEGORIES = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "lib", "blog-categories.json"), "utf8")).map((c) => c.name);
 const ALLOWED_TAGS = new Set(["h2", "h3", "p", "ul", "ol", "li", "strong", "a", "table", "thead", "tbody", "tr", "th", "td", "blockquote", "br", "figure", "img", "figcaption"]);
 const ALLOWED_ATTRS = { a: ["href"], img: ["src", "alt", "width", "height"] };
 const PUBLIC_DIR = path.join(ROOT, "public");

@@ -22,6 +22,8 @@ export function pageMeta(
     image?: string;
     /** 記事ページ用 */
     article?: { publishedTime: string; modifiedTime?: string; section?: string };
+    /** 検索結果に出さない（リンクはたどらせる） */
+    noindex?: boolean;
   } = {},
 ): Metadata {
   const image = opts.image ?? "/opengraph-image";
@@ -29,6 +31,7 @@ export function pageMeta(
     title,
     description,
     alternates: { canonical: path },
+    ...(opts.noindex ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title,
       description,
@@ -62,14 +65,17 @@ export function Breadcrumb({
   name,
   path,
   parent,
+  parents,
 }: {
   name: string;
   path: string;
   parent?: { name: string; path: string };
+  /** 階層が2段以上のとき（ホームの次から順に） */
+  parents?: { name: string; path: string }[];
 }) {
   const items = [
     { name: "ホーム", path: "/" },
-    ...(parent ? [parent] : []),
+    ...(parents ?? (parent ? [parent] : [])),
     { name, path },
   ];
   return (

@@ -41,7 +41,7 @@ export const articles: Article[] = [
     description:
       "Instagram・X・TikTokなど各SNSプラットフォームの特性を理解し、自社に合った運用戦略を構築するための基本原則を解説します。",
     date: "2026-03-20",
-    category: "SNSマーケティング",
+    category: "SNS運用",
     updatedAt: "2026-09-15",
     readTime: "6分",
     content: `
@@ -73,7 +73,7 @@ export const articles: Article[] = [
     description:
       "Meta広告・Google広告の代行会社を選ぶ際に必ず確認すべき7つのポイントを解説。月間8,000万円の運用実績を持つFrameworkが、代理店選びの落とし穴を明かします。",
     date: "2026-05-20",
-    category: "広告運用",
+    category: "広告運用の外注",
     updatedAt: "2026-09-15",
     readTime: "7分",
     content: `
@@ -112,7 +112,7 @@ export const articles: Article[] = [
     description:
       "CPAが高騰する原因と、具体的な改善手順を解説。Meta・Google広告でCPAを平均68%改善してきた実績をもとに、今日から実践できる施策をまとめました。",
     date: "2026-05-10",
-    category: "広告運用",
+    category: "計測と改善",
     updatedAt: "2026-09-15",
     readTime: "9分",
     content: `
@@ -147,7 +147,7 @@ export const articles: Article[] = [
     description:
       "LPの制作費用を決める要因・制作期間の目安・設計原則を解説。「作って終わり」ではなく、広告成果につながるLP制作のポイントを紹介します。",
     date: "2026-04-28",
-    category: "制作・クリエイティブ",
+    category: "LP・Webサイト",
     updatedAt: "2026-09-15",
     readTime: "7分",
     content: `
@@ -184,7 +184,7 @@ export const articles: Article[] = [
     description:
       "ブログ・動画・ホワイトペーパーなどのコンテンツを活用して、見込み顧客を自然に引き寄せる仕組みの作り方を解説します。",
     date: "2026-03-10",
-    category: "コンテンツマーケティング",
+    category: "SEO・コンテンツ",
     updatedAt: "2026-09-15",
     readTime: "8分",
     content: `

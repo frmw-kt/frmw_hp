@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "ad-outsourcing",
+    "name": "広告運用の外注",
+    "clusters": ["A"],
+    "pillar": "meta-google-ad-agency-how-to-choose",
+    "intro": "広告運用を代理店やフリーランスに任せるか、自社で回すかを判断するための記事です。費用の仕組み、依頼前の準備、乗り換えの手順、レポートの見方まで、外注を検討する段階ごとにまとめています。",
+    "service": ["運用代行", "/services/operations"]
+  },
+  {
+    "slug": "meta-ads",
+    "name": "Meta広告",
+    "clusters": ["B"],
+    "pillar": "meta-ads-how-to-start",
+    "intro": "Facebook・Instagramに配信するMeta広告の始め方と、予算の決め方、審査、リード獲得広告などの運用の基本です。Metaの公式ヘルプを出典に、少額から始める事業者向けに整理しています。",
+    "service": ["運用代行", "/services/operations"]
+  },
+  {
+    "slug": "google-ads",
+    "name": "Google・ヤフー広告",
+    "clusters": ["C"],
+    "pillar": "google-ads-how-to-start",
+    "intro": "Google広告とLINEヤフー広告の始め方、費用の仕組み、キャンペーンの選び方です。検索広告を中心に、公式ヘルプの仕様に沿って説明しています。",
+    "service": ["運用代行", "/services/operations"]
+  },
+  {
+    "slug": "measurement",
+    "name": "計測と改善",
+    "clusters": ["D"],
+    "pillar": "conversion-tracking-design",
+    "intro": "問い合わせ・電話・予約といった成果を正しく測り、数字をもとに広告やサイトを改善する方法です。何を成果とするかの設計から、獲得単価の改善までを扱います。",
+    "service": ["効果検証・分析", "/services/consulting/analysis"]
+  },
+  {
+    "slug": "website",
+    "name": "LP・Webサイト",
+    "clusters": ["E", "I"],
+    "pillar": "website-inquiry-increase",
+    "intro": "流入はあるのに問い合わせが増えない、制作やリニューアルを検討している、という場合のための記事です。導線とフォームの改善、制作の依頼方法、リニューアル時のSEO、表示に関するルールをまとめています。",
+    "service": ["LP制作", "/services/production/lp"]
+  },
+  {
+    "slug": "seo",
+    "name": "SEO・コンテンツ",
+    "clusters": ["F"],
+    "pillar": null,
+    "intro": "Googleの公式ガイドに沿ったSEOの考え方と、コンテンツマーケティングの進め方、外注するときの確認点です。",
+    "service": ["戦略立案", "/services/consulting/strategy"]
+  },
+  {
+    "slug": "local",
+    "name": "地域集客・MEO",
+    "clusters": ["G"],
+    "pillar": "google-business-profile-meo",
+    "intro": "来店型・訪問型のビジネスが、Googleマップと口コミから集客するための記事です。Googleビジネスプロフィールの整え方と、口コミの返信・依頼のルールを扱います。",
+    "service": ["改善提案", "/services/consulting/improvement"]
+  },
+  {
+    "slug": "sns",
+    "name": "SNS運用",
+    "clusters": ["H"],
+    "pillar": "sns-marketing-basics",
+    "intro": "InstagramやLINE公式アカウントなど、SNSを集客に使うための基本と、運用を外部に任せるときの確認点です。",
+    "service": ["運用代行", "/services/operations"]
+  },
+  {
+    "slug": "strategy",
+    "name": "戦略・予算",
+    "clusters": ["J"],
+    "pillar": "web-marketing-channels",
+    "intro": "何から始めるか、いくら使うかを決めるための記事です。広告・SEO・MEO・SNSの比較、媒体の選び方、粗利から逆算する広告予算の決め方をまとめています。",
+    "service": ["戦略立案", "/services/consulting/strategy"]
+  },
+  {
+    "slug": "industry",
+    "name": "業種別の集客",
+    "clusters": ["K"],
+    "pillar": "real-estate-lead-generation",
+    "intro": "業種ごとの集客の考え方と、その業種に固有の広告ルールです。業界団体や行政の資料を一次資料にできる業種に絞って扱います。",
+    "service": ["マーケティングコンサルティング", "/services/consulting"]
+  },
+  {
+    "slug": "ai",
+    "name": "AI活用",
+    "clusters": ["L"],
+    "pillar": null,
+    "intro": "生成AIをマーケティングの実務で使うときの使いどころと、人が確認すべき点です。",
+    "service": ["AI活用支援", "/services/ai"]
+  }
+]

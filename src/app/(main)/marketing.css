@@ -1692,3 +1692,25 @@
   .m-service-list article { padding: 24px 18px; gap: 14px; }
   .m-service-list h3 { font-size: 21px; }
 }
+
+/* コラムのカテゴリ一覧（/blog・/blog/category/* の暗い見出し部分に置く） */
+.m-cat-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 32px;
+}
+.m-cat-nav a {
+  font-size: 13px;
+  padding: 7px 14px;
+  border: 1px solid #ffffff4d;
+  border-radius: 999px;
+  color: inherit;
+  transition: border-color .2s;
+}
+.m-cat-nav a:hover { border-color: #ffffffb3; }
+.m-cat-nav a[aria-current="page"] {
+  background: #fff;
+  border-color: #fff;
+  color: #0a0a0a;
+}

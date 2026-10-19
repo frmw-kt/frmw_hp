@@ -1,5 +1,6 @@
 // /llms.txt: AI 向けのサイト案内（https://llmstxt.org の形式）。会社・サービス・記事の一覧を記事データから生成する
 import { getAllArticles } from "@/lib/articles";
+import { getActiveCategories } from "@/lib/categories";
 import { services } from "@/lib/services";
 import { COMPANY, DEFAULT_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
@@ -7,9 +8,8 @@ export const dynamic = "force-static";
 
 export function GET() {
   const articles = getAllArticles();
-  const byCategory = [...new Set(articles.map((a) => a.category))].map(
-    (c) => [c, articles.filter((a) => a.category === c)] as const,
-  );
+  // カテゴリの定義順（柱記事が先頭）
+  const byCategory = getActiveCategories().map(({ category, articles: list }) => [category.name, list] as const);
   const lines = [
     `# ${SITE_NAME}（frmw.jp）`,
     "",

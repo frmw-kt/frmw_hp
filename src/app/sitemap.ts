@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { getAllArticles } from "@/lib/articles";
+import { categoryPath, getActiveCategories, MIN_INDEXABLE } from "@/lib/categories";
 import { getAllCases, hasPublicCases, isNoindexCase } from "@/lib/cases";
 
 const staticRoutes = [
@@ -51,6 +52,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  // カテゴリページ（記事が MIN_INDEXABLE 本未満のカテゴリは noindex なので載せない）
+  const categoryEntries: MetadataRoute.Sitemap = getActiveCategories()
+    .filter(({ articles: list }) => list.length >= MIN_INDEXABLE)
+    .map(({ category, articles: list }) => ({
+      url: `${SITE_URL}${categoryPath(category)}`,
+      lastModified: new Date(list.map((a) => a.updatedAt ?? a.date).sort().at(-1)!),
+      changeFrequency: "weekly",
+      priority: 0.6,
+    }));
+
   const caseEntries: MetadataRoute.Sitemap = getAllCases()
     .filter((c) => !isNoindexCase(c.slug))
     .map((c) => ({
@@ -59,5 +70,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticEntries, ...articleEntries, ...caseEntries];
+  return [...staticEntries, ...categoryEntries, ...articleEntries, ...caseEntries];
 }

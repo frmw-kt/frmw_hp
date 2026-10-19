@@ -49,8 +49,25 @@
 | `source` | 任意 | 作成元のメモ（autosales が `"autosales"` を入れる）。表示には使わない |
 
 ### カテゴリ
-`広告運用` / `SNSマーケティング` / `制作・クリエイティブ` / `コンテンツマーケティング` / `Web集客` / `マーケティング戦略`
-（増やす場合は `scripts/check-articles.mjs` の `CATEGORIES` と autosales の `ARTICLE_CATEGORIES` も合わせて直す）
+定義は `src/lib/blog-categories.json`（サイトのカテゴリページ `/blog/category/<slug>`・パンくず・関連記事・`check:articles` が同じファイルを読む）。`category` には下のカテゴリ名を入れる。topic-map の「群」から決める。
+
+| 群 | カテゴリ名 | 柱記事 |
+|---|---|---|
+| A | 広告運用の外注 | meta-google-ad-agency-how-to-choose |
+| B | Meta広告 | meta-ads-how-to-start |
+| C | Google・ヤフー広告 | google-ads-how-to-start |
+| D | 計測と改善 | conversion-tracking-design |
+| E・I | LP・Webサイト | website-inquiry-increase |
+| F | SEO・コンテンツ | （seo-basics-for-smb を書いたら設定） |
+| G | 地域集客・MEO | google-business-profile-meo |
+| H | SNS運用 | sns-marketing-basics |
+| J | 戦略・予算 | web-marketing-channels |
+| K | 業種別の集客 | real-estate-lead-generation |
+| L | AI活用 | （未定） |
+
+- 子記事は本文で同じカテゴリの柱記事にリンクする。柱記事は同じカテゴリの子記事へリンクする（カテゴリページと記事末尾の関連記事は自動だが、本文のリンクは手で張る）
+- 記事が2本未満のカテゴリのページは noindex・サイトマップ対象外になる（自動）
+- カテゴリを増やす・名前を変える場合は `blog-categories.json` と autosales の `ARTICLE_CATEGORIES` を合わせて直す。柱記事を書いたら `pillar` に slug を入れる
 
 ## 本文HTML
 

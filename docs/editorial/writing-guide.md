@@ -139,7 +139,8 @@ Claude Code の `seo`（分析）・`seo-writer`（執筆）と、メインの�
 - **対応済み（2026-10-06）**: 記事ごとのOGP画像（`/blog/<slug>/og-image`。タイトル・カテゴリ入りで自動生成）を `og:image`・`twitter:image`・Article構造化データの `image` に使用／`twitter:title`・`twitter:description` を記事ごとの値に／`og:type=article`・公開日・更新日・カテゴリ／記事末尾に同じカテゴリの関連記事（最大3本）とカテゴリに応じた支援ページへのリンク／本文の図解（SVG等）に対応／サイトマップの更新日を実際の更新日だけに
 - **対応済み（2026-10-10）**: `summary`・`takeaways`（タイトル下の囲み）、`faq`（記事末尾の「よくある質問」と FAQPage の構造化データ）、`cta`（本文の中盤と末尾の相談の案内）、Article の構造化データの `keywords`、`/llms.txt`（会社・サービス・全記事を記事データから自動生成）。パンくずの BreadcrumbList は以前から出力済み
 - **未対応**: 記事の著者表示が「編集：Framework」のみ。人物の著者情報（実在の経歴）を出す場合は社長の確認が必要で、創作しない（Google は著者が人物なら `url` でプロフィールページを示すことを推奨: [Google 検索セントラル: Article の構造化データ](https://developers.google.com/search/docs/appearance/structured-data/article)）
-- 記事末尾の自動の関連記事は「同じカテゴリの新しい順に3本」なので、同じまとまり（クラスタ）の記事同士のリンクは本文で張る
+- カテゴリ（2026-10-20〜）は topic-map の群に対応する（[article-format](article-format.md) の表）。各カテゴリに一覧ページ `/blog/category/<slug>` があり、記事のパンくずは「ホーム / コラム / カテゴリ / 記事」
+- 記事末尾の自動の関連記事は「同じカテゴリの柱記事→同じカテゴリの新しい順」で3本なので、同じまとまり（クラスタ）の記事同士のリンクは本文で張る
 
 ## 並行執筆のルール（統括から複数の記事を同時に依頼された場合）
 

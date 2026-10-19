@@ -11,15 +11,7 @@ import {
   pageMeta,
 } from "@/components/Marketing";
 import { SITE_URL } from "@/lib/site";
-/** 記事のカテゴリ → 関連する支援内容（記事末尾のリンク） */
-const CATEGORY_SERVICE: Record<string, [string, string]> = {
-  広告運用: ["運用代行", "/services/operations"],
-  SNSマーケティング: ["運用代行", "/services/operations"],
-  "制作・クリエイティブ": ["LP制作", "/services/production/lp"],
-  コンテンツマーケティング: ["運用代行", "/services/operations"],
-  Web集客: ["改善提案", "/services/consulting/improvement"],
-  マーケティング戦略: ["戦略立案", "/services/consulting/strategy"],
-};
+import { categoryPath, getCategoryByName } from "@/lib/categories";
 const ogImage = (slug: string) => "/blog/" + slug + "/og-image";
 export function generateStaticParams() {
   return getAllArticles().map((a) => ({ slug: a.slug }));
@@ -46,11 +38,13 @@ export default async function Page({
   const { slug } = await params;
   const a = getArticle(slug);
   if (!a) notFound();
-  const service = CATEGORY_SERVICE[a.category] ?? ["運用代行", "/services/operations"];
-  // 関連記事: 同じカテゴリの新しい順に最大3本（足りなければ他カテゴリの新しい記事で補う）
+  const category = getCategoryByName(a.category);
+  const service = category?.service ?? ["運用代行", "/services/operations"];
+  // 関連記事: 同じカテゴリの柱記事、同じカテゴリの新しい順で最大3本（足りなければ他カテゴリの新しい記事で補う）
   const others = getAllArticles().filter((x) => x.slug !== slug);
   const related = [
-    ...others.filter((x) => x.category === a.category),
+    ...others.filter((x) => x.slug === category?.pillar),
+    ...others.filter((x) => x.category === a.category && x.slug !== category?.pillar),
     ...others.filter((x) => x.category !== a.category),
   ].slice(0, 3);
   const headings = [...a.content.matchAll(/<h2>(.*?)<\/h2>/g)].map((m) => m[1]);
@@ -121,11 +115,16 @@ export default async function Page({
         <header className="m-service-hero">
           <div className="m-container m-article-width">
             <Breadcrumb
-              name="記事"
+              name={a.title}
               path={"/blog/" + slug}
-              parent={{ name: "コラム", path: "/blog" }}
+              parents={[
+                { name: "コラム", path: "/blog" },
+                ...(category ? [{ name: category.name, path: categoryPath(category) }] : []),
+              ]}
             />
-            <p className="m-eyebrow">{a.category}</p>
+            <p className="m-eyebrow">
+              {category ? <Link href={categoryPath(category)}>{a.category}</Link> : a.category}
+            </p>
             <h1 style={{ fontSize: "clamp(26px,3vw,40px)" }}>{a.title}</h1>
             {/* 結論の囲み（summary）がある記事は、説明文（検索結果用）を重ねて表示しない */}
             {!a.summary && <p className="m-lead">{a.description}</p>}
@@ -223,7 +222,7 @@ export default async function Page({
           <div className="m-grid-3">
             {related.map((r) => (
               <article className="m-task-card" key={r.slug}>
-                <p className="m-eyebrow">{r.category}</p>
+                <p className="m-eyebrow">{r.slug === category?.pillar ? "まず読む記事" : r.category}</p>
                 <h3 style={{ fontSize: 19, lineHeight: 1.6 }}>
                   <Link href={"/blog/" + r.slug}>{r.title}</Link>
                 </h3>
@@ -241,6 +240,7 @@ export default async function Page({
         <div className="m-related">
           <Link href={service[1]}>{service[0]}の支援内容 →</Link>
           {hasPublicCases && <Link href="/cases">支援事例を見る →</Link>}
+          {category && <Link href={categoryPath(category)}>{category.name}のコラム一覧 →</Link>}
           <Link href="/blog">ほかのコラムを見る →</Link>
         </div>
       </Section>
