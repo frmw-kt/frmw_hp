@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="560" fill="#ffffff"/>
+  <text x="400" y="40" font-size="24" fill="#41483c" text-anchor="middle">都道府県知事・保健所設置市の市長・特別区の区長</text>
+  <rect x="40" y="62" width="720" height="70" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="106" font-size="26" fill="#191c19" text-anchor="middle" font-weight="bold">広告が違反しているおそれ</text>
+  <path d="M400 132 L400 160" stroke="#806222" stroke-width="3"/>
+  <path d="M390 152 L400 166 L410 152 Z" fill="#806222"/>
+  <rect x="40" y="168" width="720" height="92" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="206" font-size="26" fill="#191c19" text-anchor="middle" font-weight="bold">報告命令・立入検査</text>
+  <text x="400" y="242" font-size="24" fill="#41483c" text-anchor="middle">医療法第6条の8第1項</text>
+  <path d="M400 260 L400 288" stroke="#806222" stroke-width="3"/>
+  <path d="M390 280 L400 294 L410 280 Z" fill="#806222"/>
+  <rect x="40" y="296" width="720" height="92" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="334" font-size="26" fill="#191c19" text-anchor="middle" font-weight="bold">期限を定めた中止・是正の命令</text>
+  <text x="400" y="370" font-size="24" fill="#41483c" text-anchor="middle">医療法第6条の8第2項</text>
+  <path d="M400 388 L400 416" stroke="#806222" stroke-width="3"/>
+  <path d="M390 408 L400 422 L410 408 Z" fill="#806222"/>
+  <rect x="40" y="424" width="720" height="120" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="400" y="462" font-size="26" fill="#806222" text-anchor="middle" font-weight="bold">命令に違反したとき・虚偽の広告をしたとき</text>
+  <text x="400" y="498" font-size="24" fill="#191c19" text-anchor="middle">6月以下の拘禁刑または30万円以下の罰金</text>
+  <text x="400" y="530" font-size="22" fill="#41483c" text-anchor="middle">医療法第87条（虚偽の広告は第1号、命令違反は第3号）</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 720" width="800" height="720" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="720" fill="#ffffff"/>
+  <!-- Q1 -->
+  <rect x="20" y="20" width="500" height="96" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="40" y="58" font-size="24" fill="#191c19" font-weight="bold">① 患者が自ら求めて見る</text>
+  <text x="40" y="94" font-size="24" fill="#191c19" font-weight="bold">ウェブサイト等か（第1号）</text>
+  <!-- Q2 -->
+  <rect x="20" y="160" width="500" height="96" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="40" y="198" font-size="24" fill="#191c19" font-weight="bold">② 問い合わせ先などを</text>
+  <text x="40" y="234" font-size="24" fill="#191c19" font-weight="bold">明示しているか（第2号）</text>
+  <!-- Q3 -->
+  <rect x="20" y="300" width="500" height="96" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="40" y="338" font-size="24" fill="#191c19" font-weight="bold">③ 自由診療の情報を</text>
+  <text x="40" y="374" font-size="24" fill="#191c19" font-weight="bold">載せるか</text>
+  <!-- Q4 -->
+  <rect x="20" y="440" width="500" height="132" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="40" y="478" font-size="24" fill="#191c19" font-weight="bold">④ 治療の内容・費用と、</text>
+  <text x="40" y="514" font-size="24" fill="#191c19" font-weight="bold">主なリスク・副作用を</text>
+  <text x="40" y="550" font-size="24" fill="#191c19" font-weight="bold">載せたか（第3号・第4号）</text>
+  <!-- yes arrows down -->
+  <path d="M270 116 L270 150" stroke="#806222" stroke-width="3"/><path d="M260 142 L270 156 L280 142 Z" fill="#806222"/>
+  <text x="284" y="144" font-size="22" fill="#806222">はい</text>
+  <path d="M270 256 L270 290" stroke="#806222" stroke-width="3"/><path d="M260 282 L270 296 L280 282 Z" fill="#806222"/>
+  <text x="284" y="284" font-size="22" fill="#806222">はい</text>
+  <path d="M270 396 L270 430" stroke="#806222" stroke-width="3"/><path d="M260 422 L270 436 L280 422 Z" fill="#806222"/>
+  <text x="284" y="424" font-size="22" fill="#806222">はい</text>
+  <!-- no column: limited only -->
+  <rect x="580" y="20" width="200" height="236" rx="10" fill="#ffffff" stroke="#41483c" stroke-width="2"/>
+  <text x="680" y="110" font-size="24" fill="#191c19" text-anchor="middle">広告できる</text>
+  <text x="680" y="146" font-size="24" fill="#191c19" text-anchor="middle">事項だけ</text>
+  <text x="680" y="182" font-size="22" fill="#41483c" text-anchor="middle">（限定解除</text>
+  <text x="680" y="212" font-size="22" fill="#41483c" text-anchor="middle">できない）</text>
+  <path d="M520 68 L572 68" stroke="#41483c" stroke-width="3"/><path d="M564 58 L578 68 L564 78 Z" fill="#41483c"/>
+  <text x="528" y="58" font-size="22" fill="#41483c">いいえ</text>
+  <path d="M520 208 L572 208" stroke="#41483c" stroke-width="3"/><path d="M564 198 L578 208 L564 218 Z" fill="#41483c"/>
+  <text x="528" y="198" font-size="22" fill="#41483c">いいえ</text>
+  <!-- Q3 no -> limited release -->
+  <rect x="580" y="300" width="200" height="96" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="680" y="358" font-size="24" fill="#806222" text-anchor="middle" font-weight="bold">限定解除</text>
+  <path d="M520 348 L572 348" stroke="#806222" stroke-width="3"/><path d="M564 338 L578 348 L564 358 Z" fill="#806222"/>
+  <text x="528" y="338" font-size="22" fill="#806222">いいえ</text>
+  <!-- Q4 yes -> limited release; no -> limited only -->
+  <rect x="580" y="440" width="200" height="60" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="680" y="479" font-size="24" fill="#806222" text-anchor="middle" font-weight="bold">限定解除</text>
+  <path d="M520 470 L572 470" stroke="#806222" stroke-width="3"/><path d="M564 460 L578 470 L564 480 Z" fill="#806222"/>
+  <text x="528" y="460" font-size="22" fill="#806222">はい</text>
+  <rect x="580" y="512" width="200" height="80" rx="10" fill="#ffffff" stroke="#41483c" stroke-width="2"/>
+  <text x="680" y="545" font-size="22" fill="#191c19" text-anchor="middle">広告できる</text>
+  <text x="680" y="575" font-size="22" fill="#191c19" text-anchor="middle">事項だけ</text>
+  <path d="M520 542 L572 542" stroke="#41483c" stroke-width="3"/><path d="M564 532 L578 542 L564 552 Z" fill="#41483c"/>
+  <text x="528" y="532" font-size="22" fill="#41483c">いいえ</text>
+  <!-- note -->
+  <rect x="20" y="604" width="760" height="96" rx="10" fill="#f7f7f4" stroke="#806222" stroke-width="2"/>
+  <text x="400" y="642" font-size="24" fill="#191c19" text-anchor="middle">どの場合も、虚偽・比較優良・誇大・体験談</text>
+  <text x="400" y="678" font-size="24" fill="#191c19" text-anchor="middle">・誤認させる前後写真などの禁止は外れない</text>
+</svg>

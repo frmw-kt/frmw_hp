@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="600" fill="#ffffff"/>
+  <rect x="20" y="20" width="760" height="232" rx="12" fill="#f7f7f4" stroke="#806222" stroke-width="3"/>
+  <text x="400" y="62" font-size="26" fill="#806222" text-anchor="middle" font-weight="bold">すべての広告にかかる禁止</text>
+  <text x="400" y="106" font-size="24" fill="#191c19" text-anchor="middle">虚偽／他院と比べて優良／誇大</text>
+  <text x="400" y="142" font-size="24" fill="#191c19" text-anchor="middle">公序良俗に反する／患者等の体験談</text>
+  <text x="400" y="178" font-size="24" fill="#191c19" text-anchor="middle">誤認させるおそれのある治療前後の写真</text>
+  <text x="400" y="226" font-size="22" fill="#41483c" text-anchor="middle">医療法第6条の5第1項・第2項、施行規則第1条の9</text>
+  <path d="M210 252 L210 290" stroke="#41483c" stroke-width="3"/><path d="M200 282 L210 296 L220 282 Z" fill="#41483c"/>
+  <path d="M590 252 L590 290" stroke="#806222" stroke-width="3"/><path d="M580 282 L590 296 L600 282 Z" fill="#806222"/>
+  <rect x="20" y="300" width="370" height="280" rx="12" fill="#ffffff" stroke="#41483c" stroke-width="2"/>
+  <text x="205" y="342" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">限定解除しない広告</text>
+  <text x="205" y="392" font-size="24" fill="#191c19" text-anchor="middle">載せられるのは</text>
+  <text x="205" y="428" font-size="24" fill="#191c19" text-anchor="middle">広告できる事項だけ</text>
+  <text x="205" y="472" font-size="22" fill="#41483c" text-anchor="middle">診療科名・名称・所在地・</text>
+  <text x="205" y="502" font-size="22" fill="#41483c" text-anchor="middle">診療日時・医療の内容など</text>
+  <text x="205" y="550" font-size="22" fill="#41483c" text-anchor="middle">医療法第6条の5第3項</text>
+  <rect x="410" y="300" width="370" height="280" rx="12" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="595" y="342" font-size="24" fill="#806222" text-anchor="middle" font-weight="bold">限定解除の要件を</text>
+  <text x="595" y="376" font-size="24" fill="#806222" text-anchor="middle" font-weight="bold">すべて満たすサイト等</text>
+  <text x="595" y="428" font-size="24" fill="#191c19" text-anchor="middle">広告できる事項</text>
+  <text x="595" y="464" font-size="24" fill="#191c19" text-anchor="middle">以外も載せられる</text>
+  <text x="595" y="508" font-size="22" fill="#41483c" text-anchor="middle">上の禁止はそのまま</text>
+  <text x="595" y="550" font-size="22" fill="#41483c" text-anchor="middle">施行規則第1条の9の2</text>
+</svg>
