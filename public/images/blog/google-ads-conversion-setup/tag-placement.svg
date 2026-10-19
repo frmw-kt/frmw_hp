@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>Google広告のコンバージョン計測で、どのページに何を置くか</title>
+  <desc>すべてのページにGoogle タグを1つ（通常はheadセクション）。完了ページ（送信完了・予約完了・注文確認）には、Google タグの後にイベント スニペット。電話番号を載せたページには、Google タグのconfigコマンドの前に電話番号スニペット。Google タグ マネージャーを使う場合は、同じ役割をGTMのタグとトリガーで設定する。</desc>
+  <rect width="800" height="520" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">どのページに何を置くか</text>
+
+  <rect x="32" y="72" width="300" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="134" font-size="24" font-weight="700" fill="#191c19">すべてのページ</text>
+  <text x="356" y="118" font-size="24" font-weight="700" fill="#806222">Google タグ（1つだけ）</text>
+  <text x="356" y="156" font-size="22" fill="#41483c">通常は head セクションに置く</text>
+
+  <rect x="32" y="200" width="300" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="246" font-size="24" font-weight="700" fill="#191c19">完了ページ</text>
+  <text x="56" y="282" font-size="22" fill="#41483c">送信・予約・注文の完了</text>
+  <text x="356" y="246" font-size="24" font-weight="700" fill="#806222">＋ イベント スニペット</text>
+  <text x="356" y="284" font-size="22" fill="#41483c">Google タグの後に置く</text>
+
+  <rect x="32" y="328" width="300" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="374" font-size="24" font-weight="700" fill="#191c19">電話番号を</text>
+  <text x="56" y="410" font-size="24" font-weight="700" fill="#191c19">載せたページ</text>
+  <text x="356" y="374" font-size="24" font-weight="700" fill="#806222">＋ 電話番号スニペット</text>
+  <text x="356" y="412" font-size="22" fill="#41483c">config コマンドの前に置く</text>
+
+  <text x="32" y="486" font-size="22" fill="#41483c">GTMを使う場合は、同じ役割をGTMのタグとトリガーで設定</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>ウェブサイトのコンバージョン アクションを作る3ステップ</title>
+  <desc>①データソースを追加する（目標メニューの概要から、ドメインを入力してスキャン）。②コンバージョン アクションを作る（カテゴリを選び、URLかコードで成果を定義し、メインかサブ、カウント、計測期間を確かめる）。③次のステップ（Google タグの設置、イベント スニペットの確認、拡張コンバージョンをオンにする）。</desc>
+  <rect width="800" height="520" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">ウェブサイトのコンバージョンを作る3ステップ</text>
+
+  <rect x="32" y="72" width="736" height="112" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="114" font-size="26" font-weight="700" fill="#191c19">① データソースを追加する</text>
+  <text x="56" y="156" font-size="24" fill="#41483c">［目標］→［概要］→ ドメインを入力して［スキャン］</text>
+
+  <path d="M400 188 L400 206" stroke="#806222" stroke-width="4"/>
+  <path d="M388 202 L400 218 L412 202 Z" fill="#806222"/>
+
+  <rect x="32" y="222" width="736" height="136" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="264" font-size="26" font-weight="700" fill="#191c19">② コンバージョン アクションを作る</text>
+  <text x="56" y="304" font-size="24" fill="#41483c">カテゴリを選び、URLかコードで成果を決める</text>
+  <text x="56" y="340" font-size="24" fill="#41483c">メイン／サブ・カウント・計測期間を確かめる</text>
+
+  <path d="M400 362 L400 380" stroke="#806222" stroke-width="4"/>
+  <path d="M388 376 L400 392 L412 376 Z" fill="#806222"/>
+
+  <rect x="32" y="396" width="736" height="112" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="56" y="438" font-size="26" font-weight="700" fill="#806222">③ 次のステップ</text>
+  <text x="56" y="480" font-size="24" fill="#41483c">Google タグ・イベント スニペット・拡張コンバージョン</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>コンバージョン設定の後に確かめる時期</title>
+  <desc>設定直後はテスト送信とTag Assistantで実装を確かめる。最長1時間で、サイトの電話番号が転送番号に変わるかを確かめられる。24〜48時間で、GA4のキーイベントが取り込みの候補に表示される。タグの修正後のステータスの更新は最長48時間。約30日後に拡張コンバージョンの影響を表で確認できる。</desc>
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">設定の後に確かめる時期</text>
+
+  <path d="M120 84 L120 528" stroke="#c9a84c" stroke-width="4"/>
+
+  <circle cx="120" cy="110" r="10" fill="#806222"/>
+  <text x="148" y="104" font-size="24" font-weight="700" fill="#191c19">設定の直後</text>
+  <text x="148" y="138" font-size="22" fill="#41483c">テスト送信・Tag Assistantで実装を確かめる</text>
+
+  <circle cx="120" cy="198" r="10" fill="#806222"/>
+  <text x="148" y="192" font-size="24" font-weight="700" fill="#191c19">最長1時間</text>
+  <text x="148" y="226" font-size="22" fill="#41483c">サイトの電話番号が転送番号に変わるか（通話）</text>
+
+  <circle cx="120" cy="286" r="10" fill="#806222"/>
+  <text x="148" y="280" font-size="24" font-weight="700" fill="#191c19">24〜48時間</text>
+  <text x="148" y="314" font-size="22" fill="#41483c">GA4のキーイベントが取り込みの候補に出る</text>
+
+  <circle cx="120" cy="374" r="10" fill="#806222"/>
+  <text x="148" y="368" font-size="24" font-weight="700" fill="#191c19">最長48時間</text>
+  <text x="148" y="402" font-size="22" fill="#41483c">タグを修正した後のステータスの更新</text>
+
+  <circle cx="120" cy="462" r="10" fill="#806222"/>
+  <text x="148" y="456" font-size="24" font-weight="700" fill="#806222">約30日後</text>
+  <text x="148" y="490" font-size="22" fill="#41483c">拡張コンバージョンの影響を表で確認できる</text>
+</svg>

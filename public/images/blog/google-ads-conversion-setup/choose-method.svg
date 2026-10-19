@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>測る成果ごとのコンバージョン設定の方法の選び方</title>
+  <desc>フォーム・予約・購入は、完了ページのURLがあればURLで設定、完了ページがない・金額を送る場合はコード（イベント スニペット）かGoogle タグ マネージャー、GA4のキーイベントがあればGA4から取り込める（取り込んだものは拡張コンバージョンの対象外）。電話は、広告の番号への通話が広告経由の通話数、サイトの番号への通話がウェブサイト訪問からの通話数、サイトの番号のクリックは通話ではなくクリックを数える。</desc>
+  <rect width="800" height="600" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">測る成果ごとの設定方法の選び方</text>
+
+  <rect x="32" y="72" width="736" height="270" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="114" font-size="26" font-weight="700" fill="#806222">フォーム・予約・購入（ウェブサイト）</text>
+  <text x="56" y="164" font-size="24" fill="#191c19">完了ページのURLがある → URLで設定</text>
+  <text x="56" y="212" font-size="24" fill="#191c19">完了ページがない・金額を送る</text>
+  <text x="96" y="248" font-size="24" fill="#191c19">→ コード（イベント スニペット）か GTM</text>
+  <text x="56" y="296" font-size="24" fill="#191c19">GA4のキーイベントがある → GA4から取り込む</text>
+  <text x="56" y="328" font-size="22" fill="#41483c">※取り込んだものは拡張コンバージョンの対象外</text>
+
+  <rect x="32" y="364" width="736" height="214" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="56" y="406" font-size="26" font-weight="700" fill="#806222">電話（通話コンバージョン）</text>
+  <text x="56" y="454" font-size="24" fill="#191c19">広告の電話番号への通話 → 広告経由の通話数</text>
+  <text x="56" y="502" font-size="24" fill="#191c19">サイトの番号への通話 → ウェブサイト訪問からの通話数</text>
+  <text x="56" y="550" font-size="24" fill="#191c19">サイトの番号のクリック → クリックだけを数える</text>
+</svg>

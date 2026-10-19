@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>拡張コンバージョン（ウェブ向け）の仕組み</title>
+  <desc>①利用者がフォームにメールアドレスなどを入力して送信する。②タグがデータをSHA256でハッシュ化してGoogleに送る。③Googleが、広告を操作したときにログインしていたGoogle アカウントと照合する。④照合できたコンバージョンがアカウントで報告される。健康・医療などデリケートなカテゴリに関連するコンバージョンには使えない。</desc>
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">拡張コンバージョン（ウェブ向け）の仕組み</text>
+
+  <rect x="32" y="72" width="736" height="84" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="124" font-size="24" fill="#191c19">① フォームにメールアドレスなどを入力して送信</text>
+  <path d="M400 160 L400 172" stroke="#806222" stroke-width="4"/>
+  <path d="M388 168 L400 184 L412 168 Z" fill="#806222"/>
+
+  <rect x="32" y="188" width="736" height="84" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="240" font-size="24" fill="#191c19">② タグがSHA256でハッシュ化して Google に送る</text>
+  <path d="M400 276 L400 288" stroke="#806222" stroke-width="4"/>
+  <path d="M388 284 L400 300 L412 284 Z" fill="#806222"/>
+
+  <rect x="32" y="304" width="736" height="84" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="356" font-size="24" fill="#191c19">③ ログイン中の Google アカウントと照合する</text>
+  <path d="M400 392 L400 404" stroke="#806222" stroke-width="4"/>
+  <path d="M388 400 L400 416 L412 400 Z" fill="#806222"/>
+
+  <rect x="32" y="420" width="736" height="84" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="56" y="472" font-size="24" font-weight="700" fill="#806222">④ 照合できた成果がコンバージョンとして報告される</text>
+
+  <text x="32" y="540" font-size="22" fill="#41483c">※健康・医療などデリケートなカテゴリの成果には使えない</text>
+</svg>
