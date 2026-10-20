@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <!-- 左：問い合わせ時 -->
+  <rect x="16" y="24" width="244" height="400" rx="12" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <rect x="16" y="24" width="244" height="64" rx="12" fill="#c9a84c"/>
+  <text x="138" y="66" font-size="24" font-weight="bold" fill="#191c19" text-anchor="middle">問い合わせ時に残す</text>
+  <text x="138" y="140" font-size="24" fill="#41483c" text-anchor="middle">GCLID</text>
+  <text x="138" y="200" font-size="24" fill="#41483c" text-anchor="middle">メールアドレス</text>
+  <text x="138" y="260" font-size="24" fill="#41483c" text-anchor="middle">電話番号</text>
+  <text x="138" y="320" font-size="24" fill="#41483c" text-anchor="middle">MetaのリードID</text>
+  <text x="138" y="380" font-size="24" fill="#41483c" text-anchor="middle">問い合わせ日時</text>
+  <!-- 中：顧客管理 -->
+  <rect x="278" y="24" width="244" height="400" rx="12" fill="#ffffff" stroke="#e3e2dc" stroke-width="3"/>
+  <rect x="278" y="24" width="244" height="64" rx="12" fill="#191c19"/>
+  <text x="400" y="66" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">顧客管理に追記</text>
+  <text x="400" y="140" font-size="24" fill="#41483c" text-anchor="middle">段階（商談・成約）</text>
+  <text x="400" y="200" font-size="24" fill="#41483c" text-anchor="middle">段階が変わった</text>
+  <text x="400" y="232" font-size="24" fill="#41483c" text-anchor="middle">日時</text>
+  <text x="400" y="292" font-size="24" fill="#41483c" text-anchor="middle">成約金額</text>
+  <text x="400" y="352" font-size="24" fill="#41483c" text-anchor="middle">同意の記録</text>
+  <!-- 右：返す -->
+  <rect x="540" y="24" width="244" height="400" rx="12" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <rect x="540" y="24" width="244" height="64" rx="12" fill="#806222"/>
+  <text x="662" y="66" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">媒体に返す</text>
+  <text x="662" y="150" font-size="24" font-weight="bold" fill="#191c19" text-anchor="middle">Google広告</text>
+  <text x="662" y="186" font-size="24" fill="#41483c" text-anchor="middle">データマネージャー</text>
+  <text x="662" y="218" font-size="24" fill="#41483c" text-anchor="middle">などで取り込む</text>
+  <text x="662" y="300" font-size="24" font-weight="bold" fill="#191c19" text-anchor="middle">Meta広告</text>
+  <text x="662" y="336" font-size="24" fill="#41483c" text-anchor="middle">コンバージョンAPI</text>
+  <text x="662" y="368" font-size="24" fill="#41483c" text-anchor="middle">で送る</text>
+  <!-- 矢印 -->
+  <polygon points="262,224 276,236 262,248" fill="#806222"/>
+  <polygon points="524,224 538,236 524,248" fill="#806222"/>
+  <!-- 下の注記 -->
+  <text x="400" y="480" font-size="24" fill="#191c19" text-anchor="middle">GCLIDは問い合わせ時に保存しないと後から結びつかない</text>
+  <text x="400" y="526" font-size="24" fill="#41483c" text-anchor="middle">メール・電話はハッシュ化して送る</text>
+</svg>
