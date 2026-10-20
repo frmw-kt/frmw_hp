@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="520" fill="#f7f7f4"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#41483c"/>
+    </marker>
+  </defs>
+  <!-- row 1: browser -> pixel -->
+  <rect x="20" y="40" width="220" height="110" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="130" y="88" font-size="24" fill="#191c19" text-anchor="middle">訪問者の</text>
+  <text x="130" y="120" font-size="24" fill="#191c19" text-anchor="middle">ブラウザ</text>
+  <rect x="280" y="40" width="240" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="400" y="88" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">Metaピクセル</text>
+  <text x="400" y="120" font-size="24" fill="#41483c" text-anchor="middle">（ブラウザから）</text>
+  <line x1="242" y1="95" x2="276" y2="95" stroke="#41483c" stroke-width="3" marker-end="url(#arrow)"/>
+  <!-- row 2: server -> CAPI -->
+  <rect x="20" y="230" width="220" height="110" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="130" y="278" font-size="24" fill="#191c19" text-anchor="middle">自社のサーバー</text>
+  <text x="130" y="310" font-size="24" fill="#191c19" text-anchor="middle">・CRM</text>
+  <rect x="280" y="230" width="240" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="400" y="278" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">コンバージョンAPI</text>
+  <text x="400" y="310" font-size="24" fill="#41483c" text-anchor="middle">（サーバーから）</text>
+  <line x1="242" y1="285" x2="276" y2="285" stroke="#41483c" stroke-width="3" marker-end="url(#arrow)"/>
+  <!-- Meta -->
+  <rect x="580" y="40" width="200" height="300" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="680" y="160" font-size="26" fill="#191c19" text-anchor="middle" font-weight="bold">Meta</text>
+  <text x="680" y="200" font-size="24" fill="#41483c" text-anchor="middle">イベント</text>
+  <text x="680" y="232" font-size="24" fill="#41483c" text-anchor="middle">マネージャ</text>
+  <line x1="522" y1="95" x2="576" y2="95" stroke="#41483c" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="522" y1="285" x2="576" y2="285" stroke="#41483c" stroke-width="3" marker-end="url(#arrow)"/>
+  <!-- dedup note -->
+  <rect x="20" y="390" width="760" height="110" rx="10" fill="#ffffff" stroke="#806222" stroke-width="2"/>
+  <text x="400" y="436" font-size="24" fill="#191c19" text-anchor="middle">同じイベントを両方から送るなら</text>
+  <text x="400" y="470" font-size="24" fill="#806222" text-anchor="middle" font-weight="bold">event_idをそろえて1件にまとめる（重複除外）</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="600" fill="#f7f7f4"/>
+  <line x1="134" y1="60" x2="134" y2="560" stroke="#e3e2dc" stroke-width="6"/>
+  <!-- row 1 -->
+  <circle cx="134" cy="80" r="14" fill="#c9a84c"/>
+  <text x="16" y="88" font-size="24" fill="#806222" font-weight="bold">設定直後</text>
+  <rect x="164" y="30" width="616" height="100" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="184" y="72" font-size="24" fill="#191c19">［テストイベント］で、操作した</text>
+  <text x="184" y="106" font-size="24" fill="#191c19">直後に届くかを見る</text>
+  <!-- row 2 -->
+  <circle cx="134" cy="210" r="14" fill="#c9a84c"/>
+  <text x="16" y="218" font-size="24" fill="#806222" font-weight="bold">30分以上</text>
+  <rect x="164" y="160" width="616" height="100" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="184" y="202" font-size="24" fill="#191c19">イベントの表示（アナリティクス）に</text>
+  <text x="184" y="236" font-size="24" fill="#191c19">反映されるまでかかることがある</text>
+  <!-- row 3 -->
+  <circle cx="134" cy="340" r="14" fill="#c9a84c"/>
+  <text x="16" y="348" font-size="24" fill="#806222" font-weight="bold">24時間</text>
+  <rect x="164" y="290" width="616" height="100" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="184" y="332" font-size="24" fill="#191c19">テストの記録が消える。［診断］の</text>
+  <text x="184" y="366" font-size="24" fill="#191c19">［アクティブ］は24時間以内の問題</text>
+  <!-- row 4 -->
+  <circle cx="134" cy="490" r="14" fill="#c9a84c"/>
+  <text x="16" y="498" font-size="24" fill="#806222" font-weight="bold">48時間</text>
+  <rect x="164" y="420" width="616" height="140" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="184" y="462" font-size="24" fill="#191c19">重複除外は最初の受信から48時間以内。</text>
+  <text x="184" y="496" font-size="24" fill="#191c19">マッチングクオリティは過去48時間の</text>
+  <text x="184" y="530" font-size="24" fill="#191c19">データで算出される</text>
+</svg>
