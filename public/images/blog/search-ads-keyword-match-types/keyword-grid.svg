@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>商品・サービス名と地域と目的の語を掛け合わせてキーワード候補を作る図</title>
+  <desc>横浜市で外壁塗装を請け負う事業者を仮定した例。商品・サービス名（外壁塗装、屋根塗装）、地域（横浜市、区の名前、駅名）、目的の語（見積もり、費用、業者）を掛け合わせ、「外壁塗装 横浜市 見積もり」のような候補を作る。</desc>
+  <rect width="800" height="520" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">3つの軸を掛け合わせて候補を作る</text>
+  <text x="32" y="84" font-size="22" fill="#41483c">例：横浜市の外壁塗装業者（仮定）</text>
+
+  <rect x="32" y="108" width="224" height="236" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="52" y="148" font-size="24" font-weight="700" fill="#191c19">商品・サービス名</text>
+  <text x="52" y="198" font-size="24" fill="#41483c">外壁塗装</text>
+  <text x="52" y="242" font-size="24" fill="#41483c">屋根塗装</text>
+  <text x="52" y="286" font-size="24" fill="#41483c">外壁 塗り替え</text>
+
+  <text x="268" y="236" font-size="32" font-weight="700" fill="#806222">×</text>
+
+  <rect x="296" y="108" width="208" height="236" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="316" y="148" font-size="24" font-weight="700" fill="#191c19">地域</text>
+  <text x="316" y="198" font-size="24" fill="#41483c">横浜市</text>
+  <text x="316" y="242" font-size="24" fill="#41483c">港北区</text>
+  <text x="316" y="286" font-size="24" fill="#41483c">駅名</text>
+
+  <text x="516" y="236" font-size="32" font-weight="700" fill="#806222">×</text>
+
+  <rect x="544" y="108" width="224" height="236" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="564" y="148" font-size="24" font-weight="700" fill="#191c19">目的の語</text>
+  <text x="564" y="198" font-size="24" fill="#41483c">見積もり</text>
+  <text x="564" y="242" font-size="24" fill="#41483c">費用</text>
+  <text x="564" y="286" font-size="24" fill="#41483c">業者</text>
+
+  <path d="M400 352 L400 380" stroke="#806222" stroke-width="4"/>
+  <path d="M388 376 L400 392 L412 376 Z" fill="#806222"/>
+
+  <rect x="32" y="400" width="736" height="100" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="56" y="440" font-size="26" font-weight="700" fill="#806222">外壁塗装 横浜市 見積もり</text>
+  <text x="56" y="478" font-size="22" fill="#41483c">地域名がない「外壁塗装 費用」なども候補に残す</text>
+</svg>

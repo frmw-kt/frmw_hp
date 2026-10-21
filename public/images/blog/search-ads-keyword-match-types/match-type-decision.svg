@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>入札方法と計測の状況でマッチタイプを選ぶ分岐</title>
+  <desc>質問1：コンバージョン アクションが「有効」で、成果を数えられているか。いいえなら、フレーズ一致と完全一致で範囲を絞り、計測を先に整える。はいなら質問2：スマート自動入札（目標アクション単価、コンバージョン数の最大化など）を使うか。はいならインテント マッチを中心にし、検索語句レポートで除外する。いいえ（個別単価設定など）なら、フレーズ一致と完全一致を中心にする。</desc>
+  <rect width="800" height="600" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">マッチタイプを選ぶ分岐</text>
+
+  <rect x="32" y="72" width="736" height="96" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="110" font-size="24" font-weight="700" fill="#191c19">Q1 コンバージョン アクションが「有効」で</text>
+  <text x="56" y="146" font-size="24" font-weight="700" fill="#191c19">　 成果を数えられているか</text>
+
+  <path d="M600 172 L600 210" stroke="#806222" stroke-width="4"/>
+  <path d="M588 206 L600 222 L612 206 Z" fill="#806222"/>
+  <text x="616" y="204" font-size="22" fill="#806222">いいえ</text>
+  <rect x="440" y="228" width="328" height="112" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="460" y="268" font-size="24" font-weight="700" fill="#41483c">フレーズ・完全一致</text>
+  <text x="460" y="304" font-size="22" fill="#41483c">で範囲を絞り、</text>
+  <text x="460" y="330" font-size="22" fill="#41483c">計測を先に整える</text>
+
+  <path d="M200 172 L200 210" stroke="#806222" stroke-width="4"/>
+  <path d="M188 206 L200 222 L212 206 Z" fill="#806222"/>
+  <text x="216" y="204" font-size="22" fill="#806222">はい</text>
+  <rect x="32" y="228" width="384" height="112" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="52" y="268" font-size="24" font-weight="700" fill="#191c19">Q2 スマート自動入札</text>
+  <text x="52" y="304" font-size="22" fill="#41483c">（目標アクション単価・</text>
+  <text x="52" y="330" font-size="22" fill="#41483c">コンバージョン数の最大化）</text>
+
+  <path d="M120 344 L120 400" stroke="#806222" stroke-width="4"/>
+  <path d="M108 396 L120 412 L132 396 Z" fill="#806222"/>
+  <text x="136" y="384" font-size="22" fill="#806222">使う</text>
+  <path d="M330 344 L330 400" stroke="#806222" stroke-width="4"/>
+  <path d="M318 396 L330 412 L342 396 Z" fill="#806222"/>
+  <text x="346" y="384" font-size="22" fill="#806222">使わない</text>
+
+  <rect x="32" y="420" width="232" height="160" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="48" y="460" font-size="24" font-weight="700" fill="#806222">インテント</text>
+  <text x="48" y="492" font-size="24" font-weight="700" fill="#806222">マッチ中心</text>
+  <text x="48" y="530" font-size="22" fill="#41483c">検索語句を見て</text>
+  <text x="48" y="560" font-size="22" fill="#41483c">除外を足す</text>
+
+  <rect x="280" y="420" width="488" height="160" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="300" y="460" font-size="24" font-weight="700" fill="#806222">フレーズ・完全一致中心</text>
+  <text x="300" y="498" font-size="22" fill="#41483c">（個別単価設定など）</text>
+  <text x="300" y="536" font-size="22" fill="#41483c">新しい語句は検索語句から足す</text>
+</svg>
