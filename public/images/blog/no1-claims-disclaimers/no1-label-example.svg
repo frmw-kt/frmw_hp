@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="600" fill="#f7f7f4"/>
+  <text x="40" y="48" font-size="24" fill="#806222" font-weight="bold">架空の広告の例（社名・数値は仮定）</text>
+  <rect x="40" y="70" width="720" height="250" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="400" y="138" font-size="40" fill="#191c19" text-anchor="middle" font-weight="bold">外壁塗装の施工件数</text>
+  <text x="400" y="196" font-size="44" fill="#806222" text-anchor="middle" font-weight="bold">◯◯市でNo.1 ※</text>
+  <rect x="64" y="226" width="672" height="76" rx="6" fill="#f7f7f4"/>
+  <text x="80" y="256" font-size="24" fill="#191c19">※◯◯市内の戸建て外壁塗装の施工件数</text>
+  <text x="80" y="288" font-size="24" fill="#191c19">2025年4月〜2026年3月　△△リサーチ「◇◇調査」</text>
+  <g font-size="24" fill="#41483c">
+    <rect x="40" y="350" width="350" height="104" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="60" y="390" font-weight="bold" fill="#191c19">範囲（何の No.1か）</text>
+    <text x="60" y="430">戸建ての外壁塗装に限る</text>
+    <rect x="410" y="350" width="350" height="104" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="430" y="390" font-weight="bold" fill="#191c19">地域（行政区画）</text>
+    <text x="430" y="430">「地域No.1」でなく市名</text>
+    <rect x="40" y="470" width="350" height="104" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="60" y="510" font-weight="bold" fill="#191c19">期間・時点</text>
+    <text x="60" y="550">直近の調査の対象期間</text>
+    <rect x="410" y="470" width="350" height="104" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="430" y="510" font-weight="bold" fill="#191c19">出典</text>
+    <text x="430" y="550">調査会社名と調査の名称</text>
+  </g>
+</svg>

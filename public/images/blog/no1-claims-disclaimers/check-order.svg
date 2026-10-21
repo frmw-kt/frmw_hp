@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="640" fill="#f7f7f4"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#806222"/></marker>
+  </defs>
+  <g font-size="26" fill="#191c19">
+    <rect x="40" y="24" width="500" height="80" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+    <text x="64" y="74" font-weight="bold">1 根拠の資料が手元にある</text>
+    <rect x="40" y="128" width="500" height="80" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+    <text x="64" y="178" font-weight="bold">2 調査の中身が表示に見合う</text>
+    <rect x="40" y="232" width="500" height="80" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+    <text x="64" y="282" font-weight="bold">3 範囲・地域・期間・出典を書く</text>
+    <rect x="40" y="336" width="500" height="80" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+    <text x="64" y="386" font-weight="bold">4 条件を強調表示と一体で置く</text>
+    <rect x="40" y="440" width="500" height="80" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+    <text x="64" y="490" font-weight="bold">5 媒体の掲載基準に合わせる</text>
+    <rect x="40" y="544" width="500" height="80" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+    <text x="64" y="594" font-weight="bold">6 期限が来たら更新・取り下げ</text>
+  </g>
+  <g stroke="#806222" stroke-width="3">
+    <line x1="290" y1="104" x2="290" y2="124" marker-end="url(#a)"/>
+    <line x1="290" y1="208" x2="290" y2="228" marker-end="url(#a)"/>
+    <line x1="290" y1="312" x2="290" y2="332" marker-end="url(#a)"/>
+    <line x1="290" y1="416" x2="290" y2="436" marker-end="url(#a)"/>
+    <line x1="290" y1="520" x2="290" y2="540" marker-end="url(#a)"/>
+  </g>
+  <g font-size="24" fill="#41483c">
+    <line x1="540" y1="64" x2="580" y2="64" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="588" y="72">ない→使わない</text>
+    <line x1="540" y1="168" x2="580" y2="168" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="588" y="176">合わない→直す</text>
+    <text x="588" y="276">「地域」より</text>
+    <text x="588" y="306">市町村名</text>
+    <text x="588" y="380">注記を離さない</text>
+    <text x="588" y="476">LINEヤフーは</text>
+    <text x="588" y="506">広告内に出典</text>
+    <text x="588" y="584">直近のデータ</text>
+    <text x="588" y="614">に差し替え</text>
+  </g>
+</svg>

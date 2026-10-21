@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#806222"/></marker>
+  </defs>
+  <rect x="120" y="24" width="560" height="96" rx="10" fill="#191c19"/>
+  <text x="400" y="64" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">消費者庁長官が期間を定めて</text>
+  <text x="400" y="100" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">合理的な根拠の資料を求める</text>
+  <line x1="400" y1="120" x2="400" y2="160" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="80" y="166" width="640" height="96" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="400" y="206" font-size="26" fill="#191c19" text-anchor="middle">期間内に出さない、または</text>
+  <text x="400" y="242" font-size="26" fill="#191c19" text-anchor="middle">合理的な根拠と認められない</text>
+  <line x1="300" y1="262" x2="210" y2="310" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="500" y1="262" x2="590" y2="310" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="30" y="316" width="360" height="216" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="210" y="358" font-size="26" fill="#806222" text-anchor="middle" font-weight="bold">措置命令との関係</text>
+  <text x="210" y="408" font-size="26" fill="#191c19" text-anchor="middle">不当表示と</text>
+  <text x="210" y="446" font-size="30" fill="#191c19" text-anchor="middle" font-weight="bold">みなす</text>
+  <text x="210" y="500" font-size="24" fill="#41483c" text-anchor="middle">第7条第2項</text>
+  <rect x="410" y="316" width="360" height="216" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="590" y="358" font-size="26" fill="#806222" text-anchor="middle" font-weight="bold">課徴金との関係</text>
+  <text x="590" y="408" font-size="26" fill="#191c19" text-anchor="middle">不当表示と</text>
+  <text x="590" y="446" font-size="30" fill="#191c19" text-anchor="middle" font-weight="bold">推定する</text>
+  <text x="590" y="500" font-size="24" fill="#41483c" text-anchor="middle">第8条第3項</text>
+</svg>
