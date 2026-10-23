@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="440" fill="#f7f7f4"/>
+  <rect x="16" y="16" width="252" height="408" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <rect x="16" y="16" width="252" height="64" rx="8" fill="#806222"/>
+  <text x="142" y="58" font-size="26" fill="#ffffff" font-weight="bold" text-anchor="middle">やること</text>
+  <text x="32" y="130" font-size="22" fill="#191c19">ユーザー第一の内容</text>
+  <text x="32" y="190" font-size="22" fill="#191c19">検索語をタイトルに</text>
+  <text x="32" y="250" font-size="22" fill="#191c19">画像に代替テキスト</text>
+  <text x="32" y="310" font-size="22" fill="#191c19">たどれるリンク</text>
+  <text x="32" y="370" font-size="22" fill="#191c19">月1回の確認</text>
+  <rect x="274" y="16" width="252" height="408" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <rect x="274" y="16" width="252" height="64" rx="8" fill="#c9a84c"/>
+  <text x="400" y="58" font-size="24" fill="#191c19" font-weight="bold" text-anchor="middle">やらなくてよいこと</text>
+  <text x="290" y="130" font-size="22" fill="#191c19">メタキーワード</text>
+  <text x="290" y="190" font-size="22" fill="#191c19">文字数の調整</text>
+  <text x="290" y="250" font-size="22" fill="#191c19">見出しの数・順序</text>
+  <text x="290" y="310" font-size="22" fill="#191c19">ドメインの語句</text>
+  <text x="290" y="370" font-size="22" fill="#191c19">重複の心配</text>
+  <rect x="532" y="16" width="252" height="408" rx="8" fill="#ffffff" stroke="#41483c" stroke-width="3"/>
+  <rect x="532" y="16" width="252" height="64" rx="8" fill="#41483c"/>
+  <text x="658" y="58" font-size="26" fill="#ffffff" font-weight="bold" text-anchor="middle">避けること</text>
+  <text x="548" y="130" font-size="22" fill="#191c19">キーワードの乱用</text>
+  <text x="548" y="190" font-size="22" fill="#191c19">順位目的のリンク売買</text>
+  <text x="548" y="250" font-size="22" fill="#191c19">価値のない大量生成</text>
+  <text x="548" y="310" font-size="22" fill="#191c19">虚偽の著者情報</text>
+  <text x="548" y="370" font-size="22" fill="#191c19">他人の内容のコピー</text>
+</svg>

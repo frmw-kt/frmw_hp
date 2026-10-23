@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="460" fill="#f7f7f4"/>
+  <rect x="30" y="30" width="320" height="150" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="50" y="76" font-size="24" fill="#806222" font-weight="bold">1. ページを変える</text>
+  <text x="50" y="116" font-size="22" fill="#191c19">タイトル・見出し・</text>
+  <text x="50" y="150" font-size="22" fill="#191c19">本文を1か所ずつ</text>
+  <path d="M352 105 L438 105" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="436,95 436,115 450,105" fill="#c9a84c"/>
+  <rect x="450" y="30" width="320" height="150" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="470" y="76" font-size="24" fill="#806222" font-weight="bold">2. 記録する</text>
+  <text x="470" y="116" font-size="22" fill="#191c19">日付・ページ・</text>
+  <text x="470" y="150" font-size="22" fill="#191c19">変えた内容</text>
+  <path d="M610 182 L610 268" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="600,266 620,266 610,280" fill="#c9a84c"/>
+  <rect x="450" y="280" width="320" height="150" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="470" y="326" font-size="24" fill="#806222" font-weight="bold">3. 数週間待つ</text>
+  <text x="470" y="366" font-size="22" fill="#191c19">反映は数時間〜</text>
+  <text x="470" y="400" font-size="22" fill="#191c19">数か月かかる</text>
+  <path d="M448 355 L362 355" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="364,345 364,365 350,355" fill="#c9a84c"/>
+  <rect x="30" y="280" width="320" height="150" rx="8" fill="#806222"/>
+  <text x="50" y="326" font-size="24" fill="#ffffff" font-weight="bold">4. 前後を比べる</text>
+  <text x="50" y="366" font-size="22" fill="#ffffff">クリック数と表示</text>
+  <text x="50" y="400" font-size="22" fill="#ffffff">回数を同じ日数で</text>
+  <path d="M190 278 L190 192" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="180,194 200,194 190,180" fill="#c9a84c"/>
+  <text x="204" y="242" font-size="22" fill="#41483c">続けるか変えるか</text>
+</svg>
