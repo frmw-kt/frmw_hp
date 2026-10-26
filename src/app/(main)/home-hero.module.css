@@ -1,0 +1,13 @@
+/* 採用案：既存の見出しと背景を保ち、右側で料金方針を伝える。 */
+.panel{align-self:center;border-top:1px solid #ffffff35;padding:24px 0 0}
+.label{font-size:11px;letter-spacing:.16em;color:#c8b888;margin:0 0 12px}
+.panel h2{font-size:clamp(23px,2.4vw,32px);font-weight:500;line-height:1.5;letter-spacing:-.04em;margin:0 0 25px}
+.panelRow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 16px;border-top:1px solid #ffffff25;padding:18px 0}
+.panelRow span{display:block;color:#b6b8bd;font-size:12px;line-height:1.7}
+.panelRow strong{font-size:clamp(19px,1.8vw,25px);font-weight:500;letter-spacing:-.04em}
+.note{color:#a8abb1;font-size:11px;line-height:1.85;margin:18px 0 0;max-width:1050px}
+.hero .mobileActions{display:none}
+@media(max-width:700px){.hero .desktopActions{display:none}.hero .mobileActions{display:flex}.panelRow{padding:16px 0}}
+
+.stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:700px){.stats{grid-template-columns:1fr}.stats>div{border-left:0;padding-left:0}.stats>div+div:nth-child(n){border-top:1px solid #ffffff25;padding-top:20px}}

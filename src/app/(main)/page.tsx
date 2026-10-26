@@ -1,6 +1,7 @@
+import ServiceOffers from "@/components/ServiceOffers";
 import Link from "next/link";
-import HeroBackground from "@/components/HeroBackground";
-import StrategyVisual from "@/components/StrategyVisual";
+import HomeHero3D from "@/components/HomeHero3D";
+import styles from "./home-hero.module.css";
 import {
   Button,
   Section,
@@ -8,7 +9,6 @@ import {
   CaseCards,
   Process,
   Deliverables,
-  Pricing,
   FaqList,
   ContactCTA,
   Funnel,
@@ -17,8 +17,8 @@ import {
 import { faqs } from "@/lib/faq";
 import { hasPublicCases } from "@/lib/cases";
 
-// 事例セクション（04）を出さない間は、以降のセクション番号を詰める
-const shown = (n: number) => (hasPublicCases || n < 4 ? n : n - 1);
+// 削除した課題セクションと非表示の事例を除いて連番にする
+const shown = (n: number) => n - 1 - (!hasPublicCases && n > 4 ? 1 : 0);
 const no = (n: number) => String(shown(n)).padStart(2, "0");
 // 白黒の交互を保つため、偶数番のセクションを .m-tint にする
 const tone = (n: number) => (shown(n) % 2 === 0 ? "m-tint" : "");
@@ -30,8 +30,8 @@ export const metadata = pageMeta(
 export default function HomePage() {
   return (
     <>
-      <section className="m-hero">
-        <HeroBackground />
+      <section className={`m-hero ${styles.hero}`}>
+        <HomeHero3D />
         <div className="m-container">
           <div className="m-hero-grid">
             <div>
@@ -48,14 +48,31 @@ export default function HomePage() {
                 <br />
                 集客から問い合わせ、その先の改善まで支援します。
               </p>
-              <div className="m-actions">
-                <Button />
+              <div className={`m-actions ${styles.desktopActions}`}>
+                <Button>運用について無料で相談する</Button>
                 <Button href="#services" secondary>
                   支援内容を見る
                 </Button>
               </div>
             </div>
-            <StrategyVisual />
+            <div className={styles.panel}>
+              <p className={styles.label}>START WITH FRAMEWORK</p>
+              <h2>必要な支援を、<br />始めやすい条件で。</h2>
+              <div>
+                {[
+                  ["マーケティング相談", "何度でも無料"],
+                  ["SNS運用", "完全成果報酬"],
+                  ["広告・SEO運用", "初月運用費無料"],
+                  ["LP・Web制作", "他サービス契約で0円〜"],
+                ].map(([name, value]) => (
+                  <div className={styles.panelRow} key={name}>
+                    <span>{name}</span><strong>{value}</strong>
+                  </div>
+                ))}
+              </div>
+              <p className={styles.note}>広告費は別途必要です。SNSの成果条件・報酬額・計測方法、制作0円〜の対象・範囲、広告・SEOの翌月以降の費用・契約条件は、開始前の打ち合わせで決定します。</p>
+              <div className={`m-actions ${styles.mobileActions}`}><Button>無料で相談する</Button></div>
+            </div>
           </div>
           <div className="m-hero-foot">
             <span>年商数千万円〜数億円規模の事業者へ</span>
@@ -66,11 +83,10 @@ export default function HomePage() {
       </section>
       <section className="m-stats" aria-label="マーケティング支援実績">
         <div className="m-container">
-          <div className="m-stat-grid">
+          <div className={`m-stat-grid ${styles.stats}`}>
             {[
               ["8,000", "万円", "運用経験・月間広告費"],
               ["68", "%", "平均CPA改善"],
-              ["100", "%", "継続率"],
               ["255", "%", "平均CV数改善"],
             ].map(([v, u, l]) => (
               <div key={l}>
@@ -88,40 +104,11 @@ export default function HomePage() {
         </div>
       </section>
       <Section
-        eyebrow="01 / YOUR CHALLENGES"
-        title="いま、どこで止まっていますか？"
-        text="課題がひとつに絞れなくても大丈夫です。必要な支援からご相談いただけます。"
-      >
-        <div className="m-challenges">
-          {[
-            ["施策を決められない", "優先順位・ターゲットを整理", "consulting"],
-            [
-              "集客の成果が伸びない",
-              "広告・SNS・SEOの運用を改善",
-              "operations",
-            ],
-            [
-              "サイトが伝わらない",
-              "構成・コピー・デザインを再設計",
-              "production",
-            ],
-            ["手作業が減らない", "集計・転記の時間と費用を見直す", "business-improvement"],
-          ].map(([t, d, s], i) => (
-            <Link key={s} href={"/services/" + s}>
-              <span className="m-num">0{i + 1}</span>
-              <h3>{t}</h3>
-              <p>{d}</p>
-              <span aria-hidden="true">↗</span>
-            </Link>
-          ))}
-        </div>
-      </Section>
-      <Section
         id="services"
-        eyebrow="02 / SERVICES"
+        eyebrow={`${no(2)} / SERVICES`}
         title="売上と業務、二つの側面から支える"
         text="集客・受注の改善と、日々の作業・支出の削減。目的に合わせた入口からご相談いただけます。"
-        tone="m-tint"
+        tone={tone(2)}
       >
         <div id="marketing-services" className="bi-marketing-services">
           <h3 className="m-subheading">Marketing support</h3>
@@ -133,8 +120,9 @@ export default function HomePage() {
         </div>
       </Section>
       <Section
-        eyebrow="03 / OUR APPROACH"
+        eyebrow={`${no(3)} / OUR APPROACH`}
         title="一つの数字だけで、判断しない"
+        tone={tone(3)}
         text="マーケティングは商談・成約への貢献を、業務改善は削減時間と実際の支出を分けて評価します。"
       >
         <div className="m-split">
@@ -165,10 +153,10 @@ export default function HomePage() {
       </Section>
       {hasPublicCases && (
         <Section
-          eyebrow="04 / CASE STUDIES"
+          eyebrow={`${no(4)} / CASE STUDIES`}
           title="課題と施策を、事例で見る"
           text="同じ施策でも、事業の条件で成果は変わります。取り組みの背景と合わせてご紹介します。"
-          tone="m-tint"
+          tone={tone(4)}
         >
           <CaseCards />
           <div className="m-section-bottom">
@@ -193,12 +181,8 @@ export default function HomePage() {
       >
         <Process />
       </Section>
-      <Section
-        eyebrow={`${no(7)} / PRICING`}
-        title="予算と課題に合わせた支援設計"
-        tone={tone(7)}
-      >
-        <Pricing />
+      <Section eyebrow={`${no(7)} / START WITH US`} title="相談から、始めやすい支援へ" tone={tone(7)}>
+        <ServiceOffers />
       </Section>
       <Section
         eyebrow={`${no(8)} / FAQ`}

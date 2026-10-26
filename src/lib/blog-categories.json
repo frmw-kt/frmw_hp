@@ -43,7 +43,7 @@
     "slug": "seo",
     "name": "SEO・コンテンツ",
     "clusters": ["F"],
-    "pillar": null,
+    "pillar": "seo-basics-for-smb",
     "intro": "Googleの公式ガイドに沿ったSEOの考え方と、コンテンツマーケティングの進め方、外注するときの確認点です。",
     "service": ["戦略立案", "/services/consulting/strategy"]
   },

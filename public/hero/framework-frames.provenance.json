@@ -1,0 +1,10 @@
+{
+  "provider": "Higgsfield / Tripo H3.1",
+  "job_id": "6a6c0ad4-9ff1-4473-9c53-005adb14b5ff",
+  "credits_used": 6,
+  "credit_budget": 20,
+  "bytes": 477948,
+  "reference": "frame-draft.svg",
+  "texture": false,
+  "face_limit": 15000
+}

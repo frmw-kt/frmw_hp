@@ -170,7 +170,7 @@ export function ContactCTA() {
           <p>
             現状・目標・予算感を伺い、必要な支援の範囲を一緒に整理します。
             <br />
-            初回相談は無料です。
+            マーケティングのご相談は何度でも無料です。
           </p>
         </div>
         <div>
@@ -370,44 +370,6 @@ export function Process() {
         </li>
       ))}
     </ol>
-  );
-}
-export function Pricing() {
-  return (
-    <div className="m-pricing">
-      <div>
-        <p className="m-eyebrow">SCOPE FIRST</p>
-        <h3>
-          必要な支援を整理して、
-          <br />
-          費用を組み立てます
-        </h3>
-        <p>
-          マーケティング支援や個別開発は、事業の状況に合わせて見積もります。業務改善の小規模導入は15万〜30万円（税別）が目安です。
-        </p>
-        <Link href="/contact" className="m-text-link">
-          支援範囲と費用を相談する ↗
-        </Link>
-        <p><Link href="/services/business-improvement#pricing" className="m-text-link">業務改善の料金・提供範囲を見る →</Link></p>
-      </div>
-      <div>
-        <ol className="m-price-factors">
-          {[
-            ["支援の範囲", "戦略 / 運用 / 制作 / 開発"],
-            ["実施する量", "媒体数 / 制作本数 / ページ数"],
-            ["期間・体制", "検証期間 / 定例 / 保守・改善"],
-          ].map(([t, d]) => (
-            <li key={t}>
-              <strong>{t}</strong>
-              <span>{d}</span>
-            </li>
-          ))}
-        </ol>
-        <p className="m-small">
-          広告費・制作費・ツール利用料・追加対応の扱い、税込／税別、最低契約期間は見積もり時に明記します。
-        </p>
-      </div>
-    </div>
   );
 }
 export function FaqList({

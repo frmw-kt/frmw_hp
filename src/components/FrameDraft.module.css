@@ -1,0 +1,10 @@
+.layer{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.canvas{position:absolute;inset:0}
+.canvas canvas{display:block;width:100%;height:100%}
+.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,10,12,.68),rgba(8,10,12,.15) 50%,rgba(8,10,12,.7)),linear-gradient(0deg,#090b0d,transparent 45%)}
+.isolated{background:radial-gradient(ellipse at 50% 40%,#24272b,#090b0d 75%)}
+@media(max-width:700px){.shade{background:linear-gradient(90deg,rgba(8,10,12,.6),rgba(8,10,12,.25)),linear-gradient(0deg,#090b0d,transparent 80%)}}
+
+.poster{object-fit:contain;opacity:.9}.layer:has([data-ready="true"]) .poster{visibility:hidden}
+
+.canvas{visibility:hidden}.canvas[data-ready="true"]{visibility:visible}

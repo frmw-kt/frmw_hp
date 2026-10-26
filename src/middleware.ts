@@ -3,6 +3,14 @@ import { NextRequest, NextResponse } from "next/server";
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // Keep the company site intact; only the programming hostname serves this LP.
+  const hostname = (request.headers.get("host") || request.nextUrl.hostname).split(":")[0].toLowerCase();
+  if (pathname === "/" && hostname === "programming.frmw.jp") {
+    const url = request.nextUrl.clone();
+    url.pathname = "/programming";
+    return NextResponse.rewrite(url);
+  }
+
   // /proposal/[slug]/login はスキップ
   if (pathname.match(/^\/proposal\/[^/]+\/login$/)) {
     return NextResponse.next();
@@ -52,5 +60,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/proposal/:path*", "/clients/:path*"],
+  matcher: ["/", "/proposal/:path*", "/clients/:path*"],
 };

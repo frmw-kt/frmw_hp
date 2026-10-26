@@ -1,3 +1,4 @@
+import ServiceOffers from "@/components/ServiceOffers";
 import Link from "next/link";
 import {
   Breadcrumb,
@@ -6,12 +7,11 @@ import {
   SystemDiagram,
   Cycle,
   CaseCards,
-  Pricing,
   FaqList,
   ContactCTA,
   JsonLd,
 } from "@/components/Marketing";
-import { ImprovementEvidence, ImprovementPricing } from "@/components/BusinessImprovementDetails";
+import { ImprovementEvidence } from "@/components/BusinessImprovementDetails";
 import DeliverableDiagram from "@/components/DeliverableDiagram";
 import { getService, type Service } from "@/lib/services";
 import { faqs } from "@/lib/faq";
@@ -79,6 +79,7 @@ export default function ServiceDetail({
           </div>
         </div>
       </section>
+      {["consulting", "operations", "production"].includes(s.slug) && <Section eyebrow="WORK WITH FRAMEWORK" title="始め方は、サービスに合わせて。"><ServiceOffers service={s.slug} /></Section>}
       <div className="m-container">
         <nav className="m-jump" aria-label="このページの内容">
           <a href="#scope">支援内容</a>
@@ -87,7 +88,6 @@ export default function ServiceDetail({
           <a href="#workflow">進め方</a>
           <a href="#preparation">役割分担</a>
           {s.industry && <a href="#industry">{s.industry.label}</a>}
-          <a href="#pricing">費用</a>
         </nav>
       </div>
       <Section
@@ -209,26 +209,13 @@ export default function ServiceDetail({
           </p>
         </Section>
       )}
-      <Section
-        id="pricing"
-        eyebrow="06 / PRICING"
-        title={improvement ? "対象業務と範囲に合わせた料金" : "内容に合わせて、個別にお見積もり"}
-        tone="m-tint"
-      >
-        {improvement ? <ImprovementPricing /> : <Pricing />}
-        {business && !improvement && (
-          <div className="m-related">
-            <Link href="/services/business-improvement#pricing">業務改善の小規模導入・料金を見る →</Link>
-          </div>
-        )}
-      </Section>
-      <Section eyebrow="07 / FAQ" title="ご依頼前のよくある質問">
+      <Section eyebrow="06 / FAQ" title="ご依頼前のよくある質問">
         <FaqList
           items={[
             ...(s.faqs ?? []),
             ...faqs.filter(
               (f) =>
-                f.category === "料金・契約について" ||
+                f.category === "契約について" ||
                 f.question === "無料相談では何を話しますか？",
             ),
           ]}

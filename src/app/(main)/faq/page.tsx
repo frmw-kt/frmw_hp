@@ -7,8 +7,8 @@ import {
 } from "@/components/Marketing";
 import { faqs, getFaqCategories } from "@/lib/faq";
 export const metadata = pageMeta(
-  "よくある質問｜料金・契約・準備",
-  "支援範囲、料金、契約、アカウント所有権、社内の準備について。Frameworkへのご相談前によくある疑問にお答えします。",
+  "よくある質問｜契約・準備・進め方",
+  "支援範囲、契約、アカウント所有権、社内の準備について。Frameworkへのご相談前によくある疑問にお答えします。",
   "/faq",
 );
 export default function Page() {

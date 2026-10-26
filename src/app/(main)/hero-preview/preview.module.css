@@ -1,0 +1,22 @@
+.hero .band{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #ffffff35;margin-top:38px;padding-top:24px;gap:20px}
+.band>div+div{border-left:1px solid #ffffff25;padding-left:20px}
+.band span,.panelRow span{display:block;color:#b6b8bd;font-size:12px;line-height:1.7}
+.band strong{display:block;margin-top:7px;font-size:clamp(17px,1.6vw,23px);font-weight:500;line-height:1.5;letter-spacing:-.04em}
+.note{color:#a8abb1;font-size:11px;line-height:1.85;margin:18px 0 0;max-width:1050px}
+.panel{align-self:center;border-top:1px solid #ffffff35;padding:24px 0 0}
+.label{font-size:11px;letter-spacing:.16em;color:#c8b888;margin:0 0 12px}
+.panel h2{font-size:clamp(23px,2.4vw,32px);font-weight:500;line-height:1.5;letter-spacing:-.04em;margin:0 0 25px}
+.panelRow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 16px;border-top:1px solid #ffffff25;padding:18px 0}
+.panelRow strong{font-size:clamp(19px,1.8vw,25px);font-weight:500;letter-spacing:-.04em}
+.statement{margin:24px 0;padding-left:18px;border-left:2px solid #c8b888}
+.statement p{font-size:clamp(17px,1.6vw,22px);line-height:1.8;margin:0;color:#c7c9cd}
+.statement strong{color:#ededed;font-weight:500}
+.small{font-size:12px;color:#b6b8bd;margin:14px 0 0}
+.production{border-top:1px solid #ffffff35;margin-top:35px;padding-top:22px;display:flex;align-items:baseline;flex-wrap:wrap;gap:12px 24px}
+.production span{font-size:12px;color:#b6b8bd}.production strong{font-weight:500;font-size:22px;letter-spacing:-.03em}
+.hero .mobileActions{display:none}
+.next{background:#f5f4f0;color:#111316;padding:55px max(24px,6vw)}.next p{font-size:13px;line-height:1.8}.next h2{font-size:28px;line-height:1.5}
+@media(max-width:700px){.hero .band{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}.band>div+div{padding-left:0;border:0}.band>div:nth-child(even){border-left:1px solid #ffffff25;padding-left:16px}.band strong{font-size:18px}.hero .desktopActions{display:none}.hero .mobileActions{display:flex}.statement p{font-size:17px}.panelRow{padding:16px 0}.production strong{font-size:20px}}
+
+.hero .mobileBand{display:none}
+@media(max-width:700px){.hero .mobileBand{display:grid;margin:22px 0}.hero .desktopBand{display:none}}
