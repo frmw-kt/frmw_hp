@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <text x="30" y="46" font-size="28" font-weight="bold" fill="#191c19">順位は検索する場所で変わる（模式図）</text>
+
+  <rect x="30" y="70" width="740" height="290" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+
+  <line x1="200" y1="215" x2="330" y2="215" stroke="#806222" stroke-width="3" stroke-dasharray="8 6"/>
+  <line x1="410" y1="215" x2="620" y2="215" stroke="#806222" stroke-width="3" stroke-dasharray="8 6"/>
+
+  <circle cx="370" cy="215" r="44" fill="#c9a84c"/>
+  <text x="370" y="224" font-size="24" font-weight="bold" fill="#191c19" text-anchor="middle">店舗</text>
+
+  <circle cx="160" cy="215" r="36" fill="#ffffff" stroke="#191c19" stroke-width="3"/>
+  <text x="160" y="224" font-size="26" font-weight="bold" fill="#191c19" text-anchor="middle">A</text>
+  <text x="160" y="290" font-size="24" fill="#41483c" text-anchor="middle">店舗の近く</text>
+  <text x="160" y="322" font-size="24" fill="#41483c" text-anchor="middle">から検索</text>
+
+  <circle cx="660" cy="215" r="36" fill="#ffffff" stroke="#191c19" stroke-width="3"/>
+  <text x="660" y="224" font-size="26" font-weight="bold" fill="#191c19" text-anchor="middle">B</text>
+  <text x="660" y="290" font-size="24" fill="#41483c" text-anchor="middle">店舗から遠い</text>
+  <text x="660" y="322" font-size="24" fill="#41483c" text-anchor="middle">場所から検索</text>
+
+  <text x="265" y="190" font-size="24" fill="#806222" text-anchor="middle">近い</text>
+  <text x="515" y="190" font-size="24" fill="#806222" text-anchor="middle">遠い</text>
+
+  <text x="30" y="406" font-size="24" fill="#191c19">同じ検索語句でも、AとBで見える順位は同じとは限らない</text>
+  <rect x="30" y="430" width="740" height="104" rx="10" fill="#191c19"/>
+  <text x="50" y="472" font-size="24" font-weight="bold" fill="#ffffff">順位で費用が決まる契約は、次を書面で決める</text>
+  <text x="50" y="510" font-size="24" fill="#ffffff">・検索語句　・計測する場所　・確かめる方法</text>
+</svg>
