@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="580" fill="#f7f7f4"/>
+  <text x="400" y="48" font-size="27" font-weight="bold" fill="#191c19" text-anchor="middle">AIによる概要・AIモードにリンクで出る条件</text>
+  <rect x="40" y="78" width="720" height="110" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="70" y="122" font-size="26" font-weight="bold" fill="#191c19">① インデックスに登録されている</text>
+  <text x="70" y="162" font-size="24" fill="#41483c">確かめ方：site:検索、URL検査ツール</text>
+  <path d="M400 192 L400 212 M388 202 L400 214 L412 202" stroke="#806222" stroke-width="3" fill="none"/>
+  <rect x="40" y="218" width="720" height="110" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="70" y="262" font-size="26" font-weight="bold" fill="#191c19">② スニペットを表示できる</text>
+  <text x="70" y="302" font-size="24" fill="#41483c">nosnippet などの指定を付けていない</text>
+  <path d="M400 332 L400 352 M388 342 L400 354 L412 342" stroke="#806222" stroke-width="3" fill="none"/>
+  <rect x="40" y="358" width="720" height="110" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="70" y="402" font-size="26" font-weight="bold" fill="#191c19">③ ［検索の生成 AI］が「含める」</text>
+  <text x="70" y="442" font-size="24" fill="#41483c">Search Consoleの設定。初期設定は含める</text>
+  <path d="M400 472 L400 492 M388 482 L400 494 L412 482" stroke="#806222" stroke-width="3" fill="none"/>
+  <rect x="40" y="498" width="720" height="62" rx="10" fill="#c9a84c"/>
+  <text x="400" y="538" font-size="24" font-weight="bold" fill="#191c19" text-anchor="middle">3つを満たすと対象になる（表示は保証されない）</text>
+</svg>

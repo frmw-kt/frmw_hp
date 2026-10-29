@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 660" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="660" fill="#f7f7f4"/>
+  <text x="400" y="46" font-size="26" font-weight="bold" fill="#191c19" text-anchor="middle">AIによる概要からの流入を確かめる順番</text>
+  <rect x="40" y="70" width="720" height="128" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="66" y="110" font-size="24" font-weight="bold" fill="#806222">1 Search Console：生成 AI パフォーマンス</text>
+  <text x="66" y="148" font-size="22" fill="#41483c">AIによる概要・AIモードでの表示回数だけ</text>
+  <text x="66" y="180" font-size="22" fill="#41483c">ページ・国・日付・デバイス別に見られる</text>
+  <rect x="40" y="212" width="720" height="128" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="66" y="252" font-size="24" font-weight="bold" fill="#806222">2 Search Console：検索パフォーマンス</text>
+  <text x="66" y="290" font-size="22" fill="#41483c">検索タイプ「ウェブ」に、AIによる概要・</text>
+  <text x="66" y="322" font-size="22" fill="#41483c">AIモードのクリックも通常の検索と合わせて集計</text>
+  <rect x="40" y="354" width="720" height="128" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="66" y="394" font-size="24" font-weight="bold" fill="#806222">3 GA4：「オーガニック検索」チャネル</text>
+  <text x="66" y="432" font-size="22" fill="#41483c">AIによる概要・AIモードからの訪問を含む</text>
+  <text x="66" y="464" font-size="22" fill="#41483c">問い合わせ・予約などの成果もここで見る</text>
+  <rect x="40" y="496" width="720" height="128" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="66" y="536" font-size="24" font-weight="bold" fill="#806222">4 GA4：「AI アシスタント」チャネル</text>
+  <text x="66" y="574" font-size="22" fill="#41483c">ChatGPT・Geminiなどからの訪問</text>
+  <text x="66" y="606" font-size="22" fill="#41483c">GoogleのAIによる概要・AIモードは含まない</text>
+</svg>
