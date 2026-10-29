@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="640" fill="#f7f7f4"/>
+  <text x="400" y="44" text-anchor="middle" font-size="26" font-weight="bold" fill="#191c19">生成AIを使う業務の4段階と担当</text>
+
+  <!-- 1 入力 -->
+  <circle cx="64" cy="132" r="40" fill="#191c19"/>
+  <text x="64" y="141" text-anchor="middle" font-size="26" font-weight="bold" fill="#ffffff">人</text>
+  <rect x="124" y="80" width="652" height="104" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="148" y="122" font-size="28" font-weight="bold" fill="#191c19">① 入力</text>
+  <text x="148" y="162" font-size="24" fill="#41483c">入れない情報を除き、事実の材料を渡す</text>
+  <path d="M450 190 L450 212" stroke="#806222" stroke-width="4"/>
+  <path d="M438 208 L450 226 L462 208 Z" fill="#806222"/>
+
+  <!-- 2 生成 -->
+  <circle cx="64" cy="282" r="40" fill="#c9a84c"/>
+  <text x="64" y="291" text-anchor="middle" font-size="26" font-weight="bold" fill="#191c19">AI</text>
+  <rect x="124" y="230" width="652" height="104" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="3"/>
+  <text x="148" y="272" font-size="28" font-weight="bold" fill="#191c19">② 生成</text>
+  <text x="148" y="312" font-size="24" fill="#41483c">下書き・案出し・要約・言い換え</text>
+  <path d="M450 340 L450 362" stroke="#806222" stroke-width="4"/>
+  <path d="M438 358 L450 376 L462 358 Z" fill="#806222"/>
+
+  <!-- 3 確認 -->
+  <circle cx="64" cy="432" r="40" fill="#191c19"/>
+  <text x="64" y="441" text-anchor="middle" font-size="26" font-weight="bold" fill="#ffffff">人</text>
+  <rect x="124" y="380" width="652" height="104" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="148" y="422" font-size="28" font-weight="bold" fill="#191c19">③ 確認</text>
+  <text x="148" y="462" font-size="24" fill="#41483c">事実・表示・権利・媒体の規定の4点</text>
+  <path d="M450 490 L450 512" stroke="#806222" stroke-width="4"/>
+  <path d="M438 508 L450 526 L462 508 Z" fill="#806222"/>
+
+  <!-- 4 公開 -->
+  <circle cx="64" cy="582" r="40" fill="#191c19"/>
+  <text x="64" y="591" text-anchor="middle" font-size="26" font-weight="bold" fill="#ffffff">人</text>
+  <rect x="124" y="530" width="652" height="104" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="148" y="572" font-size="28" font-weight="bold" fill="#191c19">④ 公開・送信</text>
+  <text x="148" y="612" font-size="24" fill="#41483c">確認した人が承認してから社外に出す</text>
+</svg>
