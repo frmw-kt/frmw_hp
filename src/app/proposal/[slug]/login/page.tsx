@@ -3,7 +3,7 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
-const GOLD = "#C9A84C";
+const GOLD = "#CEFF45";
 
 async function login(slug: string, from: string, formData: FormData) {
   "use server";
@@ -75,7 +75,7 @@ export default async function LoginPage({
               type="submit"
               className="w-full text-sm font-semibold text-black py-3 rounded-xl transition-opacity duration-200 hover:opacity-90"
               style={{
-                background: "linear-gradient(135deg, #E2C16A 0%, #C9A84C 45%, #A8892E 100%)",
+                background: "linear-gradient(135deg, #E1FF8A 0%, #CEFF45 45%, #B9EF27 100%)",
               }}
             >
               閲覧する

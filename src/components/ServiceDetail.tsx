@@ -10,6 +10,7 @@ import {
   FaqList,
   ContactCTA,
   JsonLd,
+  Ticker,
 } from "@/components/Marketing";
 import { ImprovementEvidence } from "@/components/BusinessImprovementDetails";
 import DeliverableDiagram from "@/components/DeliverableDiagram";
@@ -79,7 +80,7 @@ export default function ServiceDetail({
           </div>
         </div>
       </section>
-      {["consulting", "operations", "production"].includes(s.slug) && <Section eyebrow="WORK WITH FRAMEWORK" title="始め方は、サービスに合わせて。"><ServiceOffers service={s.slug} /></Section>}
+      <Ticker text={`${s.en.toUpperCase()}. THINK. BUILD. IMPROVE.`} />
       <div className="m-container">
         <nav className="m-jump" aria-label="このページの内容">
           <a href="#scope">支援内容</a>
@@ -90,6 +91,7 @@ export default function ServiceDetail({
           {s.industry && <a href="#industry">{s.industry.label}</a>}
         </nav>
       </div>
+      {["consulting", "operations", "production"].includes(s.slug) && <Section eyebrow="WORK WITH FRAMEWORK" title="始め方は、サービスに合わせて。"><ServiceOffers service={s.slug} /></Section>}
       <Section
         id="scope"
         eyebrow="01 / SCOPE"

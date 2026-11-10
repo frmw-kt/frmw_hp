@@ -1,0 +1,20 @@
+/* Independent landing pages, client portals and proposals share the brand. */
+.brand-aux { --gold: #7138ef; --gold-dark: #5921cb; --fg: #1c1917; --bg: #fff; --border: #1c1917; font-family: var(--font-brand), sans-serif !important; background: #f1ebff; color: #1c1917; }
+.brand-aux :is(h1,h2,h3,h4) { font-family: inherit !important; font-weight: 900 !important; }
+.brand-aux > div { background-image: linear-gradient(#7138ef0b 1px,transparent 1px),linear-gradient(90deg,#7138ef0b 1px,transparent 1px); background-size: 24px 24px; }
+.brand-aux [class~="bg-white"] { border-radius: 12px; }
+.brand-aux [class*="border-"] { border-color: #7138ef55; }
+.brand-aux :is(a,button)[class*="rounded"] { border-radius: 999px; font-weight: 700; }
+.brand-aux :is(input,select,textarea) { border-width: 2px; border-radius: 8px; }
+.brand-aux :is([class*="text-[#C9A84C]"],[class*="text-[#c9a84c]"]) { color: #ceff45; }
+.brand-aux :is([class*="bg-[#C9A84C]"],[class*="bg-[#c9a84c]"]) { background: #ceff45; color: #1c1917; }
+.brand-aux :is([class*="bg-[#0a0a0a]"],[class*="bg-[#111111]"]) { background-color: #281743; }
+.brand-aux :is([class*="text-white/15"],[class*="text-white/20"],[class*="text-white/30"],[class*="text-white/40"]) { color: #d6cfe2; }
+.brand-aux :focus-visible { outline: 3px solid #7138ef; outline-offset: 4px; }
+@media(prefers-reduced-motion:reduce) { .brand-aux *, .brand-aux *::before,.brand-aux *::after { animation: none !important; transition: none !important; } }
+.brand-aux :is(a,button)[style*="background"] { border: 2px solid #1c1917; box-shadow: 3px 4px 0 #1c1917; font-weight: 900; }
+.brand-aux [style*="background-clip: text"],.brand-aux [style*="background-clip:text"] { background-image: linear-gradient(120deg,#a073ff,#7138ef) !important; }
+.brand-aux [class*="bg-[#0a0a0a]"] [style*="color"] { color: #ceff45; }
+.brand-aux section { border-bottom: 2px solid #1c1917; }
+.brand-aux section[class*="bg-[#0a0a0a]"] { background-image: linear-gradient(#ffffff0c 1px,transparent 1px),linear-gradient(90deg,#ffffff0c 1px,transparent 1px); background-size: 24px 24px; }
+.brand-aux :is([class*="rounded-xl"],[class*="rounded-2xl"])[class*="border"] { border: 2px solid #1c1917; box-shadow: 4px 4px 0 #7138ef; }

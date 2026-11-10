@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-const GOLD = "linear-gradient(135deg, #E2C16A 0%, #C9A84C 45%, #A8892E 100%)";
+const GOLD = "linear-gradient(135deg, #E1FF8A 0%, #CEFF45 45%, #B9EF27 100%)";
 
 const risks = [
   {
@@ -146,7 +146,7 @@ export default function Lp2Page() {
       {/* ── ヘッダー ── */}
       <header className="sticky top-0 z-50 bg-white border-b border-[#e5e5e5] px-6 py-4">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <span className="text-base font-bold tracking-tight" style={{ color: "#C9A84C" }}>Framework</span>
+          <span className="text-base font-bold tracking-tight" style={{ color: "#7138EF" }}>Framework</span>
           <a
             href="#contact"
             className="text-sm font-medium text-white px-5 py-2.5 rounded-full transition-opacity hover:opacity-80"
@@ -159,7 +159,7 @@ export default function Lp2Page() {
 
       {/* ── ヒーロー（ダーク） ── */}
       <section className="bg-[#0a0a0a] text-white px-6 pt-20 pb-24 text-center">
-        <p className="text-xs tracking-[0.25em] uppercase mb-6" style={{ color: "#C9A84C" }}>
+        <p className="text-xs tracking-[0.25em] uppercase mb-6" style={{ color: "#7138EF" }}>
           Marketing Efficiency
         </p>
         <h1
@@ -210,7 +210,7 @@ export default function Lp2Page() {
       {/* ── 1社依存のリスク ── */}
       <section className="bg-white px-6 py-24">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#C9A84C" }}>Risk</p>
+          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#7138EF" }}>Risk</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             1社依存が生む、5つのリスク
           </h2>
@@ -231,7 +231,7 @@ export default function Lp2Page() {
                     >
                       {r.icon}
                     </span>
-                    <span className="text-xs font-mono font-bold" style={{ color: "#C9A84C" }}>{r.number}</span>
+                    <span className="text-xs font-mono font-bold" style={{ color: "#7138EF" }}>{r.number}</span>
                   </div>
                   <div className="flex-1">
                     <h3 className="font-bold text-base mb-2 text-[#0a0a0a]">{r.title}</h3>
@@ -244,7 +244,7 @@ export default function Lp2Page() {
                   <ul className="space-y-1.5">
                     {r.symptoms.map((s, j) => (
                       <li key={j} className="flex items-start gap-2 text-xs text-[#737373]">
-                        <span className="flex-shrink-0 mt-0.5 w-4 h-4 rounded-full border flex items-center justify-center text-[10px] font-bold" style={{ borderColor: "#C9A84C", color: "#C9A84C" }}>✓</span>
+                        <span className="flex-shrink-0 mt-0.5 w-4 h-4 rounded-full border flex items-center justify-center text-[10px] font-bold" style={{ borderColor: "#7138EF", color: "#7138EF" }}>✓</span>
                         {s}
                       </li>
                     ))}
@@ -278,7 +278,7 @@ export default function Lp2Page() {
       {/* ── 予算配分でリスクゼロスタート ── */}
       <section className="bg-white px-6 py-24">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#C9A84C" }}>Low Risk Start</p>
+          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#7138EF" }}>Low Risk Start</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
             既存の代理店はそのまま<br />予算の一部から始められます
           </h2>
@@ -329,8 +329,8 @@ export default function Lp2Page() {
                 phase: "Phase 2",
                 title: "成果を比較",
                 desc: "CPA・CVR・売上への貢献度を数値で比較。感覚ではなくデータで判断できるため、意思決定に迷いがなくなります。",
-                color: "#C9A84C44",
-                textColor: "#C9A84C",
+                color: "#7138EF44",
+                textColor: "#7138EF",
               },
               {
                 phase: "Phase 3",
@@ -341,9 +341,9 @@ export default function Lp2Page() {
               },
             ].map((p) => (
               <div key={p.phase} className="bg-[#fafafa] border border-[#e5e5e5] rounded-2xl overflow-hidden">
-                <div className="h-1.5" style={{ background: p.phase === "Phase 3" ? GOLD : p.phase === "Phase 2" ? "#C9A84C" : "#e5e5e5" }} />
+                <div className="h-1.5" style={{ background: p.phase === "Phase 3" ? GOLD : p.phase === "Phase 2" ? "#7138EF" : "#e5e5e5" }} />
                 <div className="p-6">
-                  <p className="text-xs font-bold mb-2" style={{ color: p.phase === "Phase 1" ? "#737373" : "#C9A84C" }}>{p.phase}</p>
+                  <p className="text-xs font-bold mb-2" style={{ color: p.phase === "Phase 1" ? "#737373" : "#7138EF" }}>{p.phase}</p>
                   <h3 className="font-bold text-base mb-2 text-[#0a0a0a]">{p.title}</h3>
                   <p className="text-[#737373] text-xs leading-relaxed">{p.desc}</p>
                 </div>
@@ -359,7 +359,7 @@ export default function Lp2Page() {
               { label: "いつでも終了", value: "縛りなし" },
             ].map((item) => (
               <div key={item.label} className="flex items-center gap-4 bg-[#fafafa] border border-[#e5e5e5] rounded-xl px-6 py-4">
-                <span className="text-lg font-bold flex-shrink-0" style={{ color: "#C9A84C" }}>✓</span>
+                <span className="text-lg font-bold flex-shrink-0" style={{ color: "#7138EF" }}>✓</span>
                 <div>
                   <p className="text-xs text-[#737373]">{item.label}</p>
                   <p className="font-bold text-sm text-[#0a0a0a]">{item.value}</p>
@@ -373,7 +373,7 @@ export default function Lp2Page() {
       {/* ── サービス ── */}
       <section className="bg-white px-6 py-24">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#C9A84C" }}>Services</p>
+          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#7138EF" }}>Services</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">複数社分を、1社でカバー</h2>
           <p className="text-[#737373] text-sm text-center mb-12">
             Frameworkの4サービスが連携することで、戦略から実行まで一気通貫を実現します。
@@ -398,7 +398,7 @@ export default function Lp2Page() {
       {/* ── 切り替えの流れ ── */}
       <section className="bg-[#fafafa] border-y border-[#e5e5e5] px-6 py-24">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#C9A84C" }}>Flow</p>
+          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#7138EF" }}>Flow</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">切り替えまでの流れ</h2>
           <p className="text-[#737373] text-sm text-center mb-12">
             既存の代理店契約を確認しながら、無理のないスケジュールで移行をサポートします。
@@ -438,7 +438,7 @@ export default function Lp2Page() {
       {/* ── お問い合わせフォーム（ダーク） ── */}
       <section id="contact" className="bg-[#0a0a0a] px-6 py-24">
         <div className="max-w-xl mx-auto">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#C9A84C" }}>Contact</p>
+          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#7138EF" }}>Contact</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center text-white mb-3">まずは無料相談</h2>
           <p className="text-white/40 text-sm text-center mb-10 leading-relaxed">
             現在の代理店構成・課題・ご予算などをお聞かせください。<br />
@@ -462,7 +462,7 @@ export default function Lp2Page() {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className="block text-xs text-white/50 mb-1.5">
-                  お名前 <span style={{ color: "#C9A84C" }}>*</span>
+                  お名前 <span style={{ color: "#7138EF" }}>*</span>
                 </label>
                 <input
                   required
@@ -485,7 +485,7 @@ export default function Lp2Page() {
               </div>
               <div>
                 <label className="block text-xs text-white/50 mb-1.5">
-                  メールアドレス <span style={{ color: "#C9A84C" }}>*</span>
+                  メールアドレス <span style={{ color: "#7138EF" }}>*</span>
                 </label>
                 <input
                   required
@@ -498,7 +498,7 @@ export default function Lp2Page() {
               </div>
               <div>
                 <label className="block text-xs text-white/50 mb-1.5">
-                  現在の代理店状況・ご相談内容 <span style={{ color: "#C9A84C" }}>*</span>
+                  現在の代理店状況・ご相談内容 <span style={{ color: "#7138EF" }}>*</span>
                 </label>
                 <textarea
                   required
@@ -531,7 +531,7 @@ export default function Lp2Page() {
       {/* ── フッター ── */}
       <footer className="bg-[#fafafa] border-t border-[#e5e5e5] px-6 py-8">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <span className="text-sm font-bold tracking-tight" style={{ color: "#C9A84C" }}>Framework</span>
+          <span className="text-sm font-bold tracking-tight" style={{ color: "#7138EF" }}>Framework</span>
           <Link href="/" className="text-xs text-[#737373] hover:text-[#0a0a0a] transition-colors">
             公式サイトはこちら
           </Link>

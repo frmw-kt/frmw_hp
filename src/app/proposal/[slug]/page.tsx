@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const GOLD = "#C9A84C";
-const GOLD_DARK = "#A8892E";
+const GOLD = "#CEFF45";
+const GOLD_DARK = "#5921CB";
 
 
 export default async function ProposalPage({
@@ -51,7 +51,7 @@ export default async function ProposalPage({
         <div className="mb-16 pb-10 border-b border-[#e5e5e5]">
           <span
             className="inline-flex items-center border rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.2em] mb-6"
-            style={{ borderColor: "rgba(201,168,76,0.3)", color: GOLD }}
+            style={{ borderColor: "rgba(113,56,239,0.3)", color: GOLD }}
           >
             Proposal
           </span>
@@ -91,7 +91,7 @@ export default async function ProposalPage({
                       className="border rounded-xl px-5 py-3 text-center"
                       style={
                         step.type === "back"
-                          ? { borderColor: "rgba(201,168,76,0.3)", background: "rgba(201,168,76,0.05)" }
+                          ? { borderColor: "rgba(113,56,239,0.3)", background: "rgba(113,56,239,0.05)" }
                           : { borderColor: "#e5e5e5", background: "#fff" }
                       }
                     >
@@ -175,7 +175,7 @@ export default async function ProposalPage({
                 </ul>
                 <div
                   className="rounded-xl px-5 py-3 text-sm font-semibold text-[#0a0a0a]"
-                  style={{ background: "rgba(201,168,76,0.1)" }}
+                  style={{ background: "rgba(113,56,239,0.1)" }}
                 >
                   ▶ {sol.highlight}
                 </div>

@@ -1,3 +1,4 @@
+@layer legacy-site {
 /* サイトヘッダー（極小ヘッダー＋全画面メニュー）。(main) レイアウト専用。 */
 .hx-overlay {
   --hx-fg: #ededed;
@@ -199,4 +200,6 @@
     transition-duration: 0s !important;
     animation: none !important;
   }
+}
+
 }

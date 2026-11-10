@@ -44,7 +44,7 @@ export default async function Page({
                 <ul className={styles.facts}><li>Google Meetで相談</li><li>予約時に相談内容も入力できます</li></ul>
                 <p className={styles.flow}>日時を選ぶ → 必要事項を入力 → 予約完了</p>
                 <a className="m-button" href={booking} target="_blank" rel="noopener noreferrer">空き日時を選んで予約する <span aria-hidden="true">↗</span></a>
-                <p className={styles.note}>Googleカレンダーが別タブで開きます。<br />このページのフォームへの入力は不要です。</p>
+                <div className={styles.notes}><p className={styles.note}>Googleカレンダーが別タブで開きます。<br />このページのフォームへの入力は不要です。</p></div>
               </article>
             )}
             <article className={styles.card}>
@@ -54,8 +54,8 @@ export default async function Page({
               <ul className={styles.facts}><li>面談日時を決めずに相談できます</li><li>支援内容が未定でも大丈夫です</li></ul>
               <p className={styles.flow}>フォームに入力 → 送信 → メールでお返事</p>
               <ContactModal initialService={selected} />
-              <p className={styles.note}>メールでのご連絡：<a href="mailto:teramoto@frmw.jp">teramoto@frmw.jp</a></p>
-              <p className={styles.note}>入力フォームがポップアップで開きます。<br />送信だけで面談が予約されることはありません。</p>
+              <div className={styles.notes}><p className={styles.note}>メールでのご連絡：<a href="mailto:teramoto@frmw.jp">teramoto@frmw.jp</a></p>
+              <p className={styles.note}>入力フォームがポップアップで開きます。<br />送信だけで面談が予約されることはありません。</p></div>
             </article>
           </div>
         </div>

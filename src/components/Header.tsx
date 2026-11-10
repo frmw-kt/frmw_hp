@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { hasPublicCases } from "@/lib/cases";
 
 const links = [
-  ["サービス", "/#services"],
+  ["マーケティング支援", "/#marketing-services"],
   ["業務改善支援", "/services/business-improvement"],
   ["支援事例", "/cases"],
   ["Frameworkについて", "/about"],

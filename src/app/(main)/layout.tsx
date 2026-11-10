@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Geist, Noto_Sans_JP } from "next/font/google";
 import "../globals.css";
 import "./marketing.css";
 import "./studio.css";
 import "./header.css";
+import "./brand.css";
+import "./layout-fixes.css";
+import "./lower.css";
+import HomeChrome from "@/components/home/HomeChrome";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -13,6 +17,8 @@ import {
   DEFAULT_TITLE,
   DEFAULT_DESCRIPTION,
 } from "@/lib/site";
+
+const brand = Noto_Sans_JP({ weight: ["500", "700", "900"], subsets: ["latin"], variable: "--font-brand", display: "swap", preload: false });
 
 const geist = Geist({
   variable: "--font-sans",
@@ -60,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={`${geist.variable} h-full antialiased`}>
+    <html lang="ja" className={`${geist.variable} ${brand.variable} h-full antialiased`}>
       <body className="marketing-site min-h-full flex flex-col">
         <a href="#main-content" className="m-skip">
           本文へスキップ
@@ -75,7 +81,7 @@ export default function RootLayout({
         <main id="main-content" className="flex-1">
           {children}
         </main>
-        <Footer />
+        <HomeChrome><Footer /></HomeChrome>
         <GoogleAnalytics />
       </body>
     </html>

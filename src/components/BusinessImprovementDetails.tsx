@@ -1,4 +1,5 @@
 import ReportDemo from "@/components/ReportDemo";
+import { TimeSavingChart, Formula } from "@/components/diagrams/Diagrams";
 
 export function ImprovementEvidence() {
   return (
@@ -13,6 +14,7 @@ export function ImprovementEvidence() {
           <p className="m-eyebrow">作業時間の試算例</p>
           <h3>月30時間 → 月8時間</h3>
           <p>確認作業を含めて、月22時間を削減する想定。</p>
+          <TimeSavingChart before={30} after={8} />
           <dl className="m-glance">
             <div><dt>改善前</dt><dd>月30時間</dd></div>
             <div><dt>改善後（確認・修正を含む）</dt><dd>月8時間</dd></div>
@@ -24,8 +26,8 @@ export function ImprovementEvidence() {
           <p className="m-eyebrow">現金支出の確認</p>
           <h3>実際に減る支払いを測る</h3>
           <p>外注費・残業代・ツール利用料などの減少額から、新たに発生するツール・保守費等を差し引きます。</p>
-          <div className="m-output">月間の純支出削減額<br />＝ 減る支出 − 新たな運用費</div>
-          <div className="m-output">現金ベースの回収期間<br />＝ 初期の現金支出 ÷ 月間の純支出削減額</div>
+          <Formula terms={[["", "減る支出"], ["−", "新たな運用費"]]} result="月間の純支出削減額" />
+          <Formula terms={[["", "初期の現金支出"], ["÷", "月間の純支出削減額"]]} result="現金ベースの回収期間" />
           <p>純支出削減額がゼロ以下なら、現金ベースでは回収できません。同じ業務の外注費削減と時間価値を重ねて計上しません。</p>
           <p className="m-small">顧客側の移行・教育で追加支払いが発生する場合は初期の現金支出に含めます。既存社員の時間負担は別に計上し、時間価値換算の試算へ反映します。</p>
           <p className="m-small">「月22時間を別の仕事に使える」と「毎月の支払いが減る」は異なる効果です。どちらを目的にするか、診断で合意します。</p>

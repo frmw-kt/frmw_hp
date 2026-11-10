@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 export const revalidate = 300; // 5分キャッシュ
 
-const GOLD = "#C9A84C";
-const GOLD_DARK = "#A8892E";
+const GOLD = "#CEFF45";
+const GOLD_DARK = "#5921CB";
 
 const statusConfig = {
   todo:        { label: "未着手", bgClass: "bg-[#f4f4f5]", textClass: "text-[#71717a]", dotClass: "bg-[#a1a1aa]" },
@@ -80,8 +80,8 @@ function ReportCard({ report, isLatest }: { report: Report; isLatest: boolean })
         </span>
         {isLatest && (
           <span className="inline-flex items-center gap-1 text-[11px] font-medium rounded-full px-2.5 py-1"
-            style={{ background: "rgba(201,168,76,0.1)", color: GOLD_DARK }}>
-            <span className="w-1.5 h-1.5 rounded-full bg-[#C9A84C]" />
+            style={{ background: "rgba(113,56,239,0.1)", color: GOLD_DARK }}>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#7138EF]" />
             最新
           </span>
         )}
@@ -225,7 +225,7 @@ export default async function ClientDashboardPage({
         <div className="mb-10">
           <span
             className="inline-flex items-center rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.2em] mb-4"
-            style={{ border: "1px solid rgba(201,168,76,0.25)", color: GOLD }}
+            style={{ border: "1px solid rgba(113,56,239,0.25)", color: GOLD }}
           >
             Client Dashboard
           </span>

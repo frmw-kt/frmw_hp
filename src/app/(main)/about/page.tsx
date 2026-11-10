@@ -3,6 +3,7 @@ import {
   Section,
   SystemDiagram,
   ContactCTA,
+  Ticker,
   pageMeta,
 } from "@/components/Marketing";
 import { COMPANY } from "@/lib/site";
@@ -30,6 +31,7 @@ export default function Page() {
           </p>
         </div>
       </section>
+      <Ticker text="MARKETING × PROCESS IMPROVEMENT." />
       <Section
         eyebrow="01 / OUR WORK"
         title="提案を、実行できる状態にする"

@@ -1,5 +1,6 @@
 import type { Service } from "@/lib/services";
 import { Deliverables } from "@/components/Marketing";
+import { PageBlueprint, WorkflowBlueprint, DocumentBlueprint } from "@/components/diagrams/Diagrams";
 
 /** Schematic artifacts, not customer materials or a fixed delivery specification. */
 export default function DeliverableDiagram({
@@ -12,74 +13,15 @@ export default function DeliverableDiagram({
   const product = ["business-improvement", "app-development", "ai"].includes(s.slug);
   return (
     <div className="m-split m-delivery-diagram">
-      <figure className="m-delivery-preview">
-        <figcaption>
-          {production
-            ? "PAGE BLUEPRINT"
-            : product
-              ? "WORKFLOW BLUEPRINT"
-              : "WORKING DOCUMENT"}
-        </figcaption>
+      <figure className="m-delivery-figure" style={{ margin: 0, minWidth: 0 }}>
         {production ? (
-          <div className="m-wireframe">
-            <div>
-              <span>01 / FIRST VIEW</span>
-              <strong>誰に、何を届けるか</strong>
-              <i>相談の入り口</i>
-            </div>
-            <div>
-              <span>02 / EVIDENCE</span>
-              <strong>課題 → 支援内容 → 根拠</strong>
-              <div className="m-wireframe-grid">
-                <b>サービス</b>
-                <b>事例</b>
-                <b>FAQ</b>
-              </div>
-            </div>
-            <div>
-              <span>03 / ACTION</span>
-              <strong>不安を解消し、次の行動へ</strong>
-            </div>
-          </div>
+          <PageBlueprint />
         ) : product ? (
-          <ol className="m-workflow-preview">
-            {(s.slug === "ai"
-              ? [
-                  "入力・参照資料",
-                  "AIで下書きを生成",
-                  "人が確認・修正",
-                  "承認後に業務へ反映",
-                ]
-              : [
-                  "業務の入力",
-                  "権限・ルールを確認",
-                  "データ処理・API連携",
-                  "画面・レポートに出力",
-                ]
-            ).map((t, i) => (
-              <li key={t}>
-                <span>0{i + 1}</span>
-                <strong>{t}</strong>
-                {i < 3 && <b aria-hidden="true">↓</b>}
-              </li>
-            ))}
-          </ol>
+          <WorkflowBlueprint ai={s.slug === "ai"} />
         ) : (
-          <div className="m-document-preview">
-            <div className="m-document-heading">
-              {s.name} / 判断と実行の記録
-            </div>
-            {s.tasks.map((t, i) => (
-              <div key={t.title}>
-                <span>0{i + 1}</span>
-                <strong>{t.output}</strong>
-                <div className="m-paper-line" />
-                <div className="m-paper-line short" />
-              </div>
-            ))}
-          </div>
+          <DocumentBlueprint title={s.name} items={s.tasks.map((t) => t.output)} />
         )}
-        <p className="m-small">構成イメージ・実データではありません</p>
+        <figcaption className="m-small" style={{ marginTop: 12 }}>構成イメージ・実データではありません</figcaption>
       </figure>
       <div>
         <h3 className="m-subheading">

@@ -1,0 +1,176 @@
+/* トップページの図解。FVの HeroVisual.module.css と同じ部品・色で揃える */
+.frame, .workflow, .chat {
+  --ink: #1c1917;
+  --purple: #7138ef;
+  --purple-deep: #5921cb;
+  --purple-soft: #efe9ff;
+  --lime: #ceff45;
+  --lime-deep: #4f6a00;
+  --lime-soft: #f2fbd6;
+  --orange: #ef531c;
+  --orange-soft: #ffeadb;
+  --muted: #625d55;
+  color: var(--ink);
+}
+
+/* ---------- 共通の枠 ---------- */
+.frame { --accent: var(--purple); --accent-ink: var(--purple-deep); --soft: var(--purple-soft); min-width: 0; border: 2px solid var(--ink); border-radius: 14px; background: #fff; box-shadow: 4px 4px 0 var(--ink); overflow: hidden; }
+.lime { --accent: var(--lime); --accent-ink: var(--lime-deep); --soft: var(--lime-soft); }
+.orange { --accent: var(--orange); --accent-ink: #c03a0c; --soft: var(--orange-soft); }
+
+.window { display: flex; align-items: center; gap: 5px; height: 28px; padding: 0 12px; background: var(--ink); }
+.window i { width: 7px; height: 7px; border-radius: 50%; background: #fff; }
+.window i:first-child { background: var(--orange); }
+.window i:nth-child(2) { background: var(--lime); }
+.window span { margin-left: auto; color: #fff; font: 800 9px/1 Arial, sans-serif; letter-spacing: .14em; }
+
+.body { padding: 14px 12px; background-color: #fbfbf8; background-image: linear-gradient(#1c19170b 1px, transparent 1px), linear-gradient(90deg, #1c19170b 1px, transparent 1px); background-size: 16px 16px; }
+.foot { display: flex; align-items: center; gap: 7px; padding: 9px 12px; border-top: 2px solid var(--ink); background: var(--soft); font-size: 12px; font-weight: 900; line-height: 1.4; }
+.footIcon { width: 18px; height: 18px; flex: none; color: var(--accent-ink); animation: spin 6s linear infinite; }
+.footStar { color: var(--accent-ink); font: 900 16px/1 Arial, sans-serif; animation: spin 10s linear infinite; }
+
+.icon { width: 16px; height: 16px; flex: none; }
+.colHead { display: flex; justify-content: space-between; margin-bottom: 8px; color: var(--muted); font-size: 10px; font-weight: 800; line-height: 1; letter-spacing: .04em; }
+.subLabel { margin: 14px 0 7px !important; color: var(--muted); font-size: 10.5px; font-weight: 800; line-height: 1; letter-spacing: .04em; }
+
+/* ---------- サービス：マーケティング（ファネル） ---------- */
+.funnel { list-style: none; display: grid; justify-items: center; gap: 5px; margin: 0; padding: 0; }
+.funnel li { width: var(--w); display: flex; align-items: stretch; border: 2px solid var(--ink); border-radius: 9px; background: #fff; overflow: hidden; font-size: 12px; line-height: 1.35; }
+.funnelStage { flex: none; display: flex; align-items: center; gap: 6px; width: 38%; padding: 9px 8px; background: var(--purple-soft); border-right: 2px solid var(--ink); font-weight: 900; }
+.funnel li:nth-child(2) .funnelStage { background: #d8c8ff; }
+.funnel li:nth-child(3) .funnelStage { background: var(--purple); color: #fff; }
+.funnelStage b { font: 800 9px/1 Arial, sans-serif; opacity: .7; }
+.funnelAction { display: flex; align-items: center; padding: 9px 8px; font-weight: 700; }
+
+/* ---------- サービス：業務改善（Before / After） ---------- */
+.beforeAfter { list-style: none; display: grid; gap: 8px; margin: 0; padding: 0; }
+.beforeAfter li { padding: 8px 9px 9px; border: 2px solid var(--ink); border-radius: 9px; background: #fff; }
+.beforeAfter p { margin-bottom: 6px !important; font-size: 11px; font-weight: 800; line-height: 1; color: var(--muted); }
+.beforeAfter li > div { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 6px; }
+.beforeAfter b { font: 900 14px/1 Arial, sans-serif; }
+.before, .after { padding: 6px 4px; border-radius: 6px; text-align: center; font-size: 12px; font-weight: 800; line-height: 1.3; }
+.before { border: 1.5px dashed #9b968b; color: #6e6a60; text-decoration: line-through; text-decoration-color: #9b968b; }
+.after { border: 1.5px solid var(--ink); background: var(--lime); }
+
+/* ---------- 支援の考え方：共通 ---------- */
+.stage { margin: 0 0 20px; }
+.stage .body { min-height: 196px; display: flex; flex-direction: column; justify-content: center; }
+
+/* 01 目標と現状の差 */
+.gapChart { display: grid; gap: 8px; }
+.gapRow { display: grid; grid-template-columns: 34px 1fr; align-items: center; gap: 8px; font-size: 11.5px; font-weight: 900; }
+.gapRow i { position: relative; height: 22px; border: 2px solid var(--ink); border-radius: 5px; }
+.goal { background: #fff; }
+.now { background: linear-gradient(90deg, var(--orange) 0 58%, transparent 58%), repeating-linear-gradient(-45deg, #fff 0 5px, #ffd2bc 5px 9px); }
+.now::before { content: ""; position: absolute; left: 58%; top: -2px; bottom: -2px; border-left: 2px solid var(--ink); }
+.now em { position: absolute; left: 58%; right: 0; top: 50%; translate: 0 -50%; text-align: center; font-size: 10.5px; font-weight: 900; font-style: normal; line-height: 1; }
+.priority { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 0; padding: 0; }
+.priority li { display: grid; gap: 4px; padding: 7px 4px; border: 2px solid var(--ink); border-radius: 8px; background: #fff; text-align: center; font-size: 11px; font-weight: 800; line-height: 1.2; }
+.priority li b { font-size: 11.5px; font-weight: 900; }
+.priority li:first-child { background: var(--ink); color: #fff; box-shadow: 2px 2px 0 var(--orange); }
+.priority li:first-child b { color: #ffab84; }
+.priority li:nth-child(3) { opacity: .6; }
+
+/* 02 設計→制作・実装→運用 */
+.pipeline { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 0; padding: 0; }
+.pipeline li { position: relative; display: grid; justify-items: center; gap: 6px; padding: 12px 2px 9px; border: 2px solid var(--ink); border-radius: 10px; background: #fff; font-size: 12px; font-weight: 900; line-height: 1.2; white-space: nowrap; }
+.pipeline li .icon { width: 26px; height: 26px; color: var(--purple); }
+.pipeline li:last-child { background: var(--purple); color: #fff; }
+.pipeline li:last-child .icon { color: var(--lime); }
+.pipeline li + li::before { content: "→"; position: absolute; left: -14px; top: 50%; translate: 0 -50%; font: 900 12px/1 Arial, sans-serif; color: var(--ink); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips span { padding: 5px 10px; border: 1.5px solid var(--ink); border-radius: 99px; background: var(--purple-soft); font-size: 11px; font-weight: 800; line-height: 1.2; }
+
+/* 03 改善サイクル */
+.cycle { position: relative; aspect-ratio: 300 / 150; margin: 4px 0; }
+.cycle svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.cycleTrack { stroke: var(--ink); stroke-width: 2.5; stroke-dasharray: 7 6; animation: dash 1.2s linear infinite; }
+.cycleHead { stroke: var(--ink); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.node { position: absolute; translate: -50% -50%; padding: 6px 11px; border: 2px solid var(--ink); border-radius: 99px; background: #fff; font-size: 12px; font-weight: 900; line-height: 1.2; white-space: nowrap; box-shadow: 2px 2px 0 var(--ink); }
+.nodeHot { background: var(--lime); }
+.cycleCenter { position: absolute; left: 50%; top: 52%; translate: -50% -50%; text-align: center; font-size: 11.5px; font-weight: 900; line-height: 1.35; }
+.cycleCenter b { color: var(--lime-deep); font: 900 14px/1 Arial, sans-serif; }
+
+/* ---------- 実績：数値パネル ---------- */
+.metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.metric { min-width: 0; display: grid; align-content: start; gap: 6px; padding: 12px; border: 2px solid var(--ink); border-radius: 10px; background: #fff; }
+.metricWide { grid-column: 1 / -1; background: var(--purple-soft); }
+.metric p { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 900; line-height: 1.3; }
+.metric p .icon { width: 18px; height: 18px; color: var(--purple); }
+.metric strong { font: italic 900 42px/1 Arial, sans-serif; letter-spacing: -2px; color: var(--purple-deep); white-space: nowrap; }
+.metricWide strong { font-size: 54px; }
+.metric strong small { margin-left: 4px; font: 800 14px/1 var(--font-home-sans), sans-serif; letter-spacing: 0; color: var(--ink); }
+.metric > span { color: var(--muted); font: 700 9px/1.3 Arial, sans-serif; letter-spacing: .1em; }
+
+/* ---------- 成果物：業務フロー Before / After ---------- */
+.workflow { margin: 4px 20px 16px; padding: 12px; border: 2px solid var(--ink); border-radius: 12px; background-color: #fbfbf8; background-image: linear-gradient(#1c19170b 1px, transparent 1px), linear-gradient(90deg, #1c19170b 1px, transparent 1px); background-size: 16px 16px; }
+.flowRow > p { display: flex; align-items: center; gap: 7px; margin-bottom: 7px !important; font-size: 11.5px; font-weight: 900; line-height: 1; }
+.flowRow > p b { padding: 4px 7px; border-radius: 99px; background: var(--ink); color: var(--lime); font: 800 9px/1 Arial, sans-serif; letter-spacing: .08em; }
+.flowRow > p b.tagGray { background: #8d887d; color: #fff; }
+.flowRow ol { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 0; padding: 0; }
+.flowRow li { position: relative; display: grid; justify-items: center; gap: 3px; padding: 8px 2px 6px; border: 1.5px dashed #9b968b; border-radius: 8px; background: #fff; color: #6e6a60; font-size: 11.5px; font-weight: 800; line-height: 1.2; }
+.flowRow li .icon { width: 18px; height: 18px; }
+.flowRow li em { font-size: 9px; font-style: normal; font-weight: 700; }
+.flowRow li + li::before { content: "→"; position: absolute; left: -11px; top: 50%; translate: 0 -50%; color: var(--ink); font: 900 10px/1 Arial, sans-serif; }
+.flowAfter li { border: 2px solid var(--ink); color: var(--ink); }
+.flowAfter li em { padding: 2px 6px; border-radius: 99px; background: #ece9e2; }
+.flowAfter li.auto { background: var(--lime); box-shadow: 2px 2px 0 var(--ink); }
+.flowAfter li.auto em { background: var(--ink); color: var(--lime); }
+.flowArrow { width: max-content; margin: 8px auto !important; padding: 4px 10px; border-radius: 99px; background: var(--ink); color: #fff; font-size: 10.5px; font-weight: 900; line-height: 1.2; }
+
+/* ---------- ご相談の流れのアイコン（.processIcon の箱の中） ---------- */
+.processIcon { width: 58%; height: 58%; color: var(--ink, #1c1917); stroke-width: 1.9; }
+
+/* ---------- FAQ の導入 ---------- */
+.chat { display: grid; gap: 10px; max-width: 420px; margin: 0 auto 30px; }
+.chat p { position: relative; max-width: 86%; padding: 11px 14px; border: 2px solid var(--ink); font-size: 13px; font-weight: 800; line-height: 1.55; box-shadow: 3px 3px 0 var(--ink); }
+.chat p span { display: block; margin-bottom: 3px; font: 800 9px/1 Arial, sans-serif; letter-spacing: .12em; opacity: .7; }
+.ask { justify-self: start; border-radius: 14px 14px 14px 3px; background: #fff; }
+.answer { justify-self: end; border-radius: 14px 14px 3px 14px; background: var(--purple); color: #fff; }
+.answer span { color: var(--lime); opacity: 1 !important; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes dash { to { stroke-dashoffset: -13; } }
+
+@media (max-width: 359px) {
+  .body { padding-inline: 9px; }
+  .funnel li, .before, .after { font-size: 11px; }
+  .flowRow ol { gap: 9px; }
+  .flowRow li { font-size: 10.5px; }
+  .flowRow li + li::before { left: -9px; }
+  .metric strong { font-size: 36px; }
+  .node { font-size: 11px; padding: 5px 8px; }
+}
+
+@media (min-width: 768px) {
+  .window { height: 32px; padding-inline: 14px; }
+  .window span { font-size: 10px; }
+  .body { padding: 18px 16px; }
+  .foot { padding: 11px 16px; font-size: 13px; }
+  .funnel li { font-size: 13px; }
+  .funnelStage, .funnelAction { padding: 11px 12px; }
+  .before, .after { font-size: 13px; }
+  .stage .body { min-height: 220px; }
+  .gapRow { font-size: 12.5px; }
+  .node { font-size: 13px; }
+  .metric { padding: 14px 16px; }
+  .metric strong { font-size: 48px; }
+  .metricWide strong { font-size: 64px; }
+  .workflow { padding: 16px; }
+  .flowRow li { font-size: 12.5px; padding: 10px 2px 8px; }
+  .chat p { font-size: 15px; }
+}
+
+@media (min-width: 1024px) {
+  .metrics { grid-template-columns: 1.5fr 1fr 1fr; gap: 14px; }
+  .metricWide { grid-column: auto; }
+  .metric { align-content: center; padding: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frame *, .workflow *, .chat * { animation: none !important; }
+}
+
+/* 2本柱カードの図解：カード同士で高さをそろえ、余白は中身の上下に均等に配分 */
+.pillar { display: flex; flex-direction: column; }
+.pillar > .body { flex: 1; display: flex; flex-direction: column; justify-content: center; }

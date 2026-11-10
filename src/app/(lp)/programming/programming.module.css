@@ -92,3 +92,15 @@
 .schoolFeatures{margin:18px 0;color:#34415a}.schoolFeatures h4{font-size:15px;font-weight:800;color:#172c6a}.schoolFeatures ul{padding-left:20px;margin:10px 0;font-size:13px;line-height:1.8}.schoolFeatures>p{font-size:13px;line-height:1.9}.schoolConditions{margin:18px 0 22px;background:#f4f6fb;border:1px solid #dce3ef;border-radius:9px;padding:0 14px}.schoolConditions summary{display:flex;align-items:center;justify-content:space-between;gap:12px;list-style:none;font-size:13px;font-weight:700;color:#23385d;padding:14px 0;cursor:pointer}.schoolConditions summary::-webkit-details-marker{display:none}.schoolConditions[open] summary span{transform:rotate(45deg)}.schoolConditions p{font-size:12px;line-height:1.9;padding-bottom:12px}.schoolConditions .source{display:block;margin:0 0 14px}.compactCard[id]{scroll-margin-top:24px}
 
 .schoolProfile{margin:22px 0;background:#f7f9fd;border:1px solid #e0e6f1;border-radius:14px;padding:20px 16px}.profileTitle>span{font-size:10px;letter-spacing:.12em;font-weight:800;color:#3154e8}.profileTitle h4{font-size:17px;color:#172342;margin-top:4px}.profileBody{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px;align-items:center}.profileBody svg{display:block;width:100%;height:auto;max-width:360px;margin:auto}.profileNote{font-size:11px;color:#61708a;line-height:1.7}.profileScores{list-style:none;padding:0;margin:12px 0}.profileScores li{display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-bottom:1px solid #e0e6f1;font-size:12px}.profileScores b{color:#3154e8}.profileEvidence{border-top:1px solid #dce3ef;margin-top:10px;padding-top:12px;font-size:11px;color:#586984;line-height:1.8}.profileEvidence summary{cursor:pointer;font-weight:700;color:#3154e8}.profileEvidence ul{padding-left:18px}.profileEvidence p{margin-top:10px}@media(max-width:600px){.schoolProfile{padding:16px 10px}.profileBody{grid-template-columns:1fr;gap:0}.profileTitle{padding:0 5px}.profileScores{display:grid;grid-template-columns:1fr 1fr;column-gap:15px}.profileScores li{font-size:10px}.profileBody svg{max-width:340px}}
+/* Framework palette shared with the main website. */
+.page { --blue: #7138ef; --orange: #ff9748; --yellow: #ceff45; }
+.hero,.finderSection,.sectionTitle,.tabs button[aria-pressed=true],.tableButton,.tableWrap thead th { background-color: #7138ef; }
+.hero { background-image: linear-gradient(#ffffff18 1px,transparent 1px),linear-gradient(90deg,#ffffff18 1px,transparent 1px),linear-gradient(120deg,#7138ef,#5921cb); background-size: 24px 24px,24px 24px,100% 100%; }
+.heroRibbon,.finalCta { background: #ceff45; color: #1c1917; }
+.cta { background: #7138ef; color: white; border: 2px solid #1c1917; box-shadow: 3px 4px 0 #1c1917; }
+.cta:hover { background: #5921cb; }
+.pickupCard,.detailCard { border: 2px solid #1c1917; border-radius: 14px; box-shadow: 4px 4px 0 #ceff45; }
+.hero::before,.hero::after { background: #5921cb; }
+.heroBottom,.pointHeading,.sideInner>h2,.section:not(.finderSection)>.sectionTitle { background: #1c1917; }
+.tabs,.pickupCard header,.detailCard>h3 { border-color: #7138ef; }
+.hero h2 strong { text-shadow: 2px 2px 0 #5921cb; }

@@ -69,7 +69,7 @@ const steps = [
   { step: "03", title: "支援開始", desc: "ご契約後、最短1週間でスタート。スピーディに成果へ向けて動き出します。" },
 ];
 
-const GOLD = "linear-gradient(135deg, #E2C16A 0%, #C9A84C 45%, #A8892E 100%)";
+const GOLD = "linear-gradient(135deg, #E1FF8A 0%, #CEFF45 45%, #B9EF27 100%)";
 
 export default function LpPage() {
   const [form, setForm] = useState({ name: "", company: "", email: "", message: "" });
@@ -97,7 +97,7 @@ export default function LpPage() {
       {/* ── ヘッダー ── */}
       <header className="sticky top-0 z-50 bg-white border-b border-[#e5e5e5] px-6 py-4">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <span className="text-base font-bold tracking-tight" style={{ color: "#C9A84C" }}>Framework</span>
+          <span className="text-base font-bold tracking-tight" style={{ color: "#7138EF" }}>Framework</span>
           <a
             href="#contact"
             className="text-sm font-medium text-white px-5 py-2.5 rounded-full transition-opacity hover:opacity-80"
@@ -110,7 +110,7 @@ export default function LpPage() {
 
       {/* ── ヒーロー（ダーク） ── */}
       <section className="bg-[#0a0a0a] text-white px-6 pt-20 pb-24 text-center">
-        <p className="text-xs tracking-[0.25em] uppercase mb-6" style={{ color: "#C9A84C" }}>
+        <p className="text-xs tracking-[0.25em] uppercase mb-6" style={{ color: "#7138EF" }}>
           Marketing Support
         </p>
         <h1
@@ -161,7 +161,7 @@ export default function LpPage() {
       {/* ── こんな悩みはありませんか ── */}
       <section className="bg-white px-6 py-24">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#C9A84C" }}>Problem</p>
+          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#7138EF" }}>Problem</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
             こんな悩みはありませんか？
           </h2>
@@ -197,7 +197,7 @@ export default function LpPage() {
       {/* ── サービス ── */}
       <section className="bg-[#fafafa] border-y border-[#e5e5e5] px-6 py-24">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#C9A84C" }}>Services</p>
+          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#7138EF" }}>Services</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">3つのサービスで完全サポート</h2>
           <div className="grid sm:grid-cols-2 gap-5">
             {services.map((s) => (
@@ -221,7 +221,7 @@ export default function LpPage() {
       {/* ── 支援の流れ ── */}
       <section className="bg-white px-6 py-24">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#C9A84C" }}>Flow</p>
+          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#7138EF" }}>Flow</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">支援開始までの流れ</h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {steps.map((s, i) => (
@@ -258,7 +258,7 @@ export default function LpPage() {
       {/* ── お問い合わせフォーム（ダーク） ── */}
       <section id="contact" className="bg-[#0a0a0a] px-6 py-24">
         <div className="max-w-xl mx-auto">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#C9A84C" }}>Contact</p>
+          <p className="text-xs tracking-[0.2em] uppercase mb-3 text-center" style={{ color: "#7138EF" }}>Contact</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center text-white mb-3">まずは無料相談</h2>
           <p className="text-white/40 text-sm text-center mb-10 leading-relaxed">
             フォームにご記入いただければ、担当者より<br />1営業日以内にご連絡いたします。
@@ -281,7 +281,7 @@ export default function LpPage() {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className="block text-xs text-white/50 mb-1.5">
-                  お名前 <span style={{ color: "#C9A84C" }}>*</span>
+                  お名前 <span style={{ color: "#7138EF" }}>*</span>
                 </label>
                 <input
                   required
@@ -304,7 +304,7 @@ export default function LpPage() {
               </div>
               <div>
                 <label className="block text-xs text-white/50 mb-1.5">
-                  メールアドレス <span style={{ color: "#C9A84C" }}>*</span>
+                  メールアドレス <span style={{ color: "#7138EF" }}>*</span>
                 </label>
                 <input
                   required
@@ -317,7 +317,7 @@ export default function LpPage() {
               </div>
               <div>
                 <label className="block text-xs text-white/50 mb-1.5">
-                  ご相談内容 <span style={{ color: "#C9A84C" }}>*</span>
+                  ご相談内容 <span style={{ color: "#7138EF" }}>*</span>
                 </label>
                 <textarea
                   required
@@ -350,7 +350,7 @@ export default function LpPage() {
       {/* ── フッター ── */}
       <footer className="bg-[#fafafa] border-t border-[#e5e5e5] px-6 py-8">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <span className="text-sm font-bold tracking-tight" style={{ color: "#C9A84C" }}>Framework</span>
+          <span className="text-sm font-bold tracking-tight" style={{ color: "#7138EF" }}>Framework</span>
           <Link href="/" className="text-xs text-[#737373] hover:text-[#0a0a0a] transition-colors">
             公式サイトはこちら
           </Link>

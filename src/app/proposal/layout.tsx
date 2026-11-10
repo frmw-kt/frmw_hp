@@ -1,6 +1,8 @@
-import { Geist } from "next/font/google";
+import { Geist, Noto_Sans_JP } from "next/font/google";
 import "../globals.css";
+import "../brand-aux.css";
 
+const brand = Noto_Sans_JP({ weight: ["500", "700", "900"], subsets: ["latin"], variable: "--font-brand", display: "swap", preload: false });
 const geist = Geist({
   variable: "--font-sans",
   subsets: ["latin"],
@@ -12,8 +14,8 @@ export default function ProposalLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja" className={`${geist.variable} h-full antialiased`}>
-      <body className="min-h-full" style={{ fontFamily: "var(--font-sans)" }}>
+    <html lang="ja" className={`${geist.variable} ${brand.variable} h-full antialiased`}>
+      <body className="brand-aux min-h-full" style={{ fontFamily: "var(--font-sans)" }}>
         {children}
       </body>
     </html>

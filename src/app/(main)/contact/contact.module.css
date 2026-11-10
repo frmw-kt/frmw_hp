@@ -11,3 +11,14 @@
 
 :global(.marketing-site) .hero { padding-top: 120px; padding-bottom: 40px; }
 :global(.marketing-site) .hero h1 { font-size: clamp(28px, 3.8vw, 44px); text-wrap: balance; }
+:global(.marketing-site) .card { background: #fff; color: #1c1917; border: 2px solid #1c1917; border-top: 10px solid #7138ef; border-radius: 16px; box-shadow: 6px 6px 0 #ceff45; }
+:global(.marketing-site) .badge { color: #5921cb; font-weight: 900; }
+
+/* 2つの相談方法カード：見出し・説明・流れ・ボタンの各段の高さを左右でそろえる */
+.choices { row-gap: 0; }
+.card { display: grid; grid-template-rows: subgrid; grid-row: span 7; align-content: start; }
+.flow { align-self: end; }
+.notes > .note:first-child { margin-top: 14px; }
+.choices { grid-template-columns: minmax(0, 1fr); }
+.choices > .card + .card { margin-top: 24px; }
+@media (min-width: 768px) { .choices:has(> .card + .card) { grid-template-columns: repeat(2, minmax(0, 1fr)); } .choices > .card + .card { margin-top: 0; } }

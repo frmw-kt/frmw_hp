@@ -1,0 +1,940 @@
+/*
+ * 下層ページをトップページ（src/components/home）と同じ見た目にそろえる。
+ * brand.css / layout-fixes.css より後に読み込み、共通クラス（m-*）だけを上書きする。
+ * 主な決まり: 方眼紙の背景、2pxの黒線、ずらした黒い影、中央ぞろえの見出しと斜体の英字ラベル、
+ * 黒地に白文字の見出し帯、流れる英字の帯、紫(#7138ef)と黄緑(#ceff45)。
+ */
+body.marketing-site {
+  --lp-ink: #1c1917;
+  --lp-purple: #7138ef;
+  --lp-purple-dark: #5921cb;
+  --lp-purple-soft: #efe9ff;
+  --lp-lime: #ceff45;
+  --lp-lime-soft: #f2fbd6;
+  --lp-orange: #ef531c;
+  --lp-muted: #5f5a54;
+  --lp-line: #d8d5ce;
+  --lp-grid: #1c19170c;
+}
+
+/* ---------- 方眼紙の背景 ---------- */
+body.marketing-site main {
+  background-color: #fff;
+  background-image: linear-gradient(var(--lp-grid) 1px, transparent 1px), linear-gradient(90deg, var(--lp-grid) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* ---------- 英字ラベル（— LABEL —） ---------- */
+body.marketing-site .m-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 0 0 14px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--lp-purple-dark);
+  font: italic 900 12px/1.5 Arial, Helvetica, sans-serif;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+body.marketing-site .m-eyebrow::before {
+  content: "";
+  flex: none;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+}
+body.marketing-site .m-eyebrow > b {
+  display: inline-grid;
+  place-items: center;
+  min-width: 26px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 10px;
+  background: var(--lp-ink);
+  color: var(--lp-lime);
+  font: italic 900 11px/1 Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+/* ---------- セクション ---------- */
+body.marketing-site .m-section {
+  padding-block: 96px;
+  background: transparent;
+  border-top: 1px solid var(--lp-line);
+}
+body.marketing-site .m-section-head {
+  max-width: 820px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+body.marketing-site .m-section-head .m-eyebrow {
+  margin-inline: auto;
+}
+body.marketing-site .m-section-head .m-eyebrow::after {
+  content: "";
+  flex: none;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+}
+body.marketing-site :is(.m-section-head h2, .m-cta h2) {
+  color: var(--lp-ink);
+  font-size: clamp(28px, 3.4vw, 44px);
+  font-weight: 900;
+  line-height: 1.42;
+  letter-spacing: -.04em;
+  text-wrap: balance;
+  word-break: auto-phrase;
+}
+body.marketing-site .m-service-hero h1 {
+  word-break: auto-phrase;
+}
+body.marketing-site .m-section-head .m-lead {
+  max-width: 720px;
+  margin: 18px auto 0;
+  text-align: center;
+}
+body.marketing-site .m-lead {
+  color: var(--lp-muted);
+  font-size: 15px;
+  line-height: 2;
+}
+body.marketing-site .m-small {
+  color: var(--lp-muted);
+}
+
+/* 黒背景のセクション（トップの「2つの支援」と同じ） */
+body.marketing-site .m-section.m-tint {
+  --lp-grid: #ffffff0b;
+  background-color: var(--lp-ink);
+  background-image: linear-gradient(var(--lp-grid) 1px, transparent 1px), linear-gradient(90deg, var(--lp-grid) 1px, transparent 1px);
+  background-size: 20px 20px;
+  border-top: 0;
+  color: #fff;
+}
+body.marketing-site .m-tint :is(.m-section-head h2, .m-split h3.m-subheading) {
+  color: #fff;
+}
+body.marketing-site .m-tint .m-eyebrow {
+  color: #b99bff;
+}
+body.marketing-site .m-tint .m-eyebrow > b {
+  background: var(--lp-lime);
+  color: var(--lp-ink);
+}
+body.marketing-site .m-tint :is(.m-section-head .m-lead, .m-split .m-lead, .m-split .m-small, > .m-container > .m-small) {
+  color: #d2d0c9;
+}
+body.marketing-site .m-tint .m-split .m-checklist,
+body.marketing-site .m-tint > .m-container > .m-checklist {
+  color: #ecebe6;
+}
+
+body.marketing-site .m-tint .m-process h3 {
+  color: #fff;
+}
+body.marketing-site .m-tint .m-process p {
+  color: #d2d0c9;
+}
+/* 黒背景の中でも、白いカードの中は通常の文字色に戻す */
+body.marketing-site .m-tint :is(.m-task-card, .m-case-card, .m-company, .m-glance) :is(.m-small, .m-lead, p:not(.m-eyebrow)) {
+  color: var(--lp-muted);
+}
+body.marketing-site .m-tint :is(.m-task-card, .m-case-card) .m-eyebrow {
+  color: var(--lp-purple-dark);
+}
+body.marketing-site .m-tint :is(.m-task-card, .m-case-card) :is(h3, h4, label) {
+  color: var(--lp-ink);
+}
+/* 見出し内に置かれた見出し帯は中央に */
+body.marketing-site .m-section-head .m-subheading {
+  margin-inline: auto;
+}
+/* 成果物の図の横にある要点リスト（ヒーロー以外の m-glance） */
+body.marketing-site .m-delivery-diagram .m-glance,
+body.marketing-site .m-task-card .m-glance {
+  display: grid;
+  gap: 0;
+  margin: 22px 0 0;
+  padding: 4px 18px;
+  border: 2px solid var(--lp-ink);
+  border-radius: 14px;
+  background: #fff;
+}
+body.marketing-site .m-task-card .m-glance {
+  margin-bottom: 16px;
+  border-width: 1.5px;
+  background: #fbfbf8;
+}
+body.marketing-site :is(.m-delivery-diagram, .m-task-card) .m-glance > div {
+  display: grid;
+  grid-template-columns: minmax(0, 11em) minmax(0, 1fr);
+  gap: 12px;
+  padding: 12px 0;
+  border: 0;
+  border-bottom: 1px dashed #c9c5bd;
+}
+body.marketing-site :is(.m-delivery-diagram, .m-task-card) .m-glance > div:last-child {
+  border-bottom: 0;
+}
+body.marketing-site :is(.m-delivery-diagram, .m-task-card) .m-glance dt {
+  color: var(--lp-purple-dark);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.6;
+}
+body.marketing-site :is(.m-delivery-diagram, .m-task-card) .m-glance dd {
+  margin: 0;
+  color: var(--lp-ink);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+body.marketing-site .m-delivery-diagram .m-subheading {
+  margin-top: 0;
+}
+
+/* ---------- 記事・規約の本文の見出し ---------- */
+body.marketing-site .m-section .article-body h2 {
+  position: relative;
+  margin: 56px 0 20px;
+  padding: 14px 18px 14px 20px;
+  border: 2px solid var(--lp-ink);
+  border-left-width: 2px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 4px 4px 0 var(--lp-ink);
+  color: var(--lp-ink);
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: -.03em;
+}
+body.marketing-site .m-section .article-body h2::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+  border: 2px solid var(--lp-ink);
+  border-radius: 50%;
+  background: var(--lp-lime);
+  vertical-align: 2px;
+}
+body.marketing-site .m-section .article-body > h2:first-child {
+  margin-top: 0;
+}
+body.marketing-site .m-section .article-body h3 {
+  margin: 36px 0 14px;
+  padding-left: 14px;
+  border-left: 4px solid var(--lp-purple);
+  color: var(--lp-ink);
+  font-size: clamp(18px, 1.8vw, 21px);
+  font-weight: 900;
+  line-height: 1.55;
+}
+
+/* ---------- 流れる英字の帯 ---------- */
+body.marketing-site .m-ticker {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-block: 2px solid var(--lp-ink);
+  background: var(--lp-ink);
+  color: #fff;
+}
+body.marketing-site .m-ticker > div {
+  display: flex;
+  width: max-content;
+  animation: lp-marquee 72s linear infinite;
+}
+body.marketing-site .m-ticker span {
+  flex: none;
+  padding: 12px 0;
+  font: italic 900 22px/1.2 Arial, Helvetica, sans-serif;
+  letter-spacing: -.5px;
+  white-space: nowrap;
+}
+body.marketing-site .m-ticker-purple {
+  background: repeating-linear-gradient(135deg, transparent 0 20px, #ffffff14 20px 40px), linear-gradient(100deg, #a073ff, var(--lp-purple));
+}
+@keyframes lp-marquee {
+  to { transform: translateX(-50%); }
+}
+
+/* ---------- ページ上部（ヒーロー） ---------- */
+body.marketing-site .m-service-hero {
+  padding: 104px 0 48px;
+  background: transparent;
+  border-bottom: 0;
+}
+body.marketing-site .m-service-hero > .m-container {
+  position: relative;
+  padding: clamp(28px, 4vw, 56px);
+  border: 2px solid var(--lp-ink);
+  border-radius: 26px;
+  background-color: #f4f4f0;
+  background-image: linear-gradient(#1c191710 1px, transparent 1px), linear-gradient(90deg, #1c191710 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+/* 右上の飾り（トップの ✳ と同じ） */
+body.marketing-site .m-service-hero > .m-container::after {
+  content: "✳";
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  color: var(--lp-purple);
+  font: 900 46px/1 Arial, sans-serif;
+  pointer-events: none;
+}
+body.marketing-site .m-service-hero .m-breadcrumb {
+  margin: 0 0 26px;
+  color: var(--lp-muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+body.marketing-site .m-breadcrumb a {
+  color: var(--lp-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+body.marketing-site .m-breadcrumb [aria-current] {
+  color: var(--lp-ink);
+}
+/* ヒーローの英字は「＼ LABEL ／」 */
+body.marketing-site .m-service-hero .m-eyebrow {
+  gap: 0;
+  margin-bottom: 16px;
+  color: var(--lp-purple-dark);
+  font-size: 14px;
+}
+body.marketing-site .m-service-hero .m-eyebrow::before {
+  content: "＼";
+  width: auto;
+  height: auto;
+  margin-right: 8px;
+  background: none;
+  font-style: normal;
+}
+body.marketing-site .m-service-hero .m-eyebrow::after {
+  content: "／";
+  margin-left: 8px;
+  font-style: normal;
+}
+/* サービス名は黒地の帯 */
+body.marketing-site .m-service-hero .m-service-name {
+  display: table;
+  margin: 0 0 18px;
+  padding: 6px 12px;
+  background: var(--lp-ink);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: .02em;
+}
+body.marketing-site .m-service-hero h1 {
+  color: var(--lp-ink);
+  font-size: clamp(34px, 4.4vw, 58px);
+  font-weight: 900;
+  line-height: 1.32;
+  letter-spacing: -.055em;
+}
+body.marketing-site .m-service-hero .m-lead {
+  margin-top: 22px;
+  max-width: 640px;
+  color: #3f3a45;
+}
+body.marketing-site .m-service-hero .m-actions {
+  margin-top: 30px;
+}
+body.marketing-site .m-service-hero .m-split {
+  align-items: center;
+  gap: clamp(28px, 4vw, 56px);
+}
+/* ヒーロー右側の要点はウィンドウ風のカード */
+body.marketing-site .m-service-hero .m-glance {
+  position: relative;
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 34px 0 0;
+  overflow: hidden;
+  border: 2px solid var(--lp-ink);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 6px 6px 0 var(--lp-ink);
+  transform: rotate(1.2deg);
+}
+body.marketing-site .m-service-hero .m-glance::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 32px;
+  background:
+    radial-gradient(circle at 16px 50%, var(--lp-orange) 4px, transparent 4.5px),
+    radial-gradient(circle at 30px 50%, var(--lp-lime) 4px, transparent 4.5px),
+    radial-gradient(circle at 44px 50%, #fff 4px, transparent 4.5px),
+    var(--lp-ink);
+}
+body.marketing-site .m-service-hero .m-glance::after {
+  content: "AT A GLANCE";
+  position: absolute;
+  top: 11px;
+  right: 14px;
+  color: #fff;
+  font: 800 10px/1 Arial, sans-serif;
+  letter-spacing: .14em;
+}
+body.marketing-site .m-service-hero .m-glance > div {
+  padding: 16px 20px;
+  border: 0;
+  border-bottom: 1px solid var(--lp-line);
+}
+body.marketing-site .m-service-hero .m-glance > div:last-child {
+  border-bottom: 0;
+}
+body.marketing-site .m-service-hero .m-glance dt {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: var(--lp-purple-soft);
+  color: var(--lp-purple-dark);
+  font-size: 11px;
+  font-weight: 900;
+}
+body.marketing-site .m-service-hero .m-glance dd {
+  color: var(--lp-ink);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+/* ---------- ボタン（トップの「無料で相談する」と同じ） ---------- */
+body.marketing-site .m-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 60px;
+  padding: 10px 64px 10px 30px;
+  border: 3px solid #fff;
+  border-radius: 999px;
+  background: linear-gradient(100deg, var(--lp-purple), var(--lp-purple-dark));
+  color: #fff;
+  box-shadow: 0 0 0 2px var(--lp-purple), 0 8px 18px #7138ef50;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.4;
+  transition: transform .2s, box-shadow .2s;
+}
+body.marketing-site .m-button:hover {
+  background: linear-gradient(100deg, var(--lp-purple), var(--lp-purple-dark));
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 2px var(--lp-purple), 0 11px 24px #7138ef60;
+}
+body.marketing-site .m-button > span {
+  position: absolute;
+  right: 14px;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--lp-purple-dark);
+  font-size: 15px;
+  font-weight: 900;
+}
+body.marketing-site .m-button-secondary {
+  background: #fff;
+  color: var(--lp-ink);
+  box-shadow: 0 0 0 2px var(--lp-ink), 4px 6px 0 var(--lp-ink);
+}
+body.marketing-site .m-button-secondary:hover {
+  background: var(--lp-lime);
+  box-shadow: 0 0 0 2px var(--lp-ink), 4px 8px 0 var(--lp-ink);
+}
+body.marketing-site .m-button-secondary > span {
+  background: var(--lp-ink);
+  color: #fff;
+}
+body.marketing-site .m-section:not(.m-tint) .m-button:not(.m-button-secondary) {
+  background: linear-gradient(100deg, var(--lp-purple), var(--lp-purple-dark));
+  color: #fff;
+}
+
+/* ---------- ページ内の目次 ---------- */
+body.marketing-site .m-jump {
+  counter-reset: jump;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 22px;
+  margin: 0;
+  padding: 18px 0;
+  border: 0;
+  background: none;
+}
+body.marketing-site .m-jump a {
+  counter-increment: jump;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  padding: 6px 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: #66615b;
+  font-size: 13px;
+  font-weight: 800;
+  transition: color .2s;
+}
+body.marketing-site .m-jump a::before {
+  content: counter(jump, decimal-leading-zero);
+  color: var(--lp-purple-dark);
+  font: 11px/1 ui-monospace, Menlo, monospace;
+}
+body.marketing-site .m-jump a:hover {
+  background: none;
+  color: var(--lp-ink);
+}
+
+/* ---------- カード ---------- */
+body.marketing-site .m-task-card {
+  position: relative;
+  padding: 26px 26px 24px;
+  border: 2px solid var(--lp-ink);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 5px 5px 0 var(--lp-ink);
+}
+body.marketing-site .m-task-card:nth-child(n) {
+  background: #fff;
+}
+body.marketing-site .m-task-card .m-num {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--lp-purple);
+  font: italic 900 46px/.95 Arial, Helvetica, sans-serif;
+  letter-spacing: -2px;
+}
+body.marketing-site .m-task-card:nth-child(even) .m-num {
+  color: #6d8f00;
+}
+body.marketing-site .m-task-card h3 {
+  color: var(--lp-ink);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.45;
+  letter-spacing: -.02em;
+}
+body.marketing-site .m-task-card p {
+  margin-top: 10px;
+  color: var(--lp-muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+body.marketing-site .m-output {
+  display: grid;
+  gap: 6px;
+  margin-top: 18px;
+  padding: 12px 14px;
+  border: 2px dashed #b9b4ab;
+  border-radius: 12px;
+  background: #fbfbf8;
+  color: var(--lp-ink);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.6;
+}
+body.marketing-site .m-output > span {
+  justify-self: start;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: var(--lp-lime);
+  color: var(--lp-ink);
+  font: 900 10px/1.4 Arial, sans-serif;
+  letter-spacing: .12em;
+}
+
+/* ---------- 進め方（トップの「ご相談の流れ」と同じタイムライン） ---------- */
+body.marketing-site .m-process {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+body.marketing-site .m-process > li {
+  position: relative;
+  min-width: 0;
+  padding: 0 0 30px 72px;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+body.marketing-site .m-process > li::after {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 52px;
+  bottom: 0;
+  border-left: 3px dashed #a8c93a;
+}
+body.marketing-site .m-process > li:last-child::after {
+  display: none;
+}
+body.marketing-site .m-process > li > .m-num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--lp-ink);
+  border-radius: 50%;
+  background: var(--lp-lime);
+  color: var(--lp-ink);
+  box-shadow: 3px 3px 0 var(--lp-ink);
+  font: italic 900 19px/1 Arial, sans-serif;
+  letter-spacing: -.5px;
+}
+body.marketing-site .m-process h3 {
+  padding-top: 12px;
+  color: var(--lp-ink);
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 1.45;
+}
+body.marketing-site .m-process p {
+  margin-top: 8px;
+  color: var(--lp-muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+@media (min-width: 900px) {
+  body.marketing-site .m-process {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-auto-flow: column;
+    gap: 24px;
+  }
+  body.marketing-site .m-process > li {
+    padding: 74px 0 0;
+  }
+  body.marketing-site .m-process > li::after {
+    left: 60px;
+    right: -24px;
+    top: 25px;
+    bottom: auto;
+    border-left: 0;
+    border-top: 3px dashed #a8c93a;
+  }
+  body.marketing-site .m-process h3 {
+    padding-top: 0;
+  }
+}
+
+/* ---------- 見出し帯・チェックリスト ---------- */
+body.marketing-site .m-subheading {
+  display: table;
+  margin: 0 0 18px;
+  padding: 6px 12px;
+  background: var(--lp-ink);
+  color: #fff;
+  font-size: clamp(18px, 1.8vw, 22px);
+  font-weight: 900;
+  line-height: 1.45;
+  letter-spacing: -.02em;
+}
+body.marketing-site .m-tint .m-subheading {
+  background: var(--lp-lime);
+  color: var(--lp-ink);
+}
+body.marketing-site .m-checklist {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+  color: #3f3a45;
+}
+body.marketing-site .m-checklist li {
+  position: relative;
+  padding-left: 32px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+body.marketing-site .m-checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--lp-ink);
+  border-radius: 50%;
+  background: var(--lp-lime);
+  color: var(--lp-ink);
+  font: 900 12px/1 Arial, sans-serif;
+}
+
+/* ---------- 関連リンク ---------- */
+body.marketing-site .m-related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+body.marketing-site .m-related a {
+  padding: 9px 16px;
+  border: 2px solid var(--lp-ink);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--lp-ink);
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 800;
+  transition: background .2s, transform .2s;
+}
+body.marketing-site .m-related a:hover {
+  background: var(--lp-lime);
+  transform: translateY(-2px);
+}
+
+/* ---------- よくある質問（トップと同じ枠） ---------- */
+body.marketing-site .m-faq {
+  max-width: 900px;
+  margin-inline: auto;
+  border: 0;
+}
+body.marketing-site .m-faq details {
+  margin-bottom: 14px;
+  padding: 0 22px;
+  border: 2px solid var(--lp-ink);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: none;
+}
+body.marketing-site .m-faq details[open] {
+  box-shadow: 5px 5px 0 var(--lp-ink);
+}
+body.marketing-site .m-faq summary {
+  padding-block: 20px;
+  color: var(--lp-ink);
+  font-size: 15px;
+  font-weight: 900;
+}
+body.marketing-site .m-faq summary > span {
+  color: var(--lp-purple);
+  font: italic 900 19px/1 Arial, sans-serif;
+}
+
+/* ---------- 相談への誘導（トップの最下部と同じ） ---------- */
+body.marketing-site .m-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 96px;
+  border-top: 0;
+  background-color: #fff;
+  background-image: linear-gradient(var(--lp-grid) 1px, transparent 1px), linear-gradient(90deg, var(--lp-grid) 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: var(--lp-ink);
+}
+body.marketing-site .m-cta-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 72px;
+  text-align: center;
+}
+body.marketing-site .m-cta-inner::before,
+body.marketing-site .m-cta-inner::after {
+  content: "✳";
+  position: absolute;
+  color: var(--lp-purple);
+  font: 900 96px/1 Arial, sans-serif;
+  pointer-events: none;
+}
+body.marketing-site .m-cta-inner::before {
+  top: 56px;
+  right: 2%;
+}
+body.marketing-site .m-cta-inner::after {
+  bottom: 30px;
+  left: 3%;
+  font-size: 64px;
+}
+body.marketing-site .m-cta .m-eyebrow {
+  margin: 0 auto;
+  color: var(--lp-purple-dark);
+}
+body.marketing-site .m-cta .m-eyebrow::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+}
+body.marketing-site .m-cta-mark {
+  display: grid;
+  place-items: center;
+  width: 92px;
+  height: 92px;
+  margin: 22px 0 6px;
+  border: 2px solid var(--lp-ink);
+  border-radius: 22px;
+  background: var(--lp-purple);
+  color: var(--lp-ink);
+  box-shadow: 5px 5px 0 var(--lp-ink);
+  font: 900 64px/1 Arial, sans-serif;
+  transform: rotate(-8deg);
+}
+body.marketing-site .m-cta h2 {
+  margin-top: 26px;
+  color: var(--lp-ink);
+  font-size: clamp(28px, 3.6vw, 46px);
+  line-height: 1.6;
+}
+body.marketing-site .m-cta h2 em {
+  padding: 2px 10px;
+  background: var(--lp-ink);
+  color: #fff;
+  font-style: normal;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+body.marketing-site .m-cta-inner > p:not(.m-eyebrow) {
+  margin: 22px 0 30px;
+  color: #3f3a45;
+  font-size: 14px;
+  line-height: 2;
+}
+body.marketing-site .m-cta-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 400px);
+  min-height: 70px;
+  padding: 10px 56px;
+  border: 3px solid #fff;
+  border-radius: 999px;
+  background: linear-gradient(100deg, var(--lp-purple), var(--lp-purple-dark));
+  color: #fff;
+  box-shadow: 0 0 0 2px var(--lp-purple), 0 8px 18px #7138ef50;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.4;
+  transition: transform .2s, box-shadow .2s;
+}
+body.marketing-site .m-cta-button small {
+  font-size: 11px;
+  font-weight: 700;
+}
+body.marketing-site .m-cta-button b {
+  position: absolute;
+  right: 18px;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--lp-purple-dark);
+  font-size: 16px;
+}
+body.marketing-site .m-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 2px var(--lp-purple), 0 11px 24px #7138ef60;
+}
+
+/* ---------- スマホ ---------- */
+@media (max-width: 767px) {
+  body.marketing-site .m-section {
+    padding-block: 68px;
+  }
+  body.marketing-site .m-section-head {
+    margin-bottom: 32px;
+  }
+  body.marketing-site .m-section-head .m-lead {
+    text-align: left;
+  }
+  body.marketing-site .m-service-hero {
+    padding: 88px 0 32px;
+  }
+  body.marketing-site .m-service-hero > .m-container {
+    width: calc(100% - 24px);
+    padding: 26px 18px 28px;
+    border-radius: 22px;
+  }
+  body.marketing-site .m-service-hero > .m-container::after {
+    top: 14px;
+    right: 14px;
+    font-size: 34px;
+  }
+  body.marketing-site .m-service-hero h1 {
+    font-size: clamp(30px, 8.4vw, 40px);
+  }
+  body.marketing-site .m-service-hero .m-glance {
+    transform: none;
+  }
+  body.marketing-site .m-service-hero .m-actions .m-button {
+    width: 100%;
+  }
+  body.marketing-site .m-ticker span {
+    font-size: 18px;
+    padding-block: 10px;
+  }
+  body.marketing-site .m-task-card {
+    padding: 22px 20px;
+  }
+  body.marketing-site .m-cta {
+    padding-bottom: 72px;
+  }
+  body.marketing-site .m-cta-inner::before {
+    top: 40px;
+    font-size: 56px;
+  }
+  body.marketing-site .m-cta-inner::after {
+    display: none;
+  }
+  body.marketing-site .m-cta h2 {
+    font-size: clamp(19px, 6vw, 24px);
+  }
+  body.marketing-site .m-cta h2 em {
+    white-space: nowrap;
+  }
+  body.marketing-site .m-cta-inner > p:not(.m-eyebrow) {
+    text-align: left;
+  }
+  body.marketing-site .m-cta-inner > p br {
+    display: none;
+  }
+  body.marketing-site .m-cta-button {
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.marketing-site .m-ticker > div {
+    animation: none;
+  }
+  body.marketing-site :is(.m-button, .m-cta-button, .m-related a):hover {
+    transform: none;
+  }
+}

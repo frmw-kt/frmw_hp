@@ -1,0 +1,157 @@
+/* トップの「事例」「相談の流れ」「始め方」。カードの格子にしない別パターン */
+.caseIndex, .timeline, .menu, .ticket {
+  --ink: #1c1917;
+  --purple: #7138ef;
+  --purple-deep: #5921cb;
+  --purple-soft: #efe9ff;
+  --lime: #ceff45;
+  --muted: #625d55;
+  box-sizing: border-box;
+}
+.caseIndex *, .timeline *, .menu *, .ticket * { box-sizing: border-box; }
+:is(.caseIndex, .timeline, .menu, .ticket) :is(ol, ul) { list-style: none; margin: 0; padding: 0; }
+:is(.caseIndex, .timeline, .menu, .ticket) :is(p, h3) { margin: 0; }
+
+/* ---------- 2本柱（FV） ---------- */
+.pillars { --ink: #1c1917; display: grid; gap: 10px; margin: 0 0 24px; }
+.pillar { display: grid; grid-template-columns: 44px 1fr 28px; align-items: center; gap: 12px; padding: 10px 14px 10px 10px; border: 2px solid var(--ink); border-radius: 14px; background: #fff; color: var(--ink); text-decoration: none; box-shadow: 4px 4px 0 #7138ef; transition: transform .2s, box-shadow .2s; }
+.pillarProcess { box-shadow: 4px 4px 0 #ceff45; }
+.pillarNo { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 10px; background: #7138ef; color: #fff; font: italic 900 18px/1 Arial, sans-serif; }
+.pillarProcess .pillarNo { background: #ceff45; color: var(--ink); border: 2px solid var(--ink); }
+.pillarBody { display: grid; gap: 2px; min-width: 0; }
+.pillarBody strong { font-size: 18px; font-weight: 900; line-height: 1.3; letter-spacing: -.02em; }
+.pillarBody small { color: #59525f; font-size: 11.5px; font-weight: 700; line-height: 1.4; }
+.pillar > b { display: grid; place-items: center; width: 28px; height: 28px; border: 2px solid var(--ink); border-radius: 50%; font: 900 13px/1 Arial, sans-serif; }
+
+/* ---------- 2本柱（最上部のタグ） ---------- */
+.tagGroup { display: flex; flex: none; align-items: center; gap: 6px; padding: 4px 6px 4px 4px; border-radius: 99px; background: #fff; border: 2px solid #1c1917; }
+.tagGroup b { padding: 4px 10px; border-radius: 99px; background: #7138ef; color: #fff; font-size: 12px; font-weight: 900; line-height: 1.3; }
+.tagGroupProcess b { background: #ceff45; color: #1c1917; }
+.tagGroup span { border: 0 !important; padding: 2px 4px !important; background: transparent !important; font-size: 12px; }
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .pillar:hover { transform: translateY(-2px); box-shadow: 6px 6px 0 #7138ef; }
+  .pillarProcess:hover { box-shadow: 6px 6px 0 #ceff45; }
+}
+@media (min-width: 768px) {
+  .pillars { grid-template-columns: 1fr 1fr; gap: 14px; max-width: 720px; margin: 0 auto 30px; }
+}
+@media (min-width: 1024px) {
+  .pillars { grid-column: 1; grid-row: 4; grid-template-columns: 1fr; max-width: 520px; margin: 0 0 30px; }
+}
+
+/* ---------- 事例：目次のような一覧 ---------- */
+.caseIndex { margin-top: 48px; }
+.caseTitle { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; padding-bottom: 12px; border-bottom: 3px solid var(--ink); }
+.caseTitle p { color: var(--purple); font: 800 11px/1 Arial, sans-serif; letter-spacing: .16em; }
+.caseTitle h3 { font-size: 22px; font-weight: 900; line-height: 1.4; }
+.caseIndex ol { border-bottom: 3px solid var(--ink); }
+.caseAll { display: block; width: max-content; margin: 16px 0 0 auto; color: var(--ink); font-size: 13px; font-weight: 900; text-decoration: underline; text-decoration-color: var(--purple); text-decoration-thickness: 2px; text-underline-offset: 5px; }
+.caseHead { display: none; }
+.caseIndex li + li { border-top: 1px solid #1c191740; }
+.caseRow { position: relative; display: grid; grid-template-columns: 34px 1fr 36px; grid-template-areas: "no industry arrow" "no name arrow" "no value arrow"; column-gap: 12px; row-gap: 3px; align-items: center; padding: 18px 4px; color: var(--ink); text-decoration: none; isolation: isolate; }
+.caseRow::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--lime); transform: scaleX(0); transform-origin: left; transition: transform .35s cubic-bezier(.16, 1, .3, 1); }
+.caseNo { grid-area: no; align-self: start; padding-top: 2px; color: var(--purple); font: italic 900 20px/1 Arial, sans-serif; }
+.caseIndustry { grid-area: industry; justify-self: start; padding: 3px 8px; border: 1.5px solid var(--ink); border-radius: 99px; font-size: 10.5px; font-weight: 800; line-height: 1.2; }
+.caseName { grid-area: name; font-size: 16px; font-weight: 900; line-height: 1.45; }
+.caseValue { grid-area: value; display: flex; align-items: baseline; gap: 6px; color: var(--purple-deep); font-size: 15px; font-weight: 900; line-height: 1.4; }
+.caseValue small { color: var(--muted); font-size: 11px; font-weight: 800; }
+.caseArrow { grid-area: arrow; display: grid; place-items: center; width: 34px; height: 34px; border: 2px solid var(--ink); border-radius: 50%; background: #fff; font: 900 14px/1 Arial, sans-serif; transition: background .25s, color .25s, transform .25s; }
+
+/* ---------- 相談の流れ：タイムライン ---------- */
+.timeline { position: relative; display: grid; gap: 30px; margin: 40px 0 36px; color: #fff; }
+.track { position: absolute; left: 27px; top: 28px; bottom: 28px; width: 3px; background: repeating-linear-gradient(var(--lime) 0 10px, transparent 10px 16px); animation: flowY 1.2s linear infinite; }
+.timeline li { position: relative; display: grid; grid-template-columns: 56px 1fr; column-gap: 18px; }
+.timeline li > :not(.node) { grid-column: 2; }
+.node { grid-row: 1 / 4; display: grid; place-items: center; width: 56px; height: 56px; border: 2px solid #fff; border-radius: 50%; background: var(--purple); color: #fff; box-shadow: 0 0 0 6px #1c1917; }
+.node svg { color: #fff !important; }
+.timeline li:nth-child(even) .node { background: var(--lime); }
+.timeline li:nth-child(even) .node svg { color: var(--ink) !important; }
+.stepNo { display: flex; align-items: center; gap: 8px; color: var(--lime); font: 800 11px/1.2 Arial, sans-serif; letter-spacing: .14em; padding-top: 6px; }
+.loop { padding: 2px 8px; border: 1px solid #ffffff60; border-radius: 99px; color: #fff; font: 700 10px/1.3 var(--font-home-sans), sans-serif; letter-spacing: .04em; }
+.timeline h3 { margin: 6px 0 6px; font-size: 19px; font-weight: 900; line-height: 1.4; }
+.stepText { color: #d6d2ca; font-size: 13px; line-height: 1.85; }
+
+/* ---------- 始め方：料金メニュー表 ---------- */
+.menu { margin-top: 28px; border: 2px solid var(--ink); border-radius: 4px; background: #fffdf7; box-shadow: 6px 6px 0 var(--ink); }
+.menuHead { display: flex; justify-content: space-between; gap: 10px; padding: 12px 18px; border-bottom: 2px solid var(--ink); background: var(--ink); color: #fff; font: 800 10px/1.4 Arial, sans-serif; letter-spacing: .12em; }
+.menuHead span:last-child { color: var(--lime); }
+.menu ul { padding: 4px 18px; }
+.menu li { padding: 18px 0; }
+.menu li + li { border-top: 1.5px dashed #1c191755; }
+.menuLine { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.menuTag { flex: none; padding: 3px 7px; background: var(--ink); color: #fff; font: italic 900 10px/1.2 Arial, sans-serif; letter-spacing: .06em; transform: rotate(-3deg); }
+.menuName { font-size: 14px; font-weight: 800; line-height: 1.5; }
+.leader { display: none; }
+.menuPrice { flex-basis: 100%; color: var(--purple-deep); font-size: 20px; font-weight: 900; line-height: 1.4; letter-spacing: -.02em; }
+.menuNote { margin-top: 6px !important; color: var(--muted); font-size: 12px; line-height: 1.8; }
+
+/* ---------- 業務改善のご相談：チケット ---------- */
+.ticket { --notch: 14px; position: relative; display: grid; grid-template-columns: 1fr; margin-top: 30px; filter: drop-shadow(5px 5px 0 var(--ink)); }
+.ticketMain, .ticketStub { position: relative; border: 2px solid var(--ink); background: var(--lime); }
+.ticketMain { padding: 22px 20px 20px; border-radius: 14px 14px 0 0; border-bottom: 0; }
+.ticketStub { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 20px; border-top: 2px dashed var(--ink); border-radius: 0 0 14px 14px; background: #e4ff8f; }
+.ticketStub::before, .ticketStub::after { content: ""; position: absolute; top: calc(var(--notch) * -1 - 1px); width: calc(var(--notch) * 2); height: calc(var(--notch) * 2); border: 2px solid var(--ink); border-radius: 50%; background: var(--paper-bg, #f6f6f2); }
+.ticketStub::before { left: calc(var(--notch) * -1 - 2px); clip-path: inset(0 0 0 50%); }
+.ticketStub::after { right: calc(var(--notch) * -1 - 2px); clip-path: inset(0 50% 0 0); }
+.ticketLabel { font: 800 10.5px/1.4 Arial, sans-serif; letter-spacing: .12em; }
+.ticketTitle { margin: 8px 0 8px !important; font-size: 30px; font-weight: 900; line-height: 1.25; letter-spacing: -.04em; }
+.ticketText { font-size: 13px; font-weight: 700; line-height: 1.8; }
+.ticketStub > span { padding: 3px 8px; border: 1.5px solid var(--ink); border-radius: 99px; font: 900 10px/1.2 Arial, sans-serif; letter-spacing: .14em; }
+.ticketStub b { font: italic 900 38px/1 Arial, sans-serif; letter-spacing: -2px; }
+.ticketStub b small { margin-left: 2px; font: 900 14px/1 var(--font-home-sans), sans-serif; letter-spacing: 0; }
+.ticketStub a { padding: 9px 14px; border: 2px solid var(--ink); border-radius: 99px; background: var(--ink); color: #fff !important; font-size: 12px; font-weight: 900; text-decoration: none; white-space: nowrap; transition: transform .2s; }
+
+@keyframes flowY { to { background-position: 0 16px; } }
+@keyframes flowX { to { background-position: 16px 0; } }
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .caseRow:hover::before { transform: scaleX(1); }
+  .caseRow:hover .caseArrow { background: var(--ink); color: var(--lime); transform: rotate(45deg); }
+  .ticketStub a:hover { transform: translateY(-2px); }
+}
+
+@media (min-width: 768px) {
+  /* 事例：表のように横一列 */
+  .caseHead { display: grid; grid-template-columns: 56px 190px 1fr minmax(180px, 28%) 44px; gap: 16px; padding: 10px 8px; border-bottom: 2px solid var(--ink); color: var(--muted); font: 800 10px/1 Arial, sans-serif; letter-spacing: .14em; }
+  .caseRow { grid-template-columns: 56px 190px 1fr minmax(180px, 28%) 44px; grid-template-areas: "no industry name value arrow"; column-gap: 16px; padding: 22px 8px; }
+  .caseNo { align-self: center; padding: 0; font-size: 26px; }
+  .caseName { font-size: 18px; }
+  .caseValue { flex-direction: column; gap: 2px; font-size: 18px; }
+  .caseArrow { width: 40px; height: 40px; }
+
+  /* 相談の流れ：横のタイムライン */
+  .timeline { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin: 56px 0 48px; }
+  .track { left: 12.5%; right: 12.5%; top: 34px; bottom: auto; width: auto; height: 3px; background: repeating-linear-gradient(90deg, var(--lime) 0 10px, transparent 10px 16px); animation-name: flowX; }
+  .timeline li { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .timeline li > :not(.node) { grid-column: 1; }
+  .node { grid-row: auto; width: 68px; height: 68px; margin-bottom: 16px; }
+  .stepNo { justify-content: center; flex-wrap: wrap; padding-top: 0; }
+  .timeline h3 { font-size: 19px; }
+  .stepText { max-width: 240px; font-size: 13.5px; }
+
+  /* 始め方：点線のリーダーで価格表のように */
+  .menu { max-width: 960px; margin: 40px auto 0; }
+  .menuHead { padding: 14px 28px; }
+  .menu ul { padding: 6px 28px; }
+  .menu li { padding: 22px 0; }
+  .menuLine { flex-wrap: nowrap; align-items: center; gap: 14px; }
+  .menuName { font-size: 16px; white-space: nowrap; }
+  .leader { display: block; flex: 1; min-width: 24px; height: 2px; background: radial-gradient(circle, var(--ink) 1px, transparent 1.5px) 0 50% / 8px 2px repeat-x; }
+  .menuPrice { flex-basis: auto; font-size: 22px; text-align: right; }
+  .menuNote { max-width: 640px; padding-left: 62px; font-size: 13px; }
+
+  .ticket { grid-template-columns: 1fr 220px; max-width: 960px; margin: 36px auto 0; }
+  .ticketMain { padding: 26px 30px; border-radius: 14px 0 0 14px; border-bottom: 2px solid var(--ink); border-right: 0; }
+  .ticketStub { flex-direction: column; justify-content: center; gap: 10px; padding: 20px; border-top: 2px solid var(--ink); border-left: 2px dashed var(--ink); border-radius: 0 14px 14px 0; }
+  .ticketStub::before, .ticketStub::after { left: calc(var(--notch) * -1 - 1px); right: auto; clip-path: none; }
+  .ticketStub::before { top: calc(var(--notch) * -1 - 2px); clip-path: inset(50% 0 0 0); }
+  .ticketStub::after { top: auto; bottom: calc(var(--notch) * -1 - 2px); clip-path: inset(0 0 50% 0); }
+  .ticketTitle { font-size: 36px; }
+  .ticketStub b { font-size: 48px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track { animation: none; }
+  .caseRow::before, .caseArrow { transition: none; }
+}

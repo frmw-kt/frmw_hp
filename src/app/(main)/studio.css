@@ -1,3 +1,4 @@
+@layer legacy-site {
 /* Scoped to the public marketing layout; LP/client/proposal layouts stay unchanged. */
 .marketing-site {
   color-scheme: dark;
@@ -46,73 +47,15 @@
   text-wrap: balance;
 }
 .marketing-site
-  :is(
-    .m-eyebrow,
-    .m-num,
-    .m-case-result strong,
-    .m-result-card strong,
-    .m-faq summary > span,
-    .m-cycle > div > span,
-    .m-document-preview span,
-    .m-workflow-preview b,
-    .m-workflow-preview li > span,
-    .m-delivery-preview figcaption
-  ) {
+  :is(.m-eyebrow,.m-num,.m-case-result strong,.m-faq summary > span) {
   color: #d3b77e;
 }
 .marketing-site
-  :is(
-    .m-lead,
-    .m-small,
-    .m-stat-grid p,
-    .m-challenges p,
-    .m-service-list p:not(.m-eyebrow),
-    .m-service-detail > span:first-child,
-    .m-reason p,
-    .m-funnel-row p,
-    .m-case-top,
-    .m-case-card dd,
-    .m-artifacts article > p,
-    .m-process p,
-    .m-pricing p:not(.m-eyebrow),
-    .m-price-factors span,
-    .m-faq details > p,
-    .m-breadcrumb,
-    .m-glance dt,
-    .m-task-card p,
-    .m-output span,
-    .m-checklist,
-    .m-cycle p,
-    .m-company dt,
-    .m-footer p,
-    .m-footer small,
-    .m-wireframe span,
-    .m-roadmap-head,
-    .m-sample-label,
-    .m-paper-note
-  ) {
+  :is(.m-lead,.m-small,.m-stat-grid p,.m-challenges p,.m-service-list p:not(.m-eyebrow),.m-service-detail > span:first-child,.m-reason p,.m-case-top,.m-case-card dd,.m-process p,.m-pricing p:not(.m-eyebrow),.m-price-factors span,.m-faq details > p,.m-breadcrumb,.m-glance dt,.m-task-card p,.m-output span,.m-checklist,.m-company dt,.m-footer p,.m-footer small) {
   color: #aeb1b7;
 }
 .marketing-site
-  :is(
-    .m-system,
-    .m-funnel,
-    .m-case-card,
-    .m-pricing,
-    .m-delivery-preview,
-    .m-task-card,
-    .m-artifact,
-    .m-related a,
-    .m-cycle > div,
-    .m-result-card,
-    .m-case-filters button,
-    .m-contact-form input,
-    .m-contact-form select,
-    .m-contact-form textarea,
-    .m-wireframe > div,
-    .m-article-toc,
-    .m-system-grid li
-  ) {
+  :is(.m-case-card,.m-pricing,.m-task-card,.m-related a,.m-case-filters button,.m-contact-form input,.m-contact-form select,.m-contact-form textarea,.m-article-toc) {
   background: #111316;
   color: #ededed;
   border-color: #ffffff26;
@@ -120,27 +63,7 @@
   box-shadow: none;
 }
 .marketing-site
-  :is(
-    .m-glance div,
-    .m-output,
-    .m-jump,
-    .m-company,
-    .m-company > div,
-    .m-reason,
-    .m-faq,
-    .m-faq details,
-    .m-price-factors li,
-    .m-case-card dl,
-    .m-stat-grid > div,
-    .m-paper-top,
-    .m-roadmap,
-    .m-delivery-preview figcaption,
-    .m-document-preview > div:not(:first-child),
-    .m-process,
-    .m-footer small,
-    .m-product-strip,
-    .m-wireframe-grid b
-  ) {
+  :is(.m-glance div,.m-output,.m-jump,.m-company,.m-company > div,.m-reason,.m-faq,.m-faq details,.m-price-factors li,.m-case-card dl,.m-stat-grid > div,.m-process,.m-footer small,.m-product-strip) {
   border-color: #ffffff20;
 }
 .marketing-site .m-header {
@@ -357,31 +280,6 @@
 }
 .marketing-site .m-cta p:not(.m-eyebrow) {
   color: #b4b7bd;
-}
-.marketing-site .m-paper-cells > span,
-.marketing-site .m-paper-line,
-.marketing-site .m-result-bar {
-  background: #2b3039;
-}
-.marketing-site .m-wireframe i {
-  background: #d3b77e;
-  color: #111;
-}
-.marketing-site .m-workflow-preview strong {
-  background: #191d24;
-  border-color: var(--m-line);
-}
-.marketing-site .m-funnel-step {
-  background: #252d39;
-}
-.marketing-site .m-funnel-step-1 {
-  background: #303a49;
-}
-.marketing-site .m-funnel-step-2 {
-  background: #404a59;
-}
-.marketing-site .m-funnel-step-3 {
-  background: #635535;
 }
 .marketing-site .m-contact-form label > span {
   background: #2b3039;
@@ -731,41 +629,19 @@
   --m-radius-xs: 6px; /* 図中の小要素 */
 }
 .marketing-site
-  :is(
-    .m-system,
-    .m-funnel,
-    .m-pricing,
-    .m-delivery-preview,
-    .m-case-card,
-    .m-service-hero .m-glance,
-    .s-console
-  ) {
+  :is(.m-pricing,.m-case-card,.m-service-hero .m-glance,.s-console) {
   border-radius: var(--m-radius-lg);
 }
 .marketing-site
-  :is(
-    .m-task-card,
-    .m-artifact,
-    .m-cycle > div,
-    .m-result-card,
-    .m-wireframe > div,
-    .m-article-toc,
-    .m-system-grid li,
-    .m-challenges > a,
-    .s-review
-  ) {
+  :is(.m-task-card,.m-article-toc,.m-challenges > a,.s-review) {
   border-radius: var(--m-radius);
 }
 .marketing-site :is(.m-contact-form input, .m-contact-form select, .m-contact-form textarea) {
   border-radius: var(--m-radius-sm);
 }
-.marketing-site
-  :is(.m-wireframe-grid b, .m-workflow-preview strong, .m-funnel-step, .m-paper-cells > span, .m-wireframe i) {
-  border-radius: var(--m-radius-xs);
-}
 /* ボタン・チップ類はヘッダーに合わせてピル型 */
 .marketing-site
-  :is(.m-button, .m-case-filters button, .m-related a, .m-skip, .m-contact-form label > span, .m-result-bar, .m-result-bar > span) {
+  :is(.m-button,.m-case-filters button,.m-related a,.m-skip,.m-contact-form label > span) {
   border-radius: 999px;
 }
 .marketing-site .m-round-link {
@@ -803,70 +679,15 @@
   outline-color: #8c6b28;
 }
 .marketing-site .m-section:not(.m-tint)
-  :is(
-    .m-eyebrow,
-    .m-num,
-    .m-case-result strong,
-    .m-result-card strong,
-    .m-faq summary > span,
-    .m-cycle > div > span,
-    .m-document-preview span,
-    .m-workflow-preview b,
-    .m-workflow-preview li > span,
-    .m-delivery-preview figcaption
-  ) {
+  :is(.m-eyebrow,.m-num,.m-case-result strong,.m-faq summary > span) {
   color: #8c6b28;
 }
 .marketing-site .m-section:not(.m-tint)
-  :is(
-    .m-lead,
-    .m-small,
-    .m-challenges p,
-    .m-service-list p:not(.m-eyebrow),
-    .m-service-detail > span:first-child,
-    .m-reason p,
-    .m-funnel-row p,
-    .m-case-top,
-    .m-case-card dd,
-    .m-artifacts article > p,
-    .m-process p,
-    .m-pricing p:not(.m-eyebrow),
-    .m-price-factors span,
-    .m-faq details > p,
-    .m-glance dt,
-    .m-task-card p,
-    .m-output span,
-    .m-checklist,
-    .m-cycle p,
-    .m-company dt,
-    .m-wireframe span,
-    .m-roadmap-head,
-    .m-sample-label,
-    .m-paper-note
-  ) {
+  :is(.m-lead,.m-small,.m-challenges p,.m-service-list p:not(.m-eyebrow),.m-service-detail > span:first-child,.m-reason p,.m-case-top,.m-case-card dd,.m-process p,.m-pricing p:not(.m-eyebrow),.m-price-factors span,.m-faq details > p,.m-glance dt,.m-task-card p,.m-output span,.m-checklist,.m-company dt) {
   color: #5d6168;
 }
 .marketing-site .m-section:not(.m-tint)
-  :is(
-    .m-system,
-    .m-funnel,
-    .m-case-card,
-    .m-pricing,
-    .m-delivery-preview,
-    .m-task-card,
-    .m-artifact,
-    .m-related a,
-    .m-cycle > div,
-    .m-result-card,
-    .m-case-filters button,
-    .m-contact-form input,
-    .m-contact-form select,
-    .m-contact-form textarea,
-    .m-wireframe > div,
-    .m-article-toc,
-    .m-system-grid li,
-    .m-challenges > a
-  ) {
+  :is(.m-case-card,.m-pricing,.m-task-card,.m-related a,.m-case-filters button,.m-contact-form input,.m-contact-form select,.m-contact-form textarea,.m-article-toc,.m-challenges > a) {
   background: #ffffff;
   color: #14161a;
   border-color: #e2e0d8;
@@ -879,12 +700,6 @@
 }
 .marketing-site .m-section:not(.m-tint) .m-case-result strong {
   color: #14161a;
-}
-.marketing-site .m-section:not(.m-tint) :is(.m-paper-cells > span, .m-paper-line, .m-result-bar) {
-  background: #e8e6de;
-}
-.marketing-site .m-section:not(.m-tint) .m-workflow-preview strong {
-  background: #f6f5f1;
 }
 .marketing-site .m-section:not(.m-tint) .m-contact-form label > span {
   background: #efe9d9;
@@ -1146,3 +961,5 @@
 
 .m-improvement-evidence { margin-top: 64px; text-align: left; }
 .m-improvement-evidence #effect { scroll-margin-top: 100px; }
+
+}

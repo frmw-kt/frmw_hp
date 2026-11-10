@@ -10,7 +10,7 @@ export default function ProposalIndexPage() {
     <div className="min-h-screen bg-[#fafafa]">
       <header className="bg-[#0a0a0a] px-6 py-4">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
-          <span className="text-base font-bold tracking-tight text-[#C9A84C]">Framework</span>
+          <span className="text-base font-bold tracking-tight text-[#7138EF]">Framework</span>
           <span className="text-xs text-white/30 uppercase tracking-widest">Dev only</span>
         </div>
       </header>
