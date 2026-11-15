@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="月の通数でプランを選ぶ図。200通以下はコミュニケーションプラン0円、201から5,000通はライトプラン月5,000円、5,001から30,000通はスタンダードプラン月15,000円、30,001通以上はスタンダードプランに追加メッセージ1通3円。いずれも税別">
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="24" y="46" font-size="28" font-weight="700" fill="#191c19">月の通数でプランを選ぶ（税別）</text>
+    <text x="24" y="86" font-size="22" fill="#41483c">月の通数＝ターゲットリーチ×月の配信回数</text>
+
+    <rect x="24" y="110" width="300" height="80" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="44" y="160" font-size="26" font-weight="700" fill="#191c19">200通以下</text>
+    <path d="M324 150 L346 150" stroke="#806222" stroke-width="4"/>
+    <path d="M342 140 L356 150 L342 160 Z" fill="#806222"/>
+    <rect x="360" y="110" width="416" height="80" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="378" y="160" font-size="24" fill="#191c19">コミュニケーション 0円</text>
+
+    <rect x="24" y="210" width="300" height="80" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="44" y="260" font-size="26" font-weight="700" fill="#191c19">201〜5,000通</text>
+    <path d="M324 250 L346 250" stroke="#806222" stroke-width="4"/>
+    <path d="M342 240 L356 250 L342 260 Z" fill="#806222"/>
+    <rect x="360" y="210" width="416" height="80" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="378" y="260" font-size="24" fill="#191c19">ライト 月5,000円</text>
+
+    <rect x="24" y="310" width="300" height="80" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="44" y="360" font-size="26" font-weight="700" fill="#191c19">5,001〜30,000通</text>
+    <path d="M324 350 L346 350" stroke="#806222" stroke-width="4"/>
+    <path d="M342 340 L356 350 L342 360 Z" fill="#806222"/>
+    <rect x="360" y="310" width="416" height="80" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+    <text x="378" y="360" font-size="24" fill="#191c19">スタンダード 月15,000円</text>
+
+    <rect x="24" y="410" width="300" height="80" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+    <text x="44" y="460" font-size="26" font-weight="700" fill="#191c19">30,001通以上</text>
+    <path d="M324 450 L346 450" stroke="#806222" stroke-width="4"/>
+    <path d="M342 440 L356 450 L342 460 Z" fill="#806222"/>
+    <rect x="360" y="410" width="416" height="80" rx="10" fill="#191c19"/>
+    <text x="378" y="446" font-size="24" fill="#ffffff">スタンダード 月15,000円</text>
+    <text x="378" y="478" font-size="22" fill="#ffffff">＋超えた分 1通3円</text>
+
+    <text x="24" y="530" font-size="22" fill="#41483c">追加メッセージは月20万通を超えた分が1通2.5円</text>
+  </g>
+</svg>

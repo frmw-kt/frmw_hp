@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="月の通数ごとの月額の試算。200通は0円、5,000通は5,000円、30,000通は15,000円、40,000通は45,000円、100,000通は225,000円。いずれも税別で、30,000通を超えると超えた分に1通3円かかる">
+  <rect width="800" height="600" fill="#f7f7f4"/>
+  <g font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+    <text x="24" y="46" font-size="28" font-weight="700" fill="#191c19">月の通数と月額（税別・試算）</text>
+    <path d="M250 80 L250 500" stroke="#e3e2dc" stroke-width="2"/>
+
+    <text x="24" y="118" font-size="24" font-weight="700" fill="#191c19">200通</text>
+    <text x="24" y="148" font-size="22" fill="#41483c">コミュニケーション</text>
+    <text x="262" y="134" font-size="24" font-weight="700" fill="#191c19">0円</text>
+
+    <text x="24" y="198" font-size="24" font-weight="700" fill="#191c19">5,000通</text>
+    <text x="24" y="228" font-size="22" fill="#41483c">ライト</text>
+    <rect x="250" y="190" width="9" height="36" fill="#c9a84c"/>
+    <text x="272" y="214" font-size="24" font-weight="700" fill="#191c19">5,000円</text>
+
+    <text x="24" y="278" font-size="24" font-weight="700" fill="#191c19">30,000通</text>
+    <text x="24" y="308" font-size="22" fill="#41483c">スタンダード</text>
+    <rect x="250" y="270" width="27" height="36" fill="#c9a84c"/>
+    <text x="290" y="294" font-size="24" font-weight="700" fill="#191c19">15,000円</text>
+
+    <text x="24" y="358" font-size="24" font-weight="700" fill="#191c19">40,000通</text>
+    <text x="24" y="388" font-size="22" fill="#41483c">追加1万通×3円</text>
+    <rect x="250" y="350" width="80" height="36" fill="#806222"/>
+    <text x="342" y="374" font-size="24" font-weight="700" fill="#191c19">45,000円</text>
+
+    <text x="24" y="438" font-size="24" font-weight="700" fill="#191c19">100,000通</text>
+    <text x="24" y="468" font-size="22" fill="#41483c">追加7万通×3円</text>
+    <rect x="250" y="430" width="400" height="36" fill="#806222"/>
+    <text x="660" y="454" font-size="24" font-weight="700" fill="#191c19">225,000円</text>
+
+    <text x="24" y="540" font-size="22" fill="#41483c">仮定：ターゲットリーチ全員に送った月の通数。</text>
+    <text x="24" y="574" font-size="22" fill="#41483c">棒の長さは月額に比例（2026年11月16日時点の料金）</text>
+  </g>
+</svg>
