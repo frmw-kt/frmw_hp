@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="600" fill="#f7f7f4"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <g font-size="24" font-weight="700" fill="#806222">
+    <text x="30" y="46">設定するもの（レベル）</text>
+    <text x="470" y="46">問い合わせを増やす例</text>
+  </g>
+  <g fill="none" stroke="#806222" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="220" y1="190" x2="220" y2="226"/>
+    <line x1="220" y1="370" x2="220" y2="406"/>
+  </g>
+  <g stroke="#c9a84c" stroke-width="3" fill="#ffffff">
+    <rect x="20" y="70" width="400" height="120" rx="12"/>
+    <rect x="20" y="230" width="400" height="140" rx="12"/>
+    <rect x="20" y="410" width="400" height="150" rx="12"/>
+  </g>
+  <g stroke="#806222" stroke-width="3" fill="#ffffff">
+    <rect x="460" y="90" width="320" height="80" rx="12"/>
+    <rect x="460" y="260" width="320" height="80" rx="12"/>
+    <rect x="460" y="430" width="320" height="110" rx="12"/>
+  </g>
+  <g font-size="26" font-weight="700" fill="#191c19">
+    <text x="44" y="112">①キャンペーンの目的</text>
+    <text x="44" y="272">②コンバージョンの場所</text>
+    <text x="44" y="452">③パフォーマンスの目標</text>
+  </g>
+  <g font-size="22" fill="#41483c">
+    <text x="44" y="146">キャンペーン全体で目指す成果</text>
+    <text x="44" y="174">（公開後は変更できない）</text>
+    <text x="44" y="306">成果が起きる場所（広告セット）</text>
+    <text x="44" y="334">（広告セットの公開後は</text>
+    <text x="44" y="360">変更できない）</text>
+    <text x="44" y="486">配信システムが入札する結果</text>
+    <text x="44" y="514">（変更できるが大幅な編集）</text>
+    <text x="44" y="542">①と②で選べる範囲が決まる</text>
+  </g>
+  <g font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">
+    <text x="620" y="140">リード</text>
+    <text x="620" y="310">ウェブサイト</text>
+    <text x="620" y="476">リード数の最大化</text>
+  </g>
+  <g font-size="22" fill="#41483c" text-anchor="middle">
+    <text x="620" y="514">イベント：問い合わせ</text>
+  </g>
+</svg>
