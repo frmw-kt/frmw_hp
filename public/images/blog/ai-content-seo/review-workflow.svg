@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 790" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="790" fill="#f7f7f4"/>
+  <text x="400" y="44" text-anchor="middle" font-size="27" font-weight="bold" fill="#191c19">AIの下書きを公開するまでの工程と担当</text>
+
+  <!-- 1 -->
+  <circle cx="64" cy="128" r="40" fill="#c9a84c"/>
+  <text x="64" y="137" text-anchor="middle" font-size="26" font-weight="bold" fill="#191c19">AI</text>
+  <rect x="124" y="76" width="652" height="104" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="3"/>
+  <text x="148" y="118" font-size="27" font-weight="bold" fill="#191c19">① 下書き</text>
+  <text x="148" y="158" font-size="24" fill="#41483c">調べものの補助、構成の整理、文章の案</text>
+  <path d="M450 184 L450 204" stroke="#806222" stroke-width="4"/>
+  <path d="M438 200 L450 218 L462 200 Z" fill="#806222"/>
+
+  <!-- 2 -->
+  <circle cx="64" cy="274" r="40" fill="#191c19"/>
+  <text x="64" y="283" text-anchor="middle" font-size="26" font-weight="bold" fill="#ffffff">人</text>
+  <rect x="124" y="222" width="652" height="104" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="148" y="264" font-size="27" font-weight="bold" fill="#191c19">② 事実の確認</text>
+  <text x="148" y="304" font-size="24" fill="#41483c">数値・仕様・固有名詞を一次資料と照合</text>
+  <path d="M450 330 L450 350" stroke="#806222" stroke-width="4"/>
+  <path d="M438 346 L450 364 L462 346 Z" fill="#806222"/>
+
+  <!-- 3 -->
+  <circle cx="64" cy="420" r="40" fill="#191c19"/>
+  <text x="64" y="429" text-anchor="middle" font-size="26" font-weight="bold" fill="#ffffff">人</text>
+  <rect x="124" y="368" width="652" height="104" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="148" y="410" font-size="27" font-weight="bold" fill="#191c19">③ 独自の情報を足す</text>
+  <text x="148" y="450" font-size="24" fill="#41483c">自社の手順・判断の基準・対応条件</text>
+  <path d="M450 476 L450 496" stroke="#806222" stroke-width="4"/>
+  <path d="M438 492 L450 510 L462 492 Z" fill="#806222"/>
+
+  <!-- 4 -->
+  <circle cx="64" cy="566" r="40" fill="#191c19"/>
+  <text x="64" y="575" text-anchor="middle" font-size="26" font-weight="bold" fill="#ffffff">人</text>
+  <rect x="124" y="514" width="652" height="104" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="148" y="556" font-size="27" font-weight="bold" fill="#191c19">④ 検索に出る部分の確認</text>
+  <text x="148" y="596" font-size="24" fill="#41483c">タイトル・説明文・構造化データ・alt</text>
+  <path d="M450 622 L450 642" stroke="#806222" stroke-width="4"/>
+  <path d="M438 638 L450 656 L462 638 Z" fill="#806222"/>
+
+  <!-- 5 -->
+  <circle cx="64" cy="712" r="40" fill="#191c19"/>
+  <text x="64" y="721" text-anchor="middle" font-size="26" font-weight="bold" fill="#ffffff">人</text>
+  <rect x="124" y="660" width="652" height="104" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="148" y="702" font-size="27" font-weight="bold" fill="#191c19">⑤ 公開</text>
+  <text x="148" y="742" font-size="24" fill="#41483c">作り方が気になる記事では、使い方を開示</text>
+</svg>

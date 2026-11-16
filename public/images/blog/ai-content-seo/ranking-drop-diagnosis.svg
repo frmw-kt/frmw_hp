@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="700" fill="#f7f7f4"/>
+  <text x="400" y="46" text-anchor="middle" font-size="27" font-weight="bold" fill="#191c19">AIで作った記事の順位が下がったときの順番</text>
+
+  <!-- 1 -->
+  <rect x="30" y="76" width="470" height="120" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="54" y="122" font-size="26" font-weight="bold" fill="#191c19">① 手動による対策</text>
+  <text x="54" y="162" font-size="24" fill="#41483c">レポートに問題があるか</text>
+  <path d="M500 136 L548 136" stroke="#806222" stroke-width="4"/>
+  <path d="M544 124 L562 136 L544 148 Z" fill="#806222"/>
+  <text x="508" y="122" font-size="22" fill="#806222">ある</text>
+  <rect x="566" y="76" width="210" height="120" rx="10" fill="#191c19"/>
+  <text x="671" y="116" text-anchor="middle" font-size="23" font-weight="bold" fill="#ffffff">全ページを直し</text>
+  <text x="671" y="150" text-anchor="middle" font-size="23" font-weight="bold" fill="#ffffff">審査を</text>
+  <text x="671" y="182" text-anchor="middle" font-size="23" font-weight="bold" fill="#ffffff">リクエスト</text>
+  <path d="M265 196 L265 226" stroke="#806222" stroke-width="4"/>
+  <path d="M253 222 L265 240 L277 222 Z" fill="#806222"/>
+  <text x="282" y="226" font-size="22" fill="#806222">ない</text>
+
+  <!-- 2 -->
+  <rect x="30" y="246" width="746" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="54" y="292" font-size="26" font-weight="bold" fill="#191c19">② 検索パフォーマンスで特定する</text>
+  <text x="54" y="332" font-size="24" fill="#41483c">下がったページと、影響が大きい検索の種類</text>
+  <path d="M403 356 L403 386" stroke="#806222" stroke-width="4"/>
+  <path d="M391 382 L403 400 L415 382 Z" fill="#806222"/>
+
+  <!-- 3 -->
+  <rect x="30" y="406" width="746" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="54" y="452" font-size="26" font-weight="bold" fill="#191c19">③ そのページを自己評価の質問で点検</text>
+  <text x="54" y="492" font-size="24" fill="#41483c">独自の情報があるか、要約だけになっていないか</text>
+  <path d="M403 516 L403 546" stroke="#806222" stroke-width="4"/>
+  <path d="M391 542 L403 560 L415 542 Z" fill="#806222"/>
+
+  <!-- 4 -->
+  <rect x="30" y="566" width="746" height="110" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="3"/>
+  <text x="54" y="612" font-size="26" font-weight="bold" fill="#191c19">④ 価値を足すか、検索から外す</text>
+  <text x="54" y="652" font-size="24" fill="#41483c">価値のない量産ページは検索から除外する</text>
+</svg>

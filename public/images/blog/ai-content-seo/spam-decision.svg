@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 720" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="720" fill="#f7f7f4"/>
+  <text x="400" y="46" text-anchor="middle" font-size="27" font-weight="bold" fill="#191c19">AIを使った記事がスパムに当たるかの判断</text>
+
+  <!-- Q1 -->
+  <rect x="30" y="76" width="470" height="120" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="54" y="122" font-size="26" font-weight="bold" fill="#191c19">① 主な目的は</text>
+  <text x="54" y="162" font-size="26" font-weight="bold" fill="#191c19">検索順位の操作か</text>
+  <path d="M500 136 L548 136" stroke="#806222" stroke-width="4"/>
+  <path d="M544 124 L562 136 L544 148 Z" fill="#806222"/>
+  <text x="508" y="122" font-size="22" fill="#806222">はい</text>
+  <rect x="566" y="86" width="210" height="100" rx="10" fill="#191c19"/>
+  <text x="671" y="128" text-anchor="middle" font-size="24" font-weight="bold" fill="#ffffff">スパムポリシー</text>
+  <text x="671" y="162" text-anchor="middle" font-size="24" font-weight="bold" fill="#ffffff">に違反</text>
+  <path d="M265 196 L265 226" stroke="#806222" stroke-width="4"/>
+  <path d="M253 222 L265 240 L277 222 Z" fill="#806222"/>
+  <text x="282" y="226" font-size="22" fill="#806222">いいえ</text>
+
+  <!-- Q2 -->
+  <rect x="30" y="246" width="470" height="120" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="54" y="292" font-size="26" font-weight="bold" fill="#191c19">② 価値を加えずに</text>
+  <text x="54" y="332" font-size="26" font-weight="bold" fill="#191c19">大量のページを作っているか</text>
+  <path d="M500 306 L548 306" stroke="#806222" stroke-width="4"/>
+  <path d="M544 294 L562 306 L544 318 Z" fill="#806222"/>
+  <text x="508" y="292" font-size="22" fill="#806222">はい</text>
+  <rect x="566" y="256" width="210" height="100" rx="10" fill="#191c19"/>
+  <text x="671" y="298" text-anchor="middle" font-size="24" font-weight="bold" fill="#ffffff">大量生成の</text>
+  <text x="671" y="332" text-anchor="middle" font-size="24" font-weight="bold" fill="#ffffff">不正使用の例</text>
+  <path d="M265 366 L265 396" stroke="#806222" stroke-width="4"/>
+  <path d="M253 392 L265 410 L277 392 Z" fill="#806222"/>
+  <text x="282" y="396" font-size="22" fill="#806222">いいえ</text>
+
+  <!-- Q3 -->
+  <rect x="30" y="416" width="470" height="120" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="54" y="462" font-size="26" font-weight="bold" fill="#191c19">③ 公開前に人が</text>
+  <text x="54" y="502" font-size="26" font-weight="bold" fill="#191c19">事実を確かめたか</text>
+  <path d="M500 476 L548 476" stroke="#806222" stroke-width="4"/>
+  <path d="M544 464 L562 476 L544 488 Z" fill="#806222"/>
+  <text x="508" y="462" font-size="22" fill="#806222">いいえ</text>
+  <rect x="566" y="426" width="210" height="100" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="671" y="468" text-anchor="middle" font-size="24" font-weight="bold" fill="#806222">公開せず</text>
+  <text x="671" y="502" text-anchor="middle" font-size="24" font-weight="bold" fill="#806222">確認に戻す</text>
+  <path d="M265 536 L265 566" stroke="#806222" stroke-width="4"/>
+  <path d="M253 562 L265 580 L277 562 Z" fill="#806222"/>
+  <text x="282" y="566" font-size="22" fill="#806222">はい</text>
+
+  <!-- Result -->
+  <rect x="30" y="586" width="746" height="110" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="3"/>
+  <text x="403" y="632" text-anchor="middle" font-size="26" font-weight="bold" fill="#191c19">作り方は問われず、内容の品質で評価される</text>
+  <text x="403" y="672" text-anchor="middle" font-size="23" fill="#41483c">（検索の基本事項とスパムポリシーを満たすことが前提）</text>
+</svg>
