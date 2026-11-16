@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>イベント、キーイベント、コンバージョンの関係</title>
+  <desc>GA4が集めたイベントのうち、成果にあたるものにマークを付けるとキーイベントになり、GA4のレポートの［キーイベント］列で数えられる。キーイベントをもとにGoogle広告のコンバージョンを作ると、広告の効果測定と入札に使える。</desc>
+  <rect width="800" height="480" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">イベント → キーイベント → コンバージョン</text>
+
+  <rect x="32" y="76" width="736" height="104" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="3"/>
+  <text x="56" y="116" font-size="26" font-weight="700" fill="#191c19">イベント</text>
+  <text x="56" y="158" font-size="24" fill="#41483c">ページの表示・スクロールなど、GA4が集める行動</text>
+
+  <text x="384" y="214" font-size="28" fill="#806222">▼</text>
+  <text x="424" y="214" font-size="22" fill="#806222">成果にあたるものにマーク</text>
+
+  <rect x="32" y="228" width="736" height="104" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="268" font-size="26" font-weight="700" fill="#806222">キーイベント（以前の「コンバージョン」）</text>
+  <text x="56" y="310" font-size="24" fill="#191c19">GA4のレポートで流入元ごとに数える</text>
+
+  <text x="384" y="366" font-size="28" fill="#806222">▼</text>
+  <text x="424" y="366" font-size="22" fill="#806222">入札に使うなら作成</text>
+
+  <rect x="32" y="380" width="736" height="88" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="56" y="418" font-size="26" font-weight="700" fill="#806222">コンバージョン（Google広告）</text>
+  <text x="56" y="452" font-size="24" fill="#191c19">広告の効果測定と入札の最適化に使う</text>
+</svg>

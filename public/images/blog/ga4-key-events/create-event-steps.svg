@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>完了ページの表示からキーイベントを作る手順</title>
+  <desc>［管理］の［データの表示］で［イベント］を開き、［+ イベントを作成］でイベント名にgenerate_leadを入れてキーイベントとしてマークを付け、［コードなしで作成］でpage_viewと完了ページのURLを条件にして作成する。page_view自体はすべてのページの表示を数えるのでキーイベントにしない。</desc>
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">完了ページからキーイベントを作る4手順</text>
+
+  <rect x="32" y="72" width="736" height="80" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="122" font-size="24" fill="#191c19"><tspan font-weight="700" fill="#806222">1</tspan>　［管理］→［データの表示］→［イベント］</text>
+
+  <rect x="32" y="168" width="736" height="80" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="218" font-size="24" fill="#191c19"><tspan font-weight="700" fill="#806222">2</tspan>　［+ イベントを作成］→ 名前 generate_lead</text>
+
+  <rect x="32" y="264" width="736" height="80" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="314" font-size="24" fill="#191c19"><tspan font-weight="700" fill="#806222">3</tspan>　キーイベントとしてマーク（切り替えボタン）</text>
+
+  <rect x="32" y="360" width="736" height="104" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="402" font-size="24" fill="#191c19"><tspan font-weight="700" fill="#806222">4</tspan>　［コードなしで作成］：page_view ＋</text>
+  <text x="96" y="442" font-size="24" fill="#191c19">完了ページのURL →［作成］</text>
+
+  <rect x="32" y="480" width="736" height="64" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3" stroke-dasharray="8 6"/>
+  <text x="56" y="522" font-size="22" fill="#41483c">page_view自体は全ページを数えるのでマークしない</text>
+</svg>

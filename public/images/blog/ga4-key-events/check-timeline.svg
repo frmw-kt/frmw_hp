@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>キーイベントの設定後に確かめる時期</title>
+  <desc>マークの設定が適用されるまで数分から数時間、適用後に自分で完了ページまで進むとリアルタイム レポートに数分後に表示され、標準レポートへの反映には最大24時間かかる。Google広告に取り込んだ場合、Google広告でデータが使えるまで最大24時間。</desc>
+  <rect width="800" height="480" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">設定の後に確かめる時期</text>
+  <line x1="80" y1="96" x2="80" y2="440" stroke="#c9a84c" stroke-width="4"/>
+
+  <circle cx="80" cy="110" r="12" fill="#c9a84c"/>
+  <text x="112" y="104" font-size="24" font-weight="700" fill="#806222">数分〜数時間</text>
+  <text x="112" y="138" font-size="24" fill="#191c19">マークの設定が適用される</text>
+
+  <circle cx="80" cy="200" r="12" fill="#c9a84c"/>
+  <text x="112" y="194" font-size="24" font-weight="700" fill="#806222">適用後に自分で完了ページへ</text>
+  <text x="112" y="228" font-size="24" fill="#191c19">数分後にリアルタイム レポートに出る</text>
+
+  <circle cx="80" cy="290" r="12" fill="#c9a84c"/>
+  <text x="112" y="284" font-size="24" font-weight="700" fill="#806222">最大24時間</text>
+  <text x="112" y="318" font-size="24" fill="#191c19">標準レポートに反映される</text>
+
+  <circle cx="80" cy="380" r="12" fill="#806222"/>
+  <text x="112" y="374" font-size="24" font-weight="700" fill="#806222">Google広告に取り込んだ場合</text>
+  <text x="112" y="408" font-size="24" fill="#191c19">広告側で使えるまで最大24時間</text>
+  <text x="112" y="446" font-size="22" fill="#41483c">※どれも設定より前のデータは変わらない</text>
+</svg>

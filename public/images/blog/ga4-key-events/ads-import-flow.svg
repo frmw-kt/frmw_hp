@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>GA4のキーイベントをGoogle広告の入札に使うまでの流れ</title>
+  <desc>前提としてGA4とGoogle広告をリンクし、Google広告の自動タグ設定を有効にする。GA4の［広告］の［コンバージョン管理］か、Google広告の［目標］の［概要］からキーイベントをもとにコンバージョンを作る。GA4の画面で作ったものはサブになるので、入札に使うならGoogle広告の［アクションの最適化］でメインにする。同じ行動を測る別のメインがあれば片方をサブにする。</desc>
+  <rect width="800" height="600" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">キーイベントを入札に使うまで</text>
+
+  <rect x="32" y="72" width="736" height="104" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="3"/>
+  <text x="56" y="112" font-size="24" font-weight="700" fill="#191c19">前提：GA4とGoogle広告をリンク</text>
+  <text x="56" y="152" font-size="24" fill="#41483c">Google広告の自動タグ設定を有効にする</text>
+
+  <rect x="32" y="196" width="356" height="140" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="52" y="236" font-size="24" font-weight="700" fill="#806222">GA4で作る</text>
+  <text x="52" y="276" font-size="22" fill="#191c19">［広告］→［コンバージョン</text>
+  <text x="52" y="308" font-size="22" fill="#191c19">管理］→ サブで作られる</text>
+
+  <rect x="412" y="196" width="356" height="140" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="432" y="236" font-size="24" font-weight="700" fill="#806222">Google広告で作る</text>
+  <text x="432" y="276" font-size="22" fill="#191c19">［目標］→［概要］→</text>
+  <text x="432" y="308" font-size="22" fill="#191c19">GA4のイベントを選ぶ</text>
+
+  <text x="384" y="378" font-size="28" fill="#806222">▼</text>
+
+  <rect x="32" y="396" width="736" height="88" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="56" y="436" font-size="24" font-weight="700" fill="#806222">Google広告の［アクションの最適化］</text>
+  <text x="56" y="470" font-size="24" fill="#191c19">入札に使うものだけ「メイン」にする</text>
+
+  <rect x="32" y="500" width="736" height="84" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3" stroke-dasharray="8 6"/>
+  <text x="56" y="536" font-size="22" fill="#41483c">同じ送信をGoogle タグでも測っているなら、</text>
+  <text x="56" y="568" font-size="22" fill="#41483c">メインはどちらか一方に（二重に数えないため）</text>
+</svg>
