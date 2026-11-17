@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <g font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">
+    <text x="200" y="44">インスタの「宣伝」</text>
+    <text x="600" y="44">広告マネージャ</text>
+  </g>
+  <g stroke="#c9a84c" stroke-width="3" fill="#ffffff">
+    <rect x="20" y="66" width="360" height="150" rx="12"/>
+  </g>
+  <g stroke="#806222" stroke-width="3" fill="#ffffff">
+    <rect x="420" y="66" width="360" height="150" rx="12"/>
+  </g>
+  <g font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">
+    <text x="200" y="106">目標を3つから選ぶ</text>
+    <text x="600" y="106">目的を6つから選ぶ</text>
+  </g>
+  <g font-size="22" fill="#41483c" text-anchor="middle">
+    <text x="200" y="144">プロフィールへのアクセス</text>
+    <text x="200" y="174">ウェブサイトへのアクセス</text>
+    <text x="200" y="204">メッセージ件数</text>
+    <text x="600" y="144">認知・トラフィック・</text>
+    <text x="600" y="174">エンゲージメント・リード・</text>
+    <text x="600" y="204">アプリの宣伝・売上</text>
+  </g>
+  <g fill="none" stroke="#806222" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="200" y1="216" x2="200" y2="262"/>
+    <line x1="600" y1="216" x2="600" y2="262"/>
+  </g>
+  <g stroke="#e3e2dc" stroke-width="3" fill="#ffffff">
+    <rect x="20" y="266" width="760" height="200" rx="12"/>
+  </g>
+  <g font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">
+    <text x="400" y="306">配信を決める3つの設定</text>
+  </g>
+  <g font-size="22" fill="#41483c" text-anchor="middle">
+    <text x="400" y="346">キャンペーンの目的／コンバージョンの場所／</text>
+    <text x="400" y="376">パフォーマンスの目標</text>
+  </g>
+  <g font-size="22" font-weight="700" fill="#806222" text-anchor="middle">
+    <text x="200" y="428">背景で自動的に設定</text>
+    <text x="600" y="428">自分で選ぶ</text>
+  </g>
+  <g font-size="22" fill="#41483c" text-anchor="middle">
+    <text x="400" y="510">選べる範囲が違うだけで、どちらも有料の広告</text>
+    <text x="400" y="540">（請求書では宣伝も広告として表示される）</text>
+  </g>
+</svg>

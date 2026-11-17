@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="700" fill="#f7f7f4"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#806222" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M160,72 L110,72 L110,200"/>
+    <path d="M640,72 L720,72 L720,200"/>
+    <line x1="620" y1="314" x2="620" y2="370"/>
+    <path d="M460,437 L390,437 L390,540"/>
+    <path d="M700,500 L700,540"/>
+  </g>
+  <g stroke="#c9a84c" stroke-width="3" fill="#ffffff">
+    <rect x="160" y="20" width="480" height="104" rx="12"/>
+    <rect x="460" y="374" width="320" height="126" rx="12"/>
+  </g>
+  <g stroke="#806222" stroke-width="3" fill="#ffffff">
+    <rect x="20" y="204" width="260" height="140" rx="12"/>
+    <rect x="460" y="204" width="320" height="110" rx="12"/>
+    <rect x="200" y="544" width="300" height="136" rx="12"/>
+    <rect x="530" y="544" width="250" height="136" rx="12"/>
+  </g>
+  <g font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">
+    <text x="400" y="62">増やしたい成果は</text>
+    <text x="400" y="98">どこで起きるか</text>
+    <text x="150" y="250">「宣伝」で</text>
+    <text x="150" y="286">足りる</text>
+    <text x="620" y="246">自社サイト・</text>
+    <text x="620" y="282">予約システム</text>
+    <text x="620" y="414">件数を数えて</text>
+    <text x="620" y="450">1件の費用で</text>
+    <text x="620" y="486">判断したいか</text>
+    <text x="350" y="592">「宣伝」の</text>
+    <text x="350" y="628">サイトへのアクセス</text>
+    <text x="655" y="592">広告</text>
+    <text x="655" y="628">マネージャ</text>
+  </g>
+  <g font-size="22" fill="#41483c" text-anchor="middle">
+    <text x="150" y="322">プロフィール・DM</text>
+    <text x="350" y="664">（アクセス数で判断）</text>
+    <text x="655" y="664">リード・売上</text>
+  </g>
+  <g font-size="22" font-weight="700" fill="#806222">
+    <text x="122" y="172">Instagramの中</text>
+    <text x="708" y="172" text-anchor="end">サイトの中</text>
+    <text x="400" y="500">いいえ</text>
+    <text x="712" y="530">はい</text>
+  </g>
+</svg>
