@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="700" fill="#f7f7f4"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#806222"/></marker>
+  </defs>
+  <!-- Q1 -->
+  <rect x="30" y="30" width="480" height="96" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="50" y="70" font-size="24" fill="#191c19">① 広告の商品・サービスを説明する</text>
+  <text x="50" y="104" font-size="24" fill="#191c19">ページが既存のサイトにあるか</text>
+  <line x1="510" y1="78" x2="560" y2="78" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <text x="514" y="66" font-size="22" fill="#806222">ない</text>
+  <rect x="566" y="42" width="210" height="72" rx="10" fill="#c9a84c"/>
+  <text x="671" y="88" font-size="24" fill="#191c19" text-anchor="middle">専用LPを作る</text>
+  <line x1="270" y1="126" x2="270" y2="176" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <text x="282" y="160" font-size="22" fill="#806222">ある</text>
+  <!-- Q2 -->
+  <rect x="30" y="182" width="480" height="96" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="50" y="222" font-size="24" fill="#191c19">② 広告で示した特典・行動が</text>
+  <text x="50" y="256" font-size="24" fill="#191c19">そのページに載っているか</text>
+  <line x1="510" y1="230" x2="560" y2="230" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <text x="514" y="218" font-size="22" fill="#806222">ある</text>
+  <rect x="566" y="194" width="210" height="72" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="671" y="240" font-size="24" fill="#191c19" text-anchor="middle">既存ページを使う</text>
+  <line x1="270" y1="278" x2="270" y2="328" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <text x="282" y="312" font-size="22" fill="#806222">ない</text>
+  <!-- Q3 -->
+  <rect x="30" y="334" width="480" height="96" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="50" y="374" font-size="24" fill="#191c19">③ そのページの文言を</text>
+  <text x="50" y="408" font-size="24" fill="#191c19">公開前に直せるか</text>
+  <line x1="510" y1="382" x2="560" y2="382" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <text x="514" y="370" font-size="22" fill="#806222">直せる</text>
+  <rect x="566" y="336" width="210" height="92" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="671" y="374" font-size="24" fill="#191c19" text-anchor="middle">追記して</text>
+  <text x="671" y="408" font-size="24" fill="#191c19" text-anchor="middle">既存ページを使う</text>
+  <line x1="270" y1="430" x2="270" y2="480" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <text x="282" y="464" font-size="22" fill="#806222">直せない</text>
+  <rect x="30" y="486" width="746" height="72" rx="10" fill="#c9a84c"/>
+  <text x="403" y="532" font-size="24" fill="#191c19" text-anchor="middle">既存ページから合うものを選ぶか、専用LPを作る</text>
+  <!-- Meta note -->
+  <rect x="30" y="586" width="746" height="92" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="50" y="624" font-size="22" fill="#41483c">Meta広告で、ページもMetaピクセルも用意できない</text>
+  <text x="50" y="658" font-size="22" fill="#41483c">→ インスタントフォームで始める（ページ不要）</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#806222"/></marker>
+  </defs>
+  <!-- ON -->
+  <text x="30" y="46" font-size="24" fill="#191c19">最終ページ URL の拡張：オン（初期設定）</text>
+  <rect x="30" y="66" width="150" height="190" rx="10" fill="#191c19"/>
+  <text x="105" y="170" font-size="26" fill="#ffffff" text-anchor="middle">P-MAX</text>
+  <line x1="180" y1="100" x2="246" y2="100" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="180" y1="160" x2="246" y2="160" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="180" y1="220" x2="246" y2="220" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="252" y="72" width="518" height="56" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="272" y="109" font-size="24" fill="#191c19">指定したLP</text>
+  <rect x="252" y="132" width="518" height="56" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="272" y="169" font-size="24" fill="#191c19">同じドメインの別のページ</text>
+  <rect x="252" y="192" width="518" height="56" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="272" y="229" font-size="24" fill="#191c19">除外していないページはどれも候補</text>
+  <!-- OFF -->
+  <text x="30" y="326" font-size="24" fill="#191c19">最終ページ URL の拡張：オフ</text>
+  <rect x="30" y="346" width="150" height="130" rx="10" fill="#191c19"/>
+  <text x="105" y="420" font-size="26" fill="#ffffff" text-anchor="middle">P-MAX</text>
+  <line x1="180" y1="411" x2="246" y2="411" stroke="#806222" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="252" y="352" width="518" height="118" rx="8" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="272" y="400" font-size="24" fill="#191c19">アセット グループとページフィードで</text>
+  <text x="272" y="436" font-size="24" fill="#191c19">指定したURLだけ</text>
+  <text x="30" y="530" font-size="22" fill="#41483c">LPだけに誘導したいときはオフにするか、ほかのページを除外する</text>
+</svg>
