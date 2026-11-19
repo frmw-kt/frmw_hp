@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="520" fill="#ffffff"/>
+  <path d="M60 60 L60 470" stroke="#e3e2dc" stroke-width="6"/>
+
+  <circle cx="60" cy="70" r="14" fill="#806222"/>
+  <text x="96" y="66" font-size="24" fill="#191c19" font-weight="bold">切り替えた日</text>
+  <text x="96" y="100" font-size="22" fill="#41483c">新しい戦略・成果の対象の大きな変更</text>
+
+  <circle cx="60" cy="170" r="14" fill="#c9a84c"/>
+  <text x="96" y="166" font-size="24" fill="#191c19" font-weight="bold">〜最大7日：「学習中」の表示</text>
+  <text x="96" y="200" font-size="22" fill="#41483c">広告は通常どおり配信される</text>
+
+  <circle cx="60" cy="270" r="14" fill="#c9a84c"/>
+  <text x="96" y="266" font-size="24" fill="#191c19" font-weight="bold">〜コンバージョン サイクル1〜2回</text>
+  <text x="96" y="300" font-size="22" fill="#41483c">成果が新しい目標値に近づく</text>
+  <text x="96" y="330" font-size="22" fill="#41483c">この間に目標値を何度も変えない</text>
+
+  <circle cx="60" cy="400" r="14" fill="#806222"/>
+  <text x="96" y="396" font-size="24" fill="#191c19" font-weight="bold">評価：サイクル2回分以上の期間</text>
+  <text x="96" y="430" font-size="22" fill="#41483c">1か月など長めの期間・30件以上で</text>
+  <text x="96" y="460" font-size="22" fill="#41483c">実際のCPAと平均目標を比べる</text>
+</svg>

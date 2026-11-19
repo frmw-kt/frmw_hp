@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="700" fill="#ffffff"/>
+
+  <rect x="20" y="20" width="380" height="100" rx="8" fill="#f7f7f4" stroke="#41483c" stroke-width="2"/>
+  <text x="210" y="62" font-size="24" fill="#191c19" text-anchor="middle">Q1 成果を計測できている？</text>
+  <text x="210" y="96" font-size="22" fill="#41483c" text-anchor="middle">（コンバージョンが「有効」）</text>
+
+  <path d="M400 70 L466 70" stroke="#806222" stroke-width="3"/>
+  <path d="M466 62 L478 70 L466 78 Z" fill="#806222"/>
+  <text x="440" y="56" font-size="22" fill="#806222" text-anchor="middle">いいえ</text>
+  <rect x="480" y="20" width="300" height="100" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="630" y="62" font-size="24" fill="#191c19" text-anchor="middle">計測を先に整える</text>
+  <text x="630" y="96" font-size="22" fill="#41483c" text-anchor="middle">当面はクリック数の最大化</text>
+
+  <path d="M210 120 L210 178" stroke="#806222" stroke-width="3"/>
+  <path d="M202 178 L210 190 L218 178 Z" fill="#806222"/>
+  <text x="240" y="160" font-size="22" fill="#806222">はい</text>
+
+  <rect x="20" y="192" width="380" height="110" rx="8" fill="#f7f7f4" stroke="#41483c" stroke-width="2"/>
+  <text x="210" y="236" font-size="24" fill="#191c19" text-anchor="middle">Q2 成果ごとに金額を記録し、</text>
+  <text x="210" y="274" font-size="24" fill="#191c19" text-anchor="middle">30日に15件以上ある？</text>
+
+  <path d="M400 247 L466 247" stroke="#806222" stroke-width="3"/>
+  <path d="M466 239 L478 247 L466 255 Z" fill="#806222"/>
+  <text x="440" y="233" font-size="22" fill="#806222" text-anchor="middle">はい</text>
+  <rect x="480" y="192" width="300" height="110" rx="8" fill="#f8f1dc" stroke="#c9a84c" stroke-width="3"/>
+  <text x="630" y="236" font-size="24" fill="#191c19" text-anchor="middle">目標広告費用対効果</text>
+  <text x="630" y="274" font-size="22" fill="#41483c" text-anchor="middle">コンバージョン値の最大化</text>
+
+  <path d="M210 302 L210 360" stroke="#806222" stroke-width="3"/>
+  <path d="M202 360 L210 372 L218 360 Z" fill="#806222"/>
+  <text x="240" y="342" font-size="22" fill="#806222">いいえ</text>
+
+  <rect x="20" y="374" width="380" height="100" rx="8" fill="#f7f7f4" stroke="#41483c" stroke-width="2"/>
+  <text x="210" y="418" font-size="24" fill="#191c19" text-anchor="middle">Q3 1件あたりの上限額</text>
+  <text x="210" y="454" font-size="24" fill="#191c19" text-anchor="middle">（許容CPA）を決めている？</text>
+
+  <path d="M400 424 L466 424" stroke="#806222" stroke-width="3"/>
+  <path d="M466 416 L478 424 L466 432 Z" fill="#806222"/>
+  <text x="440" y="410" font-size="22" fill="#806222" text-anchor="middle">はい</text>
+  <rect x="480" y="374" width="300" height="100" rx="8" fill="#f8f1dc" stroke="#c9a84c" stroke-width="3"/>
+  <text x="630" y="418" font-size="24" fill="#191c19" text-anchor="middle">目標アクション単価</text>
+  <text x="630" y="454" font-size="22" fill="#41483c" text-anchor="middle">（いわゆる目標CPA）</text>
+
+  <path d="M210 474 L210 532" stroke="#806222" stroke-width="3"/>
+  <path d="M202 532 L210 544 L218 532 Z" fill="#806222"/>
+  <text x="240" y="514" font-size="22" fill="#806222">いいえ</text>
+
+  <rect x="20" y="546" width="380" height="100" rx="8" fill="#f8f1dc" stroke="#c9a84c" stroke-width="3"/>
+  <text x="210" y="590" font-size="24" fill="#191c19" text-anchor="middle">コンバージョン数の最大化</text>
+  <text x="210" y="626" font-size="22" fill="#41483c" text-anchor="middle">（予算を使い切る）</text>
+
+  <text x="480" y="590" font-size="22" fill="#41483c">実績CPAがたまったら</text>
+  <text x="480" y="624" font-size="22" fill="#41483c">Q3に戻って目標値を検討</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="520" fill="#ffffff"/>
+  <text x="140" y="42" font-size="24" fill="#41483c" text-anchor="middle" font-weight="bold">増やしたいもの</text>
+  <text x="540" y="42" font-size="24" fill="#41483c" text-anchor="middle" font-weight="bold">入札戦略</text>
+
+  <rect x="20" y="64" width="240" height="90" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="140" y="104" font-size="24" fill="#191c19" text-anchor="middle">成果の件数</text>
+  <text x="140" y="136" font-size="22" fill="#41483c" text-anchor="middle">（コンバージョン数）</text>
+  <path d="M262 109 L292 109" stroke="#806222" stroke-width="3"/>
+  <path d="M292 101 L304 109 L292 117 Z" fill="#806222"/>
+  <rect x="310" y="64" width="470" height="90" rx="8" fill="#f8f1dc" stroke="#c9a84c" stroke-width="3"/>
+  <text x="545" y="102" font-size="24" fill="#191c19" text-anchor="middle">コンバージョン数の最大化</text>
+  <text x="545" y="136" font-size="24" fill="#191c19" text-anchor="middle">目標アクション単価</text>
+
+  <rect x="20" y="170" width="240" height="90" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="140" y="210" font-size="24" fill="#191c19" text-anchor="middle">成果の金額</text>
+  <text x="140" y="242" font-size="22" fill="#41483c" text-anchor="middle">（コンバージョン値）</text>
+  <path d="M262 215 L292 215" stroke="#806222" stroke-width="3"/>
+  <path d="M292 207 L304 215 L292 223 Z" fill="#806222"/>
+  <rect x="310" y="170" width="470" height="90" rx="8" fill="#f8f1dc" stroke="#c9a84c" stroke-width="3"/>
+  <text x="545" y="208" font-size="24" fill="#191c19" text-anchor="middle">コンバージョン値の最大化</text>
+  <text x="545" y="242" font-size="24" fill="#191c19" text-anchor="middle">目標広告費用対効果</text>
+
+  <rect x="20" y="276" width="240" height="90" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="140" y="330" font-size="24" fill="#191c19" text-anchor="middle">クリック</text>
+  <path d="M262 321 L292 321" stroke="#806222" stroke-width="3"/>
+  <path d="M292 313 L304 321 L292 329 Z" fill="#806222"/>
+  <rect x="310" y="276" width="470" height="90" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="545" y="314" font-size="24" fill="#191c19" text-anchor="middle">クリック数の最大化</text>
+  <text x="545" y="348" font-size="24" fill="#191c19" text-anchor="middle">個別クリック単価</text>
+
+  <rect x="20" y="382" width="240" height="90" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="140" y="422" font-size="24" fill="#191c19" text-anchor="middle">検索結果での</text>
+  <text x="140" y="454" font-size="24" fill="#191c19" text-anchor="middle">表示</text>
+  <path d="M262 427 L292 427" stroke="#806222" stroke-width="3"/>
+  <path d="M292 419 L304 427 L292 435 Z" fill="#806222"/>
+  <rect x="310" y="382" width="470" height="90" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="545" y="436" font-size="24" fill="#191c19" text-anchor="middle">目標インプレッション シェア</text>
+
+  <rect x="310" y="490" width="26" height="20" fill="#f8f1dc" stroke="#c9a84c" stroke-width="3"/>
+  <text x="346" y="508" font-size="22" fill="#41483c">金色の枠＝スマート自動入札</text>
+</svg>
