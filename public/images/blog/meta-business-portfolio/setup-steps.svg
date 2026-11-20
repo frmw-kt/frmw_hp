@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="560" fill="#ffffff"/>
+  <text x="20" y="42" font-size="26" font-weight="bold" fill="#191c19">自社だけで進める</text>
+  <rect x="20" y="60" width="760" height="76" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <circle cx="62" cy="98" r="24" fill="#c9a84c"/>
+  <text x="62" y="107" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="104" y="107" font-size="24" fill="#41483c">自社の担当者が作成する（作成者に全権限）</text>
+  <rect x="20" y="148" width="760" height="76" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <circle cx="62" cy="186" r="24" fill="#c9a84c"/>
+  <text x="62" y="195" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="104" y="195" font-size="24" fill="#41483c">ページ・Instagram・広告アカウント・データセットを追加</text>
+  <rect x="20" y="236" width="760" height="76" rx="8" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <circle cx="62" cy="274" r="24" fill="#c9a84c"/>
+  <text x="62" y="283" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="104" y="283" font-size="24" fill="#41483c">全権限を持つ2人目と二段階認証を整える</text>
+  <text x="20" y="362" font-size="26" font-weight="bold" fill="#191c19">代理店とやり取りする</text>
+  <rect x="20" y="380" width="760" height="76" rx="8" fill="#191c19"/>
+  <circle cx="62" cy="418" r="24" fill="#c9a84c"/>
+  <text x="62" y="427" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+  <text x="104" y="427" font-size="24" fill="#ffffff">代理店のIDを受け取り、パートナーに追加</text>
+  <rect x="20" y="468" width="760" height="76" rx="8" fill="#191c19"/>
+  <circle cx="62" cy="506" r="24" fill="#c9a84c"/>
+  <text x="62" y="515" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+  <text x="104" y="515" font-size="24" fill="#ffffff">任せる作業のタスクだけを選んで渡す</text>
+</svg>
