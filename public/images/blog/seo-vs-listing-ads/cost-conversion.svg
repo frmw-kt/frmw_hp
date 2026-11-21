@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" width="800" height="620" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>SEOの制作費を、同じクリック数を広告で得た場合の額に直す試算（仮定の数値）</title>
+  <desc>広告は月の費用10万円を平均クリック単価250円で割ると月400クリックで、配信を止めると広告からのクリックはなくなる。SEOのページが自然検索で月80クリックを得た場合、同じ語の平均クリック単価250円を掛けると月2万円相当。制作費20万円を2万円で割ると10か月で制作費と同じ額になる。数値はすべて仮定。</desc>
+  <rect width="800" height="620" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">SEOのクリックを広告の額に直して比べる</text>
+
+  <rect x="32" y="76" width="736" height="136" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="56" y="114" font-size="22" fill="#41483c">広告：クリック数＝月の費用÷平均クリック単価</text>
+  <text x="56" y="156" font-size="26" font-weight="700" fill="#191c19">10万円 ÷ 250円 ＝ 月400クリック</text>
+  <text x="56" y="194" font-size="22" fill="#41483c">配信を止めると、広告からのクリックはなくなる</text>
+
+  <rect x="32" y="232" width="736" height="136" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="270" font-size="22" fill="#41483c">SEO：自然検索のクリック数×同じ語の平均クリック単価</text>
+  <text x="56" y="312" font-size="26" font-weight="700" fill="#806222">80クリック × 250円 ＝ 月2万円相当</text>
+  <text x="56" y="350" font-size="22" fill="#41483c">クリック数はSearch Consoleの実測を使う</text>
+
+  <rect x="32" y="388" width="736" height="136" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="426" font-size="22" fill="#41483c">制作費と同じ額になるまでの月数＝制作費÷月の相当額</text>
+  <text x="56" y="468" font-size="26" font-weight="700" fill="#806222">20万円 ÷ 2万円 ＝ 10か月</text>
+  <text x="56" y="506" font-size="22" fill="#41483c">更新の費用は含めない</text>
+
+  <text x="32" y="566" font-size="22" fill="#41483c">※数値はすべて説明のための仮定（相場ではない）</text>
+  <text x="32" y="600" font-size="22" fill="#41483c">※クリック数が同じでも、成果の件数が同じとは限らない</text>
+</svg>

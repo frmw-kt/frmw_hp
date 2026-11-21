@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 660" width="800" height="660" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>検索結果のページの中の広告枠と自然検索の枠</title>
+  <desc>検索結果のページは、上部の広告枠、自然検索（オーガニック検索）の結果、下部の広告枠に分かれる。広告枠は検索ごとの広告ランクで決まりクリックされたときに費用が発生する。自然検索の結果はGoogleのプログラムで決まり、お金では順位が上がらず、検索広告を出しても順位は変わらない。下部の広告枠には、上部に必要な広告ランクに届かない広告が表示される。</desc>
+  <rect width="800" height="660" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">1つの検索結果のページの中の、2種類の枠</text>
+
+  <rect x="32" y="76" width="736" height="150" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="116" font-size="26" font-weight="700" fill="#806222">上部の広告枠（「広告」ラベル付き）</text>
+  <text x="56" y="156" font-size="24" fill="#41483c">決まり方：検索ごとの広告ランク</text>
+  <text x="56" y="194" font-size="24" fill="#41483c">費用：クリックされたときに発生</text>
+
+  <rect x="32" y="246" width="736" height="190" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="56" y="286" font-size="26" font-weight="700" fill="#191c19">自然検索（オーガニック検索）の結果</text>
+  <text x="56" y="326" font-size="24" fill="#41483c">決まり方：Googleのプログラム</text>
+  <text x="56" y="364" font-size="24" fill="#41483c">費用：Googleへの支払いはない</text>
+  <text x="56" y="402" font-size="24" fill="#41483c">お金では上がらず、広告を出しても変わらない</text>
+
+  <rect x="32" y="456" width="736" height="112" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="496" font-size="26" font-weight="700" fill="#806222">下部の広告枠</text>
+  <text x="56" y="536" font-size="24" fill="#41483c">上部に必要な広告ランクに届かない広告</text>
+
+  <text x="32" y="608" font-size="22" fill="#41483c">※ほとんどの検索では、広告はまったく表示されない（Google）</text>
+  <text x="32" y="640" font-size="22" fill="#41483c">※枠の高さは表示件数の比率ではない</text>
+</svg>

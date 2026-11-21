@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 760" width="800" height="760" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>リスティング広告とSEOのどちらに予算を寄せるかを決める4つの質問</title>
+  <desc>1つ目は狙う語が検索されているか。いいえなら検索広告もSEOも届きにくい。2つ目は数週間以内に件数が必要か。はいなら広告から始め、いいえならSEOに時間をかけられる。3つ目は広告の1件あたりの費用が許容CPA以下か。はいなら広告を続け、いいえなら語とページを見直してSEOの比重を上げる。4つ目はページを作る時間か外注費があるか。はいならSEOのページを作り、いいえならSEOは社内でできる確認から始める。</desc>
+  <rect width="800" height="760" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">予算を寄せる先を決める4つの質問</text>
+
+  <!-- Q1 -->
+  <rect x="32" y="76" width="344" height="136" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="52" y="126" font-size="24" font-weight="700" fill="#191c19">①その語は検索されて</text>
+  <text x="52" y="160" font-size="24" font-weight="700" fill="#191c19">いるか</text>
+  <text x="52" y="194" font-size="22" fill="#41483c">キーワードプランナー</text>
+  <rect x="400" y="76" width="368" height="136" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="420" y="130" font-size="24" fill="#41483c">はい：②へ進む</text>
+  <text x="420" y="176" font-size="22" fill="#41483c">いいえ：検索広告もSEOも</text>
+  <text x="420" y="204" font-size="22" fill="#41483c">届きにくい</text>
+  <text x="380" y="152" font-size="24" fill="#806222">→</text>
+
+  <!-- Q2 -->
+  <rect x="32" y="236" width="344" height="136" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="52" y="286" font-size="24" font-weight="700" fill="#191c19">②数週間以内に件数が</text>
+  <text x="52" y="320" font-size="24" font-weight="700" fill="#191c19">必要か</text>
+  <text x="52" y="354" font-size="22" fill="#41483c">SEOは反映に数時間〜数か月</text>
+  <rect x="400" y="236" width="368" height="136" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="420" y="290" font-size="24" font-weight="700" fill="#806222">はい：広告から始める</text>
+  <text x="420" y="336" font-size="22" fill="#41483c">いいえ：SEOに時間を</text>
+  <text x="420" y="364" font-size="22" fill="#41483c">かけられる</text>
+  <text x="380" y="312" font-size="24" fill="#806222">→</text>
+
+  <!-- Q3 -->
+  <rect x="32" y="396" width="344" height="136" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="52" y="446" font-size="24" font-weight="700" fill="#191c19">③広告の1件の費用は</text>
+  <text x="52" y="480" font-size="24" font-weight="700" fill="#191c19">許容CPA以下か</text>
+  <text x="52" y="514" font-size="22" fill="#41483c">平均クリック単価÷CVR</text>
+  <rect x="400" y="396" width="368" height="136" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="420" y="450" font-size="24" font-weight="700" fill="#806222">はい：広告を続ける</text>
+  <text x="420" y="496" font-size="22" fill="#41483c">いいえ：語とページを見直し、</text>
+  <text x="420" y="524" font-size="22" fill="#41483c">SEOの比重を上げる</text>
+  <text x="380" y="472" font-size="24" fill="#806222">→</text>
+
+  <!-- Q4 -->
+  <rect x="32" y="556" width="344" height="136" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="52" y="606" font-size="24" font-weight="700" fill="#191c19">④ページを作る時間か</text>
+  <text x="52" y="640" font-size="24" font-weight="700" fill="#191c19">外注費があるか</text>
+  <text x="52" y="674" font-size="22" fill="#41483c">SEOで払うのは時間か外注費</text>
+  <rect x="400" y="556" width="368" height="136" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="420" y="610" font-size="24" font-weight="700" fill="#806222">はい：SEOのページを作る</text>
+  <text x="420" y="656" font-size="22" fill="#41483c">いいえ：SEOは社内で</text>
+  <text x="420" y="684" font-size="22" fill="#41483c">できる確認から</text>
+  <text x="380" y="632" font-size="24" fill="#806222">→</text>
+
+  <text x="32" y="736" font-size="22" fill="#41483c">※質問の順番はFrameworkが並べたもの（媒体の定めではない）</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>広告の有無と自然検索のクリックの多少で分けた、語ごとの分担</title>
+  <desc>広告を出していない語のうち、自然検索のクリックが多い語は広告に足すキーワードの候補、自然検索のクリックが少ない重要な語は広告で補う。広告を出している語のうち、自然検索のクリックが少ない語は広告で補いながらSEOのページを作る候補、自然検索のクリックも多い語は変更の前後で広告と自然検索の合計クリック数を比べる。</desc>
+  <rect width="800" height="640" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">検索語句ごとの広告とSEOの分担</text>
+
+  <text x="110" y="100" font-size="22" font-weight="700" fill="#41483c">自然検索のクリックが少ない</text>
+  <text x="454" y="100" font-size="22" font-weight="700" fill="#41483c">自然検索のクリックが多い</text>
+
+  <text x="32" y="210" font-size="22" font-weight="700" fill="#41483c">広告</text>
+  <text x="32" y="240" font-size="22" font-weight="700" fill="#41483c">なし</text>
+  <text x="32" y="430" font-size="22" font-weight="700" fill="#41483c">広告</text>
+  <text x="32" y="460" font-size="22" font-weight="700" fill="#41483c">あり</text>
+
+  <rect x="96" y="116" width="328" height="210" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="116" y="170" font-size="24" font-weight="700" fill="#806222">重要な語なら</text>
+  <text x="116" y="206" font-size="24" font-weight="700" fill="#806222">広告で補う</text>
+  <text x="116" y="262" font-size="22" fill="#41483c">ヘルプの使い方2</text>
+
+  <rect x="440" y="116" width="328" height="210" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="460" y="170" font-size="24" font-weight="700" fill="#806222">広告に足す</text>
+  <text x="460" y="206" font-size="24" font-weight="700" fill="#806222">キーワードの候補</text>
+  <text x="460" y="262" font-size="22" fill="#41483c">ヘルプの使い方1</text>
+
+  <rect x="96" y="342" width="328" height="210" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="116" y="396" font-size="24" font-weight="700" fill="#191c19">広告で補いながら</text>
+  <text x="116" y="432" font-size="24" font-weight="700" fill="#191c19">SEOのページ候補に</text>
+  <text x="116" y="488" font-size="22" fill="#41483c">この記事の判断基準</text>
+
+  <rect x="440" y="342" width="328" height="210" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="460" y="396" font-size="24" font-weight="700" fill="#806222">変更の前後で</text>
+  <text x="460" y="432" font-size="24" font-weight="700" fill="#806222">合計クリックを比べる</text>
+  <text x="460" y="488" font-size="22" fill="#41483c">ヘルプの使い方3</text>
+
+  <text x="32" y="596" font-size="22" fill="#41483c">※「検索広告とオーガニック検索」のレポートで、語ごとに確かめる</text>
+  <text x="32" y="626" font-size="22" fill="#41483c">※テキスト広告だけが対象（ショッピング広告は含まれない）</text>
+</svg>
