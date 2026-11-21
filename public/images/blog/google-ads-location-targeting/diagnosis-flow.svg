@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="640" fill="#f7f7f4"/>
+  <text x="400" y="46" text-anchor="middle" font-size="28" font-weight="bold" fill="#191c19">商圏外の表示を見つけたときの確認の順番</text>
+  <rect x="60" y="74" width="680" height="104" rx="12" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="90" y="114" font-size="26" font-weight="bold" fill="#806222">1 「一致した地域」を開く</text>
+  <text x="90" y="152" font-size="24" fill="#41483c">商圏外の地域の表示・クリック・費用を合計</text>
+  <rect x="60" y="200" width="680" height="104" rx="12" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="90" y="240" font-size="26" font-weight="bold" fill="#806222">2 地域オプションを見る</text>
+  <text x="90" y="278" font-size="24" fill="#41483c">初期設定のままなら「所在地」を検討</text>
+  <rect x="60" y="326" width="680" height="104" rx="12" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="90" y="366" font-size="26" font-weight="bold" fill="#806222">3 検索語句の地名を見る</text>
+  <text x="90" y="404" font-size="24" fill="#41483c">商圏外の地名の語句は除外キーワードへ</text>
+  <rect x="60" y="452" width="680" height="104" rx="12" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="90" y="492" font-size="26" font-weight="bold" fill="#806222">4 近郊・「不明」の地域を見る</text>
+  <text x="90" y="530" font-size="24" fill="#41483c">判定の誤差として、成果で判断する</text>
+  <text x="400" y="604" text-anchor="middle" font-size="24" fill="#41483c">2〜4で変えたら、同じ日数の前後で1を比べる</text>
+  <path d="M400 178 v18" stroke="#806222" stroke-width="3"/>
+  <path d="M400 304 v18" stroke="#806222" stroke-width="3"/>
+  <path d="M400 430 v18" stroke="#806222" stroke-width="3"/>
+</svg>

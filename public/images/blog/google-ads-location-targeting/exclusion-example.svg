@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="600" fill="#f7f7f4"/>
+  <text x="400" y="46" text-anchor="middle" font-size="28" font-weight="bold" fill="#191c19">除外は「その地域にいる人」だけを止める</text>
+  <rect x="60" y="72" width="680" height="100" rx="12" fill="#191c19"/>
+  <text x="90" y="112" font-size="24" fill="#ffffff">設定（例）対象：横浜市「所在地やインタレスト」</text>
+  <text x="90" y="150" font-size="24" fill="#ffffff">　　　　　除外：東京都</text>
+  <rect x="60" y="196" width="680" height="110" rx="12" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="90" y="238" font-size="24" fill="#41483c">A 横浜市にいる人</text>
+  <text x="90" y="278" font-size="26" font-weight="bold" fill="#806222">→ 表示の対象</text>
+  <rect x="60" y="322" width="680" height="120" rx="12" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="90" y="362" font-size="24" fill="#41483c">B 東京都にいて「横浜 パン屋」と検索</text>
+  <text x="90" y="404" font-size="26" font-weight="bold" fill="#191c19">→ 表示されない（除外が優先）</text>
+  <rect x="60" y="458" width="680" height="120" rx="12" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="90" y="498" font-size="24" fill="#41483c">C 大阪市にいて「横浜 パン屋」と検索</text>
+  <text x="90" y="540" font-size="26" font-weight="bold" fill="#806222">→ 表示されうる（除外地域にいない）</text>
+</svg>

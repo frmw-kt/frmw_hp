@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <text x="400" y="48" text-anchor="middle" font-size="28" font-weight="bold" fill="#191c19">商圏の外に広告が出る3つの経路</text>
+  <text x="70" y="96" font-size="24" fill="#41483c">経路</text>
+  <text x="470" y="96" font-size="24" fill="#41483c">止め方・確かめ方</text>
+  <line x1="60" y1="110" x2="740" y2="110" stroke="#e3e2dc" stroke-width="2"/>
+  <rect x="60" y="126" width="380" height="120" rx="12" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="84" y="170" font-size="26" font-weight="bold" fill="#806222">1 地域への関心</text>
+  <text x="84" y="210" font-size="24" fill="#41483c">初期設定のときだけ</text>
+  <rect x="460" y="126" width="280" height="120" rx="12" fill="#191c19"/>
+  <text x="484" y="170" font-size="24" font-weight="bold" fill="#ffffff">「所在地」に</text>
+  <text x="484" y="208" font-size="24" font-weight="bold" fill="#ffffff">切り替える</text>
+  <rect x="60" y="264" width="380" height="120" rx="12" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="84" y="308" font-size="26" font-weight="bold" fill="#806222">2 近郊の関連する地域</text>
+  <text x="84" y="348" font-size="24" fill="#41483c">人口やデータが少ない地域</text>
+  <rect x="460" y="264" width="280" height="120" rx="12" fill="#ffffff" stroke="#41483c" stroke-width="2"/>
+  <text x="484" y="308" font-size="24" fill="#191c19">地域レポートで</text>
+  <text x="484" y="346" font-size="24" fill="#191c19">表示と費用を見る</text>
+  <rect x="60" y="402" width="380" height="120" rx="12" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="84" y="446" font-size="26" font-weight="bold" fill="#806222">3 所在地の判定の誤差</text>
+  <text x="84" y="486" font-size="24" fill="#41483c">精度100%は保証されない</text>
+  <rect x="460" y="402" width="280" height="120" rx="12" fill="#ffffff" stroke="#41483c" stroke-width="2"/>
+  <text x="484" y="446" font-size="24" fill="#191c19">成果を見て</text>
+  <text x="484" y="484" font-size="24" fill="#191c19">設定を調整する</text>
+</svg>
