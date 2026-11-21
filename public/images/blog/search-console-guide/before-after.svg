@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="420" fill="#f7f7f4"/>
+  <text x="30" y="46" font-size="22" fill="#41483c">仮定の数値。同じ28日間・同じページで比べる</text>
+  <rect x="30" y="70" width="350" height="230" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="205" y="114" font-size="24" fill="#806222" font-weight="bold" text-anchor="middle">変更前の28日</text>
+  <text x="50" y="164" font-size="22" fill="#191c19">表示回数 2,000</text>
+  <text x="50" y="204" font-size="22" fill="#191c19">CTR 1.5%</text>
+  <text x="50" y="254" font-size="24" fill="#191c19" font-weight="bold">クリック数 30</text>
+  <path d="M384 185 L408 185" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="406,175 406,195 420,185" fill="#c9a84c"/>
+  <rect x="420" y="70" width="350" height="230" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="595" y="114" font-size="24" fill="#806222" font-weight="bold" text-anchor="middle">変更後の28日</text>
+  <text x="440" y="164" font-size="22" fill="#191c19">表示回数 1,600</text>
+  <text x="440" y="204" font-size="22" fill="#191c19">CTR 2.5%</text>
+  <text x="440" y="254" font-size="24" fill="#191c19" font-weight="bold">クリック数 40</text>
+  <rect x="30" y="320" width="740" height="80" rx="8" fill="#806222"/>
+  <text x="50" y="354" font-size="22" fill="#ffffff">表示回数が前と同じなら 2,000×2.5%＝50</text>
+  <text x="50" y="386" font-size="22" fill="#ffffff">CTRの効果＋20、表示回数の減少で−10＝差し引き＋10</text>
+</svg>

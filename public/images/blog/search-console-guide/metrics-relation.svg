@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="440" fill="#f7f7f4"/>
+  <rect x="30" y="30" width="220" height="130" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="140" y="80" font-size="26" fill="#806222" font-weight="bold" text-anchor="middle">表示回数</text>
+  <text x="140" y="120" font-size="22" fill="#191c19" text-anchor="middle">検索結果に</text>
+  <text x="140" y="148" font-size="22" fill="#191c19" text-anchor="middle">出た回数</text>
+  <text x="290" y="108" font-size="40" fill="#41483c" text-anchor="middle">×</text>
+  <rect x="330" y="30" width="200" height="130" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="430" y="80" font-size="26" fill="#806222" font-weight="bold" text-anchor="middle">CTR</text>
+  <text x="430" y="120" font-size="22" fill="#191c19" text-anchor="middle">出たうち</text>
+  <text x="430" y="148" font-size="22" fill="#191c19" text-anchor="middle">押された割合</text>
+  <text x="570" y="108" font-size="40" fill="#41483c" text-anchor="middle">＝</text>
+  <rect x="610" y="30" width="160" height="130" rx="8" fill="#806222"/>
+  <text x="690" y="88" font-size="26" fill="#ffffff" font-weight="bold" text-anchor="middle">クリック数</text>
+  <text x="690" y="128" font-size="22" fill="#ffffff" text-anchor="middle">訪問の数</text>
+  <path d="M140 162 L140 230" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="130,228 150,228 140,242" fill="#c9a84c"/>
+  <path d="M430 162 L430 230" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="420,228 440,228 430,242" fill="#c9a84c"/>
+  <rect x="30" y="244" width="740" height="166" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="50" y="286" font-size="24" fill="#806222" font-weight="bold">掲載順位＝表示されたときの最上位の位置の平均</text>
+  <text x="50" y="326" font-size="22" fill="#191c19">表示回数：開いた結果のページに載れば数える</text>
+  <text x="50" y="362" font-size="22" fill="#191c19">CTR：検索結果の見出しと説明文で押されるか</text>
+  <text x="50" y="396" font-size="22" fill="#41483c">表示されなかった検索では順位は記録されない</text>
+</svg>

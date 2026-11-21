@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="700" fill="#f7f7f4"/>
+  <rect x="30" y="24" width="440" height="96" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="50" y="64" font-size="24" fill="#806222" font-weight="bold">1. 表示回数がほぼ0か</text>
+  <text x="50" y="100" font-size="22" fill="#191c19">ページで絞り込んで確かめる</text>
+  <path d="M472 72 L548 72" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="546,62 546,82 560,72" fill="#c9a84c"/>
+  <text x="510" y="58" font-size="22" fill="#41483c" text-anchor="middle">はい</text>
+  <rect x="560" y="24" width="210" height="96" rx="8" fill="#806222"/>
+  <text x="665" y="64" font-size="24" fill="#ffffff" font-weight="bold" text-anchor="middle">登録を確認</text>
+  <text x="665" y="100" font-size="22" fill="#ffffff" text-anchor="middle">URL検査</text>
+  <path d="M250 122 L250 176" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="240,174 260,174 250,188" fill="#c9a84c"/>
+  <text x="266" y="160" font-size="22" fill="#41483c">いいえ</text>
+  <rect x="30" y="190" width="440" height="96" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="50" y="230" font-size="24" fill="#806222" font-weight="bold">2. 主なクエリの順位が低いか</text>
+  <text x="50" y="266" font-size="22" fill="#191c19">ページ×クエリで、サイト内と比べる</text>
+  <path d="M472 238 L548 238" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="546,228 546,248 560,238" fill="#c9a84c"/>
+  <text x="510" y="224" font-size="22" fill="#41483c" text-anchor="middle">はい</text>
+  <rect x="560" y="190" width="210" height="96" rx="8" fill="#806222"/>
+  <text x="665" y="230" font-size="24" fill="#ffffff" font-weight="bold" text-anchor="middle">本文を直す</text>
+  <text x="665" y="266" font-size="22" fill="#ffffff" text-anchor="middle">疑問に答える</text>
+  <path d="M250 288 L250 342" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="240,340 260,340 250,354" fill="#c9a84c"/>
+  <text x="266" y="326" font-size="22" fill="#41483c">いいえ</text>
+  <rect x="30" y="356" width="440" height="96" rx="8" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="50" y="396" font-size="24" fill="#806222" font-weight="bold">3. 同じ順位帯よりCTRが低いか</text>
+  <text x="50" y="432" font-size="22" fill="#191c19">自社サイト内で比べる</text>
+  <path d="M472 404 L548 404" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="546,394 546,414 560,404" fill="#c9a84c"/>
+  <text x="510" y="390" font-size="22" fill="#41483c" text-anchor="middle">はい</text>
+  <rect x="560" y="356" width="210" height="96" rx="8" fill="#806222"/>
+  <text x="665" y="396" font-size="24" fill="#ffffff" font-weight="bold" text-anchor="middle">タイトルと</text>
+  <text x="665" y="432" font-size="22" fill="#ffffff" text-anchor="middle">説明文を直す</text>
+  <path d="M250 454 L250 508" stroke="#c9a84c" stroke-width="4"/>
+  <polygon points="240,506 260,506 250,520" fill="#c9a84c"/>
+  <text x="266" y="492" font-size="22" fill="#41483c">いいえ</text>
+  <rect x="30" y="522" width="740" height="150" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="50" y="562" font-size="24" fill="#806222" font-weight="bold">4. 検索の数字は保ち、サイト側の成果を見る</text>
+  <text x="50" y="600" font-size="22" fill="#191c19">クリック後の問い合わせ・予約・購入は</text>
+  <text x="50" y="636" font-size="22" fill="#191c19">GA4などのサイト側の計測で確かめる</text>
+</svg>
