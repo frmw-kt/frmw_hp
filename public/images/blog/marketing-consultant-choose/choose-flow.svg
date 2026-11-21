@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 720" width="800" height="720" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>マーケティングの依頼先を3つの質問で選ぶ分岐の図</title>
+  <desc>最初の質問は何を変えるかが決まっているか。決まっていなければ、外部に毎月払える予算があるかを確かめ、なければ公的な相談窓口で論点を整理し、あればコンサル会社に現状診断から頼む。決まっていれば、実行する人が社内にいるかを確かめ、いれば顧問やスポット相談で判断を確かめ、いなければ運用代行・制作会社に頼み、計画まで含むかを確かめる。</desc>
+  <rect width="800" height="720" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">依頼先を選ぶ3つの質問</text>
+
+  <rect x="160" y="72" width="480" height="96" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="400" y="114" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">Q1 何を変えるかが</text>
+  <text x="400" y="148" font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">決まっているか</text>
+
+  <line x1="260" y1="168" x2="210" y2="222" stroke="#806222" stroke-width="3"/>
+  <line x1="540" y1="168" x2="590" y2="222" stroke="#806222" stroke-width="3"/>
+  <text x="150" y="204" font-size="22" font-weight="700" fill="#806222">いいえ</text>
+  <text x="604" y="204" font-size="22" font-weight="700" fill="#806222">はい</text>
+
+  <rect x="32" y="226" width="356" height="110" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="52" y="272" font-size="24" font-weight="700" fill="#191c19">Q2 外部に毎月払える</text>
+  <text x="52" y="306" font-size="24" font-weight="700" fill="#191c19">予算があるか</text>
+
+  <rect x="412" y="226" width="356" height="110" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="432" y="272" font-size="24" font-weight="700" fill="#191c19">Q3 施策を実行する人が</text>
+  <text x="432" y="306" font-size="24" font-weight="700" fill="#191c19">社内にいるか</text>
+
+  <rect x="32" y="362" width="356" height="140" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="52" y="404" font-size="22" font-weight="700" fill="#806222">いいえ</text>
+  <text x="52" y="440" font-size="24" font-weight="700" fill="#191c19">公的な相談窓口で</text>
+  <text x="52" y="476" font-size="24" font-weight="700" fill="#191c19">論点を整理する</text>
+
+  <rect x="32" y="522" width="356" height="140" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="52" y="564" font-size="22" font-weight="700" fill="#806222">はい</text>
+  <text x="52" y="600" font-size="24" font-weight="700" fill="#191c19">コンサル会社に</text>
+  <text x="52" y="636" font-size="24" font-weight="700" fill="#191c19">現状診断から頼む</text>
+
+  <rect x="412" y="362" width="356" height="140" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="432" y="404" font-size="22" font-weight="700" fill="#806222">はい</text>
+  <text x="432" y="440" font-size="24" font-weight="700" fill="#191c19">顧問・スポット相談で</text>
+  <text x="432" y="476" font-size="24" font-weight="700" fill="#191c19">判断を確かめる</text>
+
+  <rect x="412" y="522" width="356" height="140" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="432" y="564" font-size="22" font-weight="700" fill="#806222">いいえ</text>
+  <text x="432" y="600" font-size="24" font-weight="700" fill="#191c19">運用代行・制作会社へ</text>
+  <text x="432" y="636" font-size="22" fill="#41483c">計画まで含むかを確かめる</text>
+
+  <text x="32" y="700" font-size="22" fill="#41483c">※質問の順番はこの記事の判断基準（Framework作成）</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>マーケティングの仕事を判断・計画・実行の3つに分け、それぞれを受け持つ依頼先を示す図</title>
+  <desc>判断は何を変えるかを決める仕事で、公的な相談窓口・顧問・コンサル会社が受け持つ。計画は施策・予算・担当に落とす仕事で、コンサル会社や顧問が受け持つかは契約の範囲で確認する。実行は広告運用・制作・記事の仕事で、運用代行・制作会社が受け持つ。中小機構のハンズオン支援は実務処理作業の代行ができない。</desc>
+  <rect width="800" height="640" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">頼む範囲を3つに分けて、依頼先を決める</text>
+
+  <rect x="32" y="80" width="300" height="150" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="52" y="128" font-size="28" font-weight="700" fill="#191c19">①判断</text>
+  <text x="52" y="168" font-size="22" fill="#41483c">何を変えるかを決める</text>
+  <text x="52" y="200" font-size="22" fill="#41483c">（課題の特定）</text>
+  <text x="338" y="162" font-size="24" fill="#806222">→</text>
+  <rect x="368" y="80" width="400" height="150" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="388" y="128" font-size="24" font-weight="700" fill="#806222">公的な相談窓口</text>
+  <text x="388" y="166" font-size="24" fill="#41483c">顧問・コンサル会社</text>
+  <text x="388" y="204" font-size="22" fill="#41483c">無料の相談から始められる</text>
+
+  <rect x="32" y="250" width="300" height="150" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="52" y="298" font-size="28" font-weight="700" fill="#191c19">②計画</text>
+  <text x="52" y="338" font-size="22" fill="#41483c">施策・予算・担当・</text>
+  <text x="52" y="370" font-size="22" fill="#41483c">日程に落とす</text>
+  <text x="338" y="332" font-size="24" fill="#806222">→</text>
+  <rect x="368" y="250" width="400" height="150" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="388" y="298" font-size="24" font-weight="700" fill="#806222">コンサル会社・顧問</text>
+  <text x="388" y="336" font-size="22" fill="#41483c">計画書まで作るかは</text>
+  <text x="388" y="368" font-size="22" fill="#41483c">契約の範囲で確かめる</text>
+
+  <rect x="32" y="420" width="300" height="150" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="52" y="468" font-size="28" font-weight="700" fill="#191c19">③実行</text>
+  <text x="52" y="508" font-size="22" fill="#41483c">広告運用・制作・</text>
+  <text x="52" y="540" font-size="22" fill="#41483c">記事・SNSの投稿</text>
+  <text x="338" y="502" font-size="24" fill="#806222">→</text>
+  <rect x="368" y="420" width="400" height="150" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="388" y="468" font-size="24" font-weight="700" fill="#806222">運用代行・制作会社</text>
+  <text x="388" y="506" font-size="22" fill="#41483c">公的なハンズオン支援は</text>
+  <text x="388" y="538" font-size="22" fill="#41483c">実務の代行ができない</text>
+
+  <text x="32" y="612" font-size="22" fill="#41483c">※3つの分け方はこの記事の判断基準（Framework作成）</text>
+</svg>

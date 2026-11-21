@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>個人のコンサルタントに業務委託するときのフリーランス法の義務を、委託の期間ごとに並べた図</title>
+  <desc>委託したら直ちに、取引条件を書面または電磁的方法で明示する。口頭は認められず、項目は9つ。報酬の支払期日は、受け取った日から60日以内のできる限り短い期間内で定める。1か月以上の委託では7つの禁止行為が加わる。6か月以上の委託では、中途解除等の事前予告・理由開示と、育児介護等と業務の両立への配慮が加わる。</desc>
+  <rect width="800" height="700" fill="#f7f7f4"/>
+  <text x="32" y="48" font-size="28" font-weight="700" fill="#191c19">個人に委託するときに加わる義務</text>
+  <line x1="72" y1="96" x2="72" y2="620" stroke="#c9a84c" stroke-width="4"/>
+
+  <circle cx="72" cy="120" r="14" fill="#806222"/>
+  <rect x="104" y="76" width="664" height="118" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="124" y="116" font-size="24" font-weight="700" fill="#806222">委託したら直ちに</text>
+  <text x="124" y="150" font-size="24" fill="#191c19">取引条件を書面かメール等で明示</text>
+  <text x="124" y="180" font-size="22" fill="#41483c">9項目。口頭だけの明示は認められない</text>
+
+  <circle cx="72" cy="254" r="14" fill="#806222"/>
+  <rect x="104" y="210" width="664" height="118" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="124" y="250" font-size="24" font-weight="700" fill="#806222">報酬の支払期日</text>
+  <text x="124" y="284" font-size="24" fill="#191c19">受け取った日から60日以内の</text>
+  <text x="124" y="314" font-size="22" fill="#41483c">できる限り短い期間内で定める</text>
+
+  <circle cx="72" cy="388" r="14" fill="#806222"/>
+  <rect x="104" y="344" width="664" height="118" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="124" y="384" font-size="24" font-weight="700" fill="#806222">1か月以上の委託</text>
+  <text x="124" y="418" font-size="24" fill="#191c19">7つの禁止行為が加わる</text>
+  <text x="124" y="448" font-size="22" fill="#41483c">内容は公正取引委員会の特設サイトで確認</text>
+
+  <circle cx="72" cy="522" r="14" fill="#806222"/>
+  <rect x="104" y="478" width="664" height="142" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="124" y="518" font-size="24" font-weight="700" fill="#806222">6か月以上の委託</text>
+  <text x="124" y="552" font-size="24" fill="#191c19">中途解除等の事前予告・理由開示</text>
+  <text x="124" y="584" font-size="22" fill="#41483c">育児介護等と業務の両立への配慮</text>
+  <text x="124" y="610" font-size="22" fill="#41483c">（6か月未満は努力義務）</text>
+
+  <text x="32" y="668" font-size="22" fill="#41483c">※発注する事業者の条件で適用が変わる義務がある</text>
+</svg>
