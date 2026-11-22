@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>どの手順から始めるか：Googleマップでの検索結果で4つに分かれる</title>
+  <desc>Googleマップで自社の名前と市区町村を検索する。1 見つからない：business.google.com/add から追加する。2 見つかり、ビジネス オーナーですか？が出る：管理を開始から申請してオーナー確認。3 他のユーザーが管理している可能性と出る：アクセス権限をリクエストし、現在のオーナーは3日以内に返信。4 ボタンが出ない：すでに自分のアカウントで管理している可能性がある。</desc>
+  <rect width="800" height="700" fill="#f7f7f4"/>
+  <rect x="32" y="28" width="736" height="104" rx="10" fill="#191c19"/>
+  <text x="400" y="72" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">Googleマップで自社の名前と</text>
+  <text x="400" y="110" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">市区町村を検索する</text>
+  <line x1="400" y1="132" x2="400" y2="160" stroke="#806222" stroke-width="3"/>
+
+  <rect x="32" y="160" width="736" height="116" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="200" font-size="24" font-weight="700" fill="#191c19">1 見つからない</text>
+  <text x="56" y="240" font-size="22" fill="#41483c">→ business.google.com/add から追加する</text>
+
+  <rect x="32" y="292" width="736" height="116" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="332" font-size="24" font-weight="700" fill="#191c19">2 ［ビジネス オーナーですか？］が出る</text>
+  <text x="56" y="372" font-size="22" fill="#41483c">→ ［管理を開始］から申請してオーナー確認</text>
+
+  <rect x="32" y="424" width="736" height="116" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="56" y="464" font-size="24" font-weight="700" fill="#806222">3 「他のユーザーが管理」と出る</text>
+  <text x="56" y="504" font-size="22" fill="#41483c">→ 権限をリクエスト（相手は3日以内に返信）</text>
+
+  <rect x="32" y="556" width="736" height="116" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="56" y="596" font-size="24" font-weight="700" fill="#191c19">4 ボタンが出ない</text>
+  <text x="56" y="636" font-size="22" fill="#41483c">→ すでに自分がオーナーの可能性がある</text>
+</svg>

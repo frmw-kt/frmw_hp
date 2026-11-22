@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>オーナー確認が通らないときに確かめる順番</title>
+  <desc>1 画面の表示を見る：オーナー確認を行うが再表示、問題を確認、追加情報の依頼、他のユーザーが管理。2 受け取りの条件を見る：電話に出られるか（自動音声応答ではコードを受け取れない）、メールアドレスは使えるか、ハガキは14日・30日の期限内か。3 登録内容を見る：看板と同じ名前か、実際に接客する住所か、重複したプロフィールがないか。4 ほかの方法を試し、それでもだめならサポートに問い合わせる。</desc>
+  <rect width="800" height="700" fill="#f7f7f4"/>
+  <text x="32" y="46" font-size="28" font-weight="700" fill="#191c19">確認が通らないときに見る順番</text>
+
+  <rect x="32" y="70" width="736" height="134" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="110" font-size="24" font-weight="700" fill="#191c19">1 画面の表示を見る</text>
+  <text x="56" y="148" font-size="22" fill="#41483c">ボタンの再表示／［問題を確認］／</text>
+  <text x="56" y="182" font-size="22" fill="#41483c">追加情報の依頼／他のユーザーが管理</text>
+
+  <rect x="32" y="220" width="736" height="134" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="260" font-size="24" font-weight="700" fill="#191c19">2 受け取りの条件を見る</text>
+  <text x="56" y="298" font-size="22" fill="#41483c">電話に出られるか（自動音声応答は不可）</text>
+  <text x="56" y="332" font-size="22" fill="#41483c">メールは使えるか／ハガキの期限内か</text>
+
+  <rect x="32" y="370" width="736" height="134" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="56" y="410" font-size="24" font-weight="700" fill="#191c19">3 登録内容を見る</text>
+  <text x="56" y="448" font-size="22" fill="#41483c">看板と同じ名前か／接客する住所か</text>
+  <text x="56" y="482" font-size="22" fill="#41483c">重複したプロフィールがないか</text>
+
+  <rect x="32" y="520" width="736" height="150" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="56" y="562" font-size="24" font-weight="700" fill="#806222">4 ほかの確認方法を試す</text>
+  <text x="56" y="600" font-size="22" fill="#41483c">表示されている別の方法で確認する</text>
+  <text x="56" y="634" font-size="22" fill="#41483c">それでも通らなければサポートに問い合わせ</text>
+</svg>

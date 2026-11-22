@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <title>登録からオーナー確認の完了まで、待つ期間の目安</title>
+  <desc>権限のリクエスト：現在のオーナーは3日以内に返信する。ハガキ：コードは通常14日以内に届き、30日で期限切れ。待つ間はビジネス名・住所・業種を編集せず、新しいコードもリクエストしない。審査：確認の手順を終えてから5営業日ほど（まれにそれ以上）。完了すると確認メールが届く。確認後：新規ビジネスの順位が表示されるまで最長1か月、編集の反映は最長3日ほど。</desc>
+  <rect width="800" height="700" fill="#f7f7f4"/>
+  <text x="32" y="46" font-size="28" font-weight="700" fill="#191c19">待つ期間の目安（Google公式）</text>
+  <line x1="60" y1="80" x2="60" y2="670" stroke="#c9a84c" stroke-width="4"/>
+
+  <circle cx="60" cy="110" r="12" fill="#c9a84c"/>
+  <text x="96" y="104" font-size="24" font-weight="700" fill="#191c19">権限のリクエスト</text>
+  <text x="96" y="142" font-size="22" fill="#41483c">現在のオーナーは3日以内に返信</text>
+
+  <circle cx="60" cy="210" r="12" fill="#c9a84c"/>
+  <text x="96" y="204" font-size="24" font-weight="700" fill="#191c19">ハガキ：通常14日以内に届く</text>
+  <text x="96" y="242" font-size="22" fill="#41483c">コードは30日で期限切れ</text>
+  <text x="96" y="276" font-size="22" fill="#806222">待つ間は名前・住所・業種を編集しない</text>
+  <text x="96" y="310" font-size="22" fill="#806222">新しいコードもリクエストしない</text>
+
+  <circle cx="60" cy="380" r="12" fill="#806222"/>
+  <text x="96" y="374" font-size="24" font-weight="700" fill="#806222">審査：5営業日ほど</text>
+  <text x="96" y="412" font-size="22" fill="#41483c">確認の手順を終えてから（まれにそれ以上）</text>
+  <text x="96" y="446" font-size="22" fill="#41483c">完了すると確認メールが届く</text>
+
+  <circle cx="60" cy="520" r="12" fill="#c9a84c"/>
+  <text x="96" y="514" font-size="24" font-weight="700" fill="#191c19">確認後</text>
+  <text x="96" y="552" font-size="22" fill="#41483c">新規ビジネスの順位の表示まで最長1か月</text>
+  <text x="96" y="586" font-size="22" fill="#41483c">情報の編集の反映は最長3日ほど</text>
+  <text x="96" y="650" font-size="22" fill="#41483c">※ 方法・時期で変わる。期間は目安</text>
+</svg>
