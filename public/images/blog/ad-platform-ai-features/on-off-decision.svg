@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="560" fill="#f7f7f4"/>
+  <rect x="30" y="30" width="400" height="120" rx="12" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="230" y="80" text-anchor="middle" font-size="24" font-weight="bold" fill="#191c19">LPと既存の広告は最新で、</text>
+  <text x="230" y="118" text-anchor="middle" font-size="24" font-weight="bold" fill="#191c19">根拠のない数値がないか</text>
+  <path d="M430 90 L490 90" stroke="#806222" stroke-width="4"/><path d="M486 80 L500 90 L486 100 Z" fill="#806222"/>
+  <text x="465" y="76" text-anchor="middle" font-size="22" fill="#806222">いいえ</text>
+  <rect x="500" y="30" width="280" height="120" rx="12" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="640" y="80" text-anchor="middle" font-size="24" font-weight="bold" fill="#191c19">先にLPを直す</text>
+  <text x="640" y="118" text-anchor="middle" font-size="24" fill="#41483c">（それまでオフ）</text>
+  <path d="M230 150 L230 208" stroke="#806222" stroke-width="4"/><path d="M220 204 L230 218 L240 204 Z" fill="#806222"/>
+  <text x="250" y="192" font-size="22" fill="#806222">はい</text>
+  <rect x="30" y="220" width="400" height="120" rx="12" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="230" y="270" text-anchor="middle" font-size="24" font-weight="bold" fill="#191c19">表現の制約が強い業種か</text>
+  <text x="230" y="308" text-anchor="middle" font-size="24" fill="#41483c">（医療・健康・金融など）</text>
+  <path d="M430 280 L490 280" stroke="#806222" stroke-width="4"/><path d="M486 270 L500 280 L486 290 Z" fill="#806222"/>
+  <text x="465" y="266" text-anchor="middle" font-size="22" fill="#806222">はい</text>
+  <rect x="500" y="205" width="280" height="150" rx="12" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="640" y="250" text-anchor="middle" font-size="24" font-weight="bold" fill="#191c19">オフ、または</text>
+  <text x="640" y="286" text-anchor="middle" font-size="24" fill="#41483c">1件ずつ確かめた</text>
+  <text x="640" y="322" text-anchor="middle" font-size="24" fill="#41483c">文だけ使う</text>
+  <path d="M230 340 L230 398" stroke="#806222" stroke-width="4"/><path d="M220 394 L230 408 L240 394 Z" fill="#806222"/>
+  <text x="250" y="382" font-size="22" fill="#806222">いいえ</text>
+  <rect x="30" y="410" width="400" height="120" rx="12" fill="#191c19"/>
+  <text x="230" y="460" text-anchor="middle" font-size="24" font-weight="bold" fill="#ffffff">オンにして、配信後も</text>
+  <text x="230" y="498" text-anchor="middle" font-size="24" font-weight="bold" fill="#c9a84c">生成物を確かめ続ける</text>
+</svg>
