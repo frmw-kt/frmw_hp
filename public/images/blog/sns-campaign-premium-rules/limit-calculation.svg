@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="560" fill="#ffffff"/>
+  <text x="400" y="40" text-anchor="middle" font-size="24" fill="#191c19" font-weight="bold">例：期間中に施術を受けた人から抽選（仮定）</text>
+  <text x="400" y="74" text-anchor="middle" font-size="22" fill="#41483c">最も安い施術料金4,000円・期間中の売上予定300万円</text>
+
+  <rect x="20" y="100" width="760" height="90" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="44" y="136" font-size="24" fill="#806222" font-weight="bold">1 取引の価額</text>
+  <text x="44" y="172" font-size="22" fill="#41483c">必要な取引のうち最低の金額 ＝ 4,000円（税込み）</text>
+
+  <rect x="20" y="206" width="760" height="90" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="44" y="242" font-size="24" fill="#806222" font-weight="bold">2 1人あたりの最高額</text>
+  <text x="44" y="278" font-size="22" fill="#41483c">5,000円未満なので20倍 ＝ 4,000円×20 ＝ 80,000円</text>
+
+  <rect x="20" y="312" width="760" height="90" rx="10" fill="#f7f7f4" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="44" y="348" font-size="24" fill="#806222" font-weight="bold">3 景品の総額</text>
+  <text x="44" y="384" font-size="22" fill="#41483c">売上予定総額の2% ＝ 300万円×2% ＝ 60,000円</text>
+
+  <rect x="20" y="418" width="760" height="122" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="2.5"/>
+  <text x="44" y="454" font-size="24" fill="#191c19" font-weight="bold">4 両方に収める</text>
+  <text x="44" y="490" font-size="22" fill="#41483c">8万円の景品1本は総額6万円を超えるので不可</text>
+  <text x="44" y="524" font-size="22" fill="#41483c">例：3万円×1名＋5,000円×6名 ＝ 合計6万円</text>
+</svg>

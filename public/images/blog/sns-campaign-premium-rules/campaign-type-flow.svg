@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" width="800" height="620" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#41483c"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="800" height="620" fill="#ffffff"/>
+  <!-- Q1 -->
+  <rect x="100" y="20" width="600" height="100" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="400" y="60" text-anchor="middle" font-size="24" fill="#191c19" font-weight="bold">Q1 応募や受け取りに、購入・来店が</text>
+  <text x="400" y="98" text-anchor="middle" font-size="24" fill="#191c19" font-weight="bold">必要か（取引に付随するか）</text>
+  <!-- Q1 no -->
+  <line x1="140" y1="120" x2="140" y2="372" stroke="#41483c" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="154" y="250" font-size="22" fill="#41483c">いいえ</text>
+  <!-- Q1 yes -->
+  <line x1="555" y1="120" x2="555" y2="176" stroke="#41483c" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="569" y="156" font-size="22" fill="#41483c">はい</text>
+  <!-- Q2 -->
+  <rect x="330" y="180" width="450" height="100" rx="10" fill="#ffffff" stroke="#191c19" stroke-width="2"/>
+  <text x="555" y="220" text-anchor="middle" font-size="24" fill="#191c19" font-weight="bold">Q2 抽選・クイズ・競争で</text>
+  <text x="555" y="258" text-anchor="middle" font-size="24" fill="#191c19" font-weight="bold">当選者や景品を決めるか</text>
+  <!-- Q2 yes -->
+  <line x1="420" y1="280" x2="420" y2="372" stroke="#41483c" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="434" y="312" font-size="22" fill="#41483c">はい</text>
+  <!-- Q2 no -->
+  <line x1="680" y1="280" x2="680" y2="372" stroke="#41483c" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="668" y="330" text-anchor="end" font-size="22" fill="#41483c">いいえ</text>
+  <text x="668" y="360" text-anchor="end" font-size="22" fill="#41483c">（もれなく・先着）</text>
+  <!-- result boxes -->
+  <rect x="20" y="376" width="240" height="220" rx="10" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="140" y="418" text-anchor="middle" font-size="26" fill="#806222" font-weight="bold">オープン懸賞</text>
+  <text x="140" y="458" text-anchor="middle" font-size="22" fill="#41483c">景品規制の</text>
+  <text x="140" y="488" text-anchor="middle" font-size="22" fill="#41483c">対象外</text>
+  <text x="140" y="528" text-anchor="middle" font-size="22" fill="#41483c">提供できる額に</text>
+  <text x="140" y="558" text-anchor="middle" font-size="22" fill="#41483c">上限の定めなし</text>
+
+  <rect x="280" y="376" width="240" height="220" rx="10" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="400" y="418" text-anchor="middle" font-size="26" fill="#806222" font-weight="bold">一般懸賞</text>
+  <text x="400" y="458" text-anchor="middle" font-size="22" fill="#41483c">最高額は</text>
+  <text x="400" y="488" text-anchor="middle" font-size="22" fill="#41483c">取引価額の20倍</text>
+  <text x="400" y="518" text-anchor="middle" font-size="22" fill="#41483c">(上限10万円)</text>
+  <text x="400" y="558" text-anchor="middle" font-size="22" fill="#41483c">総額は売上予定</text>
+  <text x="400" y="586" text-anchor="middle" font-size="22" fill="#41483c">総額の2%まで</text>
+
+  <rect x="540" y="376" width="240" height="220" rx="10" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="660" y="418" text-anchor="middle" font-size="26" fill="#806222" font-weight="bold">総付景品</text>
+  <text x="660" y="458" text-anchor="middle" font-size="22" fill="#41483c">最高額は</text>
+  <text x="660" y="488" text-anchor="middle" font-size="22" fill="#41483c">取引価額の</text>
+  <text x="660" y="518" text-anchor="middle" font-size="22" fill="#41483c">10分の2</text>
+  <text x="660" y="558" text-anchor="middle" font-size="22" fill="#41483c">1,000円未満は</text>
+  <text x="660" y="586" text-anchor="middle" font-size="22" fill="#41483c">200円まで</text>
+</svg>
