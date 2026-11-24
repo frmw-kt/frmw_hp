@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="560" fill="#ffffff"/>
+  <text x="210" y="44" font-size="24" font-weight="bold" text-anchor="middle" fill="#806222">自社で作ってリンク</text>
+  <text x="590" y="44" font-size="24" font-weight="bold" text-anchor="middle" fill="#806222">代理店のMCCから作成</text>
+
+  <rect x="30" y="62" width="360" height="130" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="210" y="100" font-size="22" text-anchor="middle" fill="#41483c">オーナー権限</text>
+  <text x="210" y="138" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">既定では付かない</text>
+  <text x="210" y="172" font-size="22" text-anchor="middle" fill="#41483c">（自社が［はい］にした時だけ）</text>
+  <rect x="410" y="62" width="360" height="130" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="590" y="100" font-size="22" text-anchor="middle" fill="#41483c">オーナー権限</text>
+  <text x="590" y="138" font-size="24" font-weight="bold" text-anchor="middle" fill="#191c19">作ったMCCに自動で付く</text>
+  <text x="590" y="172" font-size="22" text-anchor="middle" fill="#41483c">（上位のMCCにも及ぶ）</text>
+
+  <rect x="30" y="210" width="360" height="200" rx="8" fill="#f7f7f4" stroke="#c9a84c" stroke-width="2"/>
+  <text x="210" y="248" font-size="22" text-anchor="middle" fill="#41483c">MCCの管理者ができること</text>
+  <text x="210" y="292" font-size="24" text-anchor="middle" fill="#191c19">キャンペーンの管理</text>
+  <text x="210" y="336" font-size="22" text-anchor="middle" fill="#41483c">ユーザーの追加・削除は</text>
+  <text x="210" y="368" font-size="22" text-anchor="middle" fill="#41483c">自社の管理者が行う</text>
+  <rect x="410" y="210" width="360" height="200" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="590" y="248" font-size="22" text-anchor="middle" fill="#41483c">MCCの管理者ができること</text>
+  <text x="590" y="292" font-size="24" text-anchor="middle" fill="#191c19">キャンペーンの管理</text>
+  <text x="590" y="336" font-size="22" text-anchor="middle" fill="#41483c">＋ユーザー・管理者・</text>
+  <text x="590" y="368" font-size="22" text-anchor="middle" fill="#41483c">サービス間のリンクの編集</text>
+
+  <rect x="30" y="430" width="740" height="110" rx="8" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="400" y="472" font-size="24" text-anchor="middle" fill="#191c19">どちらも、自社はオーナーのMCCとの</text>
+  <text x="400" y="508" font-size="24" text-anchor="middle" fill="#191c19">リンクをいつでも解除できる</text>
+</svg>
