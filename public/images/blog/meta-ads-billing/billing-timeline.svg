@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="480" fill="#f7f7f4"/>
+  <text x="400" y="52" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">仮定：支払い単位額5万円・1か月の消化32万円</text>
+  <text x="430" y="122" font-size="24" fill="#806222" text-anchor="middle">消化が5万円に達するたびに請求（6回）</text>
+  <line x1="60" y1="200" x2="740" y2="200" stroke="#41483c" stroke-width="4"/>
+  <g fill="#c9a84c" stroke="#806222" stroke-width="2">
+    <circle cx="166" cy="200" r="16"/>
+    <circle cx="272" cy="200" r="16"/>
+    <circle cx="379" cy="200" r="16"/>
+    <circle cx="485" cy="200" r="16"/>
+    <circle cx="591" cy="200" r="16"/>
+    <circle cx="697" cy="200" r="16"/>
+  </g>
+  <g font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">
+    <text x="166" y="168">1</text>
+    <text x="272" y="168">2</text>
+    <text x="379" y="168">3</text>
+    <text x="485" y="168">4</text>
+    <text x="591" y="168">5</text>
+    <text x="697" y="168">6</text>
+  </g>
+  <rect x="728" y="186" width="28" height="28" fill="#191c19" transform="rotate(45 742 200)"/>
+  <text x="60" y="250" font-size="24" fill="#41483c" text-anchor="start">前回の請求日</text>
+  <text x="760" y="250" font-size="24" fill="#41483c" text-anchor="end">毎月の請求日</text>
+  <text x="760" y="286" font-size="24" font-weight="700" fill="#191c19" text-anchor="end">残りの2万円を請求</text>
+  <rect x="60" y="320" width="680" height="64" rx="12" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="400" y="361" font-size="26" font-weight="700" fill="#191c19" text-anchor="middle">合計7回の請求（5万円×6回＋2万円）</text>
+  <text x="400" y="430" font-size="24" fill="#41483c" text-anchor="middle">実際の単位額は自動で引き上げられることがあり、</text>
+  <text x="400" y="464" font-size="24" fill="#41483c" text-anchor="middle">請求の回数はアカウントごとに変わる</text>
+</svg>

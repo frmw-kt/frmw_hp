@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="800" height="640" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="640" fill="#f7f7f4"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#806222"/>
+    </marker>
+  </defs>
+  <g stroke="#c9a84c" stroke-width="3" fill="#ffffff">
+    <rect x="20" y="20" width="440" height="100" rx="12"/>
+    <rect x="20" y="220" width="440" height="100" rx="12"/>
+    <rect x="20" y="420" width="440" height="100" rx="12"/>
+  </g>
+  <g font-size="24" fill="#191c19" text-anchor="middle">
+    <text x="240" y="62">広告費の支払いも</text>
+    <text x="240" y="98">代理店に任せる？</text>
+    <text x="240" y="262">［請求と支払い］に月極請求書</text>
+    <text x="240" y="298">払いの案内が出ている？</text>
+    <text x="240" y="462">クレジットカード・PayPalを</text>
+    <text x="240" y="498">使わない？</text>
+  </g>
+  <g fill="#c9a84c">
+    <rect x="520" y="20" width="260" height="100" rx="12"/>
+    <rect x="520" y="220" width="260" height="100" rx="12"/>
+    <rect x="520" y="420" width="260" height="100" rx="12"/>
+  </g>
+  <rect x="20" y="560" width="760" height="64" rx="12" fill="#191c19"/>
+  <g font-size="24" font-weight="700" fill="#191c19" text-anchor="middle">
+    <text x="650" y="62">代理店経由</text>
+    <text x="650" y="98" font-weight="400">請求書は代理店から</text>
+    <text x="650" y="262">月極請求書払い</text>
+    <text x="650" y="298" font-weight="400">発行日から30日後</text>
+    <text x="650" y="462">利用可能残高</text>
+    <text x="650" y="498" font-weight="400">最初の設定時に選ぶ</text>
+  </g>
+  <text x="400" y="601" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">自動決済（カード・PayPal）＋支払い単位額の上限を設定</text>
+  <g fill="none" stroke="#806222" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="462" y1="70" x2="514" y2="70"/>
+    <line x1="462" y1="270" x2="514" y2="270"/>
+    <line x1="462" y1="470" x2="514" y2="470"/>
+    <line x1="240" y1="122" x2="240" y2="214"/>
+    <line x1="240" y1="322" x2="240" y2="414"/>
+    <line x1="240" y1="522" x2="240" y2="554"/>
+  </g>
+  <g font-size="22" fill="#806222" font-weight="700">
+    <text x="470" y="58">はい</text>
+    <text x="470" y="258">はい</text>
+    <text x="470" y="458">はい</text>
+    <text x="252" y="176">いいえ</text>
+    <text x="252" y="376">いいえ</text>
+    <text x="252" y="546">いいえ</text>
+  </g>
+</svg>
