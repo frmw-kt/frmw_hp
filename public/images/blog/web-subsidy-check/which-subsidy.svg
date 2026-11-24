@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 720" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="720" fill="#f7f7f4"/>
+  <text x="40" y="56" font-size="30" font-weight="bold" fill="#191c19">ホームページ・広告費で確かめる制度</text>
+
+  <rect x="40" y="88" width="720" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="64" y="128" font-size="24" font-weight="bold" fill="#191c19">従業員は商業・サービス業で5人以下、</text>
+  <text x="64" y="164" font-size="24" font-weight="bold" fill="#191c19">製造業その他で20人以下か</text>
+  <path d="M400 198 L400 228" stroke="#806222" stroke-width="4"/>
+  <polygon points="390,226 410,226 400,240" fill="#806222"/>
+
+  <rect x="40" y="244" width="350" height="190" rx="10" fill="#ffffff" stroke="#806222" stroke-width="3"/>
+  <text x="60" y="282" font-size="24" font-weight="bold" fill="#806222">はい</text>
+  <text x="60" y="318" font-size="24" fill="#191c19">持続化補助金の</text>
+  <text x="60" y="352" font-size="24" fill="#191c19">ウェブサイト関連費・</text>
+  <text x="60" y="386" font-size="24" fill="#191c19">広報費を公募要領で確認</text>
+
+  <rect x="410" y="244" width="350" height="190" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="3"/>
+  <text x="430" y="282" font-size="24" font-weight="bold" fill="#41483c">いいえ</text>
+  <text x="430" y="318" font-size="24" fill="#191c19">持続化補助金は</text>
+  <text x="430" y="352" font-size="24" fill="#191c19">対象外。下の2つを</text>
+  <text x="430" y="386" font-size="24" fill="#191c19">確かめる</text>
+
+  <rect x="40" y="460" width="720" height="110" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="3"/>
+  <text x="64" y="500" font-size="24" fill="#191c19">予約・EC・顧客管理などのソフトを入れるなら、</text>
+  <text x="64" y="536" font-size="24" fill="#191c19">デジタル化・AI導入補助金の登録ツールを検索</text>
+
+  <rect x="40" y="590" width="720" height="110" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="3"/>
+  <text x="64" y="630" font-size="24" fill="#191c19">どの場合も、所在地の市区町村・都道府県の</text>
+  <text x="64" y="666" font-size="24" fill="#191c19">補助金をJ-Net21などで検索</text>
+</svg>

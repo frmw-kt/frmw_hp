@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 820" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect width="800" height="820" fill="#f7f7f4"/>
+  <text x="40" y="56" font-size="30" font-weight="bold" fill="#191c19">公募要領で確かめる5点と順番</text>
+
+  <rect x="40" y="86" width="720" height="118" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <circle cx="86" cy="145" r="26" fill="#806222"/>
+  <text x="86" y="154" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="130" y="134" font-size="24" font-weight="bold" fill="#191c19">対象者：従業員数・所在地・業種</text>
+  <text x="130" y="170" font-size="24" fill="#41483c">外れたら、ほかの項目は読まなくてよい</text>
+
+  <rect x="40" y="224" width="720" height="118" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <circle cx="86" cy="283" r="26" fill="#806222"/>
+  <text x="86" y="292" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="130" y="272" font-size="24" font-weight="bold" fill="#191c19">経費区分：どの区分に入るか</text>
+  <text x="130" y="308" font-size="24" fill="#41483c">制作費・広告費・ソフトの区分を見る</text>
+
+  <rect x="40" y="362" width="720" height="118" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <circle cx="86" cy="421" r="26" fill="#806222"/>
+  <text x="86" y="430" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="130" y="410" font-size="24" font-weight="bold" fill="#191c19">上限と組み合わせ</text>
+  <text x="130" y="446" font-size="24" fill="#41483c">区分ごとの上限、その区分だけで申請できるか</text>
+
+  <rect x="40" y="500" width="720" height="118" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <circle cx="86" cy="559" r="26" fill="#806222"/>
+  <text x="86" y="568" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+  <text x="130" y="548" font-size="24" font-weight="bold" fill="#191c19">発注の時期と期限</text>
+  <text x="130" y="584" font-size="24" fill="#41483c">交付決定の後か、公開・支払いの期限はいつか</text>
+
+  <rect x="40" y="638" width="720" height="118" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <circle cx="86" cy="697" r="26" fill="#806222"/>
+  <text x="86" y="706" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+  <text x="130" y="686" font-size="24" font-weight="bold" fill="#191c19">併用と支払い</text>
+  <text x="130" y="722" font-size="24" fill="#41483c">同じ内容でほかの補助金を受けないか、払い方</text>
+
+  <text x="40" y="796" font-size="22" fill="#41483c">項目は持続化補助金の事務局の案内と中央区の要綱の共通点から作成</text>
+</svg>
