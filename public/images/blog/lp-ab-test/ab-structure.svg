@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="460" fill="#f7f7f4"/>
+  <text x="400" y="46" font-size="26" fill="#191c19" text-anchor="middle" font-weight="bold">同じ期間の流入を分けて、成果の割合を比べる</text>
+  <rect x="40" y="170" width="200" height="110" rx="10" fill="#191c19"/>
+  <text x="140" y="215" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">同じ期間の</text>
+  <text x="140" y="250" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">LPへの流入</text>
+  <polygon points="246,205 300,140 300,170 246,235" fill="#c9a84c"/>
+  <polygon points="246,215 300,290 300,320 246,245" fill="#c9a84c"/>
+  <text x="140" y="315" font-size="22" fill="#806222" text-anchor="middle" font-weight="bold">無作為に分ける</text>
+  <rect x="320" y="90" width="230" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="435" y="135" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">A：今のLP</text>
+  <text x="435" y="172" font-size="22" fill="#41483c" text-anchor="middle">訪問・成果を数える</text>
+  <rect x="320" y="260" width="230" height="110" rx="10" fill="#ffffff" stroke="#c9a84c" stroke-width="3"/>
+  <text x="435" y="305" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">B：1か所だけ変更</text>
+  <text x="435" y="342" font-size="22" fill="#41483c" text-anchor="middle">訪問・成果を数える</text>
+  <polygon points="556,140 600,140 600,128 624,150 600,172 600,160 556,160" fill="#806222"/>
+  <polygon points="556,310 600,310 600,298 624,320 600,342 600,330 556,330" fill="#806222"/>
+  <rect x="630" y="150" width="150" height="160" rx="10" fill="#ffffff" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="705" y="200" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">成果÷訪問</text>
+  <text x="705" y="238" font-size="24" fill="#191c19" text-anchor="middle" font-weight="bold">を比べる</text>
+  <text x="705" y="276" font-size="22" fill="#806222" text-anchor="middle">（CVR）</text>
+  <text x="400" y="420" font-size="22" fill="#41483c" text-anchor="middle">期間中は、変えた1か所以外（広告・予算・フォーム）を変えない</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif">
+  <rect x="0" y="0" width="800" height="500" fill="#f7f7f4"/>
+  <text x="400" y="44" font-size="26" fill="#191c19" text-anchor="middle" font-weight="bold">CVR 2%と3%は、各500訪問では見分けられない</text>
+  <text x="400" y="78" font-size="22" fill="#41483c" text-anchor="middle">各ページのCVRの95%の幅（仮定：Aは2%、Bは3%）</text>
+  <!-- axis: 1% at x=200, 5% at x=760 ; 1pt = 140px -->
+  <line x1="200" y1="430" x2="760" y2="430" stroke="#41483c" stroke-width="2"/>
+  <text x="200" y="462" font-size="22" fill="#41483c" text-anchor="middle">1%</text>
+  <text x="340" y="462" font-size="22" fill="#41483c" text-anchor="middle">2%</text>
+  <text x="480" y="462" font-size="22" fill="#41483c" text-anchor="middle">3%</text>
+  <text x="620" y="462" font-size="22" fill="#41483c" text-anchor="middle">4%</text>
+  <text x="760" y="462" font-size="22" fill="#41483c" text-anchor="middle">5%</text>
+  <line x1="340" y1="110" x2="340" y2="430" stroke="#e3e2dc" stroke-width="2"/>
+  <line x1="480" y1="110" x2="480" y2="430" stroke="#e3e2dc" stroke-width="2"/>
+  <text x="30" y="150" font-size="24" fill="#191c19" font-weight="bold">各500訪問</text>
+  <text x="30" y="196" font-size="22" fill="#41483c">A 10件</text>
+  <text x="30" y="246" font-size="22" fill="#41483c">B 15件</text>
+  <!-- A 1.09-3.64 -> x 213-710 ; B 1.83-4.89 -> x 316-745 -->
+  <line x1="213" y1="190" x2="710" y2="190" stroke="#41483c" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="340" cy="190" r="9" fill="#191c19"/>
+  <line x1="316" y1="240" x2="745" y2="240" stroke="#c9a84c" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="480" cy="240" r="9" fill="#806222"/>
+  <text x="30" y="310" font-size="24" fill="#191c19" font-weight="bold">各3,750訪問</text>
+  <text x="30" y="356" font-size="22" fill="#41483c">A 75件</text>
+  <text x="30" y="406" font-size="22" fill="#41483c">B 約112件</text>
+  <!-- A 1.60-2.50 -> 284-410 ; B 2.50-3.60 -> 410-564 -->
+  <line x1="284" y1="350" x2="408" y2="350" stroke="#41483c" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="340" cy="350" r="9" fill="#191c19"/>
+  <line x1="412" y1="400" x2="564" y2="400" stroke="#c9a84c" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="480" cy="400" r="9" fill="#806222"/>
+  <text x="600" y="296" font-size="22" fill="#806222" font-weight="bold">幅が重ならない</text>
+  <text x="600" y="136" font-size="22" fill="#806222" font-weight="bold">大きく重なる</text>
+</svg>
